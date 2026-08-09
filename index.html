@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yuvraj Thakor — Web Developer & Website Redesign Specialist</title>
+  
+  <meta name="description" content="Yuvraj Thakor is a Web Developer and Website Redesign Specialist with 6+ years of experience creating modern, responsive, and premium websites.">
+  <meta property="og:title" content="Yuvraj Thakor — Web Developer & Website Redesign Specialist">
+  <meta property="og:description" content="Ultra-premium portfolio showcasing high-end web development, website redesigns, and motion experiences by Yuvraj Thakor.">
+  <meta property="og:type" content="website">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- GSAP & ScrollTrigger CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Lenis Smooth Scroll CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+
+  <!-- Main Script -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="custom-cursor"></div>
+  <div class="cursor-follower">
+    <span class="cursor-text">VIEW</span>
+  </div>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <a href="#" class="nav-brand" data-cursor="YUVRAJ">
+      YT <span class="nav-brand-dot"></span>
+    </a>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link" data-cursor="ABOUT">About</a></li>
+        <li><a href="#services" class="nav-link" data-cursor="SERVICES">Services</a></li>
+        <li><a href="#work" class="nav-link" data-cursor="PROJECTS">Work</a></li>
+        <li><a href="#process" class="nav-link" data-cursor="PROCESS">Process</a></li>
+        <li><a href="#contact" class="nav-link" data-cursor="CONTACT">Contact</a></li>
+      </ul>
+    </nav>
+
+    <a href="https://wa.me/918849470928" target="_blank" rel="noopener noreferrer" class="btn-nav-talk" data-cursor="TALK">
+      LET'S TALK ↗
+    </a>
+
+    <button class="menu-toggle" aria-label="Toggle Mobile Navigation">
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- Mobile Fullscreen Overlay -->
+  <div class="mobile-menu-overlay">
+    <ul class="mobile-nav-links">
+      <li><a href="#about" class="mobile-nav-link">ABOUT</a></li>
+      <li><a href="#services" class="mobile-nav-link">SERVICES</a></li>
+      <li><a href="#work" class="mobile-nav-link">WORK</a></li>
+      <li><a href="#process" class="mobile-nav-link">PROCESS</a></li>
+      <li><a href="#contact" class="mobile-nav-link">CONTACT</a></li>
+      <li><a href="https://wa.me/918849470928" target="_blank" class="mobile-nav-link" style="color: var(--accent-blue);">LET'S TALK ↗</a></li>
+    </ul>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <!-- Grid Overlay Lines -->
+      <div class="hero-grid-lines">
+        <div class="v-line" style="left: 20%;"></div>
+        <div class="v-line" style="left: 50%;"></div>
+        <div class="v-line" style="left: 80%;"></div>
+        <div class="h-line" style="top: 30%;"></div>
+        <div class="h-line" style="top: 70%;"></div>
+      </div>
+
+      <div class="hero-content">
+        <!-- Left Text Column -->
+        <div class="hero-text-col">
+          <div class="hero-badge">
+            ⚡ WEB DEVELOPER & WEBSITE REDESIGN SPECIALIST
+          </div>
+
+          <h1 class="hero-title">
+            YUVRAJ<br>
+            <span class="accent-text">THAKOR</span>
+          </h1>
+
+          <p class="hero-statement">
+            I BUILD DIGITAL EXPERIENCES THAT STAND OUT.
+          </p>
+
+          <p class="hero-desc">
+            6+ years of experience creating modern, responsive, and high-converting premium websites for businesses and professionals worldwide.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#work" class="btn-primary" data-cursor="PROJECTS">
+              EXPLORE WORK ↗
+            </a>
+            <a href="https://wa.me/918849470928" target="_blank" rel="noopener noreferrer" class="btn-secondary" data-cursor="START">
+              START A PROJECT ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- Right 3D Unfolding Portrait Column -->
+        <div class="hero-portrait-col">
+          <div class="portrait-3d-wrapper" data-cursor="ABOUT ME">
+            <div id="portrait-unfold-container" class="portrait-unfold-container">
+              <!-- Dynamically populated 10 3D vertical panels via script.js -->
+            </div>
+
+            <!-- Portrait Overlay Card Badge -->
+            <div class="portrait-card-badge">
+              <div>
+                <div class="portrait-badge-title">YUVRAJ THAKOR</div>
+                <div class="portrait-badge-sub">6+ YEARS WEB EXP</div>
+              </div>
+              <div style="font-family: var(--font-mono); font-weight: 800; color: var(--accent-blue);">
+                AVAILABLE FOR WORK
+              </div>
+            </div>
+
+            <!-- Decorative Floating Graphics -->
+            <div class="floating-shape shape-circle-ring"></div>
+            <div class="floating-shape shape-cross-grid">+ + +</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Bottom Scroll Indicator -->
+      <div class="hero-bottom-bar">
+        <div>BASED IN INDIA — SERVING GLOBAL CLIENTS</div>
+        <a href="#intro" class="scroll-indicator" data-cursor="SCROLL">
+          <div class="scroll-mouse-icon">
+            <div class="scroll-wheel"></div>
+          </div>
+          <span>SCROLL TO EXPLORE</span>
+        </a>
+        <div>© 2026 EDITION</div>
+      </div>
+    </section>
+
+    <!-- SCROLL INTRO SECTION -->
+    <section id="intro" class="scroll-intro-section">
+      <div class="scroll-intro-container">
+        <div class="scroll-intro-label">CREATIVE CAPABILITIES</div>
+        <div class="giant-words">
+          <div class="giant-word">DESIGN</div>
+          <div class="giant-word outlined">CODE</div>
+          <div class="giant-word">MOTION</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-section">
+      <div class="about-grid">
+        <div class="about-title-box">
+          <div style="font-family: var(--font-mono); font-size: 0.9rem; font-weight: 800; color: var(--accent-blue); margin-bottom: 1rem; letter-spacing: 0.1em;">
+            01 / BIOGRAPHY
+          </div>
+          <h2>WHO IS YUVRAJ?</h2>
+          <div class="about-text">
+            <p>
+              I'm <strong>Yuvraj Thakor</strong>, a Web Developer and Website Redesign Specialist focused on creating premium digital experiences for forward-thinking businesses and medical/beauty professionals.
+            </p>
+            <p>
+              With <strong>6+ years of hands-on web development experience</strong>, I bridge the gap between clean code, luxury aesthetics, responsive engineering, and cinematic motion graphics.
+            </p>
+            <p>
+              Whether rebuilding an outdated legacy website or engineering a brand-new digital presence, my work focuses on making an unmistakable, powerful first impression.
+            </p>
+          </div>
+        </div>
+
+        <div class="about-photo-wrapper" data-cursor="YUVRAJ">
+          <img src="https://media.licdn.com/dms/image/v2/D4D03AQGyjX9L5rTBDw/profile-displayphoto-crop_800_800/B4DZ65won8KUAI-/0/1781232999502?e=1787788800&v=beta&t=hVaw6FTlKnK1KlbDmljLkmkTqhDB45Iwh9vhGIBWI-c" alt="Yuvraj Thakor Web Developer" class="about-photo">
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE STATS SECTION -->
+    <section class="stats-section">
+      <div class="stats-container">
+        <div class="stats-hero-banner">
+          <div class="stats-hero-number">6+</div>
+          <div class="stats-hero-label">YEARS OF PASSIONATE WEB DEVELOPMENT & DESIGN EXPERIENCE</div>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number" data-target="6+">0</div>
+            <div class="stat-label">YEARS EXPERIENCE</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="8+">0</div>
+            <div class="stat-label">LIVE PORTFOLIO PROJECTS</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="2">0</div>
+            <div class="stat-label">SPECIALIZED INDUSTRIES</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="100%">0</div>
+            <div class="stat-label">RESPONSIVE & PERFORMANCE</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="services-section">
+      <div class="services-container">
+        <div class="section-header">
+          <div>
+            <div class="section-num">02 / SERVICES</div>
+            <h2 class="section-title">WHAT I DO</h2>
+          </div>
+          <div style="font-family: var(--font-mono); font-size: 0.9rem; color: var(--text-muted);">
+            TAILORED SOLUTIONS FOR PREMIUM BRANDS
+          </div>
+        </div>
+
+        <div class="services-list">
+          <a href="#contact" class="service-row" data-cursor="EXPLORE">
+            <div class="service-num">01</div>
+            <div class="service-name">WEB DEVELOPMENT</div>
+            <div class="service-desc">Custom, lightning-fast frontend architectures built with modern HTML5, CSS3, and JavaScript.</div>
+            <div class="service-arrow">↗</div>
+          </a>
+
+          <a href="#redesign" class="service-row" data-cursor="REDESIGN">
+            <div class="service-num">02</div>
+            <div class="service-name">WEBSITE REDESIGN</div>
+            <div class="service-desc">Transforming outdated, low-converting websites into high-end luxury digital flagships.</div>
+            <div class="service-arrow">↗</div>
+          </a>
+
+          <a href="#contact" class="service-row" data-cursor="UI/UX">
+            <div class="service-num">03</div>
+            <div class="service-name">UI / UX DESIGN</div>
+            <div class="service-desc">User-centric interface layouts focused on clarity, accessibility, and high visual appeal.</div>
+            <div class="service-arrow">↗</div>
+          </a>
+
+          <a href="#contact" class="service-row" data-cursor="MOBILE">
+            <div class="service-num">04</div>
+            <div class="service-name">RESPONSIVE DESIGN</div>
+            <div class="service-desc">Flawless, desktop-first and mobile-optimized layouts that render beautifully across all screen sizes.</div>
+            <div class="service-arrow">↗</div>
+          </a>
+
+          <a href="#contact" class="service-row" data-cursor="MOTION">
+            <div class="service-num">05</div>
+            <div class="service-name">MOTION DESIGN</div>
+            <div class="service-desc">Scroll-driven micro-interactions, 3D transformations, and fluid GSAP animation sequences.</div>
+            <div class="service-arrow">↗</div>
+          </a>
+
+          <a href="#work" class="service-row" data-cursor="BUSINESS">
+            <div class="service-num">06</div>
+            <div class="service-name">BUSINESS WEBSITES</div>
+            <div class="service-desc">Specialized web applications built for clinics, doctors, luxury beauty salons, and services.</div>
+            <div class="service-arrow">↗</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- HUGE TYPOGRAPHY TRANSITION SECTION -->
+    <section class="typo-transition-section">
+      <div class="typo-transition-container">
+        <div class="typo-step" style="color: var(--text-light);">
+          I DON'T JUST BUILD WEBSITES.
+        </div>
+        <div class="typo-step" style="color: var(--text-primary);">
+          I BUILD FIRST IMPRESSIONS.
+        </div>
+      </div>
+    </section>
+
+    <!-- SELECTED WORK SECTION -->
+    <section id="work" class="work-section">
+      <div class="work-container">
+        <div class="section-header">
+          <div>
+            <div class="section-num">03 / PORTFOLIO</div>
+            <h2 class="section-title">SELECTED WORK.</h2>
+          </div>
+          <div style="font-family: var(--font-mono); font-size: 0.9rem; color: var(--text-muted); max-width: 300px; text-align: right;">
+            Real websites designed and developed by Yuvraj Thakor.
+          </div>
+        </div>
+
+        <!-- CATEGORY 1: SALON / BEAUTY -->
+        <div class="work-category-header">
+          <div class="category-title">CATEGORY 01 — SALON & BEAUTY WEBSITES</div>
+          <div style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-muted);">4 PROJECTS</div>
+        </div>
+
+        <div class="project-grid">
+          <!-- Project 01 -->
+          <article class="project-card">
+            <div class="project-image-box" data-cursor="VIEW LIVE">
+              <span class="project-badge-tag">SALON STUDIO</span>
+              <iframe src="https://yuvrajthakor505-star.github.io/yuvraj/" class="project-preview-iframe" title="Luxury Salon Website Preview"></iframe>
+            </div>
+
+            <div class="project-info">
+              <div class="project-num">PROJECT 01 / 08</div>
+              <h3 class="project-title">LUXURY SALON STUDIO</h3>
+              <p class="project-desc">
+                High-end salon web experience featuring sleek typography, interactive booking callouts, and elegant photo galleries designed to boost appointment conversions.
+              </p>
+              <a href="https://yuvrajthakor505-star.github.io/yuvraj/" target="_blank" rel="noopener noreferrer" class="btn-project-link" data-cursor="OPEN">
+                VIEW LIVE WEBSITE ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 02 -->
+          <article class="project-card reverse">
+            <div class="project-image-box" data-cursor="VIEW LIVE">
+              <span class="project-badge-tag">BEAUTY BAR</span>
+              <iframe src="https://yuvrajthakor505-star.github.io/yuvraj9/" class="project-preview-iframe" title="Modern Beauty Bar Preview"></iframe>
+            </div>
+
+            <div class="project-info">
+              <div class="project-num">PROJECT 02 / 08</div>
+              <h3 class="project-title">MODERN BEAUTY BAR</h3>
+              <p class="project-desc">
+                Modern website design for boutique beauty salons, presenting treatment menus, hair styling packages, and client testimonials with seamless responsiveness.
+              </p>
+              <a href="https://yuvrajthakor505-star.github.io/yuvraj9/" target="_blank" rel="noopener noreferrer" class="btn-project-link" data-cursor="OPEN">
+                VIEW LIVE WEBSITE ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 03 -->
+          <article class="project-card">
+            <div class="project-image-box" data-cursor="VIEW LIVE">
+              <span class="project-badge-tag">HAIR & SPA</span>
+              <iframe src="https://yuvrajthakor505-star.github.io/yuvraj6/" class="project-preview-iframe" title="Hair & Spa Preview"></iframe>
+            </div>
+
+            <div class="project-info">
+              <div class="project-num">PROJECT 03 / 08</div>
+              <h3 class="project-title">PREMIUM HAIR & SPA</h3>
+              <p class="project-desc">
+                Sophisticated hair spa portal highlighting premium beauty services, stylist profiles, and clear contact calls to action.
+              </p>
+              <a href="https://yuvrajthakor505-star.github.io/yuvraj6/" target="_blank" rel="noopener noreferrer" class="btn-project-link" data-cursor="OPEN">
+                VIEW LIVE WEBSITE ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 04 -->
+          <article class="project-card reverse">
+            <div class="project-image-box" data-cursor="VIEW LIVE">
+              <span class="project-badge-tag">PARLOR REDESIGN</span>
+              <iframe src="https://yuvrajthakor505-star.github.io/h16/" class="project-preview-iframe" title="Glamour Parlor Preview"></iframe>
+            </div>
+
+            <div class="project-info">
+              <div class="project-num">PROJECT 04 / 08</div>
+              <h3 class="project-title">GLAMOUR PARLOR PORTAL</h3>
+              <p class="project-desc">
+                Clean, contemporary website layout engineered for high visual impact, fast page load speeds, and intuitive mobile navigation.
+              </p>
+              <a href="https://yuvrajthakor505-star.github.io/h16/" target="_blank" rel="noopener noreferrer" class="btn-project-link" data-cursor="OPEN">
+                VIEW LIVE WEBSITE ↗
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <!-- CATEGORY 2: DOCTOR / MEDICAL -->
+        <div class="work-category-header">
+          <div class="category-title">CATEGORY 02 — DOCTOR & MEDICAL WEBSITES</div>
+          <div style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-muted);">4 PROJECTS</div>
+        </div>
+
+        <div class="project-grid">
+          <!-- Project 05 -->
+          <article class="project-card">
+            <div class="project-image-box" data-cursor="VIEW LIVE">
+              <span class="project-badge-tag">MEDICAL CARE</span>
+              <iframe src="https://hebasketcom-gif.github.io/h26/" class="project-preview-iframe" title="Elite Medical Care Preview"></iframe>
+            </div>
+
+            <div class="project-info">
+              <div class="project-num">PROJECT 05 / 08</div>
+              <h3 class="project-title">ELITE MEDICAL CARE</h3>
+              <p class="project-desc">
+                Professional medical practice website built to instill immediate patient trust, featuring doctor credentials, clinic schedule, and appointment request forms.
+              </p>
+              <a href="https://hebasketcom-gif.github.io/h26/" target="_blank" rel="noopener noreferrer" class="btn-project-link" data-cursor="OPEN">
+                VIEW LIVE WEBSITE ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 06 -->
+          <article class="project-card reverse">
+            <div class="project-image-box" data-cursor="VIEW LIVE">
+              <span class="project-badge-tag">HEALTH CLINIC</span>
+              <iframe src="https://hebasketcom-gif.github.io/h/" class="project-preview-iframe" title="Advanced Health Clinic Preview"></iframe>
+            </div>
+
+            <div class="project-info">
+              <div class="project-num">PROJECT 06 / 08</div>
+              <h3 class="project-title">ADVANCED HEALTH CLINIC</h3>
+              <p class="project-desc">
+                Clean healthcare web interface tailored for multi-specialty medical clinics, emphasizing treatment information and direct WhatsApp appointment inquiries.
+              </p>
+              <a href="https://hebasketcom-gif.github.io/h/" target="_blank" rel="noopener noreferrer" class="btn-project-link" data-cursor="OPEN">
+                VIEW LIVE WEBSITE ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 07 -->
+          <article class="project-card">
+            <div class="project-image-box" data-cursor="VIEW LIVE">
+              <span class="project-badge-tag">DENTAL CARE</span>
+              <iframe src="https://hebasketcom-gif.github.io/h7/" class="project-preview-iframe" title="Dental & Surgical Care Preview"></iframe>
+            </div>
+
+            <div class="project-info">
+              <div class="project-num">PROJECT 07 / 08</div>
+              <h3 class="project-title">DENTAL & SURGICAL CARE</h3>
+              <p class="project-desc">
+                Modern dental clinic website showcasing patient treatments, hygiene guides, emergency care details, and responsive doctor consultation scheduling.
+              </p>
+              <a href="https://hebasketcom-gif.github.io/h7/" target="_blank" rel="noopener noreferrer" class="btn-project-link" data-cursor="OPEN">
+                VIEW LIVE WEBSITE ↗
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 08 -->
+          <article class="project-card reverse">
+            <div class="project-image-box" data-cursor="VIEW LIVE">
+              <span class="project-badge-tag">SPECIALIST PORTAL</span>
+              <iframe src="https://hebasketcom-gif.github.io/h25/" class="project-preview-iframe" title="Specialist Doctor Portal Preview"></iframe>
+            </div>
+
+            <div class="project-info">
+              <div class="project-num">PROJECT 08 / 08</div>
+              <h3 class="project-title">SPECIALIST DOCTOR PORTAL</h3>
+              <p class="project-desc">
+                Sleek medical website redesign crafted to project authority, clean clinical aesthetics, fast loading speeds, and optimal mobile UX.
+              </p>
+              <a href="https://hebasketcom-gif.github.io/h25/" target="_blank" rel="noopener noreferrer" class="btn-project-link" data-cursor="OPEN">
+                VIEW LIVE WEBSITE ↗
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BEFORE / AFTER INTERACTIVE REDESIGN SECTION -->
+    <section id="redesign" class="redesign-section">
+      <div class="redesign-container">
+        <div class="section-header" style="text-align: center; display: block; margin-bottom: 3rem;">
+          <div class="section-num" style="margin-bottom: 0.5rem;">04 / REDESIGN TRANSFORMATION</div>
+          <h2 class="section-title">BEFORE. AFTER. TRANSFORMED.</h2>
+          <p style="font-size: 1.1rem; color: var(--text-muted); max-width: 600px; margin: 1rem auto 0;">
+            Drag the slider handle to compare an outdated website against a modern, high-converting digital redesign by Yuvraj Thakor.
+          </p>
+        </div>
+
+        <!-- Interactive Comparison Slider -->
+        <div class="ba-slider-wrapper" data-cursor="DRAG SLIDER">
+          <!-- Before View (Underneath) -->
+          <div class="ba-before">
+            <div class="ba-tag before-tag">BEFORE REDESIGN</div>
+            <div style="font-size: 1.8rem; font-weight: 700; margin-bottom: 1rem; color: #666;">
+              Outdated Legacy Website
+            </div>
+            <p style="max-width: 450px; text-align: center; font-size: 1rem; color: #777;">
+              ❌ Slow load speed &nbsp;|&nbsp; ❌ Outdated fonts &nbsp;|&nbsp; ❌ Broken mobile layout &nbsp;|&nbsp; ❌ Poor conversion rate
+            </p>
+          </div>
+
+          <!-- After View (Clipped Overlay) -->
+          <div class="ba-after">
+            <div class="ba-tag after-tag">AFTER REDESIGN (BY YUVRAJ)</div>
+            <div style="font-family: var(--font-display); font-size: clamp(2rem, 4vw, 3.5rem); font-weight: 800; color: var(--text-primary); text-align: center;">
+              LUXURY DIGITAL FLAGSHIP
+            </div>
+            <p style="max-width: 500px; text-align: center; font-size: 1.1rem; color: var(--text-muted); margin-top: 1rem;">
+              ⚡ 100% Responsive &nbsp;|&nbsp; ✨ Futuristic GSAP Motion &nbsp;|&nbsp; 📈 High Patient/Client Conversion
+            </p>
+          </div>
+
+          <!-- Slider Handle Bar -->
+          <div class="ba-slider-handle">
+            <div class="ba-handle-button">↔</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INFINITE MARQUEE SECTION -->
+    <section class="marquee-section">
+      <div class="marquee-track">
+        <div class="marquee-text">
+          WEB DEVELOPMENT <span class="marquee-star">✦</span> WEBSITE REDESIGN <span class="marquee-star">✦</span> UI/UX DESIGN <span class="marquee-star">✦</span> MOTION GRAPHICS <span class="marquee-star">✦</span> DIGITAL EXPERIENCES <span class="marquee-star">✦</span>
+        </div>
+        <div class="marquee-text">
+          WEB DEVELOPMENT <span class="marquee-star">✦</span> WEBSITE REDESIGN <span class="marquee-star">✦</span> UI/UX DESIGN <span class="marquee-star">✦</span> MOTION GRAPHICS <span class="marquee-star">✦</span> DIGITAL EXPERIENCES <span class="marquee-star">✦</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIGITAL MOTION GRAPHICS SECTION -->
+    <section class="motion-graphic-section">
+      <div style="font-family: var(--font-mono); font-size: 0.9rem; font-weight: 800; color: var(--accent-blue); letter-spacing: 0.15em;">
+        05 / EXPERIMENTAL MOTION
+      </div>
+      <h2 style="font-size: clamp(2.5rem, 6vw, 5rem); margin-top: 0.5rem;">DIGITAL MOTION CANVAS</h2>
+      <p style="color: var(--text-muted); max-width: 550px; margin: 1rem auto 0;">
+        Interactive geometry and wireframe motion reflecting high craftsmanship in web animation.
+      </p>
+
+      <div class="motion-canvas-container">
+        <div class="motion-object" style="transform: rotate(15deg);">
+          <div class="motion-object-inner"></div>
+        </div>
+        <div class="motion-object" style="transform: rotate(-30deg) scale(0.7); border-color: var(--accent-blue);">
+          <div class="motion-object-inner" style="border-radius: 0;"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS SECTION -->
+    <section id="process" class="process-section">
+      <div class="process-container">
+        <div class="section-header">
+          <div>
+            <div class="section-num">06 / METHODOLOGY</div>
+            <h2 class="section-title">HOW I BUILD.</h2>
+          </div>
+          <div style="font-family: var(--font-mono); font-size: 0.9rem; color: var(--text-muted);">
+            STRUCTURED WORKFLOW FOR SUCCESSFUL PROJECTS
+          </div>
+        </div>
+
+        <div class="process-timeline">
+          <div class="process-timeline-line"></div>
+          <div class="process-timeline-progress"></div>
+
+          <div class="process-step active">
+            <div class="process-step-dot"></div>
+            <div class="process-step-title">01 — DISCOVER</div>
+            <p class="process-step-desc">
+              Analyzing your existing website, understanding business goals, identifying target audiences, and establishing design directions.
+            </p>
+          </div>
+
+          <div class="process-step">
+            <div class="process-step-dot"></div>
+            <div class="process-step-title">02 — PLAN</div>
+            <p class="process-step-desc">
+              Defining information architecture, wireframing key layouts, selecting typography pairs, and structuring content flow.
+            </p>
+          </div>
+
+          <div class="process-step">
+            <div class="process-step-dot"></div>
+            <div class="process-step-title">03 — DESIGN</div>
+            <p class="process-step-desc">
+              Crafting high-fidelity editorial visual mockups, responsive grid systems, micro-interactions, and custom visual assets.
+            </p>
+          </div>
+
+          <div class="process-step">
+            <div class="process-step-dot"></div>
+            <div class="process-step-title">04 — DEVELOP</div>
+            <p class="process-step-desc">
+              Writing clean, modern, compliant code using HTML5, CSS3, JavaScript, GSAP animations, and responsive flex/grid layouts.
+            </p>
+          </div>
+
+          <div class="process-step">
+            <div class="process-step-dot"></div>
+            <div class="process-step-title">05 — REFINE</div>
+            <p class="process-step-desc">
+              Testing cross-browser compatibility, mobile touch optimization, page load performance, and motion smoothness.
+            </p>
+          </div>
+
+          <div class="process-step">
+            <div class="process-step-dot"></div>
+            <div class="process-step-title">06 — LAUNCH</div>
+            <p class="process-step-desc">
+              Deploying to production, verifying domain routing, configuring SEO metadata, and handing over a flawless website.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DARK CONTRAST STATEMENT SECTION -->
+    <section class="dark-statement-section">
+      <h2 class="dark-statement-title">
+        6+ YEARS TURNING IDEAS INTO WEBSITES.
+      </h2>
+    </section>
+
+    <!-- FINAL CTA SECTION -->
+    <section id="contact" class="cta-section">
+      <div class="cta-container">
+        <div class="cta-subtitle">READY TO REDESIGN YOUR DIGITAL PRESENCE?</div>
+        <h2 class="cta-title">LET'S BUILD SOMETHING BETTER.</h2>
+        
+        <a href="https://wa.me/918849470928" target="_blank" rel="noopener noreferrer" class="btn-primary" style="font-size: 1.1rem; padding: 1.4rem 3rem;" data-cursor="WHATSAPP">
+          START A PROJECT ↗
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- STICKY WHATSAPP BUTTON -->
+  <a href="https://wa.me/918849470928" target="_blank" rel="noopener noreferrer" aria-label="Chat with Yuvraj Thakor on WhatsApp" class="whatsapp-float" data-cursor="CHAT">
+    <svg class="whatsapp-icon-svg" viewBox="0 0 24 24">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+    </svg>
+    <span class="whatsapp-label">CHAT WITH ME</span>
+  </a>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div>
+        <div class="footer-brand">YUVRAJ THAKOR</div>
+        <div style="margin-top: 0.3rem;">WEB DEVELOPER & WEBSITE REDESIGN SPECIALIST</div>
+      </div>
+
+      <div>
+        6+ YEARS OF CREATIVE EXCELLENCE
+      </div>
+
+      <button class="btn-back-top" data-cursor="TOP">
+        BACK TO TOP ↑
+      </button>
+    </div>
+
+    <div style="text-align: center; margin-top: 2rem; font-size: 0.75rem; color: var(--text-light);">
+      © 2026 YUVRAJ THAKOR. ALL RIGHTS RESERVED. DESIGNED FOR HIGH IMPACT.
+    </div>
+  </footer>
+
+</body>
+</html>
