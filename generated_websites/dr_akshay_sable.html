@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Akshay Sable | Lead Dentist & Smile Specialist</title>
-    <!-- Tailwind CSS -->
+    <title>Dr Akshay Sable | Dentist & Oral Healthcare Specialist</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -17,244 +17,322 @@
                     fontFamily: {
                         sans: ['Plus Jakarta Sans', 'sans-serif'],
                     },
+                    colors: {
+                        brand: {
+                            cyan: '#0D8ABC',
+                            teal: '#06b6d4',
+                            indigo: '#6366f1',
+                        }
+                    }
                 }
             }
         }
     </script>
-    <style>
-        body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-        }
-        .glow-effect {
-            box-shadow: 0 0 50px -10px rgba(99, 102, 241, 0.3);
-        }
-        .glow-text {
-            text-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
-        }
-    </style>
 </head>
-<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-white">
 
     <!-- NAVIGATION BAR -->
-    <nav class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/50">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-xl font-bold tracking-tight text-white flex items-center space-x-3">
-                <span class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center text-white shadow-lg shadow-indigo-500/30">
-                    <i class="fa-solid font-bold text-lg fa-tooth"></i>
-                </span>
-                <span>Dr Akshay <span class="text-indigo-400">Sable</span></span>
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-indigo-500 to-purple-500 flex items-center justify-center font-bold text-white text-xl shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform duration-300">
+                    DS
+                </div>
+                <div>
+                    <span class="text-lg font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-200 to-cyan-300">Dr Akshay Sable</span>
+                    <span class="block text-xs font-medium text-cyan-400">TRIDENT DENTAL CARE</span>
+                </div>
             </a>
-            
-            <div class="hidden md:flex items-center space-x-8 font-medium text-sm text-slate-300">
-                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
-                <a href="#services" class="hover:text-indigo-400 transition-colors">Specializations</a>
-                <a href="#achievements" class="hover:text-indigo-400 transition-colors">Patient Stories</a>
-                <a href="#contact" class="hover:text-indigo-400 transition-colors">Contact</a>
+
+            <!-- Nav Links -->
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#about" class="text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors">About</a>
+                <a href="#services" class="text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors">Services</a>
+                <a href="#achievements" class="text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors">Achievements</a>
+                <a href="#contact" class="text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors">Contact</a>
             </div>
 
-            <a href="#contact" class="hidden sm:inline-flex items-center px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:opacity-95 transition-all shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.02]">
-                <i class="fa-regular fa-calendar-check mr-2"></i> Book Consultation
-            </a>
+            <!-- Header CTA -->
+            <div class="hidden sm:flex items-center gap-4">
+                <a href="#contact" class="px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-cyan-500 via-indigo-600 to-purple-600 hover:opacity-95 shadow-lg shadow-cyan-500/25 transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]">
+                    Get in Touch
+                </a>
+            </div>
         </div>
     </nav>
 
     <!-- HERO SECTION -->
-    <section class="relative pt-36 pb-20 md:pt-48 md:pb-32 overflow-hidden bg-gradient-to-br from-slate-950 via-indigo-950/40 to-slate-900">
-        <!-- Background Ambient Glow -->
-        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-indigo-600/15 blur-[120px] rounded-full pointer-events-none"></div>
-        <div class="absolute top-1/3 right-10 w-[300px] h-[300px] bg-pink-600/10 blur-[100px] rounded-full pointer-events-none"></div>
-
-        <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
-            <!-- Glowing Avatar -->
-            <div class="mb-8 inline-block relative">
-                <div class="p-1.5 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full shadow-2xl shadow-indigo-500/30 inline-block animate-pulse">
-                    <img src="https://ui-avatars.com/api/?name=Dr+Akshay+Sable&size=200&background=0D8ABC&color=fff&bold=true" 
-                         alt="Dr Akshay Sable" 
-                         class="w-28 h-28 md:w-36 md:h-36 rounded-full object-cover border-4 border-slate-950">
+    <section class="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-indigo-950/40">
+        <!-- Glowing background accents -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-cyan-500/10 via-indigo-500/15 to-purple-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="flex flex-col items-center text-center">
+                
+                <!-- Profile Avatar Badge -->
+                <div class="mb-8 relative group">
+                    <div class="p-1.5 bg-gradient-to-r from-cyan-400 via-indigo-500 to-purple-500 rounded-full shadow-2xl shadow-cyan-500/30 group-hover:shadow-cyan-500/50 transition-all duration-500">
+                        <img src="https://ui-avatars.com/api/?name=Dr+Akshay+Sable&size=200&background=0D8ABC&color=fff&bold=true" 
+                             alt="Dr Akshay Sable" 
+                             class="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-slate-950">
+                    </div>
+                    <div class="absolute bottom-1 right-1 bg-emerald-500 text-slate-950 p-2 rounded-full border-2 border-slate-950 shadow-lg text-xs font-bold" title="Accepting New Patients">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
                 </div>
-                <span class="absolute bottom-2 right-2 bg-emerald-500 border-2 border-slate-950 w-5 h-5 rounded-full" title="Available for Appointments"></span>
-            </div>
 
-            <!-- Role Badge -->
-            <div class="inline-flex items-center px-4 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 text-xs md:text-sm font-semibold tracking-wide uppercase mb-6">
-                <i class="fa-solid fa-hospital-user mr-2 text-indigo-400"></i> Dentist at TRIDENT DENTAL CARE
-            </div>
-
-            <!-- Headline -->
-            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-tight max-w-4xl mx-auto mb-6">
-                Crafting Healthy Smiles with <span class="bg-clip-text text-transparent bg-gradient-to-r from-indigo-300 via-purple-300 to-pink-300 glow-text">Clinical Excellence</span>
-            </h1>
-
-            <!-- Elevator Pitch -->
-            <p class="text-slate-300 text-lg md:text-xl max-w-2xl mx-auto font-normal leading-relaxed mb-10">
-                Delivering advanced restorative and cosmetic dentistry with precision care, cutting-edge technology, and a dedicated patient-first approach.
-            </p>
-
-            <!-- Dual CTAs -->
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-                <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-full text-base font-bold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:opacity-95 transition-all shadow-xl shadow-indigo-500/25 hover:scale-105">
-                    Explore Expertise <i class="fa-solid fa-arrow-right ml-2"></i>
-                </a>
-                <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full text-base font-bold text-slate-200 bg-slate-900/80 hover:bg-slate-800 border border-slate-700/80 transition-all hover:scale-105">
-                    Schedule Call <i class="fa-solid fa-phone-flip ml-2 text-indigo-400"></i>
-                </a>
-            </div>
-
-            <!-- Stat Counter Bar -->
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-6 max-w-3xl mx-auto p-6 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800/80 shadow-2xl">
-                <div class="text-center p-3">
-                    <h3 class="text-3xl font-extrabold text-white bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-400">10+</h3>
-                    <p class="text-xs md:text-sm text-slate-400 font-medium mt-1">Years Experience</p>
+                <!-- Headline -->
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 text-cyan-400 text-xs md:text-sm font-semibold mb-6 shadow-inner">
+                    <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                    Dentist at TRIDENT DENTAL CARE
                 </div>
-                <div class="text-center p-3 border-x border-slate-800/80">
-                    <h3 class="text-3xl font-extrabold text-white bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400">3,500+</h3>
-                    <p class="text-xs md:text-sm text-slate-400 font-medium mt-1">Smiles Restored</p>
+
+                <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight max-w-4xl leading-tight">
+                    Crafting Healthy, Confident Smiles with 
+                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-indigo-300 to-purple-400"> Precision & Care</span>
+                </h1>
+
+                <p class="mt-6 text-lg sm:text-xl text-slate-400 max-w-2xl leading-relaxed font-light">
+                    Transforming oral health through state-of-the-art dental clinical techniques, cosmetic enhancements, and personalized patient-centered care.
+                </p>
+
+                <!-- Dual CTAs -->
+                <div class="mt-10 flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center">
+                    <a href="#services" class="px-8 py-4 rounded-xl font-semibold text-white bg-gradient-to-r from-cyan-500 via-indigo-600 to-purple-600 hover:shadow-cyan-500/25 shadow-xl transition-all duration-300 hover:-translate-y-0.5 text-center">
+                        Explore Expertise <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                    </a>
+                    <a href="#contact" class="px-8 py-4 rounded-xl font-semibold text-slate-200 bg-slate-900/80 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 transition-all duration-300 text-center">
+                        Schedule Consultation
+                    </a>
                 </div>
-                <div class="col-span-2 md:col-span-1 text-center p-3">
-                    <h3 class="text-3xl font-extrabold text-white bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-indigo-400">99.8%</h3>
-                    <p class="text-xs md:text-sm text-slate-400 font-medium mt-1">Patient Satisfaction</p>
+
+                <!-- Stat Counter Bar -->
+                <div class="mt-16 sm:mt-20 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-8 w-full max-w-4xl">
+                    <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800/80 rounded-2xl p-6 text-center hover:border-cyan-500/40 transition-colors">
+                        <div class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-indigo-400">10+</div>
+                        <div class="text-xs sm:text-sm font-medium text-slate-400 mt-1">Years Experience</div>
+                    </div>
+                    <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800/80 rounded-2xl p-6 text-center hover:border-indigo-500/40 transition-colors">
+                        <div class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">3,500+</div>
+                        <div class="text-xs sm:text-sm font-medium text-slate-400 mt-1">Patients Treated</div>
+                    </div>
+                    <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800/80 rounded-2xl p-6 text-center hover:border-purple-500/40 transition-colors">
+                        <div class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">99.8%</div>
+                        <div class="text-xs sm:text-sm font-medium text-slate-400 mt-1">Satisfaction Rate</div>
+                    </div>
+                    <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800/80 rounded-2xl p-6 text-center hover:border-cyan-500/40 transition-colors">
+                        <div class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400">100%</div>
+                        <div class="text-xs sm:text-sm font-medium text-slate-400 mt-1">Painless Modern Care</div>
+                    </div>
                 </div>
+
             </div>
         </div>
     </section>
 
     <!-- ABOUT & EXPERTISE SECTION -->
-    <section id="about" class="py-24 bg-slate-950 relative">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+    <section id="about" class="py-24 bg-slate-950 relative overflow-hidden border-t border-slate-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
                 
-                <!-- Modern Workspace / Clinical Image -->
-                <div class="relative group">
-                    <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-pink-500 rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-500"></div>
-                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900">
-                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" 
-                             alt="Modern Executive Facility" 
-                             class="w-full h-[420px] object-cover group-hover:scale-105 transition duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
-                        <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-slate-900/90 backdrop-blur-md border border-slate-800">
-                            <p class="text-sm text-indigo-300 font-semibold">TRIDENT DENTAL CARE</p>
-                            <p class="text-xs text-slate-400">State-of-the-art diagnostic and cosmetic dental facility.</p>
+                <!-- Column 1: Image -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 shadow-2xl group">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Modern Dental Workspace" 
+                             class="w-full h-[480px] object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+                        
+                        <div class="absolute bottom-6 left-6 right-6 p-6 rounded-xl bg-slate-900/80 backdrop-blur-md border border-slate-800">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-lg bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold">
+                                    <i class="fa-solid fa-hospital"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white text-sm">TRIDENT DENTAL CARE</h4>
+                                    <p class="text-xs text-slate-400">Advanced Oral Health & Aesthetic Center</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Career Narrative & Skills -->
-                <div>
-                    <div class="inline-flex items-center space-x-2 text-indigo-400 font-semibold text-sm mb-3">
-                        <span class="w-2 h-2 rounded-full bg-indigo-500"></span>
-                        <span>ABOUT DR. AKSHAY SABLE</span>
+                <!-- Column 2: Narrative & Skills -->
+                <div class="lg:col-span-7">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 text-cyan-400 text-xs font-semibold mb-4 border border-cyan-500/20">
+                        ABOUT DR. AKSHAY SABLE
                     </div>
-                    <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-6">
-                        Pioneering Modern Dentistry with Precision & Compassion
+                    <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white mb-6">
+                        Excellence in Clinical Dentistry & Modern Patient Comfort
                     </h2>
-                    <p class="text-slate-300 text-base leading-relaxed mb-8">
-                        As a lead dental practitioner at <strong class="text-white">TRIDENT DENTAL CARE</strong>, Dr. Akshay Sable blends clinical expertise with state-of-the-art modern techniques. Dedicated to pain-free, highly efficient treatment plans, Dr. Sable specializes in cosmetic restoration, implantology, and holistic oral health.
+                    <p class="text-slate-300 leading-relaxed mb-6 font-light">
+                        As a dedicated practitioner at TRIDENT DENTAL CARE, Dr. Akshay Sable combines advanced clinical precision with a gentle, patient-centered philosophy. Specializing in comprehensive dental diagnostics, restorative procedures, and aesthetic smile design, he utilizes cutting-edge modern technologies to deliver exceptional health outcomes.
+                    </p>
+                    <p class="text-slate-400 leading-relaxed mb-8 text-sm font-light">
+                        Whether addressing complex restorative needs or delivering preventative dental maintenance, Dr. Sable ensures every patient receives tailored treatment in a warm, state-of-the-art environment designed for maximum comfort.
                     </p>
 
-                    <!-- Core Competencies / Skill Progress Bars -->
+                    <!-- Core Competencies with Progress Indicators -->
                     <div class="space-y-5">
                         <div>
                             <div class="flex justify-between text-sm font-semibold mb-2">
-                                <span class="text-slate-200">Cosmetic & Smile Aesthetics</span>
-                                <span class="text-indigo-400">98%</span>
+                                <span class="text-slate-200"><i class="fa-solid fa-tooth text-cyan-400 mr-2"></i> Cosmetic Dentistry & Smile Makeovers</span>
+                                <span class="text-cyan-400">98%</span>
                             </div>
-                            <div class="w-full bg-slate-900 rounded-full h-2.5 overflow-hidden border border-slate-800">
-                                <div class="bg-gradient-to-r from-indigo-500 to-purple-500 h-2.5 rounded-full" style="width: 98%"></div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="flex justify-between text-sm font-semibold mb-2">
-                                <span class="text-slate-200">Dental Implantology & Restorative Surgery</span>
-                                <span class="text-purple-400">95%</span>
-                            </div>
-                            <div class="w-full bg-slate-900 rounded-full h-2.5 overflow-hidden border border-slate-800">
-                                <div class="bg-gradient-to-r from-purple-500 to-pink-500 h-2.5 rounded-full" style="width: 95%"></div>
+                            <div class="w-full bg-slate-900 h-2.5 rounded-full overflow-hidden border border-slate-800">
+                                <div class="bg-gradient-to-r from-cyan-500 to-indigo-500 h-full rounded-full" style="width: 98%"></div>
                             </div>
                         </div>
 
                         <div>
                             <div class="flex justify-between text-sm font-semibold mb-2">
-                                <span class="text-slate-200">Preventive & Advanced Diagnostics</span>
-                                <span class="text-pink-400">99%</span>
+                                <span class="text-slate-200"><i class="fa-solid fa-square-plus text-indigo-400 mr-2"></i> Restorative & Implant Dentistry</span>
+                                <span class="text-indigo-400">95%</span>
                             </div>
-                            <div class="w-full bg-slate-900 rounded-full h-2.5 overflow-hidden border border-slate-800">
-                                <div class="bg-gradient-to-r from-pink-500 to-indigo-500 h-2.5 rounded-full" style="width: 99%"></div>
+                            <div class="w-full bg-slate-900 h-2.5 rounded-full overflow-hidden border border-slate-800">
+                                <div class="bg-gradient-to-r from-indigo-500 to-purple-500 h-full rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-sm font-semibold mb-2">
+                                <span class="text-slate-200"><i class="fa-solid fa-shield-halved text-purple-400 mr-2"></i> Preventative & Oral Health Care</span>
+                                <span class="text-purple-400">99%</span>
+                            </div>
+                            <div class="w-full bg-slate-900 h-2.5 rounded-full overflow-hidden border border-slate-800">
+                                <div class="bg-gradient-to-r from-purple-500 to-pink-500 h-full rounded-full" style="width: 99%"></div>
                             </div>
                         </div>
                     </div>
-                </div>
 
+                </div>
             </div>
         </div>
     </section>
 
     <!-- SERVICES & SPECIALIZATION GRID -->
-    <section id="services" class="py-24 bg-slate-900/50 border-y border-slate-800/80 relative">
-        <div class="max-w-7xl mx-auto px-6">
-            
+    <section id="services" class="py-24 bg-slate-900/50 relative border-t border-slate-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <div class="inline-flex items-center space-x-2 text-indigo-400 font-semibold text-sm mb-3">
-                    <i class="fa-solid fa-notes-medical"></i>
-                    <span>CLINICAL SERVICES</span>
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-500/10 text-indigo-400 text-xs font-semibold mb-4 border border-indigo-500/20">
+                    CLINICAL SERVICES
                 </div>
-                <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-4">
-                    Comprehensive Dental Care
+                <h2 class="text-3xl sm:text-5xl font-bold tracking-tight text-white">
+                    Comprehensive Dental Solutions
                 </h2>
-                <p class="text-slate-400 text-base">
-                    Tailored dental solutions designed to preserve natural beauty and deliver lasting oral health.
+                <p class="mt-4 text-slate-400 text-base sm:text-lg">
+                    Personalized, state-of-the-art procedures designed to protect your health and enhance your natural smile.
                 </p>
             </div>
 
-            <!-- Service Cards Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
-                <!-- Service Card 1 -->
-                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl hover:border-indigo-500/60 hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl hover:shadow-indigo-500/10 group">
-                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-indigo-500 to-purple-500 flex items-center justify-center text-white text-2xl mb-6 shadow-lg group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <!-- Service 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:-translate-y-2 hover:shadow-2xl hover:border-cyan-500/60 transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-cyan-500/20 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Cosmetic Dentistry</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6 font-light">
+                            Transform your smile with porcelain veneers, professional whitening treatments, and tailored aesthetic alignment.
+                        </p>
+                        <ul class="space-y-2 text-xs text-slate-300 font-medium">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-cyan-400"></i> Veneers & Digital Smile Design</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-cyan-400"></i> Laser Tooth Bleaching</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-cyan-400"></i> Aesthetic Enamel Contouring</li>
+                        </ul>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Aesthetic Dentistry</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
-                        Transforming smiles through custom porcelain veneers, advanced teeth whitening, and alignment therapies.
-                    </p>
-                    <ul class="text-xs text-slate-300 space-y-2 font-medium">
-                        <li class="flex items-center"><i class="fa-solid fa-check text-indigo-400 mr-2"></i> Custom Porcelain Veneers</li>
-                        <li class="flex items-center"><i class="fa-solid fa-check text-indigo-400 mr-2"></i> Laser Smile Whitening</li>
-                        <li class="flex items-center"><i class="fa-solid fa-check text-indigo-400 mr-2"></i> Invisible Alignment Planning</li>
-                    </ul>
                 </div>
 
-                <!-- Service Card 2 -->
-                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl hover:border-purple-500/60 hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl hover:shadow-purple-500/10 group">
-                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-purple-500 to-pink-500 flex items-center justify-center text-white text-2xl mb-6 shadow-lg group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-tooth"></i>
+                <!-- Service 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:-translate-y-2 hover:shadow-2xl hover:border-indigo-500/60 transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-indigo-500 to-purple-600 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-indigo-500/20 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-tooth"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Implants & Crowns</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6 font-light">
+                            Permanent, natural-looking tooth replacements and durable crowns engineered for long-term comfort and function.
+                        </p>
+                        <ul class="space-y-2 text-xs text-slate-300 font-medium">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-indigo-400"></i> Single & Multi-Tooth Implants</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-indigo-400"></i> Zirconia & Ceramic Crowns</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-indigo-400"></i> Full Mouth Restoration</li>
+                        </ul>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Dental Implantology</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
-                        Permanent, natural-looking implant solutions for single or multiple missing teeth using modern surgical precision.
-                    </p>
-                    <ul class="text-xs text-slate-300 space-y-2 font-medium">
-                        <li class="flex items-center"><i class="fa-solid fa-check text-purple-400 mr-2"></i> Single & Multi-Tooth Implants</li>
-                        <li class="flex items-center"><i class="fa-solid fa-check text-purple-400 mr-2"></i> 3D Guided Implant Surgery</li>
-                        <li class="flex items-center"><i class="fa-solid fa-check text-purple-400 mr-2"></i> Bone Grafting Solutions</li>
-                    </ul>
                 </div>
 
-                <!-- Service Card 3 -->
-                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl hover:border-pink-500/60 hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl hover:shadow-pink-500/10 group">
-                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-pink-500 to-indigo-500 flex items-center justify-center text-white text-2xl mb-6 shadow-lg group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-shield-halved"></i>
+                <!-- Service 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:-translate-y-2 hover:shadow-2xl hover:border-purple-500/60 transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-purple-500 to-pink-600 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-purple-500/20 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-teeth-open"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Orthodontics & Alignment</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6 font-light">
+                            Straighten teeth efficiently with modern invisible aligners and discreet orthodontic solutions suitable for all ages.
+                        </p>
+                        <ul class="space-y-2 text-xs text-slate-300 font-medium">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-purple-400"></i> Clear Aligner Therapy</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-purple-400"></i> Bite Correction</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-purple-400"></i> Post-Treatment Retention</li>
+                        </ul>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Preventive & Restorative</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
-                        Comprehensive oral examinations, painless root canal therapy, and long-lasting restorative treatments.
-                    </p>
-                    <ul class="text-xs text-slate-300 space-y-2 font-medium">
-                        <li class="flex items-center"><i class="fa-solid fa-check text-pink-400 mr-2"></i> Digital Oral Screening</li>
-                        <li class="flex items-center"><i class="fa-solid fa-check text-pink-400 mr-2"></i> Painless Endodontics</li>
-                        <li class="flex items-center"><i class="fa-solid fa-check text-pink-400 mr-2"></i> Periodontal Maintenance</li>
-                    </ul>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:-translate-y-2 hover:shadow-2xl hover:border-cyan-500/60 transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-teal-500 to-cyan-600 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-teal-500/20 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-notes-medical"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Root Canal Therapy</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6 font-light">
+                            Advanced endodontic treatments utilizing painless techniques to preserve infected or damaged natural teeth.
+                        </p>
+                        <ul class="space-y-2 text-xs text-slate-300 font-medium">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-teal-400"></i> Pain-Free Endodontics</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-teal-400"></i> Microscope-Assisted Care</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-teal-400"></i> Structural Tooth Preservation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:-translate-y-2 hover:shadow-2xl hover:border-indigo-500/60 transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-blue-500 to-indigo-600 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-blue-500/20 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-shield-heart"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Preventative Diagnostics</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6 font-light">
+                            Thorough oral check-ups, high-definition digital X-rays, and ultrasonic hygiene procedures for lifelong dental health.
+                        </p>
+                        <ul class="space-y-2 text-xs text-slate-300 font-medium">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-indigo-400"></i> Ultrasonic Deep Scaling</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-indigo-400"></i> Low-Radiation Digital X-Rays</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-indigo-400"></i> Gum Disease Prevention</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:-translate-y-2 hover:shadow-2xl hover:border-purple-500/60 transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-pink-500 to-rose-600 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-pink-500/20 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-kit-medical"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Emergency Care</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6 font-light">
+                            Prompt relief for urgent dental trauma, toothaches, and broken restorations with dedicated immediate treatment scheduling.
+                        </p>
+                        <ul class="space-y-2 text-xs text-slate-300 font-medium">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-pink-400"></i> Same-Day Emergency Slots</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-pink-400"></i> Acute Pain Management</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-pink-400"></i> Rapid Restorative Repair</li>
+                        </ul>
+                    </div>
                 </div>
 
             </div>
@@ -262,66 +340,68 @@
     </section>
 
     <!-- FEATURED ACHIEVEMENTS / TESTIMONIALS SECTION -->
-    <section id="achievements" class="py-24 bg-slate-950 relative">
-        <div class="max-w-7xl mx-auto px-6">
-            
+    <section id="achievements" class="py-24 bg-slate-950 relative border-t border-slate-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <div class="inline-flex items-center space-x-2 text-indigo-400 font-semibold text-sm mb-3">
-                    <i class="fa-solid fa-star"></i>
-                    <span>PATIENT ENDORSEMENTS</span>
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-purple-500/10 text-purple-400 text-xs font-semibold mb-4 border border-purple-500/20">
+                    PATIENT & PARTNER ENDORSEMENTS
                 </div>
-                <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-4">
-                    Trusted by Hundreds
+                <h2 class="text-3xl sm:text-5xl font-bold tracking-tight text-white">
+                    Trusted by Patients & Industry Peers
                 </h2>
-                <p class="text-slate-400 text-base">
-                    Read genuine feedback from patients who experienced gentle care and transformative results.
+                <p class="mt-4 text-slate-400 text-base sm:text-lg">
+                    Real experiences reflecting Dr. Akshay Sable’s unwavering commitment to dental perfection.
                 </p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 
                 <!-- Testimonial 1 -->
-                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl relative">
-                    <div class="flex items-center space-x-1 text-amber-400 mb-4 text-sm">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 relative flex flex-col justify-between hover:border-slate-700 transition-all duration-300">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-base italic leading-relaxed mb-6">
+                            "Dr. Akshay Sable completely transformed my perspective on dental visits. His attention to detail during my smile redesign at TRIDENT DENTAL CARE was unbelievable. Pain-free, professional, and world-class results!"
+                        </p>
                     </div>
-                    <p class="text-slate-300 italic text-sm md:text-base leading-relaxed mb-6">
-                        "Dr. Akshay Sable is exceptionally thorough and patient. The smile designing work done at TRIDENT DENTAL CARE completely renewed my confidence. I felt virtually no discomfort throughout the process!"
-                    </p>
-                    <div class="flex items-center space-x-4">
+                    <div class="flex items-center gap-4 pt-4 border-t border-slate-800/60">
                         <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" 
-                             alt="Patient Reviewer" 
-                             class="w-12 h-12 rounded-full object-cover border-2 border-indigo-500/50">
+                             alt="Priya Sharma" 
+                             class="w-12 h-12 rounded-full object-cover border-2 border-cyan-400">
                         <div>
                             <h4 class="text-white font-bold text-sm">Priya Sharma</h4>
-                            <p class="text-slate-400 text-xs">Cosmetic Patient</p>
+                            <p class="text-xs text-slate-400">Cosmetic Patient</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Testimonial 2 -->
-                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl relative">
-                    <div class="flex items-center space-x-1 text-amber-400 mb-4 text-sm">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 relative flex flex-col justify-between hover:border-slate-700 transition-all duration-300">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-base italic leading-relaxed mb-6">
+                            "Dr. Sable is one of the most meticulous clinical practitioners I have collaborated with. His commitment to modern endodontic hygiene and advanced patient care standards at TRIDENT DENTAL CARE is exemplary."
+                        </p>
                     </div>
-                    <p class="text-slate-300 italic text-sm md:text-base leading-relaxed mb-6">
-                        "Extremely professional atmosphere and high-end equipment. Dr. Sable explained every step of my implant procedure clearly. Highly recommended for complex dental care!"
-                    </p>
-                    <div class="flex items-center space-x-4">
+                    <div class="flex items-center gap-4 pt-4 border-t border-slate-800/60">
                         <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" 
-                             alt="Patient Reviewer" 
-                             class="w-12 h-12 rounded-full object-cover border-2 border-purple-500/50">
+                             alt="Dr. Rajesh Mehta" 
+                             class="w-12 h-12 rounded-full object-cover border-2 border-indigo-400">
                         <div>
-                            <h4 class="text-white font-bold text-sm">Rajesh Patel</h4>
-                            <p class="text-slate-400 text-xs">Restorative Implant Patient</p>
+                            <h4 class="text-white font-bold text-sm">Dr. Rajesh Mehta</h4>
+                            <p class="text-xs text-slate-400">Consulting Maxillofacial Surgeon</p>
                         </div>
                     </div>
                 </div>
@@ -331,89 +411,92 @@
     </section>
 
     <!-- CONTACT & BOOKING SECTION -->
-    <section id="contact" class="py-24 bg-gradient-to-b from-slate-950 to-slate-900 relative">
-        <div class="max-w-7xl mx-auto px-6">
-            
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+    <section id="contact" class="py-24 bg-slate-900/30 relative border-t border-slate-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
                 
-                <!-- Contact Details & Info -->
-                <div>
-                    <div class="inline-flex items-center space-x-2 text-indigo-400 font-semibold text-sm mb-3">
-                        <i class="fa-solid fa-paper-plane"></i>
-                        <span>GET IN TOUCH</span>
+                <!-- Contact Info Column -->
+                <div class="lg:col-span-5">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 text-cyan-400 text-xs font-semibold mb-4 border border-cyan-500/20">
+                        APPOINTMENTS & INQUIRIES
                     </div>
-                    <h2 class="text-3xl md:text-5xl font-extrabold text-white mb-6">
-                        Book Your Consultation
+                    <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white mb-6">
+                        Schedule Your Consultation Today
                     </h2>
-                    <p class="text-slate-300 leading-relaxed mb-8">
-                        Ready to experience personalized, premium dental care? Reach out directly or fill in the form to schedule your initial consultation with Dr. Akshay Sable.
+                    <p class="text-slate-400 text-base mb-8 leading-relaxed font-light">
+                        Ready to experience modern, stress-free dental care? Reach out directly to book an appointment with Dr. Akshay Sable at TRIDENT DENTAL CARE.
                     </p>
 
                     <div class="space-y-6">
-                        <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 shrink-0">
-                                <i class="fa-solid fa-clinic-medical text-lg"></i>
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-12 h-12 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-hospital"></i>
                             </div>
                             <div>
-                                <h4 class="text-white font-semibold text-sm">Practice Location</h4>
-                                <p class="text-slate-400 text-sm mt-0.5">TRIDENT DENTAL CARE</p>
+                                <div class="text-xs font-medium text-slate-400">Practice Location</div>
+                                <div class="text-slate-200 font-semibold text-sm">TRIDENT DENTAL CARE</div>
                             </div>
                         </div>
 
-                        <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 shrink-0">
-                                <i class="fa-solid fa-envelope text-lg"></i>
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-12 h-12 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
                             </div>
                             <div>
-                                <h4 class="text-white font-semibold text-sm">Direct Inquiry</h4>
-                                <p class="text-slate-400 text-sm mt-0.5">contact@tridentdentalcare.com</p>
+                                <div class="text-xs font-medium text-slate-400">Direct Email</div>
+                                <div class="text-slate-200 font-semibold text-sm">contact@tridentdental.com</div>
                             </div>
                         </div>
 
-                        <div class="flex items-start space-x-4">
-                            <div class="w-12 h-12 rounded-xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400 shrink-0">
-                                <i class="fa-solid fa-user-check text-lg"></i>
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-12 h-12 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-calendar-check"></i>
                             </div>
                             <div>
-                                <h4 class="text-white font-semibold text-sm">Professional Network Connection</h4>
-                                <p class="text-slate-400 text-sm mt-0.5">Connected: 20 Aug 2026</p>
+                                <div class="text-xs font-medium text-slate-400">Professional Connection</div>
+                                <div class="text-slate-200 font-semibold text-sm">Verified Member (Connected 20 Aug 2026)</div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Interactive Form -->
-                <div class="bg-slate-900/80 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl shadow-2xl">
-                    <form class="space-y-5" onsubmit="event.preventDefault(); alert('Thank you! Your appointment request has been submitted.');">
-                        <div>
-                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Full Name</label>
-                            <input type="text" required placeholder="John Doe" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors">
-                        </div>
+                <!-- Form Column -->
+                <div class="lg:col-span-7">
+                    <div class="bg-slate-900/80 backdrop-blur-xl border border-slate-800 p-8 sm:p-10 rounded-2xl shadow-2xl">
+                        <h3 class="text-xl font-bold text-white mb-6">Send a Message</h3>
+                        <form onsubmit="event.preventDefault(); alert('Thank you for reaching out! Dr. Sable\'s team will contact you shortly.');" class="space-y-5">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">FULL NAME</label>
+                                    <input type="text" placeholder="John Doe" required class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">EMAIL ADDRESS</label>
+                                    <input type="email" placeholder="john@example.com" required class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                                </div>
+                            </div>
 
-                        <div>
-                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Email Address</label>
-                            <input type="email" required placeholder="john@example.com" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors">
-                        </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">SERVICE OF INTEREST</label>
+                                <select class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-300 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                                    <option>General Checkup & Consultation</option>
+                                    <option>Cosmetic Dentistry & Whitening</option>
+                                    <option>Dental Implants & Crowns</option>
+                                    <option>Orthodontics / Aligners</option>
+                                    <option>Emergency Care</option>
+                                </select>
+                            </div>
 
-                        <div>
-                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Service Required</label>
-                            <select class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-slate-300 focus:outline-none focus:border-indigo-500 transition-colors">
-                                <option>Aesthetic Dentistry Consultation</option>
-                                <option>Dental Implantology</option>
-                                <option>General Checkup & Diagnostics</option>
-                                <option>Other Specialized Services</option>
-                            </select>
-                        </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">YOUR MESSAGE</label>
+                                <textarea rows="4" placeholder="Briefly describe your request or preferred timing..." required class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm"></textarea>
+                            </div>
 
-                        <div>
-                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Message / Notes</label>
-                            <textarea rows="4" placeholder="How can Dr. Sable assist you today?" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors"></textarea>
-                        </div>
-
-                        <button type="submit" class="w-full py-4 rounded-xl text-base font-bold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:opacity-95 transition-all shadow-lg shadow-indigo-500/25">
-                            Send Message <i class="fa-solid fa-paper-plane ml-2"></i>
-                        </button>
-                    </form>
+                            <button type="submit" class="w-full py-4 rounded-xl font-semibold text-white bg-gradient-to-r from-cyan-500 via-indigo-600 to-purple-600 hover:opacity-95 shadow-xl shadow-cyan-500/20 transition-all duration-300 active:scale-[0.99]">
+                                Request Appointment <i class="fa-solid fa-paper-plane ml-2 text-xs"></i>
+                            </button>
+                        </form>
+                    </div>
                 </div>
 
             </div>
@@ -421,14 +504,27 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="py-8 bg-slate-950 border-t border-slate-800/60 text-slate-400 text-sm">
-        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
-            <p>© 2026 Dr Akshay Sable. Generated by LinkedIn Portfolio Builder.</p>
-            
-            <div class="flex space-x-6 text-lg">
-                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-brands fa-instagram"></i></a>
+    <footer class="bg-slate-950 border-t border-slate-800/80 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-500 to-purple-500 flex items-center justify-center font-bold text-white text-sm">
+                        DS
+                    </div>
+                    <span class="text-sm font-semibold text-slate-300">Dr Akshay Sable &bull; TRIDENT DENTAL CARE</span>
+                </div>
+
+                <div class="text-xs text-slate-500 text-center md:text-left">
+                    &copy; 2026 Dr Akshay Sable. Generated by LinkedIn Portfolio Builder. All rights reserved.
+                </div>
+
+                <div class="flex gap-4 text-slate-400 text-lg">
+                    <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-solid fa-globe"></i></a>
+                    <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+
             </div>
         </div>
     </footer>
