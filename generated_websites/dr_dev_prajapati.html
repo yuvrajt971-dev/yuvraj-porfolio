@@ -4,415 +4,444 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr Dev Prajapati | Chief Executive Officer - P2A Consultancy</title>
-    <!-- Tailwind CSS -->
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f3ff',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            900: '#1e1b4b',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
     <style>
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
         }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card:hover {
+            border-color: rgba(99, 102, 241, 0.4);
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -12px rgba(99, 102, 241, 0.25);
+        }
     </style>
 </head>
-<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+<body class="bg-slate-950 text-slate-100 selection:bg-indigo-500 selection:text-white relative overflow-x-hidden">
+
+    <!-- BACKGROUND GLOW ELEMENTS -->
+    <div class="fixed top-0 left-1/4 w-96 h-96 bg-indigo-600/15 rounded-full blur-3xl pointer-events-none -z-10"></div>
+    <div class="fixed bottom-1/3 right-1/4 w-96 h-96 bg-purple-600/15 rounded-full blur-3xl pointer-events-none -z-10"></div>
 
     <!-- NAVIGATION BAR -->
-    <nav class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/50">
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/50">
         <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-            <a href="#" class="flex items-center gap-3 group">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center font-extrabold text-white shadow-lg group-hover:scale-105 transition-transform duration-300">
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center font-bold text-white text-xl shadow-lg shadow-indigo-500/30 group-hover:scale-105 transition-transform duration-300">
                     DP
                 </div>
-                <div class="flex flex-col">
-                    <span class="font-bold text-lg tracking-tight text-white group-hover:text-indigo-400 transition-colors">Dr Dev Prajapati</span>
-                    <span class="text-xs text-slate-400 font-medium">CEO, P2A Consultancy</span>
+                <div>
+                    <span class="font-bold text-lg text-white block leading-tight tracking-wide">Dr Dev Prajapati</span>
+                    <span class="text-xs text-indigo-400 font-medium">CEO, P2A Consultancy</span>
                 </div>
             </a>
-            
-            <div class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-300">
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
                 <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
                 <a href="#services" class="hover:text-indigo-400 transition-colors">Services</a>
                 <a href="#achievements" class="hover:text-indigo-400 transition-colors">Achievements</a>
                 <a href="#contact" class="hover:text-indigo-400 transition-colors">Contact</a>
+            </nav>
+
+            <div class="hidden md:flex items-center">
+                <a href="#contact" class="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium rounded-xl group bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 group-hover:from-indigo-500 group-hover:to-pink-500 text-white shadow-lg shadow-indigo-500/20 hover:shadow-indigo-500/40 transition-all duration-300">
+                    <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-slate-950 rounded-[10px] group-hover:bg-opacity-0 font-semibold">
+                        Get in Touch
+                    </span>
+                </a>
             </div>
 
-            <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300">
-                <span>Get in Touch</span>
-                <i class="fa-solid font-xs fa-arrow-right"></i>
-            </a>
+            <!-- Mobile Menu Icon -->
+            <div class="md:hidden flex items-center">
+                <a href="#contact" class="px-4 py-2 bg-indigo-600 rounded-lg text-xs font-semibold text-white">Contact</a>
+            </div>
         </div>
-    </nav>
+    </header>
 
     <!-- HERO SECTION -->
-    <section class="relative min-h-screen pt-32 pb-20 flex items-center justify-center bg-gradient-to-br from-slate-950 via-indigo-950/40 to-slate-900 overflow-hidden">
-        <!-- Glow Orbs Background -->
-        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-indigo-600/15 rounded-full blur-[140px] pointer-events-none"></div>
-        <div class="absolute bottom-10 right-10 w-[400px] h-[400px] bg-pink-600/10 rounded-full blur-[120px] pointer-events-none"></div>
+    <section class="relative pt-12 pb-20 md:pt-24 md:pb-32 overflow-hidden">
+        <!-- Background Overlay Image with Gradient -->
+        <div class="absolute inset-0 z-0 opacity-20 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80');"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-slate-950/60 via-slate-950/90 to-slate-950 z-0"></div>
 
-        <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
-            
-            <!-- Glowing Circular Avatar Frame -->
-            <div class="mb-8 inline-block">
-                <div class="p-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full shadow-2xl shadow-indigo-500/30 inline-block">
-                    <img src="https://ui-avatars.com/api/?name=Dr+Dev+Prajapati&size=200&background=0D8ABC&color=fff&bold=true" 
-                         alt="Dr Dev Prajapati" 
-                         class="w-32 h-32 md:w-36 md:h-36 rounded-full border-4 border-slate-950 object-cover">
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+                <div class="flex-1 text-center md:text-left">
+                    <div class="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-slate-900/90 border border-indigo-500/30 text-indigo-300 text-xs font-semibold mb-6 shadow-inner">
+                        <span class="w-2 h-2 rounded-full bg-indigo-400 animate-pulse"></span>
+                        <span>Executive Visionary & Strategy Leader</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+                        Transforming Vision Into <br class="hidden sm:inline" />
+                        <span class="bg-clip-text text-transparent bg-gradient-to-r from-white via-indigo-200 to-indigo-400">
+                            Enterprise Growth
+                        </span>
+                    </h1>
+
+                    <p class="text-slate-300 text-lg md:text-xl max-w-2xl mb-8 leading-relaxed font-light">
+                        Steering P2A Consultancy toward high-impact business strategies, digital acceleration, and sustainable global advisory services.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 mb-12">
+                        <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:-translate-y-0.5 transition-all duration-300 text-center">
+                            Explore Expertise <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                        </a>
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-200 font-semibold border border-slate-700/80 hover:border-slate-500 transition-all duration-300 text-center">
+                            Schedule Call
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Avatar Profile Ring -->
+                <div class="flex-shrink-0 relative">
+                    <div class="relative inline-block">
+                        <div class="absolute -inset-1.5 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full blur-lg opacity-75 animate-pulse"></div>
+                        <div class="p-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full shadow-2xl relative">
+                            <img src="https://ui-avatars.com/api/?name=Dr+Dev+Prajapati&size=200&background=0D8ABC&color=fff&bold=true" 
+                                 alt="Dr Dev Prajapati" 
+                                 class="w-44 h-44 sm:w-56 sm:h-56 rounded-full object-cover border-4 border-slate-950 bg-slate-900" />
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <!-- Role Badge -->
-            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900/80 border border-indigo-500/30 text-indigo-300 text-sm font-medium mb-6 shadow-inner backdrop-blur-md">
-                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                Chief Executive Officer at P2A Consultancy
-            </div>
-
-            <!-- Headline -->
-            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-slate-100 max-w-4xl mx-auto leading-tight mb-6">
-                Transforming Vision Into High-Impact <span class="bg-clip-text text-transparent bg-gradient-to-r from-indigo-300 via-purple-300 to-pink-300">Enterprise Growth</span>
-            </h1>
-
-            <!-- Elevator Pitch -->
-            <p class="text-slate-300 text-lg md:text-xl max-w-2xl mx-auto font-normal leading-relaxed mb-10">
-                Driving strategic scale, enterprise innovation, and transformative business restructuring to empower modern organizations toward sustainable operational excellence and market leadership.
-            </p>
-
-            <!-- Dual CTAs -->
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-                <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-full font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-xl shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 flex items-center justify-center gap-2">
-                    <span>Explore Expertise</span>
-                    <i class="fa-solid fa-chevron-right text-xs"></i>
-                </a>
-                <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full font-semibold text-slate-200 bg-slate-900/80 border border-slate-800 hover:border-slate-700 hover:bg-slate-800/80 hover:text-white transition-all duration-300 flex items-center justify-center gap-2">
-                    <i class="fa-regular fa-calendar-check text-indigo-400"></i>
-                    <span>Schedule Executive Call</span>
-                </a>
-            </div>
-
-            <!-- Stat Counter Bar -->
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto p-6 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800/80 shadow-2xl">
-                <div class="p-2">
-                    <div class="text-3xl lg:text-4xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-400">12+ Years</div>
-                    <div class="text-xs uppercase tracking-wider text-slate-400 font-medium mt-1">Executive Leadership</div>
+            <!-- STAT COUNTER BAR -->
+            <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 pt-10 border-t border-slate-800/80">
+                <div class="glass-card p-6 rounded-2xl text-center">
+                    <div class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400 mb-1">10+</div>
+                    <div class="text-xs sm:text-sm text-slate-400 font-medium">Years Leadership</div>
                 </div>
-                <div class="p-2 sm:border-x border-slate-800">
-                    <div class="text-3xl lg:text-4xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400">150+</div>
-                    <div class="text-xs uppercase tracking-wider text-slate-400 font-medium mt-1">Consulting Projects</div>
+                <div class="glass-card p-6 rounded-2xl text-center">
+                    <div class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 mb-1">150+</div>
+                    <div class="text-xs sm:text-sm text-slate-400 font-medium">Projects Delivered</div>
                 </div>
-                <div class="p-2">
-                    <div class="text-3xl lg:text-4xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-indigo-400">99%</div>
-                    <div class="text-xs uppercase tracking-wider text-slate-400 font-medium mt-1">Client Satisfaction</div>
+                <div class="glass-card p-6 rounded-2xl text-center">
+                    <div class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-pink-400 mb-1">99%</div>
+                    <div class="text-xs sm:text-sm text-slate-400 font-medium">Client Satisfaction</div>
+                </div>
+                <div class="glass-card p-6 rounded-2xl text-center">
+                    <div class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-indigo-400 mb-1">50+</div>
+                    <div class="text-xs sm:text-sm text-slate-400 font-medium">Global Partners</div>
                 </div>
             </div>
-
         </div>
     </section>
 
     <!-- ABOUT & EXPERTISE SECTION -->
-    <section id="about" class="py-24 bg-slate-950 relative">
+    <section id="about" class="py-20 relative bg-slate-950/60">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-                
-                <!-- Modern Workspace Image -->
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-indigo-400 mb-2">Executive Leadership</h2>
+                <p class="text-3xl sm:text-4xl font-bold text-white">Driving Organizational Excellence at P2A Consultancy</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Image Side -->
                 <div class="relative group">
-                    <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-pink-500 rounded-3xl blur opacity-30 group-hover:opacity-60 transition duration-500"></div>
-                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900">
-                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" 
-                             alt="Modern Executive Office" 
-                             class="w-full h-[450px] object-cover object-center group-hover:scale-105 transition duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
-                        <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-slate-900/80 backdrop-blur-md border border-slate-800">
-                            <div class="text-sm font-semibold text-indigo-300">P2A Consultancy Leadership</div>
-                            <div class="text-xs text-slate-400">Guiding global brands through complex strategic evolutions.</div>
+                    <div class="absolute -inset-2 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-500"></div>
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-800">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Executive Leadership Workspace" class="w-full h-[420px] object-cover group-hover:scale-105 transition-transform duration-500" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 glass-card p-4 rounded-xl border border-slate-700/50">
+                            <p class="text-sm text-indigo-300 font-semibold">Chief Executive Officer</p>
+                            <p class="text-xs text-slate-300">P2A Consultancy • Executive Strategic Director</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Strategic Career Narrative -->
-                <div>
-                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 text-xs font-semibold uppercase tracking-wider mb-4">
-                        Executive Overview
-                    </div>
-                    <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">
-                        Pioneering Business Transformation & Strategic Innovation
-                    </h2>
-                    <p class="text-slate-300 leading-relaxed mb-6">
-                        As the Chief Executive Officer at P2A Consultancy, Dr Dev Prajapati leads corporate growth strategies, cross-border restructuring, and organizational optimization. With an analytical mindset and a vision for future-proof growth, Dr Prajapati transforms corporate landscapes by bridging innovation with practical execution.
+                <!-- Content Side -->
+                <div class="space-y-6">
+                    <h3 class="text-2xl font-bold text-white">Empowering Enterprises Through Strategic Innovation</h3>
+                    <p class="text-slate-300 leading-relaxed font-light">
+                        As Chief Executive Officer at P2A Consultancy, Dr Dev Prajapati spearheads corporate transformation, growth initiatives, and high-level strategy formulation. With a relentless focus on sustainable value creation, Dr Prajapati bridges corporate vision with actionable operational blueprints.
                     </p>
 
-                    <!-- Core Competencies Progress Bars -->
-                    <div class="space-y-5">
+                    <!-- Skill Badges & Progress Bars -->
+                    <div class="space-y-4 pt-4">
                         <div>
-                            <div class="flex justify-between text-sm font-semibold mb-2">
-                                <span class="text-slate-200">Corporate Strategy & Governance</span>
+                            <div class="flex justify-between text-sm font-medium mb-1">
+                                <span class="text-slate-200">Strategic Leadership & Advisory</span>
                                 <span class="text-indigo-400">98%</span>
                             </div>
-                            <div class="w-full bg-slate-800 rounded-full h-2.5 overflow-hidden">
+                            <div class="w-full bg-slate-800 rounded-full h-2.5">
                                 <div class="bg-gradient-to-r from-indigo-500 to-purple-500 h-2.5 rounded-full" style="width: 98%"></div>
                             </div>
                         </div>
 
                         <div>
-                            <div class="flex justify-between text-sm font-semibold mb-2">
-                                <span class="text-slate-200">Business Transformation & Advisory</span>
+                            <div class="flex justify-between text-sm font-medium mb-1">
+                                <span class="text-slate-200">Enterprise Growth & Scaling</span>
                                 <span class="text-purple-400">95%</span>
                             </div>
-                            <div class="w-full bg-slate-800 rounded-full h-2.5 overflow-hidden">
+                            <div class="w-full bg-slate-800 rounded-full h-2.5">
                                 <div class="bg-gradient-to-r from-purple-500 to-pink-500 h-2.5 rounded-full" style="width: 95%"></div>
                             </div>
                         </div>
 
                         <div>
-                            <div class="flex justify-between text-sm font-semibold mb-2">
-                                <span class="text-slate-200">Strategic Advisory & Restructuring</span>
+                            <div class="flex justify-between text-sm font-medium mb-1">
+                                <span class="text-slate-200">Corporate Governance & Transformation</span>
                                 <span class="text-pink-400">92%</span>
                             </div>
-                            <div class="w-full bg-slate-800 rounded-full h-2.5 overflow-hidden">
+                            <div class="w-full bg-slate-800 rounded-full h-2.5">
                                 <div class="bg-gradient-to-r from-pink-500 to-indigo-500 h-2.5 rounded-full" style="width: 92%"></div>
                             </div>
                         </div>
                     </div>
 
+                    <div class="flex flex-wrap gap-2 pt-4">
+                        <span class="px-3 py-1 rounded-full text-xs font-semibold bg-slate-900 border border-slate-700 text-indigo-300">Executive Coaching</span>
+                        <span class="px-3 py-1 rounded-full text-xs font-semibold bg-slate-900 border border-slate-700 text-purple-300">Business Management</span>
+                        <span class="px-3 py-1 rounded-full text-xs font-semibold bg-slate-900 border border-slate-700 text-pink-300">Operational Strategy</span>
+                        <span class="px-3 py-1 rounded-full text-xs font-semibold bg-slate-900 border border-slate-700 text-indigo-300">M&A Consulting</span>
+                    </div>
                 </div>
-
             </div>
         </div>
     </section>
 
     <!-- SERVICES & SPECIALIZATION GRID -->
-    <section id="services" class="py-24 bg-slate-900/40 relative border-y border-slate-800/60">
+    <section id="services" class="py-20 relative">
         <div class="max-w-7xl mx-auto px-6">
-            
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-400 text-xs font-semibold uppercase tracking-wider mb-4">
-                    Specializations
-                </div>
-                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">Executive Consultancy Services</h2>
-                <p class="text-slate-400 text-base sm:text-lg">Delivering tailored advisory frameworks and transformative leadership tailored for industry frontrunners.</p>
+                <h2 class="text-xs font-bold uppercase tracking-widest text-indigo-400 mb-2">Core Offerings</h2>
+                <p class="text-3xl sm:text-4xl font-bold text-white">Strategic Executive Services</p>
             </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
-                <!-- Service Card 1 -->
-                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl hover:-translate-y-2 hover:shadow-2xl hover:shadow-indigo-500/10 hover:border-indigo-500/60 transition-all duration-300 group">
-                    <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-indigo-500/30 group-hover:scale-110 transition-transform">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="glass-card p-8 rounded-2xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 hover:border-indigo-500/60 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-indigo-500/20 group-hover:scale-110 transition-transform">
                         <i class="fa-solid fa-chart-line"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-indigo-300 transition-colors">Executive Strategy & Scale</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Designing roadmap frameworks that align organizational leadership with long-term profitability and sustainable scale.</p>
-                    <ul class="space-y-2 text-xs text-slate-300 font-medium">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-indigo-400"></i> Corporate Growth Planning</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-indigo-400"></i> Market Expansion Advisory</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-indigo-400"></i> Performance Governance</li>
+                    <h3 class="text-xl font-bold text-white mb-3">Corporate Strategy & Growth</h3>
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                        End-to-end organizational roadmap formulation designed to scale business models, optimize efficiency, and capture strategic market share.
+                    </p>
+                    <ul class="space-y-2 text-xs text-slate-300 border-t border-slate-800/80 pt-4">
+                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-indigo-400 mr-2"></i> Vision Alignment & Roadmap</li>
+                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-indigo-400 mr-2"></i> Revenue & Scalability Models</li>
+                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-indigo-400 mr-2"></i> Market Expansion Advisory</li>
                     </ul>
                 </div>
 
-                <!-- Service Card 2 -->
-                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-500/10 hover:border-indigo-500/60 transition-all duration-300 group">
-                    <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-purple-500/30 group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-lightbulb"></i>
+                <!-- Card 2 -->
+                <div class="glass-card p-8 rounded-2xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 hover:border-indigo-500/60 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-purple-500/20 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-diagram-project"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-purple-300 transition-colors">Business Transformation</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Modernizing legacy business models through modern digital integration and streamlined operational workflows.</p>
-                    <ul class="space-y-2 text-xs text-slate-300 font-medium">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-purple-400"></i> Operational Optimization</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-purple-400"></i> Modern Technology Integration</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-purple-400"></i> Change Leadership</li>
+                    <h3 class="text-xl font-bold text-white mb-3">Digital & Strategic Transformation</h3>
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                        Guiding traditional legacy structures into agile, tech-driven digital platforms that ensure future-proof competitiveness.
+                    </p>
+                    <ul class="space-y-2 text-xs text-slate-300 border-t border-slate-800/80 pt-4">
+                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-purple-400 mr-2"></i> Tech Stack Optimization</li>
+                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-purple-400 mr-2"></i> Process Automation Frameworks</li>
+                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-purple-400 mr-2"></i> Innovation Management</li>
                     </ul>
                 </div>
 
-                <!-- Service Card 3 -->
-                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl hover:-translate-y-2 hover:shadow-2xl hover:shadow-pink-500/10 hover:border-indigo-500/60 transition-all duration-300 group md:col-span-2 lg:col-span-1">
-                    <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-pink-500 to-indigo-600 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-pink-500/30 group-hover:scale-110 transition-transform">
+                <!-- Card 3 -->
+                <div class="glass-card p-8 rounded-2xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 hover:border-indigo-500/60 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-pink-500 to-indigo-600 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-pink-500/20 group-hover:scale-110 transition-transform">
                         <i class="fa-solid fa-handshake"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-pink-300 transition-colors">Strategic Advisory</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Providing C-suite executive counsel on high-stakes business decisions, risk management, and organizational culture.</p>
-                    <ul class="space-y-2 text-xs text-slate-300 font-medium">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-pink-400"></i> Board-Level Consulting</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-pink-400"></i> Strategic Partnership Building</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-pink-400"></i> Enterprise Risk Control</li>
+                    <h3 class="text-xl font-bold text-white mb-3">Executive Advisory & Governance</h3>
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                        Providing top-tier guidance for C-suite leaders, board members, and key stakeholders on governance, compliance, and crisis handling.
+                    </p>
+                    <ul class="space-y-2 text-xs text-slate-300 border-t border-slate-800/80 pt-4">
+                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-pink-400 mr-2"></i> Board & Stakeholder Relations</li>
+                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-pink-400 mr-2"></i> Mergers & Acquisitions Advisory</li>
+                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-pink-400 mr-2"></i> Leadership Development</li>
                     </ul>
                 </div>
-
             </div>
         </div>
     </section>
 
     <!-- FEATURED ACHIEVEMENTS / TESTIMONIALS SECTION -->
-    <section id="achievements" class="py-24 bg-slate-950 relative">
+    <section id="achievements" class="py-20 relative bg-slate-950/60">
         <div class="max-w-7xl mx-auto px-6">
-            
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pink-500/10 border border-pink-500/30 text-pink-400 text-xs font-semibold uppercase tracking-wider mb-4">
-                    Endorsements
-                </div>
-                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">Industry Endorsements</h2>
-                <p class="text-slate-400 text-base sm:text-lg">What senior stakeholders and board members say about working with Dr Dev Prajapati.</p>
+                <h2 class="text-xs font-bold uppercase tracking-widest text-indigo-400 mb-2">Client Endorsements</h2>
+                <p class="text-3xl sm:text-4xl font-bold text-white">Partner & Client Testimonials</p>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                
-                <!-- Endorsement Card 1 -->
-                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl relative">
-                    <div class="flex items-center gap-1 text-amber-400 mb-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="glass-card p-8 rounded-2xl relative">
+                    <div class="flex text-amber-400 mb-4 text-sm">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <p class="text-slate-300 italic text-sm leading-relaxed mb-6">
-                        "Dr Prajapati’s leadership at P2A Consultancy completely revolutionized our strategic growth vector. His ability to distill complex corporate challenges into actionable high-yield frameworks is unparalleled."
+                    <p class="text-slate-300 italic mb-6 leading-relaxed">
+                        "Dr Dev Prajapati's leadership and guidance at P2A Consultancy completely restructured our long-term strategy. His insight into market dynamics saved us months of iteration and propelled our profitability."
                     </p>
-                    <div class="flex items-center gap-4">
-                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" 
-                             alt="Elena Rostova" 
-                             class="w-12 h-12 rounded-full object-cover border-2 border-indigo-500">
+                    <div class="flex items-center space-x-4">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Sarah Jenkins" class="w-12 h-12 rounded-full object-cover border border-indigo-500/50" />
                         <div>
-                            <h4 class="text-white font-bold text-sm">Elena Rostova</h4>
-                            <p class="text-slate-400 text-xs">Managing Director, Global Ventures</p>
+                            <h4 class="font-bold text-white text-sm">Sarah Jenkins</h4>
+                            <p class="text-xs text-indigo-400">VP of Operations, Global Tech Partners</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Endorsement Card 2 -->
-                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl relative">
-                    <div class="flex items-center gap-1 text-amber-400 mb-4">
+                <!-- Testimonial 2 -->
+                <div class="glass-card p-8 rounded-2xl relative">
+                    <div class="flex text-amber-400 mb-4 text-sm">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                     </div>
-                    <p class="text-slate-300 italic text-sm leading-relaxed mb-6">
-                        "Working alongside Dev was a masterclass in strategic precision. He led our cross-border consulting mandate with absolute clarity, efficiency, and inspiring executive presence."
+                    <p class="text-slate-300 italic mb-6 leading-relaxed">
+                        "Working alongside Dr Prajapati was a transformative experience. His strategic clarity as CEO is unparalleled, enabling seamless enterprise integration and exceptional market presence."
                     </p>
-                    <div class="flex items-center gap-4">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" 
-                             alt="Marcus Vance" 
-                             class="w-12 h-12 rounded-full object-cover border-2 border-purple-500">
+                    <div class="flex items-center space-x-4">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Michael Vance" class="w-12 h-12 rounded-full object-cover border border-indigo-500/50" />
                         <div>
-                            <h4 class="text-white font-bold text-sm">Marcus Vance</h4>
-                            <p class="text-slate-400 text-xs">VP of Operations, Apex Capital</p>
+                            <h4 class="font-bold text-white text-sm">Michael Vance</h4>
+                            <p class="text-xs text-indigo-400">Managing Director, Apex Capital Advisory</p>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
     <!-- CONTACT & BOOKING SECTION -->
-    <section id="contact" class="py-24 bg-slate-900/40 relative border-t border-slate-800/60">
+    <section id="contact" class="py-20 relative">
         <div class="max-w-7xl mx-auto px-6">
-            
-            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16">
-                
-                <!-- Direct Contact Details -->
-                <div>
-                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 text-xs font-semibold uppercase tracking-wider mb-4">
-                        Connect Directly
-                    </div>
-                    <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">Initiate Executive Dialogue</h2>
-                    <p class="text-slate-400 text-base leading-relaxed mb-8">
-                        Interested in partnering with P2A Consultancy or inviting Dr Dev Prajapati for executive keynotes and high-level advisory engagements? Get in touch today.
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div class="space-y-6">
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-indigo-400">Get in Touch</h2>
+                    <h3 class="text-3xl sm:text-4xl font-bold text-white">Let’s Discuss Your Next Strategic Initiative</h3>
+                    <p class="text-slate-400 leading-relaxed font-light">
+                        Dr Dev Prajapati is available for executive consultations, board advisories, strategic partnerships, and keynote engagements.
                     </p>
 
-                    <div class="space-y-6">
-                        <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-indigo-400 shrink-0">
-                                <i class="fa-solid fa-envelope text-lg"></i>
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-indigo-400">
+                                <i class="fa-solid fa-building text-xl"></i>
                             </div>
                             <div>
-                                <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Email Channel</div>
-                                <a href="mailto:dev.prajapati@p2aconsultancy.com" class="text-white font-medium hover:text-indigo-400 transition-colors">dev.prajapati@p2aconsultancy.com</a>
+                                <p class="text-xs text-slate-400">Organization</p>
+                                <p class="font-semibold text-white">P2A Consultancy</p>
                             </div>
                         </div>
 
-                        <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-purple-400 shrink-0">
-                                <i class="fa-solid fa-building text-lg"></i>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-purple-400">
+                                <i class="fa-solid fa-envelope text-xl"></i>
                             </div>
                             <div>
-                                <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Company Office</div>
-                                <div class="text-white font-medium">P2A Consultancy Headquarters</div>
+                                <p class="text-xs text-slate-400">Executive Office Email</p>
+                                <p class="font-semibold text-white">p2a.consultancy@executive-desk.com</p>
                             </div>
                         </div>
 
-                        <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-pink-400 shrink-0">
-                                <i class="fa-solid fa-handshake-angle text-lg"></i>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-pink-400">
+                                <i class="fa-solid fa-calendar-check text-xl"></i>
                             </div>
                             <div>
-                                <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Network Connection</div>
-                                <div class="text-slate-300 font-medium text-sm">Connected since 19 Aug 2026</div>
+                                <p class="text-xs text-slate-400">Network Connection Date</p>
+                                <p class="font-semibold text-white">19 Aug 2026</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Modern Form Layout -->
-                <div class="bg-slate-900/80 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl shadow-2xl">
-                    <form onsubmit="event.preventDefault(); alert('Thank you for reaching out, Dr Prajapati\'s office will respond shortly.');" class="space-y-5">
-                        <div>
-                            <label class="block text-xs font-semibold uppercase text-slate-400 mb-2">Full Name</label>
-                            <input type="text" required placeholder="John Doe" 
-                                   class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all text-sm">
-                        </div>
+                <!-- Contact Form -->
+                <div class="glass-card p-8 rounded-2xl border border-slate-800">
+                    <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Full Name</label>
+                                <input type="text" required placeholder="John Doe" class="w-full px-4 py-3 bg-slate-900/80 border border-slate-800 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors" />
+                            </div>
 
-                        <div>
-                            <label class="block text-xs font-semibold uppercase text-slate-400 mb-2">Business Email</label>
-                            <input type="email" required placeholder="john@company.com" 
-                                   class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all text-sm">
-                        </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Email Address</label>
+                                <input type="email" required placeholder="john@company.com" class="w-full px-4 py-3 bg-slate-900/80 border border-slate-800 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors" />
+                            </div>
 
-                        <div>
-                            <label class="block text-xs font-semibold uppercase text-slate-400 mb-2">Subject</label>
-                            <input type="text" required placeholder="Strategic Advisory Inquiry" 
-                                   class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all text-sm">
-                        </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Subject</label>
+                                <input type="text" required placeholder="Executive Advisory Consultation" class="w-full px-4 py-3 bg-slate-900/80 border border-slate-800 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors" />
+                            </div>
 
-                        <div>
-                            <label class="block text-xs font-semibold uppercase text-slate-400 mb-2">Message</label>
-                            <textarea rows="4" required placeholder="Detail your project or consultation request..." 
-                                      class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all text-sm resize-none"></textarea>
-                        </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Message</label>
+                                <textarea rows="4" required placeholder="Describe your business objective or inquiry..." class="w-full px-4 py-3 bg-slate-900/80 border border-slate-800 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors"></textarea>
+                            </div>
 
-                        <button type="submit" 
-                                class="w-full py-4 rounded-xl font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.01] active:scale-[0.99] transition-all duration-300">
-                            Send Message
-                        </button>
+                            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 transition-all duration-300">
+                                Send Message <i class="fa-solid fa-paper-plane ml-2"></i>
+                            </button>
+                        </div>
                     </form>
                 </div>
-
             </div>
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="py-12 bg-slate-950 border-t border-slate-900 text-sm text-slate-500">
+    <footer class="py-10 border-t border-slate-800/80 bg-slate-950">
         <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
-            <div class="flex items-center gap-3">
-                <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-indigo-500 to-pink-500 flex items-center justify-center font-bold text-white text-xs">
-                    DP
-                </div>
-                <span class="text-slate-400 font-medium">Dr Dev Prajapati</span>
+            <div>
+                <p class="text-sm text-slate-400">
+                    © 2026 Dr Dev Prajapati. Generated by LinkedIn Portfolio Builder.
+                </p>
             </div>
 
-            <div class="text-center text-xs">
-                © 2026 Dr Dev Prajapati. Generated by LinkedIn Portfolio Builder.
-            </div>
-
-            <div class="flex items-center gap-4">
-                <a href="#" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-indigo-400 hover:border-indigo-500/50 transition-all">
+            <div class="flex items-center space-x-4">
+                <a href="#" class="w-9 h-9 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-indigo-400 hover:border-indigo-500/50 transition-all">
                     <i class="fa-brands fa-linkedin-in text-sm"></i>
                 </a>
-                <a href="#" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-indigo-400 hover:border-indigo-500/50 transition-all">
-                    <i class="fa-brands fa-x-twitter text-sm"></i>
+                <a href="#" class="w-9 h-9 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-indigo-400 hover:border-indigo-500/50 transition-all">
+                    <i class="fa-brands fa-twitter text-sm"></i>
                 </a>
-                <a href="#" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-indigo-400 hover:border-indigo-500/50 transition-all">
+                <a href="#" class="w-9 h-9 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-indigo-400 hover:border-indigo-500/50 transition-all">
                     <i class="fa-solid fa-globe text-sm"></i>
                 </a>
             </div>
