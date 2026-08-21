@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Shreya Dubey | Premier Dentist & Dental Specialist</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        teal: {
+                            400: '#2dd4bf',
+                            500: '#14b8a6',
+                            600: '#0d9488',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(51, 65, 85, 0.5);
+        }
+        .glass-card:hover {
+            border-color: rgba(99, 102, 241, 0.5);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #ffffff 0%, #c7d2fe 50%, #818cf8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .text-gradient-cyan {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 p-0.5 shadow-lg shadow-indigo-500/20 group-hover:scale-105 transition-transform">
+                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+                        <i class="fa-solid font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-pink-400 text-lg">SD</i>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-lg font-bold tracking-tight text-white group-hover:text-indigo-300 transition-colors">Dr. Shreya Dubey</span>
+                    <span class="text-xs text-indigo-400 font-medium">Ramkrishn Dental Clinic</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-white transition-colors">About</a>
+                <a href="#services" class="hover:text-white transition-colors">Specializations</a>
+                <a href="#achievements" class="hover:text-white transition-colors">Testimonials</a>
+                <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+            </div>
+
+            <!-- Primary CTA -->
+            <div class="hidden md:flex items-center gap-4">
+                <a href="#contact" class="relative inline-flex items-center justify-center px-6 py-2.5 text-sm font-semibold text-white rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.02] active:scale-95 transition-all duration-200">
+                    Get in Touch
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="md:hidden text-slate-300 hover:text-white text-2xl focus:outline-none" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900/95 border-b border-slate-800 px-6 py-4 flex flex-col gap-4">
+            <a href="#about" class="text-slate-300 hover:text-white py-1" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About</a>
+            <a href="#services" class="text-slate-300 hover:text-white py-1" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Specializations</a>
+            <a href="#achievements" class="text-slate-300 hover:text-white py-1" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Testimonials</a>
+            <a href="#contact" class="text-slate-300 hover:text-white py-1" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contact</a>
+            <a href="#contact" class="text-center py-2.5 text-sm font-semibold text-white rounded-full bg-gradient-to-r from-indigo-500 to-pink-500" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Get in Touch</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="relative pt-36 pb-20 md:pt-44 md:pb-32 overflow-hidden bg-gradient-to-br from-slate-950 via-indigo-950/40 to-slate-900">
+        <!-- Glowing Ambient Lights -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-indigo-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute top-1/3 right-10 w-[300px] h-[300px] bg-pink-500/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="flex flex-col items-center text-center max-w-4xl mx-auto">
+                
+                <!-- Circular Avatar Ring -->
+                <div class="mb-8 relative group">
+                    <div class="p-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full shadow-2xl shadow-indigo-500/30 inline-block transform group-hover:scale-105 transition-transform duration-300">
+                        <img src="https://ui-avatars.com/api/?name=Dr.+Shreya+Dubey&size=200&background=0D8ABC&color=fff&bold=true" alt="Dr. Shreya Dubey" class="w-28 h-28 md:w-36 md:h-36 rounded-full object-cover border-4 border-slate-950">
+                    </div>
+                    <div class="absolute bottom-1 right-1 bg-emerald-500 border-2 border-slate-950 w-5 h-5 rounded-full" title="Available for Consultation"></div>
+                </div>
+
+                <!-- Role Badge -->
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border-indigo-500/30 mb-6 text-xs md:text-sm font-medium text-indigo-300">
+                    <i class="fa-solid fa-tooth text-indigo-400"></i>
+                    <span>Dentist at Ramkrishn Dental Clinic</span>
+                </div>
+
+                <!-- Main Headline -->
+                <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-slate-100 mb-6 leading-tight">
+                    Crafting Healthy &amp; <br class="hidden sm:inline"/>
+                    <span class="text-gradient">Radiant Modern Smiles</span>
+                </h1>
+
+                <!-- Elevator Pitch -->
+                <p class="text-slate-300 text-lg md:text-xl font-normal max-w-2xl mb-10 leading-relaxed">
+                    Transforming oral health and confidence through precision dental diagnostics, pain-free advanced treatments, and customized cosmetic smile makeovers.
+                </p>
+
+                <!-- Dual CTAs -->
+                <div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto mb-16">
+                    <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold text-base shadow-xl shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-105 active:scale-95 transition-all text-center">
+                        Explore Expertise <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                    </a>
+                    <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full glass-card hover:bg-slate-800/80 text-white font-semibold text-base hover:border-indigo-400/50 transition-all text-center">
+                        Schedule Call <i class="fa-regular fa-calendar-check ml-2 text-sm text-indigo-400"></i>
+                    </a>
+                </div>
+
+                <!-- Stat Counter Bar -->
+                <div class="w-full grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8 border-t border-slate-800/80">
+                    <div class="glass-card p-6 rounded-2xl text-center">
+                        <div class="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400 mb-1">10+ Years</div>
+                        <div class="text-xs md:text-sm text-slate-400 uppercase tracking-wider font-semibold">Clinical Practice</div>
+                    </div>
+                    <div class="glass-card p-6 rounded-2xl text-center">
+                        <div class="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 mb-1">5,000+</div>
+                        <div class="text-xs md:text-sm text-slate-400 uppercase tracking-wider font-semibold">Smiles Restored</div>
+                    </div>
+                    <div class="glass-card p-6 rounded-2xl text-center">
+                        <div class="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-rose-400 mb-1">99.8%</div>
+                        <div class="text-xs md:text-sm text-slate-400 uppercase tracking-wider font-semibold">Patient Satisfaction</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT & EXPERTISE SECTION -->
+    <section id="about" class="py-24 relative bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                
+                <!-- Visual Workspace Image -->
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-pink-500 rounded-3xl blur opacity-30 group-hover:opacity-60 transition duration-500"></div>
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-800">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Executive Workspace" class="w-full h-[480px] object-cover object-center transform group-hover:scale-105 transition duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-6 glass-card rounded-xl">
+                            <p class="text-sm font-semibold text-indigo-300">Ramkrishn Dental Clinic</p>
+                            <p class="text-xs text-slate-400 mt-1">Equipped with state-of-the-art diagnostic digital imaging &amp; gentle patient care standards.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Career Narrative & Competencies -->
+                <div class="flex flex-col">
+                    <div class="inline-flex items-center gap-2 text-indigo-400 text-xs font-bold uppercase tracking-wider mb-3">
+                        <i class="fa-solid fa-user-doctor"></i> About Dr. Shreya Dubey
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6 leading-tight">
+                        Dedicated to Gentle, High-Precision &amp; Patient-Centric Dentistry
+                    </h2>
+                    <p class="text-slate-300 text-base leading-relaxed mb-6">
+                        Dr. Shreya Dubey is an accomplished dental practitioner at Ramkrishn Dental Clinic, renowned for combining advanced restorative techniques with aesthetic artistry. With an unwavering commitment to patient comfort, Dr. Dubey specializes in preventative care, complex root canal therapies, full-mouth rehabilitations, and aesthetic smile enhancements.
+                    </p>
+
+                    <!-- Skill Progress / Competencies Bar -->
+                    <div class="space-y-5">
+                        <!-- Skill 1 -->
+                        <div>
+                            <div class="flex justify-between text-sm font-semibold mb-2">
+                                <span class="text-slate-200">Cosmetic Dentistry &amp; Veneers</span>
+                                <span class="text-indigo-400">98%</span>
+                            </div>
+                            <div class="w-full h-2.5 bg-slate-800 rounded-full overflow-hidden">
+                                <div class="h-full bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full" style="width: 98%"></div>
+                            </div>
+                        </div>
+
+                        <!-- Skill 2 -->
+                        <div>
+                            <div class="flex justify-between text-sm font-semibold mb-2">
+                                <span class="text-slate-200">Endodontics (Pain-Free Root Canals)</span>
+                                <span class="text-purple-400">95%</span>
+                            </div>
+                            <div class="w-full h-2.5 bg-slate-800 rounded-full overflow-hidden">
+                                <div class="h-full bg-gradient-to-r from-purple-500 to-pink-500 rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+
+                        <!-- Skill 3 -->
+                        <div>
+                            <div class="flex justify-between text-sm font-semibold mb-2">
+                                <span class="text-slate-200">Restorative &amp; Prosthodontic Care</span>
+                                <span class="text-pink-400">96%</span>
+                            </div>
+                            <div class="w-full h-2.5 bg-slate-800 rounded-full overflow-hidden">
+                                <div class="h-full bg-gradient-to-r from-pink-500 to-rose-500 rounded-full" style="width: 96%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Core Attributes Badges -->
+                    <div class="flex flex-wrap gap-2.5 mt-8">
+                        <span class="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">Digital Smile Design</span>
+                        <span class="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-purple-500/10 text-purple-300 border border-purple-500/20">Laser Dentistry</span>
+                        <span class="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-pink-500/10 text-pink-300 border border-pink-500/20">Teeth Whitening</span>
+                        <span class="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-slate-800 text-slate-300 border border-slate-700">Preventive Oral Health</span>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES & SPECIALIZATION GRID -->
+    <section id="services" class="py-24 relative bg-slate-900/50 border-y border-slate-800/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-indigo-400 text-xs font-bold uppercase tracking-wider">Clinical Specializations</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Comprehensive Dental Care</h2>
+                <p class="text-slate-400 text-base mt-3">Tailored treatments designed to restore functionality, elevate aesthetics, and preserve your natural smile.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service Card 1 -->
+                <div class="glass-card p-8 rounded-2xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 hover:border-indigo-500/60 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-indigo-500 to-purple-500 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-indigo-500/30 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Cosmetic Smile Makeover</h3>
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                        Custom porcelain veneers, bonding, and laser whitening procedures that align and brighten your smile with natural aesthetic brilliance.
+                    </p>
+                    <ul class="space-y-2 text-xs font-medium text-slate-300 border-t border-slate-800/80 pt-4">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-indigo-400"></i> Custom Porcelain Veneers</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-indigo-400"></i> In-Office Teeth Whitening</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-indigo-400"></i> Composite Tooth Reshaping</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="glass-card p-8 rounded-2xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 hover:border-indigo-500/60 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-purple-500 to-pink-500 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-purple-500/30 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Pain-Free Endodontics</h3>
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                        State-of-the-art root canal therapy performed using advanced micro-endodontic tools to eliminate infection while preserving your natural tooth structure.
+                    </p>
+                    <ul class="space-y-2 text-xs font-medium text-slate-300 border-t border-slate-800/80 pt-4">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-purple-400"></i> Single-Visit Root Canals</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-purple-400"></i> Microscopic Precision</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-purple-400"></i> Zero Pain Management</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="glass-card p-8 rounded-2xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 hover:border-indigo-500/60 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-pink-500 to-rose-500 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-pink-500/30 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Preventive &amp; Restorative</h3>
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                        Proactive oral screenings, ultrasonic cleanings, high-grade ceramic crowns, and restorative treatments designed to ensure long-term dental vitality.
+                    </p>
+                    <ul class="space-y-2 text-xs font-medium text-slate-300 border-t border-slate-800/80 pt-4">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-pink-400"></i> Zirconia &amp; Ceramic Crowns</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-pink-400"></i> Ultrasonic Scaling</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-pink-400"></i> Comprehensive Oral Audits</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED ACHIEVEMENTS / TESTIMONIALS SECTION -->
+    <section id="achievements" class="py-24 relative bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-indigo-400 text-xs font-bold uppercase tracking-wider">Patient &amp; Partner Endorsements</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Trusted by Patients &amp; Peers</h2>
+                <p class="text-slate-400 text-base mt-3">Read what patients and dental colleagues say about Dr. Shreya Dubey's precision and care.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="glass-card p-8 rounded-2xl relative">
+                    <div class="flex items-center gap-1 text-amber-400 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 italic text-base leading-relaxed mb-6">
+                        "Dr. Shreya Dubey completely changed my perspective on dental treatments. Her gentle technique during my root canal treatment made it entirely painless. The outcome of my cosmetic smile makeover exceeded all my expectations!"
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Ananya Sharma" class="w-12 h-12 rounded-full object-cover border-2 border-indigo-500">
+                        <div>
+                            <h4 class="text-white font-bold text-sm">Ananya Sharma</h4>
+                            <p class="text-slate-400 text-xs">Patient, Cosmetic Makeover</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="glass-card p-8 rounded-2xl relative">
+                    <div class="flex items-center gap-1 text-amber-400 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 italic text-base leading-relaxed mb-6">
+                        "Dr. Dubey’s clinical expertise at Ramkrishn Dental Clinic is top-notch. Her meticulous attention to detail and commitment to modern digital dentistry make her one of the finest dental specialists in the region."
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Dr. Rajesh Verma" class="w-12 h-12 rounded-full object-cover border-2 border-indigo-500">
+                        <div>
+                            <h4 class="text-white font-bold text-sm">Dr. Rajesh Verma</h4>
+                            <p class="text-slate-400 text-xs">Senior Oral Surgeon Partner</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT & BOOKING SECTION -->
+    <section id="contact" class="py-24 relative bg-slate-900/60 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+                
+                <!-- Contact Details -->
+                <div>
+                    <span class="text-indigo-400 text-xs font-bold uppercase tracking-wider">Get in Touch</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2 mb-6">Schedule Your Dental Consultation Today</h2>
+                    <p class="text-slate-300 text-base leading-relaxed mb-8">
+                        Ready for a healthiest, brighter smile? Contact Dr. Shreya Dubey at Ramkrishn Dental Clinic to schedule a consultation or clinical evaluation.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 shrink-0">
+                                <i class="fa-solid fa-envelope text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-slate-200">Email Direct</h4>
+                                <a href="mailto:shreyadubey3601@gmail.com" class="text-indigo-400 hover:text-indigo-300 text-base font-medium transition-colors">shreyadubey3601@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 shrink-0">
+                                <i class="fa-solid fa-clinic-medical text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-slate-200">Clinic Location</h4>
+                                <p class="text-slate-400 text-sm">Ramkrishn Dental Clinic</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-pink-500/10 border border-pink-500/30 flex items-center justify-center text-pink-400 shrink-0">
+                                <i class="fa-solid fa-network-wired text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-slate-200">Network Connection</h4>
+                                <p class="text-slate-400 text-sm">Connected since 19 Aug 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Booking Form -->
+                <div class="glass-card p-8 rounded-2xl border border-slate-800">
+                    <form onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent to Dr. Shreya Dubey.');" class="space-y-5">
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Full Name</label>
+                            <input type="text" placeholder="e.g. Rahul Sharma" required class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Email Address</label>
+                            <input type="email" placeholder="e.g. rahul@example.com" required class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Subject</label>
+                            <input type="text" placeholder="e.g. Dental Consultation / Cosmetic Inquiry" required class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Message</label>
+                            <textarea rows="4" placeholder="Briefly describe your dental concern or appointment preference..." required class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors resize-none"></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold text-base shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.01] active:scale-95 transition-all text-center">
+                            Send Message <i class="fa-solid fa-paper-plane ml-2 text-sm"></i>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 py-10 border-t border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex flex-col md:flex-row items-center gap-4 text-center md:text-left">
+                <span class="text-base font-bold text-white">Dr. Shreya Dubey</span>
+                <span class="hidden md:inline text-slate-600">|</span>
+                <span class="text-xs text-slate-400">© 2026 Dr. Shreya Dubey. Generated by LinkedIn Portfolio Builder.</span>
+            </div>
+
+            <!-- Social Links -->
+            <div class="flex items-center gap-4">
+                <a href="mailto:shreyadubey3601@gmail.com" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:border-indigo-500 transition-all" title="Email Dr. Dubey">
+                    <i class="fa-solid fa-envelope text-sm"></i>
+                </a>
+                <a href="#" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:border-indigo-500 transition-all" title="LinkedIn Profile">
+                    <i class="fa-brands fa-linkedin-in text-sm"></i>
+                </a>
+                <a href="#" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:border-indigo-500 transition-all" title="Clinic Location">
+                    <i class="fa-solid fa-location-dot text-sm"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
