@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Sanjeet Kaur | Founder - Mindful Lifestyle Reset</title>
+    <title>Dr. Sanjeet Kaur | Founder, Mindful Lifestyle Reset</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome Icons -->
@@ -14,328 +14,290 @@
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
         }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(51, 65, 85, 0.5);
+        }
+        .glass-nav {
+            background: rgba(2, 6, 23, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
     </style>
 </head>
 <body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
 
     <!-- NAVIGATION BAR -->
-    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/50 transition-all duration-300">
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-slate-800/50 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <a href="#" class="flex items-center gap-3 group">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 p-[2px] transition-transform duration-300 group-hover:scale-105">
-                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-pink-400">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-teal-400 p-[2px]">
+                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center font-bold text-teal-400 text-lg group-hover:bg-transparent group-hover:text-white transition-all">
                         SK
                     </div>
                 </div>
-                <span class="font-bold text-lg tracking-tight text-white group-hover:text-indigo-300 transition-colors">Dr. Sanjeet Kaur</span>
+                <div>
+                    <span class="text-lg font-bold tracking-tight text-white block leading-none">Dr. Sanjeet Kaur</span>
+                    <span class="text-xs text-indigo-400 font-medium">Mindful Lifestyle Reset</span>
+                </div>
             </a>
 
             <!-- Desktop Links -->
-            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
-                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
-                <a href="#services" class="hover:text-indigo-400 transition-colors">Services</a>
-                <a href="#achievements" class="hover:text-indigo-400 transition-colors">Impact</a>
-                <a href="#contact" class="hover:text-indigo-400 transition-colors">Contact</a>
-            </nav>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-teal-400 transition-colors">About & Vision</a>
+                <a href="#services" class="hover:text-teal-400 transition-colors">Specializations</a>
+                <a href="#achievements" class="hover:text-teal-400 transition-colors">Impact & Praise</a>
+                <a href="#contact" class="hover:text-teal-400 transition-colors">Connect</a>
+            </div>
 
-            <a href="#contact" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold text-sm shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-105 transition-all duration-300">
+            <!-- CTA Button -->
+            <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-white bg-gradient-to-r from-indigo-600 via-purple-600 to-teal-500 rounded-full hover:shadow-lg hover:shadow-indigo-500/25 transition-all duration-300 hover:scale-[1.02]">
                 Get in Touch
             </a>
         </div>
-    </header>
+    </nav>
 
     <!-- HERO SECTION -->
-    <section class="relative pt-36 pb-20 md:pt-48 md:pb-32 overflow-hidden bg-gradient-to-br from-slate-950 via-indigo-950/40 to-slate-900">
-        <!-- Glow Orbs -->
-        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
-        <div class="absolute bottom-10 right-10 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl pointer-events-none"></div>
+    <section class="relative min-h-screen pt-32 pb-20 flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-950 via-indigo-950/40 to-slate-900">
+        <!-- Background Ambient Glow -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-indigo-600/20 via-purple-600/20 to-teal-400/20 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80')] bg-cover bg-center opacity-5"></div>
 
         <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
-            <!-- Profile Image Ring -->
+            <!-- Avatar Frame -->
             <div class="mb-8 inline-block">
-                <div class="p-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full shadow-2xl shadow-indigo-500/20 inline-block hover:scale-105 transition-transform duration-300">
-                    <img src="https://ui-avatars.com/api/?name=Dr.sanjeet+kaur&size=200&background=0D8ABC&color=fff&bold=true" 
-                         alt="Dr. Sanjeet Kaur" 
-                         class="w-32 h-32 md:w-36 md:h-36 rounded-full border-4 border-slate-950 object-cover">
+                <div class="p-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-teal-400 rounded-full shadow-2xl shadow-indigo-500/20">
+                    <img src="https://ui-avatars.com/api/?name=Dr.sanjeet+kaur&size=200&background=0D8ABC&color=fff&bold=true" alt="Dr. Sanjeet Kaur" class="w-32 h-32 md:w-36 md:h-36 rounded-full object-cover border-4 border-slate-950">
                 </div>
             </div>
 
-            <!-- Role Badge -->
-            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 backdrop-blur-xl text-xs font-semibold text-indigo-400 mb-6">
-                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                Founder at Mindful Lifestyle Reset
+            <!-- Title Badge -->
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card text-xs font-semibold text-teal-300 mb-6 border border-teal-500/30">
+                <i class="fa-solid fa-gem text-teal-400"></i> Founder & Holistic Wellness Strategist
             </div>
 
             <!-- Main Headline -->
-            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-tight max-w-4xl mx-auto mb-6">
-                Empowering Transformative Health Through <span class="bg-clip-text text-transparent bg-gradient-to-r from-indigo-300 via-purple-300 to-pink-400">Mindful Science</span>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-6 leading-tight max-w-4xl mx-auto">
+                Transforming Executive Lives Through <span class="bg-clip-text text-transparent bg-gradient-to-r from-teal-300 via-indigo-200 to-purple-400">Mindful Optimization</span>
             </h1>
 
-            <!-- Subheadline -->
-            <p class="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto font-normal leading-relaxed mb-10">
-                Guiding high-achieving individuals and leaders to achieve holistic wellness, peak mental clarity, and sustainable lifestyle transformation.
+            <!-- Subheadline / Pitch -->
+            <p class="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto mb-10 font-normal leading-relaxed">
+                Empowering high-performing leaders to eliminate burnout, master sustainable vitality, and cultivate holistic life alignment with science-backed mindfulness.
             </p>
 
             <!-- CTA Buttons -->
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-                <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold text-base shadow-xl shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:-translate-y-0.5 transition-all duration-300">
+                <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-full font-bold text-sm text-white bg-gradient-to-r from-indigo-600 to-teal-500 hover:from-indigo-500 hover:to-teal-400 shadow-xl shadow-indigo-600/20 hover:shadow-indigo-500/30 transition-all duration-300 hover:-translate-y-0.5">
                     Explore Expertise <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
                 </a>
-                <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full bg-slate-900/80 text-slate-200 font-semibold text-base border border-slate-800 hover:border-indigo-500/50 hover:bg-slate-800/60 hover:-translate-y-0.5 transition-all duration-300 backdrop-blur-xl">
+                <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full font-bold text-sm text-slate-200 glass-card hover:bg-slate-800/80 transition-all duration-300 hover:-translate-y-0.5 border border-slate-700">
                     Schedule Call
                 </a>
             </div>
 
             <!-- Stat Counter Bar -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto pt-8 border-t border-slate-800/80">
-                <div class="p-6 rounded-2xl bg-slate-900/40 border border-slate-800/60 backdrop-blur-xl">
-                    <div class="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400 mb-1">10+ Years</div>
-                    <div class="text-sm text-slate-400 font-medium">Executive & Wellness Leadership</div>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto glass-card p-6 rounded-2xl border border-slate-800">
+                <div class="p-2">
+                    <div class="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-teal-300">12+ Years</div>
+                    <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider font-semibold">Leadership Experience</div>
                 </div>
-                <div class="p-6 rounded-2xl bg-slate-900/40 border border-slate-800/60 backdrop-blur-xl">
-                    <div class="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 mb-1">1,000+</div>
-                    <div class="text-sm text-slate-400 font-medium">Transformed Mindsets & Lifestyles</div>
+                <div class="p-2 border-t sm:border-t-0 sm:border-l border-slate-800">
+                    <div class="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-teal-300">1,500+</div>
+                    <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider font-semibold">Lives Reset & Restored</div>
                 </div>
-                <div class="p-6 rounded-2xl bg-slate-900/40 border border-slate-800/60 backdrop-blur-xl">
-                    <div class="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-indigo-400 mb-1">99%</div>
-                    <div class="text-sm text-slate-400 font-medium">Client Outcome Satisfaction</div>
+                <div class="p-2 border-t sm:border-t-0 sm:border-l border-slate-800">
+                    <div class="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-indigo-300">99%</div>
+                    <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider font-semibold">Client Satisfaction</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ABOUT & EXPERTISE SECTION -->
-    <section id="about" class="py-24 bg-slate-950 relative">
+    <section id="about" class="py-24 bg-slate-900/50 relative border-t border-slate-800/60">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-                
-                <!-- Left Image Card -->
-                <div class="relative group">
-                    <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-pink-500 rounded-3xl blur opacity-25 group-hover:opacity-40 transition duration-500"></div>
-                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900">
-                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" 
-                             alt="Mindful Executive Workspace" 
-                             class="w-full h-[450px] object-cover object-center transform group-hover:scale-105 transition duration-700">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
-                        <div class="absolute bottom-6 left-6 right-6 p-6 rounded-xl bg-slate-900/80 backdrop-blur-md border border-slate-800">
-                            <p class="text-sm font-semibold text-indigo-400 uppercase tracking-wider mb-1">Our Core Vision</p>
-                            <p class="text-xs text-slate-300">Integrating evidence-based medicine, behavioral psychology, and tailored lifestyle design to unlock sustainable vitality.</p>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Image Side -->
+                <div class="relative">
+                    <div class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-indigo-500 via-purple-500 to-teal-400 blur opacity-30"></div>
+                    <div class="relative rounded-2xl overflow-hidden glass-card border border-slate-700">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Mindful Leadership" class="w-full h-[450px] object-cover filter brightness-90 hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <span class="text-xs font-semibold uppercase tracking-widest text-teal-400">Our Vision</span>
+                            <p class="text-sm text-slate-200 mt-1">Refining human performance through intentional mindfulness and holistic lifestyle recalibration.</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Right Bio Content -->
+                <!-- Text & Skills Side -->
                 <div>
-                    <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-indigo-400 bg-indigo-500/10 px-3 py-1 rounded-full border border-indigo-500/20 mb-4">
-                        About The Founder
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 text-xs font-semibold mb-4 border border-indigo-500/20">
+                        <i class="fa-solid fa-user-doctor"></i> Strategic Visionary
                     </div>
-                    <h2 class="text-3xl md:text-4xl font-extrabold text-white tracking-tight mb-6 leading-snug">
-                        Bridging Modern Medicine with Executive Wellness
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">
+                        Pioneering Modern Wellness for Visionary Leaders
                     </h2>
                     <p class="text-slate-300 mb-6 leading-relaxed">
-                        As the Founder of <strong class="text-indigo-300">Mindful Lifestyle Reset</strong>, Dr. Sanjeet Kaur champions a revolutionary approach to personal well-being. Recognizing that true performance stems from internal balance, she creates customized strategies that eliminate burnout and optimize physical and mental resilience.
-                    </p>
-                    <p class="text-slate-400 mb-8 leading-relaxed">
-                        Through holistic health diagnostics, executive coaching, and stress architecture, Dr. Sanjeet empowers leaders, entrepreneurs, and teams to build sustainable habits that foster high performance without sacrificing vitality.
+                        As the Founder of <strong class="text-white">Mindful Lifestyle Reset</strong>, Dr. Sanjeet Kaur bridges high-performance corporate demands with transformative wellness methodologies. Her integrative approach addresses high stress, executive burnout, and cognitive fatigue, restoring balance and sustained peak productivity.
                     </p>
 
-                    <!-- Core Competencies / Skill Badges -->
+                    <!-- Skill Bars -->
                     <div class="space-y-4">
                         <div>
                             <div class="flex justify-between text-sm font-semibold mb-1">
-                                <span class="text-slate-200">Holistic Lifestyle Diagnostics</span>
-                                <span class="text-indigo-400">98%</span>
+                                <span class="text-slate-200">Mindful Leadership Strategy</span>
+                                <span class="text-teal-400">96%</span>
                             </div>
-                            <div class="w-full h-2 rounded-full bg-slate-800 overflow-hidden">
-                                <div class="h-full bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full" style="width: 98%"></div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="flex justify-between text-sm font-semibold mb-1">
-                                <span class="text-slate-200">Executive Stress Resilience & Optimization</span>
-                                <span class="text-purple-400">95%</span>
-                            </div>
-                            <div class="w-full h-2 rounded-full bg-slate-800 overflow-hidden">
-                                <div class="h-full bg-gradient-to-r from-purple-500 to-pink-500 rounded-full" style="width: 95%"></div>
+                            <div class="w-full h-2 bg-slate-800 rounded-full overflow-hidden">
+                                <div class="h-full bg-gradient-to-r from-indigo-500 to-teal-400 rounded-full" style="width: 96%"></div>
                             </div>
                         </div>
 
                         <div>
                             <div class="flex justify-between text-sm font-semibold mb-1">
-                                <span class="text-slate-200">Corporate Health Strategy</span>
-                                <span class="text-pink-400">92%</span>
+                                <span class="text-slate-200">Executive Stress Resilience Protocol</span>
+                                <span class="text-teal-400">98%</span>
                             </div>
-                            <div class="w-full h-2 rounded-full bg-slate-800 overflow-hidden">
-                                <div class="h-full bg-gradient-to-r from-pink-500 to-indigo-500 rounded-full" style="width: 92%"></div>
+                            <div class="w-full h-2 bg-slate-800 rounded-full overflow-hidden">
+                                <div class="h-full bg-gradient-to-r from-purple-500 to-indigo-400 rounded-full" style="width: 98%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-sm font-semibold mb-1">
+                                <span class="text-slate-200">Holistic Lifestyle Architecture</span>
+                                <span class="text-teal-400">94%</span>
+                            </div>
+                            <div class="w-full h-2 bg-slate-800 rounded-full overflow-hidden">
+                                <div class="h-full bg-gradient-to-r from-teal-400 to-indigo-500 rounded-full" style="width: 94%"></div>
                             </div>
                         </div>
                     </div>
-
                 </div>
-
             </div>
         </div>
     </section>
 
     <!-- SERVICES & SPECIALIZATION GRID -->
-    <section id="services" class="py-24 bg-slate-900/50 relative">
+    <section id="services" class="py-24 bg-slate-950 relative">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center max-w-3xl mx-auto mb-16">
-                <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-pink-400 bg-pink-500/10 px-3 py-1 rounded-full border border-pink-500/20 mb-4">
-                    Signature Services
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-500/10 text-teal-400 text-xs font-semibold mb-4 border border-teal-500/20">
+                    <i class="fa-solid fa-sparkles"></i> Executive Services
                 </div>
-                <h2 class="text-3xl md:text-5xl font-extrabold text-white tracking-tight mb-4">
-                    Tailored Solutions for Peak Well-Being
+                <h2 class="text-3xl md:text-5xl font-bold text-white tracking-tight mb-4">
+                    Tailored Frameworks for Sustainable Balance
                 </h2>
                 <p class="text-slate-400 text-base md:text-lg">
-                    Discover specialized programs designed to help you regain clarity, optimize energy, and master lifestyle sustainability.
+                    Comprehensive programs designed specifically for executives, founders, and leaders ready to revolutionize their health and cognitive longevity.
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Service 1 -->
-                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:-translate-y-2 hover:shadow-2xl hover:border-indigo-500/60 transition-all duration-300 flex flex-col justify-between group">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="glass-card p-8 rounded-2xl hover:-translate-y-2 hover:shadow-2xl hover:shadow-indigo-500/10 hover:border-indigo-500/60 transition-all duration-300 flex flex-col justify-between">
                     <div>
-                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-indigo-500/20 to-purple-500/20 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
-                            <i class="fa-solid fa-heart-pulse"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-3 group-hover:text-indigo-300 transition-colors">Executive Health Blueprint</h3>
-                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
-                            A comprehensive lifestyle review designed for busy executives to maximize vital energy, sleep quality, and daily endurance.
-                        </p>
-                        <ul class="space-y-2.5 text-xs text-slate-300 mb-8">
-                            <li class="flex items-center gap-2">
-                                <i class="fa-solid fa-check text-indigo-400"></i> Personalized Vitality Diagnostics
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <i class="fa-solid fa-check text-indigo-400"></i> Sleep Architecture & Energy Blueprint
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <i class="fa-solid fa-check text-indigo-400"></i> 1-on-1 Direct Consultations
-                            </li>
-                        </ul>
-                    </div>
-                    <a href="#contact" class="text-xs font-semibold text-indigo-400 hover:text-indigo-300 flex items-center gap-2">
-                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
-                    </a>
-                </div>
-
-                <!-- Service 2 -->
-                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:-translate-y-2 hover:shadow-2xl hover:border-purple-500/60 transition-all duration-300 flex flex-col justify-between group">
-                    <div>
-                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-purple-500/20 to-pink-500/20 border border-purple-500/30 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-indigo-500/20">
                             <i class="fa-solid fa-brain"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-3 group-hover:text-purple-300 transition-colors">Mindful Reset Method</h3>
-                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
-                            Science-backed behavioral reset programs that dissolve chronic stress, eliminate cognitive fatigue, and reignite focus.
+                        <h3 class="text-xl font-bold text-white mb-3">Executive Mind Reset</h3>
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                            Personalized 1-on-1 coaching designed to rewire high-stress responses, enhance mental clarity, and establish sustainable neural efficiency.
                         </p>
-                        <ul class="space-y-2.5 text-xs text-slate-300 mb-8">
-                            <li class="flex items-center gap-2">
-                                <i class="fa-solid fa-check text-purple-400"></i> Stress Neutralization Techniques
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <i class="fa-solid fa-check text-purple-400"></i> Habit Re-Engineering Protocols
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <i class="fa-solid fa-check text-purple-400"></i> Mindfulness & Focus Practices
-                            </li>
-                        </ul>
                     </div>
-                    <a href="#contact" class="text-xs font-semibold text-purple-400 hover:text-purple-300 flex items-center gap-2">
-                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
-                    </a>
+                    <ul class="text-xs text-slate-300 space-y-2 font-medium border-t border-slate-800/80 pt-4">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-teal-400"></i> Cognitive Load Optimization</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-teal-400"></i> Daily Stress Mitigation Routines</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-teal-400"></i> Peak State Energy Management</li>
+                    </ul>
                 </div>
 
-                <!-- Service 3 -->
-                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:-translate-y-2 hover:shadow-2xl hover:border-pink-500/60 transition-all duration-300 flex flex-col justify-between group">
+                <!-- Card 2 -->
+                <div class="glass-card p-8 rounded-2xl hover:-translate-y-2 hover:shadow-2xl hover:shadow-teal-500/10 hover:border-teal-500/60 transition-all duration-300 flex flex-col justify-between">
                     <div>
-                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-pink-500/20 to-indigo-500/20 border border-pink-500/30 flex items-center justify-center text-pink-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
-                            <i class="fa-solid fa-building-user"></i>
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-teal-400 to-emerald-600 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-teal-500/20">
+                            <i class="fa-solid fa-heart-pulse"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-3 group-hover:text-pink-300 transition-colors">Corporate Wellness Keynotes</h3>
-                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
-                            Transformative keynotes and interactive workshops empowering corporate teams to reduce burnout and enhance productivity.
+                        <h3 class="text-xl font-bold text-white mb-3">Holistic Health Audit</h3>
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                            Full biological and lifestyle audit to optimize sleep hygiene, restorative nutrition, daily movement, and metabolic vitality.
                         </p>
-                        <ul class="space-y-2.5 text-xs text-slate-300 mb-8">
-                            <li class="flex items-center gap-2">
-                                <i class="fa-solid fa-check text-pink-400"></i> High-Performance Team Workshops
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <i class="fa-solid fa-check text-pink-400"></i> Executive Retreat Facilitation
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <i class="fa-solid fa-check text-pink-400"></i> Corporate Wellbeing Roadmaps
-                            </li>
-                        </ul>
                     </div>
-                    <a href="#contact" class="text-xs font-semibold text-pink-400 hover:text-pink-300 flex items-center gap-2">
-                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
-                    </a>
+                    <ul class="text-xs text-slate-300 space-y-2 font-medium border-t border-slate-800/80 pt-4">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-teal-400"></i> Deep Biomarker & Habit Analysis</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-teal-400"></i> Custom Circadian Sleep Plan</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-teal-400"></i> Long-Term Vitality Blueprint</li>
+                    </ul>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="glass-card p-8 rounded-2xl hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-500/10 hover:border-purple-500/60 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-purple-500/20">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Corporate Wellness Keynotes</h3>
+                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                            Transformational workshops and keynote addresses for corporate leadership teams seeking to eliminate team burnout and drive mindful output.
+                        </p>
+                    </div>
+                    <ul class="text-xs text-slate-300 space-y-2 font-medium border-t border-slate-800/80 pt-4">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-teal-400"></i> Interactive Team Seminars</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-teal-400"></i> Organizational Burnout Prevention</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-teal-400"></i> Actionable Mindfulness Protocols</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FEATURED ACHIEVEMENTS / TESTIMONIALS SECTION -->
-    <section id="achievements" class="py-24 bg-slate-950 relative">
+    <!-- ACHIEVEMENTS / TESTIMONIALS SECTION -->
+    <section id="achievements" class="py-24 bg-slate-900/40 relative border-t border-slate-800/60">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-purple-400 bg-purple-500/10 px-3 py-1 rounded-full border border-purple-500/20 mb-4">
-                    Client Endorsements
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 text-purple-400 text-xs font-semibold mb-4 border border-purple-500/20">
+                    <i class="fa-solid fa-star"></i> Client Endorsements
                 </div>
-                <h2 class="text-3xl md:text-5xl font-extrabold text-white tracking-tight mb-4">
-                    Trusted by Visionary Leaders
+                <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight">
+                    Trusted by Executive Leaders
                 </h2>
-                <p class="text-slate-400 text-base">
-                    Read how Dr. Sanjeet Kaur has helped partners and executives redefine their health and operational stamina.
-                </p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                 <!-- Testimonial 1 -->
-                <div class="p-8 rounded-2xl bg-slate-900/60 border border-slate-800 backdrop-blur-xl relative">
-                    <div class="text-amber-400 text-sm mb-4 flex gap-1">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
+                <div class="glass-card p-8 rounded-2xl relative">
+                    <div class="flex text-amber-400 gap-1 text-sm mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                     </div>
                     <p class="text-slate-300 text-sm leading-relaxed mb-6 italic">
-                        "Dr. Sanjeet's holistic blueprint completely redefined how I manage daily stress and lead my startup. The Mindful Lifestyle Reset approach is revolutionary, insightful, and practical."
+                        "Dr. Sanjeet Kaur's Mindful Lifestyle Reset transformed how our executive leadership team operates under pressure. Her insight into stress mastery and focus is unmatched in the industry."
                     </p>
                     <div class="flex items-center gap-4">
-                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" 
-                             alt="Elena Vance" 
-                             class="w-12 h-12 rounded-full object-cover border border-indigo-500/50">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Client Reviewer" class="w-12 h-12 rounded-full object-cover border-2 border-indigo-500">
                         <div>
-                            <h4 class="text-sm font-bold text-white">Elena Vance</h4>
-                            <p class="text-xs text-slate-400">Chief Executive Officer, Apex Tech</p>
+                            <div class="text-white font-bold text-sm">Elena Rostova</div>
+                            <div class="text-xs text-slate-400">Chief Operating Officer, TechGlobal</div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Testimonial 2 -->
-                <div class="p-8 rounded-2xl bg-slate-900/60 border border-slate-800 backdrop-blur-xl relative">
-                    <div class="text-amber-400 text-sm mb-4 flex gap-1">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
+                <div class="glass-card p-8 rounded-2xl relative">
+                    <div class="flex text-amber-400 gap-1 text-sm mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                     </div>
                     <p class="text-slate-300 text-sm leading-relaxed mb-6 italic">
-                        "Inviting Dr. Sanjeet to conduct a leadership wellness summit for our executive team was the best decision we made this year. Energy levels and mental clarity have improved noticeably!"
+                        "Working with Dr. Sanjeet was the single best decision for my physical and mental well-being this year. Her holistic framework brought clarity back to both my career and home life."
                     </p>
                     <div class="flex items-center gap-4">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" 
-                             alt="Marcus Thorne" 
-                             class="w-12 h-12 rounded-full object-cover border border-purple-500/50">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Client Reviewer" class="w-12 h-12 rounded-full object-cover border-2 border-teal-400">
                         <div>
-                            <h4 class="text-sm font-bold text-white">Marcus Thorne</h4>
-                            <p class="text-xs text-slate-400">VP of Human Resources, Horizon Global</p>
+                            <div class="text-white font-bold text-sm">Marcus Vance</div>
+                            <div class="text-xs text-slate-400">Managing Director, Horizon Capital</div>
                         </div>
                     </div>
                 </div>
@@ -344,118 +306,101 @@
     </section>
 
     <!-- CONTACT & BOOKING SECTION -->
-    <section id="contact" class="py-24 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 relative">
+    <section id="contact" class="py-24 bg-slate-950 relative">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                
-                <div>
-                    <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-indigo-400 bg-indigo-500/10 px-3 py-1 rounded-full border border-indigo-500/20 mb-4">
-                        Let's Connect
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 glass-card rounded-3xl p-8 md:p-12 border border-slate-800">
+                <!-- Contact Info -->
+                <div class="lg:col-span-5 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-semibold uppercase tracking-widest text-teal-400">Start Your Journey</span>
+                        <h2 class="text-3xl md:text-4xl font-bold text-white mt-2 mb-6">
+                            Schedule a Consultation
+                        </h2>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-8">
+                            Ready to recalibrate your well-being and unlock sustained executive performance? Reach out to schedule a private advisory session with Dr. Sanjeet Kaur.
+                        </p>
+
+                        <div class="space-y-4 text-sm">
+                            <div class="flex items-center gap-4 text-slate-300">
+                                <div class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-teal-400">
+                                    <i class="fa-solid fa-building"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-slate-500">Organization</div>
+                                    <div class="font-semibold text-white">Mindful Lifestyle Reset</div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4 text-slate-300">
+                                <div class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-indigo-400">
+                                    <i class="fa-solid fa-calendar-check"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-slate-500">Member Status</div>
+                                    <div class="font-semibold text-white">Connected 20 Aug 2026</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <h2 class="text-3xl md:text-5xl font-extrabold text-white tracking-tight mb-6">
-                        Ready to Begin Your Reset?
-                    </h2>
-                    <p class="text-slate-300 text-base leading-relaxed mb-8">
-                        Whether you are an individual seeking personal wellness mastery or an organization looking for corporate keynote sessions, let's start a conversation.
-                    </p>
 
-                    <div class="space-y-6">
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 flex-shrink-0">
+                    <div class="mt-12 pt-6 border-t border-slate-800/80">
+                        <div class="flex gap-4">
+                            <a href="#" class="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:border-teal-400 transition-colors">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:border-teal-400 transition-colors">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:border-teal-400 transition-colors">
                                 <i class="fa-solid fa-envelope"></i>
-                            </div>
-                            <div>
-                                <div class="text-xs font-medium text-slate-400">Direct Inquiries</div>
-                                <a href="mailto:contact@mindfullifestylereset.com" class="text-sm font-semibold text-white hover:text-indigo-400 transition-colors">contact@mindfullifestylereset.com</a>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 flex-shrink-0">
-                                <i class="fa-solid fa-calendar-check"></i>
-                            </div>
-                            <div>
-                                <div class="text-xs font-medium text-slate-400">Network Connected</div>
-                                <div class="text-sm font-semibold text-white">20 Aug 2026</div>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-xl bg-pink-500/10 border border-pink-500/30 flex items-center justify-center text-pink-400 flex-shrink-0">
-                                <i class="fa-solid fa-location-dot"></i>
-                            </div>
-                            <div>
-                                <div class="text-xs font-medium text-slate-400">Location</div>
-                                <div class="text-sm font-semibold text-white">Global Practice / Digital Consultation</div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Contact Form -->
-                <div class="bg-slate-900/80 backdrop-blur-xl border border-slate-800 rounded-3xl p-8 shadow-2xl">
+                <!-- Form -->
+                <div class="lg:col-span-7">
                     <form onsubmit="event.preventDefault();" class="space-y-5">
-                        <div>
-                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Full Name</label>
-                            <input type="text" placeholder="Dr. John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors text-sm">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <div>
+                                <label class="block text-xs font-medium text-slate-400 mb-2">Your Name</label>
+                                <input type="text" placeholder="John Doe" class="w-full bg-slate-900/90 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 placeholder-slate-600 focus:outline-none focus:border-teal-400 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-medium text-slate-400 mb-2">Email Address</label>
+                                <input type="email" placeholder="john@example.com" class="w-full bg-slate-900/90 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 placeholder-slate-600 focus:outline-none focus:border-teal-400 transition-colors">
+                            </div>
                         </div>
 
                         <div>
-                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Email Address</label>
-                            <input type="email" placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors text-sm">
+                            <label class="block text-xs font-medium text-slate-400 mb-2">Subject</label>
+                            <input type="text" placeholder="Executive Advisory Consultation" class="w-full bg-slate-900/90 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 placeholder-slate-600 focus:outline-none focus:border-teal-400 transition-colors">
                         </div>
 
                         <div>
-                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Subject</label>
-                            <select class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 focus:outline-none focus:border-indigo-500 transition-colors text-sm">
-                                <option>Executive Health Coaching</option>
-                                <option>Corporate Wellness Workshop</option>
-                                <option>Speaking & Advisory</option>
-                                <option>General Inquiry</option>
-                            </select>
+                            <label class="block text-xs font-medium text-slate-400 mb-2">Message</label>
+                            <textarea rows="4" placeholder="Tell us about your wellness & leadership goals..." class="w-full bg-slate-900/90 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 placeholder-slate-600 focus:outline-none focus:border-teal-400 transition-colors resize-none"></textarea>
                         </div>
 
-                        <div>
-                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Message</label>
-                            <textarea rows="4" placeholder="How can Dr. Sanjeet help you?" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors text-sm resize-none"></textarea>
-                        </div>
-
-                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-bold text-sm shadow-xl shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.01] transition-all duration-300">
-                            Send Message <i class="fa-solid fa-paper-plane ml-2"></i>
+                        <button type="submit" class="w-full py-4 rounded-xl font-semibold text-sm text-white bg-gradient-to-r from-indigo-600 via-purple-600 to-teal-500 hover:shadow-lg hover:shadow-indigo-500/25 transition-all duration-300">
+                            Send Inquiry <i class="fa-solid fa-paper-plane ml-2 text-xs"></i>
                         </button>
                     </form>
                 </div>
-
             </div>
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="py-12 bg-slate-950 border-t border-slate-800/80">
-        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
-            <div class="flex items-center gap-3">
-                <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-indigo-500 to-pink-500 p-[2px]">
-                    <div class="w-full h-full bg-slate-950 rounded-[6px] flex items-center justify-center font-bold text-xs text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-pink-400">
-                        SK
-                    </div>
-                </div>
-                <span class="text-sm font-semibold text-slate-300">Dr. Sanjeet Kaur</span>
+    <footer class="py-8 bg-slate-950 border-t border-slate-900 text-slate-500 text-xs">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+                © 2026 Dr.sanjeet kaur. Generated by LinkedIn Portfolio Builder.
             </div>
-
-            <p class="text-xs text-slate-500 text-center">
-                © 2026 Dr.sanjeet kaur. Generated by LinkedIn Portfolio Builder. All rights reserved.
-            </p>
-
-            <div class="flex items-center gap-4 text-slate-400">
-                <a href="#" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center hover:text-indigo-400 hover:border-indigo-500/50 transition-colors">
-                    <i class="fa-brands fa-linkedin-in text-sm"></i>
-                </a>
-                <a href="#" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center hover:text-indigo-400 hover:border-indigo-500/50 transition-colors">
-                    <i class="fa-brands fa-twitter text-sm"></i>
-                </a>
-                <a href="#" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center hover:text-indigo-400 hover:border-indigo-500/50 transition-colors">
-                    <i class="fa-solid fa-globe text-sm"></i>
-                </a>
+            <div class="flex items-center gap-6">
+                <a href="#about" class="hover:text-slate-300 transition-colors">About</a>
+                <a href="#services" class="hover:text-slate-300 transition-colors">Specializations</a>
+                <a href="#contact" class="hover:text-slate-300 transition-colors">Contact</a>
             </div>
         </div>
     </footer>
