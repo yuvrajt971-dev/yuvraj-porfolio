@@ -6,177 +6,195 @@
     <title>Dr. Tulsi Puri | Dental Surgeon</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome Icons CDN -->
+    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                }
+            }
         }
-        .glow-bg {
-            background: radial-gradient(circle at 50% 20%, rgba(99, 102, 241, 0.15) 0%, rgba(168, 85, 247, 0.05) 50%, rgba(15, 23, 42, 0) 100%);
-        }
-    </style>
+    </script>
 </head>
-<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-indigo-500 selection:text-white">
 
     <!-- NAVIGATION BAR -->
-    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/50">
+    <header class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/50">
         <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
             <a href="#" class="flex items-center gap-3 group">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 to-purple-500 flex items-center justify-center text-white shadow-lg shadow-indigo-500/30 group-hover:scale-105 transition-transform duration-300">
-                    <i class="fa-solid fa-tooth text-lg"></i>
+                <div class="p-0.5 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full">
+                    <img src="https://ui-avatars.com/api/?name=Dr.+Tulsi+Puri&size=200&background=0D8ABC&color=fff&bold=true" alt="Dr. Tulsi Puri" class="w-10 h-10 rounded-full">
                 </div>
-                <div class="flex flex-col">
-                    <span class="font-bold text-lg tracking-tight text-white group-hover:text-indigo-400 transition-colors">Dr. Tulsi Puri</span>
-                    <span class="text-xs text-slate-400 font-medium">Dental Surgeon</span>
+                <div>
+                    <span class="text-lg font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-200 to-slate-400 group-hover:text-indigo-400 transition-colors">Dr. Tulsi Puri</span>
+                    <span class="block text-xs text-indigo-400 font-medium">Dental Surgeon</span>
                 </div>
             </a>
             
-            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
-                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-indigo-400 transition-colors">About & Expertise</a>
                 <a href="#services" class="hover:text-indigo-400 transition-colors">Specializations</a>
-                <a href="#achievements" class="hover:text-indigo-400 transition-colors">Achievements</a>
+                <a href="#achievements" class="hover:text-indigo-400 transition-colors">Testimonials</a>
                 <a href="#contact" class="hover:text-indigo-400 transition-colors">Contact</a>
-            </div>
+            </nav>
 
-            <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:opacity-90 transition-all duration-300 shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:-translate-y-0.5">
-                <span>Get in Touch</span>
-                <i class="fa-solid fa-arrow-right text-xs"></i>
+            <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white font-semibold text-sm hover:opacity-90 hover:shadow-lg hover:shadow-indigo-500/25 transition-all duration-300">
+                <span>Book Consultation</span>
+                <i class="fa-solid fa-calendar-check text-xs"></i>
             </a>
         </div>
-    </nav>
+    </header>
 
     <!-- HERO SECTION -->
-    <section class="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden bg-gradient-to-br from-slate-950 via-indigo-950/40 to-slate-900 glow-bg">
-        <!-- Ambient Background Light -->
-        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
+    <section class="relative pt-36 pb-24 md:pt-44 md:pb-32 overflow-hidden bg-gradient-to-br from-slate-950 via-indigo-950/40 to-slate-900">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80')] bg-cover bg-center opacity-10 mix-blend-overlay"></div>
+        <div class="absolute -top-40 -right-40 w-96 h-96 bg-indigo-500/20 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-purple-500/20 rounded-full blur-3xl"></div>
 
-        <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
-            <!-- Profile Avatar with Double Gradient Ring -->
-            <div class="mb-8 inline-block">
-                <div class="p-1.5 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full shadow-2xl shadow-indigo-500/20">
-                    <div class="p-1 bg-slate-950 rounded-full">
-                        <img src="https://ui-avatars.com/api/?name=Dr.+Tulsi+Puri&size=200&background=0D8ABC&color=fff&bold=true" 
-                             alt="Dr. Tulsi Puri" 
-                             class="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover">
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-8 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 text-xs font-semibold tracking-wide uppercase">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        Bhagwan Mahaveer Dental Clinic • Sector 27 B Chandigarh
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        Transforming Smiles with <span class="bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 via-purple-300 to-pink-400">Precision & Expertise</span>
+                    </h1>
+
+                    <p class="text-lg sm:text-xl text-slate-300 max-w-2xl font-light leading-relaxed mx-auto lg:mx-0">
+                        Leading Dental Surgeon specializing in advanced oral procedures, aesthetic restorations, and personalized compassionate dental care for lasting confidence.
+                    </p>
+
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#contact" class="px-8 py-4 rounded-xl bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white font-bold shadow-xl shadow-indigo-600/20 hover:scale-105 hover:shadow-indigo-600/40 transition-all duration-300 flex items-center gap-3">
+                            <span>Schedule Appointment</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#services" class="px-8 py-4 rounded-xl bg-slate-900/80 hover:bg-slate-800 text-slate-200 border border-slate-700/80 font-bold transition-all duration-300 flex items-center gap-3">
+                            <span>Explore Expertise</span>
+                            <i class="fa-solid fa-tooth text-indigo-400"></i>
+                        </a>
                     </div>
                 </div>
+
+                <div class="lg:col-span-4 flex justify-center">
+                    <div class="relative group">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-3xl blur-xl opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+                        <div class="relative p-2 bg-slate-900 rounded-3xl border border-slate-800">
+                            <div class="p-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-2xl overflow-hidden shadow-2xl">
+                                <img src="https://ui-avatars.com/api/?name=Dr.+Tulsi+Puri&size=200&background=0D8ABC&color=fff&bold=true" alt="Dr. Tulsi Puri" class="w-64 h-64 object-cover rounded-xl bg-slate-950">
+                            </div>
+                            <div class="mt-4 p-4 text-center">
+                                <h3 class="text-xl font-bold text-white">Dr. Tulsi Puri</h3>
+                                <p class="text-sm text-indigo-400 font-medium">Senior Dental Surgeon</p>
+                                <p class="text-xs text-slate-400 mt-1"><i class="fa-solid fa-location-dot text-pink-400 mr-1"></i> Sector 27 B, Chandigarh</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
-            <!-- Role Badge -->
-            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 text-xs font-semibold tracking-wide uppercase mb-6">
-                <i class="fa-solid fa-award text-indigo-400"></i>
-                <span>Bhagwan Mahaveer Dental Clinic, Sector 27 B Chandigarh</span>
-            </div>
-
-            <!-- Main Headline -->
-            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 max-w-4xl mx-auto leading-tight">
-                Redefining Precision & Artistry in <span class="bg-clip-text text-transparent bg-gradient-to-r from-white via-indigo-200 to-indigo-400">Modern Dental Surgery</span>
-            </h1>
-
-            <!-- Subheadline / Elevator Pitch -->
-            <p class="text-slate-400 text-base md:text-lg max-w-2xl mx-auto mb-10 font-normal leading-relaxed">
-                Delivering world-class oral healthcare and transformative cosmetic transformations with advanced surgical precision and compassionate patient care.
-            </p>
-
-            <!-- Dual Call to Action -->
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-                <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:opacity-95 transition-all shadow-xl shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:-translate-y-0.5">
-                    Explore Expertise
-                </a>
-                <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full text-sm font-semibold text-slate-200 bg-slate-900 border border-slate-800 hover:border-slate-700 hover:bg-slate-800/80 transition-all hover:-translate-y-0.5">
-                    Schedule Consultation
-                </a>
-            </div>
-
-            <!-- Stat Counter Bar -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto pt-8 border-t border-slate-800/60">
-                <div class="p-4 rounded-2xl bg-slate-900/40 border border-slate-800/50">
-                    <div class="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-400">12+</div>
-                    <div class="text-xs font-medium text-slate-400 mt-1">Years Experience</div>
+            <!-- STAT COUNTER BAR -->
+            <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 p-6 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800/80">
+                <div class="text-center p-4">
+                    <p class="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">10+</p>
+                    <p class="text-xs md:text-sm text-slate-400 mt-1 font-medium">Years Experience</p>
                 </div>
-                <div class="p-4 rounded-2xl bg-slate-900/40 border border-slate-800/50">
-                    <div class="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-400">5,000+</div>
-                    <div class="text-xs font-medium text-slate-400 mt-1">Surgeries Completed</div>
+                <div class="text-center p-4 border-l border-slate-800">
+                    <p class="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">5,000+</p>
+                    <p class="text-xs md:text-sm text-slate-400 mt-1 font-medium">Happy Patients</p>
                 </div>
-                <div class="p-4 rounded-2xl bg-slate-900/40 border border-slate-800/50">
-                    <div class="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-400">99.8%</div>
-                    <div class="text-xs font-medium text-slate-400 mt-1">Patient Satisfaction</div>
+                <div class="text-center p-4 border-l border-slate-800">
+                    <p class="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-indigo-400">99.8%</p>
+                    <p class="text-xs md:text-sm text-slate-400 mt-1 font-medium">Clinical Excellence</p>
                 </div>
-                <div class="p-4 rounded-2xl bg-slate-900/40 border border-slate-800/50">
-                    <div class="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-400">Sector 27 B</div>
-                    <div class="text-xs font-medium text-slate-400 mt-1">Chandigarh Practice</div>
+                <div class="text-center p-4 border-l border-slate-800">
+                    <p class="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">100%</p>
+                    <p class="text-xs md:text-sm text-slate-400 mt-1 font-medium">Sterilization Standards</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ABOUT & EXPERTISE SECTION -->
-    <section id="about" class="py-24 relative bg-slate-950">
+    <section id="about" class="py-24 bg-slate-950 relative">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                 
-                <!-- Image Column -->
-                <div class="relative group">
-                    <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-pink-500 rounded-3xl blur opacity-30 group-hover:opacity-50 transition duration-500"></div>
-                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900">
-                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" 
-                             alt="Modern Clinic Workspace" 
-                             class="w-full h-[450px] object-cover object-center group-hover:scale-105 transition duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
-                        <div class="absolute bottom-6 left-6 right-6 p-6 rounded-xl bg-slate-900/80 backdrop-blur-md border border-slate-800">
-                            <p class="text-sm font-semibold text-white">Bhagwan Mahaveer Dental Clinic</p>
-                            <p class="text-xs text-slate-400 mt-1">State-of-the-Art Dental Facility, Sector 27 B, Chandigarh</p>
+                <div class="lg:col-span-6 relative">
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" alt="Clinical Excellence" class="w-full h-[450px] object-cover hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 bg-slate-900 border border-slate-800 p-5 rounded-2xl shadow-2xl hidden sm:block max-w-xs">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 rounded-xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-hospital-user"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Bhagwan Mahaveer Clinic</h4>
+                                <p class="text-xs text-slate-400">Premier Dental Healthcare</p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Narrative Column -->
-                <div>
-                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold uppercase tracking-wider mb-4">
-                        About Clinical Leadership
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-300 text-xs font-semibold">
+                        <i class="fa-solid fa-user-doctor"></i> About Dr. Tulsi Puri
                     </div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">
-                        Pioneering Advanced Dental Care with Patient-Centric Excellence
+
+                    <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+                        Dedicated to Exceptional Dental Health & Aesthetic Radiance
                     </h2>
-                    <p class="text-slate-400 leading-relaxed mb-6">
-                        Dr. Tulsi Puri is a distinguished Dental Surgeon operating at Bhagwan Mahaveer Dental Clinic in Sector 27 B, Chandigarh. Combining years of rigorous clinical practice with modern digital dentistry tools, Dr. Puri offers personalized treatment strategies that prioritize maximum comfort, minimal pain, and enduring cosmetic beauty.
+
+                    <p class="text-slate-300 leading-relaxed font-light">
+                        Practicing at the prestigious <span class="text-indigo-400 font-semibold">Bhagwan Mahaveer Dental Clinic in Sector 27 B, Chandigarh</span>, Dr. Tulsi Puri blends clinical expertise with modern pain-free technology. Dedicated to creating flawless smiles, Dr. Puri offers individualized treatment plans tailored to each patient's unique oral health requirements.
                     </p>
 
                     <!-- Core Competencies with Progress Bars -->
-                    <div class="space-y-4">
+                    <div class="space-y-4 pt-4">
                         <div>
-                            <div class="flex justify-between text-xs font-semibold text-slate-300 mb-1">
-                                <span>Advanced Dental Surgery & Implantology</span>
-                                <span>98%</span>
+                            <div class="flex justify-between text-sm font-semibold mb-2">
+                                <span class="text-slate-200">Cosmetic & Aesthetic Dentistry</span>
+                                <span class="text-indigo-400">98%</span>
                             </div>
-                            <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                            <div class="w-full bg-slate-900 h-2.5 rounded-full overflow-hidden border border-slate-800">
                                 <div class="bg-gradient-to-r from-indigo-500 to-purple-500 h-full rounded-full" style="width: 98%"></div>
                             </div>
                         </div>
 
                         <div>
-                            <div class="flex justify-between text-xs font-semibold text-slate-300 mb-1">
-                                <span>Cosmetic Dentistry & Smile Design</span>
-                                <span>95%</span>
+                            <div class="flex justify-between text-sm font-semibold mb-2">
+                                <span class="text-slate-200">Root Canal & Endodontics</span>
+                                <span class="text-purple-400">95%</span>
                             </div>
-                            <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
-                                <div class="bg-gradient-to-r from-indigo-500 to-purple-500 h-full rounded-full" style="width: 95%"></div>
+                            <div class="w-full bg-slate-900 h-2.5 rounded-full overflow-hidden border border-slate-800">
+                                <div class="bg-gradient-to-r from-purple-500 to-pink-500 h-full rounded-full" style="width: 95%"></div>
                             </div>
                         </div>
 
                         <div>
-                            <div class="flex justify-between text-xs font-semibold text-slate-300 mb-1">
-                                <span>Endodontics & Restorative Care</span>
-                                <span>96%</span>
+                            <div class="flex justify-between text-sm font-semibold mb-2">
+                                <span class="text-slate-200">Oral Surgery & Restorative Care</span>
+                                <span class="text-pink-400">96%</span>
                             </div>
-                            <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
-                                <div class="bg-gradient-to-r from-indigo-500 to-purple-500 h-full rounded-full" style="width: 96%"></div>
+                            <div class="w-full bg-slate-900 h-2.5 rounded-full overflow-hidden border border-slate-800">
+                                <div class="bg-gradient-to-r from-pink-500 to-indigo-500 h-full rounded-full" style="width: 96%"></div>
                             </div>
                         </div>
                     </div>
+
                 </div>
 
             </div>
@@ -184,63 +202,55 @@
     </section>
 
     <!-- SERVICES & SPECIALIZATION GRID -->
-    <section id="services" class="py-24 bg-slate-900/50 relative">
+    <section id="services" class="py-24 bg-slate-900/40 relative">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold uppercase tracking-wider mb-4">
-                    Specialized Treatments
-                </div>
-                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Comprehensive Clinical Expertise</h2>
-                <p class="text-slate-400">Delivering state-of-the-art procedures tailored to your unique anatomical and aesthetic goals.</p>
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 text-xs font-semibold">Specialized Services</span>
+                <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white mt-3">Comprehensive Dental Treatments</h2>
+                <p class="text-slate-400 text-sm mt-2">State-of-the-art procedures designed for ultimate patient comfort and precision outcomes.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
-                <!-- Service 1 -->
-                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-indigo-500/60 hover:-translate-y-2 hover:shadow-2xl hover:shadow-indigo-500/10 transition-all duration-300 group">
-                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 mb-6 group-hover:scale-110 group-hover:bg-gradient-to-tr group-hover:from-indigo-500 group-hover:to-purple-500 group-hover:text-white transition-all duration-300">
-                        <i class="fa-solid fa-tooth text-2xl"></i>
+                <!-- Card 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl hover:-translate-y-2 hover:shadow-2xl hover:border-indigo-500/60 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-indigo-500/20 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-tooth"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Surgical Implantology</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
-                        Permanent, natural-looking tooth replacement utilizing precision surgical techniques and bio-compatible titanium implants.
-                    </p>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-indigo-400 transition-colors">Cosmetic Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Smile makeovers, porcelain veneers, teeth whitening, and alignment corrections for a flawless aesthetic outcome.</p>
                     <ul class="text-xs text-slate-300 space-y-2">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Single & Multiple Tooth Implants</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Guided Bone Regeneration</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Flapless Surgical Precision</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Laser Whitening Treatments</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Custom Veneers & Laminates</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Smile Design Planning</li>
                     </ul>
                 </div>
 
-                <!-- Service 2 -->
-                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-indigo-500/60 hover:-translate-y-2 hover:shadow-2xl hover:shadow-indigo-500/10 transition-all duration-300 group">
-                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 mb-6 group-hover:scale-110 group-hover:bg-gradient-to-tr group-hover:from-purple-500 group-hover:to-pink-500 group-hover:text-white transition-all duration-300">
-                        <i class="fa-solid fa-wand-magic-sparkles text-2xl"></i>
+                <!-- Card 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl hover:-translate-y-2 hover:shadow-2xl hover:border-purple-500/60 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-purple-500/20 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-syringe"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Cosmetic Smile Makeover</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
-                        Complete aesthetic redesign incorporating custom porcelain veneers, teeth whitening, and alignment refinement.
-                    </p>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">Painless Root Canal Therapy</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Advanced endodontic procedures performed with rotary technology to preserve natural teeth with minimal discomfort.</p>
                     <ul class="text-xs text-slate-300 space-y-2">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Ultra-Thin Porcelain Veneers</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Laser Teeth Whitening</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Digital Smile Designing</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400"></i> Single-sitting Root Canal</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400"></i> High-Precision Rotary Tools</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400"></i> Microscopic Precision Inspection</li>
                     </ul>
                 </div>
 
-                <!-- Service 3 -->
-                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-indigo-500/60 hover:-translate-y-2 hover:shadow-2xl hover:shadow-indigo-500/10 transition-all duration-300 group">
-                    <div class="w-14 h-14 rounded-xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400 mb-6 group-hover:scale-110 group-hover:bg-gradient-to-tr group-hover:from-pink-500 group-hover:to-rose-500 group-hover:text-white transition-all duration-300">
-                        <i class="fa-solid fa-microscope text-2xl"></i>
+                <!-- Card 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl hover:-translate-y-2 hover:shadow-2xl hover:border-pink-500/60 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-pink-500 to-rose-600 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-pink-500/20 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-shield-halved"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Precision Endodontics</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
-                        Painless, single-sitting root canal treatments using advanced rotary endodontics to preserve natural tooth structure.
-                    </p>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-pink-400 transition-colors">Preventative & Oral Surgery</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Comprehensive dental health screenings, painless extractions, crown restorations, and wisdom tooth management.</p>
                     <ul class="text-xs text-slate-300 space-y-2">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Single-Visit Root Canal Treatment</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Microscopic Root Canal Therapy</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Aesthetic Crown Restorations</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pink-400"></i> Surgical Tooth Extraction</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pink-400"></i> Crowns & Fixed Bridges</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pink-400"></i> Preventive Scaling & Polishing</li>
                     </ul>
                 </div>
 
@@ -248,22 +258,19 @@
         </div>
     </section>
 
-    <!-- FEATURED ACHIEVEMENTS / TESTIMONIALS SECTION -->
+    <!-- TESTIMONIALS SECTION -->
     <section id="achievements" class="py-24 bg-slate-950 relative">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold uppercase tracking-wider mb-4">
-                    Patient & Peer Endorsements
-                </div>
-                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Recognized Clinical Excellence</h2>
-                <p class="text-slate-400">What healthcare leaders and valued patients say about Dr. Tulsi Puri’s practice.</p>
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="px-3 py-1 rounded-full bg-pink-500/10 border border-pink-500/30 text-pink-300 text-xs font-semibold">Patient Testimonials</span>
+                <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white mt-3">Trusted by Hundreds of Patients</h2>
+                <p class="text-slate-400 text-sm mt-2">Hear directly from individuals whose smiles have been transformed.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 
-                <!-- Testimonial 1 -->
-                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl hover:border-slate-700 transition">
-                    <div class="flex items-center gap-1 text-amber-400 mb-4">
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl relative">
+                    <div class="text-amber-400 text-sm mb-4">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -271,20 +278,19 @@
                         <i class="fa-solid fa-star"></i>
                     </div>
                     <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
-                        "Dr. Tulsi Puri’s surgical precision and empathetic bedside manner are unmatchable in Chandigarh. The full mouth reconstruction performed at Bhagwan Mahaveer Dental Clinic was completely painless and life-changing."
+                        "Dr. Tulsi Puri is incredible! I was extremely nervous about my root canal procedure, but the treatment at Bhagwan Mahaveer Dental Clinic was completely painless and smooth. Highly recommended!"
                     </p>
                     <div class="flex items-center gap-4">
-                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Reviewer" class="w-12 h-12 rounded-full object-cover">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Patient Reviewer" class="w-12 h-12 rounded-full object-cover border border-indigo-500">
                         <div>
-                            <h4 class="text-white text-sm font-semibold">Simran Kaur</h4>
-                            <p class="text-slate-400 text-xs">Executive Patient, Sector 27 B</p>
+                            <h4 class="text-sm font-bold text-white">Ananya Sharma</h4>
+                            <p class="text-xs text-slate-400">Chandigarh Resident</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Testimonial 2 -->
-                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl hover:border-slate-700 transition">
-                    <div class="flex items-center gap-1 text-amber-400 mb-4">
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl relative">
+                    <div class="text-amber-400 text-sm mb-4">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -292,13 +298,13 @@
                         <i class="fa-solid fa-star"></i>
                     </div>
                     <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
-                        "An outstanding practitioner who combines clinical rigor with modern technology. Dr. Puri is my top recommendation for complex dental surgical cases in the region."
+                        "The standard of care and hygiene at Dr. Puri's practice in Sector 27 B is outstanding. The aesthetic alignment and crown work done exceeded all my expectations."
                     </p>
                     <div class="flex items-center gap-4">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Reviewer" class="w-12 h-12 rounded-full object-cover">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Patient Reviewer" class="w-12 h-12 rounded-full object-cover border border-indigo-500">
                         <div>
-                            <h4 class="text-white text-sm font-semibold">Dr. Rajesh Sharma</h4>
-                            <p class="text-slate-400 text-xs">Senior Medical Specialist</p>
+                            <h4 class="text-sm font-bold text-white">Rajesh Verma</h4>
+                            <p class="text-xs text-slate-400">Corporate Executive</p>
                         </div>
                     </div>
                 </div>
@@ -308,81 +314,66 @@
     </section>
 
     <!-- CONTACT & BOOKING SECTION -->
-    <section id="contact" class="py-24 bg-slate-900/40 border-t border-slate-800/60 relative">
+    <section id="contact" class="py-24 bg-slate-900/40 relative">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
                 
-                <!-- Contact Information -->
-                <div>
-                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold uppercase tracking-wider mb-4">
-                        Connect Directly
-                    </div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Schedule Your Consultation</h2>
-                    <p class="text-slate-400 leading-relaxed mb-8">
-                        Experience world-class dental care at Bhagwan Mahaveer Dental Clinic. Fill out the form or reach out directly to secure an appointment.
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 text-xs font-semibold">Get In Touch</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">Book Your Consultation Today</h2>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Experience advanced, gentle dental care tailored to your needs. Visit us at Sector 27 B, Chandigarh or send a message to schedule an appointment.
                     </p>
 
-                    <div class="space-y-6">
+                    <div class="space-y-4 pt-4">
                         <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 shrink-0">
+                            <div class="w-10 h-10 rounded-xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center flex-shrink-0">
                                 <i class="fa-solid fa-location-dot"></i>
                             </div>
                             <div>
-                                <h4 class="text-sm font-semibold text-white">Clinic Address</h4>
-                                <p class="text-sm text-slate-400">Bhagwan Mahaveer Dental Clinic, Sector 27 B, Chandigarh</p>
+                                <h4 class="text-sm font-bold text-white">Clinic Location</h4>
+                                <p class="text-xs text-slate-400">Bhagwan Mahaveer Dental Clinic, Sector 27 B, Chandigarh</p>
                             </div>
                         </div>
 
                         <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 shrink-0">
-                                <i class="fa-solid fa-envelope"></i>
+                            <div class="w-10 h-10 rounded-xl bg-purple-500/20 text-purple-400 flex items-center justify-center flex-shrink-0">
+                                <i class="fa-solid fa-calendar-days"></i>
                             </div>
                             <div>
-                                <h4 class="text-sm font-semibold text-white">Direct Inquiry</h4>
-                                <p class="text-sm text-slate-400">contact@drtulsipuri.com</p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400 shrink-0">
-                                <i class="fa-solid fa-calendar-check"></i>
-                            </div>
-                            <div>
-                                <h4 class="text-sm font-semibold text-white">Network Status</h4>
-                                <p class="text-sm text-slate-400">Connected: 19 Aug 2026</p>
+                                <h4 class="text-sm font-bold text-white">Connected Since</h4>
+                                <p class="text-xs text-slate-400">19 Aug 2026</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Contact Form -->
-                <div class="bg-slate-900/80 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl">
-                    <form class="space-y-6" onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent.');">
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                            <div>
-                                <label class="block text-xs font-medium text-slate-300 mb-2">Your Name</label>
-                                <input type="text" placeholder="John Doe" required class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition text-sm">
+                <div class="lg:col-span-7">
+                    <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl">
+                        <form onsubmit="event.preventDefault(); alert('Thank you for your message, Dr. Tulsi Puri\'s team will get back to you shortly!');" class="space-y-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">Your Full Name</label>
+                                    <input type="text" required placeholder="John Doe" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 focus:outline-none focus:border-indigo-500 transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">Phone / Email</label>
+                                    <input type="text" required placeholder="contact@example.com" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 focus:outline-none focus:border-indigo-500 transition-colors">
+                                </div>
                             </div>
                             <div>
-                                <label class="block text-xs font-medium text-slate-300 mb-2">Email Address</label>
-                                <input type="email" placeholder="john@example.com" required class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition text-sm">
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Subject / Treatment Needed</label>
+                                <input type="text" required placeholder="e.g. Teeth Whitening / General Checkup" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 focus:outline-none focus:border-indigo-500 transition-colors">
                             </div>
-                        </div>
-
-                        <div>
-                            <label class="block text-xs font-medium text-slate-300 mb-2">Subject / Treatment Interest</label>
-                            <input type="text" placeholder="e.g., Dental Implants Consultation" required class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition text-sm">
-                        </div>
-
-                        <div>
-                            <label class="block text-xs font-medium text-slate-300 mb-2">Message</label>
-                            <textarea rows="4" placeholder="Briefly describe your request or query..." required class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition text-sm resize-none"></textarea>
-                        </div>
-
-                        <button type="submit" class="w-full py-4 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:opacity-95 transition shadow-lg shadow-indigo-500/25">
-                            Send Message
-                        </button>
-                    </form>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Message</label>
+                                <textarea rows="4" required placeholder="Tell us about your dental query or preferred appointment time..." class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 focus:outline-none focus:border-indigo-500 transition-colors"></textarea>
+                            </div>
+                            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white font-bold shadow-lg hover:opacity-90 transition-all duration-300">
+                                Send Message <i class="fa-solid fa-paper-plane ml-2"></i>
+                            </button>
+                        </form>
+                    </div>
                 </div>
 
             </div>
@@ -390,13 +381,15 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="py-8 bg-slate-950 border-t border-slate-900 text-slate-500 text-xs">
-        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p>© 2026 Dr. Tulsi Puri. Generated by LinkedIn Portfolio Builder.</p>
-            <div class="flex items-center gap-6">
-                <a href="#" class="hover:text-slate-300 transition"><i class="fa-brands fa-linkedin text-lg"></i></a>
-                <a href="#" class="hover:text-slate-300 transition"><i class="fa-brands fa-twitter text-lg"></i></a>
-                <a href="#" class="hover:text-slate-300 transition"><i class="fa-solid fa-globe text-lg"></i></a>
+    <footer class="py-8 bg-slate-950 border-t border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+            <p class="text-xs text-slate-500">
+                © 2026 Dr. Tulsi Puri. Generated by LinkedIn Portfolio Builder.
+            </p>
+            <div class="flex items-center gap-4">
+                <a href="#" class="w-8 h-8 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-indigo-400 hover:border-indigo-500 transition-all"><i class="fa-brands fa-linkedin-in text-xs"></i></a>
+                <a href="#" class="w-8 h-8 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-indigo-400 hover:border-indigo-500 transition-all"><i class="fa-solid fa-globe text-xs"></i></a>
+                <a href="#" class="w-8 h-8 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-indigo-400 hover:border-indigo-500 transition-all"><i class="fa-solid fa-envelope text-xs"></i></a>
             </div>
         </div>
     </footer>
