@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Manisha Chauhan | Associate Dentist & Cosmetic Dental Specialist</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-white">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/60 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-indigo-500 to-teal-400 flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform duration-300">
+                    <i class="fa-solid fa-[# tooth] fa-tooth"></i>
+                </div>
+                <div>
+                    <span class="text-lg font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-200 to-slate-400">
+                        Dr. Manisha Chauhan
+                    </span>
+                    <span class="block text-xs font-medium text-cyan-400 tracking-wider uppercase">Smile Dental Clinic</span>
+                </div>
+            </a>
+
+            <!-- Nav Links -->
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors duration-200">About & Story</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors duration-200">Specializations</a>
+                <a href="#achievements" class="hover:text-cyan-400 transition-colors duration-200">Testimonials</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors duration-200">Contact</a>
+            </div>
+
+            <!-- Header Action -->
+            <div class="hidden md:flex items-center gap-4">
+                <a href="#contact" class="px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-cyan-500 via-indigo-600 to-teal-500 hover:shadow-lg hover:shadow-cyan-500/25 hover:scale-[1.02] transition-all duration-300">
+                    Book Appointment
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-slate-400 hover:text-white text-2xl focus:outline-none" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-6 py-4 space-y-3">
+            <a href="#about" class="block text-slate-300 hover:text-cyan-400 py-2">About & Story</a>
+            <a href="#services" class="block text-slate-300 hover:text-cyan-400 py-2">Specializations</a>
+            <a href="#achievements" class="block text-slate-300 hover:text-cyan-400 py-2">Testimonials</a>
+            <a href="#contact" class="block text-slate-300 hover:text-cyan-400 py-2">Contact</a>
+            <a href="#contact" class="block text-center mt-2 px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-cyan-500 to-indigo-600">Book Appointment</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="relative min-h-screen pt-32 pb-20 flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-950 via-indigo-950/40 to-slate-900">
+        <!-- Background Overlay Decorative Pattern -->
+        <div class="absolute inset-0 z-0 opacity-15 bg-cover bg-center mix-blend-overlay" style="background-image: url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80');"></div>
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-10 right-10 w-[350px] h-[350px] bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6 text-center">
+            <!-- Profile Avatar Frame -->
+            <div class="mb-8 inline-block">
+                <div class="p-1.5 bg-gradient-to-r from-cyan-400 via-indigo-500 to-teal-400 rounded-full shadow-2xl shadow-cyan-500/20 inline-block hover:scale-105 transition-transform duration-300">
+                    <img src="https://ui-avatars.com/api/?name=Dr.+Manisha+Chauhan&size=200&background=0D8ABC&color=fff&bold=true" 
+                         alt="Dr. Manisha Chauhan" 
+                         class="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-slate-950 object-cover shadow-inner">
+                </div>
+            </div>
+
+            <!-- Role Badge -->
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900/80 border border-cyan-500/30 text-cyan-300 text-xs md:text-sm font-semibold tracking-wide uppercase mb-6 backdrop-blur-md">
+                <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                Associate Dentist at Smile Dental Clinic & Centre
+            </div>
+
+            <!-- Hero Headline -->
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-tight max-w-4xl mx-auto mb-6">
+                Redefining Oral Healthcare with <span class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-indigo-200 to-teal-300">Precision Artistry & Comfort</span>
+            </h1>
+
+            <!-- Subheadline Elevator Pitch -->
+            <p class="text-slate-300 text-lg md:text-xl max-w-2xl mx-auto font-normal leading-relaxed mb-10">
+                Delivering gentle, high-precision aesthetic and restorative dental care tailored to enhance health, boost confidence, and engineer lifelong bright smiles.
+            </p>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+                <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-full font-bold text-white bg-gradient-to-r from-cyan-500 via-indigo-600 to-teal-500 hover:shadow-xl hover:shadow-cyan-500/30 hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-center gap-3">
+                    <span>Explore Clinical Expertise</span>
+                    <i class="fa-solid fa-arrow-right text-sm"></i>
+                </a>
+                <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full font-bold text-slate-200 bg-slate-900/80 border border-slate-700 hover:border-cyan-500/60 hover:text-white hover:bg-slate-800 transition-all duration-300 flex items-center justify-center gap-2 backdrop-blur-lg">
+                    <i class="fa-regular fa-calendar-check text-cyan-400"></i>
+                    <span>Schedule Consultation</span>
+                </a>
+            </div>
+
+            <!-- Stat Counter Bar -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto p-6 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 shadow-2xl">
+                <div class="p-4 border-r border-slate-800/80 last:border-none">
+                    <div class="text-3xl md:text-4xl font-extrabold text-white bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-indigo-400">8+</div>
+                    <div class="text-xs md:text-sm font-medium text-slate-400 mt-1">Years Clinical Experience</div>
+                </div>
+                <div class="p-4 border-r border-slate-800/80 last:border-none">
+                    <div class="text-3xl md:text-4xl font-extrabold text-white bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-indigo-400">3,500+</div>
+                    <div class="text-xs md:text-sm font-medium text-slate-400 mt-1">Transformative Smiles</div>
+                </div>
+                <div class="p-4 border-r border-slate-800/80 last:border-none">
+                    <div class="text-3xl md:text-4xl font-extrabold text-white bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-indigo-400">99.8%</div>
+                    <div class="text-xs md:text-sm font-medium text-slate-400 mt-1">Patient Satisfaction</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-3xl md:text-4xl font-extrabold text-white bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-indigo-400">15+</div>
+                    <div class="text-xs md:text-sm font-medium text-slate-400 mt-1">Advanced Certifications</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT & EXPERTISE SECTION -->
+    <section id="about" class="py-24 bg-slate-950 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Image Side -->
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-indigo-600 rounded-3xl blur opacity-30 group-hover:opacity-60 transition duration-500"></div>
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Modern Dental Operatory Practice" 
+                             class="w-full h-[450px] object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-slate-900/80 backdrop-blur-md border border-slate-800">
+                            <p class="text-xs font-semibold text-cyan-400 uppercase tracking-wider">Clinical Excellence</p>
+                            <p class="text-sm font-medium text-slate-200 mt-1">"Every patient deserves a tailored treatment approach prioritizing comfort, function, and aesthetics."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text & Skills Side -->
+                <div>
+                    <span class="text-cyan-400 text-sm font-bold tracking-widest uppercase mb-2 block">Career Narrative & Focus</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 leading-snug">
+                        Dedicated to Exceptional Dental Care at <span class="text-cyan-400">Smile Dental Clinic and Centre</span>
+                    </h2>
+                    <p class="text-slate-300 leading-relaxed mb-6 font-normal">
+                        As an Associate Dentist at Smile Dental clinic and centre, Dr. Manisha Chauhan combines clinical expertise with a compassionate, patient-first philosophy. Specializing in restorative treatments, cosmetic smile enhancements, and preventative therapies, she utilizes modern dental technology to deliver pain-free procedures.
+                    </p>
+                    <p class="text-slate-400 leading-relaxed mb-8 text-sm">
+                        Her commitment to continuous education ensures patients receive cutting-edge care—from advanced endodontic therapy to aesthetic porcelain restorations—all in a welcoming, stress-free clinical environment.
+                    </p>
+
+                    <!-- Core Competencies Bar/Pills -->
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between text-sm font-semibold mb-1">
+                                <span class="text-slate-200">Cosmetic Dentistry & Smile Design</span>
+                                <span class="text-cyan-400">96%</span>
+                            </div>
+                            <div class="w-full h-2 rounded-full bg-slate-800">
+                                <div class="h-2 rounded-full bg-gradient-to-r from-cyan-500 to-indigo-500" style="width: 96%;"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-sm font-semibold mb-1">
+                                <span class="text-slate-200">Restorative Dentistry (Crowns, Bridges, Fillings)</span>
+                                <span class="text-cyan-400">94%</span>
+                            </div>
+                            <div class="w-full h-2 rounded-full bg-slate-800">
+                                <div class="h-2 rounded-full bg-gradient-to-r from-cyan-500 to-indigo-500" style="width: 94%;"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-sm font-semibold mb-1">
+                                <span class="text-slate-200">Pain-Free Root Canal & Endodontics</span>
+                                <span class="text-cyan-400">92%</span>
+                            </div>
+                            <div class="w-full h-2 rounded-full bg-slate-800">
+                                <div class="h-2 rounded-full bg-gradient-to-r from-cyan-500 to-indigo-500" style="width: 92%;"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-sm font-semibold mb-1">
+                                <span class="text-slate-200">Patient Anxiety Management & Preventive Care</span>
+                                <span class="text-cyan-400">98%</span>
+                            </div>
+                            <div class="w-full h-2 rounded-full bg-slate-800">
+                                <div class="h-2 rounded-full bg-gradient-to-r from-cyan-500 to-indigo-500" style="width: 98%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES & SPECIALIZATION GRID -->
+    <section id="services" class="py-24 bg-slate-900/50 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-cyan-400 text-sm font-bold tracking-widest uppercase block mb-2">Comprehensive Solutions</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Clinical Services & Expertise</h2>
+                <p class="text-slate-400 text-sm md:text-base">Customized, high-end dental procedures designed for optimum functionality, health, and stunning aesthetics.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/60 hover:-translate-y-2 hover:shadow-2xl hover:shadow-cyan-500/10 transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-cyan-500/20 to-indigo-500/20 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fa-solid fa-[# wand-magic-sparkles] fa-wand-magic-sparkles"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Cosmetic Smile Design</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Custom porcelain veneers, professional teeth whitening, and complete smile makeovers crafted for natural elegance.</p>
+                    </div>
+                    <ul class="space-y-2 border-t border-slate-800/80 pt-4 text-xs text-slate-300">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Veneers & Bonding</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Laser Teeth Whitening</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Digital Smile Analysis</li>
+                    </ul>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/60 hover:-translate-y-2 hover:shadow-2xl hover:shadow-cyan-500/10 transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-cyan-500/20 to-indigo-500/20 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fa-solid fa-tooth"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Restorative Care</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Restoring structural integrity with durable, tooth-colored crowns, bridges, and tooth restorations.</p>
+                    </div>
+                    <ul class="space-y-2 border-t border-slate-800/80 pt-4 text-xs text-slate-300">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Ceramic Crowns & Bridges</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Composite Resin Fillings</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Bite Reconstruction</li>
+                    </ul>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/60 hover:-translate-y-2 hover:shadow-2xl hover:shadow-cyan-500/10 transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-cyan-500/20 to-indigo-500/20 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Endodontics & Oral Therapy</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Gentle, precise root canal treatments aimed at saving natural teeth with modern localized anesthesia.</p>
+                    </div>
+                    <ul class="space-y-2 border-t border-slate-800/80 pt-4 text-xs text-slate-300">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Pain-Free Root Canals</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Emergency Tooth Relief</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Pulp Therapy</li>
+                    </ul>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/60 hover:-translate-y-2 hover:shadow-2xl hover:shadow-cyan-500/10 transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-cyan-500/20 to-indigo-500/20 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Preventive & Wellness</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Thorough clinical cleanings, early diagnostic screenings, and individualized oral hygiene instruction.</p>
+                    </div>
+                    <ul class="space-y-2 border-t border-slate-800/80 pt-4 text-xs text-slate-300">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Ultrasonic Scaling</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Periodontal Maintenance</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Oral Cancer Screenings</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS & ENDORSEMENTS -->
+    <section id="achievements" class="py-24 bg-slate-950 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-cyan-400 text-sm font-bold tracking-widest uppercase block mb-2">Patient & Peer Feedback</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Endorsements & Testimonials</h2>
+                <p class="text-slate-400 text-sm md:text-base">Real stories of compassionate care and exceptional aesthetic outcomes.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- Testimonial 1 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 relative">
+                    <div class="flex items-center gap-1 text-amber-400 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                        "Dr. Manisha Chauhan is hands down the most gentle dentist I have ever visited. She walked me through every step of my veneer procedure, and my confidence has skyrocketed thanks to her precision work at Smile Dental!"
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Patient Review" class="w-12 h-12 rounded-full object-cover border-2 border-cyan-500">
+                        <div>
+                            <h4 class="text-white font-bold text-sm">Priya Sharma</h4>
+                            <p class="text-xs text-slate-400">Cosmetic Dental Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 relative">
+                    <div class="flex items-center gap-1 text-amber-400 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                        "As a senior colleague, I am consistently impressed by Dr. Chauhan's clinical judgment and dedication to painless endodontics. She brings immense technical skill and warmth to Smile Dental clinic and centre."
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Peer Reviewer" class="w-12 h-12 rounded-full object-cover border-2 border-cyan-500">
+                        <div>
+                            <h4 class="text-white font-bold text-sm">Dr. Rajesh Verma</h4>
+                            <p class="text-xs text-slate-400">Senior Dental Surgeon</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT & BOOKING SECTION -->
+    <section id="contact" class="py-24 bg-gradient-to-b from-slate-950 via-indigo-950/20 to-slate-950 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Info Column -->
+                <div>
+                    <span class="text-cyan-400 text-sm font-bold tracking-widest uppercase block mb-2">Connect Directly</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Schedule Your Visit</h2>
+                    <p class="text-slate-300 leading-relaxed mb-8">
+                        Whether you are seeking a routine checkup, cosmetic transformation, or specialized restorative consultation, Dr. Manisha Chauhan welcomes you to experience modern dentistry tailored to your comfort.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-cyan-400 shrink-0">
+                                <i class="fa-solid fa-hospital text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold">Primary Practice</h4>
+                                <p class="text-slate-400 text-sm">Smile Dental clinic and centre</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-cyan-400 shrink-0">
+                                <i class="fa-solid fa-clock text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold">Consultation Hours</h4>
+                                <p class="text-slate-400 text-sm">Mon - Sat: 10:00 AM – 7:30 PM</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-cyan-400 shrink-0">
+                                <i class="fa-solid fa-handshake text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold">Professional Connection</h4>
+                                <p class="text-slate-400 text-sm">LinkedIn Network Member (Connected: August 18, 2026)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Column -->
+                <div class="p-8 rounded-2xl bg-slate-900/80 backdrop-blur-xl border border-slate-800 shadow-xl">
+                    <h3 class="text-xl font-bold text-white mb-6">Send a Message / Appointment Inquiry</h3>
+                    <form class="space-y-4" onsubmit="event.preventDefault(); alert('Thank you for your message! Dr. Chauhan will be in touch shorty.');">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-400 uppercase mb-2">Full Name</label>
+                            <input type="text" placeholder="e.g. Sarah Jenkins" required class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-400 uppercase mb-2">Email Address</label>
+                            <input type="email" placeholder="e.g. sarah@example.com" required class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-400 uppercase mb-2">Service Required</label>
+                            <select class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                                <option>General Dental Consultation</option>
+                                <option>Cosmetic Teeth Whitening / Veneers</option>
+                                <option>Restorative Crown & Bridge Work</option>
+                                <option>Endodontic Therapy</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-400 uppercase mb-2">Message or Notes</label>
+                            <textarea rows="4" placeholder="How can Dr. Chauhan assist you?" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white focus:outline-none focus:border-cyan-500 transition-colors text-sm"></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-4 rounded-xl font-bold text-white bg-gradient-to-r from-cyan-500 via-indigo-600 to-teal-500 hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300">
+                            Send Request
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-12 bg-slate-950 border-t border-slate-800/60 text-slate-400 text-sm">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-500 to-indigo-500 flex items-center justify-center text-white font-bold text-sm">
+                    <i class="fa-solid fa-tooth"></i>
+                </div>
+                <span class="text-white font-semibold">Dr. Manisha Chauhan</span>
+            </div>
+
+            <div class="text-center md:text-left text-xs text-slate-500">
+                &copy; 2026 Dr. Manisha Chauhan. Generated by LinkedIn Portfolio Builder. All rights reserved.
+            </div>
+
+            <div class="flex items-center gap-4 text-slate-400 text-lg">
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
