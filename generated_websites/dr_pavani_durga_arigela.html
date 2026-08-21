@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DR. PAVANI DURGA ARIGELA | Medical Practitioner & Healthcare Specialist</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -12px rgba(99, 102, 241, 0.35);
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(51, 65, 85, 0.6);
+        }
+        .glass-card:hover {
+            border-color: rgba(99, 102, 241, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- NAVIGATION BAR -->
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 p-0.5 shadow-lg group-hover:scale-105 transition-transform duration-300">
+                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+                        <i class="fa-solid fa-user-doctor text-indigo-400 text-lg"></i>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-extrabold text-lg tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-100 to-indigo-200">
+                        DR. PAVANI DURGA ARIGELA
+                    </span>
+                    <span class="text-xs text-indigo-400 font-medium tracking-wider uppercase">Medical Specialist</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-indigo-400 transition-colors duration-200">About</a>
+                <a href="#services" class="hover:text-indigo-400 transition-colors duration-200">Services</a>
+                <a href="#achievements" class="hover:text-indigo-400 transition-colors duration-200">Achievements</a>
+                <a href="#contact" class="hover:text-indigo-400 transition-colors duration-200">Contact</a>
+            </nav>
+
+            <!-- CTA Button -->
+            <div class="hidden sm:flex items-center space-x-4">
+                <a href="#contact" class="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-semibold text-white rounded-full group bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 group-hover:from-indigo-500 group-hover:to-pink-500 hover:shadow-lg hover:shadow-indigo-500/30 transition-all duration-300">
+                    <span class="relative px-6 py-2.5 transition-all ease-in duration-75 bg-slate-950 rounded-full group-hover:bg-opacity-0">
+                        Book Consultation
+                    </span>
+                </a>
+            </div>
+
+            <!-- Mobile menu button -->
+            <div class="md:hidden flex items-center">
+                <a href="#contact" class="text-indigo-400 hover:text-white p-2">
+                    <i class="fa-solid fa-calendar-check text-xl"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative min-h-screen pt-32 pb-20 flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-950 via-indigo-950/40 to-slate-900">
+        <!-- Background Ambient Glow & Image Overlay -->
+        <div class="absolute inset-0 z-0 opacity-20 bg-cover bg-center mix-blend-overlay" style="background-image: url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80');"></div>
+        <div class="absolute -top-40 -left-40 w-96 h-96 bg-indigo-600/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-40 -right-40 w-96 h-96 bg-pink-600/20 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <!-- Glowing Avatar Container -->
+            <div class="mb-8 inline-block">
+                <div class="p-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full shadow-2xl glow-effect inline-block transform hover:scale-105 transition-transform duration-300">
+                    <img class="w-36 h-36 sm:w-44 sm:h-44 rounded-full object-cover border-4 border-slate-950" 
+                         src="https://ui-avatars.com/api/?name=DR.+PAVANI+DURGA+ARIGELA&size=200&background=0D8ABC&color=fff&bold=true" 
+                         alt="DR. PAVANI DURGA ARIGELA">
+                </div>
+            </div>
+
+            <!-- Status Badge -->
+            <div class="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 text-xs font-semibold mb-6 uppercase tracking-wider">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span>Available for Independent Consultations</span>
+            </div>
+
+            <!-- Main Headline -->
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6">
+                <span class="bg-clip-text text-transparent bg-gradient-to-r from-white via-indigo-100 to-indigo-300">
+                    DR. PAVANI DURGA ARIGELA
+                </span>
+            </h1>
+
+            <p class="text-xl sm:text-2xl font-semibold text-indigo-400 mb-4">
+                Doctor & Senior Medical Specialist
+            </p>
+
+            <!-- Elevator Pitch Subheadline -->
+            <p class="max-w-2xl mx-auto text-base sm:text-lg text-slate-300 leading-relaxed mb-10 font-normal">
+                Delivering compassionate, evidence-based patient care, advanced clinical diagnostics, and holistic wellness strategies to empower healthier communities.
+            </p>
+
+            <!-- Dual CTA Buttons -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+                <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-bold text-base shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-105 transition-all duration-300 flex items-center justify-center space-x-2">
+                    <span>Explore Expertise</span>
+                    <i class="fa-solid fa-arrow-right text-sm"></i>
+                </a>
+                <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full bg-slate-900 border border-slate-700 hover:border-indigo-500 text-slate-200 font-bold text-base hover:bg-slate-800 transition-all duration-300 flex items-center justify-center space-x-2">
+                    <i class="fa-regular fa-calendar text-indigo-400"></i>
+                    <span>Schedule Consultation</span>
+                </a>
+            </div>
+
+            <!-- Stat Counter Bar -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                <div class="glass-card rounded-2xl p-6 text-center transform hover:-translate-y-1 transition-all duration-300">
+                    <div class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400 mb-1">10+ Years</div>
+                    <div class="text-sm font-medium text-slate-400 uppercase tracking-wider">Clinical Experience</div>
+                </div>
+                <div class="glass-card rounded-2xl p-6 text-center transform hover:-translate-y-1 transition-all duration-300">
+                    <div class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 mb-1">5,000+</div>
+                    <div class="text-sm font-medium text-slate-400 uppercase tracking-wider">Patients Served</div>
+                </div>
+                <div class="glass-card rounded-2xl p-6 text-center transform hover:-translate-y-1 transition-all duration-300">
+                    <div class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-indigo-400 mb-1">99%</div>
+                    <div class="text-sm font-medium text-slate-400 uppercase tracking-wider">Patient Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT & EXPERTISE SECTION -->
+    <section id="about" class="py-24 bg-slate-950 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-xs uppercase tracking-widest text-indigo-400 font-bold mb-2">Background & Expertise</h2>
+                <h3 class="text-3xl sm:text-4xl font-bold text-white">Dedicated to Excellence in Clinical Care</h3>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Workspace Image Container -->
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-pink-500 rounded-3xl blur opacity-30 group-hover:opacity-60 transition duration-500"></div>
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-800">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Medical Workspace" 
+                             class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <span class="inline-block px-3 py-1 rounded-full bg-indigo-600/80 text-white text-xs font-semibold backdrop-blur-md mb-2">Medical Leadership</span>
+                            <p class="text-sm text-slate-200">Independent Clinical Practice & Healthcare Management</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Career Narrative & Skills -->
+                <div class="space-y-6">
+                    <h3 class="text-2xl sm:text-3xl font-bold text-white leading-snug">
+                        Bridging Modern Diagnostic Precision with Human-Centric Medical Care
+                    </h3>
+                    <p class="text-slate-300 leading-relaxed">
+                        Dr. Pavani Durga Arigela is an accomplished medical practitioner operating as an independent consultant. With extensive training and a proactive approach to modern medical challenges, Dr. Arigela combines clinical expertise with advanced therapeutic strategies.
+                    </p>
+                    <p class="text-slate-300 leading-relaxed">
+                        Specializing in comprehensive patient diagnosis, preventive healthcare, and personalized treatment frameworks, the practice is grounded in clinical integrity, evidence-based research, and empathetic patient engagement.
+                    </p>
+
+                    <!-- Core Competencies / Skill Progress Bars -->
+                    <div class="pt-4 space-y-4">
+                        <div>
+                            <div class="flex justify-between text-sm font-semibold mb-1">
+                                <span class="text-slate-200">Clinical Diagnostics & Patient Care</span>
+                                <span class="text-indigo-400">98%</span>
+                            </div>
+                            <div class="w-full bg-slate-800 rounded-full h-2.5">
+                                <div class="bg-gradient-to-r from-indigo-500 to-purple-500 h-2.5 rounded-full" style="width: 98%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-sm font-semibold mb-1">
+                                <span class="text-slate-200">Preventive Medicine & Wellness Planning</span>
+                                <span class="text-indigo-400">95%</span>
+                            </div>
+                            <div class="w-full bg-slate-800 rounded-full h-2.5">
+                                <div class="bg-gradient-to-r from-purple-500 to-pink-500 h-2.5 rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-sm font-semibold mb-1">
+                                <span class="text-slate-200">Treatment Plan Optimization & Therapeutics</span>
+                                <span class="text-indigo-400">92%</span>
+                            </div>
+                            <div class="w-full bg-slate-800 rounded-full h-2.5">
+                                <div class="bg-gradient-to-r from-pink-500 to-indigo-500 h-2.5 rounded-full" style="width: 92%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tech & Medical Tags -->
+                    <div class="pt-2 flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded-full text-xs font-medium bg-slate-900 border border-slate-800 text-slate-300">Evidence-based Care</span>
+                        <span class="px-3 py-1 rounded-full text-xs font-medium bg-slate-900 border border-slate-800 text-slate-300">Internal Medicine</span>
+                        <span class="px-3 py-1 rounded-full text-xs font-medium bg-slate-900 border border-slate-800 text-slate-300">Health Coaching</span>
+                        <span class="px-3 py-1 rounded-full text-xs font-medium bg-slate-900 border border-slate-800 text-slate-300">Chronic Care</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES & SPECIALIZATION GRID -->
+    <section id="services" class="py-24 bg-slate-900/50 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs uppercase tracking-widest text-indigo-400 font-bold mb-2">Specializations</h2>
+                <h3 class="text-3xl sm:text-4xl font-bold text-white mb-4">Comprehensive Healthcare Offerings</h3>
+                <p class="text-slate-400 text-base">Tailored medical consultations and clinical guidance designed to foster lifelong well-being.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="glass-card rounded-2xl p-8 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 hover:border-indigo-500/60 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-indigo-500 to-purple-500 flex items-center justify-center text-white text-2xl mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <i class="fa-solid fa-stethoscope"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-3">Primary Medical Consultations</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            Thorough health evaluations, accurate diagnoses, and tailored intervention plans for acute and chronic conditions.
+                        </p>
+                        <ul class="space-y-2 text-xs text-slate-300 mb-6">
+                            <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-indigo-400"></i><span>Comprehensive Health Screenings</span></li>
+                            <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-indigo-400"></i><span>Individualized Symptom Management</span></li>
+                            <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-indigo-400"></i><span>Ongoing Health Monitoring</span></li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="inline-flex items-center text-sm font-semibold text-indigo-400 hover:text-indigo-300 transition-colors">
+                        Learn More <i class="fa-solid fa-arrow-right text-xs ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="glass-card rounded-2xl p-8 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 hover:border-indigo-500/60 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-purple-500 to-pink-500 flex items-center justify-center text-white text-2xl mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-3">Preventive Care & Wellness</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            Proactive health strategies aimed at preventing disease onset, optimizing metabolic health, and enhancing longevity.
+                        </p>
+                        <ul class="space-y-2 text-xs text-slate-300 mb-6">
+                            <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-indigo-400"></i><span>Risk Assessment & Profiling</span></li>
+                            <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-indigo-400"></i><span>Lifestyle & Nutrition Optimization</span></li>
+                            <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-indigo-400"></i><span>Preventive Screening Protocols</span></li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="inline-flex items-center text-sm font-semibold text-indigo-400 hover:text-indigo-300 transition-colors">
+                        Learn More <i class="fa-solid fa-arrow-right text-xs ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="glass-card rounded-2xl p-8 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 hover:border-indigo-500/60 flex flex-col justify-between group">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-pink-500 to-indigo-500 flex items-center justify-center text-white text-2xl mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <i class="fa-solid fa-laptop-medical"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-3">Virtual & Second Opinion Care</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            Flexible remote consultation services offering detailed medical reviews, diagnostic second opinions, and patient advice.
+                        </p>
+                        <ul class="space-y-2 text-xs text-slate-300 mb-6">
+                            <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-indigo-400"></i><span>Comprehensive Record Review</span></li>
+                            <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-indigo-400"></i><span>Secure Telehealth Appointments</span></li>
+                            <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-indigo-400"></i><span>Personalized Care Guidance</span></li>
+                        </ul>
+                    </div>
+                    <a href="#contact" class="inline-flex items-center text-sm font-semibold text-indigo-400 hover:text-indigo-300 transition-colors">
+                        Learn More <i class="fa-solid fa-arrow-right text-xs ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED ACHIEVEMENTS / TESTIMONIALS SECTION -->
+    <section id="achievements" class="py-24 bg-slate-950 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs uppercase tracking-widest text-indigo-400 font-bold mb-2">Endorsements & Recognition</h2>
+                <h3 class="text-3xl sm:text-4xl font-bold text-white mb-4">Trusted by Patients & Colleagues</h3>
+                <p class="text-slate-400 text-base">Hear from healthcare partners and patients who have experienced Dr. Arigela's clinical expertise firsthand.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- Testimonial 1 -->
+                <div class="glass-card rounded-2xl p-8 relative">
+                    <div class="flex items-center space-x-1 text-amber-400 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                        "Dr. Pavani Durga Arigela exemplifies extraordinary clinical diligence. Her empathetic approach combined with thorough medical analysis gave our team complete confidence during joint patient management."
+                    </p>
+                    <div class="flex items-center space-x-4">
+                        <img class="w-12 h-12 rounded-full object-cover border-2 border-indigo-500" 
+                             src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" 
+                             alt="Dr. Sarah Jenkins">
+                        <div>
+                            <div class="font-bold text-white text-sm">Dr. Sarah Jenkins</div>
+                            <div class="text-xs text-indigo-400">Chief of Medicine, Clinical Network Partner</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="glass-card rounded-2xl p-8 relative">
+                    <div class="flex items-center space-x-1 text-amber-400 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                        "Dr. Arigela's holistic understanding of complex health symptoms transformed my preventive care journey. Extremely attentive, professional, and knowledgeable."
+                    </p>
+                    <div class="flex items-center space-x-4">
+                        <img class="w-12 h-12 rounded-full object-cover border-2 border-purple-500" 
+                             src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" 
+                             alt="Marcus Vance">
+                        <div>
+                            <div class="font-bold text-white text-sm">Marcus Vance</div>
+                            <div class="text-xs text-indigo-400">Executive & Wellness Client</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT & BOOKING SECTION -->
+    <section id="contact" class="py-24 bg-slate-900/60 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Info -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <h2 class="text-xs uppercase tracking-widest text-indigo-400 font-bold mb-2">Get in Touch</h2>
+                        <h3 class="text-3xl font-bold text-white mb-4">Schedule Your Consultation</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Reach out for professional inquiries, patient bookings, or healthcare collaborations.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-lg bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 shrink-0">
+                                <i class="fa-solid fa-user-doctor text-base"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 uppercase font-medium">Practice Status</div>
+                                <div class="text-slate-200 font-semibold text-sm">Self-employed / Independent Consultant</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-lg bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 shrink-0">
+                                <i class="fa-solid fa-envelope text-base"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 uppercase font-medium">Direct Outreach</div>
+                                <div class="text-slate-200 font-semibold text-sm">dr.arigela@consultation-hub.com</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-lg bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 shrink-0">
+                                <i class="fa-solid fa-handshake text-base"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 uppercase font-medium">Professional Network</div>
+                                <div class="text-slate-200 font-semibold text-sm">Connected: 18 Aug 2026</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="lg:col-span-7">
+                    <div class="glass-card rounded-2xl p-8 sm:p-10">
+                        <form onsubmit="event.preventDefault(); alert('Thank you for reaching out! Your message has been received.');" class="space-y-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Full Name</label>
+                                    <input type="text" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 focus:outline-none focus:border-indigo-500 transition-colors text-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Email Address</label>
+                                    <input type="email" required placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 focus:outline-none focus:border-indigo-500 transition-colors text-sm">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Subject</label>
+                                <input type="text" required placeholder="Consultation Inquiry" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 focus:outline-none focus:border-indigo-500 transition-colors text-sm">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Message</label>
+                                <textarea rows="4" required placeholder="Please describe how Dr. Arigela can assist you..." class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 focus:outline-none focus:border-indigo-500 transition-colors text-sm"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-bold text-sm tracking-wider uppercase hover:shadow-lg hover:shadow-indigo-500/30 transition-all duration-300">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 border-t border-slate-800/80 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex flex-col text-center md:text-left">
+                <span class="font-bold text-white text-lg">DR. PAVANI DURGA ARIGELA</span>
+                <span class="text-xs text-slate-400">Medical Practitioner & Clinical Specialist</span>
+            </div>
+
+            <div class="text-xs text-slate-500 text-center">
+                © 2026 DR. PAVANI DURGA ARIGELA. Generated by LinkedIn Portfolio Builder.
+            </div>
+
+            <div class="flex items-center space-x-4 text-slate-400">
+                <a href="#" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center hover:text-indigo-400 hover:border-indigo-500 transition-colors">
+                    <i class="fa-brands fa-linkedin-in text-sm"></i>
+                </a>
+                <a href="#" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center hover:text-indigo-400 hover:border-indigo-500 transition-colors">
+                    <i class="fa-solid fa-envelope text-sm"></i>
+                </a>
+                <a href="#" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center hover:text-indigo-400 hover:border-indigo-500 transition-colors">
+                    <i class="fa-solid fa-hospital text-sm"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
