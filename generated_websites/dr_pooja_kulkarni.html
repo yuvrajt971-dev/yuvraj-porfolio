@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Pooja Kulkarni | Clinic Head & Senior Dental Specialist</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card:hover {
+            border-color: rgba(99, 102, 241, 0.4);
+            box-shadow: 0 20px 40px -15px rgba(99, 102, 241, 0.2);
+        }
+        .glow-effect {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, rgba(168, 85, 247, 0.05) 50%, rgba(0,0,0,0) 70%);
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center font-bold text-white shadow-lg shadow-indigo-500/20 group-hover:scale-105 transition-transform duration-300">
+                    PK
+                </div>
+                <div>
+                    <span class="text-lg font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-200 to-slate-400">Dr. Pooja Kulkarni</span>
+                    <span class="block text-xs text-indigo-400 font-medium">Clinic Head • Clove Dental</span>
+                </div>
+            </a>
+
+            <div class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-300">
+                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+                <a href="#services" class="hover:text-indigo-400 transition-colors">Specializations</a>
+                <a href="#achievements" class="hover:text-indigo-400 transition-colors">Achievements</a>
+                <a href="#contact" class="hover:text-indigo-400 transition-colors">Contact</a>
+            </div>
+
+            <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-105 transition-all duration-300">
+                Get in Touch
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="relative min-h-screen flex items-center justify-center pt-28 pb-16 overflow-hidden bg-gradient-to-br from-slate-950 via-indigo-950/30 to-slate-900">
+        <!-- Background Overlay Image -->
+        <div class="absolute inset-0 z-0 opacity-10 bg-cover bg-center mix-blend-overlay" style="background-image: url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80');"></div>
+        
+        <!-- Ambient Glowing Orbs -->
+        <div class="glow-effect -top-20 -left-20"></div>
+        <div class="glow-effect top-1/2 -right-20"></div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
+            <!-- Profile Avatar -->
+            <div class="mb-8 inline-block">
+                <div class="p-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full shadow-2xl shadow-indigo-500/30 inline-block hover:scale-105 transition-transform duration-500">
+                    <img src="https://ui-avatars.com/api/?name=Dr.+Pooja+Kulkarni&size=200&background=0D8ABC&color=fff&bold=true" alt="Dr. Pooja Kulkarni" class="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-slate-950 object-cover">
+                </div>
+            </div>
+
+            <!-- Role Badge -->
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card text-xs md:text-sm text-indigo-300 font-medium mb-6">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                Clinic Head at Clove Dental
+            </div>
+
+            <!-- Main Headline -->
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-tight max-w-5xl mx-auto mb-6">
+                Elevating Dental Excellence & <br class="hidden sm:inline">
+                <span class="bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 via-purple-300 to-pink-400">
+                    Transforming Patient Smiles
+                </span>
+            </h1>
+
+            <!-- Subheadline -->
+            <p class="text-base md:text-xl text-slate-300 max-w-3xl mx-auto mb-10 leading-relaxed">
+                Pioneering clinical precision, multi-specialty care management, and compassionate patient experiences as Clinic Head at India’s premier dental healthcare network.
+            </p>
+
+            <!-- Dual CTAs -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+                <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-full font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-xl shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2">
+                    <span>Explore Expertise</span>
+                    <i class="fa-solid font-sm fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full font-semibold text-slate-200 glass-card hover:bg-slate-800/80 hover:text-white hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2 border border-slate-700">
+                    <i class="fa-regular fa-calendar-check text-indigo-400"></i>
+                    <span>Schedule Consultation</span>
+                </a>
+            </div>
+
+            <!-- Stat Counter Bar -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto pt-8 border-t border-slate-800/80">
+                <div class="p-4 rounded-2xl glass-card">
+                    <div class="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-400">12+</div>
+                    <div class="text-xs md:text-sm text-slate-400 font-medium mt-1">Years Clinical Experience</div>
+                </div>
+                <div class="p-4 rounded-2xl glass-card">
+                    <div class="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400">15k+</div>
+                    <div class="text-xs md:text-sm text-slate-400 font-medium mt-1">Successful Treatments</div>
+                </div>
+                <div class="p-4 rounded-2xl glass-card">
+                    <div class="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-indigo-400">99.8%</div>
+                    <div class="text-xs md:text-sm text-slate-400 font-medium mt-1">Patient Satisfaction Rate</div>
+                </div>
+                <div class="p-4 rounded-2xl glass-card">
+                    <div class="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-emerald-400">Top 1%</div>
+                    <div class="text-xs md:text-sm text-slate-400 font-medium mt-1">Clinical Standard Quality</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT & EXPERTISE SECTION -->
+    <section id="about" class="py-24 relative bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                
+                <!-- Image Side -->
+                <div class="relative">
+                    <div class="absolute -inset-2 bg-gradient-to-r from-indigo-500 to-pink-500 rounded-3xl blur-xl opacity-30"></div>
+                    <div class="relative rounded-3xl overflow-hidden border border-slate-800 shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" alt="Modern Dental Clinic" class="w-full h-[480px] object-cover hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-6 glass-card rounded-2xl border border-slate-700/50">
+                            <div class="text-sm font-semibold text-indigo-400 mb-1">Clove Dental Leadership</div>
+                            <div class="text-xl font-bold text-white">Commitment to World-Class Hygiene & Aesthetics</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Career Narrative Side -->
+                <div>
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 text-xs font-semibold uppercase tracking-wider mb-4">
+                        Clinical Leadership Narrative
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">
+                        Driving Innovation and Human-Centric Care in Modern Dentistry
+                    </h2>
+                    <p class="text-slate-300 mb-6 leading-relaxed">
+                        As the Clinic Head at <strong class="text-indigo-300 font-semibold">Clove Dental</strong>, Dr. Pooja Kulkarni spearheads clinical operational excellence, patient-first treatment protocols, and state-of-the-art technological integrations. With over a decade of dedicated experience, she blends advanced aesthetic techniques with standard-setting medical protocols.
+                    </p>
+                    <p class="text-slate-400 mb-8 leading-relaxed">
+                        Her leadership ensures that every patient receives personalized, painless, and transparent oral healthcare delivered within an ultra-hygienic environment designed for absolute comfort and peace of mind.
+                    </p>
+
+                    <!-- Core Competencies with Progress Bars -->
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between text-sm font-medium mb-1">
+                                <span class="text-slate-200">Clinical Leadership & Team Direction</span>
+                                <span class="text-indigo-400">98%</span>
+                            </div>
+                            <div class="w-full h-2 bg-slate-800 rounded-full overflow-hidden">
+                                <div class="h-full bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full" style="width: 98%;"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-sm font-medium mb-1">
+                                <span class="text-slate-200">Advanced Aesthetic & Restorative Dentistry</span>
+                                <span class="text-purple-400">95%</span>
+                            </div>
+                            <div class="w-full h-2 bg-slate-800 rounded-full overflow-hidden">
+                                <div class="h-full bg-gradient-to-r from-purple-500 to-pink-500 rounded-full" style="width: 95%;"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-sm font-medium mb-1">
+                                <span class="text-slate-200">Sterilization & Quality Protocols</span>
+                                <span class="text-pink-400">100%</span>
+                            </div>
+                            <div class="w-full h-2 bg-slate-800 rounded-full overflow-hidden">
+                                <div class="h-full bg-gradient-to-r from-pink-500 to-indigo-500 rounded-full" style="width: 100%;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES & SPECIALIZATION GRID -->
+    <section id="services" class="py-24 relative bg-slate-900/40">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 text-xs font-semibold uppercase tracking-wider mb-4">
+                    Specialized Expertise
+                </div>
+                <h2 class="text-3xl md:text-5xl font-extrabold text-white tracking-tight mb-4">
+                    Comprehensive Dental & Leadership Services
+                </h2>
+                <p class="text-slate-400 text-base md:text-lg">
+                    Delivering precision dental interventions alongside high-performance clinical management.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Card 1 -->
+                <div class="glass-card rounded-2xl p-8 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 hover:border-indigo-500/60 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-indigo-500 to-purple-500 flex items-center justify-center text-white text-2xl shadow-lg shadow-indigo-500/30 mb-6">
+                            <i class="fa-solid fa-tooth"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Comprehensive Oral Rehabilitation</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            Holistic diagnosis and multi-stage treatment planning for complex restorative, endodontic, and prosthodontic cases.
+                        </p>
+                    </div>
+                    <ul class="space-y-2 text-xs text-slate-300 border-t border-slate-800/80 pt-4">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-indigo-400"></i> Full Mouth Restoration</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-indigo-400"></i> Advanced Endodontic Procedures</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-indigo-400"></i> Digital Treatment Planning</li>
+                    </ul>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="glass-card rounded-2xl p-8 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 hover:border-indigo-500/60 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-purple-500 to-pink-500 flex items-center justify-center text-white text-2xl shadow-lg shadow-purple-500/30 mb-6">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Cosmetic & Smile Designing</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            Precision smile enhancements combining modern aesthetic principles with durable biomaterials.
+                        </p>
+                    </div>
+                    <ul class="space-y-2 text-xs text-slate-300 border-t border-slate-800/80 pt-4">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-purple-400"></i> Veneers & Laminates</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-purple-400"></i> Laser Teeth Whitening</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-purple-400"></i> Aligners & Alignment Optimization</li>
+                    </ul>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="glass-card rounded-2xl p-8 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 hover:border-indigo-500/60 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-pink-500 to-indigo-500 flex items-center justify-center text-white text-2xl shadow-lg shadow-pink-500/30 mb-6">
+                            <i class="fa-solid fa-user-doctor"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Clinical Excellence & Operations</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            Supervising clinic workflows, strict 4-step sterilization standards, and patient satisfaction benchmarks at Clove Dental.
+                        </p>
+                    </div>
+                    <ul class="space-y-2 text-xs text-slate-300 border-t border-slate-800/80 pt-4">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-pink-400"></i> 4-Step Sterilization Control</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-pink-400"></i> Staff Training & Mentorship</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-pink-400"></i> Quality Assurance Monitoring</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED ACHIEVEMENTS & TESTIMONIALS -->
+    <section id="achievements" class="py-24 relative bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 text-xs font-semibold uppercase tracking-wider mb-4">
+                    Endorsements & Legacy
+                </div>
+                <h2 class="text-3xl md:text-5xl font-extrabold text-white tracking-tight mb-4">
+                    Recognized by Patients & Peers
+                </h2>
+                <p class="text-slate-400 text-base md:text-lg">
+                    Real words of trust from patients and professional colleagues.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="glass-card p-8 rounded-3xl relative">
+                    <div class="flex items-center gap-1 text-amber-400 mb-6 text-sm">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-lg italic leading-relaxed mb-8">
+                        "Dr. Pooja Kulkarni transformed my entire perception of dental visits. As Clinic Head, her attention to hygiene, empathetic consultation, and smooth procedure made my root canal completely painless!"
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Ananya Sharma" class="w-14 h-14 rounded-full object-cover border-2 border-indigo-500">
+                        <div>
+                            <div class="font-bold text-white">Ananya Sharma</div>
+                            <div class="text-xs text-indigo-400">Executive Director • Corporate Tech</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="glass-card p-8 rounded-3xl relative">
+                    <div class="flex items-center gap-1 text-amber-400 mb-6 text-sm">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-lg italic leading-relaxed mb-8">
+                        "Dr. Pooja's leadership at Clove Dental sets a benchmark for the industry. Her clinical discipline and dedication to adopting cutting-edge cosmetic dentistry techniques are truly commendable."
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Dr. Rajesh Mehta" class="w-14 h-14 rounded-full object-cover border-2 border-purple-500">
+                        <div>
+                            <div class="font-bold text-white">Dr. Rajesh Mehta</div>
+                            <div class="text-xs text-purple-400">Senior Dental Surgeon & Advisory Board</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT & BOOKING SECTION -->
+    <section id="contact" class="py-24 relative bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16">
+                
+                <!-- Left Details Side -->
+                <div>
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 text-xs font-semibold uppercase tracking-wider mb-4">
+                        Connect Directly
+                    </div>
+                    <h2 class="text-3xl md:text-5xl font-extrabold text-white tracking-tight mb-6">
+                        Schedule a Consultation or Inquiry
+                    </h2>
+                    <p class="text-slate-300 mb-8 leading-relaxed">
+                        Whether you require specialized dental care, expert second opinions, or corporate healthcare partnerships, Dr. Pooja Kulkarni is available at Clove Dental.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 shrink-0">
+                                <i class="fa-solid fa-hospital text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="text-sm font-semibold text-slate-400">Clinical Affiliation</div>
+                                <div class="text-base font-bold text-white">Clove Dental Center</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 shrink-0">
+                                <i class="fa-solid fa-envelope text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="text-sm font-semibold text-slate-400">Direct Email</div>
+                                <div class="text-base font-bold text-white">dr.pooja@clovedental.in</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-pink-500/10 border border-pink-500/30 flex items-center justify-center text-pink-400 shrink-0">
+                                <i class="fa-solid fa-user-check text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="text-sm font-semibold text-slate-400">Professional Connection</div>
+                                <div class="text-base font-bold text-white">Connected since 18 Aug 2026</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Form Side -->
+                <div class="glass-card p-8 md:p-10 rounded-3xl border border-slate-800">
+                    <form onsubmit="event.preventDefault(); alert('Thank you for reaching out to Dr. Pooja Kulkarni. Your message has been received!');" class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium text-slate-300 mb-2">Your Full Name</label>
+                            <input type="text" required placeholder="e.g. Sarah Jenkins" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white focus:outline-none focus:border-indigo-500 transition-colors">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-slate-300 mb-2">Email Address</label>
+                            <input type="email" required placeholder="e.g. sarah@example.com" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white focus:outline-none focus:border-indigo-500 transition-colors">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-slate-300 mb-2">Subject / Inquiry Type</label>
+                            <select class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white focus:outline-none focus:border-indigo-500 transition-colors">
+                                <option>Dental Consultation Booking</option>
+                                <option>Cosmetic Dentistry Inquiry</option>
+                                <option>Clinical Management & Speaking</option>
+                                <option>General Inquiry</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-slate-300 mb-2">Your Message</label>
+                            <textarea rows="4" required placeholder="Briefly describe your request..." class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white focus:outline-none focus:border-indigo-500 transition-colors resize-none"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl font-bold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:shadow-lg hover:shadow-indigo-500/30 hover:scale-[1.02] transition-all duration-300">
+                            Send Priority Message
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-8 bg-slate-950 border-t border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="text-xs text-slate-500">
+                © 2026 Dr. Pooja Kulkarni. Generated by LinkedIn Portfolio Builder.
+            </div>
+
+            <div class="flex items-center gap-6 text-slate-400">
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-brands fa-linkedin text-lg"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-brands fa-twitter text-lg"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-solid fa-globe text-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
