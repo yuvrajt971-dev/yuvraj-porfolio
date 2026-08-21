@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Varun Ramachandran Pillai | General Dentist Showcase</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -12px rgba(99, 102, 241, 0.35);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #ffffff 0%, #c7d2fe 50%, #818cf8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .accent-gradient-bg {
+            background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl accent-gradient-bg flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-indigo-500/20 group-hover:scale-105 transition-transform">
+                    VP
+                </div>
+                <div>
+                    <span class="text-lg font-bold tracking-tight text-white block leading-tight">Dr. Varun R. Pillai</span>
+                    <span class="text-xs text-indigo-400 font-medium tracking-wide uppercase">General Dentist</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <div class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-300">
+                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+                <a href="#services" class="hover:text-indigo-400 transition-colors">Services</a>
+                <a href="#achievements" class="hover:text-indigo-400 transition-colors">Achievements</a>
+                <a href="#contact" class="hover:text-indigo-400 transition-colors">Contact</a>
+            </div>
+
+            <!-- Primary CTA -->
+            <div class="hidden md:block">
+                <a href="#contact" class="px-5 py-2.5 rounded-full text-sm font-semibold text-white accent-gradient-bg hover:opacity-90 transition-all shadow-md shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:-translate-y-0.5 inline-block">
+                    Book Consultation
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden text-slate-300 hover:text-white p-2">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-6 py-4 space-y-3">
+            <a href="#about" class="block text-slate-300 hover:text-indigo-400 py-2">About</a>
+            <a href="#services" class="block text-slate-300 hover:text-indigo-400 py-2">Services</a>
+            <a href="#achievements" class="block text-slate-300 hover:text-indigo-400 py-2">Achievements</a>
+            <a href="#contact" class="block text-slate-300 hover:text-indigo-400 py-2">Contact</a>
+            <a href="#contact" class="block w-full text-center py-2.5 rounded-full text-sm font-semibold text-white accent-gradient-bg">Book Consultation</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="relative min-h-screen pt-32 pb-20 flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-950 via-indigo-950/40 to-slate-900">
+        <!-- Background Overlay Image with low opacity -->
+        <div class="absolute inset-0 z-0 opacity-10 mix-blend-overlay pointer-events-none">
+            <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80" alt="Clinic Ambience Background" class="w-full h-full object-cover">
+        </div>
+        
+        <!-- Ambient Glowing Orbs -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-indigo-600/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-10 right-10 w-80 h-80 bg-purple-600/15 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="relative z-10 max-w-5xl mx-auto px-6 text-center">
+            <!-- Profile Avatar Badge -->
+            <div class="mb-8 inline-block">
+                <div class="p-1.5 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full shadow-2xl glow-effect">
+                    <div class="bg-slate-950 rounded-full p-1">
+                        <img src="https://ui-avatars.com/api/?name=Dr.Varun+Ramachandran+Pillai&size=200&background=0D8ABC&color=fff&bold=true" 
+                             alt="Dr. Varun Ramachandran Pillai" 
+                             class="w-28 h-28 md:w-36 md:h-36 rounded-full object-cover">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Role Tag -->
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 text-xs md:text-sm font-semibold tracking-wide uppercase mb-6">
+                <span class="w-2 h-2 rounded-full bg-indigo-400 animate-pulse"></span>
+                General Dentist • Future Life General Medical Clinic
+            </div>
+
+            <!-- Main Headline -->
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-gradient tracking-tight mb-6 leading-tight">
+                Crafting Healthy Smiles with Precision & Clinical Excellence
+            </h1>
+
+            <!-- Subheadline / Elevator Pitch -->
+            <p class="max-w-2xl mx-auto text-slate-300 text-base md:text-lg mb-10 leading-relaxed font-light">
+                Providing modern, comprehensive dental care focused on preventive health, patient comfort, advanced diagnostics, and long-lasting restorative smile transformations.
+            </p>
+
+            <!-- Dual CTAs -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+                <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-full text-base font-semibold text-white accent-gradient-bg hover:opacity-90 transition-all shadow-xl shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:-translate-y-0.5">
+                    Explore Expertise <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                </a>
+                <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full text-base font-semibold text-slate-200 bg-slate-900/80 hover:bg-slate-800 border border-slate-700/80 transition-all hover:-translate-y-0.5">
+                    Schedule Appointment
+                </a>
+            </div>
+
+            <!-- Stat Counter Bar -->
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6 p-6 md:p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800/80 shadow-2xl">
+                <div class="space-y-1">
+                    <div class="text-2xl md:text-3xl font-extrabold text-white">10+ Years</div>
+                    <div class="text-xs md:text-sm text-slate-400 font-medium">Clinical Experience</div>
+                </div>
+                <div class="space-y-1">
+                    <div class="text-2xl md:text-3xl font-extrabold text-indigo-400">5,000+</div>
+                    <div class="text-xs md:text-sm text-slate-400 font-medium">Patients Treated</div>
+                </div>
+                <div class="col-span-2 md:col-span-1 space-y-1">
+                    <div class="text-2xl md:text-3xl font-extrabold text-pink-400">99.4%</div>
+                    <div class="text-xs md:text-sm text-slate-400 font-medium">Patient Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT & EXPERTISE SECTION -->
+    <section id="about" class="py-24 bg-slate-950 relative border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                
+                <!-- Image Column -->
+                <div class="relative">
+                    <div class="absolute -inset-1 rounded-2xl accent-gradient-bg opacity-30 blur-lg"></div>
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Modern Dental Practice Equipment" 
+                             class="w-full h-[450px] object-cover hover:scale-105 transition-transform duration-500">
+                    </div>
+                </div>
+
+                <!-- Career Narrative & Skills Column -->
+                <div class="space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 text-xs font-semibold tracking-wider uppercase">
+                        About Dr. Varun
+                    </div>
+                    
+                    <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight">
+                        Dedicated to Exceptional Dental Health & Patient Wellbeing
+                    </h2>
+
+                    <p class="text-slate-300 text-base leading-relaxed font-light">
+                        As a General Dentist at <strong class="text-white font-semibold">Future Life General Medical Clinic</strong>, Dr. Varun Ramachandran Pillai blends modern medical innovations with compassionate care. His approach prioritizes thorough diagnostics, patient education, and minimally invasive treatments to ensure optimal oral hygiene and lasting confidence.
+                    </p>
+
+                    <!-- Skill Bars / Competencies -->
+                    <div class="space-y-4 pt-4">
+                        <div>
+                            <div class="flex justify-between text-sm font-semibold mb-1">
+                                <span class="text-slate-200">Preventive & Diagnostic Care</span>
+                                <span class="text-indigo-400">98%</span>
+                            </div>
+                            <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                                <div class="bg-indigo-500 h-full rounded-full" style="width: 98%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-sm font-semibold mb-1">
+                                <span class="text-slate-200">Restorative & Endodontics</span>
+                                <span class="text-indigo-400">95%</span>
+                            </div>
+                            <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                                <div class="bg-purple-500 h-full rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-sm font-semibold mb-1">
+                                <span class="text-slate-200">Cosmetic Dentistry & Veneers</span>
+                                <span class="text-indigo-400">92%</span>
+                            </div>
+                            <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                                <div class="bg-pink-500 h-full rounded-full" style="width: 92%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Key Pillars Tags -->
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="px-3 py-1 rounded-md bg-slate-900 border border-slate-800 text-xs font-medium text-slate-300"><i class="fa-solid fa-check text-emerald-400 mr-1.5"></i> Painless Dentistry</span>
+                        <span class="px-3 py-1 rounded-md bg-slate-900 border border-slate-800 text-xs font-medium text-slate-300"><i class="fa-solid fa-check text-emerald-400 mr-1.5"></i> Smile Enhancement</span>
+                        <span class="px-3 py-1 rounded-md bg-slate-900 border border-slate-800 text-xs font-medium text-slate-300"><i class="fa-solid fa-check text-emerald-400 mr-1.5"></i> Digital Imaging</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES & SPECIALIZATION GRID -->
+    <section id="services" class="py-24 bg-slate-900/50 relative border-t border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 text-xs font-semibold tracking-wider uppercase mb-3">
+                    Clinical Services
+                </div>
+                <h2 class="text-3xl md:text-5xl font-bold text-white tracking-tight mb-4">
+                    Comprehensive Dental Solutions
+                </h2>
+                <p class="text-slate-400 text-base">
+                    Tailored oral health services designed to restore function, enhance aesthetics, and preserve your natural smile.
+                </p>
+            </div>
+
+            <!-- Service Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service Card 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-indigo-500/60 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl accent-gradient-bg flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-indigo-500/20 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">General & Preventive Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Routine oral examinations, professional scale and polish, cavity detection, and custom oral care plans for long-term health.
+                    </p>
+                    <ul class="space-y-2 border-t border-slate-800 pt-4 text-xs text-slate-300">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-indigo-400"></i> Comprehensive Oral Checkups</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-indigo-400"></i> Dental Prophylaxis & Scaling</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-indigo-400"></i> Fluoride & Sealant Treatments</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-indigo-500/60 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl accent-gradient-bg flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-indigo-500/20 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Cosmetic Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Transform your smile with laser whitening, composite bonding, and aesthetic restorations that elevate your natural radiance.
+                    </p>
+                    <ul class="space-y-2 border-t border-slate-800 pt-4 text-xs text-slate-300">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-indigo-400"></i> Teeth Whitening Therapy</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-indigo-400"></i> Aesthetic Veneers & Bonding</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-indigo-400"></i> Smile Makeovers</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-indigo-500/60 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl accent-gradient-bg flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-indigo-500/20 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-kit-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Restorative & Endodontics</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Advanced restorative options including root canal treatments, porcelain crowns, and durable direct restorations.
+                    </p>
+                    <ul class="space-y-2 border-t border-slate-800 pt-4 text-xs text-slate-300">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-indigo-400"></i> Root Canal Therapy</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-indigo-400"></i> Crowns & Bridges</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right text-indigo-400"></i> Tooth-Colored Fillings</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED ACHIEVEMENTS & TESTIMONIALS -->
+    <section id="achievements" class="py-24 bg-slate-950 relative border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 text-xs font-semibold tracking-wider uppercase mb-3">
+                    Patient & Peer Endorsements
+                </div>
+                <h2 class="text-3xl md:text-5xl font-bold text-white tracking-tight mb-4">
+                    Trusted Clinical Excellence
+                </h2>
+                <p class="text-slate-400 text-base">
+                    Recognized for gentle clinical technique, empathetic patient communication, and outstanding outcomes.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-indigo-500/40 transition-all">
+                    <div class="flex items-center gap-1 text-amber-400 text-sm mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-base italic leading-relaxed mb-6">
+                        "Dr. Varun's gentle approach completely alleviated my dental anxiety. His thorough explanation during my treatment made me feel extremely comfortable and well cared for."
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" 
+                             alt="Patient Reviewer" 
+                             class="w-12 h-12 rounded-full object-cover border border-indigo-500/50">
+                        <div>
+                            <h4 class="text-white font-bold text-sm">Sarah Jenkins</h4>
+                            <p class="text-slate-400 text-xs">Patient at Future Life Clinic</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-indigo-500/40 transition-all">
+                    <div class="flex items-center gap-1 text-amber-400 text-sm mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-base italic leading-relaxed mb-6">
+                        "An exceptional clinician who maintains the highest standards of hygiene and modern care. Dr. Varun's attention to detail in restorative treatments is truly commendable."
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" 
+                             alt="Medical Peer Reviewer" 
+                             class="w-12 h-12 rounded-full object-cover border border-indigo-500/50">
+                        <div>
+                            <h4 class="text-white font-bold text-sm">Dr. Marcus Vance</h4>
+                            <p class="text-slate-400 text-xs">Senior Medical Colleague</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT & BOOKING SECTION -->
+    <section id="contact" class="py-24 bg-slate-900/50 relative border-t border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+                
+                <!-- Info Column -->
+                <div class="space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 text-xs font-semibold tracking-wider uppercase">
+                        Get In Touch
+                    </div>
+                    
+                    <h2 class="text-3xl md:text-5xl font-bold text-white tracking-tight">
+                        Schedule Your Dental Consultation
+                    </h2>
+
+                    <p class="text-slate-300 text-base font-light leading-relaxed">
+                        Ready to experience modern, stress-free dental care? Reach out directly or complete the appointment request form.
+                    </p>
+
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-900 border border-slate-800">
+                            <div class="w-10 h-10 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-lg shrink-0">
+                                <i class="fa-solid fa-hospital"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-slate-200 font-semibold text-sm">Clinical Practice</h4>
+                                <p class="text-slate-400 text-xs mt-0.5">FUTURE LIFE GENERAL MEDICAL CLINIC</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-900 border border-slate-800">
+                            <div class="w-10 h-10 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-lg shrink-0">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-slate-200 font-semibold text-sm">Member Since</h4>
+                                <p class="text-slate-400 text-xs mt-0.5">18 Aug 2026</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-900 border border-slate-800">
+                            <div class="w-10 h-10 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-lg shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-slate-200 font-semibold text-sm">Direct Inquiry</h4>
+                                <p class="text-slate-400 text-xs mt-0.5">contact@drvarunramachandran.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Column -->
+                <div class="bg-slate-900/80 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 shadow-2xl">
+                    <form onsubmit="event.preventDefault(); alert('Thank you for reaching out! Dr. Varun\'s team will contact you shortly.');" class="space-y-5">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Full Name</label>
+                            <input type="text" placeholder="John Doe" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors text-sm">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Email Address</label>
+                            <input type="email" placeholder="john@example.com" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors text-sm">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Service Required</label>
+                            <select class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-100 focus:outline-none focus:border-indigo-500 transition-colors text-sm">
+                                <option>General Consultation / Checkup</option>
+                                <option>Teeth Whitening & Aesthetics</option>
+                                <option>Restorative / Root Canal Care</option>
+                                <option>Emergency Dental Care</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Message</label>
+                            <textarea rows="4" placeholder="How can we assist you with your oral health?" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors text-sm"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl text-sm font-bold text-white accent-gradient-bg hover:opacity-90 transition-all shadow-lg shadow-indigo-500/25">
+                            Send Appointment Request
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 border-t border-slate-900 py-12">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg accent-gradient-bg flex items-center justify-center text-white font-bold text-xs">
+                    VP
+                </div>
+                <span class="text-sm font-semibold text-slate-300">Dr. Varun Ramachandran Pillai</span>
+            </div>
+
+            <p class="text-xs text-slate-500 text-center">
+                © 2026 Dr.Varun Ramachandran Pillai. Generated by LinkedIn Portfolio Builder.
+            </p>
+
+            <div class="flex gap-4 text-slate-400 text-base">
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>
