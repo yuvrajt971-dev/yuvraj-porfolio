@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr. Harshal Kunjir | Consultant Maxillofacial Surgeon</title>
-    
-    <!-- Fonts & Styling CDN -->
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
     <script>
@@ -17,176 +18,246 @@
                     fontFamily: {
                         sans: ['Plus Jakarta Sans', 'sans-serif'],
                     },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            900: '#0c4a6e',
+                        }
+                    }
                 }
             }
         }
     </script>
-</head>
-<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-indigo-500 selection:text-white overflow-x-hidden">
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
 
-    <!-- NAVIGATION BAR -->
-    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/50 transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        /* Glassmorphism Styles */
+        .glass-card {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(14, 165, 233, 0.4);
+            box-shadow: 0 0 25px -5px rgba(14, 165, 233, 0.15);
+        }
+
+        .glass-nav {
+            background: rgba(2, 6, 23, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        /* Gradient Text */
+        .gradient-text {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gradient-text-teal {
+            background: linear-gradient(135deg, #2dd4bf 0%, #38bdf8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Glow Animations */
+        .glow-bg {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(100px);
+            opacity: 0.15;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #020617;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #38bdf8;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-sky-500 selection:text-white">
+
+    <!-- Ambient Glow Backgrounds -->
+    <div class="glow-bg w-[500px] h-[500px] bg-sky-500 top-0 left-1/4"></div>
+    <div class="glow-bg w-[600px] h-[600px] bg-indigo-600 top-1/3 -right-20"></div>
+    <div class="glow-bg w-[400px] h-[400px] bg-teal-500 bottom-10 left-10"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <a href="#" class="flex items-center gap-3 group">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 p-0.5 shadow-lg group-hover:scale-105 transition-transform duration-300">
-                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
-                        <i class="fa-solid fa-user-doctor text-indigo-400 text-lg"></i>
-                    </div>
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-500 to-indigo-600 flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-sky-500/20 group-hover:scale-105 transition-transform duration-300">
+                    <i class="fa-solid me-0 fa-user-doctor"></i>
                 </div>
-                <div>
-                    <span class="text-lg font-bold tracking-tight text-white block">Dr. Harshal Kunjir</span>
-                    <span class="text-xs text-indigo-400 font-medium block">SHRIJA CLINIC</span>
+                <div class="flex flex-col">
+                    <span class="font-bold text-lg tracking-tight text-white group-hover:text-sky-400 transition-colors">Dr. Harshal Kunjir</span>
+                    <span class="text-xs text-slate-400 font-medium">SHRIJA CLINIC</span>
                 </div>
             </a>
-            
-            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
-                <a href="#about" class="hover:text-indigo-400 transition-colors">About & Expertise</a>
-                <a href="#services" class="hover:text-indigo-400 transition-colors">Specializations</a>
-                <a href="#achievements" class="hover:text-indigo-400 transition-colors">Endorsements</a>
-                <a href="#contact" class="hover:text-indigo-400 transition-colors">Contact</a>
+
+            <!-- Desktop Nav Links -->
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-sky-400 transition-colors">About & Expertise</a>
+                <a href="#services" class="hover:text-sky-400 transition-colors">Specialties</a>
+                <a href="#testimonials" class="hover:text-sky-400 transition-colors">Endorsements</a>
+                <a href="#contact" class="hover:text-sky-400 transition-colors">Contact</a>
             </div>
 
-            <a href="#contact" class="relative group inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-white transition-all duration-300 rounded-full overflow-hidden shadow-lg shadow-indigo-500/20">
-                <span class="absolute inset-0 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 group-hover:opacity-90 transition-opacity"></span>
-                <span class="relative flex items-center gap-2">
-                    <span>Get in Touch</span>
-                    <i class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
-                </span>
-            </a>
+            <!-- CTA Button -->
+            <div class="hidden sm:flex items-center gap-4">
+                <a href="#contact" class="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium rounded-xl group bg-gradient-to-br from-sky-500 via-indigo-500 to-purple-600 group-hover:from-sky-500 group-hover:to-purple-600 hover:text-white text-white shadow-lg shadow-sky-500/20 hover:shadow-sky-500/40 transition-all duration-300">
+                    <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-slate-950 rounded-[10px] group-hover:bg-opacity-0 font-semibold">
+                        Book Consultation
+                    </span>
+                </a>
+            </div>
+
+            <!-- Mobile menu button -->
+            <div class="md:hidden flex items-center">
+                <button id="mobile-menu-button" class="text-slate-300 hover:text-white focus:outline-none p-2" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Nav Menu -->
+        <div id="mobile-menu" class="hidden md:hidden border-b border-slate-800 bg-slate-950/95 px-6 py-4 space-y-3">
+            <a href="#about" class="block text-slate-300 hover:text-sky-400 py-1">About & Expertise</a>
+            <a href="#services" class="block text-slate-300 hover:text-sky-400 py-1">Specialties</a>
+            <a href="#testimonials" class="block text-slate-300 hover:text-sky-400 py-1">Endorsements</a>
+            <a href="#contact" class="block text-slate-300 hover:text-sky-400 py-1">Contact</a>
+            <a href="#contact" class="block text-center w-full py-2.5 rounded-xl bg-gradient-to-r from-sky-500 to-indigo-600 font-semibold text-white">Book Consultation</a>
         </div>
     </nav>
 
-    <!-- HERO SECTION -->
-    <section class="relative min-h-screen pt-32 pb-20 flex items-center justify-center bg-gradient-to-br from-slate-950 via-indigo-950/40 to-slate-900 overflow-hidden">
-        <!-- Background Overlay Image & Glows -->
-        <div class="absolute inset-0 z-0 opacity-20 bg-cover bg-center pointer-events-none" style="background-image: url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80');"></div>
-        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-indigo-500/10 rounded-full blur-[120px] pointer-events-none"></div>
-        <div class="absolute bottom-10 right-10 w-[400px] h-[400px] bg-purple-500/10 rounded-full blur-[100px] pointer-events-none"></div>
-
-        <div class="relative z-10 max-w-5xl mx-auto px-6 text-center">
-            <!-- Profile Avatar Frame -->
-            <div class="mb-8 inline-block">
-                <div class="p-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full shadow-2xl inline-block hover:scale-105 transition-transform duration-300">
-                    <img src="https://ui-avatars.com/api/?name=Dr.+Harshal+Kunjir&size=200&background=0D8ABC&color=fff&bold=true" alt="Dr. Harshal Kunjir" class="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-slate-950 object-cover shadow-inner">
-                </div>
-            </div>
-
-            <!-- Role Badge -->
-            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 text-xs md:text-sm font-semibold mb-6 backdrop-blur-md">
-                <i class="fa-solid fa-hospital-user text-indigo-400"></i>
-                <span>Consultant Maxillofacial Surgeon | SHRIJA CLINIC</span>
-            </div>
-
-            <!-- Main Headline -->
-            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6">
-                <span class="bg-clip-text text-transparent bg-gradient-to-r from-white via-indigo-200 to-indigo-400">
-                    Pioneering Precision in Facial Reconstructive Surgery
-                </span>
-            </h1>
-
-            <!-- Elevator Pitch Subheadline -->
-            <p class="text-slate-300 text-lg md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed font-light">
-                Delivering world-class surgical care, complex facial trauma reconstruction, and advanced orthognathic solutions with cutting-edge technology and compassionate patient outcomes at SHRIJA CLINIC.
-            </p>
-
-            <!-- CTA Buttons -->
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-                <a href="#about" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-semibold shadow-xl shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:-translate-y-0.5 transition-all duration-300">
-                    Explore Expertise
-                </a>
-                <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full bg-slate-900/80 hover:bg-slate-800 text-slate-200 font-semibold border border-slate-700 hover:border-slate-600 transition-all duration-300 backdrop-blur-md">
-                    Schedule Call
-                </a>
-            </div>
-
-            <!-- Stat Counter Bar -->
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-6 p-6 md:p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800/80 max-w-4xl mx-auto shadow-2xl">
-                <div class="p-2">
-                    <div class="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">10+</div>
-                    <div class="text-xs md:text-sm text-slate-400 mt-1 font-medium">Years Experience</div>
-                </div>
-                <div class="p-2 border-x border-slate-800">
-                    <div class="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">1500+</div>
-                    <div class="text-xs md:text-sm text-slate-400 mt-1 font-medium">Surgeries Performed</div>
-                </div>
-                <div class="p-2 col-span-2 md:col-span-1">
-                    <div class="text-3xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-indigo-400">99%</div>
-                    <div class="text-xs md:text-sm text-slate-400 mt-1 font-medium">Patient Satisfaction</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ABOUT & EXPERTISE SECTION -->
-    <section id="about" class="py-24 bg-slate-950 relative">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-20 md:pt-44 md:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
                 
-                <!-- Left: Visual Card -->
-                <div class="relative group">
-                    <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-3xl blur opacity-30 group-hover:opacity-60 transition duration-500"></div>
-                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900 shadow-2xl">
-                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" alt="Advanced Surgery Environment" class="w-full h-[450px] object-cover group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
-                        <div class="absolute bottom-6 left-6 right-6 p-6 rounded-xl bg-slate-950/80 backdrop-blur-md border border-slate-800">
-                            <h4 class="text-white font-bold text-lg mb-1">Clinical Excellence</h4>
-                            <p class="text-slate-400 text-sm">Combining state-of-the-art technology with delicate reconstructive art at SHRIJA CLINIC.</p>
-                        </div>
+                <!-- Hero Left Content -->
+                <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                    
+                    <!-- Badge -->
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border-sky-500/30 text-sky-400 text-xs md:text-sm font-semibold tracking-wide shadow-inner">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        <span>Consultant Maxillofacial Surgeon</span>
+                        <span class="text-slate-600">•</span>
+                        <span class="text-slate-300">SHRIJA CLINIC</span>
                     </div>
-                </div>
 
-                <!-- Right: Content Narrative & Competencies -->
-                <div>
-                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 text-xs font-semibold uppercase tracking-wider mb-4 border border-indigo-500/20">
-                        About Dr. Harshal Kunjir
-                    </div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">
-                        Transforming Lives Through Specialized Maxillofacial Care
-                    </h2>
-                    <p class="text-slate-300 leading-relaxed mb-8">
-                        As a Consultant Maxillofacial Surgeon at SHRIJA CLINIC, Dr. Harshal Kunjir specializes in diagnosing and surgically treating complex diseases, injuries, and defects involving both the functional and aesthetic aspects of the hard and soft tissues of the head, neck, face, and jaws.
+                    <!-- Headline -->
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                        Precision Surgical Excellence in <span class="gradient-text">Maxillofacial & Facial Aesthetics</span>
+                    </h1>
+
+                    <!-- Paragraph -->
+                    <p class="text-slate-400 text-lg sm:text-xl font-normal leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        Restoring facial anatomy, enhancing smiles, and performing complex reconstructive head & neck procedures with state-of-the-art surgical technology.
                     </p>
 
-                    <!-- Skill Progress Bars / Badges -->
-                    <div class="space-y-5">
-                        <div>
-                            <div class="flex justify-between text-sm font-semibold mb-2">
-                                <span class="text-slate-200">Facial Trauma & Fracture Reconstruction</span>
-                                <span class="text-indigo-400">98%</span>
-                            </div>
-                            <div class="w-full bg-slate-800 rounded-full h-2 overflow-hidden">
-                                <div class="bg-gradient-to-r from-indigo-500 to-purple-500 h-2 rounded-full" style="width: 98%"></div>
-                            </div>
-                        </div>
+                    <!-- CTAs -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-sky-500 via-indigo-500 to-purple-600 font-semibold text-white shadow-xl shadow-sky-500/25 hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300 flex items-center justify-center gap-3">
+                            <span>Schedule Consultation</span>
+                            <i class="fa-solid fa-arrow-right text-sm"></i>
+                        </a>
+                        <a href="#about" class="w-full sm:w-auto px-8 py-4 rounded-xl glass-card text-slate-200 font-semibold hover:bg-slate-800/80 hover:text-white transition-all duration-300 text-center">
+                            Explore Profile
+                        </a>
+                    </div>
 
+                    <!-- Trust Stats Grid -->
+                    <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0">
                         <div>
-                            <div class="flex justify-between text-sm font-semibold mb-2">
-                                <span class="text-slate-200">Orthognathic & Corrective Jaw Surgery</span>
-                                <span class="text-indigo-400">95%</span>
-                            </div>
-                            <div class="w-full bg-slate-800 rounded-full h-2 overflow-hidden">
-                                <div class="bg-gradient-to-r from-indigo-500 to-purple-500 h-2 rounded-full" style="width: 95%"></div>
-                            </div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-white gradient-text">10+</div>
+                            <div class="text-xs sm:text-sm text-slate-400 font-medium">Years Clinical Practice</div>
                         </div>
-
                         <div>
-                            <div class="flex justify-between text-sm font-semibold mb-2">
-                                <span class="text-slate-200">Advanced Implantology & Bone Grafting</span>
-                                <span class="text-indigo-400">96%</span>
-                            </div>
-                            <div class="w-full bg-slate-800 rounded-full h-2 overflow-hidden">
-                                <div class="bg-gradient-to-r from-indigo-500 to-purple-500 h-2 rounded-full" style="width: 96%"></div>
-                            </div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-white gradient-text">2,500+</div>
+                            <div class="text-xs sm:text-sm text-slate-400 font-medium">Successful Surgeries</div>
                         </div>
-
                         <div>
-                            <div class="flex justify-between text-sm font-semibold mb-2">
-                                <span class="text-slate-200">TMJ Disorders & Facial Pain Management</span>
-                                <span class="text-indigo-400">92%</span>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-white gradient-text">100%</div>
+                            <div class="text-xs sm:text-sm text-slate-400 font-medium">Patient Commitment</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Hero Right - Profile Card -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-full max-w-md">
+                        
+                        <!-- Glowing Ring Effect -->
+                        <div class="absolute -inset-1.5 bg-gradient-to-r from-sky-500 via-indigo-500 to-purple-600 rounded-3xl blur-xl opacity-75 animate-pulse"></div>
+                        
+                        <!-- Main Card -->
+                        <div class="relative glass-card rounded-3xl p-8 border border-slate-700/50 flex flex-col items-center text-center">
+                            
+                            <!-- Avatar Frame with Double Gradient -->
+                            <div class="relative p-1.5 rounded-full bg-gradient-to-tr from-sky-400 via-indigo-500 to-purple-500 mb-6 shadow-2xl">
+                                <div class="p-1 bg-slate-950 rounded-full">
+                                    <img src="https://ui-avatars.com/api/?name=Dr.+Harshal+Kunjir&size=200&background=0D8ABC&color=fff&bold=true" 
+                                         alt="Dr. Harshal Kunjir" 
+                                         class="w-36 h-36 rounded-full object-cover shadow-inner">
+                                </div>
+                                <span class="absolute bottom-2 right-2 w-6 h-6 bg-emerald-500 border-4 border-slate-950 rounded-full" title="Available for Consultations"></span>
                             </div>
-                            <div class="w-full bg-slate-800 rounded-full h-2 overflow-hidden">
-                                <div class="bg-gradient-to-r from-indigo-500 to-purple-500 h-2 rounded-full" style="width: 92%"></div>
+
+                            <h3 class="text-2xl font-bold text-white mb-1">Dr. Harshal Kunjir</h3>
+                            <p class="text-sky-400 font-semibold text-sm mb-3">Consultant Maxillofacial Surgeon</p>
+                            
+                            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800/80 text-xs text-slate-300 mb-6">
+                                <i class="fa-solid fa-hospital-user text-sky-400"></i>
+                                <span>SHRIJA CLINIC</span>
                             </div>
+
+                            <!-- Highlights List -->
+                            <div class="w-full space-y-3 text-left border-t border-slate-800 pt-6 text-sm text-slate-300">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-lg bg-sky-500/10 text-sky-400 flex items-center justify-center flex-shrink-0">
+                                        <i class="fa-solid fa-certificate"></i>
+                                    </div>
+                                    <span>Board Certified Oral & Maxillofacial Specialist</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center flex-shrink-0">
+                                        <i class="fa-solid fa-microscope"></i>
+                                    </div>
+                                    <span>Advanced Reconstructive Surgery Expert</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center flex-shrink-0">
+                                        <i class="fa-solid fa-heart-pulse"></i>
+                                    </div>
+                                    <span>Patient-Centric Minimally Invasive Techniques</span>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -195,146 +266,269 @@
         </div>
     </section>
 
-    <!-- SERVICES & SPECIALIZATION GRID -->
-    <section id="services" class="py-24 bg-slate-900/50 relative">
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-24 relative z-10 border-t border-slate-900 bg-slate-950/50">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 text-xs font-semibold uppercase tracking-wider mb-4 border border-indigo-500/20">
-                    Surgical Services
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Image Showcase -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative rounded-2xl overflow-hidden glass-card border border-slate-800 p-2">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Advanced Clinical Environment" 
+                             class="w-full h-[420px] object-cover rounded-xl filter brightness-90 hover:brightness-100 transition-all duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-4 glass-card rounded-xl border border-slate-700/60">
+                            <p class="text-xs font-semibold text-sky-400 uppercase tracking-wider mb-1">Modern Clinical Care</p>
+                            <p class="text-sm text-slate-200">Equipped with cutting-edge diagnostic technology at SHRIJA CLINIC</p>
+                        </div>
+                    </div>
                 </div>
-                <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">Core Clinical Specializations</h2>
-                <p class="text-slate-400">Comprehensive surgical care tailored to facial structure, function, and cosmetic perfection.</p>
+
+                <!-- Right Narrative -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-500/10 text-indigo-400 text-xs font-semibold uppercase tracking-wider border border-indigo-500/20">
+                        <i class="fa-solid fa-user-check"></i> Professional Profile
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
+                        Dedicated to Artistry, Precision & <span class="gradient-text">Functional Restoration</span>
+                    </h2>
+                    <p class="text-slate-300 leading-relaxed text-base sm:text-lg">
+                        Dr. Harshal Kunjir serves as a Consultant Maxillofacial Surgeon at <strong class="text-white">SHRIJA CLINIC</strong>. With extensive training in treating complex disorders of the head, neck, face, and jaw, Dr. Kunjir combines surgical precision with compassionate care to deliver exceptional outcomes.
+                    </p>
+                    <p class="text-slate-400 leading-relaxed">
+                        Whether restoring facial harmony following traumatic injury, executing complex orthognathic realignments, or delivering high-precision oral reconstructions, Dr. Kunjir uses cutting-edge surgical modalities tailored to each unique patient profile.
+                    </p>
+
+                    <!-- Core Strengths Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                        <div class="glass-card p-4 rounded-xl border border-slate-800/80">
+                            <div class="text-sky-400 font-semibold mb-1 flex items-center gap-2">
+                                <i class="fa-solid fa-arrows-to-eye"></i> Surgical Precision
+                            </div>
+                            <p class="text-xs text-slate-400">Computer-guided surgical planning for maximum predictability and minimal recovery time.</p>
+                        </div>
+                        <div class="glass-card p-4 rounded-xl border border-slate-800/80">
+                            <div class="text-indigo-400 font-semibold mb-1 flex items-center gap-2">
+                                <i class="fa-solid fa-hands-holding-circle"></i> Comprehensive Care
+                            </div>
+                            <p class="text-xs text-slate-400">Holistic patient support from pre-operative design to post-surgical rehabilitation.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services & Specialties Section -->
+    <section id="services" class="py-24 relative z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sky-500/10 text-sky-400 text-xs font-semibold uppercase tracking-wider border border-sky-500/20">
+                    Clinical Excellence
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
+                    Specialized Surgical Services
+                </h2>
+                <p class="text-slate-400 text-base sm:text-lg">
+                    Advanced oral and maxillofacial treatments designed to restore health, functional integrity, and aesthetic confidence.
+                </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Grid of Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
                 <!-- Service 1 -->
-                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-6 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 hover:border-indigo-500/60 flex flex-col justify-between group">
+                <div class="glass-card rounded-2xl p-8 transition-all duration-300 group flex flex-col justify-between">
                     <div>
-                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-600 p-0.5 mb-6 shadow-lg shadow-indigo-500/20 group-hover:scale-110 transition-transform">
-                            <div class="w-full h-full bg-slate-950 rounded-[14px] flex items-center justify-center">
-                                <i class="fa-solid fa-head-side-mask text-2xl text-indigo-400"></i>
-                            </div>
+                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-sky-500/20 to-indigo-500/20 text-sky-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300 border border-sky-500/30">
+                            <i class="fa-solid fa-skull"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-3">Orthognathic Surgery</h3>
-                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">Surgical correction of jaw irregularities to improve facial aesthetics, bite alignment, and breathing functions.</p>
+                        <h3 class="text-xl font-bold text-white mb-3 group-hover:text-sky-400 transition-colors">Maxillofacial Trauma Surgery</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            Expert emergency and elective reconstruction of facial bone fractures, soft tissue lacerations, and complex facial trauma.
+                        </p>
                     </div>
-                    <ul class="text-xs text-slate-300 space-y-2 border-t border-slate-800/80 pt-4">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Malocclusion Correction</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Asymmetry Alignment</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Sleep Apnea Relief</li>
-                    </ul>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-sky-400 group-hover:translate-x-1 transition-transform">
+                        <span>Learn More</span> <i class="fa-solid fa-chevron-right"></i>
+                    </a>
                 </div>
 
                 <!-- Service 2 -->
-                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-6 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 hover:border-indigo-500/60 flex flex-col justify-between group">
+                <div class="glass-card rounded-2xl p-8 transition-all duration-300 group flex flex-col justify-between">
                     <div>
-                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-500 to-pink-600 p-0.5 mb-6 shadow-lg shadow-purple-500/20 group-hover:scale-110 transition-transform">
-                            <div class="w-full h-full bg-slate-950 rounded-[14px] flex items-center justify-center">
-                                <i class="fa-solid fa-mask text-2xl text-purple-400"></i>
-                            </div>
+                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-indigo-500/20 to-purple-500/20 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300 border border-indigo-500/30">
+                            <i class="fa-solid fa-teeth-open"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-3">Facial Trauma & Injury</h3>
-                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">Emergency and elective management of facial bone fractures, lacerations, and post-traumatic soft tissue defects.</p>
+                        <h3 class="text-xl font-bold text-white mb-3 group-hover:text-indigo-400 transition-colors">Orthognathic Jaw Surgery</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            Corrective surgical procedures to realign jaw dysfunctions, improve bite, alleviate sleep apnea, and enhance facial balance.
+                        </p>
                     </div>
-                    <ul class="text-xs text-slate-300 space-y-2 border-t border-slate-800/80 pt-4">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400"></i> Jaw & Cheekbone Fractures</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400"></i> Soft Tissue Repair</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400"></i> Scar Revision</li>
-                    </ul>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-indigo-400 group-hover:translate-x-1 transition-transform">
+                        <span>Learn More</span> <i class="fa-solid fa-chevron-right"></i>
+                    </a>
                 </div>
 
                 <!-- Service 3 -->
-                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-6 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 hover:border-indigo-500/60 flex flex-col justify-between group">
+                <div class="glass-card rounded-2xl p-8 transition-all duration-300 group flex flex-col justify-between">
                     <div>
-                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-indigo-500 to-pink-500 p-0.5 mb-6 shadow-lg shadow-pink-500/20 group-hover:scale-110 transition-transform">
-                            <div class="w-full h-full bg-slate-950 rounded-[14px] flex items-center justify-center">
-                                <i class="fa-solid fa-tooth text-2xl text-pink-400"></i>
-                            </div>
+                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-500/20 to-pink-500/20 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300 border border-purple-500/30">
+                            <i class="fa-solid fa-tooth"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-3">Dental Implants</h3>
-                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">Complex full-arch rehabilitation, zygomatic implants, and advanced bone grafting for dental reconstruction.</p>
+                        <h3 class="text-xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">Dental Implants & Reconstruction</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            Advanced bone grafting, sinus lifts, and full-mouth rehabilitation via state-of-the-art dental implant techniques.
+                        </p>
                     </div>
-                    <ul class="text-xs text-slate-300 space-y-2 border-t border-slate-800/80 pt-4">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pink-400"></i> Full-Arch Restoration</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pink-400"></i> Bone Augmentation</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pink-400"></i> Sinus Lift Procedures</li>
-                    </ul>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-purple-400 group-hover:translate-x-1 transition-transform">
+                        <span>Learn More</span> <i class="fa-solid fa-chevron-right"></i>
+                    </a>
                 </div>
 
                 <!-- Service 4 -->
-                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-6 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 hover:border-indigo-500/60 flex flex-col justify-between group">
+                <div class="glass-card rounded-2xl p-8 transition-all duration-300 group flex flex-col justify-between">
                     <div>
-                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-pink-500 to-indigo-500 p-0.5 mb-6 shadow-lg shadow-indigo-500/20 group-hover:scale-110 transition-transform">
-                            <div class="w-full h-full bg-slate-950 rounded-[14px] flex items-center justify-center">
-                                <i class="fa-solid fa-stethoscope text-2xl text-indigo-400"></i>
-                            </div>
+                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-teal-500/20 to-sky-500/20 text-teal-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300 border border-teal-500/30">
+                            <i class="fa-solid fa-face-smile"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-white mb-3">TMJ & Facial Pain</h3>
-                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">Comprehensive diagnosis and surgical intervention for temporomandibular joint dysfunction and chronic pain.</p>
+                        <h3 class="text-xl font-bold text-white mb-3 group-hover:text-teal-400 transition-colors">TMJ & Facial Pain Treatment</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            Comprehensive diagnostic evaluation and surgical/non-surgical therapy for Temporomandibular Joint disorders and chronic pain.
+                        </p>
                     </div>
-                    <ul class="text-xs text-slate-300 space-y-2 border-t border-slate-800/80 pt-4">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Arthroscopy & Arthrocentesis</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Joint Reconstruction</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Occlusal Therapy</li>
-                    </ul>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-teal-400 group-hover:translate-x-1 transition-transform">
+                        <span>Learn More</span> <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="glass-card rounded-2xl p-8 transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-sky-500/20 to-indigo-500/20 text-sky-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300 border border-sky-500/30">
+                            <i class="fa-solid fa-briefcase-medical"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 group-hover:text-sky-400 transition-colors">Head & Neck Pathology</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            Diagnosis and precise surgical excision of benign and malignant lesions of the oral cavity, salivary glands, and facial structures.
+                        </p>
+                    </div>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-sky-400 group-hover:translate-x-1 transition-transform">
+                        <span>Learn More</span> <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="glass-card rounded-2xl p-8 transition-all duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-indigo-500/20 to-purple-500/20 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300 border border-indigo-500/30">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 group-hover:text-indigo-400 transition-colors">Facial Cosmetic Enhancements</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            Minimally invasive cosmetic enhancements, chin augmentation, and scar revisions tailored to accentuate natural facial symmetry.
+                        </p>
+                    </div>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-indigo-400 group-hover:translate-x-1 transition-transform">
+                        <span>Learn More</span> <i class="fa-solid fa-chevron-right"></i>
+                    </a>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <!-- FEATURED ACHIEVEMENTS / TESTIMONIALS SECTION -->
-    <section id="achievements" class="py-24 bg-slate-950 relative">
+    <!-- Testimonials / Endorsements Section -->
+    <section id="testimonials" class="py-24 relative z-10 bg-slate-950/60 border-t border-slate-900">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 text-xs font-semibold uppercase tracking-wider mb-4 border border-indigo-500/20">
-                    Peer & Patient Recognition
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-purple-500/10 text-purple-400 text-xs font-semibold uppercase tracking-wider border border-purple-500/20">
+                    Patient & Peer Trust
                 </div>
-                <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">Endorsements & Testimonials</h2>
-                <p class="text-slate-400">Trusted by medical colleagues and patients across the region.</p>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
+                    Endorsements & Feedback
+                </h2>
+                <p class="text-slate-400 text-base sm:text-lg">
+                    Real experiences from patients and clinical colleagues who have trusted Dr. Harshal Kunjir with their care.
+                </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 
-                <!-- Testimonial 1 -->
-                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl relative hover:border-indigo-500/40 transition-all duration-300">
-                    <div class="flex items-center gap-1 text-amber-400 mb-6">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
+                <!-- Feedback 1 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "Dr. Harshal Kunjir performed my orthognathic surgery at SHRIJA CLINIC. His precision and reassuring demeanor made a life-changing procedure smooth and stress-free."
+                        </p>
                     </div>
-                    <p class="text-slate-300 text-base italic mb-8 leading-relaxed">
-                        "Dr. Harshal Kunjir’s diagnostic precision and surgical finesse in jaw reconstruction are exceptional. His patient-centric approach at SHRIJA CLINIC makes him a benchmark in maxillofacial care."
-                    </p>
-                    <div class="flex items-center gap-4">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Dr. Rajesh Mehta" class="w-12 h-12 rounded-full object-cover border-2 border-indigo-500">
+                    <div class="mt-8 pt-4 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-sky-500/20 text-sky-400 font-bold flex items-center justify-center text-sm">
+                            RD
+                        </div>
                         <div>
-                            <h4 class="text-white font-bold text-sm">Dr. Rajesh Mehta</h4>
-                            <p class="text-slate-400 text-xs">Senior Consultant Neurosurgeon</p>
+                            <p class="text-white font-semibold text-sm">Rohan Deshmukh</p>
+                            <p class="text-xs text-slate-400">Jaw Surgery Patient</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Testimonial 2 -->
-                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl relative hover:border-indigo-500/40 transition-all duration-300">
-                    <div class="flex items-center gap-1 text-amber-400 mb-6">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
+                <!-- Feedback 2 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "One of the finest Maxillofacial Surgeons I have collaborated with. Dr. Kunjir's technical mastery in facial trauma reconstruction is top-tier."
+                        </p>
                     </div>
-                    <p class="text-slate-300 text-base italic mb-8 leading-relaxed">
-                        "Following a severe facial trauma, Dr. Kunjir performed corrective surgery with unbelievable outcomes. I recovered complete functionality and confidence. Highly recommendation for any complex facial procedures!"
-                    </p>
-                    <div class="flex items-center gap-4">
-                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Priya Sharma" class="w-12 h-12 rounded-full object-cover border-2 border-purple-500">
+                    <div class="mt-8 pt-4 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 font-bold flex items-center justify-center text-sm">
+                            DR
+                        </div>
                         <div>
-                            <h4 class="text-white font-bold text-sm">Priya Sharma</h4>
-                            <p class="text-slate-400 text-xs">Reconstructive Surgery Patient</p>
+                            <p class="text-white font-semibold text-sm">Dr. A. Kulkarni</p>
+                            <p class="text-xs text-slate-400">Senior Medical Specialist</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feedback 3 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "Extremely gentle and professional during my complex dental implant procedure. SHRIJA CLINIC is world-class, and Dr. Kunjir is exceptional."
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 font-bold flex items-center justify-center text-sm">
+                            PS
+                        </div>
+                        <div>
+                            <p class="text-white font-semibold text-sm">Pooja Sharma</p>
+                            <p class="text-xs text-slate-400">Implant Patient</p>
                         </div>
                     </div>
                 </div>
@@ -343,98 +537,139 @@
         </div>
     </section>
 
-    <!-- CONTACT & BOOKING SECTION -->
-    <section id="contact" class="py-24 bg-slate-900/40 relative">
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 relative z-10">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
                 
-                <!-- Direct Info -->
-                <div>
-                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 text-xs font-semibold uppercase tracking-wider mb-4 border border-indigo-500/20">
-                        Consultation Booking
+                <!-- Contact Info Card -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-teal-500/10 text-teal-400 text-xs font-semibold uppercase tracking-wider border border-teal-500/20 mb-4">
+                            Get In Touch
+                        </div>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
+                            Consult with Dr. Harshal Kunjir
+                        </h2>
+                        <p class="text-slate-400 mt-3 text-base">
+                            Schedule an in-person consultation or medical evaluation at SHRIJA CLINIC.
+                        </p>
                     </div>
-                    <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">Schedule a Clinical Consultation</h2>
-                    <p class="text-slate-300 mb-8 leading-relaxed">
-                        Reach out directly to arrange clinical appointments, second surgical opinions, or hospital referrals with Dr. Harshal Kunjir at SHRIJA CLINIC.
-                    </p>
 
                     <div class="space-y-6">
-                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/80 border border-slate-800">
-                            <div class="w-12 h-12 rounded-lg bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400">
-                                <i class="fa-solid fa-hospital text-xl"></i>
+                        <!-- Practice Location -->
+                        <div class="glass-card p-6 rounded-2xl flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-sky-500/10 text-sky-400 flex items-center justify-center text-xl flex-shrink-0">
+                                <i class="fa-solid fa-hospital"></i>
                             </div>
                             <div>
-                                <h4 class="text-slate-400 text-xs uppercase tracking-wider font-semibold">Primary Practice</h4>
-                                <p class="text-white font-medium">SHRIJA CLINIC, Department of Maxillofacial Surgery</p>
+                                <h4 class="text-white font-bold text-base">SHRIJA CLINIC</h4>
+                                <p class="text-slate-400 text-sm mt-1">Consultant Maxillofacial Surgery Department</p>
+                                <p class="text-slate-500 text-xs mt-1">Appointments by prior reservation</p>
                             </div>
                         </div>
 
-                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/80 border border-slate-800">
-                            <div class="w-12 h-12 rounded-lg bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400">
-                                <i class="fa-solid fa-calendar-check text-xl"></i>
+                        <!-- Consultation Hours -->
+                        <div class="glass-card p-6 rounded-2xl flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-xl flex-shrink-0">
+                                <i class="fa-solid fa-clock"></i>
                             </div>
                             <div>
-                                <h4 class="text-slate-400 text-xs uppercase tracking-wider font-semibold">Connection Verified</h4>
-                                <p class="text-white font-medium">19 Aug 2026</p>
+                                <h4 class="text-white font-bold text-base">Consultation Hours</h4>
+                                <p class="text-slate-400 text-sm mt-1">Monday – Saturday: 10:00 AM – 7:00 PM</p>
+                                <p class="text-slate-500 text-xs mt-1">Emergency Trauma Support Available</p>
+                            </div>
+                        </div>
+
+                        <!-- Direct Contact -->
+                        <div class="glass-card p-6 rounded-2xl flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl flex-shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-base">Direct Inquiries</h4>
+                                <p class="text-slate-400 text-sm mt-1">contact@shrijaclinic.com</p>
+                                <p class="text-slate-500 text-xs mt-1">Prompt responses within 24 hours</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Contact Form -->
-                <div class="bg-slate-900/80 backdrop-blur-xl p-8 rounded-3xl border border-slate-800 shadow-2xl">
-                    <form onsubmit="event.preventDefault(); alert('Message sent successfully to Dr. Harshal Kunjir.');" class="space-y-5">
-                        <div>
-                            <label class="block text-xs font-medium text-slate-300 mb-2 uppercase">Full Name</label>
-                            <input type="text" required placeholder="Dr. / Mr. / Ms. John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-indigo-500 transition-colors">
-                        </div>
+                <div class="lg:col-span-7">
+                    <div class="glass-card p-8 md:p-10 rounded-3xl border border-slate-800">
+                        <h3 class="text-2xl font-bold text-white mb-2">Request an Appointment</h3>
+                        <p class="text-slate-400 text-sm mb-8">Fill out the form below and our clinic desk will confirm your slot.</p>
 
-                        <div>
-                            <label class="block text-xs font-medium text-slate-300 mb-2 uppercase">Email Address</label>
-                            <input type="email" required placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-indigo-500 transition-colors">
-                        </div>
+                        <form onsubmit="event.preventDefault(); alert('Thank you! Your appointment request has been submitted.');" class="space-y-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Full Name</label>
+                                    <input type="text" required placeholder="e.g. Rahul Verma" class="w-full bg-slate-900/90 border border-slate-700/80 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Phone Number</label>
+                                    <input type="tel" required placeholder="+91 98765 43210" class="w-full bg-slate-900/90 border border-slate-700/80 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 transition-colors">
+                                </div>
+                            </div>
 
-                        <div>
-                            <label class="block text-xs font-medium text-slate-300 mb-2 uppercase">Consultation Type</label>
-                            <select class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white focus:outline-none focus:border-indigo-500 transition-colors">
-                                <option>Orthognathic Jaw Evaluation</option>
-                                <option>Facial Trauma Reconstruction</option>
-                                <option>Dental Implant Restoration</option>
-                                <option>TMJ & Facial Pain Management</option>
-                                <option>General Consultation / Second Opinion</option>
-                            </select>
-                        </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Primary Clinical Specialty Needed</label>
+                                <select class="w-full bg-slate-900/90 border border-slate-700/80 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 transition-colors">
+                                    <option>Maxillofacial Surgery Consultation</option>
+                                    <option>Orthognathic / Jaw Correction</option>
+                                    <option>Dental Implants & Reconstruction</option>
+                                    <option>TMJ & Facial Pain Evaluation</option>
+                                    <option>Facial Cosmetic / Reconstructive Therapy</option>
+                                    <option>General Oral Consultation</option>
+                                </select>
+                            </div>
 
-                        <div>
-                            <label class="block text-xs font-medium text-slate-300 mb-2 uppercase">Message / Clinical Summary</label>
-                            <textarea rows="4" required placeholder="Please brief your query or case details..." class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-indigo-500 transition-colors"></textarea>
-                        </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Brief Description of Condition / Query</label>
+                                <textarea rows="4" placeholder="Describe your symptoms or clinical requirements..." class="w-full bg-slate-900/90 border border-slate-700/80 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 transition-colors"></textarea>
+                            </div>
 
-                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-bold shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:-translate-y-0.5 transition-all duration-300">
-                            Send Request
-                        </button>
-                    </form>
+                            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-sky-500 via-indigo-500 to-purple-600 font-bold text-white shadow-lg shadow-sky-500/25 hover:shadow-sky-500/40 hover:scale-[1.01] transition-all duration-300">
+                                Send Appointment Request
+                            </button>
+                        </form>
+                    </div>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="py-12 bg-slate-950 border-t border-slate-800/80">
-        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6 text-slate-400 text-sm">
-            <div>
-                <p>© 2026 Dr. Harshal Kunjir. Generated by LinkedIn Portfolio Builder.</p>
-                <p class="text-xs text-slate-600 mt-1">SHRIJA CLINIC • Consultant Maxillofacial Surgeon</p>
+    <!-- Footer -->
+    <footer class="border-t border-slate-900 py-12 relative z-10 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-sky-500 to-indigo-600 flex items-center justify-center text-white font-bold text-sm">
+                    <i class="fa-solid fa-user-doctor"></i>
+                </div>
+                <div>
+                    <span class="font-bold text-white text-sm">Dr. Harshal Kunjir</span>
+                    <span class="text-xs text-slate-500 block">SHRIJA CLINIC • Consultant Maxillofacial Surgeon</span>
+                </div>
             </div>
 
-            <div class="flex items-center gap-4">
-                <a href="#" class="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center hover:bg-indigo-500 hover:text-white transition-all"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#" class="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center hover:bg-indigo-500 hover:text-white transition-all"><i class="fa-solid fa-hospital"></i></a>
-                <a href="#" class="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center hover:bg-indigo-500 hover:text-white transition-all"><i class="fa-solid fa-envelope"></i></a>
+            <div class="text-xs text-slate-500 text-center md:text-right">
+                &copy; <span id="year"></span> Dr. Harshal Kunjir. All rights reserved. Precision Healthcare Excellence.
             </div>
         </div>
     </footer>
 
+    <!-- Script for mobile menu toggle and dynamic year -->
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        const btn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
