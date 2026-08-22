@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Shaurya Negi | Co-Founder, Dental World Aligners</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(14, 165, 233, 0.3);
+        }
+        .glow-card:hover {
+            box-shadow: 0 0 30px -5px rgba(99, 102, 241, 0.25);
+        }
+        .bg-grid-pattern {
+            background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-white relative overflow-x-hidden">
+
+    <!-- Background Ambient Glows -->
+    <div class="fixed top-0 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-[120px] pointer-events-none -z-10"></div>
+    <div class="fixed bottom-1/3 right-1/4 w-[500px] h-[500px] bg-indigo-500/10 rounded-full blur-[150px] pointer-events-none -z-10"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-indigo-500 to-purple-500 p-[2px] transition-transform group-hover:scale-105">
+                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+                        <i class="fa-solid font-bold text-cyan-400 fa-teeth-open"></i>
+                    </div>
+                </div>
+                <div>
+                    <span class="text-lg font-bold tracking-tight text-white block leading-none">Dr. Shaurya Negi</span>
+                    <span class="text-xs text-cyan-400 font-medium tracking-wide">Dental World Aligners</span>
+                </div>
+            </a>
+
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#innovations" class="hover:text-cyan-400 transition-colors">Aligner Tech</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Testimonials</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+            </div>
+
+            <div class="hidden md:flex items-center gap-4">
+                <a href="#contact" class="relative inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-white transition-all duration-200 bg-gradient-to-r from-cyan-500 to-indigo-600 rounded-xl hover:shadow-lg hover:shadow-cyan-500/25 hover:-translate-y-0.5">
+                    Book Consultation
+                </a>
+            </div>
+
+            <button class="md:hidden text-slate-400 hover:text-white text-2xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-6 py-4 space-y-4 text-sm font-medium">
+            <a href="#about" class="block text-slate-300 hover:text-cyan-400">About</a>
+            <a href="#innovations" class="block text-slate-300 hover:text-cyan-400">Aligner Tech</a>
+            <a href="#services" class="block text-slate-300 hover:text-cyan-400">Services</a>
+            <a href="#testimonials" class="block text-slate-300 hover:text-cyan-400">Testimonials</a>
+            <a href="#contact" class="block text-slate-300 hover:text-cyan-400">Contact</a>
+            <a href="#contact" class="block text-center py-2.5 text-white font-semibold bg-gradient-to-r from-cyan-500 to-indigo-600 rounded-xl">Book Consultation</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-20 md:pt-48 md:pb-32 bg-grid-pattern">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/90 border border-slate-800 text-cyan-400 text-sm font-medium shadow-inner">
+                        <span class="flex h-2 w-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                        Co-Founder at Dental World Aligners
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-[1.1]">
+                        Pioneering Next-Gen <br class="hidden sm:inline"/>
+                        <span class="bg-gradient-to-r from-cyan-400 via-indigo-400 to-purple-400 bg-clip-text text-transparent">Clear Aligner Smiles</span>
+                    </h1>
+
+                    <p class="text-lg text-slate-400 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Dr. Shaurya Negi combines advanced digital orthodontic planning, cutting-edge 3D intraoral tech, and patient-first clinical mastery to craft flawless, healthy smiles worldwide.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 text-white font-semibold shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 hover:scale-[1.02] transition-all duration-300 text-center">
+                            Start Aligner Journey <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                        <a href="#innovations" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900/80 border border-slate-800 text-slate-300 hover:text-white hover:bg-slate-800 transition-all text-center font-medium">
+                            Explore Technology
+                        </a>
+                    </div>
+
+                    <!-- Trust Stats Bar -->
+                    <div class="pt-8 border-t border-slate-900 grid grid-cols-3 gap-6 max-w-lg mx-auto lg:mx-0">
+                        <div>
+                            <p class="text-3xl font-extrabold text-white">10,000+</p>
+                            <p class="text-xs text-slate-400 mt-1 font-medium">Smiles Transformed</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl font-extrabold text-white">99.4%</p>
+                            <p class="text-xs text-slate-400 mt-1 font-medium">Precision Accuracy</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl font-extrabold text-white">15+ Yrs</p>
+                            <p class="text-xs text-slate-400 mt-1 font-medium">Clinical Expertise</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Profile Avatar & Glowing Card Frame -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative group">
+                        <!-- Glowing Rings -->
+                        <div class="absolute -inset-1 bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 rounded-3xl blur-xl opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+                        
+                        <div class="relative bg-slate-900/90 backdrop-blur-xl border border-slate-800 p-8 rounded-3xl text-center space-y-6 glow-effect">
+                            <div class="relative w-44 h-44 mx-auto">
+                                <div class="absolute inset-0 rounded-full bg-gradient-to-tr from-cyan-400 to-purple-600 animate-spin-slow opacity-80 blur-md"></div>
+                                <img src="https://ui-avatars.com/api/?name=Dr.+Shaurya+Negi&size=200&background=0D8ABC&color=fff&bold=true" 
+                                     alt="Dr. Shaurya Negi" 
+                                     class="relative w-full h-full rounded-full object-cover border-4 border-slate-950 shadow-2xl">
+                                <div class="absolute bottom-2 right-2 bg-cyan-500 text-slate-950 p-2 rounded-full text-xs shadow-lg" title="Verified Practitioner">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
+                            </div>
+
+                            <div>
+                                <h3 class="text-2xl font-bold text-white">Dr. Shaurya Negi</h3>
+                                <p class="text-cyan-400 text-sm font-semibold mt-1">Co-Founder, Dental World Aligners</p>
+                            </div>
+
+                            <div class="flex justify-center gap-3 pt-2">
+                                <span class="px-3 py-1 rounded-full bg-slate-800/90 text-xs text-slate-300 border border-slate-700">Digital Orthodontics</span>
+                                <span class="px-3 py-1 rounded-full bg-slate-800/90 text-xs text-slate-300 border border-slate-700">Clear Aligners</span>
+                            </div>
+
+                            <div class="p-4 rounded-xl bg-slate-950/60 border border-slate-800/80 flex items-center justify-between text-xs text-slate-400">
+                                <span class="flex items-center gap-2"><i class="fa-solid fa-shield-halved text-cyan-400"></i> Certified Specialist</span>
+                                <span class="text-slate-200 font-semibold">Delhi NCR / Worldwide</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-24 bg-slate-900/40 relative border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-6 relative">
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 shadow-2xl group">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Modern Orthodontic Clinic" 
+                             class="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-6 rounded-xl bg-slate-900/80 backdrop-blur-md border border-slate-800">
+                            <p class="text-cyan-400 font-semibold text-sm">State-of-the-Art Care</p>
+                            <p class="text-white text-base font-bold mt-1">Combining clinical expertise with advanced 3D digital simulation.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold uppercase tracking-wider">
+                        Leadership & Vision
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
+                        Redefining Orthodontics Through Innovation & Elegance
+                    </h2>
+                    <p class="text-slate-400 leading-relaxed">
+                        As Co-Founder at <strong class="text-slate-200">Dental World Aligners</strong>, Dr. Shaurya Negi has championed the paradigm shift from traditional intrusive braces to virtually invisible, custom-tailored clear aligners. 
+                    </p>
+                    <p class="text-slate-400 leading-relaxed">
+                        With an unwavering commitment to patient comfort and aesthetic outcomes, Dr. Negi bridges high-tech 3D intraoral mapping with personalized orthodontic care to deliver predictable, stunning smile transformations.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-4 pt-4">
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <i class="fa-solid fa-laptop-medical text-2xl text-cyan-400 mb-2"></i>
+                            <h4 class="font-bold text-white text-base">3D Treatment Design</h4>
+                            <p class="text-xs text-slate-400 mt-1">Visualize your complete smile journey before starting treatment.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <i class="fa-solid fa-user-doctor text-2xl text-indigo-400 mb-2"></i>
+                            <h4 class="font-bold text-white text-base">Doctor-Led Precision</h4>
+                            <p class="text-xs text-slate-400 mt-1">Continuous expert oversight from start to final retention.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Clear Aligner Tech Innovations -->
+    <section id="innovations" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold uppercase tracking-wider">
+                    The Dental World Advantage
+                </div>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white">Advanced Aligner Technology</h2>
+                <p class="text-slate-400 text-base"> engineered for speed, comfort, and uncompromising aesthetic results.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Tech Card 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-cyan-500/50 transition-all duration-300 glow-card group">
+                    <div class="w-14 h-14 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-microscope"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Ultra-Clear Polymer</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Crafted with medical-grade, stain-resistant thermo-formed polymers that remain virtually invisible throughout your daily routine.
+                    </p>
+                </div>
+
+                <!-- Tech Card 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-indigo-500/50 transition-all duration-300 glow-card group">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Predictable Tooth Movement</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Algorithm-assisted biomechanical staging guarantees controlled micro-movements, shortening treatment duration safely.
+                    </p>
+                </div>
+
+                <!-- Tech Card 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-purple-500/50 transition-all duration-300 glow-card group">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Smile Simulation</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        View a 3D video roadmap of your teeth movement step-by-step before your aligner trays are custom manufactured.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services" class="py-24 bg-slate-900/30 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-cyan-400 font-semibold text-xs tracking-wider uppercase">Clinical Solutions</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Comprehensive Dental Services</h2>
+                <p class="text-slate-400">Tailored treatment protocols led directly by Dr. Shaurya Negi.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-cyan-500/40 transition-all duration-300 space-y-4">
+                    <div class="text-cyan-400 text-3xl"><i class="fa-solid fa-tooth"></i></div>
+                    <h3 class="text-xl font-bold text-white">Custom Clear Aligners</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Discreet, removable, and custom-engineered aligner sets designed for adult and teenage orthotropics.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-indigo-500/40 transition-all duration-300 space-y-4">
+                    <div class="text-indigo-400 text-3xl"><i class="fa-solid fa-qrcode"></i></div>
+                    <h3 class="text-xl font-bold text-white">3D Digital Intraoral Scanning</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">No messy physical impressions. Fast, highly detailed 3D digital impressions taken in minutes.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-purple-500/40 transition-all duration-300 space-y-4">
+                    <div class="text-purple-400 text-3xl"><i class="fa-solid fa-face-smile"></i></div>
+                    <h3 class="text-xl font-bold text-white">Comprehensive Smile Design</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Holistic facial esthetic evaluations to harmonize tooth alignment with your natural facial features.</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-cyan-500/40 transition-all duration-300 space-y-4">
+                    <div class="text-cyan-400 text-3xl"><i class="fa-solid fa-arrows-to-eye"></i></div>
+                    <h3 class="text-xl font-bold text-white">Virtual Progress Tracking</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Remote monitoring options for busy professionals, ensuring treatment stays on target with minimal clinic visits.</p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-indigo-500/40 transition-all duration-300 space-y-4">
+                    <div class="text-indigo-400 text-3xl"><i class="fa-solid fa-award"></i></div>
+                    <h3 class="text-xl font-bold text-white">Post-Aligner Retention</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Long-term stabilization plans with premium custom retainers to maintain your dream smile permanently.</p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-purple-500/40 transition-all duration-300 space-y-4">
+                    <div class="text-purple-400 text-3xl"><i class="fa-solid fa-hospital-user"></i></div>
+                    <h3 class="text-xl font-bold text-white">Doctor Consultation & Consults</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Direct 1-on-1 consultations with Dr. Shaurya Negi for complex orthodontic case evaluations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-cyan-400 font-semibold text-xs tracking-wider uppercase">Patient Stories</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Endorsed by Patients & Peers</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-slate-900/70 border border-slate-800 p-8 rounded-2xl flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            "Dr. Shaurya Negi made my aligner treatment seamless. The 3D scan preview was spot on, and I finished my alignment in just 7 months. Best investment!"
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 font-bold flex items-center justify-center">AK</div>
+                        <div>
+                            <p class="text-sm font-bold text-white">Ananya K.</p>
+                            <p class="text-xs text-slate-500">Completed 12 Trays</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-slate-900/70 border border-slate-800 p-8 rounded-2xl flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            "As a working professional, I didn't want bulky braces. Dental World Aligners under Dr. Negi's guidance provided complete discretion and zero discomfort."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 font-bold flex items-center justify-center">RM</div>
+                        <div>
+                            <p class="text-sm font-bold text-white">Rohit M.</p>
+                            <p class="text-xs text-slate-500">Corporate Executive</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-slate-900/70 border border-slate-800 p-8 rounded-2xl flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            "The precision technology used at Dental World Aligners is world class. Dr. Shaurya's attention to detail is remarkable!"
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 font-bold flex items-center justify-center">PS</div>
+                        <div>
+                            <p class="text-sm font-bold text-white">Pooja Sharma</p>
+                            <p class="text-xs text-slate-500">Aligner Patient</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Consultation Section -->
+    <section id="contact" class="py-24 bg-slate-900/50 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-cyan-400 font-semibold text-xs tracking-wider uppercase">Get In Touch</span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Schedule Your Consultation</h2>
+                        <p class="text-slate-400 mt-4 leading-relaxed">
+                            Ready to transform your smile with Dr. Shaurya Negi and the Dental World Aligners team? Leave a message or request a 3D scan appointment.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6 text-sm">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-cyan-400 text-lg">
+                                <i class="fa-solid fa-building"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-500">Company</p>
+                                <p class="font-bold text-white">Dental World Aligners</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-indigo-400 text-lg">
+                                <i class="fa-solid fa-user-tie"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-500">Role</p>
+                                <p class="font-bold text-white">Co-Founder & Lead Practitioner</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-purple-400 text-lg">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-500">Professional Connection Date</p>
+                                <p class="font-bold text-white">22 Aug 2026</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-lg bg-slate-900 border border-slate-800 text-slate-400 hover:text-cyan-400 flex items-center justify-center transition-colors">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-lg bg-slate-900 border border-slate-800 text-slate-400 hover:text-cyan-400 flex items-center justify-center transition-colors">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-lg bg-slate-900 border border-slate-800 text-slate-400 hover:text-cyan-400 flex items-center justify-center transition-colors">
+                            <i class="fa-solid fa-globe"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7">
+                    <form onsubmit="event.preventDefault(); alert('Thank you! Dr. Shaurya Negi\'s team will reach out to you shortly.');" 
+                          class="bg-slate-900/80 backdrop-blur-xl border border-slate-800 p-8 rounded-3xl space-y-6">
+                        <h3 class="text-xl font-bold text-white">Send a Message</h3>
+                        
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-400 mb-2">FULL NAME</label>
+                                <input type="text" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 placeholder-slate-600 focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-400 mb-2">PHONE NUMBER</label>
+                                <input type="tel" required placeholder="+91 98765 43210" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 placeholder-slate-600 focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-400 mb-2">EMAIL ADDRESS</label>
+                            <input type="email" required placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 placeholder-slate-600 focus:outline-none focus:border-cyan-500 transition-colors">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-400 mb-2">SERVICE INTEREST</label>
+                            <select class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 focus:outline-none focus:border-cyan-500 transition-colors">
+                                <option>Clear Aligner Consultation</option>
+                                <option>3D Digital Scan</option>
+                                <option>Smile Assessment</option>
+                                <option>Partnership / Collaboration</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-400 mb-2">YOUR MESSAGE</label>
+                            <textarea rows="4" placeholder="Tell us about your orthodontic goals..." class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 placeholder-slate-600 focus:outline-none focus:border-cyan-500 transition-colors"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 text-white font-bold tracking-wide shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:opacity-95 transition-all">
+                            Submit Consultation Request
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-slate-950 border-t border-slate-900 text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+            <p>© 2026 Dr. Shaurya Negi — Co-Founder, Dental World Aligners. All rights reserved.</p>
+            <div class="flex items-center gap-6">
+                <a href="#" class="hover:text-slate-400">Privacy Policy</a>
+                <a href="#" class="hover:text-slate-400">Terms of Service</a>
+                <a href="#" class="hover:text-slate-400">Clinical Guidelines</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
