@@ -3,166 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tareq Alkurd | Dental Specialist Portfolio</title>
+    <title>Dr. Tareq Alkurd | Senior Dental Specialist | Oxygen Medical Center</title>
+    
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome Icons CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
     <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(14, 165, 233, 0.3);
+        }
+        .glow-avatar {
+            box-shadow: 0 0 40px rgba(13, 138, 188, 0.5);
+        }
     </style>
 </head>
-<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-white">
 
-    <!-- NAVIGATION BAR -->
-    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/50 transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <!-- Ambient Background Glows -->
+    <div class="fixed top-0 left-1/4 -z-10 w-96 h-96 bg-cyan-600/10 rounded-full blur-[120px] pointer-events-none"></div>
+    <div class="fixed top-1/3 right-1/4 -z-10 w-[500px] h-[500px] bg-indigo-600/10 rounded-full blur-[150px] pointer-events-none"></div>
+    <div class="fixed bottom-10 left-1/3 -z-10 w-[400px] h-[400px] bg-sky-600/10 rounded-full blur-[130px] pointer-events-none"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
             <a href="#" class="flex items-center gap-3 group">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 to-purple-500 flex items-center justify-center font-bold text-white shadow-lg shadow-indigo-500/30 group-hover:scale-105 transition-transform">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-sky-500 to-indigo-500 flex items-center justify-center font-bold text-slate-950 text-xl group-hover:scale-105 transition-transform duration-300">
                     TA
                 </div>
                 <div>
-                    <span class="text-lg font-bold tracking-tight text-white block leading-none">Tareq Alkurd</span>
-                    <span class="text-xs text-indigo-400 font-medium">Oxygen Medical Center</span>
+                    <span class="font-bold text-lg tracking-tight text-white block leading-none">Tareq Alkurd</span>
+                    <span class="text-xs text-cyan-400 font-medium">Oxygen Medical Center</span>
                 </div>
             </a>
 
             <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
-                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
-                <a href="#services" class="hover:text-indigo-400 transition-colors">Specializations</a>
-                <a href="#achievements" class="hover:text-indigo-400 transition-colors">Achievements</a>
-                <a href="#contact" class="hover:text-indigo-400 transition-colors">Contact</a>
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Specialties</a>
+                <a href="#clinic" class="hover:text-cyan-400 transition-colors">Center</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Testimonials</a>
             </div>
 
-            <a href="#contact" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold text-sm shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-105 transition-all duration-300">
-                Get in Touch
-            </a>
+            <div class="flex items-center gap-4">
+                <a href="#contact" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white text-sm font-semibold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 hover:-translate-y-0.5">
+                    Book Consultation
+                </a>
+            </div>
         </div>
     </nav>
 
-    <!-- HERO SECTION -->
-    <section class="relative min-h-screen flex items-center justify-center pt-28 pb-16 overflow-hidden bg-gradient-to-br from-slate-950 via-indigo-950/40 to-slate-900">
-        <!-- Glowing Ambient Background Blurs -->
-        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-indigo-500/10 rounded-full blur-[120px] pointer-events-none"></div>
-        <div class="absolute bottom-10 right-10 w-96 h-96 bg-purple-500/10 rounded-full blur-[100px] pointer-events-none"></div>
-
-        <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
-            <!-- Profile Avatar with Double Gradient Ring -->
-            <div class="mb-8 inline-block relative">
-                <div class="p-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full shadow-2xl shadow-indigo-500/30">
-                    <img src="https://ui-avatars.com/api/?name=Tareq+Alkurd&size=200&background=0D8ABC&color=fff&bold=true" 
-                         alt="Tareq Alkurd" 
-                         class="w-32 h-32 rounded-full object-cover border-4 border-slate-950">
-                </div>
-                <span class="absolute bottom-2 right-2 w-6 h-6 bg-emerald-500 border-4 border-slate-950 rounded-full" title="Available for consultations"></span>
-            </div>
-
-            <!-- Role Badge -->
-            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900/80 border border-slate-800 text-xs font-semibold text-indigo-300 mb-6 backdrop-blur-md">
-                <i class="fa-solid fa-tooth text-indigo-400"></i> Dental Specialist at Oxygen Medical Center
-            </div>
-
-            <!-- Headline -->
-            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-tight max-w-4xl mx-auto mb-6">
-                Redefining Dental Excellence & <span class="bg-clip-text text-transparent bg-gradient-to-r from-indigo-300 via-purple-300 to-pink-300">Precision Smile Aesthetics</span>
-            </h1>
-
-            <!-- Pitch -->
-            <p class="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto mb-10 font-normal leading-relaxed">
-                Transforming smiles and elevating oral healthcare standards through advanced clinical procedures, cutting-edge digital dentistry, and compassionate patient care.
-            </p>
-
-            <!-- Dual CTAs -->
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-                <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold shadow-lg shadow-indigo-500/30 hover:shadow-indigo-500/50 hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2">
-                    <span>Explore Expertise</span>
-                    <i class="fa-solid fa-arrow-right text-xs"></i>
-                </a>
-                <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full bg-slate-900/90 border border-slate-800 text-slate-200 hover:text-white font-semibold hover:border-indigo-500/50 hover:bg-slate-800/80 transition-all duration-300 flex items-center justify-center gap-2 backdrop-blur-md">
-                    <span>Schedule Call</span>
-                    <i class="fa-regular fa-calendar text-xs"></i>
-                </a>
-            </div>
-
-            <!-- Stat Counter Bar -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto pt-8 border-t border-slate-800/60">
-                <div class="p-4 rounded-2xl bg-slate-900/40 border border-slate-800/60 backdrop-blur-md">
-                    <div class="text-3xl font-extrabold text-white bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-400">10+ Years</div>
-                    <div class="text-sm text-slate-400 mt-1 font-medium">Clinical Experience</div>
-                </div>
-                <div class="p-4 rounded-2xl bg-slate-900/40 border border-slate-800/60 backdrop-blur-md">
-                    <div class="text-3xl font-extrabold text-white bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400">3,500+</div>
-                    <div class="text-sm text-slate-400 mt-1 font-medium">Smile Transformations</div>
-                </div>
-                <div class="p-4 rounded-2xl bg-slate-900/40 border border-slate-800/60 backdrop-blur-md">
-                    <div class="text-3xl font-extrabold text-white bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-indigo-400">99.8%</div>
-                    <div class="text-sm text-slate-400 mt-1 font-medium">Client Satisfaction Rate</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ABOUT & EXPERTISE SECTION -->
-    <section id="about" class="py-24 bg-slate-950 relative">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <!-- Hero Section -->
+    <section class="relative pt-12 pb-24 lg:pt-20 lg:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
                 
-                <!-- Image Column -->
-                <div class="relative group">
-                    <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-3xl blur opacity-25 group-hover:opacity-50 transition duration-500"></div>
-                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 shadow-2xl">
-                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
-                             alt="Modern Medical Workspace" 
-                             class="w-full h-[450px] object-cover group-hover:scale-105 transition duration-700">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
-                        <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-slate-900/80 backdrop-blur-md border border-slate-800">
-                            <p class="text-xs font-semibold text-indigo-400 uppercase tracking-wider">Practice Center</p>
-                            <p class="text-sm font-bold text-white">Oxygen Medical Center &bull; Advanced Clinical Suite</p>
-                        </div>
+                <!-- Hero Content -->
+                <div class="lg:col-span-7 space-y-8">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-950/60 border border-cyan-500/30 text-cyan-400 text-xs font-semibold tracking-wide uppercase">
+                        <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                        Senior Dental Specialist • Oxygen Medical Center
                     </div>
-                </div>
+                    
+                    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-[1.15]">
+                        Crafting Healthy, <br>
+                        <span class="bg-gradient-to-r from-cyan-400 via-sky-300 to-indigo-400 bg-clip-text text-transparent">
+                            Flawless Smiles
+                        </span> With Clinical Precision.
+                    </h1>
 
-                <!-- Narrative Column -->
-                <div>
-                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-xs font-semibold text-indigo-400 mb-4">
-                        Career Narrative
-                    </div>
-                    <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-6">
-                        Pioneering Advanced Care & <br><span class="bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-400">Patient-Centered Innovation</span>
-                    </h2>
-                    <p class="text-slate-300 text-base leading-relaxed mb-6">
-                        As a lead Dental Specialist at Oxygen Medical Center, Tareq Alkurd combines clinical precision with personalized care. Dedicated to state-of-the-art restorative procedures, cosmetic enhancements, and comprehensive oral health management, every treatment plan is tailored to deliver long-term vitality and aesthetic brilliance.
+                    <p class="text-slate-400 text-lg sm:text-xl leading-relaxed max-w-2xl font-light">
+                        Combining state-of-the-art dental technology with personalized patient care. Specialist in comprehensive oral restoration, advanced cosmetics, and precision treatment.
                     </p>
 
-                    <!-- Skill Badges with Percentage Bars -->
-                    <div class="space-y-4">
+                    <div class="flex flex-wrap items-center gap-4 pt-2">
+                        <a href="#contact" class="px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-sky-500 to-blue-600 text-slate-950 font-bold text-base hover:shadow-xl hover:shadow-cyan-500/30 transition-all duration-300 hover:-translate-y-0.5 flex items-center gap-2">
+                            <span>Schedule Appointment</span>
+                            <i class="fa-solid fa-arrow-right text-sm"></i>
+                        </a>
+                        <a href="#services" class="px-8 py-4 rounded-xl bg-slate-900/80 hover:bg-slate-800 text-slate-200 font-semibold text-base border border-slate-800 transition-all duration-300 flex items-center gap-2">
+                            <span>Explore Treatments</span>
+                        </a>
+                    </div>
+
+                    <!-- Trust Stats -->
+                    <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-6">
                         <div>
-                            <div class="flex justify-between text-sm font-semibold mb-1">
-                                <span class="text-slate-200">Cosmetic Dentistry & Veneers</span>
-                                <span class="text-indigo-400">98%</span>
-                            </div>
-                            <div class="w-full h-2 rounded-full bg-slate-800 overflow-hidden">
-                                <div class="h-full bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full" style="width: 98%"></div>
+                            <div class="text-2xl sm:text-3xl font-bold text-white">12+</div>
+                            <div class="text-xs sm:text-sm text-slate-400 mt-1">Years Experience</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-bold text-cyan-400">5k+</div>
+                            <div class="text-xs sm:text-sm text-slate-400 mt-1">Happy Smiles</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-bold text-white">99.8%</div>
+                            <div class="text-xs sm:text-sm text-slate-400 mt-1">Satisfaction Rate</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Avatar & Graphic Visual -->
+                <div class="lg:col-span-5 flex justify-center relative">
+                    <!-- Glow Behind Picture -->
+                    <div class="absolute inset-0 bg-gradient-to-tr from-cyan-500 to-indigo-500 rounded-full blur-3xl opacity-20 -z-10 transform scale-90"></div>
+
+                    <div class="relative group">
+                        <!-- Double Gradient Frame Container -->
+                        <div class="p-2 rounded-3xl bg-gradient-to-tr from-cyan-500 via-sky-400 to-indigo-600 p-[3px] shadow-2xl transition-all duration-500 group-hover:scale-[1.01]">
+                            <div class="p-3 bg-slate-950 rounded-[22px]">
+                                <img src="https://ui-avatars.com/api/?name=Tareq+Alkurd&size=200&background=0D8ABC&color=fff&bold=true" 
+                                     alt="Tareq Alkurd" 
+                                     class="w-64 h-64 sm:w-80 sm:h-80 object-cover rounded-2xl bg-slate-900 glow-avatar">
                             </div>
                         </div>
 
-                        <div>
-                            <div class="flex justify-between text-sm font-semibold mb-1">
-                                <span class="text-slate-200">Restorative & Implantology Care</span>
-                                <span class="text-purple-400">95%</span>
+                        <!-- Badge 1: Top Rated -->
+                        <div class="absolute -bottom-6 -left-6 bg-slate-900/90 backdrop-blur-xl border border-slate-800 p-4 rounded-2xl shadow-xl flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-cyan-500/20 flex items-center justify-center text-cyan-400 text-lg">
+                                <i class="fa-solid fa-award"></i>
                             </div>
-                            <div class="w-full h-2 rounded-full bg-slate-800 overflow-hidden">
-                                <div class="h-full bg-gradient-to-r from-purple-500 to-pink-500 rounded-full" style="width: 95%"></div>
+                            <div>
+                                <div class="text-xs text-slate-400">Recognition</div>
+                                <div class="text-sm font-bold text-white">Top Dental Specialist</div>
                             </div>
                         </div>
 
-                        <div>
-                            <div class="flex justify-between text-sm font-semibold mb-1">
-                                <span class="text-slate-200">Digital Dental Imaging & Diagnostics</span>
-                                <span class="text-pink-400">99%</span>
-                            </div>
-                            <div class="w-full h-2 rounded-full bg-slate-800 overflow-hidden">
-                                <div class="h-full bg-gradient-to-r from-pink-500 to-indigo-500 rounded-full" style="width: 99%"></div>
-                            </div>
+                        <!-- Badge 2: Center -->
+                        <div class="absolute -top-4 -right-4 bg-slate-900/90 backdrop-blur-xl border border-slate-800 px-4 py-3 rounded-2xl shadow-xl flex items-center gap-2">
+                            <i class="fa-solid fa-hospital text-cyan-400"></i>
+                            <span class="text-xs font-semibold text-slate-200">Oxygen Medical</span>
                         </div>
                     </div>
                 </div>
@@ -171,127 +171,198 @@
         </div>
     </section>
 
-    <!-- SERVICES & SPECIALIZATION GRID -->
-    <section id="services" class="py-24 bg-slate-900/50 relative">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-xs font-semibold text-indigo-400 mb-4">
-                    Core Specializations
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-24 bg-slate-900/40 relative border-y border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Facility / Practice Image -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 shadow-2xl group">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Modern Dental Practice" 
+                             class="w-full h-[420px] object-cover object-center group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80"></div>
+                        
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <div class="p-4 rounded-xl bg-slate-900/80 backdrop-blur-md border border-slate-800">
+                                <p class="text-xs text-cyan-400 font-semibold uppercase tracking-wider">Clinical Environment</p>
+                                <p class="text-sm font-medium text-slate-200 mt-1">Oxygen Medical Center • Cutting-Edge Dental Technologies</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <h2 class="text-3xl md:text-4xl font-extrabold text-white">Comprehensive Clinical Services</h2>
-                <p class="text-slate-400 mt-4 text-base">Delivering high-precision procedures with a gentle touch and state-of-the-art medical technology.</p>
+
+                <!-- Text Content -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-800 border border-slate-700 text-cyan-400 text-xs font-medium">
+                        <i class="fa-solid fa-user-doctor"></i> Dedicated Clinical Excellence
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+                        Redefining Patient Comfort & Aesthetic perfection
+                    </h2>
+
+                    <p class="text-slate-300 leading-relaxed font-light">
+                        As a Dental Specialist at <strong class="text-white font-semibold">Oxygen Medical Center</strong>, Dr. Tareq Alkurd brings a sophisticated approach to oral medicine and smile enhancement. Emphasizing patient comfort, gentle care, and long-term vitality, every treatment protocol is individualized.
+                    </p>
+
+                    <div class="grid sm:grid-cols-2 gap-4 pt-4">
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80 hover:border-cyan-500/40 transition-colors">
+                            <i class="fa-solid fa-microscope text-cyan-400 text-xl mb-2"></i>
+                            <h4 class="font-semibold text-white text-base">Digital Diagnostics</h4>
+                            <p class="text-xs text-slate-400 mt-1">High-precision 3D imaging for accurate treatment planning.</p>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80 hover:border-cyan-500/40 transition-colors">
+                            <i class="fa-solid fa-wand-magic-sparkles text-cyan-400 text-xl mb-2"></i>
+                            <h4 class="font-semibold text-white text-base">Aesthetic Mastery</h4>
+                            <p class="text-xs text-slate-400 mt-1">Natural-looking veneers, smile makeovers, and whitening.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                <span class="text-cyan-400 text-xs font-bold tracking-widest uppercase bg-cyan-950/50 border border-cyan-800/50 px-4 py-1.5 rounded-full">Specialized Care</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white">Comprehensive Dental Services</h2>
+                <p class="text-slate-400 text-sm sm:text-base">Delivering advanced dental treatments using modern technology and minimally invasive techniques.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
-                <!-- Card 1 -->
-                <div class="p-6 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/60 hover:-translate-y-2 hover:shadow-2xl hover:shadow-indigo-500/10 transition-all duration-300 group">
-                    <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-indigo-500 to-purple-500 flex items-center justify-center text-white text-xl mb-6 shadow-lg shadow-indigo-500/20 group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <!-- Service 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-cyan-500 group-hover:text-slate-950 transition-all duration-300">
+                        <i class="fa-solid fa-tooth"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Cosmetic Smile Design</h3>
-                    <p class="text-slate-400 text-sm mb-4 leading-relaxed">High-end aesthetic smile makeovers including porcelain veneers, whitening, and contouring.</p>
-                    <ul class="text-xs text-slate-300 space-y-2">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Digital Smile Preview</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Custom Porcelain Veneers</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Laser Whitening</li>
-                    </ul>
+                    <h3 class="text-xl font-bold text-white mb-3">Cosmetic Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Transform your smile with porcelain veneers, custom bonding, and comprehensive aesthetic restorations.</p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-semibold text-cyan-400 hover:text-cyan-300 gap-1">Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
                 </div>
 
-                <!-- Card 2 -->
-                <div class="p-6 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/60 hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-500/10 transition-all duration-300 group">
-                    <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-purple-500 to-pink-500 flex items-center justify-center text-white text-xl mb-6 shadow-lg shadow-purple-500/20 group-hover:scale-110 transition-transform">
+                <!-- Service 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-cyan-500 group-hover:text-slate-950 transition-all duration-300">
+                        <i class="fa-solid fa-syringe"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Dental Implants</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Permanent, natural-feeling tooth replacements designed to restore function and youthful smile structure.</p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-semibold text-cyan-400 hover:text-cyan-300 gap-1">Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-cyan-500 group-hover:text-slate-950 transition-all duration-300">
                         <i class="fa-solid fa-teeth-open"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Restorative Dentistry</h3>
-                    <p class="text-slate-400 text-sm mb-4 leading-relaxed">Reconstructing function and natural aesthetics with advanced crowns, bridges, and inlays.</p>
-                    <ul class="text-xs text-slate-300 space-y-2">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400"></i> Ceramic Crowns & Bridges</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400"></i> Minimally Invasive Fillings</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400"></i> Full Mouth Rehabilitation</li>
-                    </ul>
+                    <h3 class="text-xl font-bold text-white mb-3">Orthodontics & Aligners</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Discreet tooth alignment treatments, including modern clear aligners for adults and teenagers.</p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-semibold text-cyan-400 hover:text-cyan-300 gap-1">Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
                 </div>
 
-                <!-- Card 3 -->
-                <div class="p-6 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-pink-500/60 hover:-translate-y-2 hover:shadow-2xl hover:shadow-pink-500/10 transition-all duration-300 group">
-                    <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-pink-500 to-rose-500 flex items-center justify-center text-white text-xl mb-6 shadow-lg shadow-pink-500/20 group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-microscope"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Advanced Endodontics</h3>
-                    <p class="text-slate-400 text-sm mb-4 leading-relaxed">Painless root canal therapy using precision microscopic guidance and modern rotary techniques.</p>
-                    <ul class="text-xs text-slate-300 space-y-2">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pink-400"></i> Single-Visit Endodontics</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pink-400"></i> Microscopic Precision Care</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pink-400"></i> Retreatment Solutions</li>
-                    </ul>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="p-6 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/60 hover:-translate-y-2 hover:shadow-2xl hover:shadow-indigo-500/10 transition-all duration-300 group">
-                    <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-indigo-500 to-cyan-500 flex items-center justify-center text-white text-xl mb-6 shadow-lg shadow-cyan-500/20 group-hover:scale-110 transition-transform">
+                <!-- Service 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-cyan-500 group-hover:text-slate-950 transition-all duration-300">
                         <i class="fa-solid fa-shield-halved"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Preventive & Diagnostics</h3>
-                    <p class="text-slate-400 text-sm mb-4 leading-relaxed">Comprehensive oral checkups, 3D imaging scans, and custom preventive healthcare plans.</p>
-                    <ul class="text-xs text-slate-300 space-y-2">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> 3D CBCT Imaging</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Periodontal Maintenance</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Comprehensive Oral Audits</li>
-                    </ul>
+                    <h3 class="text-xl font-bold text-white mb-3">Restorative Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Precision crown work, inlays, and root canal therapy aimed at preserving original tooth strength.</p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-semibold text-cyan-400 hover:text-cyan-300 gap-1">Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-cyan-500 group-hover:text-slate-950 transition-all duration-300">
+                        <i class="fa-solid fa-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Laser Teeth Whitening</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Safe, high-efficiency whitening treatments yielding noticeably brighter results in a single visit.</p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-semibold text-cyan-400 hover:text-cyan-300 gap-1">Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-cyan-500 group-hover:text-slate-950 transition-all duration-300">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Preventive Oral Health</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Routine consultations, gum therapy, deep cleansings, and preventative maintenance programs.</p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-semibold text-cyan-400 hover:text-cyan-300 gap-1">Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <!-- ACHIEVEMENTS & TESTIMONIALS SECTION -->
-    <section id="achievements" class="py-24 bg-slate-950 relative">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-xs font-semibold text-indigo-400 mb-4">
-                    Endorsements
-                </div>
-                <h2 class="text-3xl md:text-4xl font-extrabold text-white">Trusted by Patients & Colleagues</h2>
-                <p class="text-slate-400 mt-4 text-base">Feedback from medical professionals and transformed patients at Oxygen Medical Center.</p>
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-slate-900/30 border-t border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                <span class="text-cyan-400 text-xs font-bold tracking-widest uppercase bg-cyan-950/50 border border-cyan-800/50 px-4 py-1.5 rounded-full">Patient Feedback</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white">Endorsed by Patients</h2>
+                <p class="text-slate-400 text-sm sm:text-base">Read what patients at Oxygen Medical Center say about Dr. Alkurd's professional care.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8">
                 
-                <!-- Testimonial 1 -->
-                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 relative">
-                    <div class="text-amber-400 text-sm mb-4">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
-                        "Dr. Tareq's precision and artistic vision during my veneer procedure were completely transformative. His meticulous care at Oxygen Medical Center made the entire experience seamless and pain-free."
-                    </p>
-                    <div class="flex items-center gap-4">
-                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" 
-                             alt="Elena Rostova" 
-                             class="w-12 h-12 rounded-full object-cover border border-indigo-500/50">
-                        <div>
-                            <p class="text-sm font-bold text-white">Elena Rostova</p>
-                            <p class="text-xs text-slate-400">Cosmetic Patient</p>
+                <div class="bg-slate-900/60 border border-slate-800 p-8 rounded-2xl relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                         </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Dr. Tareq Alkurd made my dental procedure smooth and painless. His attention to detail and calming approach at Oxygen Medical Center is unmatched."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-slate-800/80 flex items-center justify-between">
+                        <div>
+                            <div class="font-bold text-white text-sm">Sami R.</div>
+                            <div class="text-xs text-slate-400">Cosmetic Dentistry Patient</div>
+                        </div>
+                        <i class="fa-solid fa-quote-right text-cyan-500/20 text-3xl"></i>
                     </div>
                 </div>
 
-                <!-- Testimonial 2 -->
-                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 relative">
-                    <div class="text-amber-400 text-sm mb-4">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
-                        "Tareq Alkurd is one of the finest dental specialists I have collaborated with. His commitment to advanced endodontics and evidence-based practice sets a benchmark across our clinical department."
-                    </p>
-                    <div class="flex items-center gap-4">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" 
-                             alt="Dr. Marcus Vance" 
-                             class="w-12 h-12 rounded-full object-cover border border-purple-500/50">
-                        <div>
-                            <p class="text-sm font-bold text-white">Dr. Marcus Vance</p>
-                            <p class="text-xs text-slate-400">Chief Medical Officer</p>
+                <div class="bg-slate-900/60 border border-slate-800 p-8 rounded-2xl relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                         </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "I had a complete veneer renovation done. The precision, symmetry, and realistic look surpassed all my expectations. Highly recommend Dr. Tareq!"
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-slate-800/80 flex items-center justify-between">
+                        <div>
+                            <div class="font-bold text-white text-sm">Lina M.</div>
+                            <div class="text-xs text-slate-400">Veneer Consultation</div>
+                        </div>
+                        <i class="fa-solid fa-quote-right text-cyan-500/20 text-3xl"></i>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900/60 border border-slate-800 p-8 rounded-2xl relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "State-of-the-art clinic and truly expert care. Dr. Tareq takes the time to explain every detail before performing any procedure."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-slate-800/80 flex items-center justify-between">
+                        <div>
+                            <div class="font-bold text-white text-sm">Omar K.</div>
+                            <div class="text-xs text-slate-400">Implants Patient</div>
+                        </div>
+                        <i class="fa-solid fa-quote-right text-cyan-500/20 text-3xl"></i>
                     </div>
                 </div>
 
@@ -299,84 +370,91 @@
         </div>
     </section>
 
-    <!-- CONTACT & BOOKING SECTION -->
-    <section id="contact" class="py-24 bg-slate-900/40 relative">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+    <!-- Contact & Consultation Form -->
+    <section id="contact" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="grid lg:grid-cols-12 gap-12 bg-slate-900/80 border border-slate-800 rounded-3xl p-8 sm:p-12 backdrop-blur-xl relative overflow-hidden">
                 
+                <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
                 <!-- Info Column -->
-                <div>
-                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-xs font-semibold text-indigo-400 mb-4">
-                        Get In Touch
-                    </div>
-                    <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-6">Schedule Your Consultation</h2>
-                    <p class="text-slate-300 text-base leading-relaxed mb-8">
-                        Ready to elevate your oral health or plan a custom smile transformation? Reach out to arrange a comprehensive clinical assessment at Oxygen Medical Center.
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="text-cyan-400 text-xs font-bold tracking-widest uppercase">Direct Consultation</span>
+                    <h2 class="text-3xl font-bold text-white">Book an Appointment</h2>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Connect directly with Dr. Tareq Alkurd at Oxygen Medical Center for inquiries, modern cosmetic consults, or specialized dental care.
                     </p>
 
-                    <div class="space-y-6">
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-lg bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 shrink-0">
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-cyan-400">
                                 <i class="fa-solid fa-hospital"></i>
                             </div>
                             <div>
-                                <p class="text-xs text-slate-400 uppercase font-semibold">Clinic Location</p>
-                                <p class="text-sm font-medium text-white">Oxygen Medical Center</p>
+                                <div class="text-xs text-slate-400">Location</div>
+                                <div class="text-sm font-semibold text-white">Oxygen Medical Center</div>
                             </div>
                         </div>
 
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-lg bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 shrink-0">
-                                <i class="fa-solid fa-envelope"></i>
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-cyan-400">
+                                <i class="fa-solid fa-clock"></i>
                             </div>
                             <div>
-                                <p class="text-xs text-slate-400 uppercase font-semibold">Professional Inquiries</p>
-                                <p class="text-sm font-medium text-white">contact@tareqalkurd-dental.com</p>
+                                <div class="text-xs text-slate-400">Working Hours</div>
+                                <div class="text-sm font-semibold text-white">Sat - Thu: 9:00 AM - 8:00 PM</div>
                             </div>
                         </div>
 
-                        <div class="flex items-start gap-4">
-                            <div class="w-10 h-10 rounded-lg bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 shrink-0">
-                                <i class="fa-solid fa-link"></i>
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-cyan-400">
+                                <i class="fa-solid fa-user-check"></i>
                             </div>
                             <div>
-                                <p class="text-xs text-slate-400 uppercase font-semibold">Network Connection</p>
-                                <p class="text-sm font-medium text-white">Connected: 18 Aug 2026</p>
+                                <div class="text-xs text-slate-400">Professional Connection</div>
+                                <div class="text-sm font-semibold text-white">Verified Specialist</div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Form Column -->
-                <div class="p-8 rounded-2xl bg-slate-900/80 backdrop-blur-xl border border-slate-800 shadow-2xl">
-                    <form onsubmit="event.preventDefault(); alert('Thank you for reaching out! Dr. Tareq Alkurd\'s office will contact you shortly.');" class="space-y-5">
-                        <div>
-                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Full Name</label>
-                            <input type="text" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors">
+                <div class="lg:col-span-7">
+                    <form onsubmit="event.preventDefault(); alert('Thank you! Your appointment request has been submitted.');" class="space-y-4">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-medium text-slate-300 mb-1.5">Full Name</label>
+                                <input type="text" required placeholder="John Doe" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-medium text-slate-300 mb-1.5">Phone Number</label>
+                                <input type="tel" required placeholder="+1 (555) 000-0000" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+                        </div>
+
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-medium text-slate-300 mb-1.5">Treatment Specialty</label>
+                                <select class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 focus:outline-none focus:border-cyan-500 transition-colors">
+                                    <option>Cosmetic Dentistry & Veneers</option>
+                                    <option>Dental Implants</option>
+                                    <option>Orthodontic Consultation</option>
+                                    <option>General / Preventive Checkup</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-medium text-slate-300 mb-1.5">Preferred Date</label>
+                                <input type="date" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
                         </div>
 
                         <div>
-                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Email Address</label>
-                            <input type="email" required placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors">
+                            <label class="block text-xs font-medium text-slate-300 mb-1.5">Message / Notes</label>
+                            <textarea rows="4" placeholder="Briefly describe your requirements or inquiry..." class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 focus:outline-none focus:border-cyan-500 transition-colors"></textarea>
                         </div>
 
-                        <div>
-                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Service of Interest</label>
-                            <select class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-300 focus:outline-none focus:border-indigo-500 transition-colors">
-                                <option>Cosmetic Dentistry & Veneers</option>
-                                <option>Restorative & Crowns</option>
-                                <option>Endodontic Therapy</option>
-                                <option>General Consultation</option>
-                            </select>
-                        </div>
-
-                        <div>
-                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Message</label>
-                            <textarea rows="4" required placeholder="Describe your request..." class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors"></textarea>
-                        </div>
-
-                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-bold text-sm shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:opacity-95 transition-all duration-300">
-                            Send Booking Request
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-slate-950 font-bold text-sm hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300">
+                            Confirm Appointment Request
                         </button>
                     </form>
                 </div>
@@ -385,14 +463,15 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="py-8 bg-slate-950 border-t border-slate-800/80 text-xs text-slate-500">
-        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p>&copy; 2026 Tareq Alkurd. Generated by LinkedIn Portfolio Builder.</p>
-            <div class="flex items-center gap-6">
-                <a href="#" class="hover:text-slate-300 transition-colors">Privacy Policy</a>
-                <a href="#" class="hover:text-slate-300 transition-colors">Terms of Practice</a>
-                <a href="#" class="text-indigo-400 hover:text-indigo-300 transition-colors"><i class="fa-brands fa-linkedin text-base"></i></a>
+    <!-- Footer -->
+    <footer class="border-t border-slate-900 bg-slate-950 py-12">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col sm:flex-row items-center justify-between gap-6 text-sm text-slate-500">
+            <div class="flex items-center gap-2">
+                <span class="font-bold text-slate-200">Dr. Tareq Alkurd</span>
+                <span>• Dental Specialist at Oxygen Medical Center</span>
+            </div>
+            <div>
+                © 2026 Tareq Alkurd. All rights reserved.
             </div>
         </div>
     </footer>
