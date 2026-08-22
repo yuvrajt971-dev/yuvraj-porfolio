@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Sourabh Pathania | Senior Resident Doctor - IMS BHU</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        medical: {
+                            50: '#f0f9ff',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(14, 165, 233, 0.3);
+        }
+        .glow-card:hover {
+            box-shadow: 0 0 30px -5px rgba(56, 189, 248, 0.25);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-sky-500 selection:text-white relative overflow-x-hidden">
+
+    <!-- Ambient Background Lighting -->
+    <div class="fixed top-0 left-1/4 w-[600px] h-[600px] bg-sky-600/10 rounded-full blur-[140px] pointer-events-none -z-10"></div>
+    <div class="fixed bottom-0 right-1/4 w-[600px] h-[600px] bg-indigo-600/10 rounded-full blur-[140px] pointer-events-none -z-10"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-500 to-indigo-600 p-[1px] transition-transform duration-300 group-hover:scale-105">
+                    <div class="w-full h-full bg-slate-950 rounded-[11px] flex items-center justify-center">
+                        <i class="fa-solid font-bold fa-user-doctor text-sky-400"></i>
+                    </div>
+                </div>
+                <div>
+                    <span class="font-bold text-lg text-slate-100 tracking-tight block">Dr. Sourabh Pathania</span>
+                    <span class="text-xs text-sky-400 tracking-wide font-medium block -mt-1">IMS, BHU Varanasi</span>
+                </div>
+            </a>
+
+            <!-- Desktop Links -->
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-sky-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-sky-400 transition-colors">Expertise</a>
+                <a href="#services" class="hover:text-sky-400 transition-colors">Specializations</a>
+                <a href="#endorsements" class="hover:text-sky-400 transition-colors">Endorsements</a>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="hidden md:flex items-center gap-4">
+                <a href="#contact" class="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-xs font-semibold rounded-xl group bg-gradient-to-br from-sky-500 via-indigo-500 to-purple-500 group-hover:from-sky-500 group-hover:to-purple-500 hover:text-white text-white focus:ring-4 focus:outline-none focus:ring-sky-800">
+                    <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-slate-950 rounded-[10px] group-hover:bg-opacity-0">
+                        <i class="fa-solid fa-paper-plane mr-2 text-sky-400 group-hover:text-white">="transition-colors"></i> Contact Office
+                    </span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="menu-btn" class="md:hidden text-slate-300 focus:outline-none p-2">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900/95 border-b border-slate-800 px-6 py-4 space-y-4 text-slate-300 font-medium">
+            <a href="#about" class="block hover:text-sky-400 transition-colors py-1">About</a>
+            <a href="#expertise" class="block hover:text-sky-400 transition-colors py-1">Expertise</a>
+            <a href="#services" class="block hover:text-sky-400 transition-colors py-1">Specializations</a>
+            <a href="#endorsements" class="block hover:text-sky-400 transition-colors py-1">Endorsements</a>
+            <a href="#contact" class="block text-sky-400 font-semibold py-1">Contact Office</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-20 md:pt-48 md:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Left Content Column -->
+                <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                    <!-- Status Badge -->
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 text-xs font-semibold text-sky-400 shadow-inner">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        Senior Resident Doctor • Banaras Hindu University
+                    </div>
+
+                    <!-- Main Headline -->
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.15]">
+                        Advancing Medicine with <span class="gradient-text">Precision, Science & Empathy</span>
+                    </h1>
+
+                    <!-- Description -->
+                    <p class="text-base sm:text-lg text-slate-400 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        Dr. Sourabh Pathania serves as a Senior Resident Doctor at the prestigious <span class="text-slate-200 font-medium">Institute of Medical Sciences, BHU, Varanasi</span>. Dedicated to comprehensive patient care, medical research, and advanced clinical practices.
+                    </p>
+
+                    <!-- CTAs & Action Buttons -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-sky-500 to-indigo-600 font-semibold text-white shadow-lg shadow-sky-500/25 hover:shadow-sky-500/40 hover:scale-[1.02] transition-all duration-300 text-center">
+                            Request Consultation
+                        </a>
+                        <a href="#about" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-slate-700 font-semibold text-slate-300 hover:text-white transition-all duration-300 text-center backdrop-blur-xl">
+                            Read Biography
+                        </a>
+                    </div>
+
+                    <!-- Trust Badges Grid -->
+                    <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0 text-center lg:text-left">
+                        <div>
+                            <div class="text-2xl lg:text-3xl font-bold text-white">IMS BHU</div>
+                            <div class="text-xs text-slate-500 font-medium mt-1">Medical Institute</div>
+                        </div>
+                        <div class="border-x border-slate-800 px-2">
+                            <div class="text-2xl lg:text-3xl font-bold text-sky-400">SR Doctor</div>
+                            <div class="text-xs text-slate-500 font-medium mt-1">Clinical Designation</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl lg:text-3xl font-bold text-white">24/7</div>
+                            <div class="text-xs text-slate-500 font-medium mt-1">Critical Care</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Avatar & Dynamic Graphic Column -->
+                <div class="lg:col-span-5 flex justify-center relative">
+                    <!-- Outer Halo Effects -->
+                    <div class="absolute inset-0 bg-gradient-to-tr from-sky-500/20 via-purple-500/20 to-indigo-500/20 rounded-full blur-2xl transform scale-90"></div>
+
+                    <!-- Glowing Double-Gradient Frame -->
+                    <div class="relative p-2 rounded-3xl bg-gradient-to-tr from-sky-500 via-indigo-500 to-purple-500 shadow-2xl glow-effect">
+                        <div class="p-2 rounded-[22px] bg-slate-950">
+                            <div class="relative rounded-[18px] overflow-hidden bg-slate-900 w-64 h-64 sm:w-80 sm:h-80 lg:w-88 lg:h-88 flex items-center justify-center">
+                                <img src="https://ui-avatars.com/api/?name=Dr.+Sourabh+Pathania&size=200&background=0D8ABC&color=fff&bold=true" 
+                                     alt="Dr. Sourabh Pathania" 
+                                     class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500">
+                                
+                                <!-- Floating Glass Badge -->
+                                <div class="absolute bottom-4 left-4 right-4 bg-slate-900/90 backdrop-blur-md p-3.5 rounded-xl border border-slate-700/60 flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-lg bg-sky-500/20 text-sky-400 flex items-center justify-center font-bold text-lg">
+                                        <i class="fa-solid fa-stethoscope"></i>
+                                    </div>
+                                    <div>
+                                        <div class="text-xs font-semibold text-white">Senior Resident</div>
+                                        <div class="text-[11px] text-slate-400">IMS BHU Varanasi</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-24 bg-slate-900/40 relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                
+                <!-- Left Image Column -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900 group">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Medical Excellence" 
+                             class="w-full h-[450px] object-cover object-center group-hover:scale-105 transition-transform duration-700 opacity-90">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        
+                        <!-- Floating Glass Metric -->
+                        <div class="absolute bottom-6 left-6 right-6 p-5 rounded-xl bg-slate-900/80 backdrop-blur-xl border border-slate-800">
+                            <div class="flex items-center justify-between">
+                                <div>
+                                    <div class="text-xs text-sky-400 font-semibold tracking-wider uppercase">Affiliation</div>
+                                    <div class="text-sm font-bold text-white mt-0.5">Institute of Medical Sciences</div>
+                                    <div class="text-xs text-slate-400">Banaras Hindu University (BHU)</div>
+                                </div>
+                                <div class="p-3 bg-sky-500/10 rounded-xl text-sky-400">
+                                    <i class="fa-solid fa-hospital text-xl"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Content Column -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-sky-500/10 border border-sky-500/20 text-sky-400 text-xs font-semibold">
+                        <i class="fa-solid fa-hospital-user"></i> Medical Profile
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+                        Dedicated to Patient Welfare & <br class="hidden sm:inline">Advanced Medical Sciences
+                    </h2>
+
+                    <p class="text-slate-400 leading-relaxed font-normal">
+                        Dr. Sourabh Pathania is an esteemed Senior Resident Doctor serving at the Institute of Medical Sciences (IMS), Banaras Hindu University, Varanasi—one of India's premier centers for medical education and clinical research.
+                    </p>
+
+                    <p class="text-slate-400 leading-relaxed font-normal">
+                        With extensive experience in inpatient management, emergency intervention, and academic mentorship, Dr. Pathania combines rigorous evidence-based clinical protocols with a deeply compassionate approach to patient care.
+                    </p>
+
+                    <!-- Key Pillars -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80 flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-sky-500/10 text-sky-400 flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-microscope text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Clinical Diagnostics</h4>
+                                <p class="text-xs text-slate-400 mt-1">Accurate assessment and specialized evidence-based medical treatment.</p>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80 flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-kit-medical text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Emergency Response</h4>
+                                <p class="text-xs text-slate-400 mt-1">Specialized expertise in managing acute clinical scenarios efficiently.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Services / Clinical Domains Section -->
+    <section id="services" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold">
+                    <i class="fa-solid fa-briefcase-medical"></i> Specializations & Services
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Clinical Focus & Areas of Expertise</h2>
+                <p class="text-slate-400 text-base">Comprehensive healthcare services provided at the Institute of Medical Sciences, BHU.</p>
+            </div>
+
+            <!-- Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Card 1 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-sky-500/50 transition-all duration-300 glow-card group relative">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-sky-500/20 to-indigo-500/20 border border-sky-500/30 text-sky-400 flex items-center justify-center text-xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Inpatient & OPD Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Comprehensive management of acute and chronic general medical conditions with personalized continuous evaluation.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-sky-500/50 transition-all duration-300 glow-card group relative">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-indigo-500/20 to-purple-500/20 border border-indigo-500/30 text-indigo-400 flex items-center justify-center text-xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-truck-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Critical Care Medicine</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Rapid critical decision-making, patient stabilization, and continuous intensive care ward supervision.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-sky-500/50 transition-all duration-300 glow-card group relative">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-purple-500/20 to-pink-500/20 border border-purple-500/30 text-purple-400 flex items-center justify-center text-xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-book-journal-whills"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Clinical Research</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Active participation in academic medical studies, case presentations, and modern healthcare innovations.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-sky-500/50 transition-all duration-300 glow-card group relative">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-emerald-500/20 to-teal-500/20 border border-emerald-500/30 text-emerald-400 flex items-center justify-center text-xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-user-graduate"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Resident & Student Mentorship</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Training medical students and junior residents in clinical ward procedures and advanced diagnostic techniques.
+                    </p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-sky-500/50 transition-all duration-300 glow-card group relative">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-amber-500/20 to-orange-500/20 border border-amber-500/30 text-amber-400 flex items-center justify-center text-xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-clipboard-check"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Patient Consultation</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Empathic, detailed diagnostic discussions ensuring patients understand their care pathways thoroughly.
+                    </p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-sky-500/50 transition-all duration-300 glow-card group relative">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-cyan-500/20 to-blue-500/20 border border-cyan-500/30 text-cyan-400 flex items-center justify-center text-xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-dna"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Interdisciplinary Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Collaborative treatment plans coordinated across surgical, diagnostic, and specialty departments at IMS BHU.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Testimonials / Endorsements Section -->
+    <section id="endorsements" class="py-24 bg-slate-900/40 relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-sky-500/10 border border-sky-500/20 text-sky-400 text-xs font-semibold">
+                    <i class="fa-solid fa-quote-left"></i> Peer & Patient Feedback
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Professional Endorsements</h2>
+                <p class="text-slate-400 text-base">Recognized for clinical excellence and compassionate medical duty.</p>
+            </div>
+
+            <!-- Testimonial Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="p-8 rounded-2xl bg-slate-900/80 border border-slate-800 relative flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 text-sm gap-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed font-normal">
+                            "Dr. Sourabh Pathania's meticulous attention to detail and calm demeanor during acute critical emergency procedures make him an invaluable clinician at IMS BHU."
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-slate-800/80 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center font-bold text-sky-400 text-sm">
+                            FC
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-white">Senior Faculty Member</div>
+                            <div class="text-xs text-slate-500">IMS, BHU Varanasi</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="p-8 rounded-2xl bg-slate-900/80 border border-slate-800 relative flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 text-sm gap-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed font-normal">
+                            "Extremely helpful, empathetic, and thorough with patient care. Dr. Pathania takes the extra time to explain complex medical diagnoses clearly."
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-slate-800/80 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center font-bold text-indigo-400 text-sm">
+                            PT
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-white">Patient Family</div>
+                            <div class="text-xs text-slate-500">Varanasi, UP</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="p-8 rounded-2xl bg-slate-900/80 border border-slate-800 relative flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 text-sm gap-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed font-normal">
+                            "A deeply dedicated Senior Resident whose work ethic and clinical acumen serve as a prime benchmark for junior doctors in the department."
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-slate-800/80 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center font-bold text-purple-400 text-sm">
+                            MD
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-white">Department Colleague</div>
+                            <div class="text-xs text-slate-500">Institute of Medical Sciences</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact & Consultation Section -->
+    <section id="contact" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+                
+                <!-- Left Details -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-sky-500/10 border border-sky-500/20 text-sky-400 text-xs font-semibold mb-4">
+                            <i class="fa-solid fa-envelope"></i> Get In Touch
+                        </div>
+                        <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Official Communication</h2>
+                        <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                            For professional academic queries, institutional matters, or general medical consultation scheduling at IMS BHU.
+                        </p>
+                    </div>
+
+                    <!-- Info Cards -->
+                    <div class="space-y-4">
+                        <div class="p-5 rounded-xl bg-slate-900/60 border border-slate-800 flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-sky-500/10 text-sky-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-building-columns"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Hospital Location</div>
+                                <div class="text-sm font-semibold text-white mt-0.5">Institute of Medical Sciences, BHU</div>
+                                <div class="text-xs text-slate-400">Varanasi, Uttar Pradesh, India - 221005</div>
+                            </div>
+                        </div>
+
+                        <div class="p-5 rounded-xl bg-slate-900/60 border border-slate-800 flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-user-doctor"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Position</div>
+                                <div class="text-sm font-semibold text-white mt-0.5">Senior Resident Doctor</div>
+                                <div class="text-xs text-slate-400">Department of Medicine</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social / Connect Links -->
+                    <div class="pt-4">
+                        <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold mb-3">Connect Online</div>
+                        <div class="flex items-center gap-3">
+                            <a href="#" class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 hover:text-sky-400 hover:border-sky-500/50 flex items-center justify-center transition-all duration-300">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 hover:text-sky-400 hover:border-sky-500/50 flex items-center justify-center transition-all duration-300">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 hover:text-sky-400 hover:border-sky-500/50 flex items-center justify-center transition-all duration-300">
+                                <i class="fa-solid fa-notes-medical"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Form Glass Card -->
+                <div class="lg:col-span-7">
+                    <div class="p-8 sm:p-10 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 shadow-2xl relative">
+                        <h3 class="text-xl font-bold text-white mb-2">Send a Message</h3>
+                        <p class="text-slate-400 text-xs mb-8">Please complete the form below for consultation requests or medical inquiries.</p>
+
+                        <form onsubmit="event.preventDefault(); alert('Thank you for reaching out, Dr. Sourabh Pathania\'s office will receive your message.');" class="space-y-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Full Name</label>
+                                    <input type="text" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-100 placeholder-slate-600 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 transition-all text-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Email Address</label>
+                                    <input type="email" required placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-100 placeholder-slate-600 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 transition-all text-sm">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Subject / Medical Inquiry</label>
+                                <input type="text" required placeholder="Consultation / Academic Query" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-100 placeholder-slate-600 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 transition-all text-sm">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Message</label>
+                                <textarea rows="4" required placeholder="Please state the reason for your contact..." class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-100 placeholder-slate-600 focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500 transition-all text-sm resize-none"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-sky-500 via-indigo-500 to-purple-600 font-semibold text-white shadow-lg shadow-sky-500/20 hover:shadow-sky-500/35 hover:scale-[1.01] transition-all duration-300 text-sm">
+                                Submit Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-slate-950 border-t border-slate-900 text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+                &copy; <span id="year"></span> Dr. Sourabh Pathania • IMS BHU Varanasi. All rights reserved.
+            </div>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-slate-400 transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-slate-400 transition-colors">Terms of Care</a>
+                <a href="#" class="hover:text-slate-400 transition-colors">IMS BHU Portal</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        // Set dynamic current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile menu toggle logic
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking menu links
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
