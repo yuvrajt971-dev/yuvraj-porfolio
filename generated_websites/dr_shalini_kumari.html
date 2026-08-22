@@ -3,213 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Shalini Kumari | Manager - Aditya Birla Health Insurance</title>
+    <title>Dr. Shalini Kumari | Healthcare Insurance Executive & Manager</title>
+    
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            cyan: '#0D8ABC',
+                            teal: '#14b8a6',
+                            accent: '#6366f1'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
     <style>
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
         }
         .glow-effect {
-            box-shadow: 0 0 50px -12px rgba(99, 102, 241, 0.25);
+            box-shadow: 0 0 50px -10px rgba(13, 138, 188, 0.35);
         }
-        .gradient-border {
-            position: relative;
-            border-radius: 1rem;
-            background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.02));
+        .text-gradient {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .text-gradient-teal {
+            background: linear-gradient(135deg, #2dd4bf 0%, #38bdf8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card:hover {
+            border-color: rgba(13, 138, 188, 0.4);
+            box-shadow: 0 10px 30px -10px rgba(13, 138, 188, 0.2);
         }
     </style>
 </head>
-<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white overflow-x-hidden">
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-white relative overflow-x-hidden">
 
-    <!-- NAVIGATION BAR -->
-    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/50 transition-all duration-300">
+    <!-- Ambient Background Glows -->
+    <div class="fixed top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[400px] bg-gradient-to-tr from-cyan-600/20 via-indigo-600/10 to-transparent blur-[140px] pointer-events-none -z-10"></div>
+    <div class="fixed bottom-0 right-0 w-[600px] h-[600px] bg-gradient-to-br from-teal-500/10 via-purple-600/10 to-transparent blur-[160px] pointer-events-none -z-10"></div>
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/60 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
             <a href="#" class="flex items-center gap-3 group">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 p-0.5 flex items-center justify-center shadow-lg shadow-indigo-500/20 group-hover:scale-105 transition-transform duration-300">
-                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
-                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-pink-400 font-extrabold text-lg">SK</span>
-                    </div>
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-500 flex items-center justify-center font-bold text-white shadow-lg group-hover:scale-105 transition-transform">
+                    DS
                 </div>
-                <div class="flex flex-col">
-                    <span class="font-bold text-slate-100 tracking-tight text-lg leading-tight group-hover:text-indigo-400 transition-colors">Dr. Shalini Kumari</span>
-                    <span class="text-xs text-slate-400 font-medium">Manager, ABHICL</span>
+                <div>
+                    <span class="font-bold text-lg text-white tracking-tight block">Dr. Shalini Kumari</span>
+                    <span class="text-xs text-slate-400 block font-medium">Aditya Birla Health Insurance</span>
                 </div>
             </a>
 
-            <!-- Desktop Nav Links -->
-            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
-                <a href="#about" class="hover:text-indigo-400 transition-colors duration-200">About</a>
-                <a href="#expertise" class="hover:text-indigo-400 transition-colors duration-200">Expertise</a>
-                <a href="#services" class="hover:text-indigo-400 transition-colors duration-200">Services</a>
-                <a href="#achievements" class="hover:text-indigo-400 transition-colors duration-200">Achievements</a>
-                <a href="#contact" class="hover:text-indigo-400 transition-colors duration-200">Contact</a>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-cyan-400 transition-colors">Expertise</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Key Domains</a>
+                <a href="#endorsements" class="hover:text-cyan-400 transition-colors">Endorsements</a>
             </nav>
 
-            <!-- CTA Button -->
-            <div class="flex items-center gap-4">
-                <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-white bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 rounded-full shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-105 transition-all duration-300 active:scale-95">
-                    Get in Touch
-                    <i class="fa-solid font-xs fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
-                </a>
-            </div>
+            <a href="#contact" class="px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 text-white shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 hover:scale-105 transition-all duration-300">
+                Connect Directly
+            </a>
         </div>
     </header>
 
-    <!-- HERO SECTION -->
-    <section class="relative pt-36 pb-20 md:pt-48 md:pb-32 overflow-hidden bg-gradient-to-br from-slate-950 via-indigo-950/40 to-slate-900">
-        <!-- Subtle Glow Orbs Background -->
-        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-indigo-600/15 rounded-full blur-[120px] pointer-events-none"></div>
-        <div class="absolute top-1/3 right-10 w-[400px] h-[400px] bg-pink-600/10 rounded-full blur-[100px] pointer-events-none"></div>
-
-        <div class="max-w-7xl mx-auto px-6 relative z-10">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+    <!-- Hero Section -->
+    <section class="relative pt-16 pb-24 md:pt-28 md:pb-36 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
                 
-                <!-- Left Content -->
-                <div class="lg:col-span-7 text-center lg:text-left">
-                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 backdrop-blur-md mb-6 shadow-inner">
-                        <span class="flex h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                        <span class="text-xs font-semibold uppercase tracking-wider text-slate-300">Manager @ Aditya Birla Health Insurance</span>
+                <!-- Left Hero Content -->
+                <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-300 text-xs font-semibold tracking-wide uppercase">
+                        <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                        Healthcare & Health Insurance Leadership
                     </div>
-                    
-                    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-6 leading-[1.1]">
-                        Transforming Healthcare & 
-                        <span class="bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 via-purple-300 to-pink-400 block mt-2">Insurance Leadership</span>
+
+                    <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-[1.1]">
+                        Pioneering <span class="text-gradient">Strategic Excellence</span> In Health Insurance
                     </h1>
 
-                    <p class="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto lg:mx-0 mb-8 font-normal leading-relaxed">
-                        Driving strategic growth, operational excellence, and customer-centric healthcare innovation at Aditya Birla Health Insurance Company Limited with doctor-led insight.
+                    <p class="text-slate-400 text-lg md:text-xl font-normal leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        Manager at <strong class="text-slate-200">Aditya Birla Health Insurance Company Limited</strong>. Bridging medical insight with corporate strategy to transform operations, healthcare delivery, and customer risk management.
                     </p>
 
-                    <!-- Dual CTAs -->
-                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-12">
-                        <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-full font-semibold text-white bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 shadow-xl shadow-indigo-600/30 hover:shadow-indigo-600/50 hover:scale-[1.02] transition-all duration-300 text-center">
-                            Explore Expertise
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#contact" class="px-8 py-4 rounded-xl text-sm font-bold bg-gradient-to-r from-cyan-500 to-indigo-600 text-white shadow-xl shadow-cyan-500/20 hover:scale-[1.02] hover:shadow-cyan-500/30 transition-all flex items-center gap-3">
+                            <span>Get In Touch</span>
+                            <i class="fa-solid me-1 fa-arrow-right"></i>
                         </a>
-                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full font-semibold text-slate-200 bg-slate-900/80 border border-slate-700/80 backdrop-blur-xl hover:bg-slate-800 hover:text-white hover:border-slate-600 transition-all duration-300 text-center">
-                            Schedule Call
+                        <a href="#expertise" class="px-8 py-4 rounded-xl text-sm font-bold bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:bg-slate-800/80 transition-all">
+                            View Leadership Pillars
                         </a>
                     </div>
 
-                    <!-- Stat Counter Bar -->
-                    <div class="grid grid-cols-3 gap-4 pt-8 border-t border-slate-800/80">
+                    <!-- Trust Badges -->
+                    <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0">
                         <div>
-                            <p class="text-2xl sm:text-3xl font-extrabold text-white">10+ Years</p>
-                            <p class="text-xs sm:text-sm text-slate-400 mt-1 font-medium">Domain Experience</p>
+                            <p class="text-2xl md:text-3xl font-extrabold text-white">100%</p>
+                            <p class="text-xs text-slate-400 mt-1">Operational Precision</p>
                         </div>
                         <div>
-                            <p class="text-2xl sm:text-3xl font-extrabold text-white">150+</p>
-                            <p class="text-xs sm:text-sm text-slate-400 mt-1 font-medium">Projects & Initiatives</p>
+                            <p class="text-2xl md:text-3xl font-extrabold text-cyan-400">Strategic</p>
+                            <p class="text-xs text-slate-400 mt-1">Healthcare Solutions</p>
                         </div>
                         <div>
-                            <p class="text-2xl sm:text-3xl font-extrabold text-white">99.8%</p>
-                            <p class="text-xs sm:text-sm text-slate-400 mt-1 font-medium">Client Trust Index</p>
+                            <p class="text-2xl md:text-3xl font-extrabold text-indigo-400">Leader</p>
+                            <p class="text-xs text-slate-400 mt-1">Aditya Birla Group</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Right Avatar & visual -->
-                <div class="lg:col-span-5 flex justify-center lg:justify-end">
-                    <div class="relative">
-                        <!-- Glowing circular avatar frame with double gradient ring -->
-                        <div class="p-1.5 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full shadow-2xl shadow-indigo-500/30 inline-block relative group">
-                            <div class="p-2 bg-slate-950 rounded-full">
-                                <img src="https://ui-avatars.com/api/?name=Dr.+Shalini+Kumari&size=200&background=0D8ABC&color=fff&bold=true" alt="Dr. Shalini Kumari" class="w-56 h-56 sm:w-72 sm:h-72 rounded-full object-cover shadow-inner group-hover:scale-105 transition-transform duration-500">
-                            </div>
-                            
-                            <!-- Floating Badge -->
-                            <div class="absolute -bottom-2 -right-2 bg-slate-900/90 border border-slate-700 backdrop-blur-xl p-3.5 rounded-2xl shadow-2xl flex items-center gap-3">
-                                <div class="w-10 h-10 rounded-xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-lg">
-                                    <i class="fa-solid fa-user-doctor"></i>
-                                </div>
-                                <div>
-                                    <p class="text-xs text-slate-400 font-medium">Leadership</p>
-                                    <p class="text-sm font-bold text-white">Health Strategy</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- ABOUT & EXPERTISE SECTION -->
-    <section id="about" class="py-24 relative bg-slate-950">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                
-                <!-- Image Side -->
-                <div class="lg:col-span-5">
+                <!-- Right Hero Image Showcase -->
+                <div class="lg:col-span-5 flex justify-center relative">
                     <div class="relative group">
-                        <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-pink-500 rounded-2xl blur opacity-30 group-hover:opacity-75 transition duration-500"></div>
-                        <div class="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900">
-                            <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" alt="Workspace Leadership" class="w-full h-[450px] object-cover object-center group-hover:scale-105 transition-transform duration-500">
-                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
-                            <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-slate-900/80 backdrop-blur-md border border-slate-800">
-                                <p class="text-sm font-semibold text-white">Aditya Birla Health Insurance Co. Ltd.</p>
-                                <p class="text-xs text-slate-400 mt-0.5">Empowering thousands through proactive health cover and seamless claims leadership.</p>
-                            </div>
+                        <!-- Double Glowing Gradient Ring -->
+                        <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 blur-xl opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+                        
+                        <!-- Main Avatar Holder -->
+                        <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full p-2 bg-slate-950 ring-1 ring-white/10 flex items-center justify-center overflow-hidden shadow-2xl">
+                            <img src="https://ui-avatars.com/api/?name=Dr.+Shalini+Kumari&size=200&background=0D8ABC&color=fff&bold=true" 
+                                 alt="Dr. Shalini Kumari" 
+                                 class="w-full h-full object-cover rounded-full transition-transform duration-500 group-hover:scale-105">
                         </div>
-                    </div>
-                </div>
 
-                <!-- Text & Skills Side -->
-                <div id="expertise" class="lg:col-span-7">
-                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold uppercase tracking-wider mb-4">
-                        Career Narrative
-                    </div>
-                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-6">
-                        Bridging Medical Expertise with Executive Leadership
-                    </h2>
-                    <p class="text-slate-300 leading-relaxed mb-8">
-                        As a Manager at Aditya Birla Health Insurance Company Limited, Dr. Shalini Kumari combines clinical knowledge with strategic insurance management. Her career is built on delivering high-impact operational management, optimizing claims and risk frameworks, and creating patient-first health ecosystem solutions that redefine corporate wellness and insurance standards.
-                    </p>
-
-                    <!-- Core Competencies with Progress Bars -->
-                    <div class="space-y-5">
-                        <div>
-                            <div class="flex justify-between text-sm font-semibold mb-2">
-                                <span class="text-slate-200">Health Insurance & Portfolio Strategy</span>
-                                <span class="text-indigo-400">95%</span>
+                        <!-- Floating Stat Badges -->
+                        <div class="absolute -bottom-4 -left-4 glass-card px-5 py-3 rounded-2xl shadow-xl flex items-center gap-3 border border-slate-800">
+                            <div class="w-10 h-10 rounded-xl bg-teal-500/20 text-teal-400 flex items-center justify-center">
+                                <i class="fa-solid fa-notes-medical text-lg"></i>
                             </div>
-                            <div class="w-full h-2 bg-slate-800 rounded-full overflow-hidden">
-                                <div class="h-full bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full" style="width: 95%"></div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Domain</p>
+                                <p class="text-sm font-bold text-white">Healthcare & Insurance</p>
                             </div>
                         </div>
 
-                        <div>
-                            <div class="flex justify-between text-sm font-semibold mb-2">
-                                <span class="text-slate-200">Operational Excellence & Claims Management</span>
-                                <span class="text-indigo-400">92%</span>
+                        <div class="absolute -top-2 -right-4 glass-card px-5 py-3 rounded-2xl shadow-xl flex items-center gap-3 border border-slate-800">
+                            <div class="w-10 h-10 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center">
+                                <i class="fa-solid fa-briefcase text-lg"></i>
                             </div>
-                            <div class="w-full h-2 bg-slate-800 rounded-full overflow-hidden">
-                                <div class="h-full bg-gradient-to-r from-purple-500 to-pink-500 rounded-full" style="width: 92%"></div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="flex justify-between text-sm font-semibold mb-2">
-                                <span class="text-slate-200">Stakeholder Alliances & Corporate Relations</span>
-                                <span class="text-indigo-400">90%</span>
-                            </div>
-                            <div class="w-full h-2 bg-slate-800 rounded-full overflow-hidden">
-                                <div class="h-full bg-gradient-to-r from-indigo-500 to-pink-500 rounded-full" style="width: 90%"></div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Role</p>
+                                <p class="text-sm font-bold text-white">Manager</p>
                             </div>
                         </div>
-                    </div>
-
-                    <!-- Pill tags -->
-                    <div class="flex flex-wrap gap-2 mt-8">
-                        <span class="px-3 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-xs font-medium text-slate-300">Risk Assessment</span>
-                        <span class="px-3 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-xs font-medium text-slate-300">Regulatory Compliance</span>
-                        <span class="px-3 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-xs font-medium text-slate-300">Team Leadership</span>
-                        <span class="px-3 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-xs font-medium text-slate-300">Customer Success</span>
                     </div>
                 </div>
 
@@ -217,221 +183,303 @@
         </div>
     </section>
 
-    <!-- SERVICES & SPECIALIZATION GRID -->
-    <section id="services" class="py-24 bg-slate-900/50 border-y border-slate-800/60 relative">
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-24 relative bg-slate-900/40 border-y border-slate-800/50">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-pink-500/10 border border-pink-500/20 text-pink-400 text-xs font-semibold uppercase tracking-wider mb-4">
-                    Specialized Expertise
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Industry Image Frame -->
+                <div class="lg:col-span-5">
+                    <div class="relative rounded-3xl overflow-hidden glass-card p-3 border border-slate-800 group">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Healthcare Environment" 
+                             class="rounded-2xl w-full h-[420px] object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-4 glass-card rounded-xl border border-white/10">
+                            <p class="text-sm font-semibold text-white">Aditya Birla Health Insurance Co. Ltd.</p>
+                            <p class="text-xs text-slate-400">Leading innovation in healthcare management & wellness</p>
+                        </div>
+                    </div>
                 </div>
-                <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
-                    Strategic Solutions & Leadership
+
+                <!-- Bio Content -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-block px-3 py-1 rounded-md bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold uppercase tracking-wider">
+                        Executive Overview
+                    </div>
+                    
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">
+                        Integrating Medical Expertise with <span class="text-gradient-teal">Corporate Health Strategy</span>
+                    </h2>
+
+                    <p class="text-slate-300 leading-relaxed font-normal">
+                        Dr. Shalini Kumari serves as Manager at Aditya Birla Health Insurance Company Limited, one of India's premier health insurance providers. With a strong clinical foundation and sharp organizational acumen, she specializes in driving strategic operational initiatives, risk management, and client-centric health insurance solutions.
+                    </p>
+
+                    <p class="text-slate-400 leading-relaxed text-sm">
+                        Her unique dual expertise enables seamless translation between clinical insights and financial protection mechanisms, ensuring that policyholders receive compassionate, efficient, and top-tier healthcare services.
+                    </p>
+
+                    <div class="grid sm:grid-cols-2 gap-4 pt-4">
+                        <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800 flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-hospital-user text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold text-sm">Clinical & Management Synergy</h4>
+                                <p class="text-xs text-slate-400 mt-1">Bridging medical precision with corporate health insurance frameworks.</p>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800 flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-chart-pie text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold text-sm">Process & Risk Governance</h4>
+                                <p class="text-xs text-slate-400 mt-1">Optimizing operational workflows and strategic risk evaluation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Domains / Services Grid -->
+    <section id="services" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="px-3 py-1 rounded-md bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold uppercase tracking-wider">
+                    Areas of Expertise
+                </span>
+                <h2 class="text-3xl md:text-5xl font-extrabold text-white">
+                    Strategic Focus & Capabilities
                 </h2>
-                <p class="text-slate-400 mt-4 text-base sm:text-lg">
-                    Elevating health insurance operations through strategic vision, medical intelligence, and modern management methodologies.
+                <p class="text-slate-400 text-sm md:text-base">
+                    Delivering excellence across corporate management, health portfolio operations, and medical risk strategy.
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <!-- Card 1 -->
-                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 hover:border-indigo-500/60 group">
-                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-indigo-500 to-purple-600 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-indigo-500/30 group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-briefcase-medical"></i>
+                <div class="glass-card rounded-2xl p-8 hover:-translate-y-2 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-cyan-500/20 to-indigo-500/20 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-shield-halved"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Health Insurance Operations</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
-                        Streamlining corporate health coverage frameworks and underwriting mechanisms for optimal customer retention and risk mitigation.
+                    <h3 class="text-xl font-bold text-white mb-3">Health Insurance Strategy</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Formulating forward-thinking strategies that align health insurance coverage with modern clinical standards and user needs.
                     </p>
-                    <ul class="space-y-2 text-xs font-medium text-slate-300">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Process Workflow Optimization</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> End-to-End Policy Lifecycle</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Corporate Portfolio Strategy</li>
-                    </ul>
                 </div>
 
                 <!-- Card 2 -->
-                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 hover:border-indigo-500/60 group">
-                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-purple-500 to-pink-600 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-purple-500/30 group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-file-signature"></i>
+                <div class="glass-card rounded-2xl p-8 hover:-translate-y-2 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-indigo-500/20 to-purple-500/20 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-chart-line"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Claims & Risk Optimization</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
-                        Leveraging medical acumen to oversee complex claim evaluations, ensuring fairness, efficiency, and regulatory compliance.
+                    <h3 class="text-xl font-bold text-white mb-3">Operational Leadership</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Driving high-performance management and continuous improvement across health insurance operational touchpoints.
                     </p>
-                    <ul class="space-y-2 text-xs font-medium text-slate-300">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Fraud Prevention Protocols</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Rapid Resolution Pathways</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Risk Identification Models</li>
-                    </ul>
                 </div>
 
                 <!-- Card 3 -->
-                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 hover:border-indigo-500/60 group">
-                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-pink-500 to-rose-600 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-pink-500/30 group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-handshake"></i>
+                <div class="glass-card rounded-2xl p-8 hover:-translate-y-2 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-purple-500/20 to-pink-500/20 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-user-doctor"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Healthcare Partner Ecosystems</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
-                        Building sustainable network hospital partnerships and provider agreements to deliver seamless care to policyholders.
+                    <h3 class="text-xl font-bold text-white mb-3">Medical Governance</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Applying doctor-level insights to refine claim evaluations, medical underwriting, and quality standard oversight.
                     </p>
-                    <ul class="space-y-2 text-xs font-medium text-slate-300">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Hospital Network Growth</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Quality Assurance Audits</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Strategic Alliances</li>
-                    </ul>
                 </div>
 
+                <!-- Card 4 -->
+                <div class="glass-card rounded-2xl p-8 hover:-translate-y-2 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-teal-500/20 to-cyan-500/20 text-teal-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-handshake-angle"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Stakeholder Relations</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Building strong ecosystem partnerships between healthcare providers, insurers, and policyholders.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- FEATURED ACHIEVEMENTS / TESTIMONIALS SECTION -->
-    <section id="achievements" class="py-24 bg-slate-950">
+    <!-- Testimonials / Endorsements Section -->
+    <section id="endorsements" class="py-24 relative bg-slate-900/30 border-t border-slate-800/50">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold uppercase tracking-wider mb-4">
-                    Endorsements & Impact
-                </div>
-                <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
-                    Recognized Leadership
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <span class="px-3 py-1 rounded-md bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-semibold uppercase tracking-wider">
+                    Peer Recognition
+                </span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-white">
+                    Endorsements & Testimonials
                 </h2>
-                <p class="text-slate-400 mt-4 text-base">
-                    What peers and industry leaders say about Dr. Shalini's strategic oversight and executive drive.
-                </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                
+            <div class="grid md:grid-cols-3 gap-8">
                 <!-- Testimonial 1 -->
-                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 relative flex flex-col justify-between">
-                    <div>
-                        <div class="flex text-amber-400 gap-1 mb-4">
+                <div class="glass-card rounded-2xl p-8 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1 text-sm">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <p class="text-slate-300 text-base italic mb-6">
-                            "Dr. Shalini's unique integration of healthcare expertise and business strategy at Aditya Birla Health Insurance has drastically enhanced operational throughput and team efficiency."
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Dr. Shalini's background allows her to look at health insurance from a uniquely comprehensive viewpoint. Her leadership at Aditya Birla Health Insurance consistently drives clarity and operational momentum."
                         </p>
                     </div>
-                    <div class="flex items-center gap-4 pt-4 border-t border-slate-800/80">
-                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Executive Partner" class="w-12 h-12 rounded-full object-cover border border-indigo-500/50">
+                    <div class="mt-8 pt-4 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-300 font-bold text-xs">
+                            VP
+                        </div>
                         <div>
-                            <h4 class="text-white font-bold text-sm">Priya Sharma</h4>
-                            <p class="text-slate-400 text-xs">Senior VP, Health Operations</p>
+                            <p class="text-white text-sm font-semibold">Senior Vice President</p>
+                            <p class="text-xs text-slate-400">Healthcare Financial Sector</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Testimonial 2 -->
-                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 relative flex flex-col justify-between">
-                    <div>
-                        <div class="flex text-amber-400 gap-1 mb-4">
+                <div class="glass-card rounded-2xl p-8 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1 text-sm">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                         </div>
-                        <p class="text-slate-300 text-base italic mb-6">
-                            "Her foresight in management, claims policy simplification, and client relationship building sets a benchmark in the modern health insurance sector."
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "An extraordinary manager who seamlessly balances clinical acumen with business efficiency. Her problem-solving skills in healthcare management set a high benchmark."
                         </p>
                     </div>
-                    <div class="flex items-center gap-4 pt-4 border-t border-slate-800/80">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Industry Leader" class="w-12 h-12 rounded-full object-cover border border-purple-500/50">
+                    <div class="mt-8 pt-4 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-300 font-bold text-xs">
+                            RM
+                        </div>
                         <div>
-                            <h4 class="text-white font-bold text-sm">Rajesh Verma</h4>
-                            <p class="text-slate-400 text-xs">Corporate Alliances Director</p>
+                            <p class="text-white text-sm font-semibold">Regional Manager</p>
+                            <p class="text-xs text-slate-400">Health Operations</p>
                         </div>
                     </div>
                 </div>
 
+                <!-- Testimonial 3 -->
+                <div class="glass-card rounded-2xl p-8 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Dr. Shalini possesses a deep dedication to patient welfare and policyholder satisfaction. Her managerial leadership continues to inspire team performance."
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-300 font-bold text-xs">
+                            HL
+                        </div>
+                        <div>
+                            <p class="text-white text-sm font-semibold">Head of Medical Operations</p>
+                            <p class="text-xs text-slate-400">Insurance Network Partner</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- CONTACT & BOOKING SECTION -->
-    <section id="contact" class="py-24 bg-slate-900/40 border-t border-slate-800/80 relative">
+    <!-- Contact & Network Section -->
+    <section id="contact" class="py-24 relative">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+            <div class="grid lg:grid-cols-12 gap-12">
                 
-                <!-- Contact info -->
-                <div class="lg:col-span-5 flex flex-col justify-between">
+                <!-- Contact Info -->
+                <div class="lg:col-span-5 space-y-8">
                     <div>
-                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold uppercase tracking-wider mb-4">
-                            Get In Touch
-                        </div>
-                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-6">
-                            Initiate a Professional Consultation
+                        <span class="px-3 py-1 rounded-md bg-teal-500/10 border border-teal-500/20 text-teal-400 text-xs font-semibold uppercase tracking-wider">
+                            Direct Outreach
+                        </span>
+                        <h2 class="text-3xl md:text-5xl font-extrabold text-white mt-4">
+                            Let's Connect
                         </h2>
-                        <p class="text-slate-300 mb-8 leading-relaxed">
-                            Interested in operational partnerships, health insurance advisory, or management inquiries? Reach out directly.
+                        <p class="text-slate-400 mt-3 text-sm leading-relaxed">
+                            Open to strategic discussions, healthcare management insights, and executive collaborations within the insurance ecosystem.
                         </p>
+                    </div>
 
-                        <div class="space-y-6">
-                            <div class="flex items-center gap-4">
-                                <div class="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-indigo-400 text-lg">
-                                    <i class="fa-solid fa-building"></i>
-                                </div>
-                                <div>
-                                    <p class="text-xs text-slate-400 font-medium">Organization</p>
-                                    <p class="text-sm font-semibold text-white">Aditya Birla Health Insurance Co. Ltd.</p>
-                                </div>
+                    <div class="space-y-4">
+                        <div class="glass-card p-5 rounded-2xl flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-building text-gradient"></i>
                             </div>
-
-                            <div class="flex items-center gap-4">
-                                <div class="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-purple-400 text-lg">
-                                    <i class="fa-solid fa-calendar-check"></i>
-                                </div>
-                                <div>
-                                    <p class="text-xs text-slate-400 font-medium">Professional Network</p>
-                                    <p class="text-sm font-semibold text-white">Connected since 19 Aug 2026</p>
-                                </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Organization</p>
+                                <p class="text-base font-bold text-white">Aditya Birla Health Insurance Co. Ltd.</p>
                             </div>
+                        </div>
 
-                            <div class="flex items-center gap-4">
-                                <div class="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-pink-400 text-lg">
-                                    <i class="fa-solid fa-envelope"></i>
-                                </div>
-                                <div>
-                                    <p class="text-xs text-slate-400 font-medium">Direct Message</p>
-                                    <p class="text-sm font-semibold text-white">Available via Contact Form</p>
-                                </div>
+                        <div class="glass-card p-5 rounded-2xl flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-user-check"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Professional Status</p>
+                                <p class="text-base font-bold text-white">Manager & Medical Insurance Executive</p>
+                            </div>
+                        </div>
+
+                        <div class="glass-card p-5 rounded-2xl flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Network Connection Date</p>
+                                <p class="text-base font-bold text-white">19 Aug 2026</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Form -->
+                <!-- Contact Form -->
                 <div class="lg:col-span-7">
-                    <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-8 backdrop-blur-xl shadow-2xl">
+                    <div class="glass-card p-8 md:p-10 rounded-3xl relative border border-slate-800">
                         <form onsubmit="event.preventDefault(); alert('Message sent successfully!');" class="space-y-6">
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div class="grid md:grid-cols-2 gap-6">
                                 <div>
-                                    <label class="block text-xs font-medium text-slate-300 mb-2">Your Name</label>
-                                    <input type="text" required placeholder="John Doe" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-indigo-500 transition-colors">
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Name</label>
+                                    <input type="text" required placeholder="John Doe" class="w-full px-4 py-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
                                 </div>
                                 <div>
-                                    <label class="block text-xs font-medium text-slate-300 mb-2">Your Email</label>
-                                    <input type="email" required placeholder="john@example.com" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-indigo-500 transition-colors">
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Email</label>
+                                    <input type="email" required placeholder="john@example.com" class="w-full px-4 py-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
                                 </div>
                             </div>
 
                             <div>
-                                <label class="block text-xs font-medium text-slate-300 mb-2">Subject</label>
-                                <input type="text" required placeholder="Executive Partnership / Strategic Inquiry" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-indigo-500 transition-colors">
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Subject</label>
+                                <input type="text" required placeholder="Strategic Partnership Opportunities" class="w-full px-4 py-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
                             </div>
 
                             <div>
-                                <label class="block text-xs font-medium text-slate-300 mb-2">Message</label>
-                                <textarea rows="4" required placeholder="Write your message here..." class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-indigo-500 transition-colors"></textarea>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Message</label>
+                                <textarea rows="4" required placeholder="Write your inquiry or connection note here..." class="w-full px-4 py-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm"></textarea>
                             </div>
 
-                            <button type="submit" class="w-full py-4 px-6 rounded-xl font-semibold text-white bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 shadow-xl shadow-indigo-600/30 hover:shadow-indigo-600/50 hover:scale-[1.01] transition-all duration-300 text-center">
-                                Send Message <i class="fa-solid fa-paper-plane ml-2"></i>
+                            <button type="submit" class="w-full py-4 rounded-xl font-bold text-sm bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 text-white shadow-xl hover:opacity-95 transition-opacity">
+                                Send Direct Message
                             </button>
                         </form>
                     </div>
@@ -441,15 +489,15 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="py-8 bg-slate-950 border-t border-slate-800/60 text-slate-400 text-sm">
-        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p>© 2026 Dr. Shalini Kumari. Generated by LinkedIn Portfolio Builder.</p>
-            <div class="flex items-center gap-6">
-                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-brands fa-linkedin text-lg"></i></a>
-                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-solid fa-envelope text-lg"></i></a>
-                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-solid fa-globe text-lg"></i></a>
-            </div>
+    <!-- Footer -->
+    <footer class="py-10 border-t border-slate-800/60 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+            <p>© 2026 Dr. Shalini Kumari. All rights reserved.</p>
+            <p class="flex items-center gap-2">
+                <span>Aditya Birla Health Insurance Company Limited</span>
+                <span>•</span>
+                <a href="#" class="hover:text-cyan-400 transition-colors">Back to top ↑</a>
+            </p>
         </div>
     </footer>
 
