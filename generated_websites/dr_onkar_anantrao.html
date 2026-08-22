@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Onkar Anantrao | Lead Dentist at Ao DENTISTRY</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans selection:bg-cyan-500 selection:text-slate-950 antialiased overflow-x-hidden">
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-indigo-500 to-pink-500 p-[2px] transition-transform duration-300 group-hover:scale-105">
+                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+                        <i class="fa-solid font-bold text-cyan-400 text-lg fa-tooth"></i>
+                    </div>
+                </div>
+                <div>
+                    <span class="text-lg font-bold tracking-tight bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent block">Dr. Onkar Anantrao</span>
+                    <span class="text-xs text-cyan-400 font-medium tracking-wider uppercase">Ao DENTISTRY</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <div class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Specialties</a>
+                <a href="#experience" class="hover:text-cyan-400 transition-colors">Philosophy</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Testimonials</a>
+                <a href="#contact" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white font-semibold shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 hover:scale-[1.02] transition-all duration-300">
+                    Book Consultation
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-btn" class="md:hidden text-slate-300 hover:text-white focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Nav Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900/95 border-b border-slate-800 px-6 py-4 space-y-4">
+            <a href="#about" class="block text-slate-300 hover:text-cyan-400 font-medium">About</a>
+            <a href="#services" class="block text-slate-300 hover:text-cyan-400 font-medium">Specialties</a>
+            <a href="#experience" class="block text-slate-300 hover:text-cyan-400 font-medium">Philosophy</a>
+            <a href="#testimonials" class="block text-slate-300 hover:text-cyan-400 font-medium">Testimonials</a>
+            <a href="#contact" class="block w-full text-center py-2.5 rounded-full bg-gradient-to-r from-cyan-500 to-indigo-500 text-white font-semibold">
+                Book Consultation
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen pt-32 pb-20 flex items-center justify-center overflow-hidden">
+        <!-- Background Ambient Glows -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-cyan-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute top-1/3 right-10 w-[400px] h-[400px] bg-purple-500/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10 grid lg:grid-cols-12 gap-12 items-center">
+            
+            <div class="lg:col-span-7 text-center lg:text-left space-y-8">
+                <!-- Status Badge -->
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 text-xs font-semibold text-cyan-400 backdrop-blur-md shadow-inner">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    Accepting New Patients at Ao DENTISTRY
+                </div>
+
+                <!-- Hero Headline -->
+                <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.1]">
+                    Crafting <span class="bg-gradient-to-r from-cyan-400 via-indigo-400 to-pink-500 bg-clip-text text-transparent">Flawless</span> Smiles with Modern Precision.
+                </h1>
+
+                <!-- Subtitle -->
+                <p class="text-lg sm:text-xl text-slate-400 max-w-2xl font-light leading-relaxed">
+                    Dr. Onkar Anantrao combines state-of-the-art dental technology with personalized aesthetic care at Ao DENTISTRY to redefine your oral health experience.
+                </p>
+
+                <!-- Action Buttons -->
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                    <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white font-semibold text-lg shadow-xl shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:-translate-y-0.5 transition-all duration-300 text-center flex items-center justify-center gap-3">
+                        <span>Schedule Appointment</span>
+                        <i class="fa-solid fa-arrow-right text-sm"></i>
+                    </a>
+                    <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-full bg-slate-900/80 border border-slate-800 hover:border-slate-700 text-slate-200 font-semibold text-lg hover:bg-slate-800/50 transition-all duration-300 text-center backdrop-blur-md">
+                        Explore Services
+                    </a>
+                </div>
+
+                <!-- Trust Badges -->
+                <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-6 text-center lg:text-left">
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-white">10+</div>
+                        <div class="text-xs sm:text-sm text-slate-400 font-medium">Years Experience</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-white">5,000+</div>
+                        <div class="text-xs sm:text-sm text-slate-400 font-medium">Happy Patients</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-white">99.8%</div>
+                        <div class="text-xs sm:text-sm text-slate-400 font-medium">Satisfaction Rate</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Avatar / Visual Representation -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative group">
+                    <!-- Glowing Double Gradient Frame -->
+                    <div class="absolute -inset-1.5 bg-gradient-to-r from-cyan-500 via-indigo-500 to-pink-500 rounded-3xl blur-lg opacity-70 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-gradient"></div>
+                    
+                    <div class="relative w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-3xl overflow-hidden bg-slate-900 border border-slate-800 shadow-2xl flex items-center justify-center p-4">
+                        <img 
+                            src="https://ui-avatars.com/api/?name=Dr.+Onkar+Anantrao&size=200&background=0D8ABC&color=fff&bold=true" 
+                            alt="Dr. Onkar Anantrao" 
+                            class="w-full h-full object-cover rounded-2xl shadow-md transition-transform duration-500 group-hover:scale-105"
+                        />
+                        <!-- Floating Info Card -->
+                        <div class="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-slate-950/80 backdrop-blur-xl border border-slate-800 shadow-xl flex items-center justify-between">
+                            <div>
+                                <h3 class="text-sm font-bold text-white">Dr. Onkar Anantrao</h3>
+                                <p class="text-xs text-cyan-400 font-medium">Dental Surgeon & Specialist</p>
+                            </div>
+                            <div class="w-9 h-9 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center border border-cyan-500/30">
+                                <i class="fa-solid fa-certificate"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 relative bg-slate-900/40">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-6 relative">
+                    <div class="relative rounded-3xl overflow-hidden border border-slate-800 shadow-2xl group">
+                        <img 
+                            src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                            alt="Ao DENTISTRY Clinic" 
+                            class="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105"
+                        />
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-6 rounded-2xl bg-slate-900/70 backdrop-blur-md border border-slate-800">
+                            <p class="text-xs font-semibold text-cyan-400 uppercase tracking-widest mb-1">Clinic Center</p>
+                            <h4 class="text-xl font-bold text-white">Ao DENTISTRY</h4>
+                            <p class="text-sm text-slate-300 mt-1">Equipped with painless digital scanning, micro-dentistry tools, and laser tech.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-xs font-semibold text-cyan-400">
+                        <i class="fa-solid fa-user-doctor"></i> About Dr. Onkar
+                    </div>
+                    <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight">
+                        Revolutionizing Dental Care with Empathy & Innovation.
+                    </h2>
+                    <p class="text-slate-300 font-light leading-relaxed">
+                        At <strong class="text-white font-semibold">Ao DENTISTRY</strong>, Dr. Onkar Anantrao leads a team dedicated to providing gentle, transparent, and top-tier oral health services. From cosmetic smile reconstructions to routine preventive therapy, every procedure is tailored to individual patient needs.
+                    </p>
+                    <p class="text-slate-400 font-light leading-relaxed">
+                        By integrating minimally invasive techniques with modern aesthetic principles, Dr. Onkar ensures that every visit is comfortable, anxiety-free, and yields long-lasting results.
+                    </p>
+
+                    <div class="grid sm:grid-cols-2 gap-4 pt-4">
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <i class="fa-solid fa-microscope text-2xl text-cyan-400 mb-2"></i>
+                            <h3 class="font-semibold text-white">Micro-Precision</h3>
+                            <p class="text-xs text-slate-400 mt-1">High-accuracy diagnostic & treatment procedures.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <i class="fa-solid fa-heart-pulse text-2xl text-pink-400 mb-2"></i>
+                            <h3 class="font-semibold text-white">Pain-Free Protocol</h3>
+                            <p class="text-xs text-slate-400 mt-1">Gentle techniques optimized for maximum comfort.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-xs font-semibold text-indigo-400">
+                    <i class="fa-solid fa-teeth"></i> Clinical Specialties
+                </div>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
+                    Comprehensive Dental Excellence
+                </h2>
+                <p class="text-slate-400 font-light">
+                    Explore our specialized offerings engineered to optimize function and aesthetics for a lifelong healthy smile.
+                </p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Card 1 -->
+                <div class="group p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 hover:shadow-2xl hover:shadow-cyan-500/10 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-cyan-500 group-hover:text-slate-950 transition-all duration-300">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Cosmetic Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Porcelain veneers, composite bonding, and professional laser whitening designed to create your ideal aesthetic smile.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-cyan-400 hover:text-cyan-300">
+                        <span>Learn More</span> <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="group p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 hover:shadow-2xl hover:shadow-indigo-500/10 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-indigo-500 group-hover:text-slate-950 transition-all duration-300">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Dental Implants</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Permanent, natural-looking implant replacements crafted with bio-compatible materials for seamless tooth restoration.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-indigo-400 hover:text-indigo-300">
+                        <span>Learn More</span> <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="group p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-pink-500/50 hover:shadow-2xl hover:shadow-pink-500/10 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-pink-500 group-hover:text-slate-950 transition-all duration-300">
+                        <i class="fa-solid fa-[#align-center]"></i>
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Invisalign & Alignment</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Discreet clear aligner treatments to straighten teeth comfortably without traditional metal braces.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-pink-400 hover:text-pink-300">
+                        <span>Learn More</span> <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="group p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 hover:shadow-2xl hover:shadow-purple-500/10 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-purple-500 group-hover:text-slate-950 transition-all duration-300">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Preventive Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Thorough check-ups, digital screenings, and deep cleanings aimed at halting decay before it starts.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-purple-400 hover:text-purple-300">
+                        <span>Learn More</span> <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="group p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 hover:shadow-2xl hover:shadow-cyan-500/10 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-cyan-500 group-hover:text-slate-950 transition-all duration-300">
+                        <i class="fa-solid fa-file-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Restorative Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Custom crowns, bridges, and painless root canal therapies that restore optimal oral health and function.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-cyan-400 hover:text-cyan-300">
+                        <span>Learn More</span> <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="group p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 hover:shadow-2xl hover:shadow-indigo-500/10 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-indigo-500 group-hover:text-slate-950 transition-all duration-300">
+                        <i class="fa-solid fa-kit-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Emergency Dental Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Same-day urgent treatment for severe dental pain, damaged teeth, or acute oral trauma.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-indigo-400 hover:text-indigo-300">
+                        <span>Learn More</span> <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 relative bg-slate-900/30 border-y border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-pink-500/10 border border-pink-500/20 text-xs font-semibold text-pink-400">
+                    <i class="fa-solid fa-star"></i> Patient Endorsements
+                </div>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
+                    Transformative Experiences
+                </h2>
+                <p class="text-slate-400 font-light">
+                    Read how Dr. Onkar Anantrao and the team at Ao DENTISTRY have delivered confident, life-changing smiles.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Review 1 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 space-y-4">
+                    <div class="flex text-amber-400 gap-1 text-sm">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed font-light">
+                        "Dr. Onkar is remarkably gentle. I used to be terrified of dental procedures, but his calm approach and thorough explanation made all my dental anxiety completely fade."
+                    </p>
+                    <div class="pt-4 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-cyan-500 to-indigo-500 flex items-center justify-center font-bold text-white text-sm">
+                            AR
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-semibold text-white">Ananya R.</h4>
+                            <p class="text-xs text-slate-500">Cosmetic Veneer Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 space-y-4">
+                    <div class="flex text-amber-400 gap-1 text-sm">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed font-light">
+                        "The treatment quality at Ao DENTISTRY is unmatched. Dr. Onkar helped restore my smile with dental implants, and the result feels completely natural and pain-free!"
+                    </p>
+                    <div class="pt-4 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-500 flex items-center justify-center font-bold text-white text-sm">
+                            MK
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-semibold text-white">Mahesh K.</h4>
+                            <p class="text-xs text-slate-500">Implant Therapy Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 space-y-4">
+                    <div class="flex text-amber-400 gap-1 text-sm">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed font-light">
+                        "State-of-the-art clinic equipment, friendly staff, and an exceptionally skilled doctor. Dr. Onkar Anantrao represents the gold standard in contemporary dentistry."
+                    </p>
+                    <div class="pt-4 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-purple-500 to-pink-500 flex items-center justify-center font-bold text-white text-sm">
+                            SP
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-semibold text-white">Siddharth P.</h4>
+                            <p class="text-xs text-slate-500">Invisalign Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Booking Section -->
+    <section id="contact" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Information -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-xs font-semibold text-cyan-400 mb-4">
+                            <i class="fa-solid fa-calendar-check"></i> Direct Access
+                        </div>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight">
+                            Start Your Journey to a Radiant Smile.
+                        </h2>
+                        <p class="text-slate-400 text-sm font-light mt-4 leading-relaxed">
+                            Reach out to schedule an initial consultation or request more information regarding procedures at Ao DENTISTRY.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-slate-900 border border-slate-800 flex items-center justify-center text-cyan-400 text-xl shrink-0">
+                                <i class="fa-solid fa-hospital"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-sm font-semibold text-white">Practice Location</h3>
+                                <p class="text-sm text-slate-400 mt-0.5">Ao DENTISTRY Clinical Studio</p>
+                                <p class="text-xs text-slate-500">Modern Dental Care Hub</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-slate-900 border border-slate-800 flex items-center justify-center text-indigo-400 text-xl shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-sm font-semibold text-white">Email Inquiries</h3>
+                                <p class="text-sm text-slate-400 mt-0.5">contact@aodentistry.com</p>
+                                <p class="text-xs text-slate-500">24/7 Response for Urgent Queries</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-slate-900 border border-slate-800 flex items-center justify-center text-pink-400 text-xl shrink-0">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-sm font-semibold text-white">Working Hours</h3>
+                                <p class="text-sm text-slate-400 mt-0.5">Monday – Saturday: 9:00 AM – 8:00 PM</p>
+                                <p class="text-xs text-slate-500">Sunday: By Special Appointment Only</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Form Card -->
+                <div class="lg:col-span-7">
+                    <div class="p-8 sm:p-10 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 shadow-2xl relative">
+                        <h3 class="text-2xl font-bold text-white mb-6">Book Your Appointment</h3>
+                        
+                        <form onsubmit="event.preventDefault(); alert('Thank you, Dr. Onkar\'s office will confirm your appointment shortly!');" class="space-y-6">
+                            <div class="grid sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Full Name</label>
+                                    <input type="text" placeholder="John Doe" required class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 placeholder-slate-600 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Phone Number</label>
+                                    <input type="tel" placeholder="+1 (555) 000-0000" required class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 placeholder-slate-600 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                                </div>
+                            </div>
+
+                            <div class="grid sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Service Interested In</label>
+                                    <select class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                                        <option>General Consultation</option>
+                                        <option>Cosmetic Dentistry</option>
+                                        <option>Dental Implants</option>
+                                        <option>Invisalign & Alignment</option>
+                                        <option>Teeth Whitening</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Preferred Date</label>
+                                    <input type="date" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Message or Notes</label>
+                                <textarea rows="4" placeholder="Briefly describe your requirements or dental concerns..." class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 placeholder-slate-600 focus:outline-none focus:border-cyan-500 transition-colors text-sm resize-none"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white font-semibold text-base shadow-xl shadow-cyan-500/20 hover:shadow-cyan-500/40 hover:scale-[1.01] transition-all duration-300">
+                                Confirm Booking Request
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-slate-950 border-t border-slate-900 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© 2026 Dr. Onkar Anantrao | Ao DENTISTRY. All rights reserved.</p>
+            <div class="flex items-center gap-6">
+                <a href="#" class="hover:text-slate-400 transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-slate-400 transition-colors">Terms of Service</a>
+                <a href="#" class="hover:text-slate-400 transition-colors">Patient Portal</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Nav Toggle Script -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
