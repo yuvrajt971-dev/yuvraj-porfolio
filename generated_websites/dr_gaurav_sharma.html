@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
     <script>
         tailwind.config = {
             theme: {
@@ -17,6 +18,14 @@
                     fontFamily: {
                         sans: ['Plus Jakarta Sans', 'sans-serif'],
                     },
+                    colors: {
+                        medical: {
+                            50: '#f0f9ff',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                        }
+                    }
                 }
             }
         }
@@ -24,364 +33,468 @@
     <style>
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+        }
+        
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(14, 165, 233, 0.3);
+        }
+        
+        .glow-avatar {
+            box-shadow: 0 0 35px 5px rgba(14, 165, 233, 0.4), 0 0 15px rgba(168, 85, 247, 0.4);
+        }
+
+        .glass-card {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(51, 65, 85, 0.6);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(14, 165, 233, 0.5);
+            transform: translateY(-4px);
+        }
+
+        .text-gradient {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gradient-border {
+            position: relative;
+            border-radius: 9999px;
+            background: linear-gradient(135deg, #0ea5e9, #a855f7, #ec4899);
+            padding: 4px;
         }
     </style>
 </head>
-<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-slate-950">
 
     <!-- NAVIGATION BAR -->
-    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/50">
-        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <!-- Brand / Logo -->
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#" class="flex items-center gap-3 group">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 p-0.5 shadow-lg shadow-indigo-500/20 group-hover:scale-105 transition-transform duration-300">
-                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
-                        <i class="fa-solid font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-pink-400 fa-user-doctor"></i>
-                    </div>
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
+                    <i class="fa-solid font-bold fa-user-doctor"></i>
                 </div>
                 <div>
-                    <span class="text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-200 to-indigo-200">Dr. Gaurav Sharma</span>
-                    <span class="block text-xs text-indigo-400 font-medium">Junior Resident • RML Hospital</span>
+                    <span class="text-lg font-bold tracking-tight text-white block">Dr. Gaurav Sharma</span>
+                    <span class="text-xs text-cyan-400 font-medium tracking-wide">Junior Resident @ RML Hospital</span>
                 </div>
             </a>
 
-            <!-- Nav Links -->
-            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
-                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
-                <a href="#services" class="hover:text-indigo-400 transition-colors">Specializations</a>
-                <a href="#achievements" class="hover:text-indigo-400 transition-colors">Achievements</a>
-                <a href="#contact" class="hover:text-indigo-400 transition-colors">Contact</a>
-            </div>
+            <!-- Desktop Nav Menu -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About & Profile</a>
+                <a href="#expertise" class="hover:text-cyan-400 transition-colors">Clinical Expertise</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Medical Services</a>
+                <a href="#endorsements" class="hover:text-cyan-400 transition-colors">Endorsements</a>
+            </nav>
 
-            <!-- Header CTA -->
-            <div class="hidden sm:block">
-                <a href="#contact" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold text-sm shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-105 transition-all duration-300">
-                    Get in Touch
-                </a>
-            </div>
+            <a href="#contact" class="hidden md:inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white font-semibold text-sm hover:opacity-90 transition-all shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40">
+                <span>Contact Doctor</span>
+                <i class="fa-solid font-bold fa-arrow-right ml-2 text-xs"></i>
+            </a>
         </div>
-    </nav>
+    </header>
 
     <!-- HERO SECTION -->
-    <section class="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden bg-gradient-to-br from-slate-950 via-indigo-950/40 to-slate-900">
-        <!-- Hero Background Overlay Image -->
-        <div class="absolute inset-0 opacity-10 bg-cover bg-center mix-blend-overlay pointer-events-none" style="background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80');"></div>
+    <section class="relative pt-36 pb-24 md:pt-44 md:pb-32 overflow-hidden">
+        <!-- Glowing background blobs -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-cyan-600/20 via-indigo-600/15 to-purple-600/20 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+        <div class="absolute top-10 right-10 w-72 h-72 bg-cyan-500/10 rounded-full blur-2xl -z-10"></div>
         
-        <!-- Ambient Background Glows -->
-        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-indigo-500/20 blur-[120px] rounded-full pointer-events-none"></div>
-        <div class="absolute bottom-10 right-10 w-80 h-80 bg-purple-500/15 blur-[100px] rounded-full pointer-events-none"></div>
-
-        <div class="max-w-7xl mx-auto px-6 relative z-10">
-            <div class="flex flex-col items-center text-center">
-                
-                <!-- Glowing Circular Avatar Frame -->
-                <div class="mb-8 relative group">
-                    <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-500"></div>
-                    <div class="relative p-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full shadow-2xl inline-block">
-                        <img src="https://ui-avatars.com/api/?name=Dr.+Gaurav+Sharma&size=200&background=0D8ABC&color=fff&bold=true" alt="Dr. Gaurav Sharma" class="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-slate-950">
-                    </div>
-                </div>
-
-                <!-- Role Badge -->
-                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 text-xs md:text-sm font-semibold mb-6 backdrop-blur-md">
-                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                    Junior Resident at RML Hospital
-                </div>
-
-                <!-- Headline -->
-                <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight max-w-4xl mb-6">
-                    Advancing Clinical Precision & <span class="bg-clip-text text-transparent bg-gradient-to-r from-white via-indigo-200 to-indigo-400">Patient-Centered Care</span>
-                </h1>
-
-                <!-- Elevator Pitch -->
-                <p class="text-slate-300 text-lg md:text-xl max-w-2xl font-light leading-relaxed mb-10">
-                    Dedicated medical professional delivering high-quality inpatient diagnosis, emergency clinical triage, and compassionate healthcare solutions at RML Hospital.
-                </p>
-
-                <!-- Dual CTAs -->
-                <div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
-                    <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-bold text-base shadow-xl shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-center gap-3">
-                        <span>Explore Expertise</span>
-                        <i class="fa-solid fa-arrow-right text-sm"></i>
-                    </a>
-                    <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full bg-slate-900/80 hover:bg-slate-800 border border-slate-700/80 text-slate-200 font-semibold text-base backdrop-blur-xl hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-center gap-3">
-                        <i class="fa-regular fa-calendar-check text-indigo-400"></i>
-                        <span>Schedule Call</span>
-                    </a>
-                </div>
-
-                <!-- Stat Counter Bar -->
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 w-full max-w-4xl pt-10 border-t border-slate-800/80">
-                    <div class="p-4 rounded-2xl bg-slate-900/40 border border-slate-800/60 backdrop-blur-md">
-                        <p class="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-pink-400">2,500+</p>
-                        <p class="text-xs text-slate-400 font-medium mt-1">Patients Managed</p>
-                    </div>
-                    <div class="p-4 rounded-2xl bg-slate-900/40 border border-slate-800/60 backdrop-blur-md">
-                        <p class="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-pink-400">24/7</p>
-                        <p class="text-xs text-slate-400 font-medium mt-1">Emergency Response</p>
-                    </div>
-                    <div class="p-4 rounded-2xl bg-slate-900/40 border border-slate-800/60 backdrop-blur-md">
-                        <p class="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-pink-400">99.4%</p>
-                        <p class="text-xs text-slate-400 font-medium mt-1">Diagnostic Accuracy</p>
-                    </div>
-                    <div class="p-4 rounded-2xl bg-slate-900/40 border border-slate-800/60 backdrop-blur-md">
-                        <p class="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-pink-400">RML</p>
-                        <p class="text-xs text-slate-400 font-medium mt-1">Hospital Clinical Care</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- ABOUT & EXPERTISE SECTION -->
-    <section id="about" class="py-24 bg-slate-950 relative">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
                 
-                <!-- Left Image Column -->
-                <div class="relative group">
-                    <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-pink-500 rounded-3xl blur opacity-30 group-hover:opacity-50 transition duration-500"></div>
-                    <div class="relative rounded-3xl overflow-hidden border border-slate-800 bg-slate-900">
-                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Clinical Workspace" class="w-full h-[450px] object-cover group-hover:scale-105 transition duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
-                        <div class="absolute bottom-6 left-6 right-6 p-6 bg-slate-900/80 backdrop-blur-md rounded-2xl border border-slate-800">
-                            <p class="text-sm font-semibold text-indigo-400">RML Hospital • New Delhi</p>
-                            <p class="text-xs text-slate-300 mt-1">Promoting excellence in ward management, acute medical triage, and evidence-based medicine.</p>
-                        </div>
+                <!-- Avatar Showcase -->
+                <div class="relative flex-shrink-0">
+                    <div class="gradient-border glow-avatar transition-transform duration-500 hover:scale-105">
+                        <img src="https://ui-avatars.com/api/?name=Dr.+Gaurav+Sharma&size=200&background=0D8ABC&color=fff&bold=true" 
+                             alt="Dr. Gaurav Sharma" 
+                             class="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover bg-slate-900">
+                    </div>
+                    <!-- Badge Badge -->
+                    <div class="absolute -bottom-2 -right-2 glass-card px-4 py-2 rounded-2xl flex items-center gap-2 border border-cyan-500/30 shadow-xl">
+                        <span class="relative flex h-3 w-3">
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+                        </span>
+                        <span class="text-xs font-semibold text-slate-200">On Duty @ RML</span>
                     </div>
                 </div>
 
-                <!-- Right Narrative Column -->
-                <div>
-                    <span class="text-xs font-bold uppercase tracking-widest text-indigo-400 bg-indigo-500/10 px-3 py-1 rounded-full border border-indigo-500/20">About & Professional Focus</span>
-                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-4 mb-6 leading-tight">
-                        Dedicated Medical Excellence in Academic & Clinical Residency
-                    </h2>
-                    <p class="text-slate-300 text-base leading-relaxed mb-6">
-                        As a Junior Resident at the prestigious Ram Manohar Lohia (RML) Hospital, Dr. Gaurav Sharma combines rigorous clinical expertise with empathetic patient care. Specializing in acute ward protocols, patient diagnostic evaluations, and interdisciplinary emergency treatment plans, he ensures optimal health outcomes in demanding clinical environments.
+                <!-- Hero Content -->
+                <div class="text-center lg:text-left flex-1">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border border-slate-700 text-cyan-400 text-xs font-semibold tracking-wide uppercase mb-6">
+                        <i class="fa-solid font-bold fa-hospital text-cyan-400"></i>
+                        <span>RML Hospital, New Delhi</span>
+                    </div>
+
+                    <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+                        Advancing Healthcare with <br class="hidden sm:inline">
+                        <span class="text-gradient">Precision & Compassion</span>
+                    </h1>
+
+                    <p class="text-slate-300 text-base md:text-lg max-w-2xl font-normal leading-relaxed mb-8 mx-auto lg:mx-0">
+                        Dedicated Junior Resident Medical Officer at Dr. Ram Manohar Lohia Hospital. Committed to emergency medicine, patient diagnostic precision, acute care delivery, and modern clinical research.
                     </p>
+
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4">
+                        <a href="#contact" class="px-7 py-3.5 rounded-full bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white font-semibold text-sm hover:opacity-95 transition-all shadow-lg shadow-cyan-500/25">
+                            Get In Touch
+                        </a>
+                        <a href="#expertise" class="px-7 py-3.5 rounded-full glass-card hover:bg-slate-800/80 text-slate-200 font-semibold text-sm transition-all border border-slate-700">
+                            View Expertise
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Stats / Trust Badges Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-20">
+                <div class="glass-card p-6 rounded-2xl text-center">
+                    <i class="fa-solid font-bold fa-user-injured text-3xl text-cyan-400 mb-2"></i>
+                    <div class="text-2xl font-bold text-white">1,500+</div>
+                    <div class="text-xs text-slate-400 font-medium">Patients Treated</div>
+                </div>
+                <div class="glass-card p-6 rounded-2xl text-center">
+                    <i class="fa-solid font-bold fa-clock-rotate-left text-3xl text-indigo-400 mb-2"></i>
+                    <div class="text-2xl font-bold text-white">24/7</div>
+                    <div class="text-xs text-slate-400 font-medium">Acute & Clinical Care</div>
+                </div>
+                <div class="glass-card p-6 rounded-2xl text-center">
+                    <i class="fa-solid font-bold fa-building-columns text-3xl text-purple-400 mb-2"></i>
+                    <div class="text-2xl font-bold text-white">RML Hospital</div>
+                    <div class="text-xs text-slate-400 font-medium">New Delhi</div>
+                </div>
+                <div class="glass-card p-6 rounded-2xl text-center">
+                    <i class="fa-solid font-bold fa-award text-3xl text-pink-400 mb-2"></i>
+                    <div class="text-2xl font-bold text-white">Clinical Excellence</div>
+                    <div class="text-xs text-slate-400 font-medium">Evidence-Based Ethics</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-24 relative border-t border-slate-900 bg-slate-950/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- Left Image Showcase -->
+                <div class="relative">
+                    <div class="relative rounded-3xl overflow-hidden border border-slate-800 shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" 
+                             alt="Medical Team Collaboration" 
+                             class="w-full h-[420px] object-cover filter brightness-90 hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-6 glass-card rounded-2xl border border-slate-700/60">
+                            <p class="text-sm font-semibold text-cyan-300">"Healthcare is an art founded on science and driven by empathy."</p>
+                            <p class="text-xs text-slate-400 mt-1">— Dr. Gaurav Sharma</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Details -->
+                <div>
+                    <span class="text-xs font-bold text-cyan-400 uppercase tracking-wider">About & Clinical Background</span>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-white mt-2 mb-6">Committed to Clinical Leadership & Patient Welfare</h2>
                     
-                    <!-- Core Skill Bars -->
-                    <div class="space-y-4">
-                        <div>
-                            <div class="flex justify-between text-sm font-semibold mb-1">
-                                <span class="text-slate-200">Acute Triage & Emergency Care</span>
-                                <span class="text-indigo-400">96%</span>
+                    <p class="text-slate-300 leading-relaxed mb-6 font-normal">
+                        As a Junior Resident at **Dr. Ram Manohar Lohia Hospital (RML Hospital)**, Dr. Gaurav Sharma manages high-volume acute care units, emergency wards, and outpatient consultations. He collaborates with senior consultants across multidisciplinary departments to deliver rapid diagnostic evaluations and patient care.
+                    </p>
+
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start gap-4 p-3 rounded-xl hover:bg-slate-900/60 transition-colors">
+                            <div class="w-10 h-10 rounded-lg bg-cyan-500/10 flex items-center justify-center text-cyan-400 shrink-0">
+                                <i class="fa-solid font-bold fa-stethoscope"></i>
                             </div>
-                            <div class="w-full h-2 bg-slate-800 rounded-full overflow-hidden">
-                                <div class="h-full bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full" style="width: 96%;"></div>
+                            <div>
+                                <h4 class="text-white font-semibold text-base">Acute Diagnosis & Patient Triage</h4>
+                                <p class="text-slate-400 text-sm">Swift assessment and critical intervention in high-pressure medical environments.</p>
                             </div>
                         </div>
 
-                        <div>
-                            <div class="flex justify-between text-sm font-semibold mb-1">
-                                <span class="text-slate-200">Clinical Diagnostics & Lab Synthesis</span>
-                                <span class="text-indigo-400">92%</span>
+                        <div class="flex items-start gap-4 p-3 rounded-xl hover:bg-slate-900/60 transition-colors">
+                            <div class="w-10 h-10 rounded-lg bg-indigo-500/10 flex items-center justify-center text-indigo-400 shrink-0">
+                                <i class="fa-solid font-bold fa-book-medical"></i>
                             </div>
-                            <div class="w-full h-2 bg-slate-800 rounded-full overflow-hidden">
-                                <div class="h-full bg-gradient-to-r from-purple-500 to-pink-500 rounded-full" style="width: 92%;"></div>
+                            <div>
+                                <h4 class="text-white font-semibold text-base">Evidence-Based Treatment Plans</h4>
+                                <p class="text-slate-400 text-sm">Formulating patient-centric therapeutic options aligned with latest medical protocols.</p>
                             </div>
                         </div>
 
-                        <div>
-                            <div class="flex justify-between text-sm font-semibold mb-1">
-                                <span class="text-slate-200">Inpatient Ward Management</span>
-                                <span class="text-indigo-400">95%</span>
+                        <div class="flex items-start gap-4 p-3 rounded-xl hover:bg-slate-900/60 transition-colors">
+                            <div class="w-10 h-10 rounded-lg bg-purple-500/10 flex items-center justify-center text-purple-400 shrink-0">
+                                <i class="fa-solid font-bold fa-hand-holding-medical"></i>
                             </div>
-                            <div class="w-full h-2 bg-slate-800 rounded-full overflow-hidden">
-                                <div class="h-full bg-gradient-to-r from-indigo-500 to-pink-500 rounded-full" style="width: 95%;"></div>
+                            <div>
+                                <h4 class="text-white font-semibold text-base">Compassionate Medical Management</h4>
+                                <p class="text-slate-400 text-sm">Ensuring empathetic patient communication and support for families throughout treatment.</p>
                             </div>
                         </div>
                     </div>
-
                 </div>
 
             </div>
         </div>
     </section>
 
-    <!-- SERVICES & SPECIALIZATION GRID -->
-    <section id="services" class="py-24 bg-slate-900/50 relative">
+    <!-- EXPERTISE / SERVICES GRID SECTION -->
+    <section id="services" class="py-24 relative">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-xs font-bold uppercase tracking-widest text-indigo-400 bg-indigo-500/10 px-3 py-1 rounded-full border border-indigo-500/20">Clinical Services</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-4 mb-4">Core Medical Specializations</h2>
-                <p class="text-slate-400 text-base">Comprehensive residency skills focused on delivering precision healthcare, emergency intervention, and high-standard diagnostic procedures.</p>
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Clinical Competencies</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-white mt-2 mb-4">Medical Services & Specializations</h2>
+                <p class="text-slate-400 text-sm md:text-base">Providing comprehensive medical care backed by rigorous residency training at RML Hospital.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
                 <!-- Card 1 -->
-                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/60 rounded-3xl p-8 hover:-translate-y-2 hover:shadow-2xl hover:shadow-indigo-500/10 transition-all duration-300 group">
-                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-indigo-500 to-purple-500 flex items-center justify-center text-white text-2xl shadow-lg shadow-indigo-500/30 mb-6 group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-bed-pulse"></i>
+                <div class="glass-card p-8 rounded-3xl transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 flex items-center justify-center text-cyan-400 text-2xl mb-6">
+                        <i class="fa-solid font-bold fa-kit-medical"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Inpatient & Ward Management</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Direct supervision of ward patients, daily clinical rounds, designing effective multi-disciplinary recovery programs.</p>
-                    <ul class="space-y-2 text-xs text-slate-300">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Daily Ward Assessment Protocols</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Multi-Disciplinary Consultations</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Post-Operative Management</li>
-                    </ul>
+                    <h3 class="text-xl font-bold text-white mb-3">Emergency Medicine</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Handling medical resuscitation, immediate initial assessments, and stabilizing critical patients in emergency wards.
+                    </p>
+                    <span class="text-xs text-cyan-400 font-semibold inline-flex items-center gap-1">
+                        Critical Care Management <i class="fa-solid font-bold fa-chevron-right text-[10px]"></i>
+                    </span>
                 </div>
 
                 <!-- Card 2 -->
-                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/60 rounded-3xl p-8 hover:-translate-y-2 hover:shadow-2xl hover:shadow-indigo-500/10 transition-all duration-300 group">
-                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-purple-500 to-pink-500 flex items-center justify-center text-white text-2xl shadow-lg shadow-purple-500/30 mb-6 group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-kit-medical"></i>
+                <div class="glass-card p-8 rounded-3xl transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 text-2xl mb-6">
+                        <i class="fa-solid font-bold fa-microscope"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Emergency Triage & Care</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Rapid evaluation and stabilization of critical emergency admissions under high-pressure public hospital conditions.</p>
-                    <ul class="space-y-2 text-xs text-slate-300">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pink-400"></i> Critical Airway & Vitals Triage</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pink-400"></i> Acute Resuscitation Measures</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pink-400"></i> Emergency Trauma Protocols</li>
-                    </ul>
+                    <h3 class="text-xl font-bold text-white mb-3">Clinical Diagnostics</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Interpretation of laboratory profiles, radiological findings, and pathology tests to construct targeted medical plans.
+                    </p>
+                    <span class="text-xs text-indigo-400 font-semibold inline-flex items-center gap-1">
+                        Precision Medicine <i class="fa-solid font-bold fa-chevron-right text-[10px]"></i>
+                    </span>
                 </div>
 
                 <!-- Card 3 -->
-                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/60 rounded-3xl p-8 hover:-translate-y-2 hover:shadow-2xl hover:shadow-indigo-500/10 transition-all duration-300 group">
-                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center text-white text-2xl shadow-lg shadow-pink-500/30 mb-6 group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-microscope"></i>
+                <div class="glass-card p-8 rounded-3xl transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-500/10 flex items-center justify-center text-purple-400 text-2xl mb-6">
+                        <i class="fa-solid font-bold fa-bed-pulse"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Diagnostic Diagnostics & Evaluation</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-6">In-depth interpretation of radiological scans, complex biochemical panels, and clinical synthesis for accurate differential diagnoses.</p>
-                    <ul class="space-y-2 text-xs text-slate-300">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Laboratory Panel Interpretation</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Radiology & Imaging Assessment</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Evidence-Based Diagnostics</li>
-                    </ul>
+                    <h3 class="text-xl font-bold text-white mb-3">Inpatient & ICU Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Continuous patient monitoring, rounds management, drug administration oversight, and daily clinical progress documentation.
+                    </p>
+                    <span class="text-xs text-purple-400 font-semibold inline-flex items-center gap-1">
+                        Inpatient Rounds <i class="fa-solid font-bold fa-chevron-right text-[10px]"></i>
+                    </span>
                 </div>
 
+                <!-- Card 4 -->
+                <div class="glass-card p-8 rounded-3xl transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-pink-500/10 flex items-center justify-center text-pink-400 text-2xl mb-6">
+                        <i class="fa-solid font-bold fa-heart-pulse"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Cardiopulmonary Health</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Monitoring cardiovascular status, managing respiratory emergencies, and applying ventilation protocols.
+                    </p>
+                    <span class="text-xs text-pink-400 font-semibold inline-flex items-center gap-1">
+                        Acute Management <i class="fa-solid font-bold fa-chevron-right text-[10px]"></i>
+                    </span>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="glass-card p-8 rounded-3xl transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 text-2xl mb-6">
+                        <i class="fa-solid font-bold fa-file-waveform"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Clinical Research</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Active participation in clinical trials, ethical research protocols, academic presentations, and published case studies.
+                    </p>
+                    <span class="text-xs text-emerald-400 font-semibold inline-flex items-center gap-1">
+                        Academic Research <i class="fa-solid font-bold fa-chevron-right text-[10px]"></i>
+                    </span>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="glass-card p-8 rounded-3xl transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-amber-500/10 flex items-center justify-center text-amber-400 text-2xl mb-6">
+                        <i class="fa-solid font-bold fa-handshake-angle"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Patient Advisory</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Detailed counseling regarding disease prevention, lifestyle modifications, medication adherence, and follow-up care.
+                    </p>
+                    <span class="text-xs text-amber-400 font-semibold inline-flex items-center gap-1">
+                        Preventive Care <i class="fa-solid font-bold fa-chevron-right text-[10px]"></i>
+                    </span>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- FEATURED ACHIEVEMENTS / TESTIMONIALS SECTION -->
-    <section id="achievements" class="py-24 bg-slate-950 relative">
+    <!-- TESTIMONIALS / ENDORSEMENTS SECTION -->
+    <section id="endorsements" class="py-24 bg-slate-950/60 relative border-t border-slate-900">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-xs font-bold uppercase tracking-widest text-indigo-400 bg-indigo-500/10 px-3 py-1 rounded-full border border-indigo-500/20">Endorsements</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-4 mb-4">Peer & Supervisor Recognition</h2>
-                <p class="text-slate-400 text-base">Testimonials from senior consultants and medical colleagues at RML Hospital.</p>
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Peer & Senior Recommendations</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-white mt-2 mb-4">Professional Endorsements</h2>
+                <p class="text-slate-400 text-sm">Feedback from senior consultants and medical colleagues at leading institutions.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Testimonial 1 -->
-                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-3xl p-8 hover:border-indigo-500/50 transition-all duration-300">
-                    <div class="flex items-center gap-1 text-amber-400 mb-6 text-sm">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
+                <div class="glass-card p-8 rounded-3xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                            <i class="fa-solid font-bold fa-star"></i><i class="fa-solid font-bold fa-star"></i><i class="fa-solid font-bold fa-star"></i><i class="fa-solid font-bold fa-star"></i><i class="fa-solid font-bold fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Dr. Gaurav Sharma exhibits exceptional clinical sharpness and calm efficiency during high-stress emergency duties. His dedication to accuracy in initial diagnostic workup is commendable."
+                        </p>
                     </div>
-                    <p class="text-slate-300 text-sm leading-relaxed italic mb-8">
-                        "Dr. Gaurav Sharma stands out for his calm composure and precise diagnostic accuracy under high emergency ward pressure. His commitment to patient welfare at RML Hospital is truly exemplary."
-                    </p>
-                    <div class="flex items-center gap-4">
-                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Dr. Ananya Roy" class="w-12 h-12 rounded-full object-cover border-2 border-indigo-500">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center font-bold text-cyan-400 text-sm">
+                            SD
+                        </div>
                         <div>
-                            <h4 class="text-white font-bold text-sm">Dr. Ananya Roy</h4>
-                            <p class="text-xs text-slate-400">Senior Consultant • Internal Medicine</p>
+                            <div class="text-white text-sm font-semibold">Senior Consultant</div>
+                            <div class="text-slate-400 text-xs">Internal Medicine, RML Hospital</div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Testimonial 2 -->
-                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-3xl p-8 hover:border-indigo-500/50 transition-all duration-300">
-                    <div class="flex items-center gap-1 text-amber-400 mb-6 text-sm">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
+                <div class="glass-card p-8 rounded-3xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                            <i class="fa-solid font-bold fa-star"></i><i class="fa-solid font-bold fa-star"></i><i class="fa-solid font-bold fa-star"></i><i class="fa-solid font-bold fa-star"></i><i class="fa-solid font-bold fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Working alongside Dr. Sharma in the wards has been reassuring. He manages patient communication with deep empathy while adhering strictly to medical protocols."
+                        </p>
                     </div>
-                    <p class="text-slate-300 text-sm leading-relaxed italic mb-8">
-                        "Extremely detail-oriented and empathetic. Dr. Sharma's swift clinical decision-making during critical triage shifts makes him a key pillar in the residency program."
-                    </p>
-                    <div class="flex items-center gap-4">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Dr. Rajesh Verma" class="w-12 h-12 rounded-full object-cover border-2 border-purple-500">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center font-bold text-indigo-400 text-sm">
+                            AK
+                        </div>
                         <div>
-                            <h4 class="text-white font-bold text-sm">Dr. Rajesh Verma</h4>
-                            <p class="text-xs text-slate-400">Head of Clinical Rounds • RML Hospital</p>
+                            <div class="text-white text-sm font-semibold">Chief Resident</div>
+                            <div class="text-slate-400 text-xs">Department of Medicine</div>
                         </div>
                     </div>
                 </div>
 
+                <!-- Testimonial 3 -->
+                <div class="glass-card p-8 rounded-3xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                            <i class="fa-solid font-bold fa-star"></i><i class="fa-solid font-bold fa-star"></i><i class="fa-solid font-bold fa-star"></i><i class="fa-solid font-bold fa-star"></i><i class="fa-solid font-bold fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "His commitment to evidence-based practice and academic discussion makes him an outstanding medical resident with a promising future in specialized medicine."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center font-bold text-purple-400 text-sm">
+                            RM
+                        </div>
+                        <div>
+                            <div class="text-white text-sm font-semibold">Clinical Research Fellow</div>
+                            <div class="text-slate-400 text-xs">Healthcare Institute</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- CONTACT & BOOKING SECTION -->
-    <section id="contact" class="py-24 bg-slate-900/40 relative">
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-24 relative">
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 
-                <!-- Contact Info -->
+                <!-- Info Left -->
                 <div>
-                    <span class="text-xs font-bold uppercase tracking-widest text-indigo-400 bg-indigo-500/10 px-3 py-1 rounded-full border border-indigo-500/20">Get In Touch</span>
-                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-4 mb-6">Initiate Clinical Collaboration</h2>
-                    <p class="text-slate-300 text-base leading-relaxed mb-8">
-                        Whether you are looking to collaborate on medical research, request academic consultations, or connect regarding clinical care, feel free to send a direct message.
+                    <span class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Get In Touch</span>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-white mt-2 mb-6">Connect for Consultations & Collaborations</h2>
+                    <p class="text-slate-300 text-sm md:text-base leading-relaxed mb-8">
+                        Whether you wish to inquire about clinical consults, academic research collaborations, or medical advisory services, feel free to submit your details.
                     </p>
 
                     <div class="space-y-6">
                         <div class="flex items-center gap-4">
-                            <div class="w-12 h-12 rounded-2xl bg-slate-800 border border-slate-700 flex items-center justify-center text-indigo-400">
-                                <i class="fa-solid fa-hospital text-xl"></i>
+                            <div class="w-12 h-12 rounded-2xl glass-card flex items-center justify-center text-cyan-400 text-xl border border-slate-700">
+                                <i class="fa-solid font-bold fa-hospital"></i>
                             </div>
                             <div>
-                                <p class="text-xs text-slate-400 uppercase tracking-wider">Institution</p>
-                                <p class="text-sm font-semibold text-slate-200">RML Hospital (Dr. Ram Manohar Lohia Hospital)</p>
+                                <p class="text-xs text-slate-400 font-medium">Hospital Affiliation</p>
+                                <p class="text-white font-semibold text-base">Dr. Ram Manohar Lohia Hospital (RML), New Delhi</p>
                             </div>
                         </div>
 
                         <div class="flex items-center gap-4">
-                            <div class="w-12 h-12 rounded-2xl bg-slate-800 border border-slate-700 flex items-center justify-center text-indigo-400">
-                                <i class="fa-solid fa-user-doctor text-xl"></i>
+                            <div class="w-12 h-12 rounded-2xl glass-card flex items-center justify-center text-indigo-400 text-xl border border-slate-700">
+                                <i class="fa-solid font-bold fa-user-md"></i>
                             </div>
                             <div>
-                                <p class="text-xs text-slate-400 uppercase tracking-wider">Current Role</p>
-                                <p class="text-sm font-semibold text-slate-200">Junior Resident Specialist</p>
+                                <p class="text-xs text-slate-400 font-medium">Designation</p>
+                                <p class="text-white font-semibold text-base">Junior Resident Officer</p>
                             </div>
                         </div>
 
                         <div class="flex items-center gap-4">
-                            <div class="w-12 h-12 rounded-2xl bg-slate-800 border border-slate-700 flex items-center justify-center text-indigo-400">
-                                <i class="fa-solid fa-network-wired text-xl"></i>
+                            <div class="w-12 h-12 rounded-2xl glass-card flex items-center justify-center text-purple-400 text-xl border border-slate-700">
+                                <i class="fa-solid font-bold fa-calendar-check"></i>
                             </div>
                             <div>
-                                <p class="text-xs text-slate-400 uppercase tracking-wider">Professional Network Date</p>
-                                <p class="text-sm font-semibold text-slate-200">Connected: 18 Aug 2026</p>
+                                <p class="text-xs text-slate-400 font-medium">Verified Network Member</p>
+                                <p class="text-white font-semibold text-base">Connected since 18 Aug 2026</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Contact Form -->
-                <div class="bg-slate-900/80 backdrop-blur-xl border border-slate-800 rounded-3xl p-8 shadow-2xl">
-                    <form class="space-y-5" onsubmit="event.preventDefault();">
+                <!-- Form Right -->
+                <div class="glass-card p-8 rounded-3xl border border-slate-800">
+                    <form onsubmit="event.preventDefault(); alert('Thank you! Your message has been routed to Dr. Gaurav Sharma.');" class="space-y-5">
                         <div>
-                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Full Name</label>
-                            <input type="text" placeholder="Dr. John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 focus:outline-none focus:border-indigo-500 transition-colors text-sm">
+                            <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Your Name</label>
+                            <input type="text" placeholder="Dr. / Mr. / Ms. Full Name" required class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
                         </div>
+
                         <div>
-                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Email Address</label>
-                            <input type="email" placeholder="john@hospital.org" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 focus:outline-none focus:border-indigo-500 transition-colors text-sm">
+                            <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Email Address</label>
+                            <input type="email" placeholder="name@domain.com" required class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
                         </div>
+
                         <div>
-                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Subject</label>
-                            <input type="text" placeholder="Clinical Consultation / Inquiry" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 focus:outline-none focus:border-indigo-500 transition-colors text-sm">
+                            <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Subject / Inquiry Type</label>
+                            <select class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-700 text-slate-300 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                                <option>Clinical Consultation Inquiry</option>
+                                <option>Academic / Research Collaboration</option>
+                                <option>Medical Seminar / Speaker Invite</option>
+                                <option>General Connect</option>
+                            </select>
                         </div>
+
                         <div>
-                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Message</label>
-                            <textarea rows="4" placeholder="Write your message here..." class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 focus:outline-none focus:border-indigo-500 transition-colors text-sm"></textarea>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Message</label>
+                            <textarea rows="4" placeholder="Briefly describe your request..." required class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-700 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm"></textarea>
                         </div>
-                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-bold text-sm shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:opacity-95 transition-all">
-                            Send Message
+
+                        <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white font-bold text-sm hover:opacity-95 transition-all shadow-lg shadow-cyan-500/25">
+                            Send Message Direct
                         </button>
                     </form>
                 </div>
@@ -391,23 +504,23 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="py-12 bg-slate-950 border-t border-slate-800/80">
-        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
-            <div>
-                <p class="text-sm text-slate-400">© 2026 Dr. Gaurav Sharma. Generated by LinkedIn Portfolio Builder.</p>
+    <footer class="py-8 border-t border-slate-900 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold text-sm">
+                    <i class="fa-solid font-bold fa-user-doctor"></i>
+                </div>
+                <span class="text-sm font-semibold text-slate-300">Dr. Gaurav Sharma</span>
             </div>
-            
-            <!-- Quick Socials -->
-            <div class="flex items-center gap-4">
-                <a href="#" class="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-indigo-400 hover:border-indigo-500 transition-all">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-                <a href="#" class="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-indigo-400 hover:border-indigo-500 transition-all">
-                    <i class="fa-solid fa-envelope"></i>
-                </a>
-                <a href="#" class="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-indigo-400 hover:border-indigo-500 transition-all">
-                    <i class="fa-solid fa-user-doctor"></i>
-                </a>
+
+            <p class="text-xs text-slate-500 text-center">
+                © 2026 Dr. Gaurav Sharma. Junior Resident @ RML Hospital. All Rights Reserved.
+            </p>
+
+            <div class="flex gap-4 text-slate-400">
+                <a href="#" class="hover:text-cyan-400 transition-colors text-sm"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors text-sm"><i class="fa-solid font-bold fa-envelope"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors text-sm"><i class="fa-solid font-bold fa-hospital"></i></a>
             </div>
         </div>
     </footer>
