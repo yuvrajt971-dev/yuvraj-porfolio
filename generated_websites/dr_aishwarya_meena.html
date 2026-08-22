@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Aishwarya Meena | Associate Dentist | Kings Dental Care</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        tealAccent: '#0D8ABC',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(13, 138, 188, 0.3);
+        }
+        .glow-card:hover {
+            box-shadow: 0 0 30px -5px rgba(138, 43, 226, 0.25);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white relative overflow-x-hidden">
+
+    <!-- Ambient Background Lighting -->
+    <div class="fixed top-0 left-1/4 w-96 h-96 bg-indigo-600/15 rounded-full blur-[120px] pointer-events-none z-0"></div>
+    <div class="fixed top-1/3 right-10 w-96 h-96 bg-cyan-500/10 rounded-full blur-[140px] pointer-events-none z-0"></div>
+    <div class="fixed bottom-10 left-1/3 w-96 h-96 bg-purple-600/15 rounded-full blur-[130px] pointer-events-none z-0"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-indigo-500 to-purple-500 p-[2px] transition-transform duration-300 group-hover:scale-105">
+                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+                        <i class="fa-solid fa-tooth text-cyan-400 text-lg"></i>
+                    </div>
+                </div>
+                <div>
+                    <span class="text-lg font-bold bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent block leading-tight">Dr. Aishwarya Meena</span>
+                    <span class="text-xs text-cyan-400/90 font-medium tracking-wide">Kings Dental Care</span>
+                </div>
+            </a>
+
+            <!-- Nav Links -->
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors duration-200">About & Vision</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors duration-200">Clinical Expertise</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors duration-200">Patient Stories</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors duration-200">Contact</a>
+            </div>
+
+            <!-- CTA Header Button -->
+            <div class="flex items-center gap-4">
+                <a href="#contact" class="relative inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-white transition-all duration-300 bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 rounded-full hover:shadow-lg hover:shadow-indigo-500/25 hover:scale-105 active:scale-95">
+                    <span>Book Appointment</span>
+                    <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-12 pb-24 md:pt-20 md:pb-32 overflow-hidden z-10">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Hero Text Content -->
+            <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 backdrop-blur-md">
+                    <span class="flex h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    <span class="text-xs font-semibold text-slate-300 tracking-wider uppercase">Associate Dentist • Kings Dental Care</span>
+                </div>
+
+                <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight leading-[1.15]">
+                    Transforming Smiles with <br class="hidden sm:inline">
+                    <span class="bg-gradient-to-r from-cyan-400 via-indigo-400 to-purple-400 bg-clip-text text-transparent">
+                        Precision & Gentle Care
+                    </span>
+                </h1>
+
+                <p class="text-lg text-slate-400 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                    Dedicated to providing comprehensive dental health solutions, merging advanced clinical techniques with personalized patient comfort at Kings Dental Care.
+                </p>
+
+                <!-- Action Buttons -->
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                    <a href="#contact" class="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold rounded-2xl shadow-xl shadow-indigo-500/20 hover:shadow-indigo-500/40 hover:scale-[1.02] transition-all duration-300 flex items-center justify-center gap-3">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        <span>Schedule Consultation</span>
+                    </a>
+                    <a href="#services" class="w-full sm:w-auto px-8 py-4 bg-slate-900/80 text-slate-200 font-semibold rounded-2xl border border-slate-800 hover:border-slate-700 hover:bg-slate-900 transition-all duration-300 flex items-center justify-center gap-3">
+                        <span>Explore Treatments</span>
+                        <i class="fa-solid fa-chevron-down text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Trust Badges & Stats -->
+                <div class="pt-8 border-t border-slate-900 grid grid-cols-3 gap-6 max-w-lg mx-auto lg:mx-0">
+                    <div>
+                        <div class="text-2xl md:text-3xl font-bold text-white">100%</div>
+                        <div class="text-xs text-slate-400 mt-1">Patient Focused</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl md:text-3xl font-bold bg-gradient-to-r from-cyan-400 to-indigo-400 bg-clip-text text-transparent">Modern</div>
+                        <div class="text-xs text-slate-400 mt-1">Clinical Tech</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl md:text-3xl font-bold text-white">5.0 ★</div>
+                        <div class="text-xs text-slate-400 mt-1">Care Rating</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Avatar & Hero Card Visual -->
+            <div class="lg:col-span-5 flex justify-center relative">
+                <div class="relative group">
+                    
+                    <!-- Glowing Double Gradient Frame -->
+                    <div class="absolute -inset-1.5 bg-gradient-to-r from-cyan-500 via-indigo-500 to-pink-500 rounded-full blur-xl opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+                    
+                    <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full p-2 bg-slate-950 border border-slate-800 shadow-2xl flex items-center justify-center overflow-hidden">
+                        <img 
+                            src="https://ui-avatars.com/api/?name=Dr.+Aishwarya+Meena&size=200&background=0D8ABC&color=fff&bold=true" 
+                            alt="Dr. Aishwarya Meena" 
+                            class="w-full h-full rounded-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        />
+                    </div>
+
+                    <!-- Floating Badge 1 -->
+                    <div class="absolute -bottom-4 -left-4 bg-slate-900/90 backdrop-blur-xl border border-slate-800 p-4 rounded-2xl shadow-2xl flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400">
+                            <i class="fa-solid fa-user-doctor text-lg"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs font-semibold text-slate-200">Associate Dentist</div>
+                            <div class="text-[11px] text-slate-400">Kings Dental Care</div>
+                        </div>
+                    </div>
+
+                    <!-- Floating Badge 2 -->
+                    <div class="absolute -top-4 -right-4 bg-slate-900/90 backdrop-blur-xl border border-slate-800 py-2.5 px-4 rounded-2xl shadow-2xl flex items-center gap-2">
+                        <i class="fa-solid fa-shield-halved text-emerald-400"></i>
+                        <span class="text-xs font-semibold text-slate-200">Certified Oral Health Expert</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 relative z-10 bg-slate-900/40 border-y border-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Image Container -->
+                <div class="lg:col-span-5 relative">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-cyan-500 rounded-3xl blur-lg opacity-30"></div>
+                    <div class="relative rounded-3xl overflow-hidden border border-slate-800 bg-slate-900">
+                        <img 
+                            src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                            alt="Dental Clinic Environment" 
+                            class="w-full h-[400px] object-cover hover:scale-105 transition-transform duration-500"
+                        />
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-slate-950/80 backdrop-blur-md border border-slate-800">
+                            <p class="text-xs text-slate-300 italic">"Delivering painless, aesthetic, and functional dental treatments tailored to every unique smile."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold">
+                        About Dr. Aishwarya Meena
+                    </div>
+                    
+                    <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight">
+                        Excellence in Modern Dentistry & Patient-Centered Care
+                    </h2>
+                    
+                    <p class="text-slate-400 leading-relaxed">
+                        As an Associate Dentist at <strong class="text-slate-200">Kings Dental Care</strong>, Dr. Aishwarya Meena combines artistic precision with clinical rigor to provide comprehensive dental treatments. With a deep commitment to preventive care and state-of-the-art dental restoration, Dr. Meena ensures every patient experiences stress-free, compassionate visits.
+                    </p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
+                        <div class="p-4 rounded-2xl bg-slate-900/60 border border-slate-800/80 flex items-start gap-4">
+                            <div class="p-2.5 rounded-xl bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
+                                <i class="fa-solid fa-heart-pulse text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-slate-200 text-sm">Gentle & Painless</h4>
+                                <p class="text-xs text-slate-400 mt-1">Focused on patient comfort and anxiety-free procedures.</p>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-2xl bg-slate-900/60 border border-slate-800/80 flex items-start gap-4">
+                            <div class="p-2.5 rounded-xl bg-purple-500/10 text-purple-400 border border-purple-500/20">
+                                <i class="fa-solid fa-sparkles text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-slate-200 text-sm">Cosmetic Aesthetics</h4>
+                                <p class="text-xs text-slate-400 mt-1">Creating natural, radiant smiles through custom restorations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 relative z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="text-center max-w-2xl mx-auto space-y-4 mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold">
+                    Comprehensive Clinical Services
+                </div>
+                <h2 class="text-3xl md:text-5xl font-bold text-white tracking-tight">
+                    Specialized Dental Care
+                </h2>
+                <p class="text-slate-400 text-sm md:text-base">
+                    From routine preventive checks to advanced restorative procedures, explored with the latest in modern dentistry.
+                </p>
+            </div>
+
+            <!-- Grid of Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1.5 group glow-card">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-cyan-500/20 to-indigo-500/20 border border-indigo-500/30 flex items-center justify-center text-cyan-400 text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Cosmetic Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Smile makeovers, professional whitening, and custom porcelain veneers designed to boost your confidence and aesthetic appeal.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1.5 group glow-card">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-purple-500/20 to-pink-500/20 border border-purple-500/30 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">Restorative Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Durable crown restorations, composite fillings, and bridge solutions that restore structural integrity and functional beauty.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-pink-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1.5 group glow-card">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-pink-500/20 to-rose-500/20 border border-pink-500/30 flex items-center justify-center text-pink-400 text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-shield-virus"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-pink-400 transition-colors">Preventive Hygiene</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Comprehensive oral screenings, deep cleanings, fluoride therapies, and personalized long-term dental maintenance plans.
+                    </p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1.5 group glow-card">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-teal-500/20 to-cyan-500/20 border border-cyan-500/30 flex items-center justify-center text-teal-400 text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-microscope"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-teal-400 transition-colors">Root Canal Therapy</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Gentle, precision endodontic procedures aimed at preserving your natural teeth with minimal discomfort.
+                    </p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1.5 group glow-card">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-indigo-500/20 to-blue-500/20 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-face-smile"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-indigo-400 transition-colors">Clear Aligner Consults</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Evaluation and alignment solutions for discreet tooth straightening, tailored for modern lifestyles.
+                    </p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-emerald-500/50 rounded-3xl p-8 transition-all duration-300 hover:-translate-y-1.5 group glow-card">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-emerald-500/20 to-teal-500/20 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-hospital-user"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-emerald-400 transition-colors">Emergency Dental Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Prompt clinical attention for acute tooth pain, trauma, and urgent oral health issues at Kings Dental Care.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 relative z-10 bg-slate-900/40 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="text-center max-w-2xl mx-auto space-y-4 mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-semibold">
+                    Patient Endorsements
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight">
+                    Trusted by Hundreds of Patients
+                </h2>
+                <p class="text-slate-400 text-sm">
+                    Read genuine feedback from patients treated with care and perfection.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Review 1 -->
+                <div class="bg-slate-900/80 border border-slate-800 rounded-3xl p-6 relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-400 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                            "Dr. Aishwarya Meena made my dental procedure completely painless! She explains everything so clearly and puts you right at ease. Hands down the best experience at Kings Dental Care."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800/60">
+                        <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-300 flex items-center justify-center font-bold text-xs">
+                            P.S.
+                        </div>
+                        <div>
+                            <div class="text-sm font-semibold text-white">Priya S.</div>
+                            <div class="text-xs text-slate-400">Verified Patient</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-slate-900/80 border border-slate-800 rounded-3xl p-6 relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-400 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                            "Extremely thorough and meticulous with her work. The cosmetic work done on my teeth exceeded all my expectations. Highly recommend Dr. Meena!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800/60">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-300 flex items-center justify-center font-bold text-xs">
+                            R.K.
+                        </div>
+                        <div>
+                            <div class="text-sm font-semibold text-white">Rahul K.</div>
+                            <div class="text-xs text-slate-400">Verified Patient</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-slate-900/80 border border-slate-800 rounded-3xl p-6 relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-400 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                            "Warm, welcoming, and exceptionally skilled. Kings Dental Care has a gem of a doctor in Dr. Aishwarya. She genuinely cares for her patients."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800/60">
+                        <div class="w-10 h-10 rounded-full bg-purple-500/20 text-purple-300 flex items-center justify-center font-bold text-xs">
+                            A.M.
+                        </div>
+                        <div>
+                            <div class="text-sm font-semibold text-white">Ananya M.</div>
+                            <div class="text-xs text-slate-400">Verified Patient</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Booking Section -->
+    <section id="contact" class="py-24 relative z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Details -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold mb-4">
+                            Get In Touch
+                        </div>
+                        <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight">
+                            Schedule Your Visit
+                        </h2>
+                        <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                            Have questions or ready to book your consultation at Kings Dental Care? Reach out today.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="p-5 rounded-2xl bg-slate-900/60 border border-slate-800 flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-xl">
+                                <i class="fa-solid fa-clinic-medical"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 font-medium">Practice Location</div>
+                                <div class="text-slate-200 font-semibold text-sm">Kings Dental Care</div>
+                            </div>
+                        </div>
+
+                        <div class="p-5 rounded-2xl bg-slate-900/60 border border-slate-800 flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-xl">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 font-medium">Direct Email</div>
+                                <div class="text-slate-200 font-semibold text-sm">dr.aishwarya@kingsdentalcare.com</div>
+                            </div>
+                        </div>
+
+                        <div class="p-5 rounded-2xl bg-slate-900/60 border border-slate-800 flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 text-xl">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 font-medium">Consultation Hours</div>
+                                <div class="text-slate-200 font-semibold text-sm">Mon - Sat: 09:00 AM - 07:00 PM</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div class="lg:col-span-7">
+                    <div class="bg-slate-900/80 border border-slate-800 backdrop-blur-xl p-8 rounded-3xl shadow-2xl">
+                        <h3 class="text-xl font-bold text-white mb-6">Book an Appointment</h3>
+                        <form onsubmit="event.preventDefault(); alert('Thank you! Your request has been sent to Dr. Aishwarya Meena.');" class="space-y-4">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs text-slate-400 font-medium mb-2">Full Name</label>
+                                    <input type="text" placeholder="John Doe" required class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-cyan-500 transition-colors text-sm" />
+                                </div>
+                                <div>
+                                    <label class="block text-xs text-slate-400 font-medium mb-2">Phone Number</label>
+                                    <input type="tel" placeholder="+1 (555) 000-0000" required class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-cyan-500 transition-colors text-sm" />
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs text-slate-400 font-medium mb-2">Service Required</label>
+                                <select class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                                    <option>General Checkup & Cleaning</option>
+                                    <option>Cosmetic Dentistry</option>
+                                    <option>Teeth Whitening</option>
+                                    <option>Root Canal Treatment</option>
+                                    <option>Other / Consultation</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs text-slate-400 font-medium mb-2">Message or Special Requests</label>
+                                <textarea rows="4" placeholder="Briefly describe your dental concern..." class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-cyan-500 transition-colors text-sm"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white font-semibold rounded-xl shadow-lg hover:shadow-indigo-500/25 transition-all duration-300 hover:scale-[1.01]">
+                                Submit Appointment Request
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-slate-950 border-t border-slate-900 text-center text-xs text-slate-500 relative z-10">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+                © 2026 Dr. Aishwarya Meena — Kings Dental Care. All rights reserved.
+            </div>
+            <div class="flex items-center gap-4 text-slate-400">
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-linkedin text-lg"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-solid fa-globe text-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
