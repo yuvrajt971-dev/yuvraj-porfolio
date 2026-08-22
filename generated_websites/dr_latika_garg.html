@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Latika Garg | Associate Dentist | D32 The Dental Centre</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(99, 102, 241, 0.25);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- Ambient Background Glows -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
+        <div class="absolute -top-40 -left-40 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl"></div>
+        <div class="absolute top-1/3 -right-40 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-40 left-1/3 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-indigo-500 to-purple-500 p-[2px] flex items-center justify-center transition-transform group-hover:scale-105 duration-300">
+                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+                        <i class="fa-solid fa-tooth text-cyan-400 text-lg"></i>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-lg tracking-tight text-white leading-tight">Dr. Latika Garg</span>
+                    <span class="text-xs text-slate-400 font-medium">D32 The Dental Centre</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Endorsements</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <a href="#contact" class="relative inline-flex items-center justify-center p-0.5 text-sm font-semibold overflow-hidden rounded-full group bg-gradient-to-br from-cyan-500 via-indigo-500 to-purple-500 group-hover:from-cyan-500 group-hover:to-purple-500 hover:text-white text-white shadow-lg shadow-indigo-500/20">
+                    <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-slate-950 rounded-full group-hover:bg-opacity-0">
+                        Book Consultation
+                    </span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-20 md:pt-48 md:pb-32 z-10 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-16">
+                
+                <!-- Text Content -->
+                <div class="flex-1 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 text-cyan-400 text-xs font-semibold uppercase tracking-wider mb-6">
+                        <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                        Associate Dentist @ D32 The Dental Centre
+                    </div>
+
+                    <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6">
+                        Crafting Healthy, <br class="hidden sm:block"/>
+                        <span class="gradient-text">Radiant Smiles</span> With Precision.
+                    </h1>
+
+                    <p class="text-slate-400 text-lg md:text-xl max-w-2xl font-light leading-relaxed mb-8 mx-auto lg:mx-0">
+                        Dedicated to delivering advanced clinical excellence, compassionate patient care, and personalized dental treatments using state-of-the-art restorative and cosmetic techniques.
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-12">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 text-white font-semibold hover:opacity-95 transition-all shadow-lg shadow-indigo-500/25 text-center">
+                            Schedule Appointment <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                        </a>
+                        <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900/80 border border-slate-800 text-slate-200 font-semibold hover:bg-slate-800/80 transition-all text-center">
+                            Explore Care Services
+                        </a>
+                    </div>
+
+                    <!-- Trust Badges -->
+                    <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0">
+                        <div>
+                            <div class="text-2xl md:text-3xl font-bold text-white">100%</div>
+                            <div class="text-xs text-slate-400 font-medium">Patient Focus</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl md:text-3xl font-bold text-white">Advanced</div>
+                            <div class="text-xs text-slate-400 font-medium">Clinical Tech</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl md:text-3xl font-bold text-white">Gentle</div>
+                            <div class="text-xs text-slate-400 font-medium">Care Standard</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Avatar Frame -->
+                <div class="relative flex-shrink-0">
+                    <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full p-2 bg-gradient-to-tr from-cyan-500 via-indigo-500 to-purple-500 animate-pulse-slow shadow-2xl shadow-indigo-500/30">
+                        <div class="w-full h-full rounded-full overflow-hidden border-4 border-slate-950 bg-slate-900">
+                            <img src="https://ui-avatars.com/api/?name=Dr.+Latika+Garg&size=200&background=0D8ABC&color=fff&bold=true" 
+                                 alt="Dr. Latika Garg" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                    </div>
+
+                    <!-- Floating Card Badge -->
+                    <div class="absolute -bottom-4 -left-4 sm:left-0 bg-slate-900/90 backdrop-blur-xl border border-slate-800 p-4 rounded-2xl shadow-2xl flex items-center gap-3 animate-float">
+                        <div class="w-10 h-10 rounded-xl bg-cyan-500/10 flex items-center justify-center text-cyan-400">
+                            <i class="fa-solid fa-award text-xl"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs font-semibold text-white">Clinical Excellence</div>
+                            <div class="text-[11px] text-slate-400">D32 The Dental Centre</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-24 relative z-10 bg-slate-900/30 border-y border-slate-800/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                
+                <!-- Clinical Image Showcase -->
+                <div class="relative">
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 shadow-2xl group">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Modern Dentistry" 
+                             class="w-full h-[450px] object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                    </div>
+                    
+                    <!-- Floating Stat Badge -->
+                    <div class="absolute bottom-6 left-6 right-6 p-6 rounded-xl bg-slate-900/80 backdrop-blur-xl border border-slate-800">
+                        <p class="text-sm text-slate-300 italic">
+                            "Committed to preserving natural beauty and ensuring seamless patient comfort through modern, gentle dental care."
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Bio Content -->
+                <div>
+                    <span class="text-cyan-400 font-semibold text-sm tracking-wider uppercase">About Dr. Latika Garg</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mt-2 mb-6">
+                        Elevating Dental Standards at D32 The Dental Centre
+                    </h2>
+                    
+                    <p class="text-slate-400 leading-relaxed mb-6 font-light">
+                        As an Associate Dentist at the renowned <strong>D32 The Dental Centre</strong>, Dr. Latika Garg brings a meticulously detailed and empathetic approach to comprehensive oral healthcare. She combines artistic finesse with evidence-based techniques to achieve radiant, durable results.
+                    </p>
+
+                    <p class="text-slate-400 leading-relaxed mb-8 font-light">
+                        Whether performing preventative maintenance, intricate restorative procedures, or aesthetic smile enhancements, her primary focus remains creating an anxiety-free, informative experience for every patient.
+                    </p>
+
+                    <!-- Expertise Pillars -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80 flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-cyan-400 mt-1"></i>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Comprehensive Diagnosis</h4>
+                                <p class="text-xs text-slate-400 mt-1">Accurate, modern treatment design.</p>
+                            </div>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80 flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-indigo-400 mt-1"></i>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Gentle Techniques</h4>
+                                <p class="text-xs text-slate-400 mt-1">Maximum comfort and pain-minimization.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 relative z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-cyan-400 font-semibold text-sm tracking-wider uppercase">Clinical Services</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mt-2 mb-4">
+                    Comprehensive Dental Solutions
+                </h2>
+                <p class="text-slate-400 font-light">
+                    Providing top-tier general, preventive, and cosmetic dentistry with cutting-edge tools and individual treatment protocols.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 mb-6 group-hover:bg-cyan-500 group-hover:text-slate-950 transition-colors duration-300">
+                        <i class="fa-solid fa-tooth text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Cosmetic Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4 font-light">
+                        Transforming smiles through aesthetic bonding, porcelain veneers, and subtle shape re-contouring.
+                    </p>
+                    <span class="text-xs font-semibold text-cyan-400 flex items-center gap-2">Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 mb-6 group-hover:bg-indigo-500 group-hover:text-slate-950 transition-colors duration-300">
+                        <i class="fa-solid fa-wand-magic-sparkles text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Teeth Whitening</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4 font-light">
+                        Professional safe brightening solutions designed to remove stubborn stains and enhance brilliance.
+                    </p>
+                    <span class="text-xs font-semibold text-indigo-400 flex items-center gap-2">Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 mb-6 group-hover:bg-purple-500 group-hover:text-slate-950 transition-colors duration-300">
+                        <i class="fa-solid fa-shield-halved text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Preventative Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4 font-light">
+                        Routine oral exams, deep cleanings, fluoride application, and early detection of potential issues.
+                    </p>
+                    <span class="text-xs font-semibold text-purple-400 flex items-center gap-2">Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 mb-6 group-hover:bg-cyan-500 group-hover:text-slate-950 transition-colors duration-300">
+                        <i class="fa-solid fa-gem text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Restorative Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4 font-light">
+                        High-quality tooth-colored fillings, durable crowns, and bridges to restore functionality and aesthetic blend.
+                    </p>
+                    <span class="text-xs font-semibold text-cyan-400 flex items-center gap-2">Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 mb-6 group-hover:bg-indigo-500 group-hover:text-slate-950 transition-colors duration-300">
+                        <i class="fa-solid fa-stethoscope text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Oral Diagnostics</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4 font-light">
+                        State-of-the-art diagnostic imaging and comprehensive oral health assessments tailored to every patient.
+                    </p>
+                    <span class="text-xs font-semibold text-indigo-400 flex items-center gap-2">Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 mb-6 group-hover:bg-purple-500 group-hover:text-slate-950 transition-colors duration-300">
+                        <i class="fa-solid fa-face-smile text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Patient Consultation</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4 font-light">
+                        Detailed, relaxed one-on-one consultation sessions to address concerns and outline customized care plans.
+                    </p>
+                    <span class="text-xs font-semibold text-purple-400 flex items-center gap-2">Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Endorsements Section -->
+    <section id="testimonials" class="py-24 relative z-10 bg-slate-900/30 border-y border-slate-800/50">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-cyan-400 font-semibold text-sm tracking-wider uppercase">Patient Feedback</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mt-2 mb-4">
+                    Trusted by Patients Everywhere
+                </h2>
+                <p class="text-slate-400 font-light">
+                    Real feedback regarding Dr. Latika Garg’s expertise and care at D32 The Dental Centre.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Review 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl relative">
+                    <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-6 italic">
+                        "Dr. Latika Garg made my entire procedure completely pain-free! Her gentle nature and attention to detail at D32 The Dental Centre are unmatched."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold text-sm">
+                            P.S.
+                        </div>
+                        <div>
+                            <div class="text-sm font-semibold text-white">Priya Sharma</div>
+                            <div class="text-xs text-slate-400">Verified Patient</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl relative">
+                    <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-6 italic">
+                        "Extremely thorough professional! Dr. Latika explained every step of my treatment plan thoroughly. I couldn't be happier with my smile."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-sm">
+                            A.K.
+                        </div>
+                        <div>
+                            <div class="text-sm font-semibold text-white">Amit Kumar</div>
+                            <div class="text-xs text-slate-400">Verified Patient</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl relative">
+                    <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-6 italic">
+                        "The atmosphere at D32 The Dental Centre is super welcoming, and Dr. Garg's expertise made me feel comfortable from day one."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 flex items-center justify-center font-bold text-sm">
+                            R.M.
+                        </div>
+                        <div>
+                            <div class="text-sm font-semibold text-white">Ritu Mehta</div>
+                            <div class="text-xs text-slate-400">Verified Patient</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 relative z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                
+                <!-- Contact Info -->
+                <div>
+                    <span class="text-cyan-400 font-semibold text-sm tracking-wider uppercase">Get In Touch</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mt-2 mb-6">
+                        Schedule Your Visit Today
+                    </h2>
+                    <p class="text-slate-400 text-lg font-light leading-relaxed mb-8">
+                        Ready for your next dental checkup or cosmetic consultation? Reach out directly to book an appointment with Dr. Latika Garg at D32 The Dental Centre.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-12 h-12 rounded-xl bg-cyan-500/10 flex items-center justify-center text-cyan-400 flex-shrink-0">
+                                <i class="fa-solid fa-hospital text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Practice Location</h4>
+                                <p class="text-sm text-slate-400 mt-1">D32 The Dental Centre</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 flex-shrink-0">
+                                <i class="fa-solid fa-calendar-check text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Appointment Schedule</h4>
+                                <p class="text-sm text-slate-400 mt-1">Monday – Saturday (By Appointment)</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400 flex-shrink-0">
+                                <i class="fa-solid fa-user-doctor text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Professional Role</h4>
+                                <p class="text-sm text-slate-400 mt-1">Associate Dentist</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-3xl shadow-2xl relative">
+                    <form onsubmit="event.preventDefault(); alert('Appointment request submitted successfully!');" class="space-y-6">
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Full Name</label>
+                            <input type="text" placeholder="e.g. John Doe" required 
+                                   class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Email Address</label>
+                            <input type="email" placeholder="e.g. john@example.com" required 
+                                   class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Service Needed</label>
+                            <select class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-300 focus:outline-none focus:border-cyan-500 transition-colors">
+                                <option>General Dental Checkup</option>
+                                <option>Teeth Whitening</option>
+                                <option>Cosmetic Consultation</option>
+                                <option>Restorative Care</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Message or Notes</label>
+                            <textarea rows="4" placeholder="Briefly describe your request..." 
+                                      class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 text-white font-semibold hover:opacity-95 transition-all shadow-lg shadow-indigo-500/25">
+                            Submit Consultation Request
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-slate-800/80 bg-slate-950 relative z-10 text-slate-500 text-xs">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+                <p>&copy; 2026 Dr. Latika Garg | D32 The Dental Centre. All rights reserved.</p>
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="#" class="hover:text-slate-300 transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-slate-300 transition-colors">Terms of Care</a>
+                <a href="#" class="text-slate-400 hover:text-cyan-400 transition-colors"><i class="fa-solid fa-arrow-up"></i> Top</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
