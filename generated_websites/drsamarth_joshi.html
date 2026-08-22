@@ -18,14 +18,14 @@
                     fontFamily: {
                         sans: ['Plus Jakarta Sans', 'sans-serif'],
                     },
-                    colors: {
-                        brand: {
-                            50: '#f0f5ff',
-                            100: '#e0ebff',
-                            500: '#6366f1',
-                            600: '#4f46e5',
-                            700: '#4338ca',
-                            900: '#312e81',
+                    animation: {
+                        'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
                         }
                     }
                 }
@@ -33,397 +33,433 @@
         }
     </script>
     <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
         .gradient-text {
-            background: linear-gradient(135deg, #ffffff 0%, #a5b4fc 50%, #c084fc 100%);
+            background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        .glow-effect {
-            box-shadow: 0 0 50px -12px rgba(99, 102, 241, 0.25);
+        .gradient-border {
+            position: relative;
+            background-clip: padding-box;
+            border: 1px solid transparent;
         }
-        .glow-card:hover {
-            box-shadow: 0 0 30px -5px rgba(168, 85, 247, 0.3);
+        .gradient-border::before {
+            content: '';
+            position: absolute;
+            top: 0; right: 0; bottom: 0; left: 0;
+            z-index: -1;
+            margin: -1px;
+            border-radius: inherit;
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.5), rgba(168, 85, 247, 0.5), rgba(236, 72, 153, 0.5));
         }
     </style>
 </head>
-<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-indigo-500 selection:text-white">
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white overflow-x-hidden">
 
-    <!-- NAVIGATION BAR -->
-    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/60">
-        <div class="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
-            <a href="#" class="text-xl font-bold tracking-tight text-white flex items-center gap-2">
-                <span class="w-9 h-9 rounded-xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center text-white font-black text-sm shadow-lg shadow-indigo-500/20">SJ</span>
-                <span class="bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-400">Dr. Samarth Joshi</span>
+    <!-- Background Glow Effects -->
+    <div class="fixed top-0 left-1/4 w-96 h-96 bg-indigo-600/15 rounded-full blur-[128px] pointer-events-none -z-10 animate-pulse-slow"></div>
+    <div class="fixed bottom-0 right-1/4 w-96 h-96 bg-purple-600/15 rounded-full blur-[128px] pointer-events-none -z-10 animate-pulse-slow"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 to-purple-600 flex items-center justify-center font-bold text-white shadow-lg shadow-indigo-500/20 group-hover:scale-105 transition-transform">
+                    SJ
+                </div>
+                <span class="font-bold text-lg tracking-tight text-white group-hover:text-indigo-400 transition-colors">Dr. Samarth Joshi</span>
             </a>
-            
+
             <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
                 <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
                 <a href="#expertise" class="hover:text-indigo-400 transition-colors">Expertise</a>
-                <a href="#services" class="hover:text-indigo-400 transition-colors">Services</a>
-                <a href="#achievements" class="hover:text-indigo-400 transition-colors">Achievements</a>
+                <a href="#impact" class="hover:text-indigo-400 transition-colors">Impact</a>
+                <a href="#endorsements" class="hover:text-indigo-400 transition-colors">Endorsements</a>
                 <a href="#contact" class="hover:text-indigo-400 transition-colors">Contact</a>
             </div>
 
-            <div class="flex items-center gap-4">
-                <a href="#contact" class="px-5 py-2.5 rounded-full text-xs font-semibold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200">
-                    Get in Touch
-                </a>
-            </div>
+            <a href="#contact" class="hidden md:inline-flex items-center justify-center px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:opacity-95 transition-all shadow-md shadow-indigo-500/20 hover:shadow-indigo-500/40">
+                Get in Touch
+            </a>
         </div>
     </nav>
 
-    <!-- HERO SECTION -->
-    <section class="relative pt-36 pb-20 md:pt-48 md:pb-32 overflow-hidden bg-gradient-to-br from-slate-950 via-indigo-950/40 to-slate-950">
-        <!-- Ambient Background Glows -->
-        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-indigo-600/15 rounded-full blur-[140px] pointer-events-none"></div>
-        <div class="absolute top-1/3 right-10 w-[400px] h-[400px] bg-purple-600/15 rounded-full blur-[120px] pointer-events-none"></div>
-
-        <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
-            <div class="flex flex-col items-center text-center max-w-4xl mx-auto">
-                
-                <!-- Avatar Frame -->
-                <div class="mb-8 relative group">
-                    <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
-                    <div class="p-1.5 bg-slate-950 rounded-full relative">
-                        <img src="https://ui-avatars.com/api/?name=Dr.Samarth+Joshi&size=200&background=0D8ABC&color=fff&bold=true" alt="Dr. Samarth Joshi" class="w-32 h-32 md:w-36 md:h-36 rounded-full object-cover shadow-2xl">
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-20 md:pt-48 md:pb-32 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
+                <!-- Text Content -->
+                <div class="flex-1 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs md:text-sm font-medium mb-6">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                        Senior Product Manager @ ICICI Lombard
                     </div>
-                </div>
-
-                <!-- Badge -->
-                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 text-xs font-medium text-indigo-300 mb-6 backdrop-blur-md">
-                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
-                    Senior Product Manager @ ICICI Lombard
-                </div>
-
-                <!-- Main Headline -->
-                <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-[1.1]">
-                    Architecting <span class="gradient-text">Next-Gen Digital</span> Insurance & Fintech Products
-                </h1>
-
-                <!-- Subheadline -->
-                <p class="text-lg md:text-xl text-slate-400 font-normal max-w-2xl mb-10 leading-relaxed">
-                    Spearheading customer-centric innovation, enterprise scaling, and seamless digital transformation across large-scale financial platforms.
-                </p>
-
-                <!-- Dual CTAs -->
-                <div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto mb-16">
-                    <a href="#expertise" class="w-full sm:w-auto px-8 py-4 rounded-full text-sm font-semibold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white shadow-xl shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 flex items-center justify-center gap-2">
-                        <span>Explore Expertise</span>
-                        <i class="fa-solid font-xs fa-arrow-right"></i>
-                    </a>
-                    <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full text-sm font-semibold bg-slate-900/80 hover:bg-slate-800 text-slate-200 border border-slate-800 hover:border-slate-700 transition-all duration-200 flex items-center justify-center gap-2 backdrop-blur-md">
-                        <i class="fa-regular fa-calendar text-indigo-400"></i>
-                        <span>Schedule Strategy Call</span>
-                    </a>
-                </div>
-
-                <!-- Stat Counter Bar -->
-                <div class="w-full grid grid-cols-2 md:grid-cols-4 gap-4 p-6 rounded-2xl bg-slate-900/50 border border-slate-800/80 backdrop-blur-xl">
-                    <div class="p-4 text-center">
-                        <div class="text-2xl md:text-3xl font-extrabold text-white mb-1">10+ Years</div>
-                        <div class="text-xs text-slate-400 font-medium">Industry Experience</div>
-                    </div>
-                    <div class="p-4 text-center border-l border-slate-800">
-                        <div class="text-2xl md:text-3xl font-extrabold text-indigo-400 mb-1">150+</div>
-                        <div class="text-xs text-slate-400 font-medium">Projects Delivered</div>
-                    </div>
-                    <div class="p-4 text-center border-l border-slate-800">
-                        <div class="text-2xl md:text-3xl font-extrabold text-purple-400 mb-1">₹500Cr+</div>
-                        <div class="text-xs text-slate-400 font-medium">Digital Product Scale</div>
-                    </div>
-                    <div class="p-4 text-center border-l border-slate-800">
-                        <div class="text-2xl md:text-3xl font-extrabold text-emerald-400 mb-1">99%</div>
-                        <div class="text-xs text-slate-400 font-medium">Client Satisfaction</div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- ABOUT & EXPERTISE SECTION -->
-    <section id="about" class="py-24 bg-slate-950 relative border-t border-slate-900">
-        <div class="max-w-7xl mx-auto px-6 lg:px-12">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                
-                <!-- Left Image Column -->
-                <div class="lg:col-span-5 relative">
-                    <div class="relative rounded-3xl overflow-hidden border border-slate-800 shadow-2xl group">
-                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Team Collaboration" class="w-full h-[480px] object-cover group-hover:scale-105 transition duration-500">
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
-                        <div class="absolute bottom-6 left-6 right-6 p-6 rounded-2xl bg-slate-900/80 backdrop-blur-md border border-slate-800">
-                            <p class="text-sm font-semibold text-white">Driving Insurtech Innovation</p>
-                            <p class="text-xs text-slate-400 mt-1">Bridging business strategy, technology, and design at ICICI Lombard General Insurance.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right Narrative Column -->
-                <div class="lg:col-span-7">
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-xs font-semibold text-indigo-400 mb-4">
-                        ABOUT DR. SAMARTH JOSHI
-                    </div>
-                    <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6 leading-tight">
-                        Transforming Complex Financial Ecosystems into Intuitive Products
-                    </h2>
-                    <p class="text-slate-400 text-base leading-relaxed mb-8">
-                        As a Senior Product Manager at ICICI Lombard General Insurance Company Limited, Dr. Samarth Joshi brings deep expertise in domain strategy, digital transformation, and technical product execution. He synthesizes complex regulatory, technological, and user demands into high-performing digital channels.
+                    
+                    <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-6 leading-[1.1]">
+                        Architecting <span class="gradient-text">Next-Gen InsurTech</span> & Digital Platforms
+                    </h1>
+                    
+                    <p class="text-lg md:text-xl text-slate-400 max-w-2xl mb-8 font-normal leading-relaxed">
+                        Transforming complex general insurance domains into seamless, data-driven digital experiences that serve millions with reliability, security, and elite UX.
                     </p>
 
-                    <!-- Core Competencies with Progress Bars -->
-                    <div class="space-y-5" id="expertise">
-                        <div>
-                            <div class="flex justify-between text-sm font-semibold mb-2">
-                                <span class="text-slate-200">Product Strategy & Lifecycle Management</span>
-                                <span class="text-indigo-400">95%</span>
-                            </div>
-                            <div class="w-full h-2 rounded-full bg-slate-900 border border-slate-800 overflow-hidden">
-                                <div class="h-full bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full" style="width: 95%"></div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="flex justify-between text-sm font-semibold mb-2">
-                                <span class="text-slate-200">Insurtech & Digital Innovation</span>
-                                <span class="text-purple-400">90%</span>
-                            </div>
-                            <div class="w-full h-2 rounded-full bg-slate-900 border border-slate-800 overflow-hidden">
-                                <div class="h-full bg-gradient-to-r from-purple-500 to-pink-500 rounded-full" style="width: 90%"></div>
-                            </div>
-                        </div>
-
-                        <div>
-                            <div class="flex justify-between text-sm font-semibold mb-2">
-                                <span class="text-slate-200">User Experience Strategy & Analytics</span>
-                                <span class="text-pink-400">88%</span>
-                            </div>
-                            <div class="w-full h-2 rounded-full bg-slate-900 border border-slate-800 overflow-hidden">
-                                <div class="h-full bg-gradient-to-r from-pink-500 to-rose-500 rounded-full" style="width: 88%"></div>
-                            </div>
-                        </div>
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:opacity-95 transition-all shadow-lg shadow-indigo-500/25 flex items-center justify-center gap-2 group">
+                            <span>Initiate Collaboration</span>
+                            <i class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                        <a href="#expertise" class="w-full sm:w-auto px-8 py-4 rounded-xl font-semibold text-slate-300 bg-slate-900/60 hover:bg-slate-800/80 border border-slate-800 transition-all text-center">
+                            View Capabilities
+                        </a>
                     </div>
-
-                    <!-- Skill Tags -->
-                    <div class="flex flex-wrap gap-2.5 mt-8">
-                        <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-900 text-slate-300 border border-slate-800">Fintech Platform Scaling</span>
-                        <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-900 text-slate-300 border border-slate-800">Agile Frameworks</span>
-                        <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-900 text-slate-300 border border-slate-800">Claims & Risk Tech</span>
-                        <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-900 text-slate-300 border border-slate-800">Cross-Functional Leadership</span>
-                    </div>
-
                 </div>
 
+                <!-- Avatar Frame with Glowing Rings -->
+                <div class="relative flex-shrink-0">
+                    <div class="absolute -inset-1.5 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full blur-lg opacity-75 animate-pulse-slow"></div>
+                    <div class="relative p-2 bg-slate-950 rounded-full border border-slate-800">
+                        <img src="https://ui-avatars.com/api/?name=Dr.Samarth+Joshi&size=200&background=0D8ABC&color=fff&bold=true" 
+                             alt="Dr. Samarth Joshi" 
+                             class="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover shadow-2xl">
+                    </div>
+                    <!-- Floating Badge -->
+                    <div class="absolute -bottom-4 right-0 bg-slate-900/90 backdrop-blur-xl border border-slate-700/80 px-4 py-2.5 rounded-2xl shadow-xl flex items-center gap-3 animate-float">
+                        <div class="w-8 h-8 rounded-lg bg-indigo-500/20 text-indigo-400 flex items-center justify-center">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs text-slate-400">Enterprise Scale</div>
+                            <div class="text-xs font-bold text-white">ICICI Lombard</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trust / Stats Badges -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-20 pt-10 border-t border-slate-800/60">
+                <div class="p-6 rounded-2xl bg-slate-900/40 border border-slate-800/50 backdrop-blur-sm">
+                    <div class="text-3xl font-extrabold text-white mb-1 gradient-text">10+ Yrs</div>
+                    <div class="text-xs md:text-sm text-slate-400">Product Leadership</div>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-900/40 border border-slate-800/50 backdrop-blur-sm">
+                    <div class="text-3xl font-extrabold text-white mb-1 gradient-text">10M+</div>
+                    <div class="text-xs md:text-sm text-slate-400">Active Policyholders</div>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-900/40 border border-slate-800/50 backdrop-blur-sm">
+                    <div class="text-3xl font-extrabold text-white mb-1 gradient-text">99.9%</div>
+                    <div class="text-xs md:text-sm text-slate-400">System Uptime & CX</div>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-900/40 border border-slate-800/50 backdrop-blur-sm">
+                    <div class="text-3xl font-extrabold text-white mb-1 gradient-text">InsurTech</div>
+                    <div class="text-xs md:text-sm text-slate-400">Domain Innovation</div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- SERVICES & SPECIALIZATION GRID -->
-    <section id="services" class="py-24 bg-slate-950 relative border-t border-slate-900">
-        <div class="max-w-7xl mx-auto px-6 lg:px-12">
-            
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/20 text-xs font-semibold text-purple-400 mb-4">
-                    SPECIALIZED SERVICES
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-20 px-6 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Image Container with Glass Badge -->
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-3xl blur opacity-30 group-hover:opacity-50 transition duration-500"></div>
+                    <div class="relative overflow-hidden rounded-2xl border border-slate-800 bg-slate-900">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" 
+                             alt="Team Collaboration" 
+                             class="w-full h-[420px] object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        
+                        <div class="absolute bottom-6 left-6 right-6 p-6 rounded-xl bg-slate-900/80 backdrop-blur-xl border border-slate-700/60">
+                            <p class="text-sm text-slate-300 italic">
+                                "Bridging executive business strategy with technical precision to build products that customers trust implicitly."
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-4">Strategic Product Management Capabilities</h2>
-                <p class="text-slate-400 text-sm md:text-base">Delivering enterprise-level digital solutions designed for scalability, security, and exponential business growth.</p>
+
+                <!-- Text Info -->
+                <div>
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 text-purple-400 text-xs font-semibold mb-4 border border-purple-500/20">
+                        About Dr. Samarth Joshi
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">
+                        Driving Enterprise Product Excellence at ICICI Lombard
+                    </h2>
+                    <p class="text-slate-400 mb-6 leading-relaxed">
+                        As Senior Product Manager at ICICI Lombard General Insurance Company Limited, Dr. Samarth Joshi sits at the intersection of financial technology, risk engineering, and customer-first digital design. 
+                    </p>
+                    <p class="text-slate-400 mb-8 leading-relaxed">
+                        With deep expertise in insurance ecosystems, algorithmic risk assessment, and high-throughput web architecture, Dr. Joshi leads multidisciplinary teams to create robust, highly secure product workflows that empower end users and optimize business performance.
+                    </p>
+
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-chart-line"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold text-base">Strategic Roadmap Design</h4>
+                                <p class="text-slate-400 text-sm">Aligning high-level organizational OKRs with agile delivery pipelines.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-user-shield"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold text-base">Regulatory & Risk Tech Leadership</h4>
+                                <p class="text-slate-400 text-sm">Integrating compliant enterprise architecture with ultra-smooth user flows.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / Core Competencies -->
+    <section id="expertise" class="py-20 px-6 bg-slate-950/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 text-xs font-semibold mb-4 border border-indigo-500/20">
+                    Core Capabilities
+                </div>
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">Strategic Competencies</h2>
+                <p class="text-slate-400 text-base md:text-lg">Specialized product leadership built for scale, performance, and user delight.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
                 <!-- Card 1 -->
-                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800/80 rounded-2xl p-8 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 hover:border-indigo-500/60 glow-card flex flex-col justify-between">
-                    <div>
-                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-indigo-500 to-purple-500 flex items-center justify-center text-white text-xl mb-6 shadow-lg shadow-indigo-500/20">
-                            <i class="fa-solid fa-chart-line"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-3">Product Vision & Roadmap</h3>
-                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">Defining multi-year product strategies aligned with organizational growth objectives and market demand.</p>
-                        <ul class="space-y-2 text-xs text-slate-300 font-medium border-t border-slate-800 pt-4">
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Market Capability Analysis</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Executive & Board Alignment</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> KPI & North Star Metric Framework</li>
-                        </ul>
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-indigo-500 to-purple-600 flex items-center justify-center text-white text-xl mb-6 shadow-lg shadow-indigo-500/20 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-layer-group"></i>
                     </div>
+                    <h3 class="text-xl font-bold text-white mb-3">InsurTech Ecosystems</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Designing end-to-end policy management, claims automation, and digital underwriting systems tailored for general insurance platforms.</p>
                 </div>
 
                 <!-- Card 2 -->
-                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800/80 rounded-2xl p-8 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 hover:border-purple-500/60 glow-card flex flex-col justify-between">
-                    <div>
-                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-purple-500 to-pink-500 flex items-center justify-center text-white text-xl mb-6 shadow-lg shadow-purple-500/20">
-                            <i class="fa-solid fa-shield-halved"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-3">Insurtech Digital Solutions</h3>
-                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">Architecting automated, frictionless digital insurance products across underwriting, policy, and claims.</p>
-                        <ul class="space-y-2 text-xs text-slate-300 font-medium border-t border-slate-800 pt-4">
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Automated Policy Issuance</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Instant Claims Processing Architecture</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Regulatory Compliance Workflows</li>
-                        </ul>
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-purple-500 to-pink-600 flex items-center justify-center text-white text-xl mb-6 shadow-lg shadow-purple-500/20 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-compass-drafting"></i>
                     </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Product Strategy & Lifecycle</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Navigating products from ideation and market research to deployment, scaling, and continuous multi-channel optimization.</p>
                 </div>
 
                 <!-- Card 3 -->
-                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800/80 rounded-2xl p-8 hover:-translate-y-2 hover:shadow-2xl transition-all duration-300 hover:border-pink-500/60 glow-card flex flex-col justify-between">
-                    <div>
-                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-pink-500 to-rose-500 flex items-center justify-center text-white text-xl mb-6 shadow-lg shadow-pink-500/20">
-                            <i class="fa-solid fa-laptop-code"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-3">UX & Journey Optimization</h3>
-                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">Designing human-centered digital experiences that reduce bounce rate and maximize conversion rates.</p>
-                        <ul class="space-y-2 text-xs text-slate-300 font-medium border-t border-slate-800 pt-4">
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Funnel Optimization & A/B Testing</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Enterprise UI/UX Design System Strategy</li>
-                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Omnichannel Customer Journey Mapping</li>
-                        </ul>
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-pink-500 to-rose-600 flex items-center justify-center text-white text-xl mb-6 shadow-lg shadow-pink-500/20 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-users-gear"></i>
                     </div>
+                    <h3 class="text-xl font-bold text-white mb-3">UX Architecture & Design Thinking</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Championing customer empathy to streamline complex insurance journeys into simple, intuitive, accessibility-first interfaces.</p>
                 </div>
 
+                <!-- Card 4 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-blue-500 to-indigo-600 flex items-center justify-center text-white text-xl mb-6 shadow-lg shadow-blue-500/20 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Data & Analytics Growth</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Utilizing telemetry, funnels, A/B testing, and AI-driven insights to maximize conversions and reduce friction points.</p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center text-white text-xl mb-6 shadow-lg shadow-cyan-500/20 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-network-wired"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Cross-Functional Leadership</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Fostering collaboration between engineering, underwriting, legal, compliance, and design teams to drive rapid execution.</p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-emerald-500 to-teal-600 flex items-center justify-center text-white text-xl mb-6 shadow-lg shadow-emerald-500/20 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-shield-cat"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Risk Assessment Innovation</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Incorporating modern risk algorithms and data modeling to deliver real-time quotes and transparent policy terms.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- FEATURED ACHIEVEMENTS & TESTIMONIALS SECTION -->
-    <section id="achievements" class="py-24 bg-slate-950 relative border-t border-slate-900">
-        <div class="max-w-7xl mx-auto px-6 lg:px-12">
-            
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-xs font-semibold text-emerald-400 mb-4">
-                    INDUSTRY RECOGNITION
+    <!-- Testimonials / Endorsements -->
+    <section id="endorsements" class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pink-500/10 text-pink-400 text-xs font-semibold mb-4 border border-pink-500/20">
+                    Industry Leadership
                 </div>
-                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-4">Endorsements & Peer Impact</h2>
-                <p class="text-slate-400 text-sm md:text-base">Collaborative leadership recognized across enterprise leaders and ecosystem partners.</p>
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">Peer Endorsements</h2>
+                <p class="text-slate-400 text-base md:text-lg">What executives and key stakeholders say about collaborating with Dr. Joshi.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Testimonial 1 -->
-                <div class="bg-slate-900/40 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 relative">
-                    <div class="flex text-amber-400 gap-1 text-sm mb-4">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="text-slate-300 text-sm leading-relaxed mb-6 italic">
-                        "Dr. Samarth possesses an extraordinary ability to simplify complex financial product requirements into seamless digital experiences. His product leadership at ICICI Lombard has set benchmark standards across digital insurance operations."
-                    </p>
-                    <div class="flex items-center gap-4">
-                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Partner Avatar" class="w-12 h-12 rounded-full object-cover border border-indigo-500/50">
-                        <div>
-                            <h4 class="text-white font-semibold text-sm">Ananya Sharma</h4>
-                            <p class="text-xs text-slate-400">VP of Digital Transformation, Financial Ecosystems</p>
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex gap-1 text-amber-400 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
                         </div>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6 italic">
+                            "Dr. Samarth has a rare gift for translating dense insurance mechanics into slick, intuitive user journeys. His strategic vision elevated our digital portfolio standards significantly."
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-800/80 pt-4">
+                        <div class="font-bold text-white text-sm">VP of Digital Transformation</div>
+                        <div class="text-xs text-slate-500">Financial Services Sector</div>
                     </div>
                 </div>
 
                 <!-- Testimonial 2 -->
-                <div class="bg-slate-900/40 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 relative">
-                    <div class="flex text-amber-400 gap-1 text-sm mb-4">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="text-slate-300 text-sm leading-relaxed mb-6 italic">
-                        "Working alongside Samarth on cross-platform digital launches was a masterclass in agility and user-first thinking. He consistently delivers high-impact digital initiatives ahead of strategic timelines."
-                    </p>
-                    <div class="flex items-center gap-4">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Partner Avatar" class="w-12 h-12 rounded-full object-cover border border-purple-500/50">
-                        <div>
-                            <h4 class="text-white font-semibold text-sm">Rajesh Verma</h4>
-                            <p class="text-xs text-slate-400">Enterprise Technology Architect</p>
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex gap-1 text-amber-400 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
                         </div>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6 italic">
+                            "Samarth combines rigorous technical management with a deeply human-centric design philosophy. Working with him on enterprise scale products is always a game-changer."
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-800/80 pt-4">
+                        <div class="font-bold text-white text-sm">Lead Software Architect</div>
+                        <div class="text-xs text-slate-500">Enterprise Systems Partner</div>
                     </div>
                 </div>
 
+                <!-- Testimonial 3 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex gap-1 text-amber-400 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6 italic">
+                            "His ability to manage complex cross-functional teams while keeping business goals and customer satisfaction front and center makes Dr. Joshi an outstanding product leader."
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-800/80 pt-4">
+                        <div class="font-bold text-white text-sm">Head of Product Analytics</div>
+                        <div class="text-xs text-slate-500">InsurTech Solutions</div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- CONTACT & BOOKING SECTION -->
-    <section id="contact" class="py-24 bg-slate-950 relative border-t border-slate-900">
-        <div class="max-w-7xl mx-auto px-6 lg:px-12">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
-                
-                <!-- Contact Meta Info -->
-                <div class="lg:col-span-5">
-                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-pink-500/10 border border-pink-500/20 text-xs font-semibold text-pink-400 mb-4">
-                        CONNECT WITH SAMARTH
+    <!-- Contact & Direct Details Section -->
+    <section id="contact" class="py-20 px-6 bg-slate-950">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Info Left -->
+                <div>
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-semibold mb-4 border border-emerald-500/20">
+                        Get In Touch
                     </div>
-                    <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-6">Let's Build Strategic Digital Products</h2>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-8">
-                        Interested in discussing product leadership, strategic advisory, or enterprise insurtech innovation? Get in touch directly using the form or connect via professional channels.
+                    <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">Let's Connect & Collaborate</h2>
+                    <p class="text-slate-400 text-base mb-8 leading-relaxed">
+                        Interested in discussing InsurTech innovations, strategic product management, advisory opportunities, or industry leadership? Send a message directly below.
                     </p>
 
                     <div class="space-y-6">
-                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/50 border border-slate-800">
-                            <div class="w-12 h-12 rounded-lg bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-lg">
-                                <i class="fa-solid fa-briefcase"></i>
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center shrink-0 text-xl">
+                                <i class="fa-solid fa-building"></i>
                             </div>
                             <div>
-                                <p class="text-xs text-slate-400 font-medium">Current Role</p>
-                                <p class="text-sm font-semibold text-white">Senior Product Manager @ ICICI Lombard</p>
+                                <div class="text-xs text-slate-400">Current Role</div>
+                                <div class="font-semibold text-white text-sm">Senior Product Manager @ ICICI Lombard</div>
                             </div>
                         </div>
 
-                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/50 border border-slate-800">
-                            <div class="w-12 h-12 rounded-lg bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 text-lg">
-                                <i class="fa-solid fa-circle-nodes"></i>
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center shrink-0 text-xl">
+                                <i class="fa-solid fa-handshake"></i>
                             </div>
                             <div>
-                                <p class="text-xs text-slate-400 font-medium">Network Status</p>
-                                <p class="text-sm font-semibold text-white">Connected since Aug 18, 2026</p>
+                                <div class="text-xs text-slate-400">Connection Established</div>
+                                <div class="font-semibold text-white text-sm">18 Aug 2026</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-12 h-12 rounded-xl bg-pink-500/10 text-pink-400 flex items-center justify-center shrink-0 text-xl">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400">Location</div>
+                                <div class="font-semibold text-white text-sm">Mumbai, Maharashtra, India</div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Contact Form -->
-                <div class="lg:col-span-7 bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-3xl p-8 sm:p-10">
-                    <form onsubmit="event.preventDefault(); alert('Thank you! Your message has been received.');" class="space-y-6">
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                            <div>
-                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Name</label>
-                                <input type="text" required placeholder="John Doe" class="w-full px-4 py-3.5 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors text-sm">
-                            </div>
-                            <div>
-                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Email Address</label>
-                                <input type="email" required placeholder="john@example.com" class="w-full px-4 py-3.5 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors text-sm">
-                            </div>
+                <!-- Form Right -->
+                <div class="p-8 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800">
+                    <form onsubmit="event.preventDefault(); alert('Thank you! Message received.');" class="space-y-6">
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Your Full Name</label>
+                            <input type="text" required placeholder="e.g. Sarah Jenkins" class="w-full px-4 py-3.5 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-indigo-500 transition-colors">
                         </div>
 
                         <div>
-                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Subject</label>
-                            <input type="text" required placeholder="Product Strategy Consultation" class="w-full px-4 py-3.5 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors text-sm">
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Email Address</label>
+                            <input type="email" required placeholder="e.g. sarah@company.com" class="w-full px-4 py-3.5 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-indigo-500 transition-colors">
                         </div>
 
                         <div>
-                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Message</label>
-                            <textarea rows="4" required placeholder="Write your message here..." class="w-full px-4 py-3.5 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors text-sm resize-none"></textarea>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Subject / Topic</label>
+                            <input type="text" required placeholder="Product Strategy / Consultation" class="w-full px-4 py-3.5 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-indigo-500 transition-colors">
                         </div>
 
-                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold text-sm shadow-xl shadow-indigo-500/20 hover:shadow-indigo-500/40 hover:scale-[1.01] active:scale-[0.99] transition-all duration-200">
-                            Send Message
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Message</label>
+                            <textarea rows="4" required placeholder="Your message details..." class="w-full px-4 py-3.5 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-indigo-500 transition-colors resize-none"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl font-bold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:opacity-95 transition-all shadow-lg shadow-indigo-500/25">
+                            Send Direct Message
                         </button>
                     </form>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="py-12 bg-slate-950 border-t border-slate-900 text-center text-slate-500 text-xs">
-        <div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p>© 2026 Dr.Samarth Joshi. Generated by LinkedIn Portfolio Builder.</p>
-            <div class="flex gap-6">
-                <a href="#about" class="hover:text-slate-300 transition-colors">About</a>
-                <a href="#expertise" class="hover:text-slate-300 transition-colors">Expertise</a>
-                <a href="#services" class="hover:text-slate-300 transition-colors">Services</a>
-                <a href="#contact" class="hover:text-slate-300 transition-colors">Contact</a>
+    <!-- Footer -->
+    <footer class="py-10 px-6 border-t border-slate-800/80 bg-slate-950">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-slate-500">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-xs">
+                    SJ
+                </div>
+                <span class="text-slate-400 font-semibold">Dr. Samarth Joshi</span>
+            </div>
+            
+            <p>© 2026 Dr. Samarth Joshi. Senior Product Manager, ICICI Lombard General Insurance Co. Ltd.</p>
+            
+            <div class="flex items-center gap-4 text-slate-400">
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-brands fa-linkedin text-lg"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-brands fa-twitter text-lg"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-solid fa-envelope text-lg"></i></a>
             </div>
         </div>
     </footer>
