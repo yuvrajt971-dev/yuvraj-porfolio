@@ -4,397 +4,515 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr. Rima Rose Silex | General Dental Surgeon</title>
-    <!-- Tailwind CSS -->
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        cyan: {
+                            450: '#0D8ABC',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
     <style>
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
         }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(13, 138, 188, 0.35);
+        }
+        .glow-card:hover {
+            box-shadow: 0 0 30px -5px rgba(99, 102, 241, 0.3);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     </style>
 </head>
-<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-white relative overflow-x-hidden">
 
-    <!-- NAVIGATION BAR -->
-    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/50">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <!-- Glowing Background Spheres -->
+    <div class="fixed top-0 left-1/4 w-96 h-96 bg-cyan-600/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+    <div class="fixed bottom-1/3 right-1/4 w-[500px] h-[500px] bg-purple-600/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+    <div class="fixed top-2/3 left-1/3 w-80 h-80 bg-indigo-600/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#" class="flex items-center gap-3 group">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 p-[2px]">
-                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center font-bold text-indigo-400 group-hover:bg-transparent group-hover:text-white transition-all duration-300">
-                        DS
-                    </div>
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center text-white font-bold shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform duration-300">
+                    <i class="fa-solid font-bold text-lg fa-tooth"></i>
                 </div>
-                <div class="flex flex-col">
-                    <span class="font-bold text-lg tracking-tight text-white group-hover:text-indigo-400 transition-colors">Dr. Rima Rose Silex</span>
-                    <span class="text-xs text-slate-400 font-medium">Molar Bear Dentario</span>
+                <div>
+                    <span class="font-extrabold text-lg tracking-tight text-white block leading-none">Dr. Rima Rose Silex</span>
+                    <span class="text-xs text-cyan-400 font-medium tracking-wide">Molar Bear Dentario</span>
                 </div>
             </a>
 
             <!-- Desktop Nav Links -->
             <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
-                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
-                <a href="#services" class="hover:text-indigo-400 transition-colors">Services</a>
-                <a href="#achievements" class="hover:text-indigo-400 transition-colors">Achievements</a>
-                <a href="#contact" class="hover:text-indigo-400 transition-colors">Contact</a>
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-cyan-400 transition-colors">Expertise</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Testimonials</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
             </div>
 
-            <!-- Header CTA -->
-            <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:opacity-90 hover:shadow-lg hover:shadow-indigo-500/25 transition-all duration-300">
-                Get in Touch
-            </a>
+            <!-- CTA Button -->
+            <div class="hidden md:block">
+                <a href="#contact" class="px-5 py-2.5 rounded-full text-sm font-semibold bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white shadow-lg shadow-indigo-500/25 hover:shadow-cyan-500/40 hover:scale-105 transition-all duration-300">
+                    Book Appointment
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-slate-300 hover:text-white focus:outline-none">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900/95 border-b border-slate-800 px-6 py-4 space-y-3">
+            <a href="#about" class="block text-slate-300 hover:text-cyan-400 py-1">About</a>
+            <a href="#expertise" class="block text-slate-300 hover:text-cyan-400 py-1">Expertise</a>
+            <a href="#services" class="block text-slate-300 hover:text-cyan-400 py-1">Services</a>
+            <a href="#testimonials" class="block text-slate-300 hover:text-cyan-400 py-1">Testimonials</a>
+            <a href="#contact" class="block text-slate-300 hover:text-cyan-400 py-1">Contact</a>
+            <a href="#contact" class="block text-center mt-3 px-5 py-2.5 rounded-full text-sm font-semibold bg-gradient-to-r from-cyan-500 to-indigo-600 text-white">Book Appointment</a>
         </div>
     </nav>
 
     <!-- HERO SECTION -->
-    <section class="relative min-h-screen pt-32 pb-20 flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-950 via-indigo-950/40 to-slate-900">
-        <!-- Background Overlay Image with Low Opacity -->
-        <div class="absolute inset-0 z-0 opacity-15 bg-cover bg-center pointer-events-none mix-blend-overlay" style="background-image: url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80');"></div>
-        
-        <!-- Glowing Light Orbs -->
-        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-indigo-600/20 rounded-full blur-3xl pointer-events-none"></div>
-        <div class="absolute bottom-10 right-10 w-80 h-80 bg-pink-600/15 rounded-full blur-3xl pointer-events-none"></div>
+    <section class="pt-36 pb-20 md:pt-48 md:pb-32 px-6 relative">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-12 gap-12 items-center">
+            
+            <!-- Hero Content Left -->
+            <div class="md:col-span-7 space-y-6 text-center md:text-left">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 backdrop-blur-xl text-xs sm:text-sm text-cyan-400 font-semibold shadow-inner">
+                    <span class="flex h-2 w-2 rounded-full bg-cyan-400 animate-ping"></span>
+                    General Dental Surgeon • Molar Bear Dentario
+                </div>
 
-        <div class="relative z-10 max-w-5xl mx-auto px-6 text-center">
-            <!-- Profile Avatar Frame -->
-            <div class="mb-8 inline-block">
-                <div class="p-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full shadow-2xl inline-block hover:scale-105 transition-transform duration-300">
-                    <img src="https://ui-avatars.com/api/?name=Dr.+Rima+Rose+Silex&size=200&background=0D8ABC&color=fff&bold=true" alt="Dr. Rima Rose Silex" class="w-32 h-32 md:w-36 md:h-36 rounded-full object-cover border-4 border-slate-950">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                    Crafting Healthy, <br class="hidden sm:inline" />
+                    <span class="gradient-text">Radiant Smiles</span> With Surgical Precision.
+                </h1>
+
+                <p class="text-slate-400 text-base sm:text-lg max-w-2xl leading-relaxed">
+                    Welcome to the specialized practice of Dr. Rima Rose Silex. Dedicated to advanced oral surgery, restorative aesthetic care, and patient-centered clinical excellence at Molar Bear Dentario.
+                </p>
+
+                <div class="pt-4 flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
+                    <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl font-bold bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white shadow-xl shadow-cyan-500/20 hover:scale-105 transition-all duration-300 text-center">
+                        Schedule Consultation <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                    </a>
+                    <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-xl font-semibold bg-slate-900/80 border border-slate-800 hover:border-slate-700 text-slate-200 hover:bg-slate-800/50 transition-all duration-300 text-center">
+                        View Clinical Services
+                    </a>
+                </div>
+
+                <!-- Trust Badges Grid -->
+                <div class="pt-10 grid grid-cols-3 gap-4 border-t border-slate-800/80">
+                    <div>
+                        <p class="text-2xl sm:text-3xl font-extrabold text-white">100%</p>
+                        <p class="text-xs sm:text-sm text-slate-400 font-medium">Patient Focused</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl sm:text-3xl font-extrabold text-white">Modern</p>
+                        <p class="text-xs sm:text-sm text-slate-400 font-medium">Surgical Tech</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl sm:text-3xl font-extrabold text-white">Gentle</p>
+                        <p class="text-xs sm:text-sm text-slate-400 font-medium">Painless Care</p>
+                    </div>
                 </div>
             </div>
 
-            <!-- Role Badge -->
-            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900/80 border border-indigo-500/30 text-indigo-300 text-xs md:text-sm font-semibold mb-6 shadow-sm">
-                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                General Dental Surgeon • Molar Bear Dentario
-            </div>
-
-            <!-- Main Headline -->
-            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
-                Crafting Radiant Smiles & <br>
-                <span class="bg-clip-text text-transparent bg-gradient-to-r from-white via-indigo-200 to-indigo-400">
-                    Precision Dental Care
-                </span>
-            </h1>
-
-            <!-- Subheadline / Elevator Pitch -->
-            <p class="max-w-2xl mx-auto text-lg md:text-xl text-slate-300 font-normal mb-10 leading-relaxed">
-                Transforming oral health through advanced restorative procedures, gentle patient care, and cutting-edge dental technology at Molar Bear Dentario.
-            </p>
-
-            <!-- Dual CTAs -->
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-                <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-full font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:shadow-xl hover:shadow-indigo-500/30 transition-all duration-300 hover:-translate-y-0.5">
-                    Explore Expertise <i class="fa-solid font-normal fa-arrow-right ml-2 text-xs"></i>
-                </a>
-                <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full font-semibold text-slate-200 bg-slate-900/80 border border-slate-800 hover:border-slate-700 hover:text-white transition-all duration-300">
-                    Schedule Call
-                </a>
-            </div>
-
-            <!-- Stat Counter Bar -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 p-6 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800/80 shadow-2xl">
-                <div class="p-3 text-center">
-                    <p class="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">10+</p>
-                    <p class="text-xs text-slate-400 mt-1 uppercase tracking-wider font-semibold">Years Experience</p>
-                </div>
-                <div class="p-3 text-center">
-                    <p class="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">4,500+</p>
-                    <p class="text-xs text-slate-400 mt-1 uppercase tracking-wider font-semibold">Patients Served</p>
-                </div>
-                <div class="p-3 text-center">
-                    <p class="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-rose-400">99.8%</p>
-                    <p class="text-xs text-slate-400 mt-1 uppercase tracking-wider font-semibold">Satisfaction Rate</p>
-                </div>
-                <div class="p-3 text-center">
-                    <p class="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-emerald-400">15+</p>
-                    <p class="text-xs text-slate-400 mt-1 uppercase tracking-wider font-semibold">Awards & Honors</p>
+            <!-- Hero Image / Avatar Right -->
+            <div class="md:col-span-5 flex justify-center">
+                <div class="relative group">
+                    <!-- Glowing Double Gradient Frame -->
+                    <div class="absolute -inset-1.5 bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 rounded-3xl blur-xl opacity-70 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+                    <div class="relative p-2 rounded-3xl bg-slate-900 border border-slate-800">
+                        <img src="https://ui-avatars.com/api/?name=Dr.+Rima+Rose+Silex&size=200&background=0D8ABC&color=fff&bold=true" 
+                             alt="Dr. Rima Rose Silex" 
+                             class="w-64 h-64 sm:w-80 sm:h-80 object-cover rounded-2xl shadow-2xl bg-slate-950">
+                        
+                        <!-- Floating Badge Overlay -->
+                        <div class="absolute -bottom-6 -left-6 bg-slate-900/90 border border-slate-800 backdrop-blur-xl p-4 rounded-2xl shadow-2xl flex items-center gap-3">
+                            <div class="w-12 h-12 rounded-xl bg-cyan-500/20 flex items-center justify-center text-cyan-400 font-bold text-xl">
+                                <i class="fa-solid fa-user-doctor"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Lead Surgeon</p>
+                                <p class="text-sm font-bold text-white">Molar Bear Dentario</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
         </div>
     </section>
 
-    <!-- ABOUT & EXPERTISE SECTION -->
-    <section id="about" class="py-24 bg-slate-950 relative">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <!-- Workspace Image Container -->
-                <div class="relative group">
-                    <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-pink-500 rounded-3xl blur opacity-25 group-hover:opacity-50 transition duration-500"></div>
-                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900">
-                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" alt="Dental Practice" class="w-full h-[450px] object-cover hover:scale-105 transition-transform duration-500">
-                        <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-transparent p-6">
-                            <p class="text-sm font-semibold text-indigo-400">State-of-the-Art Clinical Care</p>
-                            <p class="text-xs text-slate-300">Molar Bear Dentario Facilities</p>
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-24 px-6 bg-slate-900/30 border-y border-slate-800/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-12 gap-12 items-center">
+                
+                <!-- Clinical Image -->
+                <div class="md:col-span-6">
+                    <div class="relative rounded-3xl overflow-hidden border border-slate-800 group shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Modern Dental Clinic" 
+                             class="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-6 rounded-2xl bg-slate-900/80 border border-slate-800/80 backdrop-blur-xl">
+                            <h4 class="text-lg font-bold text-white flex items-center gap-2">
+                                <i class="fa-solid fa-hospital-user text-cyan-400"></i> World-Class Facility
+                            </h4>
+                            <p class="text-xs text-slate-300 mt-1">Equipped with state-of-the-art diagnostic and surgical dental technologies.</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Career Narrative & Competencies -->
-                <div>
-                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold mb-4">
-                        Clinical Excellence
+                <!-- Text Content -->
+                <div class="md:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold uppercase tracking-wider">
+                        About Dr. Silex
                     </div>
-                    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-white">
-                        Dedicated to Pain-Free Surgery & Visionary Oral Healthcare
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                        Excellence in Oral Health & Modern Dental Surgery
                     </h2>
-                    <p class="text-slate-300 mb-6 leading-relaxed">
-                        As a General Dental Surgeon at Molar Bear Dentario, Dr. Rima Rose Silex combines comprehensive clinical precision with a deeply empathetic approach to patient wellness. Specializing in restorative treatments, complex extractions, and preventative strategies, Dr. Silex ensures every patient achieves a confident, long-lasting smile.
+                    <p class="text-slate-300 leading-relaxed">
+                        Dr. Rima Rose Silex is an esteemed General Dental Surgeon practicing at <strong class="text-white">Molar Bear Dentario</strong>. Combining clinical precision, gentle patient care, and cutting-edge dental science, Dr. Silex delivers comprehensive oral health solutions tailored to each patient's unique needs.
+                    </p>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        From complex dental surgeries to restorative aesthetic treatments, her practice emphasizes total comfort, modern sterile environments, and long-lasting outcomes for smiles of all ages.
                     </p>
 
-                    <!-- Skill Bars / Competencies -->
-                    <div class="space-y-4">
-                        <div>
-                            <div class="flex justify-between text-sm font-semibold mb-1">
-                                <span class="text-slate-200">General & Restorative Surgery</span>
-                                <span class="text-indigo-400">98%</span>
-                            </div>
-                            <div class="w-full bg-slate-800 rounded-full h-2">
-                                <div class="bg-gradient-to-r from-indigo-500 to-purple-500 h-2 rounded-full" style="width: 98%"></div>
-                            </div>
+                    <!-- Feature Checkmarks -->
+                    <div class="grid grid-cols-2 gap-4 pt-2">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-circle-check text-cyan-400"></i>
+                            <span class="text-sm font-medium text-slate-200">Surgical Tooth Extractions</span>
                         </div>
-
-                        <div>
-                            <div class="flex justify-between text-sm font-semibold mb-1">
-                                <span class="text-slate-200">Preventive Dentistry & Oral Hygiene</span>
-                                <span class="text-purple-400">95%</span>
-                            </div>
-                            <div class="w-full bg-slate-800 rounded-full h-2">
-                                <div class="bg-gradient-to-r from-purple-500 to-pink-500 h-2 rounded-full" style="width: 95%"></div>
-                            </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-circle-check text-cyan-400"></i>
+                            <span class="text-sm font-medium text-slate-200">Cosmetic Restorations</span>
                         </div>
-
-                        <div>
-                            <div class="flex justify-between text-sm font-semibold mb-1">
-                                <span class="text-slate-200">Patient Comfort & Anxiety Management</span>
-                                <span class="text-pink-400">99%</span>
-                            </div>
-                            <div class="w-full bg-slate-800 rounded-full h-2">
-                                <div class="bg-gradient-to-r from-pink-500 to-rose-500 h-2 rounded-full" style="width: 99%"></div>
-                            </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-circle-check text-cyan-400"></i>
+                            <span class="text-sm font-medium text-slate-200">Root Canal Treatments</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-circle-check text-cyan-400"></i>
+                            <span class="text-sm font-medium text-slate-200">Preventative Oral Care</span>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- SERVICES & SPECIALIZATION GRID -->
-    <section id="services" class="py-24 bg-slate-900/50 relative">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-semibold mb-4">
-                    Specialized Treatments
+    <!-- SERVICES SECTION -->
+    <section id="services" class="py-24 px-6 relative">
+        <div class="max-w-7xl mx-auto space-y-16">
+            
+            <div class="text-center max-w-3xl mx-auto space-y-4">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold uppercase tracking-wider">
+                    Clinical Specialties
                 </div>
-                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Clinical Services & Expertise</h2>
-                <p class="text-slate-400">Comprehensive dental procedures tailored for optimal oral health and aesthetics.</p>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Comprehensive Dental Treatments</h2>
+                <p class="text-slate-400 text-sm sm:text-base">Providing personalized treatment plans utilizing advanced diagnostic techniques and pain-free dental innovations.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Cards Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                
                 <!-- Card 1 -->
-                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/60 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-indigo-500/10 p-8 rounded-2xl flex flex-col justify-between">
-                    <div>
-                        <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-indigo-500/20">
-                            <i class="fa-solid fa-tooth"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-3">General Dental Surgery</h3>
-                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
-                            Expert surgical extractions, wisdom tooth procedures, and soft tissue management with focus on minimal discomfort.
-                        </p>
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-3xl hover:border-cyan-500/50 transition-all duration-300 group glow-card">
+                    <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-cyan-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-tooth"></i>
                     </div>
-                    <ul class="text-xs text-slate-300 space-y-2 border-t border-slate-800/80 pt-4">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Painless Extractions</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Surgical Consultations</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Post-Op Care Strategy</li>
-                    </ul>
+                    <h3 class="text-xl font-bold text-white mb-3">General & Preventative</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Comprehensive oral examinations, deep cleanings, fluoride therapies, and preventative care to protect your natural smile.</p>
                 </div>
 
                 <!-- Card 2 -->
-                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/60 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-indigo-500/10 p-8 rounded-2xl flex flex-col justify-between">
-                    <div>
-                        <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-purple-500/20">
-                            <i class="fa-solid fa-sparkles"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-3">Restorative & Cosmetic</h3>
-                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
-                            Reconstructing full smile functional integrity through natural-looking crowns, bridges, and advanced aesthetic bonding.
-                        </p>
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-3xl hover:border-indigo-500/50 transition-all duration-300 group glow-card">
+                    <div class="w-14 h-14 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-syringe"></i>
                     </div>
-                    <ul class="text-xs text-slate-300 space-y-2 border-t border-slate-800/80 pt-4">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400"></i> Composite Restorations</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400"></i> Porcelain Veneers</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400"></i> Smile Design</li>
-                    </ul>
+                    <h3 class="text-xl font-bold text-white mb-3">Dental Surgery</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Expert surgical tooth extractions, wisdom teeth management, and minor oral surgical procedures performed with utmost care.</p>
                 </div>
 
                 <!-- Card 3 -->
-                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/60 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-indigo-500/10 p-8 rounded-2xl flex flex-col justify-between">
-                    <div>
-                        <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-pink-500 to-rose-600 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-pink-500/20">
-                            <i class="fa-solid fa-shield-halved"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-white mb-3">Preventive Diagnostics</h3>
-                        <p class="text-slate-400 text-sm mb-6 leading-relaxed">
-                            Proactive oral hygiene programs, digital imaging assessments, and early detection protocols for lifelong health.
-                        </p>
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-3xl hover:border-purple-500/50 transition-all duration-300 group glow-card">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-purple-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
                     </div>
-                    <ul class="text-xs text-slate-300 space-y-2 border-t border-slate-800/80 pt-4">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pink-400"></i> Digital X-Ray Analysis</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pink-400"></i> Periodontal Maintenance</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pink-400"></i> Custom Night Guards</li>
-                    </ul>
+                    <h3 class="text-xl font-bold text-white mb-3">Cosmetic Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Transform your smile with laser teeth whitening, composite bonding, porcelain veneers, and complete aesthetic revamps.</p>
                 </div>
+
+                <!-- Card 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-3xl hover:border-pink-500/50 transition-all duration-300 group glow-card">
+                    <div class="w-14 h-14 rounded-2xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-pink-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Root Canal Therapy</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Advanced endodontic treatments designed to save damaged teeth, eliminate pain, and restore structural integrity.</p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-3xl hover:border-cyan-500/50 transition-all duration-300 group glow-card">
+                    <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-cyan-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Crowns & Restorations</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Custom-fitted dental crowns, bridges, and durable tooth-colored fillings engineered for aesthetics and functionality.</p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-3xl hover:border-indigo-500/50 transition-all duration-300 group glow-card">
+                    <div class="w-14 h-14 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Emergency Dental Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Prompt relief for acute toothaches, surgical emergencies, trauma, and urgent dental conditions at Molar Bear Dentario.</p>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- ACHIEVEMENTS & TESTIMONIALS SECTION -->
-    <section id="achievements" class="py-24 bg-slate-950">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pink-500/10 border border-pink-500/20 text-pink-400 text-xs font-semibold mb-4">
-                    Patient & Partner Feedback
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials" class="py-24 px-6 bg-slate-900/30 border-y border-slate-800/50">
+        <div class="max-w-7xl mx-auto space-y-16">
+            
+            <div class="text-center max-w-2xl mx-auto space-y-4">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-semibold uppercase tracking-wider">
+                    Patient Reviews
                 </div>
-                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Endorsements & Testimonials</h2>
-                <p class="text-slate-400">Recognized for clinical precision and exceptional patient relations.</p>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Trusted by Happy Patients</h2>
+                <p class="text-slate-400 text-sm">Real stories from individuals who experienced compassionate, world-class dental surgical care with Dr. Silex.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="grid md:grid-cols-3 gap-8">
                 <!-- Testimonial 1 -->
-                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl relative">
-                    <div class="flex text-amber-400 text-sm mb-4">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-3xl flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 text-sm gap-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Dr. Rima Rose Silex made my wisdom tooth extraction completely painless! Her warm bedside manner and precision at Molar Bear Dentario put me at ease right away."
+                        </p>
                     </div>
-                    <p class="text-slate-300 italic mb-6 text-sm leading-relaxed">
-                        "Dr. Rima Rose Silex is simply incredible. Her precise approach and gentle demeanor made my complex surgical procedure at Molar Bear Dentario completely stress-free. Highly recommended!"
-                    </p>
-                    <div class="flex items-center gap-4">
-                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Elena Rostova" class="w-12 h-12 rounded-full object-cover border border-slate-700">
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold text-sm">
+                            EM
+                        </div>
                         <div>
-                            <h4 class="text-white font-semibold text-sm">Elena Rostova</h4>
-                            <p class="text-slate-400 text-xs">Patient at Molar Bear Dentario</p>
+                            <p class="text-sm font-bold text-white">Elena M.</p>
+                            <p class="text-xs text-slate-500">Verified Patient</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Testimonial 2 -->
-                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl relative">
-                    <div class="flex text-amber-400 text-sm mb-4">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-3xl flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 text-sm gap-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "The surgical restoration work Dr. Silex performed was unbelievable. My smile has never looked or felt better. Highly recommend Molar Bear Dentario!"
+                        </p>
                     </div>
-                    <p class="text-slate-300 italic mb-6 text-sm leading-relaxed">
-                        "Working alongside Dr. Silex is an absolute privilege. Her attention to surgical detail and commitment to modern techniques set a gold standard in general dental care."
-                    </p>
-                    <div class="flex items-center gap-4">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Dr. Marcus Vance" class="w-12 h-12 rounded-full object-cover border border-slate-700">
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-sm">
+                            JR
+                        </div>
                         <div>
-                            <h4 class="text-white font-semibold text-sm">Dr. Marcus Vance</h4>
-                            <p class="text-slate-400 text-xs">Clinical Director & Specialist</p>
+                            <p class="text-sm font-bold text-white">James R.</p>
+                            <p class="text-xs text-slate-500">Verified Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-3xl flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 text-sm gap-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Extremely thorough, highly professional, and genuinely caring. Dr. Rima Rose Silex is easily the finest dental surgeon in the region."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 flex items-center justify-center font-bold text-sm">
+                            SL
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-white">Sophia L.</p>
+                            <p class="text-xs text-slate-500">Verified Patient</p>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 
-    <!-- CONTACT & BOOKING SECTION -->
-    <section id="contact" class="py-24 bg-slate-900/40 relative">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                <!-- Left Details -->
-                <div>
-                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold mb-4">
-                        Direct Communication
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-24 px-6 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Details -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold uppercase tracking-wider mb-4">
+                            Get In Touch
+                        </div>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Book Your Appointment Today</h2>
+                        <p class="text-slate-400 text-sm mt-3">Ready to transform your dental health? Schedule a consultation with Dr. Rima Rose Silex at Molar Bear Dentario.</p>
                     </div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Schedule Your Appointment or Inquiry</h2>
-                    <p class="text-slate-300 mb-8 leading-relaxed">
-                        Ready to experience modern, top-tier dental care? Reach out to schedule a consultation with Dr. Rima Rose Silex at Molar Bear Dentario.
-                    </p>
 
-                    <div class="space-y-6">
-                        <div class="flex items-center gap-4">
-                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-indigo-400">
-                                <i class="fa-solid fa-hospital text-xl"></i>
+                    <div class="space-y-4">
+                        <div class="bg-slate-900/60 border border-slate-800 p-5 rounded-2xl flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-clinic-medical"></i>
                             </div>
                             <div>
-                                <p class="text-xs text-slate-400">Practice Location</p>
-                                <p class="text-white font-semibold">Molar Bear Dentario Clinic</p>
+                                <p class="text-xs text-slate-400 font-medium">Clinic Location</p>
+                                <p class="text-sm font-bold text-white">Molar Bear Dentario</p>
                             </div>
                         </div>
 
-                        <div class="flex items-center gap-4">
-                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-purple-400">
-                                <i class="fa-solid fa-calendar-check text-xl"></i>
+                        <div class="bg-slate-900/60 border border-slate-800 p-5 rounded-2xl flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-user-check"></i>
                             </div>
                             <div>
-                                <p class="text-xs text-slate-400">Connected Date</p>
-                                <p class="text-white font-semibold">18 Aug 2026</p>
+                                <p class="text-xs text-slate-400 font-medium">Professional Network</p>
+                                <p class="text-sm font-bold text-white">Connected since 18 Aug 2026</p>
                             </div>
                         </div>
 
-                        <div class="flex items-center gap-4">
-                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-pink-400">
-                                <i class="fa-solid fa-envelope text-xl"></i>
+                        <div class="bg-slate-900/60 border border-slate-800 p-5 rounded-2xl flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-clock"></i>
                             </div>
                             <div>
-                                <p class="text-xs text-slate-400">Official Contact</p>
-                                <p class="text-white font-semibold">contact@molarbeardentario.com</p>
+                                <p class="text-xs text-slate-400 font-medium">Working Hours</p>
+                                <p class="text-sm font-bold text-white">Mon – Sat: 09:00 AM – 06:00 PM</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Right Form -->
-                <div class="bg-slate-900/80 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl shadow-2xl">
-                    <form onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent to Dr. Silex.');" class="space-y-5">
-                        <div>
-                            <label class="block text-xs font-semibold text-slate-300 mb-2">FULL NAME</label>
-                            <input type="text" placeholder="John Doe" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-200 text-sm focus:outline-none focus:border-indigo-500 transition-colors">
+                <!-- Contact Form -->
+                <div class="lg:col-span-7">
+                    <form class="bg-slate-900/80 backdrop-blur-xl border border-slate-800 p-8 rounded-3xl space-y-6 shadow-2xl" onsubmit="event.preventDefault(); alert('Thank you! Your request has been submitted.');">
+                        <h3 class="text-xl font-bold text-white mb-2">Request a Consultation</h3>
+                        
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Full Name</label>
+                                <input type="text" required placeholder="John Doe" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Phone Number</label>
+                                <input type="tel" required placeholder="+1 (555) 000-0000" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                            </div>
                         </div>
+
                         <div>
-                            <label class="block text-xs font-semibold text-slate-300 mb-2">EMAIL ADDRESS</label>
-                            <input type="email" placeholder="john@example.com" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-200 text-sm focus:outline-none focus:border-indigo-500 transition-colors">
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Requested Service</label>
+                            <select class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-100 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                                <option>General Consultation & Checkup</option>
+                                <option>Dental Surgery & Extractions</option>
+                                <option>Cosmetic Dental Restoration</option>
+                                <option>Root Canal Treatment</option>
+                                <option>Other Specialized Dental Care</option>
+                            </select>
                         </div>
+
                         <div>
-                            <label class="block text-xs font-semibold text-slate-300 mb-2">SUBJECT</label>
-                            <input type="text" placeholder="Consultation Request" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-200 text-sm focus:outline-none focus:border-indigo-500 transition-colors">
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Message or Notes</label>
+                            <textarea rows="4" placeholder="Briefly describe your dental concerns..." class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm"></textarea>
                         </div>
-                        <div>
-                            <label class="block text-xs font-semibold text-slate-300 mb-2">MESSAGE</label>
-                            <textarea rows="4" placeholder="How can Dr. Silex assist you?" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-200 text-sm focus:outline-none focus:border-indigo-500 transition-colors"></textarea>
-                        </div>
-                        <button type="submit" class="w-full py-4 rounded-xl font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:opacity-95 transition-all duration-300 shadow-lg shadow-indigo-500/25">
-                            Send Message
+
+                        <button type="submit" class="w-full py-4 rounded-xl font-bold bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white shadow-xl shadow-cyan-500/20 hover:scale-[1.01] transition-all duration-300">
+                            Confirm Appointment Request
                         </button>
                     </form>
                 </div>
+
             </div>
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="border-t border-slate-800/80 bg-slate-950 py-10">
-        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
-            <p class="text-xs text-slate-500 text-center md:text-left">
-                © 2026 Dr. Rima Rose Silex. Generated by LinkedIn Portfolio Builder.
-            </p>
-            <div class="flex items-center gap-6">
-                <a href="#" class="text-slate-400 hover:text-indigo-400 transition-colors text-lg"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#" class="text-slate-400 hover:text-indigo-400 transition-colors text-lg"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#" class="text-slate-400 hover:text-indigo-400 transition-colors text-lg"><i class="fa-solid fa-globe"></i></a>
+    <footer class="border-t border-slate-800 bg-slate-950 py-12 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center text-white font-bold text-sm">
+                    <i class="fa-solid fa-tooth"></i>
+                </div>
+                <span class="font-bold text-white text-sm">Dr. Rima Rose Silex</span>
+                <span class="text-slate-600">|</span>
+                <span class="text-xs text-slate-400">Molar Bear Dentario</span>
+            </div>
+
+            <div class="flex items-center gap-6 text-slate-400 text-xs">
+                <span>© 2026 Dr. Rima Rose Silex. All Rights Reserved.</span>
             </div>
         </div>
     </footer>
 
+    <!-- Simple Mobile Menu Toggle Script -->
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
