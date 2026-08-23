@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nisha Parmar | Senior Project Manager & Operations Strategist</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-gradient {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(168, 85, 247, 0.15) 50%, rgba(236, 72, 153, 0.15) 100%);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #818cf8 0%, #c084fc 50%, #f472b6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .animated-border {
+            background: linear-gradient(90deg, #6366f1, #a855f7, #ec4899, #6366f1);
+            background-size: 300% 300%;
+            animation: gradient-shift 6s ease infinite;
+        }
+        @keyframes gradient-shift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 p-[2px]">
+                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center font-bold text-lg text-white group-hover:bg-transparent transition-all">
+                        NP
+                    </div>
+                </div>
+                <span class="font-bold text-xl tracking-tight text-white group-hover:text-indigo-400 transition-colors">Nisha Parmar<span class="text-indigo-500">.</span></span>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-indigo-400 transition-colors">Expertise</a>
+                <a href="#services" class="hover:text-indigo-400 transition-colors">Services</a>
+                <a href="#testimonials" class="hover:text-indigo-400 transition-colors">Endorsements</a>
+                <a href="#contact" class="hover:text-indigo-400 transition-colors">Contact</a>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="hidden md:block">
+                <a href="#contact" class="px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:opacity-90 transition-all shadow-lg shadow-indigo-500/25">
+                    Let's Connect
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button class="md:hidden text-slate-300 hover:text-white focus:outline-none" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900/95 border-b border-slate-800 px-6 py-4 space-y-3">
+            <a href="#about" class="block text-slate-300 hover:text-indigo-400 font-medium">About</a>
+            <a href="#expertise" class="block text-slate-300 hover:text-indigo-400 font-medium">Expertise</a>
+            <a href="#services" class="block text-slate-300 hover:text-indigo-400 font-medium">Services</a>
+            <a href="#testimonials" class="block text-slate-300 hover:text-indigo-400 font-medium">Endorsements</a>
+            <a href="#contact" class="block text-slate-300 hover:text-indigo-400 font-medium">Contact</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="relative min-h-screen pt-32 pb-20 flex items-center justify-center overflow-hidden">
+        <!-- Background Ambient Glow -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-indigo-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute bottom-10 right-10 w-[400px] h-[400px] bg-pink-500/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
+                
+                <!-- Left Hero Content -->
+                <div class="flex-1 text-center lg:text-left">
+                    <!-- Status Badge -->
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 backdrop-blur-xl mb-6 shadow-inner">
+                        <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                        <span class="text-xs font-semibold text-slate-300 uppercase tracking-wider">Project Manager at Sun Consultancy</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight text-white mb-6">
+                        Orchestrating Complex <br class="hidden sm:inline" />
+                        <span class="text-gradient">Projects & Delivery</span>
+                    </h1>
+
+                    <p class="text-slate-400 text-lg sm:text-xl max-w-2xl mb-8 font-light leading-relaxed">
+                        Driving high-impact strategic initiatives, cross-functional alignment, and seamless execution with continuous improvement frameworks at Sun Consultancy.
+                    </p>
+
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 mb-12">
+                        <a href="#contact" class="px-8 py-4 rounded-xl text-base font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:shadow-lg hover:shadow-indigo-500/30 transition-all transform hover:-translate-y-0.5">
+                            Initiate Project <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                        </a>
+                        <a href="#about" class="px-8 py-4 rounded-xl text-base font-semibold text-slate-300 bg-slate-900/80 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 transition-all">
+                            View Overview
+                        </a>
+                    </div>
+
+                    <!-- Trust Stats Grid -->
+                    <div class="grid grid-cols-3 gap-6 pt-8 border-t border-slate-800/80">
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-bold text-white">99%</div>
+                            <div class="text-xs sm:text-sm text-slate-400 mt-1">On-Time Delivery</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-bold text-white">50+</div>
+                            <div class="text-xs sm:text-sm text-slate-400 mt-1">Projects Led</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-bold text-white">100%</div>
+                            <div class="text-xs sm:text-sm text-slate-400 mt-1">Client Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Hero Image Frame -->
+                <div class="relative flex-shrink-0">
+                    <div class="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96">
+                        <!-- Glowing Double Gradient Border Frame -->
+                        <div class="absolute -inset-2 rounded-3xl animated-border opacity-75 blur-md"></div>
+                        <div class="absolute -inset-1 rounded-3xl animated-border"></div>
+                        <div class="relative w-full h-full rounded-2xl overflow-hidden bg-slate-950 p-2">
+                            <img src="https://ui-avatars.com/api/?name=Nisha+Parmar&size=200&background=0D8ABC&color=fff&bold=true" alt="Nisha Parmar" class="w-full h-full object-cover rounded-xl shadow-2xl">
+                        </div>
+
+                        <!-- Floating Micro Badge -->
+                        <div class="absolute -bottom-6 -left-6 bg-slate-900/90 border border-slate-800 backdrop-blur-xl p-4 rounded-2xl shadow-xl flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold">
+                                <i class="fa-solid fa-square-check text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 font-medium">Agile & Scrum</div>
+                                <div class="text-sm font-semibold text-white">Certified Practitioner</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT & EXPERTISE SECTION -->
+    <section id="about" class="py-24 relative border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                
+                <!-- Industry / Team Image -->
+                <div class="relative group">
+                    <div class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-indigo-500 to-purple-600 opacity-30 group-hover:opacity-60 blur-xl transition duration-500"></div>
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900/50">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Team Collaboration at Sun Consultancy" class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-700">
+                        <div class="absolute inset-0 bg-slate-950/40"></div>
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div>
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold uppercase tracking-wider mb-4">
+                        About Nisha
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6 leading-tight">
+                        Transforming Strategic Visions into Operational Milestones
+                    </h2>
+                    <p class="text-slate-400 text-base sm:text-lg mb-6 leading-relaxed">
+                        With an exceptional trajectory in managing complex initiatives at <span class="text-white font-medium">Sun Consultancy</span>, Nisha Parmar combines rigorous Agile governance with a human-centric leadership approach.
+                    </p>
+                    <p class="text-slate-400 text-base leading-relaxed mb-8">
+                        Specializing in cross-functional team coordination, resource optimization, and end-to-end delivery pipelines, Nisha empowers enterprise teams to exceed benchmark goals with modern tools and methodologies.
+                    </p>
+
+                    <!-- Feature Bullets -->
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <div class="w-6 h-6 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <span class="text-slate-300 font-medium">Full Lifecycle Leadership & Stakeholder Management</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-6 h-6 rounded-full bg-purple-500/20 text-purple-400 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <span class="text-slate-300 font-medium">Agile, Scrum & Waterfall Hybrid Framework Alignment</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-6 h-6 rounded-full bg-pink-500/20 text-pink-400 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <span class="text-slate-300 font-medium">Proactive Risk Mitigation & Quality Delivery Controls</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES / CORE COMPETENCIES -->
+    <section id="services" class="py-24 relative bg-slate-950/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-semibold uppercase tracking-wider mb-4">
+                    Core Capabilities
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">High-Impact Management Solutions</h2>
+                <p class="text-slate-400 text-lg">Tailored management strategies designed to optimize business delivery, enhance operational efficiency, and drive scale.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Card 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-indigo-500/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-indigo-500 to-indigo-700 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-indigo-500/20 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-diagram-project"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Agile Project Execution</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Implementing robust Agile, Scrum, or Kanban methodologies to maximize sprint productivity and maintain rapid delivery cadence.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-purple-500/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-purple-500 to-purple-700 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-purple-500/20 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-handshake"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Stakeholder Engagement</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Fostering transparent communication channels between technical teams, C-suite executives, and external strategic partners.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-pink-500/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-pink-500 to-pink-700 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-pink-500/20 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Strategic Roadmapping</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Translating business objectives into actionable technical roadmaps, timelines, resource allocation, and milestone metrics.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-indigo-500/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-indigo-500 to-purple-500 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-indigo-500/20 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Risk Assessment & Mitigation</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Proactively identifying operational bottlenecks, scope creep, and technical dependencies to keep initiatives on schedule.</p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-purple-500/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-purple-500 to-pink-500 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-purple-500/20 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-users-gear"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Cross-Functional Leadership</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Unifying design, development, and business analytics disciplines to build high-performing, goal-oriented project teams.</p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-pink-500/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-pink-500 to-indigo-500 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-pink-500/20 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-sliders"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Process Optimization</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Continuous refinement of organizational workflows, introducing modern toolchains, automation, and reporting systems.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS / ENDORSEMENTS SECTION -->
+    <section id="testimonials" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-pink-500/10 border border-pink-500/20 text-pink-400 text-xs font-semibold uppercase tracking-wider mb-4">
+                    Peer Recognition
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">Endorsements & Testimonials</h2>
+                <p class="text-slate-400 text-lg">What colleagues and corporate partners say about working with Nisha Parmar.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 italic text-base leading-relaxed mb-6">
+                            "Nisha's exceptional ability to bring clarity to complex project scopes at Sun Consultancy has transformed how our teams operate. Her relentless focus on quality and schedule accuracy is unmatched."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4 pt-4 border-t border-slate-800">
+                        <div class="w-12 h-12 rounded-full bg-indigo-500/20 flex items-center justify-center font-bold text-indigo-400">
+                            VP
+                        </div>
+                        <div>
+                            <h4 class="text-white font-semibold">Vice President of Engineering</h4>
+                            <p class="text-slate-500 text-xs">Enterprise Tech Partner</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 italic text-base leading-relaxed mb-6">
+                            "Working alongside Nisha has been a masterclass in project efficiency. She effectively balances technical demands with human team dynamics, keeping energy high and deadlines met."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4 pt-4 border-t border-slate-800">
+                        <div class="w-12 h-12 rounded-full bg-purple-500/20 flex items-center justify-center font-bold text-purple-400">
+                            SD
+                        </div>
+                        <div>
+                            <h4 class="text-white font-semibold">Senior Delivery Director</h4>
+                            <p class="text-slate-500 text-xs">Sun Consultancy</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-24 relative border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                
+                <!-- Contact Info -->
+                <div>
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold uppercase tracking-wider mb-4">
+                        Get In Touch
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">Let's Discuss Your Next Initiative</h2>
+                    <p class="text-slate-400 text-lg mb-8 leading-relaxed">
+                        Ready to elevate your project execution? Connect with Nisha Parmar to explore collaboration opportunities at Sun Consultancy or beyond.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-12 h-12 rounded-xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-building"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-500 font-medium">Organization</div>
+                                <div class="text-slate-200 font-semibold">Sun Consultancy</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/20 text-purple-400 flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-user-gear"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-500 font-medium">Current Role</div>
+                                <div class="text-slate-200 font-semibold">Project Manager</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-12 h-12 rounded-xl bg-pink-500/20 text-pink-400 flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-500 font-medium">Network Connection</div>
+                                <div class="text-slate-200 font-semibold">Connected 17 Aug 2026</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Card -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl">
+                    <form onsubmit="event.preventDefault(); alert('Thank you for your message! Nisha will get back to you shortly.');" class="space-y-6">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Your Name</label>
+                            <input type="text" placeholder="John Doe" required class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white focus:outline-none focus:border-indigo-500 transition-colors">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Email Address</label>
+                            <input type="email" placeholder="john@example.com" required class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white focus:outline-none focus:border-indigo-500 transition-colors">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Subject</label>
+                            <input type="text" placeholder="Project Inquiry / Synergy" required class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white focus:outline-none focus:border-indigo-500 transition-colors">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Message</label>
+                            <textarea rows="4" placeholder="How can Nisha support your goals?" required class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white focus:outline-none focus:border-indigo-500 transition-colors"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:opacity-90 transition-all shadow-lg shadow-indigo-500/25">
+                            Send Message <i class="fa-solid fa-paper-plane ml-2 text-sm"></i>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-slate-900 py-12 bg-slate-950 text-slate-500 text-sm">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div>
+                &copy; 2026 <span class="text-white font-medium">Nisha Parmar</span>. Project Manager at Sun Consultancy. All rights reserved.
+            </div>
+
+            <div class="flex items-center gap-6 text-slate-400">
+                <a href="#" class="hover:text-indigo-400 transition-colors text-lg"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition-colors text-lg"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition-colors text-lg"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
