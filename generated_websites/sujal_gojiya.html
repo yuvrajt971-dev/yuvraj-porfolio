@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sujal Gojiya | Executive Portfolio & Technology Strategist</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(99, 102, 241, 0.3);
+        }
+        .glow-avatar {
+            box-shadow: 0 0 35px rgba(168, 85, 247, 0.4);
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card:hover {
+            border-color: rgba(99, 102, 241, 0.4);
+            box-shadow: 0 10px 30px -10px rgba(99, 102, 241, 0.2);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #818cf8 0%, #c084fc 50%, #f472b6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- Background Ambient Light Spheres -->
+    <div class="fixed top-0 left-1/4 w-96 h-96 bg-indigo-600/15 rounded-full blur-3xl pointer-events-none -z-10 animate-pulse-slow"></div>
+    <div class="fixed bottom-1/3 right-1/4 w-[30rem] h-[30rem] bg-purple-600/15 rounded-full blur-3xl pointer-events-none -z-10 animate-pulse-slow" style="animation-delay: 2s;"></div>
+    <div class="fixed top-2/3 left-1/3 w-80 h-80 bg-pink-600/10 rounded-full blur-3xl pointer-events-none -z-10 animate-pulse-slow" style="animation-delay: 4s;"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-tight text-white flex items-center space-x-2">
+                <span class="w-8 h-8 rounded-lg bg-gradient-to-tr from-indigo-500 to-pink-500 flex items-center justify-center text-white text-sm font-extrabold shadow-lg shadow-indigo-500/30">SG</span>
+                <span>Sujal<span class="text-gradient">Gojiya</span></span>
+            </a>
+            
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-white transition-colors">About</a>
+                <a href="#services" class="hover:text-white transition-colors">Capabilities</a>
+                <a href="#endorsements" class="hover:text-white transition-colors">Endorsements</a>
+                <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+            </div>
+
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="#contact" class="px-5 py-2.5 rounded-full text-xs font-semibold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white shadow-lg shadow-indigo-500/25 hover:opacity-90 transition-all duration-300 transform hover:-translate-y-0.5">
+                    Get In Touch
+                </a>
+            </div>
+
+            <!-- Mobile menu button -->
+            <button class="md:hidden text-slate-300 hover:text-white focus:outline-none">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen pt-32 pb-20 flex items-center justify-center relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 text-center z-10">
+            
+            <!-- Glowing Double Gradient Avatar Frame -->
+            <div class="relative inline-block mb-8 animate-float">
+                <div class="absolute -inset-1.5 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full blur-md opacity-75 animate-pulse-slow"></div>
+                <div class="relative p-1 bg-slate-950 rounded-full">
+                    <img src="https://ui-avatars.com/api/?name=Sujal+Gojiya&size=200&background=0D8ABC&color=fff&bold=true" 
+                         alt="Sujal Gojiya" 
+                         class="w-36 h-36 md:w-44 md:h-44 rounded-full object-cover glow-avatar border-2 border-slate-700/50">
+                </div>
+                <span class="absolute bottom-2 right-2 px-3 py-1 bg-slate-900/90 text-emerald-400 text-xs font-semibold rounded-full border border-emerald-500/30 flex items-center gap-1.5 backdrop-blur-md">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span> Available
+                </span>
+            </div>
+
+            <!-- Name and Strategic Role -->
+            <h1 class="text-4xl md:text-7xl font-extrabold tracking-tight mb-4">
+                Sujal <span class="text-gradient">Gojiya</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-300 font-medium max-w-2xl mx-auto mb-6">
+                Technology Innovator & Strategic Digital Architect
+            </p>
+            <p class="text-slate-400 max-w-xl mx-auto text-sm md:text-base mb-10 leading-relaxed">
+                Transforming complex challenges into high-impact digital solutions through modern technology, scalable architecture, and user-centric innovation.
+            </p>
+
+            <!-- Call to Action Buttons -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+                <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold shadow-xl shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2">
+                    <span>Initiate Contact</span>
+                    <i class="fa-solid fa-arrow-right text-sm"></i>
+                </a>
+                <a href="#about" class="w-full sm:w-auto px-8 py-4 rounded-full bg-slate-900/80 hover:bg-slate-800 text-slate-200 font-semibold border border-slate-700/60 hover:border-slate-600 transition-all duration-300 backdrop-blur-md flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-compass text-slate-400"></i>
+                    <span>Explore Expertise</span>
+                </a>
+            </div>
+
+            <!-- Trust Badges -->
+            <div class="pt-8 border-t border-slate-800/80 max-w-4xl mx-auto">
+                <p class="text-xs uppercase tracking-widest text-slate-500 font-semibold mb-6">Core Competencies & Ecosystems</p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-slate-400 text-sm font-medium">
+                    <div class="flex items-center justify-center gap-2 glass-card py-3 px-4 rounded-xl">
+                        <i class="fa-solid fa-code text-indigo-400"></i> Modern Full-Stack
+                    </div>
+                    <div class="flex items-center justify-center gap-2 glass-card py-3 px-4 rounded-xl">
+                        <i class="fa-solid fa-cloud text-purple-400"></i> Cloud Infrastructure
+                    </div>
+                    <div class="flex items-center justify-center gap-2 glass-card py-3 px-4 rounded-xl">
+                        <i class="fa-solid fa-lightbulb text-pink-400"></i> Product Strategy
+                    </div>
+                    <div class="flex items-center justify-center gap-2 glass-card py-3 px-4 rounded-xl">
+                        <i class="fa-solid fa-shield-halved text-emerald-400"></i> Scalable Systems
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- Left Image Showcase -->
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-pink-500 rounded-3xl blur opacity-30 group-hover:opacity-75 transition duration-500"></div>
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" 
+                             alt="Team Collaboration" 
+                             class="w-full h-[420px] object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-4 glass-card rounded-xl">
+                            <p class="text-xs text-indigo-400 font-bold uppercase tracking-wider mb-1">Visionary Approach</p>
+                            <p class="text-slate-200 text-sm font-medium">Delivering enterprise-grade solutions with an relentless focus on performance and usability.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Content -->
+                <div class="space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold">
+                        <i class="fa-solid fa-user-astronaut"></i> Executive Overview
+                    </div>
+                    <h2 class="text-3xl md:text-5xl font-bold tracking-tight">
+                        Engineered for Impact, <br><span class="text-gradient">Driven by Vision.</span>
+                    </h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        Sujal Gojiya is a technology professional dedicated to designing and deploying next-generation digital experiences. With a strong blend of strategic thinking, execution discipline, and technical proficiency, Sujal helps bridge the gap between complex software requirements and streamlined business outcomes.
+                    </p>
+                    
+                    <!-- Metrics grid -->
+                    <div class="grid grid-cols-3 gap-4 pt-4">
+                        <div class="glass-card p-4 rounded-xl text-center">
+                            <span class="text-2xl md:text-3xl font-extrabold text-gradient">100%</span>
+                            <p class="text-xs text-slate-400 mt-1 font-medium">Quality Commitment</p>
+                        </div>
+                        <div class="glass-card p-4 rounded-xl text-center">
+                            <span class="text-2xl md:text-3xl font-extrabold text-gradient">Modern</span>
+                            <p class="text-xs text-slate-400 mt-1 font-medium">Tech Architecture</p>
+                        </div>
+                        <div class="glass-card p-4 rounded-xl text-center">
+                            <span class="text-2xl md:text-3xl font-extrabold text-gradient">Global</span>
+                            <p class="text-xs text-slate-400 mt-1 font-medium">Standard Delivery</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-slate-950/50 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-semibold mb-4">
+                    <i class="fa-solid fa-cubes"></i> Core Capabilities
+                </div>
+                <h2 class="text-3xl md:text-5xl font-bold">End-to-End <span class="text-gradient">Digital Solutions</span></h2>
+                <p class="text-slate-400 mt-4 text-sm md:text-base">Custom tailored services engineered to scale high-performing projects and platforms.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="glass-card p-8 rounded-2xl group transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Web Architecture & Full Stack</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Building robust, highly responsive, and resilient front-end and back-end web applications tailored to complex user workflows.</p>
+                    <a href="#contact" class="text-xs font-semibold text-indigo-400 hover:text-indigo-300 flex items-center gap-2">Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="glass-card p-8 rounded-2xl group transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-diagram-project"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Product Innovation & Strategy</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Translating strategic objectives into intuitive user experiences, scalable product roadmaps, and optimized architectures.</p>
+                    <a href="#contact" class="text-xs font-semibold text-purple-400 hover:text-purple-300 flex items-center gap-2">Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="glass-card p-8 rounded-2xl group transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Performance Optimization</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Auditing modern technology stacks to eliminate bottlenecks, improve cloud security, and accelerate site loading speeds.</p>
+                    <a href="#contact" class="text-xs font-semibold text-pink-400 hover:text-pink-300 flex items-center gap-2">Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Endorsements Section -->
+    <section id="endorsements" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-pink-500/10 border border-pink-500/20 text-pink-400 text-xs font-semibold mb-4">
+                    <i class="fa-solid fa-star"></i> Executive Trust
+                </div>
+                <h2 class="text-3xl md:text-5xl font-bold">Professional <span class="text-gradient">Endorsements</span></h2>
+                <p class="text-slate-400 mt-4 text-sm md:text-base">What industry colleagues and partners say about collaborating with Sujal Gojiya.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-xs gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                            "Sujal brings an exceptional mindset to digital architecture. The focus on clean execution and user interface design is second to none."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800/80">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-500 flex items-center justify-center font-bold text-sm">
+                            VP
+                        </div>
+                        <div>
+                            <p class="text-white text-sm font-semibold">VP of Technology</p>
+                            <p class="text-slate-500 text-xs">Enterprise Tech Group</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-xs gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                            "Collaborating with Sujal was seamless. A sharp problem solver who delivers resilient code and modern digital designs consistently."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800/80">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-purple-500 to-pink-500 flex items-center justify-center font-bold text-sm">
+                            DS
+                        </div>
+                        <div>
+                            <p class="text-white text-sm font-semibold">Director of Product</p>
+                            <p class="text-slate-500 text-xs">Digital Innovation Studio</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-xs gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                            "Outstanding strategic oversight. Sujal transforms abstract tech visions into high-impact, polished product executions."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800/80">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-pink-500 to-indigo-500 flex items-center justify-center font-bold text-sm">
+                            SL
+                        </div>
+                        <div>
+                            <p class="text-white text-sm font-semibold">Senior Technical Lead</p>
+                            <p class="text-slate-500 text-xs">Global Tech Solutions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-slate-950/70 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="glass-card rounded-3xl p-8 md:p-14 border border-slate-800">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    
+                    <!-- Left Info -->
+                    <div class="space-y-6">
+                        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold">
+                            <i class="fa-solid fa-paper-plane"></i> Let's Connect
+                        </div>
+                        <h2 class="text-3xl md:text-5xl font-bold">Start a <br><span class="text-gradient">Conversation</span></h2>
+                        <p class="text-slate-400 text-sm md:text-base leading-relaxed">
+                            Interested in discussing futuristic product development, technology advisory, or new digital opportunities? Reach out directly using the form or connection points below.
+                        </p>
+                        
+                        <div class="space-y-4 pt-4">
+                            <div class="flex items-center gap-4 text-slate-300">
+                                <div class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-indigo-400">
+                                    <i class="fa-solid fa-link"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-500 font-medium">Network Connection</p>
+                                    <p class="text-sm font-semibold">Established 13 Aug 2026</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4 text-slate-300">
+                                <div class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-purple-400">
+                                    <i class="fa-solid fa-globe"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-500 font-medium">Location & Availability</p>
+                                    <p class="text-sm font-semibold">Global / Remote Advisory</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Form -->
+                    <form onsubmit="event.preventDefault(); alert('Message sent successfully!');" class="space-y-5">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Name</label>
+                            <input type="text" placeholder="John Doe" required class="w-full px-4 py-3.5 rounded-xl bg-slate-900/90 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 text-sm transition-colors">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Email Address</label>
+                            <input type="email" placeholder="john@company.com" required class="w-full px-4 py-3.5 rounded-xl bg-slate-900/90 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 text-sm transition-colors">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Message</label>
+                            <textarea rows="4" placeholder="Share your vision or inquiry..." required class="w-full px-4 py-3.5 rounded-xl bg-slate-900/90 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 text-sm transition-colors"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold text-sm shadow-xl shadow-indigo-500/25 hover:opacity-90 transition-all duration-300">
+                            Send Message
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-900 text-center text-slate-500 text-xs">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© 2026 Sujal Gojiya. All rights reserved.</p>
+            <div class="flex space-x-6 text-slate-400 text-base">
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
