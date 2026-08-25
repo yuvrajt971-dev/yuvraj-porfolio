@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ansh Shah | Architectural & Interior Design Studio</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            500: '#0D8ABC',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -12px rgba(13, 138, 188, 0.35);
+        }
+        .glow-card:hover {
+            box-shadow: 0 0 30px -5px rgba(99, 102, 241, 0.25);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-indigo-500 to-purple-500 flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
+                    A
+                </div>
+                <div>
+                    <span class="font-extrabold text-lg tracking-wider text-white block leading-none">ANSH SHAH</span>
+                    <span class="text-[10px] text-cyan-400 font-medium tracking-widest uppercase">Architect & Designer</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
+                <a href="#portfolio" class="hover:text-cyan-400 transition-colors">Portfolio</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Testimonials</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+            </div>
+
+            <!-- CTA Button -->
+            <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 to-indigo-600 text-white text-sm font-semibold hover:opacity-90 transition-all shadow-md shadow-cyan-500/20 hover:shadow-cyan-500/40">
+                <span>Start a Project</span>
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden">
+        <!-- Background Ambient Glow -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-cyan-500/20 via-purple-500/20 to-pink-500/10 rounded-full blur-[120px] -z-10 pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+                
+                <!-- Left Text Content -->
+                <div class="flex-1 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 text-xs font-semibold text-cyan-400 mb-6 backdrop-blur-sm">
+                        <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                        Architectural Integrity & Bespoke Interiors
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-[1.1] mb-6">
+                        Architecting <span class="bg-gradient-to-r from-cyan-400 via-indigo-400 to-purple-400 bg-clip-text text-transparent">Timeless Spaces</span> & Modern Living.
+                    </h1>
+                    
+                    <p class="text-slate-400 text-lg sm:text-xl max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed mb-8">
+                        I am <strong class="text-slate-200 font-semibold">Ansh Shah</strong>, an independent Architect & Interior Designer. I turn complex structural visions into elegant, luxury physical realities with refined spatial craftsmanship.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-12">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white font-semibold text-center hover:opacity-95 transition-all shadow-lg shadow-cyan-500/25">
+                            Inquire for Project
+                        </a>
+                        <a href="#portfolio" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-800 font-semibold text-center transition-all">
+                            View Works
+                        </a>
+                    </div>
+
+                    <!-- Trust Badges -->
+                    <div class="pt-8 border-t border-slate-800/80 grid grid-cols-2 sm:grid-cols-3 gap-6 text-left">
+                        <div>
+                            <p class="text-2xl font-bold text-white">8+ Years</p>
+                            <p class="text-xs text-slate-400 mt-1">Design Mastery</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-bold text-white">60+ Projects</p>
+                            <p class="text-xs text-slate-400 mt-1">Completed World-Class</p>
+                        </div>
+                        <div class="col-span-2 sm:col-span-1">
+                            <p class="text-2xl font-bold text-white">100% Client</p>
+                            <p class="text-xs text-slate-400 mt-1">Satisfaction Rate</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Avatar & Interactive Card -->
+                <div class="flex-1 relative flex justify-center">
+                    <!-- Outer Decorative Glow Rings -->
+                    <div class="relative w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96">
+                        <div class="absolute inset-0 rounded-full bg-gradient-to-tr from-cyan-500 via-purple-500 to-pink-500 animate-spin-slow opacity-75 blur-md"></div>
+                        <div class="absolute inset-1 rounded-full bg-slate-950 p-2">
+                            <div class="w-full h-full rounded-full overflow-hidden border-2 border-slate-800 relative group">
+                                <img src="https://ui-avatars.com/api/?name=Ansh+Shah&size=200&background=0D8ABC&color=fff&bold=true" alt="Ansh Shah" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            </div>
+                        </div>
+
+                        <!-- Floating Micro Badge 1 -->
+                        <div class="absolute -bottom-4 -left-4 bg-slate-900/90 backdrop-blur-xl border border-slate-800 p-4 rounded-2xl shadow-2xl flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center font-bold">
+                                <i class="fa-solid fa-compass-drafting text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Specialization</p>
+                                <p class="text-sm font-bold text-white">Architectural CAD & BIM</p>
+                            </div>
+                        </div>
+
+                        <!-- Floating Micro Badge 2 -->
+                        <div class="absolute top-4 -right-4 bg-slate-900/90 backdrop-blur-xl border border-slate-800 p-3 px-4 rounded-2xl shadow-2xl flex items-center gap-2">
+                            <i class="fa-solid fa-star text-amber-400 text-xs"></i>
+                            <span class="text-xs font-bold text-white">Awarded Top Designer</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-24 bg-slate-900/40 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                
+                <!-- About Image Container -->
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-indigo-500 rounded-3xl blur opacity-25 group-hover:opacity-50 transition duration-500"></div>
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" alt="Architectural Interior Design by Ansh Shah" class="w-full h-[450px] object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-slate-950/80 backdrop-blur-md border border-slate-800">
+                            <p class="text-xs text-cyan-400 font-semibold uppercase tracking-wider">Design Philosophy</p>
+                            <p class="text-sm text-slate-200 mt-1">"Merging structural aesthetics with human-centric spatial functionality."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About Content -->
+                <div>
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-xs font-semibold text-cyan-400 mb-4">
+                        <i class="fa-solid fa-user text-[10px]"></i> About Ansh Shah
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-6">
+                        Mastering Spatial Harmony & Structural Elegance
+                    </h2>
+                    <p class="text-slate-400 leading-relaxed mb-6">
+                        As a self-employed Architect and Interior Designer, I approach every project as a canvas where functional utility meets timeless beauty. From conceptual sketching to technical blueprints and interior curation, my practice spans ultra-luxury residential properties, boutique commercial hubs, and modern spatial transformations.
+                    </p>
+                    <p class="text-slate-400 leading-relaxed mb-8">
+                        By staying ahead of modern sustainable architectural trends, parametric designs, and high-end material selection, I create environments that inspire productivity, serenity, and prestige.
+                    </p>
+
+                    <!-- Key Strengths Grid -->
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="p-4 rounded-xl bg-slate-900/60 backdrop-blur-xl border border-slate-800">
+                            <i class="fa-solid fa-ruler-combined text-cyan-400 text-xl mb-2"></i>
+                            <h4 class="font-semibold text-white text-sm">Precision Planning</h4>
+                            <p class="text-xs text-slate-400 mt-1">Optimized floorplans & seamless spatial utility.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-900/60 backdrop-blur-xl border border-slate-800">
+                            <i class="fa-solid fa-couch text-indigo-400 text-xl mb-2"></i>
+                            <h4 class="font-semibold text-white text-sm">Luxury Furnishings</h4>
+                            <p class="text-xs text-slate-400 mt-1">Custom furniture & bespoke interior detailing.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-xs font-semibold text-indigo-400 mb-4">
+                    <i class="fa-solid fa-layer-group text-[10px]"></i> Capabilities
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-4">
+                    End-to-End Design & Architectural Services
+                </h2>
+                <p class="text-slate-400 text-base">
+                    Comprehensive spatial solutions engineered from blue-sky concept renderings to precision execution.
+                </p>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service Card 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 p-8 rounded-2xl transition-all duration-300 group glow-card">
+                    <div class="w-14 h-14 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-cyan-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-building-columns"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Architectural Planning</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Complete structural concepts, building layout design, elevation engineering, and full municipal permit blueprints.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-cyan-400 hover:text-cyan-300">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-8 rounded-2xl transition-all duration-300 group glow-card">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-indigo-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-couch"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-indigo-400 transition-colors">Luxury Interior Design</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Tailored lighting, bespoke carpentry, luxury material selection, and sophisticated color schemes for high-end spaces.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-indigo-400 hover:text-indigo-300">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 p-8 rounded-2xl transition-all duration-300 group glow-card">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-purple-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-vr-cardboard"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">3D Visualization & BIM</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Photorealistic 3D architectural renders, virtual walk-throughs, and detailed Building Information Modeling (BIM).
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-purple-400 hover:text-purple-300">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-emerald-500/50 p-8 rounded-2xl transition-all duration-300 group glow-card">
+                    <div class="w-14 h-14 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-emerald-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-emerald-400 transition-colors">Sustainable Space Planning</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Eco-friendly architecture integrating biophilic design elements, energy-efficient spatial design, and sustainable materials.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-emerald-400 hover:text-emerald-300">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-amber-500/50 p-8 rounded-2xl transition-all duration-300 group glow-card">
+                    <div class="w-14 h-14 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-amber-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-amber-400 transition-colors">Commercial & Retail Design</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Strategic commercial interior planning designed to enhance customer flow, brand presence, and productivity.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-amber-400 hover:text-amber-300">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-pink-500/50 p-8 rounded-2xl transition-all duration-300 group glow-card">
+                    <div class="w-14 h-14 rounded-xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-pink-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-list-check"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-pink-400 transition-colors">Turnkey Supervision</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        End-to-end site inspection, contractor alignment, quality control, and schedule adherence from start to handover.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-pink-400 hover:text-pink-300">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO / FEATURED PROJECTS SECTION -->
+    <section id="portfolio" class="py-24 bg-slate-900/30 border-y border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+                <div>
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-xs font-semibold text-cyan-400 mb-4">
+                        <i class="fa-solid fa-images text-[10px]"></i> Selected Works
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+                        Featured Architectural Portfolios
+                    </h2>
+                </div>
+                <p class="text-slate-400 max-w-md mt-4 md:mt-0 text-sm">
+                    A curated selection of luxury villa designs, modern executive penthouses, and bespoke workplace concepts.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="group rounded-2xl overflow-hidden bg-slate-900 border border-slate-800 hover:border-cyan-500/50 transition-all duration-300">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=800&q=80" alt="Villa Minimalist" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="px-4 py-2 rounded-full bg-slate-900/90 text-white text-xs font-semibold border border-slate-700">View Project Details</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs text-cyan-400 font-semibold tracking-wider uppercase">Residential Architecture</span>
+                        <h3 class="text-xl font-bold text-white mt-1 group-hover:text-cyan-400 transition-colors">The Horizon Glass Villa</h3>
+                        <p class="text-slate-400 text-xs mt-2">Ultra-modern open floorplan integrating indoor outdoor living and minimalist aesthetic.</p>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="group rounded-2xl overflow-hidden bg-slate-900 border border-slate-800 hover:border-indigo-500/50 transition-all duration-300">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="Contemporary Lounge" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="px-4 py-2 rounded-full bg-slate-900/90 text-white text-xs font-semibold border border-slate-700">View Project Details</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs text-indigo-400 font-semibold tracking-wider uppercase">Interior Curation</span>
+                        <h3 class="text-xl font-bold text-white mt-1 group-hover:text-indigo-400 transition-colors">Aura Executive Penthouse</h3>
+                        <p class="text-slate-400 text-xs mt-2">Bespoke lighting fixtures, warm walnut wood acoustic paneling, and custom marble finishes.</p>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="group rounded-2xl overflow-hidden bg-slate-900 border border-slate-800 hover:border-purple-500/50 transition-all duration-300">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Corporate Studio" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="px-4 py-2 rounded-full bg-slate-900/90 text-white text-xs font-semibold border border-slate-700">View Project Details</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs text-purple-400 font-semibold tracking-wider uppercase">Commercial Design</span>
+                        <h3 class="text-xl font-bold text-white mt-1 group-hover:text-purple-400 transition-colors">Nexus Innovation Hub</h3>
+                        <p class="text-slate-400 text-xs mt-2">Biophilic open office workspace tailored for high creative collaboration and focus zones.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pink-500/10 border border-pink-500/20 text-xs font-semibold text-pink-400 mb-4">
+                    <i class="fa-solid fa-quote-left text-[10px]"></i> Client Endorsements
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+                    Trusted by Visionary Homeowners & Business Leaders
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Ansh's vision turned our raw space into a breathtaking luxury home. His precision and attention to every structural detail made the entire building process smooth and inspiring."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800/80">
+                        <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 font-bold flex items-center justify-center text-sm">
+                            VR
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-white">Vikram Mehta</p>
+                            <p class="text-xs text-slate-400">Luxury Villa Owner</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Working with Ansh Shah on our corporate office redesign was the best decision we made. He balanced functionality, acoustics, and high design effortlessly."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800/80">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 font-bold flex items-center justify-center text-sm">
+                            PS
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-white">Pooja Sharma</p>
+                            <p class="text-xs text-slate-400">Founder, Apex Digital</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Ansh's 3D renders were exact to the millimeter compared to the final built product. Truly a master architect who knows his craft thoroughly."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800/80">
+                        <div class="w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 font-bold flex items-center justify-center text-sm">
+                            RK
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-white">Rohan Kapoor</p>
+                            <p class="text-xs text-slate-400">Real Estate Developer</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-24 bg-slate-900/40 border-t border-slate-800/80 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+                
+                <!-- Contact Direct Info -->
+                <div>
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-xs font-semibold text-cyan-400 mb-4">
+                        <i class="fa-solid fa-paper-plane text-[10px]"></i> Get In Touch
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-6">
+                        Let's Discuss Your Next Architectural Venture
+                    </h2>
+                    <p class="text-slate-400 leading-relaxed mb-8">
+                        Whether you are planning a luxury private residence, a boutique commercial environment, or looking for spatial design consultancy, reach out directly.
+                    </p>
+
+                    <!-- Contact Details Cards -->
+                    <div class="space-y-4">
+                        <div class="p-5 rounded-2xl bg-slate-900 border border-slate-800 flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-lg font-bold">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Direct Contact Email</p>
+                                <p class="text-sm font-semibold text-white">ansh.shah.design@example.com</p>
+                            </div>
+                        </div>
+
+                        <div class="p-5 rounded-2xl bg-slate-900 border border-slate-800 flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-lg font-bold">
+                                <i class="fa-solid fa-building"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Design Studio</p>
+                                <p class="text-sm font-semibold text-white">Self-employed | Architectural Practice</p>
+                            </div>
+                        </div>
+
+                        <div class="p-5 rounded-2xl bg-slate-900 border border-slate-800 flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-lg font-bold">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Network Connected Date</p>
+                                <p class="text-sm font-semibold text-white">24 August 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Card -->
+                <div class="p-8 rounded-3xl bg-slate-900/80 backdrop-blur-xl border border-slate-800 shadow-2xl">
+                    <h3 class="text-xl font-bold text-white mb-6">Send a Project Inquiry</h3>
+                    <form onsubmit="event.preventDefault(); alert('Thank you, Ansh Shah will review your message shortly!');" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">Your Full Name</label>
+                            <input type="text" required placeholder="e.g. Sarah Jenkins" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 text-sm focus:outline-none focus:border-cyan-500 transition-colors">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">Email Address</label>
+                            <input type="email" required placeholder="name@company.com" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 text-sm focus:outline-none focus:border-cyan-500 transition-colors">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">Project Category</label>
+                            <select class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 text-sm focus:outline-none focus:border-cyan-500 transition-colors">
+                                <option>Residential Villa Architecture</option>
+                                <option>Luxury Interior Design</option>
+                                <option>Commercial / Retail Space</option>
+                                <option>3D BIM & Rendering Project</option>
+                                <option>General Consultation</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">Project Scope & Details</label>
+                            <textarea rows="4" required placeholder="Describe your site, timeline, and spatial requirements..." class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 text-sm focus:outline-none focus:border-cyan-500 transition-colors"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 text-white font-semibold text-sm hover:opacity-95 transition-all shadow-lg shadow-cyan-500/20">
+                            Submit Design Consultation Request
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-8 bg-slate-950 border-t border-slate-900 text-slate-500 text-xs text-center">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© 2026 Ansh Shah — Architect & Interior Designer. All rights reserved.</p>
+            <div class="flex items-center gap-6">
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-linkedin text-base"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-instagram text-base"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-behance text-base"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
