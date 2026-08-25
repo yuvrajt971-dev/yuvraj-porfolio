@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haya Sheth | Interior Design Consultant</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            purple: '#8B5CF6',
+                            pink: '#EC4899',
+                            indigo: '#6366F1',
+                        }
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'spin-slow': 'spin 12s linear infinite',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card:hover {
+            border-color: rgba(99, 102, 241, 0.5);
+            box-shadow: 0 10px 30px -10px rgba(99, 102, 241, 0.3);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #818CF8 0%, #C084FC 50%, #F472B6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-border {
+            position: relative;
+            border-radius: 9999px;
+            background: linear-gradient(135deg, #6366F1, #8B5CF6, #EC4899);
+            padding: 4px;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- Glowing Background Lights -->
+    <div class="fixed top-0 left-1/4 w-96 h-96 bg-indigo-600/20 blur-[120px] rounded-full pointer-events-none -z-10"></div>
+    <div class="fixed bottom-1/3 right-1/4 w-96 h-96 bg-pink-600/15 blur-[140px] rounded-full pointer-events-none -z-10"></div>
+    <div class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-purple-600/10 blur-[160px] rounded-full pointer-events-none -z-10"></div>
+
+    <!-- Navigation Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-tight">
+                Haya <span class="gradient-text">Sheth.</span>
+            </a>
+            
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+                <a href="#services" class="hover:text-indigo-400 transition-colors">Services</a>
+                <a href="#portfolio" class="hover:text-indigo-400 transition-colors">Portfolio</a>
+                <a href="#testimonials" class="hover:text-indigo-400 transition-colors">Testimonials</a>
+            </nav>
+
+            <a href="#contact" class="hidden sm:inline-flex items-center px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:opacity-95 transition-all shadow-lg shadow-indigo-500/25">
+                Book Consultation
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen pt-32 pb-20 flex items-center relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Hero Text Content -->
+            <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 text-xs font-medium text-indigo-400">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    Interior Design Consultant @ HomeLane
+                </div>
+
+                <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.1]">
+                    Crafting <span class="gradient-text">Bespoke Living</span> Spaces That Inspire.
+                </h1>
+
+                <p class="text-slate-400 text-lg sm:text-xl max-w-2xl font-light leading-relaxed mx-auto lg:mx-0">
+                    Transforming houses into architectural masterpieces. Specializing in functional luxury, personalized spatial planning, and high-end residential interiors.
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                    <a href="#portfolio" class="w-full sm:w-auto px-8 py-4 rounded-full font-semibold text-white bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 hover:shadow-lg hover:shadow-indigo-500/30 transition-all text-center">
+                        Explore Portfolio
+                    </a>
+                    <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full font-semibold text-slate-300 bg-slate-900 hover:bg-slate-800 border border-slate-800 transition-all text-center">
+                        Let's Connect
+                    </a>
+                </div>
+
+                <!-- Trust Badges & Stats -->
+                <div class="pt-10 border-t border-slate-900 grid grid-cols-3 gap-6 max-w-lg mx-auto lg:mx-0">
+                    <div>
+                        <p class="text-2xl sm:text-3xl font-extrabold text-white">150+</p>
+                        <p class="text-xs sm:text-sm text-slate-400">Homes Designed</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl sm:text-3xl font-extrabold text-white">99%</p>
+                        <p class="text-xs sm:text-sm text-slate-400">Client Satisfaction</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl sm:text-3xl font-extrabold text-white">5+ Yrs</p>
+                        <p class="text-xs sm:text-sm text-slate-400">Design Excellence</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Avatar / Visual -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative group">
+                    <!-- Glowing aura rings -->
+                    <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 blur-xl opacity-70 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse-slow"></div>
+                    <div class="relative gradient-border p-1 rounded-full">
+                        <img 
+                            src="https://ui-avatars.com/api/?name=Haya+Sheth&size=200&background=0D8ABC&color=fff&bold=true" 
+                            alt="Haya Sheth" 
+                            class="w-56 h-56 sm:w-72 sm:h-72 rounded-full object-cover shadow-2xl bg-slate-900 border-4 border-slate-950"
+                        />
+                    </div>
+                    <!-- Decorative Badge -->
+                    <div class="absolute bottom-4 right-0 glass-card px-4 py-2.5 rounded-2xl flex items-center gap-3 shadow-xl">
+                        <i class="fa-solid fa-award text-yellow-400 text-xl"></i>
+                        <div>
+                            <p class="text-xs font-bold text-slate-200">Top Consultant</p>
+                            <p class="text-[10px] text-slate-400">HomeLane Design Specialist</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-6 relative">
+                    <div class="relative rounded-3xl overflow-hidden glass-card p-2">
+                        <img 
+                            src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=800&q=80" 
+                            alt="Interior Design Studio Work" 
+                            class="w-full h-[450px] object-cover rounded-2xl hover:scale-105 transition-transform duration-700"
+                        />
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-indigo-400">Design Philosophy</span>
+                            <h3 class="text-xl font-bold text-white mt-1">Elegance Meets Everyday Functionality</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-sm font-semibold text-indigo-400 tracking-wider uppercase">About Haya Sheth</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
+                        Transforming Visionary Concepts into Living Realities.
+                    </h2>
+                    <p class="text-slate-400 leading-relaxed">
+                        As an Interior Design Consultant at <strong class="text-slate-200">HomeLane</strong>, I specialize in reimagining residential spaces through a blend of aesthetic elegance, ergonomic efficiency, and modern modular solutions.
+                    </p>
+                    <p class="text-slate-400 leading-relaxed">
+                        Whether designing sleek modern kitchens, cozy living spaces, or luxury master suites, my focus remains on understanding each client's unique lifestyle and bringing custom-tailored environments to life with seamless execution.
+                    </p>
+
+                    <!-- Feature Tags -->
+                    <div class="grid grid-cols-2 gap-4 pt-4">
+                        <div class="flex items-center gap-3 p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <i class="fa-solid fa-compass-drafting text-indigo-400 text-xl"></i>
+                            <span class="text-sm font-medium text-slate-200">3D Spatial Design</span>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <i class="fa-solid fa-layer-group text-purple-400 text-xl"></i>
+                            <span class="text-sm font-medium text-slate-200">Material Curation</span>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <i class="fa-solid fa-house-laptop text-pink-400 text-xl"></i>
+                            <span class="text-sm font-medium text-slate-200">Modular Solutions</span>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <i class="fa-solid fa-handshake text-emerald-400 text-xl"></i>
+                            <span class="text-sm font-medium text-slate-200">End-to-End Delivery</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 relative bg-slate-900/40 border-y border-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-sm font-semibold text-indigo-400 tracking-wider uppercase">Services Offered</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Comprehensive Design Services</h2>
+                <p class="text-slate-400 mt-4">Tailored spatial solutions engineered to elevate comfort, functionality, and sophistication.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="glass-card rounded-2xl p-8 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-2xl mb-6">
+                        <i class="fa-solid fa-ruler-combined"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Space Planning & Layouts</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Optimizing layout blueprints to maximize floor space, light flow, and natural movement tailored to your floor plan.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="glass-card rounded-2xl p-8 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 text-2xl mb-6">
+                        <i class="fa-solid fa-cube"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">3D Visualization & Render</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Experience hyper-realistic 3D walkthrough renderings of your future home before construction ever begins.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="glass-card rounded-2xl p-8 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400 text-2xl mb-6">
+                        <i class="fa-solid fa-kitchen-set"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Modular Kitchen & Storage</h3>
+                    <p class="text-slate-400 text-sm
