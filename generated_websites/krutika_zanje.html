@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krutika Zanje | Interior Design Portfolio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(99, 102, 241, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white relative overflow-x-hidden">
+
+    <!-- Background Ambient Glows -->
+    <div class="fixed top-0 left-1/4 w-96 h-96 bg-indigo-600/20 rounded-full blur-3xl pointer-events-none -z-10"></div>
+    <div class="fixed top-1/3 right-10 w-96 h-96 bg-purple-600/15 rounded-full blur-3xl pointer-events-none -z-10"></div>
+    <div class="fixed bottom-10 left-10 w-96 h-96 bg-pink-600/15 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+    <!-- Navigation Bar -->
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-tight text-white flex items-center gap-2">
+                <span class="w-8 h-8 rounded-lg bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center text-white font-extrabold text-sm shadow-lg shadow-indigo-500/30">KZ</span>
+                <span class="bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent">Krutika Zanje</span>
+            </a>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-indigo-400 transition-colors">Expertise</a>
+                <a href="#projects" class="hover:text-indigo-400 transition-colors">Projects</a>
+                <a href="#testimonials" class="hover:text-indigo-400 transition-colors">Endorsements</a>
+            </nav>
+            <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-semibold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200">
+                <span>Let's Connect</span>
+                <i class="fa-solid font-normal fa-arrow-right text-xs"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="pt-36 pb-20 md:pt-48 md:pb-32 max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 text-indigo-400 text-xs font-semibold tracking-wide uppercase">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    Interior Design Intern @ Foxline Architects
+                </div>
+                
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-[1.15]">
+                    Transforming spaces into <br class="hidden sm:block">
+                    <span class="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">Architectural Experiences.</span>
+                </h1>
+                
+                <p class="text-slate-400 text-lg max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                    Passionate about modern spatial design, functional aesthetics, and material innovation. Crafting immersive interior environments that harmonally bridge architecture and human lifestyle.
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                    <a href="#projects" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold shadow-xl shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.02] active:scale-[0.98] transition-all text-center">
+                        Explore Concepts
+                    </a>
+                    <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900 border border-slate-800 hover:border-slate-700 text-slate-200 font-semibold hover:bg-slate-800/50 transition-all text-center">
+                        Contact Me
+                    </a>
+                </div>
+
+                <!-- Trust Badges & Stats -->
+                <div class="pt-8 border-t border-slate-800/60 grid grid-cols-3 gap-6 text-center lg:text-left">
+                    <div>
+                        <div class="text-2xl font-bold text-white">3D Vis</div>
+                        <div class="text-xs text-slate-400 font-medium mt-1">Spatial Modeling</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-white">Modern</div>
+                        <div class="text-xs text-slate-400 font-medium mt-1">Material Curation</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-white">Precision</div>
+                        <div class="text-xs text-slate-400 font-medium mt-1">Space Planning</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Avatar Column -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative">
+                    <!-- Glowing Double Gradient Frame -->
+                    <div class="absolute -inset-1.5 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full blur-xl opacity-75 animate-pulse"></div>
+                    <div class="relative p-2 bg-slate-950 rounded-full border border-slate-800">
+                        <img src="https://ui-avatars.com/api/?name=Krutika+Zanje&size=200&background=0D8ABC&color=fff&bold=true" 
+                             alt="Krutika Zanje" 
+                             class="w-56 h-56 sm:w-72 sm:h-72 rounded-full object-cover shadow-2xl">
+                    </div>
+                    <div class="absolute -bottom-4 right-4 bg-slate-900/90 backdrop-blur-md border border-slate-800 py-2 px-4 rounded-2xl text-xs font-semibold text-slate-200 flex items-center gap-2 shadow-xl">
+                        <i class="fa-solid fa-compass-drafting text-purple-400"></i>
+                        <span>Foxline Architects</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-3xl p-8 md:p-12 hover:border-indigo-500/50 transition-all duration-300">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-6 relative rounded-2xl overflow-hidden group">
+                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" 
+                         alt="Architectural Interior Design" 
+                         class="w-full h-80 sm:h-96 object-cover rounded-2xl group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-6 left-6 right-6">
+                        <span class="text-xs font-bold uppercase tracking-wider text-indigo-400">Design Vision</span>
+                        <h3 class="text-xl font-semibold text-white mt-1">Harmonizing Form, Function & Materiality</h3>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold">
+                        About Me
+                    </div>
+                    <h2 class="text-3xl font-bold tracking-tight text-white">Elevating Interior Architecture</h2>
+                    <p class="text-slate-400 leading-relaxed">
+                        Currently interning at <strong class="text-white">Foxline Architects</strong>, I specialize in translating complex client requirements into evocative spatial layouts, detailed technical drafting, and modern material palletes. 
+                    </p>
+                    <p class="text-slate-400 leading-relaxed">
+                        My approach merges architectural rigor with contemporary interior aesthetics, ensuring every square foot serves both a sensory experience and functional purpose.
+                    </p>
+                    
+                    <div class="pt-4 flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 text-xs font-medium border border-slate-700">AutoCAD</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 text-xs font-medium border border-slate-700">SketchUp</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 text-xs font-medium border border-slate-700">3D Visualization</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 text-xs font-medium border border-slate-700">Space Planning</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 text-xs font-medium border border-slate-700">Material Curation</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 text-xs font-medium border border-slate-700">Lighting Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise / Services Section -->
+    <section id="expertise" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+            <h2 class="text-xs font-bold uppercase tracking-widest text-indigo-400">Core Services</h2>
+            <p class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">Architectural Interior Capabilities</p>
+            <p class="text-slate-400 text-sm">Delivering end-to-end design concepts from initial layout to fine details.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Card 1 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-6 rounded-2xl transition-all duration-300 group hover:-translate-y-1">
+                <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center text-xl mb-6 group-hover:scale-110 group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300">
+                    <i class="fa-solid fa-ruler-combined"></i>
+                </div>
+                <h3 class="text-lg font-semibold text-white mb-2">Space Planning</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Optimizing interior layouts for seamless flow, natural light integration, and ergonomic usability.</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-6 rounded-2xl transition-all duration-300 group hover:-translate-y-1">
+                <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center text-xl mb-6 group-hover:scale-110 group-hover:bg-purple-500 group-hover:text-white transition-all duration-300">
+                    <i class="fa-solid fa-cube"></i>
+                </div>
+                <h3 class="text-lg font-semibold text-white mb-2">3D Modeling & Vis</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Crafting realistic renders to visually convey architectural concepts, lighting, and finishes.</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-6 rounded-2xl transition-all duration-300 group hover:-translate-y-1">
+                <div class="w-12 h-12 rounded-xl bg-pink-500/10 border border-pink-500/20 text-pink-400 flex items-center justify-center text-xl mb-6 group-hover:scale-110 group-hover:bg-pink-500 group-hover:text-white transition-all duration-300">
+                    <i class="fa-solid fa-swatchbook"></i>
+                </div>
+                <h3 class="text-lg font-semibold text-white mb-2">Material Selection</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Curating textures, fabrics, sustainable woods, and natural stones to establish refined atmospheres.</p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-6 rounded-2xl transition-all duration-300 group hover:-translate-y-1">
+                <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl mb-6 group-hover:scale-110 group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300">
+                    <i class="fa-solid fa-lightbulb"></i>
+                </div>
+                <h3 class="text-lg font-semibold text-white mb-2">Lighting Schemes</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Designing mood-centric ambient, task, and accent illumination to elevate spatial warmth.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
+            <div>
+                <h2 class="text-xs font-bold uppercase tracking-widest text-indigo-400">Portfolio Highlights</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white mt-2">Interior Concepts & Studies</p>
+            </div>
+            <a href="#contact" class="text-sm font-semibold text-indigo-400 hover:text-indigo-300 flex items-center gap-2">
+                Inquire about custom designs <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Project 1 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 rounded-2xl overflow-hidden transition-all duration-300 group">
+                <div class="h-60 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" 
+                         alt="Minimalist Living Space" 
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <span class="absolute top-4 left-4 bg-slate-950/80 backdrop-blur-md border border-slate-800 px-3 py-1 rounded-full text-xs font-semibold text-slate-200">Residential</span>
+                </div>
+                <div class="p-6 space-y-3">
+                    <h3 class="text-lg font-bold text-white group-hover:text-indigo-400 transition-colors">Minimalist Open-Concept Residence</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Emphasizing clean lines, warm acoustic timber paneling, and indirect LED architectural lighting.</p>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 rounded-2xl overflow-hidden transition-all duration-300 group">
+                <div class="h-60 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" 
+                         alt="Contemporary Workspace Design" 
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <span class="absolute top-4 left-4 bg-slate-950/80 backdrop-blur-md border border-slate-800 px-3 py-1 rounded-full text-xs font-semibold text-slate-200">Commercial</span>
+                </div>
+                <div class="p-6 space-y-3">
+                    <h3 class="text-lg font-bold text-white group-hover:text-indigo-400 transition-colors">Biophilic Collaborative Workspace</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Integrating greenery, modular glass partitions, and flexible breakout zones for creative teams.</p>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 rounded-2xl overflow-hidden transition-all duration-300 group">
+                <div class="h-60 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80" 
+                         alt="Bespoke Hospitality Interior" 
+                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <span class="absolute top-4 left-4 bg-slate-950/80 backdrop-blur-md border border-slate-800 px-3 py-1 rounded-full text-xs font-semibold text-slate-200">Hospitality</span>
+                </div>
+                <div class="p-6 space-y-3">
+                    <h3 class="text-lg font-bold text-white group-hover:text-indigo-400 transition-colors">Luxury Boutique Lounge Concept</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">A rich palette of brushed brass, textured stone, and custom velvet seating arrangements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Endorsements -->
+    <section id="testimonials" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+            <h2 class="text-xs font-bold uppercase tracking-widest text-indigo-400">Endorsements</h2>
+            <p class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">What Colleagues & Mentors Say</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl hover:border-indigo-500/50 transition-all duration-300">
+                <div class="flex items-center gap-1 text-amber-400 text-sm mb-4">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                    "Krutika brings a keen architectural eye to interior spatial layouts. Her technical precision and modern visual sensibilities make her a standout designer at Foxline Architects."
+                </p>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-500 flex items-center justify-center font-bold text-white text-xs">
+                        FA
+                    </div>
+                    <div>
+                        <div class="text-sm font-semibold text-white">Senior Architect Mentor</div>
+                        <div class="text-xs text-slate-400">Foxline Architects</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl hover:border-indigo-500/50 transition-all duration-300">
+                <div class="flex items-center gap-1 text-amber-400 text-sm mb-4">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                    "Exceptional speed in drafting layouts and an intuitive grasp of modern material combinations. She transforms complex concepts into stunning reality."
+                </p>
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-purple-500 to-pink-500 flex items-center justify-center font-bold text-white text-xs">
+                        CD
+                    </div>
+                    <div>
+                        <div class="text-sm font-semibold text-white">Design Project Lead</div>
+                        <div class="text-xs text-slate-400">Collaborative Design Team</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 rounded-3xl p-8 md:p-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="text-xs font-bold uppercase tracking-wider text-indigo-400">Get In Touch</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Let's build stunning spaces together.</h2>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Interested in discussing interior architecture concepts, layout consultations, or collaborative projects? Reach out via the form or connection channels.
+                    </p>
+
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-center gap-4 text-slate-300 text-sm">
+                            <div class="w-10 h-10 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-indigo-400">
+                                <i class="fa-solid fa-building text-base"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400">Current Role</div>
+                                <div class="font-semibold text-white">Interior Design Intern @ Foxline Architects</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 text-slate-300 text-sm">
+                            <div class="w-10 h-10 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-purple-400">
+                                <i class="fa-solid fa-calendar-check text-base"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400">Network Connection</div>
+                                <div class="font-semibold text-white">Connected 23 Aug 2026</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7">
+                    <form onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent successfully.');" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-medium text-slate-300 mb-1">Your Name</label>
+                                <input type="text" placeholder="John Doe" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-medium text-slate-300 mb-1">Your Email</label>
+                                <input type="email" placeholder="john@example.com" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-medium text-slate-300 mb-1">Subject</label>
+                            <input type="text" placeholder="Design Inquiry / Collaboration" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-medium text-slate-300 mb-1">Message</label>
+                            <textarea rows="4" placeholder="Tell me about your project or spatial design requirements..." required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors"></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.01] active:scale-[0.99] transition-all">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800/80 py-8 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© 2026 Krutika Zanje. All rights reserved.</p>
+            <div class="flex items-center gap-4 text-slate-400">
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-brands fa-linkedin text-lg"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-brands fa-instagram text-lg"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-brands fa-behance text-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
