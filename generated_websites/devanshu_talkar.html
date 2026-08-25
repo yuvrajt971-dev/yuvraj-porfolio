@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devanshu Talkar | Junior Interior Designer</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            cyan: '#0D8ABC',
+                            purple: '#a855f7',
+                            pink: '#ec4899'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+        }
+        
+        .glass-card {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(51, 65, 85, 0.5);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(99, 102, 241, 0.5);
+            box-shadow: 0 10px 30px -10px rgba(99, 102, 241, 0.2);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .glow-bg {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(120px);
+            opacity: 0.25;
+            z-index: 0;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white relative overflow-x-hidden">
+
+    <!-- Ambient Glow Backgrounds -->
+    <div class="glow-bg w-[500px] h-[500px] bg-cyan-500 top-0 -left-40"></div>
+    <div class="glow-bg w-[600px] h-[600px] bg-indigo-600 top-1/3 -right-40"></div>
+    <div class="glow-bg w-[500px] h-[500px] bg-purple-600 bottom-1/4 -left-40"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/60 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-tight text-white flex items-center gap-2">
+                <span class="w-9 h-9 rounded-lg bg-gradient-to-tr from-cyan-500 via-indigo-500 to-purple-500 flex items-center justify-center text-white text-sm font-extrabold shadow-lg shadow-cyan-500/20">
+                    DT
+                </span>
+                <span>Devanshu<span class="text-cyan-400">.</span></span>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-cyan-400 transition-colors">Expertise</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
+                <a href="#portfolio" class="hover:text-cyan-400 transition-colors">Portfolio</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Endorsements</a>
+            </div>
+
+            <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-semibold bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white hover:opacity-95 shadow-lg shadow-indigo-500/25 transition-all duration-300 transform hover:-translate-y-0.5">
+                <span>Let's Connect</span>
+                <i class="fa-solid font-xs fa-arrow-right"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-20 md:pt-48 md:pb-32 px-6 overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Content -->
+                <div class="lg:col-span-7 space-y-8 text-center lg:text-left z-10">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 text-cyan-400 text-xs font-semibold tracking-wide">
+                        <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                        Junior Interior Designer at A + t associates
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight">
+                        Crafting Immersive <br/>
+                        <span class="gradient-text">Spatial Experiences</span>
+                    </h1>
+
+                    <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
+                        Transforming concepts into refined, functional interior spaces. Combining architectural precision, spatial fluidity, and modern aesthetics at A + t associates.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white font-semibold text-sm shadow-xl shadow-cyan-500/20 hover:shadow-cyan-500/35 transition-all duration-300 text-center transform hover:-translate-y-0.5">
+                            Get In Touch
+                        </a>
+                        <a href="#portfolio" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-200 font-semibold text-sm transition-all duration-300 text-center flex items-center justify-center gap-2">
+                            <span>View Portfolio</span>
+                            <i class="fa-solid fa-arrow-down text-xs text-slate-400"></i>
+                        </a>
+                    </div>
+
+                    <!-- Trust Stats -->
+                    <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-6 max-w-lg mx-auto lg:mx-0">
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-bold text-white">A + t</div>
+                            <div class="text-xs text-slate-400 font-medium mt-1">Design Associates</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-bold text-cyan-400">100%</div>
+                            <div class="text-xs text-slate-400 font-medium mt-1">Detail Driven</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-bold text-purple-400">3D</div>
+                            <div class="text-xs text-slate-400 font-medium mt-1">Spatial Design</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Avatar Frame -->
+                <div class="lg:col-span-5 flex justify-center z-10">
+                    <div class="relative group">
+                        <!-- Double Glowing Gradient Ring -->
+                        <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-cyan-500 via-indigo-500 to-pink-500 blur-xl opacity-70 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+                        <div class="absolute -inset-0.5 rounded-full bg-gradient-to-r from-cyan-400 to-purple-600 opacity-90"></div>
+                        
+                        <!-- Avatar Wrapper -->
+                        <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full p-2 bg-slate-950 flex items-center justify-center overflow-hidden">
+                            <img src="https://ui-avatars.com/api/?name=Devanshu+Talkar&size=200&background=0D8ABC&color=fff&bold=true" 
+                                 alt="Devanshu Talkar" 
+                                 class="w-full h-full object-cover rounded-full transition-transform duration-500 group-hover:scale-105">
+                        </div>
+
+                        <!-- Badge Overlay -->
+                        <div class="absolute -bottom-2 -right-2 bg-slate-900/90 backdrop-blur-md border border-slate-800 text-slate-200 px-4 py-2 rounded-2xl shadow-xl flex items-center gap-3">
+                            <div class="w-3 h-3 rounded-full bg-emerald-400 animate-ping"></div>
+                            <span class="text-xs font-semibold">Available for Projects</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-24 px-6 relative z-10 border-t border-slate-800/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Showcase Image -->
+                <div class="lg:col-span-6">
+                    <div class="relative rounded-3xl overflow-hidden border border-slate-800 shadow-2xl group">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent z-10 opacity-60"></div>
+                        <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=800&q=80" 
+                             alt="Interior Architecture Workspace" 
+                             class="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute bottom-6 left-6 right-6 z-20">
+                            <span class="text-xs uppercase tracking-widest text-cyan-400 font-semibold">Design Studio Excellence</span>
+                            <h3 class="text-xl font-bold text-white mt-1">Blending Modern Aesthetics with Practical Spatial Design</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text & Bio -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-cyan-500/10 text-cyan-400 text-xs font-semibold">
+                        <i class="fa-solid fa-user-ninja"></i> About Me
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">
+                        Devanshu Talkar
+                    </h2>
+                    <p class="text-indigo-400 text-sm font-semibold tracking-wide uppercase">
+                        Junior Interior Designer at A + t associates
+                    </p>
+                    <p class="text-slate-300 text-base leading-relaxed font-light">
+                        As a dedicated Junior Interior Designer at <strong class="text-white font-medium">A + t associates</strong>, I focus on transforming abstract architectural ideas into cohesive, stunning, and highly functional interior environments. 
+                    </p>
+                    <p class="text-slate-400 text-sm leading-relaxed font-light">
+                        My approach merges material innovation, precise spatial planning, light optimization, and custom FF&E (Furniture, Fixtures & Equipment) selection to deliver elevate modern interior experiences tailored for contemporary living and commercial spaces.
+                    </p>
+
+                    <!-- Key Skills Tags -->
+                    <div class="pt-4">
+                        <h4 class="text-xs uppercase tracking-wider text-slate-400 font-semibold mb-3">Core Competencies</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3.5 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-xs text-slate-300 font-medium">Spatial Planning</span>
+                            <span class="px-3.5 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-xs text-slate-300 font-medium">3D Visualization</span>
+                            <span class="px-3.5 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-xs text-slate-300 font-medium">AutoCAD Drafting</span>
+                            <span class="px-3.5 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-xs text-slate-300 font-medium">Material Curation</span>
+                            <span class="px-3.5 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-xs text-slate-300 font-medium">Lighting Concepts</span>
+                            <span class="px-3.5 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-xs text-slate-300 font-medium">Site Coordination</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 px-6 relative z-10">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-purple-500/10 text-purple-400 text-xs font-semibold mb-3">
+                    <i class="fa-solid fa-layer-group"></i> Interior Solutions
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">
+                    Comprehensive Design Services
+                </h2>
+                <p class="text-slate-400 text-sm mt-3">
+                    Delivering end-to-end interior design solutions tailored to enhance liveability, brand identity, and structural aesthetic.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="glass-card rounded-2xl p-8 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-compass-drafting"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Space Planning & Layout</h3>
+                    <p class="text-slate-400 text-sm font-light leading-relaxed">
+                        Optimizing interior footprints for seamless traffic flow, ergonomic comfort, and functional space utilization.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="glass-card rounded-2xl p-8 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-cube"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">3D Rendering & Modeling</h3>
+                    <p class="text-slate-400 text-sm font-light leading-relaxed">
+                        Creating realistic 3D visualizations and walk-throughs to provide clear pre-construction design clarity.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="glass-card rounded-2xl p-8 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-swatchbook"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Material & Finishes Curation</h3>
+                    <p class="text-slate-400 text-sm font-light leading-relaxed">
+                        Handpicking luxury textiles, sustainable woods, natural stones, and durable finishes matching design tone.
+                    </p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="glass-card rounded-2xl p-8 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-pink-500/10 border border-pink-500/30 flex items-center justify-center text-pink-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Lighting Design</h3>
+                    <p class="text-slate-400 text-sm font-light leading-relaxed">
+                        Designing layered lighting schemes including ambient, task, and accent fixtures to create modern moodscapes.
+                    </p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="glass-card rounded-2xl p-8 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-couch"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Custom Furniture Selection</h3>
+                    <p class="text-slate-400 text-sm font-light leading-relaxed">
+                        Curating bespoke FF&E items tailored to unique architectural styles and specific client lifestyle needs.
+                    </p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="glass-card rounded-2xl p-8 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-clipboard-check"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">On-Site Design Assistance</h3>
+                    <p class="text-slate-400 text-sm font-light leading-relaxed">
+                        Collaborating on-site with contractors and project teams at A + t associates to guarantee execution accuracy.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio / Showcase Section -->
+    <section id="portfolio" class="py-24 px-6 relative z-10 border-t border-slate-800/50 bg-slate-950/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+                <div>
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-pink-500/10 text-pink-400 text-xs font-semibold mb-3">
+                        <i class="fa-solid fa-grip"></i> Featured Works
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">Design Showcase</h2>
+                </div>
+                <p class="text-slate-400 text-sm max-w-md">
+                    Explore dynamic interior projects highlighting spatial harmony, modern luxury, and refined craftsmanship.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="glass-card rounded-2xl overflow-hidden group">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80" 
+                             alt="Minimalist Living Space" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="px-4 py-2 rounded-full bg-slate-900/90 text-white text-xs font-medium">Minimalist Living Concept</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs text-cyan-400 font-semibold">Residential</span>
+                        <h3 class="text-lg font-bold text-white mt-1">Modern Luxury Sanctuary</h3>
+                        <p class="text-slate-400 text-xs mt-2 font-light">Warm wood accents paired with soft linear illumination and open spatial layout.</p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="glass-card rounded-2xl overflow-hidden group">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" 
+                             alt="Contemporary Executive Office" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="px-4 py-2 rounded-full bg-slate-900/90 text-white text-xs font-medium">Corporate Workspaces</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs text-indigo-400 font-semibold">Commercial</span>
+                        <h3 class="text-lg font-bold text-white mt-1">Contemporary Studio Environment</h3>
+                        <p class="text-slate-400 text-xs mt-2 font-light">Ergonomic workstation arrangement focusing on daylight integration and sound isolation.</p>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="glass-card rounded-2xl overflow-hidden group">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80" 
+                             alt="Bespoke Dining & Kitchen" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <span class="px-4 py-2 rounded-full bg-slate-900/90 text-white text-xs font-medium">Custom Interior Design</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs text-purple-400 font-semibold">Hospitality & Dining</span>
+                        <h3 class="text-lg font-bold text-white mt-1">Bespoke Dining Aesthetic</h3>
+                        <p class="text-slate-400 text-xs mt-2 font-light">Custom stone counter, integrated mood lighting, and curated texture palette.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Endorsements -->
+    <section id="testimonials" class="py-24 px-6 relative z-10">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-emerald-500/10 text-emerald-400 text-xs font-semibold mb-3">
+                    <i class="fa-solid fa-star"></i> Endorsements
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">
+                    Peer & Client Feedback
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Testimonial 1 -->
+                <div class="glass-card rounded-2xl p-8 relative">
+                    <div class="flex items-center gap-1 text-amber-400 text-xs mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm italic leading-relaxed font-light mb-6">
+                        "Devanshu brings remarkable spatial intuition and sharp attention to detail. His proficiency in 3D rendering and material selection adds immense value to our design team at A + t associates."
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-cyan-500 to-indigo-500 flex items-center justify-center text-xs font-bold text-white">
+                            AA
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-white">Senior Architect</div>
+                            <div class="text-xs text-slate-400">A + t associates</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="glass-card rounded-2xl p-8 relative">
+                    <div class="flex items-center gap-1 text-amber-400 text-xs mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm italic leading-relaxed font-light mb-6">
+                        "Creative, diligent, and highly reliable. Devanshu consistently turns complex layout briefs into visually captivating and practical interior designs with modern elegance."
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-purple-500 to-pink-500 flex items-center justify-center text-xs font-bold text-white">
+                            SD
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-white">Project Lead</div>
+                            <div class="text-xs text-slate-400">Design Collaborator</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Details Section -->
+    <section id="contact" class="py-24 px-6 relative z-10 border-t border-slate-800/50 bg-slate-950/80">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Direct Details -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-cyan-500/10 text-cyan-400 text-xs font-semibold mb-3">
+                            <i class="fa-solid fa-envelope"></i> Get In Touch
+                        </div>
+                        <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">Let's Discuss Your Spatial Project</h2>
+                        <p class="text-slate-400 text-sm mt-3 font-light">
+                            Interested in collaborating or discussing interior architectural concepts? Reach out directly using the form or connect via professional channels.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="glass-card p-5 rounded-xl flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-building"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 font-medium">Current Firm</div>
+                                <div class="text-sm font-semibold text-white">A + t associates</div>
+                            </div>
+                        </div>
+
+                        <div class="glass-card p-5 rounded-xl flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 font-medium">Role</div>
+                                <div class="text-sm font-semibold text-white">Junior Interior Designer</div>
+                            </div>
+                        </div>
+
+                        <div class="glass-card p-5 rounded-xl flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 font-medium">Network Connection Date</div>
+                                <div class="text-sm font-semibold text-white">23 Aug 2026</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Networks -->
+                    <div class="pt-2">
+                        <div class="text-xs text-slate-400 font-medium mb-3">Connect Online</div>
+                        <div class="flex gap-3">
+                            <a href="#" class="w-10 h-10 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:text-cyan-400 hover:border-cyan-500/50 transition-all">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:text-cyan-400 hover:border-cyan-500/50 transition-all">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:text-cyan-400 hover:border-cyan-500/50 transition-all">
+                                <i class="fa-solid fa-globe"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Contact Form -->
+                <div class="lg:col-span-7">
+                    <form onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent successfully.');" class="glass-card p-8 sm:p-10 rounded-3xl space-y-6">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Your Name</label>
+                                <input type="text" required placeholder="John Doe" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Your Email</label>
+                                <input type="email" required placeholder="john@example.com" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">Subject</label>
+                            <input type="text" required placeholder="Interior Design Project Inquiry" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 focus:outline-none focus:border-cyan-500 transition-colors">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">Message</label>
+                            <textarea rows="5" required placeholder="Tell me about your space, design timeline, or collaboration ideas..." class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 focus:outline-none focus:border-cyan-500 transition-colors resize-none"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white font-semibold text-sm shadow-xl shadow-cyan-500/20 hover:shadow-cyan-500/35 transition-all duration-300 transform hover:-translate-y-0.5">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-6 border-t border-slate-800/80 bg-slate-950 text-slate-500 text-xs">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© 2026 Devanshu Talkar. Junior Interior Designer at A + t associates. All rights reserved.</p>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-slate-300 transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-slate-300 transition-colors">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
