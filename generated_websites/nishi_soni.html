@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nishi Soni | Director of NS Interior Design</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f5f3ff',
+                            400: '#a78bfa',
+                            500: '#8b5cf6',
+                            600: '#7c3aed',
+                            900: '#4c1d95',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-border {
+            position: relative;
+            background-clip: padding-box;
+        }
+        .gradient-border::before {
+            content: '';
+            position: absolute;
+            top: -2px; right: -2px; bottom: -2px; left: -2px;
+            z-index: -1;
+            background: linear-gradient(135deg, #6366f1, #a855f7, #ec4899);
+            border-radius: inherit;
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card:hover {
+            border-color: rgba(99, 102, 241, 0.4);
+            box-shadow: 0 10px 30px -10px rgba(99, 102, 241, 0.2);
+        }
+        .glow-bg {
+            position: absolute;
+            width: 450px;
+            height: 450px;
+            border-radius: 50%;
+            filter: blur(120px);
+            opacity: 0.25;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- Background Ambient Glows -->
+    <div class="glow-bg bg-indigo-600 top-0 left-1/4"></div>
+    <div class="glow-bg bg-purple-600 top-1/3 right-10"></div>
+    <div class="glow-bg bg-pink-600 bottom-1/4 left-10"></div>
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 p-0.5 flex items-center justify-center shadow-lg shadow-indigo-500/20 group-hover:scale-105 transition-transform duration-300">
+                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+                        <span class="font-extrabold text-transparent bg-clip-text bg-gradient-to-tr from-indigo-400 to-pink-400 text-lg">NS</span>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-lg tracking-tight text-white group-hover:text-indigo-300 transition-colors">Nishi Soni</span>
+                    <span class="text-xs text-slate-400 font-medium tracking-wide uppercase">NS Interior Design</span>
+                </div>
+            </a>
+
+            <!-- Nav Links -->
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+                <a href="#services" class="hover:text-indigo-400 transition-colors">Services</a>
+                <a href="#portfolio" class="hover:text-indigo-400 transition-colors">Portfolio</a>
+                <a href="#testimonials" class="hover:text-indigo-400 transition-colors">Endorsements</a>
+                <a href="#contact" class="hover:text-indigo-400 transition-colors">Contact</a>
+            </div>
+
+            <!-- CTA -->
+            <div class="hidden sm:flex items-center gap-4">
+                <a href="#contact" class="px-5 py-2.5 text-sm font-semibold rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40 hover:scale-[1.02] transition-all duration-300">
+                    Book Consultation
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-24 md:pt-48 md:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Text Content -->
+                <div class="lg:col-span-7 flex flex-col items-start space-y-6">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border border-slate-700/50 text-indigo-300 text-xs font-semibold tracking-wider uppercase">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        Director of NS Interior Design Studio
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.1]">
+                        Transforming Spaces Into <span class="gradient-text">Architectural Art.</span>
+                    </h1>
+                    
+                    <p class="text-lg sm:text-xl text-slate-400 max-w-2xl leading-relaxed font-normal">
+                        Elevating luxury residential and commercial environments through refined craftsmanship, spatial precision, and bespoke aesthetics under the vision of <strong class="text-slate-200">Nishi Soni</strong>.
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-wrap items-center gap-4 pt-4 w-full sm:w-auto">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold text-center shadow-xl shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.02] transition-all duration-300">
+                            Start Your Project <i class="fa-solid font-bold fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                        <a href="#portfolio" class="w-full sm:w-auto px-8 py-4 rounded-full glass-card hover:bg-slate-800/80 text-white font-semibold text-center transition-all duration-300">
+                            Explore Studio Works
+                        </a>
+                    </div>
+
+                    <!-- Trust Badges -->
+                    <div class="pt-8 grid grid-cols-3 gap-6 border-t border-slate-800/80 w-full max-w-lg">
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-white">100%</p>
+                            <p class="text-xs text-slate-400 font-medium mt-1">Bespoke Design</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-white">150+</p>
+                            <p class="text-xs text-slate-400 font-medium mt-1">Spaces Transformed</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-white">Premium</p>
+                            <p class="text-xs text-slate-400 font-medium mt-1">Turnkey Delivery</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Avatar & Hero Card -->
+                <div class="lg:col-span-5 flex justify-center lg:justify-end">
+                    <div class="relative w-full max-w-md">
+                        <!-- Ambient Glow Frame -->
+                        <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-3xl blur-xl opacity-75 group-hover:opacity-100 transition duration-1000 animate-tilt"></div>
+                        
+                        <div class="relative glass-card rounded-3xl p-8 border border-slate-700/60 shadow-2xl flex flex-col items-center text-center">
+                            <!-- Avatar with Double Gradient Frame -->
+                            <div class="relative mb-6">
+                                <div class="p-1.5 rounded-full bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 shadow-xl shadow-purple-500/30">
+                                    <div class="p-1 bg-slate-950 rounded-full">
+                                        <img src="https://ui-avatars.com/api/?name=Nishi+Soni&size=200&background=0D8ABC&color=fff&bold=true" 
+                                             alt="Nishi Soni" 
+                                             class="w-32 h-32 rounded-full object-cover">
+                                    </div>
+                                </div>
+                                <div class="absolute bottom-1 right-1 bg-emerald-500 border-4 border-slate-950 p-2 rounded-full shadow-lg" title="Available for Design Commissions"></div>
+                            </div>
+
+                            <h3 class="text-2xl font-bold text-white">Nishi Soni</h3>
+                            <p class="text-indigo-400 text-sm font-semibold mt-1">Director & Creative Lead</p>
+                            <p class="text-slate-400 text-xs mt-0.5">NSInterior Design studio</p>
+
+                            <div class="w-full bg-slate-800/50 rounded-2xl p-4 mt-6 border border-slate-700/40 text-left space-y-3">
+                                <div class="flex items-center justify-between text-xs">
+                                    <span class="text-slate-400"><i class="fa-solid fa-gem text-indigo-400 mr-2"></i>Specialization</span>
+                                    <span class="text-slate-200 font-medium">Luxury Interiors & Spatial Architecture</span>
+                                </div>
+                                <div class="flex items-center justify-between text-xs">
+                                    <span class="text-slate-400"><i class="fa-solid fa-location-dot text-pink-400 mr-2"></i>Studio Reach</span>
+                                    <span class="text-slate-200 font-medium">Global & High-End Residential</span>
+                                </div>
+                                <div class="flex items-center justify-between text-xs">
+                                    <span class="text-slate-400"><i class="fa-solid fa-award text-amber-400 mr-2"></i>Design Standard</span>
+                                    <span class="text-slate-200 font-medium">Signature Elegance</span>
+                                </div>
+                            </div>
+
+                            <a href="#contact" class="mt-6 w-full py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-medium text-sm transition-colors border border-slate-700">
+                                Connect With Nishi Direct
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-24 relative bg-slate-950/50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Image Side -->
+                <div class="lg:col-span-6 relative">
+                    <div class="relative rounded-3xl overflow-hidden glass-card p-2 border border-slate-800 shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=800&q=80" 
+                             alt="NS Interior Design Studio Work" 
+                             class="w-full h-[450px] object-cover rounded-2xl filter brightness-95 hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80 rounded-2xl"></div>
+                        
+                        <!-- Floating Badge on Image -->
+                        <div class="absolute bottom-8 left-8 right-8 glass-card p-4 rounded-xl border border-white/10 backdrop-blur-xl">
+                            <p class="text-xs font-semibold uppercase tracking-wider text-indigo-400">Design Philosophy</p>
+                            <p class="text-sm text-slate-200 mt-1 italic">"Interior design is not merely filling a space; it is crafting an immersive sensory story."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Side -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full glass-card border border-indigo-500/30 text-indigo-400 text-xs font-semibold">
+                        <i class="fa-solid fa-compass-drafting"></i> Creative Visionary
+                    </div>
+
+                    <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
+                        Crafting Sophisticated Spaces with Signature Precision
+                    </h2>
+
+                    <p class="text-slate-400 leading-relaxed text-base">
+                        As Director of <strong class="text-slate-200">NSInterior Design studio</strong>, Nishi Soni brings a nuanced architectural perspective to every project. From conceptual spatial layout to curating rare textures, lighting, and custom fixtures, Nishi turns ordinary environments into timeless visual masterpieces.
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="glass-card p-4 rounded-xl border border-slate-800">
+                            <div class="w-10 h-10 rounded-lg bg-indigo-500/10 flex items-center justify-center text-indigo-400 mb-3">
+                                <i class="fa-solid fa-cubes text-lg"></i>
+                            </div>
+                            <h4 class="font-bold text-white text-base">Spatial Architecture</h4>
+                            <p class="text-xs text-slate-400 mt-1">Harmonizing structure, flow, and structural ergonomics.</p>
+                        </div>
+
+                        <div class="glass-card p-4 rounded-xl border border-slate-800">
+                            <div class="w-10 h-10 rounded-lg bg-purple-500/10 flex items-center justify-center text-purple-400 mb-3">
+                                <i class="fa-solid fa-couch text-lg"></i>
+                            </div>
+                            <h4 class="font-bold text-white text-base">Curated Styling</h4>
+                            <p class="text-xs text-slate-400 mt-1">Exclusive material selection & luxury bespoke furniture.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-xs font-semibold uppercase tracking-widest text-indigo-400">Services & Solutions</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white">Full-Spectrum Interior Design Leadership</h2>
+                <p class="text-slate-400">Delivering end-to-end spatial perfection tailored for luxury residences, corporate headquarters, and high-end commercial spaces.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service Card 1 -->
+                <div class="glass-card rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-indigo-500 to-purple-500 p-0.5 mb-6 group-hover:scale-110 transition-transform">
+                        <div class="w-full h-full bg-slate-950 rounded-[14px] flex items-center justify-center text-indigo-400">
+                            <i class="fa-solid fa-house-chimney-window text-2xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">High-End Residential Interiors</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Tailored interior architecture for penthouses, private estates, and luxury residences crafted for refined living.</p>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="glass-card rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-purple-500 to-pink-500 p-0.5 mb-6 group-hover:scale-110 transition-transform">
+                        <div class="w-full h-full bg-slate-950 rounded-[14px] flex items-center justify-center text-purple-400">
+                            <i class="fa-solid fa-building-columns text-2xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Commercial & Boutique Spaces</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Designing signature commercial environments that reflect brand prestige, guest experience, and operational functionality.</p>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="glass-card rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-pink-500 to-rose-500 p-0.5 mb-6 group-hover:scale-110 transition-transform">
+                        <div class="w-full h-full bg-slate-950 rounded-[14px] flex items-center justify-center text-pink-400">
+                            <i class="fa-solid fa-pen-ruler text-2xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Turnkey Spatial Planning</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Comprehensive 3D visual mockups, structural drafting, and material selection managing project timelines seamlessly.</p>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="glass-card rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-indigo-500 to-cyan-500 p-0.5 mb-6 group-hover:scale-110 transition-transform">
+                        <div class="w-full h-full bg-slate-950 rounded-[14px] flex items-center justify-center text-cyan-400">
+                            <i class="fa-solid fa-couch text-2xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Custom Furniture & Decor Curation</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Bespoke furniture design, exotic finish sourcing, and curated art placement specifically commissioned for each room.</p>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="glass-card rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-amber-500 to-pink-500 p-0.5 mb-6 group-hover:scale-110 transition-transform">
+                        <div class="w-full h-full bg-slate-950 rounded-[14px] flex items-center justify-center text-amber-400">
+                            <i class="fa-solid fa-lightbulb text-2xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Architectural Lighting Design</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Mood, ambient, and structural lighting installations designed to highlight architectural depth and material quality.</p>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="glass-card rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-emerald-500 to-indigo-500 p-0.5 mb-6 group-hover:scale-110 transition-transform">
+                        <div class="w-full h-full bg-slate-950 rounded-[14px] flex items-center justify-center text-emerald-400">
+                            <i class="fa-solid fa-sliders text-2xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Renovation & Design Consultation</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Strategic interior overhaul, modernizing layout architecture, structural flow, and high-efficiency material upgrades.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Endorsements Section -->
+    <section id="testimonials" class="py-24 relative bg-slate-950/60">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-semibold uppercase tracking-widest text-indigo-400">Client Praise</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white mt-2">Client & Industry Endorsements</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="glass-card p-8 rounded-2xl relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Nishi Soni's eye for spatial harmony is unmatched. She transformed our luxury duplex into a breathtaking space that is both exceptionally functional and artistically inspiring."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 border-t border-slate-800 pt-4">
+                        <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center font-bold text-indigo-400">
+                            RA
+                        </div>
+                        <div>
+                            <p class="text-white text-sm font-bold">Rohan Agarwal</p>
+                            <p class="text-xs text-slate-400">Luxury Villa Owner</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="glass-card p-8 rounded-2xl relative flex flex-col justify-between border-indigo-500/40">
+                    <div>
+                        <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Working with NSInterior Design studio was seamless. Nishi led the design direction for our corporate headquarters, delivering a ultra-modern, elite ambiance."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 border-t border-slate-800 pt-4">
+                        <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center font-bold text-purple-400">
+                            MK
+                        </div>
+                        <div>
+                            <p class="text-white text-sm font-bold">Meera Kapoor</p>
+                            <p class="text-xs text-slate-400">Managing Director, Zenith Group</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="glass-card p-8 rounded-2xl relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Nishi's meticulous selection of lighting, textures, and bespoke furniture completely redefined our boutique hotel concept. Truly world-class interior leadership!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 border-t border-slate-800 pt-4">
+                        <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center font-bold text-pink-400">
+                            VS
+                        </div>
+                        <div>
+                            <p class="text-white text-sm font-bold">Vikram Shah</p>
+                            <p class="text-xs text-slate-400">Hospitality Developer</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Info -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-xs font-semibold uppercase tracking-widest text-indigo-400">Get In Touch</span>
+                        <h2 class="text-3xl sm:text-5xl font-extrabold text-white mt-2">Let's Design Your Dream Space</h2>
+                        <p class="text-slate-400 mt-4 leading-relaxed">
+                            Connect directly with Nishi Soni for architectural consultations, interior project inquiries, or strategic design partnerships.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="glass-card p-5 rounded-xl border border-slate-800 flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400">
+                                <i class="fa-solid fa-building text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Studio / Enterprise</p>
+                                <p class="text-base text-white font-bold">NSInterior Design studio</p>
+                            </div>
+                        </div>
+
+                        <div class="glass-card p-5 rounded-xl border border-slate-800 flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400">
+                                <i class="fa-solid fa-user-tie text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Leadership Role</p>
+                                <p class="text-base text-white font-bold">Director of NS Interior Design</p>
+                            </div>
+                        </div>
+
+                        <div class="glass-card p-5 rounded-xl border border-slate-800 flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-pink-500/10 flex items-center justify-center text-pink-400">
+                                <i class="fa-solid fa-calendar-check text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Network Connection</p>
+                                <p class="text-base text-white font-bold">Connected on 24 Aug 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="lg:col-span-7">
+                    <div class="glass-card p-8 sm:p-10 rounded-3xl border border-slate-800 relative">
+                        <form onsubmit="event.preventDefault(); alert('Thank you for your message, Nishi Soni\'s office will respond shortly.');" class="space-y-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Name</label>
+                                    <input type="text" placeholder="John Doe" required class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Email Address</label>
+                                    <input type="email" placeholder="john@example.com" required class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Project Type</label>
+                                <select class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-indigo-500 transition-colors">
+                                    <option>High-End Luxury Residential</option>
+                                    <option>Commercial Headquarters / Corporate</option>
+                                    <option>Bespoke Furniture & Styling</option>
+                                    <option>Full Architectural Renovation</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Project Vision / Details</label>
+                                <textarea rows="4" placeholder="Tell us about your space, location, timeline, and aesthetic preferences..." required class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-bold text-center shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40 hover:scale-[1.01] transition-all duration-300">
+                                Send Message to Nishi Soni
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800/80 py-12 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-indigo-500 to-pink-500 flex items-center justify-center text-white font-bold text-xs">
+                    NS
+                </div>
+                <span class="text-sm font-semibold text-slate-300">Nishi Soni &copy; 2026. All Rights Reserved.</span>
+            </div>
+
+            <div class="flex items-center gap-6 text-slate-400">
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-brands fa-linkedin text-lg"></i></a>
+                <a href="#" class="hover:text-pink-400 transition-colors"><i class="fa-brands fa-instagram text-lg"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-solid fa-globe text-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
