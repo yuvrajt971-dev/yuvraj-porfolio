@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Swapnil Singh | Senior Medical Underwriter & CMU Leader</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f1f5f9;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -12px rgba(14, 165, 233, 0.35);
+        }
+        .glow-purple {
+            box-shadow: 0 0 50px -12px rgba(168, 85, 247, 0.35);
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(51, 65, 85, 0.5);
+        }
+        .glass-card:hover {
+            border-color: rgba(14, 165, 233, 0.5);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .text-gradient-teal {
+            background: linear-gradient(135deg, #2dd4bf 0%, #38bdf8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-sky-500 selection:text-white">
+
+    <!-- NAVIGATION BAR -->
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-500 to-indigo-600 flex items-center justify-center font-bold text-lg text-white shadow-lg shadow-sky-500/20 group-hover:scale-105 transition-transform">
+                    DS
+                </div>
+                <div>
+                    <span class="font-bold text-lg tracking-tight text-white block">Dr. Swapnil Singh</span>
+                    <span class="text-xs text-sky-400 font-medium block">Deputy Manager | CMU</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-sky-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-sky-400 transition-colors">Core Expertise</a>
+                <a href="#impact" class="hover:text-sky-400 transition-colors">Strategic Impact</a>
+                <a href="#endorsements" class="hover:text-sky-400 transition-colors">Endorsements</a>
+            </nav>
+
+            <div class="hidden md:flex items-center gap-4">
+                <a href="#contact" class="px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-sky-500 via-indigo-500 to-purple-600 hover:opacity-90 transition-all duration-300 shadow-lg shadow-sky-500/20 hover:shadow-sky-500/40">
+                    Get In Touch
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="md:hidden text-slate-300 hover:text-white focus:outline-none" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900/95 border-b border-slate-800 px-6 py-4 space-y-3">
+            <a href="#about" class="block text-slate-300 hover:text-sky-400 py-1">About</a>
+            <a href="#expertise" class="block text-slate-300 hover:text-sky-400 py-1">Core Expertise</a>
+            <a href="#impact" class="block text-slate-300 hover:text-sky-400 py-1">Strategic Impact</a>
+            <a href="#endorsements" class="block text-slate-300 hover:text-sky-400 py-1">Endorsements</a>
+            <a href="#contact" class="inline-block mt-2 px-5 py-2 rounded-full text-sm font-semibold text-white bg-sky-500">Get In Touch</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative min-h-screen pt-32 pb-20 flex items-center justify-center overflow-hidden">
+        <!-- Background Orbs -->
+        <div class="absolute top-1/4 left-10 w-96 h-96 bg-sky-600/20 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+        <div class="absolute bottom-10 right-10 w-96 h-96 bg-purple-600/20 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-12 items-center">
+            
+            <!-- Left Info -->
+            <div class="md:col-span-7 space-y-6 text-center md:text-left">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-700/80 text-sky-400 text-xs font-semibold uppercase tracking-wider shadow-inner">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    Star Health & Allied Insurance Co. Ltd
+                </div>
+                
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                    Bridging <span class="text-gradient">Clinical Excellence</span> & Medical Underwriting Strategy
+                </h1>
+                
+                <p class="text-lg text-slate-300 font-light leading-relaxed max-w-2xl">
+                    Senior Medical Underwriter and Deputy Manager (CMU) optimizing health risk evaluation, complex claim protocols, and underwriting operations for India's leading health insurance giant.
+                </p>
+
+                <!-- Action CTA -->
+                <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 pt-4">
+                    <a href="#contact" class="px-7 py-3.5 rounded-full font-semibold text-white bg-gradient-to-r from-sky-500 via-indigo-500 to-purple-600 hover:opacity-95 transition-all duration-300 shadow-xl shadow-sky-500/25 flex items-center gap-2 group">
+                        <span>Connect Formally</span>
+                        <i class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                    <a href="#expertise" class="px-7 py-3.5 rounded-full font-semibold text-slate-300 hover:text-white glass-card transition-all duration-300 hover:bg-slate-800/80">
+                        Explore Expertise
+                    </a>
+                </div>
+
+                <!-- Trust Badges -->
+                <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-4 text-center md:text-left">
+                    <div>
+                        <div class="text-2xl font-bold text-white">CMU</div>
+                        <div class="text-xs text-slate-400 mt-1">Centralized Operations</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-white">100%</div>
+                        <div class="text-xs text-slate-400 mt-1">Clinical Integrity</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-white">Risk Risk Audit</div>
+                        <div class="text-xs text-slate-400 mt-1">Precision Analysis</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Avatar Frame -->
+            <div class="md:col-span-5 flex justify-center">
+                <div class="relative group">
+                    <!-- Glowing Background Rings -->
+                    <div class="absolute -inset-1.5 bg-gradient-to-r from-sky-500 via-indigo-500 to-pink-500 rounded-3xl blur-xl opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+                    
+                    <div class="relative w-72 h-72 md:w-80 md:h-80 rounded-3xl overflow-hidden glass-card p-3 flex flex-col items-center justify-center text-center">
+                        <img src="https://ui-avatars.com/api/?name=Dr.+Swapnil+Singh&size=200&background=0D8ABC&color=fff&bold=true" alt="Dr. Swapnil Singh" class="w-40 h-40 rounded-2xl shadow-xl mb-4 border-2 border-sky-400/30 object-cover">
+                        <h3 class="text-xl font-bold text-white">Dr. Swapnil Singh</h3>
+                        <p class="text-xs text-sky-400 font-medium">Deputy Manager - CMU</p>
+                        <p class="text-xs text-slate-400 mt-1">Senior Medical Underwriter</p>
+                    </div>
+
+                    <!-- Floating Badges -->
+                    <div class="absolute -bottom-4 -left-6 glass-card px-4 py-2.5 rounded-2xl flex items-center gap-3 shadow-2xl border-slate-700">
+                        <div class="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center">
+                            <i class="fa-solid fa-file-medical text-sm"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-white">Risk Evaluation</p>
+                            <p class="text-[10px] text-slate-400">Underwriting Accuracy</p>
+                        </div>
+                    </div>
+
+                    <div class="absolute -top-4 -right-6 glass-card px-4 py-2.5 rounded-2xl flex items-center gap-3 shadow-2xl border-slate-700">
+                        <div class="w-8 h-8 rounded-lg bg-sky-500/20 text-sky-400 flex items-center justify-center">
+                            <i class="fa-solid fa-shield-halved text-sm"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-white">Star Health</p>
+                            <p class="text-[10px] text-slate-400">CMU Division</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-24 relative bg-slate-900/40">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-12 gap-12 items-center">
+                
+                <!-- Section Image -->
+                <div class="md:col-span-5 relative">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-sky-500 to-indigo-500 rounded-2xl blur-lg opacity-30"></div>
+                    <div class="relative rounded-2xl overflow-hidden glass-card border-slate-700">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" alt="Healthcare Analytics & Medical Underwriting" class="w-full h-96 object-cover hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <span class="text-xs font-bold uppercase tracking-wider text-sky-400">Clinical Leadership</span>
+                            <p class="text-sm text-slate-200 mt-1 font-medium">Navigating medical complexity to design robust health insurance risk models.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div class="md:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-500/10 border border-sky-500/20 text-sky-400 text-xs font-semibold">
+                        Professional Profile
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight">
+                        Optimizing Risk Portfolios with <span class="text-gradient">Clinical Precision</span>
+                    </h2>
+                    <p class="text-slate-300 leading-relaxed font-light">
+                        As Senior Medical Underwriter and Deputy Manager in the Centralized Medical Underwriting (CMU) division at <strong class="text-white font-semibold">Star Health and Allied Insurance Co. Ltd</strong>, Dr. Swapnil Singh spearheads critical clinical evaluations, policy risk pricing alignment, and high-stakes underwriting decisions.
+                    </p>
+                    <p class="text-slate-300 leading-relaxed font-light">
+                        With a strong foundation in medical sciences and health insurance operational workflows, Dr. Singh combines medical diagnostics with underwriting governance—ensuring compliant, sustainable, and customer-centric health portfolio growth.
+                    </p>
+
+                    <!-- Feature Pillars -->
+                    <div class="grid grid-cols-2 gap-4 pt-2">
+                        <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+                            <i class="fa-solid fa-heart-pulse text-sky-400 text-xl mb-2"></i>
+                            <h4 class="font-semibold text-white text-sm">Medical Assessment</h4>
+                            <p class="text-xs text-slate-400 mt-1">Deep clinical interpretation of complex pathologies for proposal risk grading.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+                            <i class="fa-solid fa-scale-balanced text-indigo-400 text-xl mb-2"></i>
+                            <h4 class="font-semibold text-white text-sm">CMU Governance</h4>
+                            <p class="text-xs text-slate-400 mt-1">Streamlining underwriting protocols & maintaining strict IRDAI guidelines.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERTISE & SERVICES SECTION -->
+    <section id="expertise" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-semibold">
+                    Core Capabilities
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight">
+                    Specialized Competencies in <span class="text-gradient">Health Insurance</span>
+                </h2>
+                <p class="text-slate-400 text-sm">
+                    Strategic medical risk governance driving portfolio health, policy accuracy, and operational excellence.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="glass-card p-8 rounded-2xl relative group hover:-translate-y-2 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-sky-500 to-blue-600 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-sky-500/20">
+                        <i class="fa-solid fa-notes-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Complex Underwriting Analysis</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Thorough evaluation of pre-existing conditions, chronic ailments, and high-risk medical histories to establish accurate loadings and exclusions.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="glass-card p-8 rounded-2xl relative group hover:-translate-y-2 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-indigo-500 to-purple-600 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-indigo-500/20">
+                        <i class="fa-solid fa-hospital-user"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Centralized CMU Leadership</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Leading central medical underwriting workflows, establishing quality audit mechanisms, and standardizing turnaround times across teams.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="glass-card p-8 rounded-2xl relative group hover:-translate-y-2 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-purple-500 to-pink-600 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-purple-500/20">
+                        <i class="fa-solid fa-shield-cat"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Claims & Fraud Risk Prevention</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Collaborating with claims and investigation teams to identify suspicious clinical trends, non-disclosures, and systemic policy fraud risks.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="glass-card p-8 rounded-2xl relative group hover:-translate-y-2 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-emerald-500 to-teal-600 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-emerald-500/20">
+                        <i class="fa-solid fa-clipboard-check"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Regulatory Compliance</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Ensuring all medical underwriting protocols adhere rigidly to IRDAI guidelines, statutory regulations, and internal product features.
+                    </p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="glass-card p-8 rounded-2xl relative group hover:-translate-y-2 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-amber-500 to-orange-600 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-amber-500/20">
+                        <i class="fa-solid fa-laptop-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Underwriting Tech & Rules Engine</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Assisting in refining automated medical rule engines and digital onboarding journeys for seamless, error-free underwriting.
+                    </p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="glass-card p-8 rounded-2xl relative group hover:-translate-y-2 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-cyan-500/20">
+                        <i class="fa-solid fa-user-doctor"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Cross-Functional Clinical Training</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Mentoring non-medical underwriters and branch operations staff on clinical terms, diagnostic lab report interpretation, and policy terms.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WORKFLOW & STRATEGIC PROCESS -->
+    <section id="impact" class="py-24 relative bg-slate-900/40">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold">
+                    Methodology
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight">
+                    The Medical Underwriting <span class="text-gradient-teal">Framework</span>
+                </h2>
+                <p class="text-slate-400 text-sm">
+                    A rigorous 4-step clinical & financial risk management paradigm.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="p-6 rounded-2xl glass-card relative border-t-4 border-t-sky-500">
+                    <span class="text-4xl font-extrabold text-slate-700/50 absolute top-4 right-4">01</span>
+                    <h4 class="text-lg font-bold text-white mb-2">Medical Screening</h4>
+                    <p class="text-xs text-slate-300 leading-relaxed">Deep analysis of proposal forms, MERs, diagnostic reports, and past clinical records.</p>
+                </div>
+
+                <div class="p-6 rounded-2xl glass-card relative border-t-4 border-t-indigo-500">
+                    <span class="text-4xl font-extrabold text-slate-700/50 absolute top-4 right-4">02</span>
+                    <h4 class="text-lg font-bold text-white mb-2">Risk Categorization</h4>
+                    <p class="text-xs text-slate-300 leading-relaxed">Classifying applicant morbidity risks according to disease mortality and morbidity tables.</p>
+                </div>
+
+                <div class="p-6 rounded-2xl glass-card relative border-t-4 border-t-purple-500">
+                    <span class="text-4xl font-extrabold text-slate-700/50 absolute top-4 right-4">03</span>
+                    <h4 class="text-lg font-bold text-white mb-2">Policy Terms Rating</h4>
+                    <p class="text-xs text-slate-300 leading-relaxed">Applying accurate health loadings, specific exclusions, or co-payment terms balanced with profitability.</p>
+                </div>
+
+                <div class="p-6 rounded-2xl glass-card relative border-t-4 border-t-pink-500">
+                    <span class="text-4xl font-extrabold text-slate-700/50 absolute top-4 right-4">04</span>
+                    <h4 class="text-lg font-bold text-white mb-2">Continuous Audit</h4>
+                    <p class="text-xs text-slate-300 leading-relaxed">Post-issuance medical audits and feedback integration into CMU risk matrices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ENDORSEMENTS / TESTIMONIALS -->
+    <section id="endorsements" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-500/10 border border-sky-500/20 text-sky-400 text-xs font-semibold">
+                    Peer Recognition
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight">
+                    Endorsements & <span class="text-gradient">Industry Leadership</span>
+                </h2>
+                <p class="text-slate-400 text-sm">
+                    Feedback from health insurance leaders, medical directors, and risk strategists.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-1 text-amber-400 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "Dr. Swapnil Singh possesses an exceptional ability to interpret complex clinical conditions into practical underwriting decisions. His CMU leadership has significantly enhanced our risk accuracy."
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center font-bold text-sky-400">
+                            VP
+                        </div>
+                        <div>
+                            <h5 class="text-sm font-bold text-white">Chief Medical Officer</h5>
+                            <p class="text-xs text-slate-400">Health Insurance Sector</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-1 text-amber-400 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "A highly detail-oriented Senior Underwriter. Dr. Swapnil balances clinical risk management with empathetic customer policies better than anyone in the industry."
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center font-bold text-indigo-400">
+                            RM
+                        </div>
+                        <div>
+                            <h5 class="text-sm font-bold text-white">Regional Risk Head</h5>
+                            <p class="text-xs text-slate-400">Star Health Operations</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-1 text-amber-400 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "His clinical training sessions for central underwriting operations have raised the benchmark of medical document audit across multiple divisions."
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center font-bold text-purple-400">
+                            AGM
+                        </div>
+                        <div>
+                            <h5 class="text-sm font-bold text-white">Assistant General Manager</h5>
+                            <p class="text-xs text-slate-400">Operations & Underwriting</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-24 relative bg-slate-900/60">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-12 gap-12 items-center">
+                
+                <!-- Contact Info -->
+                <div class="md:col-span-5 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-500/10 border border-sky-500/20 text-sky-400 text-xs font-semibold">
+                        Get In Touch
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight">
+                        Initiate Strategic <span class="text-gradient">Professional Dialogue</span>
+                    </h2>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Interested in discussing central medical underwriting practices, complex risk models, or corporate clinical advisory? Connect directly.
+                    </p>
+
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-center gap-4 glass-card p-4 rounded-xl">
+                            <div class="w-12 h-12 rounded-lg bg-sky-500/20 text-sky-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-building-user"></i>
+                            </div>
+                            <div>
+                                <h5 class="text-xs text-slate-400">Current Position</h5>
+                                <p class="text-sm font-bold text-white">Deputy Manager CMU | Star Health</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 glass-card p-4 rounded-xl">
+                            <div class="w-12 h-12 rounded-lg bg-indigo-500/20 text-indigo-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-globe"></i>
+                            </div>
+                            <div>
+                                <h5 class="text-xs text-slate-400">Industry</h5>
+                                <p class="text-sm font-bold text-white">Health Insurance & Risk Governance</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 glass-card p-4 rounded-xl">
+                            <div class="w-12 h-12 rounded-lg bg-purple-500/20 text-purple-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-handshake"></i>
+                            </div>
+                            <div>
+                                <h5 class="text-xs text-slate-400">Professional Connection</h5>
+                                <p class="text-sm font-bold text-white">Connected 24 Aug 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Form -->
+                <div class="md:col-span-7">
+                    <div class="glass-card p-8 rounded-3xl border-slate-700/80 shadow-2xl relative">
+                        <h3 class="text-xl font-bold text-white mb-6">Send a Formal Message</h3>
+                        
+                        <form onsubmit="event.preventDefault(); alert('Thank you for reaching out to Dr. Swapnil Singh.');" class="space-y-5">
+                            <div class="grid md:grid-cols-2 gap-5">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">Your Name</label>
+                                    <input type="text" placeholder="John Doe" required class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white focus:outline-none focus:border-sky-500 transition-colors text-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">Your Organization</label>
+                                    <input type="text" placeholder="Healthcare / Insurance Co." required class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white focus:outline-none focus:border-sky-500 transition-colors text-sm">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Work Email</label>
+                                <input type="email" placeholder="john@company.com" required class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white focus:outline-none focus:border-sky-500 transition-colors text-sm">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Subject</label>
+                                <input type="text" placeholder="Medical Underwriting Inquiry / Strategy" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white focus:outline-none focus:border-sky-500 transition-colors text-sm">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Message</label>
+                                <textarea rows="4" placeholder="Write your message here..." required class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white focus:outline-none focus:border-sky-500 transition-colors text-sm resize-none"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-sky-500 via-indigo-500 to-purple-600 hover:opacity-95 transition-all duration-300 shadow-xl shadow-sky-500/20">
+                                Send Communication
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-8 border-t border-slate-800/80 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="text-xs text-slate-400">
+                © 2026 Dr. Swapnil Singh. All rights reserved. Senior Medical Underwriter & CMU Leader.
+            </div>
+            <div class="flex items-center gap-6 text-slate-400 text-sm">
+                <a href="#" class="hover:text-sky-400 transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="hover:text-sky-400 transition-colors"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#" class="hover:text-sky-400 transition-colors"><i class="fa-solid fa-user-doctor"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
