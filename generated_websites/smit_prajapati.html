@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smit Prajapati | Freelance Architect & Spatial Visionary</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            cyan: '#0D8ABC',
+                            indigo: '#6366f1',
+                            purple: '#a855f7',
+                            pink: '#ec4899',
+                        }
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans selection:bg-indigo-500 selection:text-white antialiased overflow-x-hidden">
+
+    <!-- Ambient Background Glows -->
+    <div class="fixed top-0 left-1/4 w-96 h-96 bg-indigo-600/20 rounded-full filter blur-[128px] pointer-events-none -z-10 animate-pulse-slow"></div>
+    <div class="fixed bottom-0 right-1/4 w-96 h-96 bg-pink-600/15 rounded-full filter blur-[128px] pointer-events-none -z-10 animate-pulse-slow" style="animation-delay: 3s;"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 p-0.5 transition-transform duration-300 group-hover:scale-105">
+                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+                        <span class="font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-pink-400">SP</span>
+                    </div>
+                </div>
+                <div>
+                    <span class="font-bold text-lg tracking-wider text-white block leading-none">SMIT PRAJAPATI</span>
+                    <span class="text-[10px] tracking-widest text-indigo-400 font-semibold uppercase">Pentalement Architects</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+                <a href="#services" class="hover:text-indigo-400 transition-colors">Services</a>
+                <a href="#portfolio" class="hover:text-indigo-400 transition-colors">Portfolio</a>
+                <a href="#testimonials" class="hover:text-indigo-400 transition-colors">Endorsements</a>
+                <a href="#contact" class="hover:text-indigo-400 transition-colors">Contact</a>
+            </div>
+
+            <!-- CTA Button -->
+            <a href="#contact" class="relative group hidden sm:inline-block">
+                <div class="absolute -inset-0.5 bg-gradient-to-r from-indigo-500 to-pink-500 rounded-full blur opacity-60 group-hover:opacity-100 transition duration-300"></div>
+                <button class="relative px-5 py-2.5 bg-slate-900 rounded-full text-xs font-bold uppercase tracking-wider text-white flex items-center gap-2 border border-slate-700 hover:border-slate-500 transition">
+                    <span>Initiate Project</span>
+                    <i class="fa-solid fa-arrow-right text-indigo-400 group-hover:translate-x-1 transition-transform"></i>
+                </button>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center pt-28 pb-16 px-6 overflow-hidden">
+        <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Left Hero Content -->
+            <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 backdrop-blur-md">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                    <span class="text-xs font-semibold text-slate-300 tracking-wide uppercase">Available for Architectural Commissions</span>
+                </div>
+
+                <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.1]">
+                    Architectural Excellence. <br/>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-500">
+                        Spatial Innovation.
+                    </span>
+                </h1>
+
+                <p class="text-lg sm:text-xl text-slate-400 max-w-2xl font-light leading-relaxed">
+                    I'm <strong class="text-white font-semibold">Smit Prajapati</strong>, Freelance Architect at <strong class="text-indigo-400 font-semibold">PENTALEMENT ARCHITECTS</strong>. Designing sustainable, high-impact structural concepts and bespoke spatial environments that elevate living and working experiences.
+                </p>
+
+                <!-- Hero Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
+                    <a href="#portfolio" class="px-8 py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.02] transition-all text-center">
+                        View Portfolio
+                    </a>
+                    <a href="#contact" class="px-8 py-4 rounded-xl bg-slate-900/80 hover:bg-slate-800 text-slate-200 font-semibold border border-slate-800 hover:border-indigo-500/50 backdrop-blur-xl transition-all text-center">
+                        Get In Touch
+                    </a>
+                </div>
+
+                <!-- Trust Badges / Quick Stats -->
+                <div class="pt-8 grid grid-cols-3 gap-4 border-t border-slate-800/80 max-w-lg mx-auto lg:mx-0">
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-white">40+</div>
+                        <div class="text-xs text-slate-400 uppercase tracking-wider mt-1">Projects Built</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-indigo-400">100%</div>
+                        <div class="text-xs text-slate-400 uppercase tracking-wider mt-1">Client Precision</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-pink-400">8+</div>
+                        <div class="text-xs text-slate-400 uppercase tracking-wider mt-1">Years Craft</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Hero Image Frame -->
+            <div class="lg:col-span-5 flex justify-center relative">
+                <div class="relative w-64 sm:w-80 lg:w-96 animate-float">
+                    <!-- Glowing Aura behind frame -->
+                    <div class="absolute -inset-1.5 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-3xl blur-xl opacity-70 group-hover:opacity-100 transition duration-1000"></div>
+                    
+                    <div class="relative bg-slate-900 rounded-3xl p-3 border border-slate-800">
+                        <img src="https://ui-avatars.com/api/?name=Smit+Prajapati&size=200&background=0D8ABC&color=fff&bold=true" 
+                             alt="Smit Prajapati" 
+                             class="w-full h-auto rounded-2xl object-cover aspect-square shadow-2xl">
+                        
+                        <!-- Embedded Glass Floating Tag -->
+                        <div class="absolute bottom-6 left-6 right-6 bg-slate-950/80 backdrop-blur-xl p-4 rounded-xl border border-slate-800 shadow-xl">
+                            <div class="flex items-center gap-3">
+                                <div class="p-2.5 rounded-lg bg-indigo-500/20 text-indigo-400">
+                                    <i class="fa-solid fa-building-columns text-xl"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-slate-400 uppercase tracking-wider">Lead Designer</div>
+                                    <div class="text-sm font-bold text-white">PENTALEMENT ARCHITECTS</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-24 px-6 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-extrabold uppercase tracking-widest text-indigo-400 mb-3">Architectural Philosophy</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Blending Form, Structure & Environment</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Industry Image Grid Card -->
+                <div class="lg:col-span-6 relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-pink-500 rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-500"></div>
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" 
+                             alt="Architectural Masterpiece" 
+                             class="w-full h-[450px] object-cover hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-4 bg-slate-900/60 backdrop-blur-md rounded-xl border border-slate-800/80">
+                            <p class="text-sm font-medium text-slate-200">"Architecture should speak of its time and place, but yearn for timelessness."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Expertise Details -->
+                <div class="lg:col-span-6 space-y-6">
+                    <h3 class="text-2xl font-bold text-white">Pentalement Architect's Spatial Vision</h3>
+                    <p class="text-slate-400 leading-relaxed font-light">
+                        With an uncompromising commitment to structural integrity and innovative aesthetics, I deliver high-end architectural blueprints and interior design concepts. Every layout is curated to maximize spatial flow, natural light, and modern environmental sustainability.
+                    </p>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="p-4 rounded-xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 flex items-start gap-4">
+                            <div class="p-3 bg-indigo-500/10 text-indigo-400 rounded-lg">
+                                <i class="fa-solid fa-drafting-compass text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white text-base">Comprehensive Blueprinting</h4>
+                                <p class="text-sm text-slate-400 font-light mt-1">End-to-end structural detailing, urban planning, and municipal compliance layouts.</p>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 flex items-start gap-4">
+                            <div class="p-3 bg-purple-500/10 text-purple-400 rounded-lg">
+                                <i class="fa-solid fa-cube text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white text-base">3D Architectural Visualization</h4>
+                                <p class="text-sm text-slate-400 font-light mt-1">Photorealistic renderings and immersive walkthroughs before ground breaking.</p>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 flex items-start gap-4">
+                            <div class="p-3 bg-pink-500/10 text-pink-400 rounded-lg">
+                                <i class="fa-solid fa-leaf text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white text-base">Sustainable Design Integration</h4>
+                                <p class="text-sm text-slate-400 font-light mt-1">Eco-centric material selection, passive cooling, and energy-efficient building skins.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services" class="py-24 px-6 bg-slate-900/30 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-extrabold uppercase tracking-widest text-indigo-400 mb-3">Core Expertise</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Architectural Services</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 mb-6 group-hover:bg-indigo-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-compass-drafting text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Architectural Planning</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed font-light">
+                        Tailor-made architectural concepts, residential villas, commercial hubs, and structural drafting with precision engineering.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 mb-6 group-hover:bg-purple-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-couch text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Interior Spatial Design</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed font-light">
+                        Harmonious interior curation, material selection, lighting choreography, and customized furniture layout design.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400 mb-6 group-hover:bg-pink-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-city text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Urban & Master Planning</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed font-light">
+                        Scalable master plans for land developments, mixed-use communities, and public space revitalization programs.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-6 group-hover:bg-emerald-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-vr-cardboard text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">3D Rendering & BIM</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed font-light">
+                        Building Information Modeling (BIM) paired with ultra-realistic 3D visual walkthroughs and lighting simulations.
+                    </p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 mb-6 group-hover:bg-amber-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-helmet-safety text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Site Supervision</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed font-light">
+                        On-site quality supervision, vendor coordination, and strict adherence to structural blueprints during construction.
+                    </p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 mb-6 group-hover:bg-cyan-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-award text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Design Consultation</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed font-light">
+                        Expert architectural auditing, structural feasibility assessment, and creative direction for bespoke projects.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Showcase -->
+    <section id="portfolio" class="py-24 px-6 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+                <div>
+                    <h2 class="text-xs font-extrabold uppercase tracking-widest text-indigo-400 mb-3">Selected Projects</h2>
+                    <p class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Recent Works</p>
+                </div>
+                <div class="text-sm font-semibold text-slate-400">
+                    Showing highlights from <span class="text-indigo-400">PENTALEMENT ARCHITECTS</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="group relative rounded-2xl overflow-hidden bg-slate-900 border border-slate-800">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" 
+                         alt="Modern Villa" 
+                         class="w-full h-80 object-cover group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-8">
+                        <span class="text-xs font-bold text-indigo-400 uppercase tracking-widest">Residential Design</span>
+                        <h3 class="text-2xl font-bold text-white mt-1">The Glass Horizon Residence</h3>
+                        <p class="text-slate-400 text-sm mt-2 font-light">Ultra-modern cantilevered villa maximizing natural illumination and open-plan living.</p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="group relative rounded-2xl overflow-hidden bg-slate-900 border border-slate-800">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" 
+                         alt="Commercial Hub" 
+                         class="w-full h-80 object-cover group-hover:scale-110 transition duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent opacity-90"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-8">
+                        <span class="text-xs font-bold text-purple-400 uppercase tracking-widest">Commercial Architecture</span>
+                        <h3 class="text-2xl font-bold text-white mt-1">Aura Tech Tower</h3>
+                        <p class="text-slate-400 text-sm mt-2 font-light">Sustainable 12-story commercial facility featuring solar-responsive facade panels.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Endorsements Section -->
+    <section id="testimonials" class="py-24 px-6 bg-slate-900/30 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-extrabold uppercase tracking-widest text-indigo-400 mb-3">Client Trust</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Endorsements & Reviews</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed font-light italic">
+                            "Smit transformed our complex plot constraints into an architectural marvel. His work with PENTALEMENT ARCHITECTS exceeds all expectations of modern luxury."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 flex items-center justify-center font-bold text-indigo-400">
+                            RK
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-white">Rajesh Kumar</div>
+                            <div class="text-xs text-slate-400">Managing Director, Apex Infra</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed font-light italic">
+                            "The 3D visualizations and structural detail Smit provided made construction seamless. Absolutely top-tier architectural talent!"
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center font-bold text-purple-400">
+                            AM
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-white">Ananya Mehta</div>
+                            <div class="text-xs text-slate-400">Founder, UrbanLiving Spaces</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed font-light italic">
+                            "Attention to eco-friendly design and structural efficiency was immaculate. Highly recommended for any ambitious architectural endeavor."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-pink-500/20 flex items-center justify-center font-bold text-pink-400">
+                            VS
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-white">Vikram Sharma</div>
+                            <div class="text-xs text-slate-400">Private Residence Owner</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-6 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Direct Details -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <h2 class="text-xs font-extrabold uppercase tracking-widest text-indigo-400 mb-3">Let's Connect</h2>
+                        <p class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Start Your Design Journey</p>
+                    </div>
+
+                    <p class="text-slate-400 font-light leading-relaxed">
+                        Interested in collaborating on an architectural blueprint, interior project, or commercial concept? Reach out directly to initiate consultation.
+                    </p>
+
+                    <div class="space-y-6 pt-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 shrink-0">
+                                <i class="fa-solid fa-building text-lg"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 uppercase tracking-wider">Firm</div>
+                                <div class="text-base font-semibold text-white">PENTALEMENT ARCHITECTS</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 shrink-0">
+                                <i class="fa-solid fa-envelope text-lg"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 uppercase tracking-wider">Email Inquiry</div>
+                                <div class="text-base font-semibold text-white">smit.prajapati@pentalement.com</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400 shrink-0">
+                                <i class="fa-solid fa-calendar-check text-lg"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 uppercase tracking-wider">Network Connection</div>
+                                <div class="text-base font-semibold text-white">Connected: 23 Aug 2026</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="flex gap-4 pt-4">
+                        <a href="#" class="w-10 h-10 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-indigo-400 hover:border-indigo-500/50 transition">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-indigo-400 hover:border-indigo-500/50 transition">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-indigo-400 hover:border-indigo-500/50 transition">
+                            <i class="fa-solid fa-globe"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="lg:col-span-7">
+                    <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 sm:p-10 rounded-3xl relative">
+                        <form onsubmit="event.preventDefault(); alert('Thank you, Smit Prajapati will get back to you shortly.');" class="space-y-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Your Name</label>
+                                    <input type="text" placeholder="John Doe" required class="w-full px-4 py-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-indigo-500 transition">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Your Email</label>
+                                    <input type="email" placeholder="john@example.com" required class="w-full px-4 py-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-indigo-500 transition">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Project Scope</label>
+                                <select class="w-full px-4 py-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-300 focus:outline-none focus:border-indigo-500 transition">
+                                    <option>Residential Architecture</option>
+                                    <option>Commercial Development</option>
+                                    <option>Interior Design Consultation</option>
+                                    <option>Master Planning & Urban Design</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Project Vision & Details</label>
+                                <textarea rows="4" placeholder="Tell me about your site requirements, timeline, or spatial vision..." required class="w-full px-4 py-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-indigo-500 transition"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-bold tracking-wider uppercase text-xs hover:opacity-95 transition shadow-lg shadow-indigo-500/20">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800/80 py-8 px-6 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div>
+                © 2026 <span class="text-slate-300 font-semibold">Smit Prajapati</span>. All Rights Reserved. Freelance Architect at PENTALEMENT ARCHITECTS.
+            </div>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-slate-400 transition">Privacy Policy</a>
+                <a href="#" class="hover:text-slate-400 transition">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
