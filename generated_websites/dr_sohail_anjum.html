@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Sohail Anjum | General Dental Practitioner</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        @keyframes pulseGlow {
+            0%, 100% { opacity: 0.4; transform: scale(1); }
+            50% { opacity: 0.7; transform: scale(1.05); }
+        }
+        .animate-glow {
+            animation: pulseGlow 6s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-slate-950">
+
+    <!-- Ambient Background Glows -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
+        <div class="absolute -top-40 -left-40 w-96 h-96 bg-cyan-500/15 rounded-full blur-3xl animate-glow"></div>
+        <div class="absolute top-1/3 -right-40 w-[500px] h-[500px] bg-indigo-500/15 rounded-full blur-3xl animate-glow" style="animation-delay: 2s;"></div>
+        <div class="absolute -bottom-40 left-1/3 w-[600px] h-[600px] bg-teal-500/10 rounded-full blur-3xl animate-glow" style="animation-delay: 4s;"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
+                    <i class="fa-solid font-bold fa-tooth"></i>
+                </div>
+                <div>
+                    <span class="text-lg font-bold tracking-tight text-white block leading-none">Dr. Sohail Anjum</span>
+                    <span class="text-xs text-cyan-400 font-medium tracking-wide">The Park Dental Clinic</span>
+                </div>
+            </a>
+
+            <div class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Testimonials</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+            </div>
+
+            <a href="#contact" class="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-xs font-semibold rounded-full group bg-gradient-to-br from-cyan-500 via-indigo-500 to-teal-400 group-hover:from-cyan-500 group-hover:to-teal-400 text-white shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 transition-all duration-300">
+                <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-slate-950 rounded-full group-hover:bg-opacity-0">
+                    Book Appointment
+                </span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-20 md:pt-48 md:pb-32 px-6 z-10 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Hero Content -->
+            <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 text-cyan-400 text-xs font-semibold tracking-wide uppercase">
+                    <span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping"></span>
+                    General Dental Practitioner • Kolkata
+                </div>
+
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.15]">
+                    Crafting Healthy, <br class="hidden sm:inline" />
+                    <span class="bg-gradient-to-r from-cyan-400 via-teal-300 to-indigo-400 bg-clip-text text-transparent">
+                        Radiant Smiles
+                    </span>
+                    With Precision
+                </h1>
+
+                <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                    Welcome to the personal clinical practice of <strong class="text-slate-200">Dr. Sohail Anjum</strong> at <span class="text-cyan-400">The Park Dental Clinic Kolkata</span>. Delivering comprehensive oral care, advanced restorative procedures, and patient-first dentistry.
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                    <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 text-white font-semibold text-sm shadow-xl shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:-translate-y-0.5 transition-all text-center flex items-center justify-center gap-2">
+                        <i class="fa-regular fa-calendar-check text-base"></i>
+                        Schedule Consultation
+                    </a>
+                    <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900/80 border border-slate-800 text-slate-300 hover:text-white font-semibold text-sm hover:bg-slate-800/60 transition-all text-center flex items-center justify-center gap-2">
+                        View Treatments
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Trust Badges -->
+                <div class="pt-6 border-t border-slate-900 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0">
+                    <div>
+                        <p class="text-2xl font-bold text-white">100%</p>
+                        <p class="text-xs text-slate-400">Patient Comfort</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl font-bold text-cyan-400">5.0 ★</p>
+                        <p class="text-xs text-slate-400">Patient Rating</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl font-bold text-white">Modern</p>
+                        <p class="text-xs text-slate-400">Dental Facility</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Avatar / Profile Frame -->
+            <div class="lg:col-span-5 flex justify-center relative">
+                <div class="relative w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96">
+                    <!-- Glowing Outer Rings -->
+                    <div class="absolute -inset-1 rounded-full bg-gradient-to-tr from-cyan-500 via-indigo-500 to-pink-500 opacity-75 blur-xl animate-pulse"></div>
+                    <div class="absolute inset-0 rounded-full bg-gradient-to-tr from-cyan-500 via-teal-400 to-indigo-600 p-1.5 shadow-2xl">
+                        <div class="w-full h-full rounded-full bg-slate-950 overflow-hidden relative flex items-center justify-center">
+                            <img src="https://ui-avatars.com/api/?name=Dr.+Sohail+Anjum&size=200&background=0D8ABC&color=fff&bold=true" alt="Dr. Sohail Anjum" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+
+                    <!-- Floating Highlight Badge 1 -->
+                    <div class="absolute -bottom-2 -left-4 bg-slate-900/90 backdrop-blur-xl border border-slate-800 p-3.5 rounded-2xl shadow-2xl flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center">
+                            <i class="fa-solid fa-hospital-user text-lg"></i>
+                        </div>
+                        <div class="text-left">
+                            <p class="text-xs font-bold text-white">The Park Dental Clinic</p>
+                            <p class="text-[10px] text-slate-400">Kolkata Practitioner</p>
+                        </div>
+                    </div>
+
+                    <!-- Floating Highlight Badge 2 -->
+                    <div class="absolute top-6 -right-4 bg-slate-900/90 backdrop-blur-xl border border-slate-800 p-3 rounded-2xl shadow-2xl flex items-center gap-2.5">
+                        <div class="w-8 h-8 rounded-lg bg-teal-500/20 text-teal-400 flex items-center justify-center text-xs">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <span class="text-xs font-semibold text-slate-200">Pain-Free Care</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-24 px-6 relative z-10 bg-slate-950/50 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Clinical Image Showcase -->
+                <div class="lg:col-span-5">
+                    <div class="relative rounded-3xl overflow-hidden border border-slate-800 bg-slate-900 group shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" alt="Dental Office Technology" class="w-full h-[420px] object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        
+                        <div class="absolute bottom-6 left-6 right-6 p-6 rounded-2xl bg-slate-900/80 backdrop-blur-md border border-slate-800">
+                            <p class="text-sm font-semibold text-cyan-400 mb-1">State-of-the-Art Facility</p>
+                            <p class="text-xs text-slate-300">Equipped with modern diagnostic and treatment technology to ensure precise, pain-free dental procedures.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 text-cyan-400 text-xs font-bold tracking-widest uppercase">
+                        <i class="fa-solid fa-user-doctor"></i> About Dr. Sohail Anjum
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+                        Dedicated To Creating Healthy, Confident Smiles Every Day
+                    </h2>
+
+                    <p class="text-slate-400 leading-relaxed text-sm sm:text-base">
+                        As a respected General Dental Practitioner at <strong class="text-slate-200">The Park Dental Clinic Kolkata</strong>, Dr. Sohail Anjum combines expert clinical techniques with a warm, compassionate approach. Every patient receives a tailored treatment plan designed to restore, enhance, and protect their oral health.
+                    </p>
+
+                    <!-- Feature Points -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="p-4 rounded-xl bg-slate-900/60 backdrop-blur-xl border border-slate-800/80 hover:border-cyan-500/50 transition-all">
+                            <i class="fa-solid fa-microscope text-cyan-400 text-xl mb-2"></i>
+                            <h3 class="text-sm font-semibold text-white">Advanced Diagnostics</h3>
+                            <p class="text-xs text-slate-400 mt-1">Accurate assessment utilizing contemporary imaging and clinical tools.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-900/60 backdrop-blur-xl border border-slate-800/80 hover:border-cyan-500/50 transition-all">
+                            <i class="fa-solid fa-heart-pulse text-indigo-400 text-xl mb-2"></i>
+                            <h3 class="text-sm font-semibold text-white">Patient-Centric Comfort</h3>
+                            <p class="text-xs text-slate-400 mt-1">Gentle techniques engineered to eliminate dental anxiety.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-900/60 backdrop-blur-xl border border-slate-800/80 hover:border-cyan-500/50 transition-all">
+                            <i class="fa-solid fa-sparkles text-teal-400 text-xl mb-2"></i>
+                            <h3 class="text-sm font-semibold text-white">Cosmetic Excellence</h3>
+                            <p class="text-xs text-slate-400 mt-1">Smile makeovers tailored to match natural facial aesthetics.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-900/60 backdrop-blur-xl border border-slate-800/80 hover:border-cyan-500/50 transition-all">
+                            <i class="fa-solid fa-notes-medical text-pink-400 text-xl mb-2"></i>
+                            <h3 class="text-sm font-semibold text-white">Preventive Focus</h3>
+                            <p class="text-xs text-slate-400 mt-1">Long-term oral hygiene strategies to safeguard your natural teeth.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 px-6 relative z-10 max-w-7xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+            <span class="text-cyan-400 text-xs font-bold tracking-widest uppercase">Comprehensive Clinical Services</span>
+            <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Expert Dental Care Offered</h2>
+            <p class="text-slate-400 text-sm">Providing full-spectrum dental solutions under one roof at The Park Dental Clinic Kolkata.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Service 1 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 rounded-2xl p-8 group hover:-translate-y-1">
+                <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-cyan-500 group-hover:text-slate-950 transition-all duration-300">
+                    <i class="fa-solid fa-teeth"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">General & Preventive Dentistry</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">Comprehensive dental exams, professional scaling, plaque removal, and preventive oral health guidance.</p>
+                <a href="#contact" class="text-xs font-semibold text-cyan-400 hover:text-cyan-300 flex items-center gap-2">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 rounded-2xl p-8 group hover:-translate-y-1">
+                <div class="w-14 h-14 rounded-2xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-indigo-500 group-hover:text-slate-950 transition-all duration-300">
+                    <i class="fa-solid fa-[#000] fa-wand-magic-sparkles"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Cosmetic Smile Enhancement</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">Tooth whitening, porcelain veneers, and aesthetic restorations to create your ideal confident smile.</p>
+                <a href="#contact" class="text-xs font-semibold text-indigo-400 hover:text-indigo-300 flex items-center gap-2">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-teal-500/50 transition-all duration-300 rounded-2xl p-8 group hover:-translate-y-1">
+                <div class="w-14 h-14 rounded-2xl bg-teal-500/10 text-teal-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-teal-500 group-hover:text-slate-950 transition-all duration-300">
+                    <i class="fa-solid fa-file-medical"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Restorative Dentistry</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">Durable tooth-colored fillings, crowns, and bridge restorations engineered for natural function and appearance.</p>
+                <a href="#contact" class="text-xs font-semibold text-teal-400 hover:text-teal-300 flex items-center gap-2">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-pink-500/50 transition-all duration-300 rounded-2xl p-8 group hover:-translate-y-1">
+                <div class="w-14 h-14 rounded-2xl bg-pink-500/10 text-pink-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-pink-500 group-hover:text-slate-950 transition-all duration-300">
+                    <i class="fa-solid fa-syringe"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Painless Root Canal Therapy</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">Modern endodontic procedures aimed at preserving damaged natural teeth with minimal discomfort.</p>
+                <a href="#contact" class="text-xs font-semibold text-pink-400 hover:text-pink-300 flex items-center gap-2">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 rounded-2xl p-8 group hover:-translate-y-1">
+                <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-cyan-500 group-hover:text-slate-950 transition-all duration-300">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Family & Pediatric Care</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">Gentle, patient-friendly dental consultations suitable for patients of all ages, from children to seniors.</p>
+                <a href="#contact" class="text-xs font-semibold text-cyan-400 hover:text-cyan-300 flex items-center gap-2">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 transition-all duration-300 rounded-2xl p-8 group hover:-translate-y-1">
+                <div class="w-14 h-14 rounded-2xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-purple-500 group-hover:text-slate-950 transition-all duration-300">
+                    <i class="fa-solid fa-kit-medical"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Emergency Dental Services</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">Prompt care for acute toothaches, chipped teeth, and urgent oral trauma at Kolkata.</p>
+                <a href="#contact" class="text-xs font-semibold text-purple-400 hover:text-purple-300 flex items-center gap-2">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 px-6 relative z-10 bg-slate-950/50 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <span class="text-cyan-400 text-xs font-bold tracking-widest uppercase">Patient Stories</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">What Patients Say</h2>
+                <p class="text-slate-400 text-sm">Real feedback from patients treated by Dr. Sohail Anjum.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 text-sm gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "Dr. Sohail Anjum is extremely polite and professional. I was terrified of dental treatments, but he made my root canal procedure entirely smooth and pain-free. Best dentist in Kolkata!"
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-slate-800/80">
+                        <p class="text-white font-semibold text-sm">Aakash Mukherjee</p>
+                        <p class="text-slate-400 text-xs">Patient at The Park Dental Clinic</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 text-sm gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "The clinic infrastructure is top-notch and Dr. Sohail takes time to explain every detail before starting treatment. Highly recommended for any general or cosmetic dental work."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-slate-800/80">
+                        <p class="text-white font-semibold text-sm">Priyanka Roy</p>
+                        <p class="text-slate-400 text-xs">Verified Patient</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 text-sm gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "Brought my father for dental restorations. Dr. Anjum’s patient and gentle handling made my father feel so comfortable. Brilliant results!"
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-slate-800/80">
+                        <p class="text-white font-semibold text-sm">Sanjay Banerji</p>
+                        <p class="text-slate-400 text-xs">Kolkata Resident</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Consultation Form Section -->
+    <section id="contact" class="py-24 px-6 relative z-10 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+            
+            <!-- Contact Details -->
+            <div class="lg:col-span-5 space-y-8">
+                <div>
+                    <span class="text-cyan-400 text-xs font-bold tracking-widest uppercase">Get In Touch</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight mt-2">Book Your Visit Today</h2>
+                    <p class="text-slate-400 text-sm mt-3 leading-relaxed">Ready for a healthier smile? Reach out directly to schedule your appointment at Park Dental Clinic Kolkata.</p>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-900/60 backdrop-blur-xl border border-slate-800">
+                        <div class="w-10 h-10 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400 font-medium">Practice Location</p>
+                            <p class="text-sm font-semibold text-white mt-0.5">The Park Dental Clinic, Kolkata</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-900/60 backdrop-blur-xl border border-slate-800">
+                        <div class="w-10 h-10 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400 font-medium">Consultation Hours</p>
+                            <p class="text-sm font-semibold text-white mt-0.5">Mon – Sat: 10:00 AM – 8:00 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-900/60 backdrop-blur-xl border border-slate-800">
+                        <div class="w-10 h-10 rounded-lg bg-teal-500/10 text-teal-400 flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-shield-virus"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400 font-medium">Safety Standard</p>
+                            <p class="text-sm font-semibold text-white mt-0.5">100% Sterilization Protocol</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form -->
+            <div class="lg:col-span-7">
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-3xl shadow-2xl">
+                    <h3 class="text-xl font-bold text-white mb-6">Request Appointment</h3>
+                    <form class="space-y-5" onsubmit="event.preventDefault(); alert('Appointment Request Sent!');">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-400 mb-2">Full Name</label>
+                                <input type="text" placeholder="e.g. Rahul Sharma" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-400 mb-2">Phone Number</label>
+                                <input type="tel" placeholder="+91 98765 43210" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-400 mb-2">Preferred Treatment</label>
+                            <select class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-300 focus:outline-none focus:border-cyan-500 transition-colors">
+                                <option>General Dental Checkup</option>
+                                <option>Teeth Whitening & Aesthetics</option>
+                                <option>Root Canal Consultation</option>
+                                <option>Restorative / Crown Treatment</option>
+                                <option>Emergency Service</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-400 mb-2">Message or Symptoms (Optional)</label>
+                            <textarea rows="4" placeholder="Describe your dental concern or preferred appointment date..." class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-500 transition-colors"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-600 to-teal-400 text-white font-bold text-sm shadow-xl shadow-cyan-500/20 hover:shadow-cyan-500/40 hover:-translate-y-0.5 transition-all">
+                            Submit Consultation Request
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-6 border-t border-slate-900 bg-slate-950 text-slate-500 text-xs text-center z-10 relative">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© 2026 Dr. Sohail Anjum. The Park Dental Clinic Kolkata. All rights reserved.</p>
+            <div class="flex gap-4">
+                <a href="#" class="hover:text-slate-300 transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-slate-300 transition-colors">Terms of Care</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
