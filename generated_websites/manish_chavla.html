@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manish Chavla | Strategic Technology & Business Leader</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f5ff',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            900: '#0f172a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-blob {
+            position: absolute;
+            filter: blur(90px);
+            opacity: 0.35;
+            border-radius: 50%;
+            z-index: 0;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white relative overflow-x-hidden">
+
+    <!-- Ambient Gradient Glows -->
+    <div class="glow-blob w-96 h-96 bg-indigo-600 top-10 left-1/4"></div>
+    <div class="glow-blob w-96 h-96 bg-purple-600 top-1/3 right-10"></div>
+    <div class="glow-blob w-96 h-96 bg-pink-600 bottom-1/4 left-10"></div>
+
+    <!-- Navigation Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-tight text-white flex items-center gap-2 group">
+                <span class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center text-white font-extrabold shadow-lg shadow-indigo-500/20 group-hover:scale-105 transition-transform duration-300">MC</span>
+                <span class="bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent font-extrabold text-lg">Manish Chavla</span>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-indigo-400 transition-colors">Expertise</a>
+                <a href="#services" class="hover:text-indigo-400 transition-colors">Services</a>
+                <a href="#testimonials" class="hover:text-indigo-400 transition-colors">Endorsements</a>
+                <a href="#contact" class="hover:text-indigo-400 transition-colors">Contact</a>
+            </nav>
+
+            <div class="hidden md:flex items-center gap-4">
+                <a href="#contact" class="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-semibold rounded-xl group bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 group-hover:from-indigo-500 group-hover:to-pink-500 hover:text-white text-white shadow-lg shadow-indigo-500/25 transition-all duration-300">
+                    <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-slate-950 rounded-[10px] group-hover:bg-opacity-0">
+                        Get In Touch
+                    </span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-menu-btn" class="md:hidden text-slate-300 hover:text-white focus:outline-none text-2xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900/95 border-b border-slate-800 px-6 py-4 space-y-4">
+            <a href="#about" class="block text-slate-300 hover:text-indigo-400 transition-colors">About</a>
+            <a href="#expertise" class="block text-slate-300 hover:text-indigo-400 transition-colors">Expertise</a>
+            <a href="#services" class="block text-slate-300 hover:text-indigo-400 transition-colors">Services</a>
+            <a href="#testimonials" class="block text-slate-300 hover:text-indigo-400 transition-colors">Endorsements</a>
+            <a href="#contact" class="block text-slate-300 hover:text-indigo-400 transition-colors">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-20 md:pt-48 md:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Left Text Column -->
+                <div class="lg:col-span-7 text-center lg:text-left space-y-8">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-indigo-500/30 text-indigo-300 text-xs sm:text-sm font-semibold backdrop-blur-md shadow-inner">
+                        <span class="flex h-2 w-2 rounded-full bg-emerald-400 animate-ping"></span>
+                        <span class="flex h-2 w-2 rounded-full bg-emerald-500 -ml-4"></span>
+                        <span>Available for Strategic Advisory & Leadership Roles</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl xl:text-7xl font-extrabold tracking-tight leading-tight">
+                        Transforming Vision Into <span class="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">Digital Reality</span>
+                    </h1>
+
+                    <p class="text-lg sm:text-xl text-slate-400 font-light max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        I am <span class="text-white font-semibold">Manish Chavla</span> — a forward-thinking technology strategist and enterprise innovation leader empowering organizations to scale, transform, and pioneer next-generation digital ecosystems.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-bold shadow-xl shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 text-center">
+                            Initiate Conversation <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                        </a>
+                        <a href="#expertise" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900/80 hover:bg-slate-800 text-slate-200 font-semibold border border-slate-800 hover:border-slate-700 transition-all duration-300 text-center backdrop-blur-md">
+                            Explore Expertise
+                        </a>
+                    </div>
+
+                    <!-- Trust Badges / Stats -->
+                    <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-4 max-w-xl mx-auto lg:mx-0">
+                        <div class="text-center lg:text-left">
+                            <p class="text-2xl sm:text-3xl font-extrabold text-white">12+</p>
+                            <p class="text-xs sm:text-sm text-slate-400">Years Experience</p>
+                        </div>
+                        <div class="text-center lg:text-left">
+                            <p class="text-2xl sm:text-3xl font-extrabold text-indigo-400">50+</p>
+                            <p class="text-xs sm:text-sm text-slate-400">Global Initiatives</p>
+                        </div>
+                        <div class="text-center lg:text-left">
+                            <p class="text-2xl sm:text-3xl font-extrabold text-pink-400">99%</p>
+                            <p class="text-xs sm:text-sm text-slate-400">Client Satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Avatar & Profile Visual -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative group">
+                        <!-- Double Glowing Gradient Ring -->
+                        <div class="absolute -inset-1.5 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full blur-xl opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+                        <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full"></div>
+                        
+                        <!-- Avatar Holder -->
+                        <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden bg-slate-950 p-2">
+                            <img src="https://ui-avatars.com/api/?name=Manish+Chavla&size=200&background=0D8ABC&color=fff&bold=true" alt="Manish Chavla" class="w-full h-full object-cover rounded-full transform group-hover:scale-105 transition duration-500">
+                        </div>
+
+                        <!-- Floating Badges -->
+                        <div class="absolute -bottom-4 -left-4 bg-slate-900/90 border border-slate-800 backdrop-blur-xl px-4 py-3 rounded-2xl shadow-2xl flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold">
+                                <i class="fa-solid fa-award text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Strategic Vision</p>
+                                <p class="text-sm font-bold text-white">Executive Leader</p>
+                            </div>
+                        </div>
+
+                        <div class="absolute -top-4 -right-4 bg-slate-900/90 border border-slate-800 backdrop-blur-xl px-4 py-3 rounded-2xl shadow-2xl flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-pink-500/20 text-pink-400 flex items-center justify-center font-bold">
+                                <i class="fa-solid fa-chart-line text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">High Impact</p>
+                                <p class="text-sm font-bold text-white">Digital Growth</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 relative bg-slate-900/40 border-y border-slate-800/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Section Image -->
+                <div class="lg:col-span-6 relative">
+                    <div class="relative rounded-3xl overflow-hidden border border-slate-800 group shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Team Strategic Collaboration" class="w-full h-[420px] object-cover group-hover:scale-105 transition duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-6 bg-slate-900/80 backdrop-blur-xl border border-slate-800 rounded-2xl">
+                            <p class="text-sm text-indigo-300 font-semibold uppercase tracking-wider mb-1">Collaborative Leadership</p>
+                            <p class="text-white font-medium text-base">Bridging high-level corporate goals with cutting-edge technological execution.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold">
+                        <i class="fa-solid fa-user-check"></i>
+                        <span>About Manish Chavla</span>
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                        Architecting High-Performance Systems & <span class="bg-gradient-to-r from-indigo-400 to-pink-400 bg-clip-text text-transparent">Empowering Teams</span>
+                    </h2>
+
+                    <p class="text-slate-300 leading-relaxed text-base font-light">
+                        With a passionate drive for innovation and operational excellence, Manish Chavla specializes in steering complex technology initiatives from conception to enterprise delivery. Navigating fast-paced technology landscapes requires an agile mindset, clear vision, and scalable design strategy.
+                    </p>
+
+                    <p class="text-slate-400 leading-relaxed text-sm font-light">
+                        By aligning modern tech stack architectures with business growth drivers, Manish consistently elevates digital infrastructure, unlocks scalable opportunities, and establishes high-trust operational paradigms.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-4 pt-2">
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <i class="fa-solid fa-microchip text-2xl text-indigo-400 mb-2"></i>
+                            <h4 class="font-bold text-white text-sm">Tech Modernization</h4>
+                            <p class="text-xs text-slate-400 mt-1">Replacing legacy friction with high-speed ecosystems.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <i class="fa-solid fa-people-roof text-2xl text-pink-400 mb-2"></i>
+                            <h4 class="font-bold text-white text-sm">Agile Leadership</h4>
+                            <p class="text-xs text-slate-400 mt-1">Building cross-functional cultures that deliver consistently.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / Pillars Section -->
+    <section id="services" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-semibold">
+                    <i class="fa-solid fa-cubes"></i>
+                    <span>Core Offerings & Capabilities</span>
+                </div>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
+                    Strategic Pillars of <span class="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">Excellence</span>
+                </h2>
+                <p class="text-slate-400 text-base">Comprehensive services tailored to elevate organizations from foundation to market leadership.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-2xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300 mb-6">
+                        <i class="fa-solid fa-compass-drafting text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Enterprise Digital Strategy</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Crafting robust technology roadmaps that align perfectly with revenue growth, operational efficiency, and market expansion.</p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-bold text-indigo-400 group-hover:text-indigo-300 gap-1">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 group-hover:bg-purple-500 group-hover:text-white transition-all duration-300 mb-6">
+                        <i class="fa-solid fa-cloud-bolt text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Cloud Architecture & Scaling</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Designing high-availability cloud infrastructure and microservice solutions engineered for seamless velocity and elasticity.</p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-bold text-purple-400 group-hover:text-purple-300 gap-1">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-pink-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-2xl bg-pink-500/10 border border-pink-500/30 flex items-center justify-center text-pink-400 group-hover:bg-pink-500 group-hover:text-white transition-all duration-300 mb-6">
+                        <i class="fa-solid fa-layer-group text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Product & UX Governance</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Combining human-centric user experience design with disciplined technical development standards to maximize end-user adoption.</p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-bold text-pink-400 group-hover:text-pink-300 gap-1">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-emerald-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300 mb-6">
+                        <i class="fa-solid fa-shield-halved text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Cybersecurity & Governance</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Implementing zero-trust frameworks, risk management protocols, and rigorous security standards across tech operations.</p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-bold text-emerald-400 group-hover:text-emerald-300 gap-1">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-amber-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 group-hover:bg-amber-500 group-hover:text-white transition-all duration-300 mb-6">
+                        <i class="fa-solid fa-chart-pie text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Data Intelligence & AI Integration</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Leveraging modern data pipelines, predictive analytics, and automated workflows to turn raw data into strategic assets.</p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-bold text-amber-400 group-hover:text-amber-300 gap-1">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 group-hover:bg-cyan-500 group-hover:text-white transition-all duration-300 mb-6">
+                        <i class="fa-solid fa-handshake text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Executive Advisory</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Serving as a trusted technology advisor to founders, boards, and executive suites navigating critical transition phases.</p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-bold text-cyan-400 group-hover:text-cyan-300 gap-1">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Endorsements Section -->
+    <section id="testimonials" class="py-24 bg-slate-900/30 border-y border-slate-800/50 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-pink-500/10 border border-pink-500/20 text-pink-400 text-xs font-semibold">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <span>Stakeholder Endorsements</span>
+                </div>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
+                    Trusted by <span class="bg-gradient-to-r from-indigo-400 to-pink-400 bg-clip-text text-transparent">Industry Leaders</span>
+                </h2>
+                <p class="text-slate-400 text-base">Direct feedback from executives and collaborators who have experienced the strategic impact firsthand.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Endorsement 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 flex flex-col justify-between hover:border-indigo-500/40 transition-all duration-300">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Manish Chavla's ability to simplify complex technical bottlenecks into a clear strategic path was key to our project success. Exceptional vision and leadership."
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-800/80 flex items-center gap-4">
+                        <div class="w-11 h-11 rounded-full bg-indigo-500/20 flex items-center justify-center font-bold text-indigo-300 text-sm">VP</div>
+                        <div>
+                            <h4 class="font-bold text-white text-sm">Vice President of Engineering</h4>
+                            <p class="text-xs text-slate-400">Global Tech Enterprise</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Endorsement 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 flex flex-col justify-between hover:border-purple-500/40 transition-all duration-300">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "One of the most effective tech minds I've worked with. Manish seamlessly connects business targets with high-performing technology solutions."
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-800/80 flex items-center gap-4">
+                        <div class="w-11 h-11 rounded-full bg-purple-500/20 flex items-center justify-center font-bold text-purple-300 text-sm">CTO</div>
+                        <div>
+                            <h4 class="font-bold text-white text-sm">Chief Technology Officer</h4>
+                            <p class="text-xs text-slate-400">Digital Solutions Corp</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Endorsement 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 flex flex-col justify-between hover:border-pink-500/40 transition-all duration-300">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Strategic precision, calm leadership under pressure, and a deep commitment to high software design standards. Strongly recommended."
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-800/80 flex items-center gap-4">
+                        <div class="w-11 h-11 rounded-full bg-pink-500/20 flex items-center justify-center font-bold text-pink-300 text-sm">MD</div>
+                        <div>
+                            <h4 class="font-bold text-white text-sm">Managing Director</h4>
+                            <p class="text-xs text-slate-400">Innovation Capital Partners</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Outreach Section -->
+    <section id="contact" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                
+                <!-- Direct Details Column -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold mb-4">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span>Let's Connect</span>
+                        </div>
+                        <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight">
+                            Start a <span class="bg-gradient-to-r from-indigo-400 to-pink-400 bg-clip-text text-transparent">Strategic</span> Dialogue
+                        </h2>
+                        <p class="text-slate-400 text-base mt-4 font-light">
+                            Whether discussing leadership opportunities, corporate advisories, or digital innovation initiatives, Manish Chavla is available for direct engagement.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="p-5 rounded-2xl bg-slate-900/60 border border-slate-800 flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium uppercase tracking-wider">Direct Contact</p>
+                                <p class="text-sm font-semibold text-white">manish.chavla@executive-portfolio.com</p>
+                            </div>
+                        </div>
+
+                        <div class="p-5 rounded-2xl bg-slate-900/60 border border-slate-800 flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium uppercase tracking-wider">LinkedIn Professional Network</p>
+                                <p class="text-sm font-semibold text-white">Connected: 23 Aug 2026</p>
+                            </div>
+                        </div>
+
+                        <div class="p-5 rounded-2xl bg-slate-900/60 border border-slate-800 flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-pink-500/10 text-pink-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium uppercase tracking-wider">Location</p>
+                                <p class="text-sm font-semibold text-white">Global Reach / Remote Advisory</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Form Column -->
+                <div class="lg:col-span-7">
+                    <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 sm:p-10 rounded-3xl shadow-2xl relative overflow-hidden">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-indigo-500/10 rounded-full blur-2xl"></div>
+                        
+                        <h3 class="text-2xl font-bold text-white mb-6">Send a Message</h3>
+                        
+                        <form id="contact-form" class="space-y-6" onsubmit="event.preventDefault(); alert('Thank you, Manish Chavla will receive your message shortly.');">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Name</label>
+                                    <input type="text" required placeholder="John Doe" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors text-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Email</label>
+                                    <input type="email" required placeholder="john@example.com" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors text-sm">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Subject</label>
+                                <input type="text" required placeholder="Executive Opportunity / Strategic Advisory" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors text-sm">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Message</label>
+                                <textarea rows="4" required placeholder="Write your proposal or outreach details here..." class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors text-sm resize-none"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-bold shadow-xl shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.01] active:scale-[0.99] transition-all duration-300">
+                                Send Message <i class="fa-solid fa-paper-plane ml-2 text-xs"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-slate-800/80 bg-slate-950 text-slate-400 text-xs text-center">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© 2026 Manish Chavla. All rights reserved.</p>
+            <div class="flex items-center gap-6">
+                <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition-colors">Terms of Engagement</a>
+                <a href="#" class="hover:text-white transition-colors">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
