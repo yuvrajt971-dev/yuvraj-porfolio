@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smit Mevada | Jr Architect & Architectural Designer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f3ff',
+                            400: '#818cf8',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            900: '#312e81',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(99, 102, 241, 0.3);
+        }
+        .glow-card:hover {
+            box-shadow: 0 0 30px -5px rgba(168, 85, 247, 0.25);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white relative overflow-x-hidden">
+
+    <!-- Background Ambient Glows -->
+    <div class="fixed top-0 left-1/4 w-96 h-96 bg-indigo-600/10 rounded-full blur-[120px] pointer-events-none"></div>
+    <div class="fixed bottom-1/3 right-1/4 w-96 h-96 bg-purple-600/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 p-0.5 flex items-center justify-center">
+                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center font-bold text-white text-lg">
+                        SM
+                    </div>
+                </div>
+                <span class="font-extrabold text-xl tracking-tight text-white group-hover:text-indigo-400 transition-colors">
+                    SMIT<span class="text-indigo-500">.</span>MEVADA
+                </span>
+            </a>
+
+            <!-- Desktop Links -->
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-indigo-400 transition-colors">Expertise</a>
+                <a href="#services" class="hover:text-indigo-400 transition-colors">Services</a>
+                <a href="#portfolio" class="hover:text-indigo-400 transition-colors">Portfolio</a>
+                <a href="#testimonials" class="hover:text-indigo-400 transition-colors">Endorsements</a>
+            </div>
+
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="#contact" class="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-semibold rounded-xl group bg-gradient-to-br from-indigo-500 to-purple-600 group-hover:from-indigo-500 group-hover:to-pink-500 hover:text-white text-white shadow-lg shadow-indigo-500/20">
+                    <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-slate-950 rounded-[10px] group-hover:bg-opacity-0">
+                        Get In Touch
+                    </span>
+                </a>
+            </div>
+
+            <!-- Mobile menu button -->
+            <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden text-slate-300 hover:text-white focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-6 py-4 space-y-3">
+            <a href="#about" class="block text-slate-300 hover:text-indigo-400 py-1">About</a>
+            <a href="#expertise" class="block text-slate-300 hover:text-indigo-400 py-1">Expertise</a>
+            <a href="#services" class="block text-slate-300 hover:text-indigo-400 py-1">Services</a>
+            <a href="#portfolio" class="block text-slate-300 hover:text-indigo-400 py-1">Portfolio</a>
+            <a href="#testimonials" class="block text-slate-300 hover:text-indigo-400 py-1">Endorsements</a>
+            <a href="#contact" class="block text-indigo-400 font-semibold py-1">Get In Touch</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-20 md:pt-48 md:pb-32 px-6 overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
+                
+                <!-- Text Column -->
+                <div class="w-full lg:w-7/12 space-y-8 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-indigo-500/30 text-indigo-300 text-xs md:text-sm font-medium backdrop-blur-md">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        Architectural Innovator & Spatial Visionary
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-none">
+                        Crafting <span class="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-500 bg-clip-text text-transparent">Unseen</span> Architectural Futures.
+                    </h1>
+
+                    <p class="text-lg sm:text-xl text-slate-400 font-normal max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Hi, I'm <strong class="text-white">Smit Mevada</strong>, Jr Architect at <span class="text-indigo-400 font-semibold">unseen architects</span>. I bridge parametric design, structural precision, and modern aesthetics to create inspiring spatial environments.
+                    </p>
+
+                    <!-- Trust Badges & CTAs -->
+                    <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="#portfolio" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold text-center hover:opacity-90 transition-all shadow-lg shadow-indigo-500/25 flex items-center justify-center gap-2">
+                            <span>Explore Portfolio</span>
+                            <i class="fa-solid fa-arrow-right text-sm"></i>
+                        </a>
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900/80 hover:bg-slate-800 border border-slate-700 text-slate-200 font-semibold text-center transition-all flex items-center justify-center gap-2">
+                            <span>Collaborate</span>
+                            <i class="fa-solid fa-compass text-slate-400"></i>
+                        </a>
+                    </div>
+
+                    <!-- Trust Stats -->
+                    <div class="pt-8 grid grid-cols-3 gap-4 border-t border-slate-800/80 text-center lg:text-left">
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-bold text-white">3D/BIM</div>
+                            <div class="text-xs text-slate-400 mt-1">Modeling Precision</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-bold text-indigo-400">100%</div>
+                            <div class="text-xs text-slate-400 mt-1">Design Dedication</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-bold text-pink-400">Sustainable</div>
+                            <div class="text-xs text-slate-400 mt-1">Urban Vision</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Avatar Column -->
+                <div class="w-full lg:w-5/12 flex justify-center">
+                    <div class="relative group">
+                        <!-- Outer Ambient Glow -->
+                        <div class="absolute -inset-1.5 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full blur-2xl opacity-60 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+                        
+                        <!-- Double Gradient Ring Avatar Frame -->
+                        <div class="relative p-2 rounded-full bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 shadow-2xl">
+                            <div class="p-1.5 rounded-full bg-slate-950">
+                                <img src="https://ui-avatars.com/api/?name=Smit+Mevada&size=200&background=0D8ABC&color=fff&bold=true" 
+                                     alt="Smit Mevada Profile Picture" 
+                                     class="w-64 h-64 sm:w-80 sm:h-80 rounded-full object-cover transform transition duration-500 group-hover:scale-105">
+                            </div>
+                        </div>
+
+                        <!-- Badge Overlay -->
+                        <div class="absolute -bottom-4 right-4 bg-slate-900/90 border border-slate-700 backdrop-blur-xl px-5 py-3 rounded-2xl shadow-xl flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-indigo-500/20 flex items-center justify-center text-indigo-400">
+                                <i class="fa-solid fa-building-columns text-lg"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400">Current Role</div>
+                                <div class="text-sm font-bold text-white">unseen architects</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-24 px-6 relative bg-slate-900/40 border-y border-slate-800/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                
+                <!-- Image Showcase -->
+                <div class="relative rounded-3xl overflow-hidden border border-slate-800 shadow-2xl group">
+                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" 
+                         alt="Architectural Design & Modern Living Space" 
+                         class="w-full h-[450px] object-cover object-center transform transition duration-700 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80"></div>
+                    
+                    <div class="absolute bottom-6 left-6 right-6 p-6 bg-slate-900/80 backdrop-blur-xl rounded-2xl border border-slate-800">
+                        <h4 class="text-lg font-bold text-white mb-1">Architectural Philosophy</h4>
+                        <p class="text-slate-300 text-sm">"Form follows function, elevated by light, structural integrity, and sustainable innovation."</p>
+                    </div>
+                </div>
+
+                <!-- Text & Skills Details -->
+                <div class="space-y-6">
+                    <div class="inline-block px-4 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-300 text-xs font-semibold uppercase tracking-wider">
+                        About Smit Mevada
+                    </div>
+                    
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                        Transforming Abstract Spatial Concepts into Living Structural Masterpieces
+                    </h2>
+
+                    <p class="text-slate-400 text-base leading-relaxed">
+                        As a passionate Junior Architect at <strong class="text-slate-200">unseen architects</strong>, I specialize in blending modernist aesthetics with computational efficiency. My approach integrates rigorous 3D BIM modeling, spatial ergonomics, and environmental responsiveness to craft structures that leave a lasting footprint.
+                    </p>
+
+                    <!-- Key Expertise Pillars -->
+                    <div class="grid grid-cols-2 gap-4 pt-4">
+                        <div class="p-4 rounded-xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300">
+                            <i class="fa-solid fa-cube text-indigo-400 text-xl mb-2"></i>
+                            <h4 class="font-semibold text-white text-sm">3D BIM & Renderings</h4>
+                            <p class="text-xs text-slate-400 mt-1">High-fidelity visualization & structural models.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300">
+                            <i class="fa-solid fa-compass-drafting text-purple-400 text-xl mb-2"></i>
+                            <h4 class="font-semibold text-white text-sm">Spatial Planning</h4>
+                            <p class="text-xs text-slate-400 mt-1">Optimizing flow, light, and interior dynamics.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300">
+                            <i class="fa-solid fa-leaf text-emerald-400 text-xl mb-2"></i>
+                            <h4 class="font-semibold text-white text-sm">Eco-Architecture</h4>
+                            <p class="text-xs text-slate-400 mt-1">Sustainable material selection & passive design.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300">
+                            <i class="fa-solid fa-layer-group text-pink-400 text-xl mb-2"></i>
+                            <h4 class="font-semibold text-white text-sm">Facade & Structure</h4>
+                            <p class="text-xs text-slate-400 mt-1">Innovating exterior skins and structural harmony.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 px-6 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="inline-block px-4 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 text-xs font-semibold uppercase tracking-wider">
+                    Core Services
+                </div>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">Architectural Solutions & Engineering Excellence</h2>
+                <p class="text-slate-400 text-base">Comprehensive design and drafting capabilities tailored to modern residential, commercial, and conceptual developments.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 glow-card group relative">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-indigo-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-ruler-combined"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-indigo-400 transition-colors">Architectural Drafting & BIM</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Detailed technical blueprints, Revit 3D modeling, construction documentation, and structural layout planning with hyper-precision.</p>
+                    <span class="text-xs font-semibold text-indigo-400 inline-flex items-center gap-1">Read Details <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 transition-all duration-300 glow-card group relative">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-purple-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-vr-cardboard"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">3D Visualization & Rendering</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Photorealistic 3D exterior and interior renderings, walkthrough animations, and lighting simulations to bring designs to life.</p>
+                    <span class="text-xs font-semibold text-purple-400 inline-flex items-center gap-1">Read Details <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-pink-500/50 transition-all duration-300 glow-card group relative">
+                    <div class="w-14 h-14 rounded-xl bg-pink-500/10 border border-pink-500/30 flex items-center justify-center text-pink-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-pink-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-couch"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-pink-400 transition-colors">Interior Spatial Design</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Optimizing interior space utilization, acoustic comfort, bespoke material selection, and lighting concepts for luxury living.</p>
+                    <span class="text-xs font-semibold text-pink-400 inline-flex items-center gap-1">Read Details <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-emerald-500/50 transition-all duration-300 glow-card group relative">
+                    <div class="w-14 h-14 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-emerald-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-emerald-400 transition-colors">Sustainable Building Design</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Integrating passive cooling, solar orientation strategies, and eco-conscious construction materials for green building solutions.</p>
+                    <span class="text-xs font-semibold text-emerald-400 inline-flex items-center gap-1">Read Details <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-sky-500/50 transition-all duration-300 glow-card group relative">
+                    <div class="w-14 h-14 rounded-xl bg-sky-500/10 border border-sky-500/30 flex items-center justify-center text-sky-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-sky-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-sky-400 transition-colors">Site Analysis & Feasibility</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">In-depth topographical analysis, zoning code compliance review, and master site concept planning for new developments.</p>
+                    <span class="text-xs font-semibold text-sky-400 inline-flex items-center gap-1">Read Details <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-amber-500/50 transition-all duration-300 glow-card group relative">
+                    <div class="w-14 h-14 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-amber-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-diagram-project"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-amber-400 transition-colors">Parametric & Facade Concepts</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Computational geometry exploration for organic facade systems, innovative shading louvers, and avant-garde structural forms.</p>
+                    <span class="text-xs font-semibold text-amber-400 inline-flex items-center gap-1">Read Details <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Endorsements Section -->
+    <section id="testimonials" class="py-24 px-6 relative bg-slate-900/40 border-y border-slate-800/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="inline-block px-4 py-1.5 rounded-full bg-pink-500/10 border border-pink-500/30 text-pink-300 text-xs font-semibold uppercase tracking-wider">
+                    Peer Endorsements & Client Feedback
+                </div>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">Recognized for Spatial Precision</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Smit possesses an extraordinary eye for spatial flow and structural details. His 3D visualization capabilities transformed our architectural proposals into winning client pitches."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 flex items-center justify-center font-bold text-white text-xs">
+                            RA
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-white">Senior Associate</div>
+                            <div class="text-xs text-slate-400">unseen architects</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Working alongside Smit Mevada on complex residential blueprints has been seamless. His mastery of BIM workflows and attention to detail saved hours of construction revisions."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center font-bold text-white text-xs">
+                            MK
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-white">Structural Engineer</div>
+                            <div class="text-xs text-slate-400">Urban Frameworks Studio</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Smit's parametric facade concepts brought a modern, eco-friendly dynamic to our commercial building design. Highly talented and forward-thinking architect."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-emerald-500 to-indigo-500 flex items-center justify-center font-bold text-white text-xs">
+                            DP
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-white">Design Director</div>
+                            <div class="text-xs text-slate-400">Apex Architectural Labs</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Direct Details Section -->
+    <section id="contact" class="py-24 px-6 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+                
+                <!-- Contact Info -->
+                <div class="space-y-8">
+                    <div>
+                        <div class="inline-block px-4 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-300 text-xs font-semibold uppercase tracking-wider mb-4">
+                            Connect Direct
+                        </div>
+                        <h2 class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight">Let's Build Something Exceptional</h2>
+                        <p class="text-slate-400 text-base mt-4 leading-relaxed">
+                            Interested in collaborating on architectural endeavors, 3D spatial concepts, or structural design consultations? Reach out directly to Smit Mevada.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 text-xl">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400">Official Contact</div>
+                                <div class="text-sm font-semibold text-white">smit.mevada@unseenarchitects.com</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400 text-xl">
+                                <i class="fa-solid fa-building"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400">Firm</div>
+                                <div class="text-sm font-semibold text-white">unseen architects (Jr Architect)</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-12 h-12 rounded-xl bg-pink-500/10 flex items-center justify-center text-pink-400 text-xl">
+                                <i class="fa-solid fa-handshake"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400">Network Connected Date</div>
+                                <div class="text-sm font-semibold text-white">23 Aug 2026</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="p-8 sm:p-10 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 shadow-2xl relative">
+                    <form onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent to Smit Mevada.');" class="space-y-6">
+                        <h3 class="text-2xl font-bold text-white mb-6">Send a Direct Message</h3>
+                        
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Name</label>
+                            <input type="text" placeholder="John Doe" required class="w-full px-4 py-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Email Address</label>
+                            <input type="email" placeholder="john@example.com" required class="w-full px-4 py-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Project Inquiry / Message</label>
+                            <textarea rows="4" placeholder="Tell me about your architectural project or design collaboration..." required class="w-full px-4 py-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold hover:opacity-90 transition-all shadow-lg shadow-indigo-500/25">
+                            Send Message to Smit
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 border-t border-slate-800 bg-slate-950">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left">
+            <div>
+                <div class="font-extrabold text-xl text-white tracking-tight">
+                    SMIT<span class="text-indigo-500">.</span>MEVADA
+                </div>
+                <p class="text-xs text-slate-500 mt-1">Jr Architect at unseen architects &bull; Portfolio Showcase</p>
+            </div>
+            
+            <div class="flex items-center space-x-6 text-slate-400">
+                <a href="https://linkedin.com" target="_blank" class="hover:text-indigo-400 transition-colors"><i class="fa-brands fa-linkedin text-xl"></i></a>
+                <a href="https://instagram.com" target="_blank" class="hover:text-purple-400 transition-colors"><i class="fa-brands fa-instagram text-xl"></i></a>
+                <a href="https://behance.net" target="_blank" class="hover:text-pink-400 transition-colors"><i class="fa-brands fa-behance text-xl"></i></a>
+            </div>
+
+            <div class="text-xs text-slate-500">
+                &copy; 2026 Smit Mevada. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
