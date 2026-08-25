@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay prajapati | Freelance Specialist & Digital Consultant</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#eef2ff',
+                            100: '#e0e7ff',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            700: '#4338ca',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(99, 102, 241, 0.3);
+        }
+        .glow-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glow-card:hover {
+            box-shadow: 0 0 30px -5px rgba(168, 85, 247, 0.25);
+            transform: translateY(-4px);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #818cf8 0%, #c084fc 50%, #f472b6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-border {
+            position: relative;
+            background-clip: padding-box;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- Ambient Background Glows -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
+        <div class="absolute -top-40 -left-40 w-96 h-96 bg-indigo-600/20 rounded-full blur-3xl"></div>
+        <div class="absolute top-1/3 -right-40 w-96 h-96 bg-purple-600/20 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-40 left-1/3 w-96 h-96 bg-pink-600/15 rounded-full blur-3xl"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 p-[2px] transition-transform duration-300 group-hover:scale-105">
+                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+                        <span class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">JP</span>
+                    </div>
+                </div>
+                <span class="font-bold text-lg tracking-tight text-white group-hover:text-indigo-400 transition-colors">Jay prajapati</span>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
+                <a href="#about" class="hover:text-white transition-colors">About</a>
+                <a href="#services" class="hover:text-white transition-colors">Services</a>
+                <a href="#portfolio" class="hover:text-white transition-colors">Work</a>
+                <a href="#testimonials" class="hover:text-white transition-colors">Endorsements</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:opacity-95 transition-all shadow-lg shadow-indigo-500/20 hover:scale-105">
+                    <span>Let's Connect</span>
+                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="relative z-10">
+        <!-- Hero Section -->
+        <section class="min-h-[90vh] flex items-center justify-center pt-12 pb-20 px-6">
+            <div class="max-w-5xl mx-auto text-center space-y-8">
+                <!-- Avatar Frame -->
+                <div class="inline-block relative">
+                    <div class="absolute -inset-1.5 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 blur-md opacity-75 animate-pulse"></div>
+                    <div class="relative w-36 h-36 md:w-44 md:h-44 rounded-full p-1 bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500">
+                        <img src="https://ui-avatars.com/api/?name=Jay+prajapati&size=200&background=0D8ABC&color=fff&bold=true" 
+                             alt="Jay prajapati" 
+                             class="w-full h-full object-cover rounded-full border-4 border-slate-950 shadow-2xl">
+                    </div>
+                    <span class="absolute bottom-2 right-2 px-3 py-1 text-xs font-semibold bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 rounded-full backdrop-blur-md flex items-center gap-1.5">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                        Available for Hire
+                    </span>
+                </div>
+
+                <!-- Intro Headlines -->
+                <div class="space-y-4 max-w-3xl mx-auto">
+                    <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight leading-tight">
+                        Elevating Digital Products with <span class="gradient-text">Masterful Design & Execution</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-slate-400 font-normal leading-relaxed max-w-2xl mx-auto">
+                        Hi, I'm <strong class="text-white font-semibold">Jay prajapati</strong>. Independent Freelance Consultant specializing in high-converting web solutions, pixel-perfect UI/UX, and tailored digital strategy.
+                    </p>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                    <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:shadow-xl hover:shadow-indigo-500/25 transition-all hover:-translate-y-0.5">
+                        Start a Project
+                    </a>
+                    <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-full font-semibold text-slate-300 bg-slate-900/80 border border-slate-800 hover:border-slate-700 hover:text-white transition-all backdrop-blur-xl">
+                        Explore Expertise
+                    </a>
+                </div>
+
+                <!-- Trust Badges -->
+                <div class="pt-12 border-t border-slate-800/60 max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                    <div class="p-4 rounded-2xl bg-slate-900/40 border border-slate-800/50 backdrop-blur-sm">
+                        <div class="text-2xl font-bold text-indigo-400">100%</div>
+                        <div class="text-xs text-slate-400 mt-1">Client Satisfaction</div>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-slate-900/40 border border-slate-800/50 backdrop-blur-sm">
+                        <div class="text-2xl font-bold text-purple-400">Self-Employed</div>
+                        <div class="text-xs text-slate-400 mt-1">Full Autonomy & Focus</div>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-slate-900/40 border border-slate-800/50 backdrop-blur-sm">
+                        <div class="text-2xl font-bold text-pink-400">5★ Rated</div>
+                        <div class="text-xs text-slate-400 mt-1">Quality Deliverables</div>
+                    </div>
+                    <div class="p-4 rounded-2xl bg-slate-900/40 border border-slate-800/50 backdrop-blur-sm">
+                        <div class="text-2xl font-bold text-emerald-400">On-Time</div>
+                        <div class="text-xs text-slate-400 mt-1">Project Delivery</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About & Expertise Section -->
+        <section id="about" class="py-24 px-6 relative">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                    <!-- Image Card -->
+                    <div class="relative group">
+                        <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-indigo-500 to-purple-500 opacity-30 group-hover:opacity-60 blur-xl transition duration-500"></div>
+                        <div class="relative rounded-3xl overflow-hidden border border-slate-800 bg-slate-900/60 backdrop-blur-xl">
+                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Collaborative Workspace" 
+                                 class="w-full h-[420px] object-cover object-center transform group-hover:scale-105 transition duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                            <div class="absolute bottom-6 left-6 right-6 p-6 bg-slate-900/80 backdrop-blur-md rounded-2xl border border-slate-800">
+                                <p class="text-sm font-semibold text-indigo-400">Independent Professional</p>
+                                <p class="text-base text-slate-200 mt-1">Delivering end-to-end digital excellence directly to startups and established brands.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="space-y-6">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold tracking-wide uppercase">
+                            <i class="fa-solid fa-user-gear"></i> About Jay
+                        </div>
+                        <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+                            Transforming concepts into <span class="gradient-text">high-impact digital realities</span>.
+                        </h2>
+                        <p class="text-slate-400 leading-relaxed">
+                            As a dedicated Freelance Specialist, I partner with companies and founders to design and build scalable, user-first web experiences. Operating self-employed allows me to provide agility, personalized communication, and relentless quality control on every single milestone.
+                        </p>
+                        
+                        <div class="grid sm:grid-cols-2 gap-4 pt-4">
+                            <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-indigo-500/40 transition-colors">
+                                <i class="fa-solid fa-laptop-code text-indigo-400 text-xl mb-2"></i>
+                                <h3 class="font-semibold text-white">Full-Stack Execution</h3>
+                                <p class="text-xs text-slate-400 mt-1">From initial layout mockups to clean, responsive code.</p>
+                            </div>
+                            <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-purple-500/40 transition-colors">
+                                <i class="fa-solid fa-bullseye text-purple-400 text-xl mb-2"></i>
+                                <h3 class="font-semibold text-white">Results-Driven</h3>
+                                <p class="text-xs text-slate-400 mt-1">Engineered to drive user engagement and real business metrics.</p>
+                            </div>
+                        </div>
+
+                        <!-- Skills Pills -->
+                        <div class="pt-2 flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-900 text-slate-300 border border-slate-800">UI/UX Design</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-900 text-slate-300 border border-slate-800">Frontend Development</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-900 text-slate-300 border border-slate-800">Brand Identity</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-900 text-slate-300 border border-slate-800">Responsive Web App</span>
+                            <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-900 text-slate-300 border border-slate-800">Strategy & Architecture</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-24 px-6 relative bg-slate-950/50 border-y border-slate-900">
+            <div class="max-w-7xl mx-auto space-y-16">
+                <div class="text-center max-w-2xl mx-auto space-y-4">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-semibold tracking-wide uppercase">
+                        <i class="fa-solid fa-layer-group"></i> Specialized Services
+                    </div>
+                    <h2 class="text-3xl sm:text-5xl font-bold tracking-tight text-white">
+                        Tailored Digital Services
+                    </h2>
+                    <p class="text-slate-400 text-base">
+                        Comprehensive solutions crafted to give your project a competitive edge in today's fast-paced market.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 glow-card group">
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-indigo-500 to-purple-500 flex items-center justify-center text-white text-2xl mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">UI/UX Craftsmanship</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            Intuitive, user-centered design systems and interactive wireframes crafted to delight users and optimize conversions.
+                        </p>
+                        <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-indigo-400 hover:text-indigo-300">
+                            <span>Learn More</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 transition-all duration-300 glow-card group">
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-purple-500 to-pink-500 flex items-center justify-center text-white text-2xl mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Custom Web Development</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            Clean, accessible, and fast web development utilizing modern frameworks and ultra-responsive layouts.
+                        </p>
+                        <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-purple-400 hover:text-purple-300">
+                            <span>Learn More</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-pink-500/50 transition-all duration-300 glow-card group">
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-pink-500 to-rose-500 flex items-center justify-center text-white text-2xl mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Product Strategy</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            Strategic planning, roadmap creation, and product architecture guidance to ensure long-term scalability and efficiency.
+                        </p>
+                        <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-pink-400 hover:text-pink-300">
+                            <span>Learn More</span>
+                            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials / Endorsements Section -->
+        <section id="testimonials" class="py-24 px-6 relative">
+            <div class="max-w-7xl mx-auto space-y-16">
+                <div class="text-center max-w-2xl mx-auto space-y-4">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pink-500/10 border border-pink-500/20 text-pink-400 text-xs font-semibold tracking-wide uppercase">
+                        <i class="fa-solid fa-star"></i> Testimonials
+                    </div>
+                    <h2 class="text-3xl sm:text-5xl font-bold tracking-tight text-white">
+                        Client Endorsements
+                    </h2>
+                    <p class="text-slate-400 text-base">
+                        Here is what collaborators and clients say about working directly with Jay.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Rating 1 -->
+                    <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <div class="flex text-amber-400 text-sm gap-1">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-300 text-sm leading-relaxed italic">
+                                "Jay delivered our project on schedule with unmatched quality. His ability to understand our visual identity and translate it into code was incredible."
+                            </p>
+                        </div>
+                        <div class="mt-8 pt-6 border-t border-slate-800/80 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold">
+                                MK
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Marcus Vance</h4>
+                                <p class="text-xs text-slate-400">Startup Founder</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Rating 2 -->
+                    <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <div class="flex text-amber-400 text-sm gap-1">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-300 text-sm leading-relaxed italic">
+                                "Working with a freelance specialist like Jay was refreshing. Communication was clear, execution was fast, and the design standards were top-notch."
+                            </p>
+                        </div>
+                        <div class="mt-8 pt-6 border-t border-slate-800/80 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 flex items-center justify-center font-bold">
+                                SL
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Sarah Lin</h4>
+                                <p class="text-xs text-slate-400">Design Director</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Rating 3 -->
+                    <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <div class="flex text-amber-400 text-sm gap-1">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-300 text-sm leading-relaxed italic">
+                                "If you need someone who takes ownership of a project and delivers high-caliber frontend design, Jay is the ideal choice."
+                            </p>
+                        </div>
+                        <div class="mt-8 pt-6 border-t border-slate-800/80 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-pink-500/20 text-pink-400 flex items-center justify-center font-bold">
+                                DR
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">David Reed</h4>
+                                <p class="text-xs text-slate-400">E-Commerce Lead</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-24 px-6 relative bg-slate-950/80 border-t border-slate-900">
+            <div class="max-w-5xl mx-auto">
+                <div class="rounded-3xl p-8 md:p-12 bg-gradient-to-b from-slate-900/90 to-slate-950/90 border border-slate-800 backdrop-blur-2xl relative overflow-hidden shadow-2xl">
+                    <div class="absolute -top-24 -right-24 w-80 h-80 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+                    <div class="grid md:grid-cols-2 gap-12 items-start">
+                        <div class="space-y-6">
+                            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold tracking-wide uppercase">
+                                <i class="fa-solid fa-paper-plane"></i> Get in Touch
+                            </div>
+                            <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+                                Let's build something exceptional together.
+                            </h2>
+                            <p class="text-slate-400 text-sm leading-relaxed">
+                                Have an upcoming project or looking to elevate your digital presence? Send a message and let's discuss how we can work together.
+                            </p>
+
+                            <div class="space-y-4 pt-4">
+                                <div class="flex items-center gap-4 text-slate-300">
+                                    <div class="w-10 h-10 rounded-xl bg-slate-800/80 border border-slate-700 flex items-center justify-center text-indigo-400">
+                                        <i class="fa-solid fa-briefcase"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs text-slate-500 font-medium">Status</p>
+                                        <p class="text-sm font-semibold">Freelance Consultant (Self Employed)</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-4 text-slate-300">
+                                    <div class="w-10 h-10 rounded-xl bg-slate-800/80 border border-slate-700 flex items-center justify-center text-purple-400">
+                                        <i class="fa-solid fa-calendar-check"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs text-slate-500 font-medium">Availability</p>
+                                        <p class="text-sm font-semibold">Open for New Engagements</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Form -->
+                        <form onsubmit="event.preventDefault(); alert('Thank you for reaching out, Jay will get back to you shortly!');" class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Your Name</label>
+                                <input type="text" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-indigo-500 transition-colors text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Your Email</label>
+                                <input type="email" required placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-indigo-500 transition-colors text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Project Details</label>
+                                <textarea rows="4" required placeholder="Tell me about your project scope, timeline, and goals..." class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-indigo-500 transition-colors text-sm resize-none"></textarea>
+                            </div>
+                            <button type="submit" class="w-full py-4 rounded-xl font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:shadow-lg hover:shadow-indigo-500/25 transition-all text-sm">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 px-6 border-t border-slate-900 bg-slate-950 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© 2026 Jay prajapati. All rights reserved.</p>
+            <div class="flex items-center gap-6">
+                <a href="#" class="hover:text-slate-300 transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-slate-300 transition-colors">Terms of Service</a>
+                <a href="#contact" class="hover:text-slate-300 transition-colors">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
