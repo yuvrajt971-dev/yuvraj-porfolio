@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shruti Singh | Senior Interior Designer & Spatial Strategist</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f3ff',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            900: '#0f172a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(51, 65, 85, 0.4);
+        }
+        .glass-card:hover {
+            border-color: rgba(99, 102, 241, 0.5);
+            box-shadow: 0 0 25px -5px rgba(99, 102, 241, 0.15);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #818cf8 0%, #c084fc 50%, #f472b6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bg-gradient-glow {
+            background: radial-gradient(circle at 50% 20%, rgba(99, 102, 241, 0.15) 0%, rgba(168, 85, 247, 0.05) 50%, transparent 100%);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 selection:bg-indigo-500 selection:text-white">
+
+    <!-- Glowing Background Overlay -->
+    <div class="fixed inset-0 bg-gradient-glow pointer-events-none z-0"></div>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/60 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-tight text-white flex items-center gap-3">
+                <span class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center text-white text-lg font-extrabold shadow-lg shadow-indigo-500/20">SS</span>
+                <span class="tracking-wide">Shruti Singh<span class="text-indigo-400">.</span></span>
+            </a>
+            
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-indigo-400 transition-colors">Expertise</a>
+                <a href="#portfolio" class="hover:text-indigo-400 transition-colors">Portfolio</a>
+                <a href="#testimonials" class="hover:text-indigo-400 transition-colors">Endorsements</a>
+            </div>
+
+            <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-white rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:opacity-95 transition-all shadow-md shadow-indigo-500/20 hover:shadow-indigo-500/40">
+                Book Consultation
+            </a>
+
+            <!-- Mobile menu button -->
+            <button class="md:hidden text-slate-300 hover:text-white text-xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="relative pt-36 pb-20 md:pt-48 md:pb-32 overflow-hidden z-10">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="flex flex-col md:flex-row items-center gap-12 lg:gap-16">
+                
+                <!-- Avatar & Frame -->
+                <div class="relative group">
+                    <!-- Glowing aura effect -->
+                    <div class="absolute -inset-1.5 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full blur-lg opacity-70 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+                    
+                    <div class="relative w-48 h-48 md:w-56 md:h-56 rounded-full p-1.5 bg-slate-900 ring-1 ring-slate-800">
+                        <img src="https://ui-avatars.com/api/?name=Shruti+Singh&size=200&background=0D8ABC&color=fff&bold=true" alt="Shruti Singh" class="w-full h-full rounded-full object-cover">
+                    </div>
+
+                    <!-- Verified Badge -->
+                    <div class="absolute bottom-2 right-2 bg-slate-900 border border-slate-700/80 rounded-full p-2 text-indigo-400 shadow-xl" title="Verified Designer">
+                        <i class="fa-solid fa-circle-check text-xl"></i>
+                    </div>
+                </div>
+
+                <!-- Bio Intro -->
+                <div class="flex-1 text-center md:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 text-xs font-semibold mb-6 uppercase tracking-widest">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        Interior Designer at Tranquil Decor
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.15] mb-6">
+                        Crafting Luxury <br>
+                        <span class="text-gradient">Architectural Spaces</span> & Interiors.
+                    </h1>
+
+                    <p class="text-slate-400 text-lg md:text-xl max-w-2xl font-normal leading-relaxed mb-8">
+                        Elevating residential and commercial environments through sophisticated spatial planning, organic textures, and timeless aesthetic harmony at <span class="text-slate-200 font-semibold">Tranquil Decor</span>.
+                    </p>
+
+                    <!-- Call to action buttons -->
+                    <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 mb-10">
+                        <a href="#contact" class="px-7 py-3.5 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 transition-all hover:-translate-y-0.5">
+                            Start Your Project
+                        </a>
+                        <a href="#portfolio" class="px-7 py-3.5 rounded-full bg-slate-900 border border-slate-700 text-slate-200 font-semibold hover:bg-slate-800 hover:text-white transition-all">
+                            View Showcase <i class="fa-solid fa-arrow-right-long ml-2 text-xs"></i>
+                        </a>
+                    </div>
+
+                    <!-- Trust Badges -->
+                    <div class="pt-6 border-t border-slate-800/80 flex flex-wrap items-center justify-center md:justify-start gap-8 text-xs font-medium text-slate-400">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-gem text-indigo-400"></i>
+                            <span>Bespoke Luxury Interiors</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-leaf text-emerald-400"></i>
+                            <span>Sustainable Concepts</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-award text-purple-400"></i>
+                            <span>Award-Winning Vision</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT & EXPERTISE SECTION -->
+    <section id="about" class="py-20 relative z-10 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Image Container -->
+                <div class="lg:col-span-5">
+                    <div class="relative group">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-pink-500 rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-500"></div>
+                        <div class="relative rounded-2xl overflow-hidden border border-slate-800 shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=800&q=80" alt="Interior Architecture Project" class="w-full h-[450px] object-cover group-hover:scale-105 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+                            <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl glass-card">
+                                <p class="text-xs uppercase tracking-widest text-indigo-400 font-bold mb-1">Design Philosophy</p>
+                                <p class="text-sm text-slate-300 italic">"Simplicity is the ultimate sophistication in interior environments."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-300 text-xs font-semibold uppercase tracking-widest">
+                        About Shruti Singh
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                        Transforming Spaces into Soulful, Functional Works of Art
+                    </h2>
+                    <p class="text-slate-400 leading-relaxed font-light">
+                        As a lead designer at <span class="text-white font-medium">Tranquil Decor</span>, I specialize in blending modern minimalist architecture with warm, tactile luxury. My approach centers on listening to the unique lifestyle of clients, curating environments that radiate serenity, comfort, and architectural elegance.
+                    </p>
+                    <p class="text-slate-400 leading-relaxed font-light">
+                        From high-end residential estates to modern corporate headquarters, every project receives meticulous attention to light, spatial dynamic, custom furniture design, and sustainable material selection.
+                    </p>
+
+                    <!-- Stats Grid -->
+                    <div class="grid grid-cols-3 gap-4 pt-6">
+                        <div class="glass-card p-4 rounded-xl text-center">
+                            <div class="text-2xl sm:text-3xl font-extrabold text-indigo-400">8+</div>
+                            <div class="text-xs text-slate-400 font-medium mt-1">Years Experience</div>
+                        </div>
+                        <div class="glass-card p-4 rounded-xl text-center">
+                            <div class="text-2xl sm:text-3xl font-extrabold text-purple-400">120+</div>
+                            <div class="text-xs text-slate-400 font-medium mt-1">Projects Completed</div>
+                        </div>
+                        <div class="glass-card p-4 rounded-xl text-center">
+                            <div class="text-2xl sm:text-3xl font-extrabold text-pink-400">99%</div>
+                            <div class="text-xs text-slate-400 font-medium mt-1">Client Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="expertise" class="py-20 relative z-10 bg-slate-950/50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 text-xs font-semibold uppercase tracking-widest mb-4">
+                    Core Design Capabilities
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Bespoke Design Services</h2>
+                <p class="text-slate-400 mt-3 text-base">Comprehensive interior solutions tailored from concept to final execution.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-indigo-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-house-chimney-window"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Luxury Residential Design</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Full-scale interior architecture and styling for high-end villas, penthouses, and private estates.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-purple-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Commercial & Workplace</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Designing functional, inspiring commercial environments that embody corporate identity and boost well-being.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-pink-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-cube"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">3D Rendering & Visualization</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Photorealistic 3D spatial walkthroughs and lighting simulations before physical implementation starts.</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-emerald-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-couch"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Custom Furniture & Curation</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Designing bespoke millwork, custom furniture pieces, and sourcing artisanal decorative art globally.</p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-amber-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Lighting Architecture</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Strategic ambient, task, and accent lighting layouts designed to enhance mood and highlight key features.</p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-cyan-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Sustainable Design Strategies</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Integrating eco-friendly materials, energy-efficient choices, and biophilic elements into living spaces.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO SHOWCASE SECTION -->
+    <section id="portfolio" class="py-20 relative z-10">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+                <div>
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-pink-500/10 border border-pink-500/20 text-pink-300 text-xs font-semibold uppercase tracking-widest mb-4">
+                        Curated Work
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Featured Portfolio</h2>
+                </div>
+                <p class="text-slate-400 max-w-md text-sm">A highlight of recent interior projects curated under Tranquil Decor showcasing modern warmth and refined structural harmony.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Project 1 -->
+                <div class="group relative rounded-2xl overflow-hidden glass-card">
+                    <div class="h-72 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80" alt="Minimalist Living Space" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-semibold text-indigo-400 tracking-wider uppercase">Residential Residence</span>
+                        <h3 class="text-lg font-bold text-white mt-1 group-hover:text-indigo-300 transition-colors">The Minimalist Sanctuary</h3>
+                        <p class="text-slate-400 text-xs mt-2 line-clamp-2">Warm neutral palette combining natural oak finishings, micro-cement flooring, and recessed ambient lighting.</p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="group relative rounded-2xl overflow-hidden glass-card">
+                    <div class="h-72 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" alt="Modern Executive Suite" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-semibold text-purple-400 tracking-wider uppercase">Commercial Office</span>
+                        <h3 class="text-lg font-bold text-white mt-1 group-hover:text-purple-300 transition-colors">Urban Executive Loft</h3>
+                        <p class="text-slate-400 text-xs mt-2 line-clamp-2">Contemporary corporate interior utilizing acoustic felt panels, matte black accents, and custom workstations.</p>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="group relative rounded-2xl overflow-hidden glass-card">
+                    <div class="h-72 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=800&q=80" alt="Bespoke Dining Villa" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-semibold text-pink-400 tracking-wider uppercase">Private Villa</span>
+                        <h3 class="text-lg font-bold text-white mt-1 group-hover:text-pink-300 transition-colors">Aura Dining & Lounge</h3>
+                        <p class="text-slate-400 text-xs mt-2 line-clamp-2">Harmonious blending of organic travertine marble tables, custom velvet dining seating, and sculptural fixtures.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials" class="py-20 relative z-10 bg-slate-950/60 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-300 text-xs font-semibold uppercase tracking-widest mb-4">
+                    Client Testimonials
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Endorsements & Feedback</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Shruti completely transformed our villa into an effortless sanctuary. Her attention to detail and color dynamics at Tranquil Decor exceeded every expectation."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-indigo-600/30 flex items-center justify-center font-bold text-indigo-300 text-sm">
+                            AR
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-white">Ananya Roy</p>
+                            <p class="text-xs text-slate-400">Homeowner, Private Villa</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Working with Shruti on our corporate office redesign was seamless. Her ability to combine aesthetic beauty with acoustic practicality is world-class."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-purple-600/30 flex items-center justify-center font-bold text-purple-300 text-sm">
+                            VK
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-white">Vikram Kulkarni</p>
+                            <p class="text-xs text-slate-400">Managing Director, Zenith Tech</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Shruti's 3D visualizations made it so easy to envision our home before construction began. The final result was identical to the design blueprints!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-pink-600/30 flex items-center justify-center font-bold text-pink-300 text-sm">
+                            PM
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-white">Pooja Mehta</p>
+                            <p class="text-xs text-slate-400">Luxury Estate Owner</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-20 relative z-10">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Direct Details -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 text-xs font-semibold uppercase tracking-widest mb-4">
+                            Get In Touch
+                        </div>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Let's Design Your Dream Space</h2>
+                        <p class="text-slate-400 mt-3 text-base leading-relaxed">
+                            Have a project in mind or want to explore possibilities with Tranquil Decor? Reach out to schedule an initial consultation.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-lg shrink-0">
+                                <i class="fa-solid fa-building text-indigo-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Design Studio</h4>
+                                <p class="text-sm text-slate-400">Tranquil Decor, Interior Architecture Division</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 text-lg shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Direct Email</h4>
+                                <p class="text-sm text-slate-400">shruti@tranquildecor.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400 text-lg shrink-0">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Network Status</h4>
+                                <p class="text-sm text-slate-400">Connected August 24, 2026</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Networks -->
+                    <div class="pt-4">
+                        <p class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-3">Connect Professionally</p>
+                        <div class="flex gap-3">
+                            <a href="#" class="w-10 h-10 rounded-lg glass-card flex items-center justify-center text-slate-300 hover:text-indigo-400 transition-colors">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-lg glass-card flex items-center justify-center text-slate-300 hover:text-pink-400 transition-colors">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-lg glass-card flex items-center justify-center text-slate-300 hover:text-purple-400 transition-colors">
+                                <i class="fa-brands fa-pinterest-p"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="lg:col-span-7">
+                    <div class="glass-card p-8 sm:p-10 rounded-3xl relative">
+                        <form onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent to Shruti Singh.');" class="space-y-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-medium text-slate-300 mb-2">Your Name</label>
+                                    <input type="text" required placeholder="Jane Doe" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700/80 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors text-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-medium text-slate-300 mb-2">Email Address</label>
+                                    <input type="email" required placeholder="jane@example.com" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700/80 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors text-sm">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-medium text-slate-300 mb-2">Project Type</label>
+                                <select class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700/80 text-slate-300 focus:outline-none focus:border-indigo-500 transition-colors text-sm">
+                                    <option>Residential Architecture / Interior</option>
+                                    <option>Commercial / Workplace Design</option>
+                                    <option>Custom Furniture Consultation</option>
+                                    <option>3D Spatial Rendering Request</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-medium text-slate-300 mb-2">Project Details</label>
+                                <textarea rows="4" required placeholder="Describe your vision, timeline, and location..." class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700/80 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors text-sm"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-bold text-sm tracking-wide shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 transition-all hover:-translate-y-0.5">
+                                Send Message to Shruti
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-8 border-t border-slate-900 relative z-10 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© 2026 Shruti Singh | Tranquil Decor. All rights reserved.</p>
+            <p class="text-slate-600">Designed with precision & warmth.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
