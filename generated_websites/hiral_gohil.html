@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiral Gohil | Interior Designer & Spatial Strategist</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f3ff',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            900: '#1e1b4b',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #818cf8 0%, #c084fc 50%, #f472b6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-border {
+            position: relative;
+            background-clip: padding-box;
+        }
+        .gradient-border::before {
+            content: '';
+            position: absolute;
+            top: -2px; bottom: -2px; left: -2px; right: -2px;
+            z-index: -1;
+            background: linear-gradient(135deg, #6366f1, #a855f7, #ec4899);
+            border-radius: inherit;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(99, 102, 241, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 p-[2px] transition-transform duration-300 group-hover:scale-105">
+                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+                        <span class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-pink-400">HG</span>
+                    </div>
+                </div>
+                <div>
+                    <span class="font-bold text-lg tracking-tight text-white block leading-none">Hiral Gohil</span>
+                    <span class="text-xs text-indigo-400 font-medium">Studio Inicio</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
+                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+                <a href="#services" class="hover:text-indigo-400 transition-colors">Services</a>
+                <a href="#portfolio" class="hover:text-indigo-400 transition-colors">Portfolio</a>
+                <a href="#testimonials" class="hover:text-indigo-400 transition-colors">Testimonials</a>
+            </div>
+
+            <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:opacity-90 transition-all duration-300 shadow-lg shadow-indigo-500/20 hover:shadow-indigo-500/40 hover:-translate-y-0.5">
+                <span>Let's Connect</span>
+                <i class="fa-solid font-xs fa-arrow-right"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="relative pt-36 pb-20 md:pt-48 md:pb-32 overflow-hidden">
+        <!-- Ambient Glow -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-indigo-600/15 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute top-1/3 right-10 w-[400px] h-[400px] bg-pink-600/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
+                
+                <!-- Left Content -->
+                <div class="flex-1 text-center lg:text-left">
+                    <!-- Badge -->
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/90 border border-slate-800 backdrop-blur-md mb-6 shadow-inner">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        <span class="text-xs font-semibold text-slate-300 tracking-wide uppercase">Interior Designer @ Studio Inicio</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.15] mb-6">
+                        Transforming Spaces into <span class="gradient-text">Living Masterpieces</span>
+                    </h1>
+
+                    <p class="text-lg text-slate-400 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed mb-8">
+                        Elevating residential and commercial interiors through thoughtful spatial planning, sophisticated material selections, and refined contemporary luxury.
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4">
+                        <a href="#contact" class="px-8 py-4 rounded-xl text-base font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:opacity-95 transition-all duration-300 shadow-xl shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:-translate-y-0.5 flex items-center gap-3">
+                            <span>Discuss a Project</span>
+                            <i class="fa-solid fa-paper-plane text-xs"></i>
+                        </a>
+                        <a href="#portfolio" class="px-8 py-4 rounded-xl text-base font-semibold text-slate-300 bg-slate-900/80 hover:bg-slate-800/80 border border-slate-800 hover:border-slate-700 transition-all duration-300 flex items-center gap-3 backdrop-blur-lg">
+                            <span>Explore Portfolio</span>
+                            <i class="fa-solid fa-arrow-down text-xs"></i>
+                        </a>
+                    </div>
+
+                    <!-- Trust Metrics -->
+                    <div class="pt-12 mt-12 border-t border-slate-800/80 grid grid-cols-3 gap-6 text-center lg:text-left">
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-white">8+</div>
+                            <div class="text-xs text-slate-400 mt-1 font-medium">Years Experience</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-white">60+</div>
+                            <div class="text-xs text-slate-400 mt-1 font-medium">Curated Spaces</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-white">100%</div>
+                            <div class="text-xs text-slate-400 mt-1 font-medium">Client Delight</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Avatar / Visual -->
+                <div class="flex-1 flex justify-center">
+                    <div class="relative">
+                        <!-- Outer Ambient Glow Ring -->
+                        <div class="absolute -inset-4 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 opacity-40 blur-xl animate-pulse"></div>
+                        
+                        <!-- Glowing Double-Gradient Avatar Frame -->
+                        <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full p-1.5 bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 shadow-2xl">
+                            <div class="w-full h-full rounded-full p-1 bg-slate-950">
+                                <img src="https://ui-avatars.com/api/?name=Hiral+Gohil&size=200&background=0D8ABC&color=fff&bold=true" alt="Hiral Gohil" class="w-full h-full rounded-full object-cover">
+                            </div>
+                        </div>
+
+                        <!-- Floating Badge 1 -->
+                        <div class="absolute -bottom-4 -left-4 bg-slate-900/90 border border-slate-800 backdrop-blur-xl p-4 rounded-2xl shadow-2xl flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-indigo-500/20 border border-indigo-500/40 flex items-center justify-center text-indigo-400">
+                                <i class="fa-solid fa-compass-drafting text-lg"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 font-medium">Design Focus</div>
+                                <div class="text-sm font-bold text-white">Modern Luxury</div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Badge 2 -->
+                        <div class="absolute -top-2 -right-4 bg-slate-900/90 border border-slate-800 backdrop-blur-xl px-4 py-3 rounded-2xl shadow-2xl flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-full bg-pink-500/20 border border-pink-500/40 flex items-center justify-center text-pink-400 text-xs">
+                                <i class="fa-solid fa-award"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs font-bold text-white">Studio Inicio</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT & EXPERTISE SECTION -->
+    <section id="about" class="py-24 relative bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                
+                <!-- Image Container -->
+                <div class="relative">
+                    <div class="absolute -inset-2 rounded-3xl bg-gradient-to-r from-indigo-500 to-purple-500 opacity-20 blur-xl"></div>
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=800&q=80" alt="Interior Architecture Design Work" class="w-full h-[450px] object-cover hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60"></div>
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div>
+                    <span class="text-xs font-bold text-indigo-400 uppercase tracking-widest">About Hiral Gohil</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2 mb-6 leading-tight">
+                        Crafting Meaningful Architecture & Immersive Interiors
+                    </h2>
+                    <p class="text-slate-400 leading-relaxed mb-6 font-normal">
+                        As an Interior Designer at <span class="text-white font-semibold">Studio Inicio</span>, I merge architectural precision with aesthetic harmony. Every space carries a unique story, and my mission is to transform environments into bespoke sanctuaries tailored to lifestyle, functionality, and timeless elegance.
+                    </p>
+                    <p class="text-slate-400 leading-relaxed mb-8 font-normal">
+                        From minimalist residential retreats to high-impact commercial concepts, my holistic design approach integrates lighting, custom joinery, and sustainable luxury materials to create unforgettable spatial experiences.
+                    </p>
+
+                    <!-- Feature Highlights -->
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center gap-3 p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <i class="fa-solid fa-circle-check text-indigo-400"></i>
+                            <span class="text-sm font-semibold text-slate-200">Custom Furniture & FF&E</span>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <i class="fa-solid fa-circle-check text-indigo-400"></i>
+                            <span class="text-sm font-semibold text-slate-200">3D Photorealistic Render</span>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <i class="fa-solid fa-circle-check text-indigo-400"></i>
+                            <span class="text-sm font-semibold text-slate-200">Architectural Planning</span>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <i class="fa-solid fa-circle-check text-indigo-400"></i>
+                            <span class="text-sm font-semibold text-slate-200">Turnkey Project Mgmt</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES GRID -->
+    <section id="services" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-bold text-indigo-400 uppercase tracking-widest">Design Services</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2">Tailored Interior Design Solutions</h2>
+                <p class="text-slate-400 mt-3 text-sm">Comprehensive design services tailored from conceptualization to final site execution.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service Card 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1.5 group">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 mb-6 group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-couch text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Residential Interior Design</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Luxury living spaces, penthouses, and private villas crafted to reflect individual lifestyles with bespoke elegance.</p>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1.5 group">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 mb-6 group-hover:bg-purple-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-building-user text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Commercial & Corporate</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">High-performance corporate offices, boutique retail, and hospitality environments designed for productivity and brand identity.</p>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-pink-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1.5 group">
+                    <div class="w-14 h-14 rounded-xl bg-pink-500/10 border border-pink-500/30 flex items-center justify-center text-pink-400 mb-6 group-hover:bg-pink-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-cubes text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">3D Architectural Visualization</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Hyper-realistic 3D rendering and virtual walk-throughs allowing clients to experience their dream space prior to construction.</p>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1.5 group">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 mb-6 group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-palette text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Material & Color Styling</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Curated palettes of premium stone, timber, textiles, and lighting arrangements designed for visual harmony.</p>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1.5 group">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 mb-6 group-hover:bg-purple-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-ruler-combined text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Space Planning & Layout</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Optimizing floor plans for seamless flow, maximum natural light utilization, and intelligent spatial organization.</p>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-pink-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1.5 group">
+                    <div class="w-14 h-14 rounded-xl bg-pink-500/10 border border-pink-500/30 flex items-center justify-center text-pink-400 mb-6 group-hover:bg-pink-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-sliders text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">FF&E Procurement</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">End-to-end selection, sourcing, and installation management for custom furniture, fixtures, and accessories.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials" class="py-24 relative bg-slate-950/60">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-bold text-indigo-400 uppercase tracking-widest">Client Endorsements</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2">Trusted by Discerning Clients</h2>
+                <p class="text-slate-400 mt-3 text-sm">Feedback from homeowners and commercial partners working with Studio Inicio.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <!-- Stars -->
+                        <div class="flex items-center gap-1 text-amber-400 mb-4">
+                            <i class="fa-solid fa-star text-sm"></i>
+                            <i class="fa-solid fa-star text-sm"></i>
+                            <i class="fa-solid fa-star text-sm"></i>
+                            <i class="fa-solid fa-star text-sm"></i>
+                            <i class="fa-solid fa-star text-sm"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                            "Hiral transformed our apartment into a sleek modern sanctuary. Her acute sense of lighting and spatial balance created an atmosphere beyond what we imagined."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/30 flex items-center justify-center font-bold text-indigo-400 text-sm">
+                            AR
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-white">Ananya Roy</div>
+                            <div class="text-xs text-slate-400">Private Residence Client</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <!-- Stars -->
+                        <div class="flex items-center gap-1 text-amber-400 mb-4">
+                            <i class="fa-solid fa-star text-sm"></i>
+                            <i class="fa-solid fa-star text-sm"></i>
+                            <i class="fa-solid fa-star text-sm"></i>
+                            <i class="fa-solid fa-star text-sm"></i>
+                            <i class="fa-solid fa-star text-sm"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                            "Working with Studio Inicio and Hiral on our tech firm’s headquarters was effortless. She balanced functional workstation ergonomics with stunning aesthetic details."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-purple-500/30 flex items-center justify-center font-bold text-purple-400 text-sm">
+                            VM
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-white">Vikram Mehta</div>
+                            <div class="text-xs text-slate-400">Managing Director, Horizon Media</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <!-- Stars -->
+                        <div class="flex items-center gap-1 text-amber-400 mb-4">
+                            <i class="fa-solid fa-star text-sm"></i>
+                            <i class="fa-solid fa-star text-sm"></i>
+                            <i class="fa-solid fa-star text-sm"></i>
+                            <i class="fa-solid fa-star text-sm"></i>
+                            <i class="fa-solid fa-star text-sm"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                            "Hiral’s material selection and custom furniture curation are unmatched. She delivered on time and exceeded expectations on every level."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-pink-500/30 flex items-center justify-center font-bold text-pink-400 text-sm">
+                            SP
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-white">Siddharth Patel</div>
+                            <div class="text-xs text-slate-400">Luxury Hospitality Owner</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+                
+                <!-- Direct Info -->
+                <div>
+                    <span class="text-xs font-bold text-indigo-400 uppercase tracking-widest">Get In Touch</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2 mb-6">Let's Create Your Next Masterpiece</h2>
+                    <p class="text-slate-400 leading-relaxed mb-8">
+                        Whether you are initiating a residential renovation, constructing a luxury space, or seeking creative interior consultation, I'd love to collaborate.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-12 h-12 rounded-lg bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400">
+                                <i class="fa-solid fa-building"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 font-medium">Design Studio</div>
+                                <div class="text-base font-bold text-white">Studio Inicio</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-12 h-12 rounded-lg bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 font-medium">Network Connection</div>
+                                <div class="text-base font-bold text-white">24 Aug 2026</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-12 h-12 rounded-lg bg-pink-500/10 border border-pink-500/30 flex items-center justify-center text-pink-400">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 font-medium">Location</div>
+                                <div class="text-base font-bold text-white">Available Worldwide</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div class="bg-slate-900/80 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl shadow-2xl">
+                    <form onsubmit="event.preventDefault(); alert('Thank you! Hiral will get back to you shortly.');" class="space-y-6">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Name</label>
+                            <input type="text" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-indigo-500 transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Email Address</label>
+                            <input type="email" required placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-indigo-500 transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Project Scope</label>
+                            <select class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white focus:outline-none focus:border-indigo-500 transition-colors">
+                                <option>Residential Design</option>
+                                <option>Commercial Space</option>
+                                <option>3D Visualization</option>
+                                <option>Design Consultation</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Project Details</label>
+                            <textarea rows="4" required placeholder="Tell me about your space, timeline, and goals..." class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-indigo-500 transition-colors"></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-4 rounded-xl text-base font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:opacity-95 transition-all duration-300 shadow-lg shadow-indigo-500/25">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-8 border-t border-slate-800/80 bg-slate-950 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+                © 2026 Hiral Gohil — Interior Designer at Studio Inicio. All rights reserved.
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="#" class="hover:text-slate-300 transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-slate-300 transition-colors">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
