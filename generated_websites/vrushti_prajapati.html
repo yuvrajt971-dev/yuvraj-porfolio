@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vrushti Prajapati | Design & Architecture Portfolio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-indigo-500 selection:text-white overflow-x-hidden">
+
+    <!-- Background Ambient Glows -->
+    <div class="fixed top-0 left-1/4 w-[500px] h-[500px] bg-indigo-600/15 rounded-full blur-[140px] pointer-events-none -z-10 animate-pulse-slow"></div>
+    <div class="fixed bottom-1/4 right-1/4 w-[600px] h-[600px] bg-purple-600/15 rounded-full blur-[160px] pointer-events-none -z-10 animate-pulse-slow"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 p-[2px] transition-transform duration-300 group-hover:scale-105">
+                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-pink-400 font-bold text-lg">VP</span>
+                    </div>
+                </div>
+                <span class="font-bold text-lg tracking-tight group-hover:text-indigo-400 transition-colors">Vrushti Prajapati</span>
+            </a>
+
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-white transition-colors">About</a>
+                <a href="#services" class="hover:text-white transition-colors">Services</a>
+                <a href="#portfolio" class="hover:text-white transition-colors">Portfolio</a>
+                <a href="#testimonials" class="hover:text-white transition-colors">Endorsements</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <a href="#contact" class="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium rounded-xl group bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 group-hover:from-indigo-500 group-hover:to-pink-500 hover:text-white text-white shadow-lg shadow-indigo-500/20">
+                    <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-slate-950 rounded-[10px] group-hover:bg-opacity-0 font-semibold">
+                        Let's Talk
+                    </span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-20 md:pt-48 md:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <!-- Left Content -->
+                <div class="lg:col-span-7 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 text-xs md:text-sm font-medium text-indigo-400 mb-6 backdrop-blur-md shadow-inner">
+                        <span class="flex h-2 w-2 rounded-full bg-emerald-400 animate-ping"></span>
+                        Design Intern @ Chaukhat Design Studio
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white mb-6 leading-[1.15]">
+                        Transforming Ideas Into <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400">
+                            Timeless Experiences
+                        </span>
+                    </h1>
+                    
+                    <p class="text-slate-400 text-base sm:text-lg mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-light">
+                        Passionate about crafting spatial, architectural, and visual stories. Bridging functional design elegance with innovative visual aesthetics at Chaukhat Design Studio.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-12">
+                        <a href="#portfolio" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white font-semibold text-center shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.02] transition-all duration-300">
+                            Explore Featured Projects <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900 border border-slate-800 text-slate-200 font-semibold text-center hover:bg-slate-800/60 hover:border-slate-700 transition-all duration-300">
+                            Get In Touch
+                        </a>
+                    </div>
+
+                    <!-- Trust Badges -->
+                    <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-6 text-center lg:text-left">
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-bold text-white mb-1">100%</div>
+                            <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Design Precision</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-bold text-white mb-1">Creative</div>
+                            <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Spatial Thinking</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-bold text-white mb-1">Chaukhat</div>
+                            <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Studio Driven</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Avatar Frame -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative group">
+                        <!-- Glow rings -->
+                        <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full blur-xl opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse-slow"></div>
+                        <div class="absolute -inset-4 bg-gradient-to-r from-pink-500 via-indigo-500 to-purple-500 rounded-full blur-2xl opacity-40 group-hover:opacity-60 transition duration-700"></div>
+
+                        <!-- Main Image Container -->
+                        <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full p-2 bg-slate-950 border border-slate-800 shadow-2xl overflow-hidden flex items-center justify-center">
+                            <img src="https://ui-avatars.com/api/?name=Vrushti+Prajapati&size=200&background=0D8ABC&color=fff&bold=true" 
+                                 alt="Vrushti Prajapati" 
+                                 class="w-full h-full rounded-full object-cover transform transition-transform duration-500 group-hover:scale-105">
+                        </div>
+
+                        <!-- Floating Badge -->
+                        <div class="absolute -bottom-4 -right-2 bg-slate-900/90 border border-slate-700/80 backdrop-blur-md rounded-2xl p-4 shadow-xl animate-float">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center">
+                                    <i class="fa-solid fa-compass-drafting text-lg"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-slate-400 font-medium">Design Focus</div>
+                                    <div class="text-sm font-bold text-white">Spatial & Visual UX</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-24 bg-slate-900/40 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <!-- Image Side -->
+                <div class="lg:col-span-6">
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 shadow-2xl group">
+                        <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=800&q=80" 
+                             alt="Design Studio Environment" 
+                             class="w-full h-[420px] object-cover transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <span class="px-3 py-1 bg-indigo-500/20 border border-indigo-500/40 text-indigo-300 text-xs font-semibold rounded-full uppercase tracking-wider">Studio Philosophy</span>
+                            <h3 class="text-xl font-bold text-white mt-2">Crafting Harmony Between Form & Purpose</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Side -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold uppercase tracking-wider">
+                        About Vrushti
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+                        Innovative Design Mind at Chaukhat Design Studio
+                    </h2>
+                    <p class="text-slate-300 leading-relaxed font-light">
+                        As a dedicated intern at <span class="text-white font-semibold">Chaukhat Design Studio</span>, I specialize in combining modern spatial aesthetics, spatial storytelling, and visual clarity to deliver impactful architectural and visual concepts.
+                    </p>
+                    <p class="text-slate-400 leading-relaxed font-light">
+                        My design process revolves around deep research, user-centric empathy, meticulous detailing, and continuous iteration. I strive to create meaningful design solutions that captivate and serve functional perfection.
+                    </p>
+
+                    <!-- Tech & Skill Pill List -->
+                    <div class="pt-4 flex flex-wrap gap-3">
+                        <span class="px-4 py-2 rounded-lg bg-slate-900 border border-slate-800 text-xs text-slate-300 font-medium hover:border-indigo-500/40 transition-colors">Spatial Layouts</span>
+                        <span class="px-4 py-2 rounded-lg bg-slate-900 border border-slate-800 text-xs text-slate-300 font-medium hover:border-indigo-500/40 transition-colors">3D Visualization</span>
+                        <span class="px-4 py-2 rounded-lg bg-slate-900 border border-slate-800 text-xs text-slate-300 font-medium hover:border-indigo-500/40 transition-colors">Concept Design</span>
+                        <span class="px-4 py-2 rounded-lg bg-slate-900 border border-slate-800 text-xs text-slate-300 font-medium hover:border-indigo-500/40 transition-colors">UI/UX Systems</span>
+                        <span class="px-4 py-2 rounded-lg bg-slate-900 border border-slate-800 text-xs text-slate-300 font-medium hover:border-indigo-500/40 transition-colors">Material Selection</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services & Capabilities Section -->
+    <section id="services" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="px-3 py-1 bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold rounded-full uppercase tracking-wider">Capabilities</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight mt-3">Specialized Design Services</h2>
+                <p class="text-slate-400 mt-4">Delivering creative visual concepts and technical design excellence.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl hover:border-indigo-500/50 hover:shadow-2xl hover:shadow-indigo-500/10 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-indigo-500 to-purple-500 p-[1px] mb-6">
+                        <div class="w-full h-full bg-slate-950 rounded-[11px] flex items-center justify-center text-indigo-400 group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-cube text-2xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Architectural Modeling</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">High-fidelity 3D structural models and mood concepts tailored for contemporary living and working spaces.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl hover:border-purple-500/50 hover:shadow-2xl hover:shadow-purple-500/10 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-purple-500 to-pink-500 p-[1px] mb-6">
+                        <div class="w-full h-full bg-slate-950 rounded-[11px] flex items-center justify-center text-purple-400 group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-layer-group text-2xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Spatial Experience UX</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Harmonizing physical layout planning with ergonomic flow to guarantee intuitive visual and space interaction.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl hover:border-pink-500/50 hover:shadow-2xl hover:shadow-pink-500/10 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-pink-500 to-indigo-500 p-[1px] mb-6">
+                        <div class="w-full h-full bg-slate-950 rounded-[11px] flex items-center justify-center text-pink-400 group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-wand-magic-sparkles text-2xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Visual Brand Identity</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Developing cohesive visual motifs, color harmonies, and typography frameworks for modern brands.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl hover:border-indigo-500/50 hover:shadow-2xl hover:shadow-indigo-500/10 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-indigo-500 to-pink-500 p-[1px] mb-6">
+                        <div class="w-full h-full bg-slate-950 rounded-[11px] flex items-center justify-center text-indigo-400 group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-pen-ruler text-2xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Interior Detailing</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Detailed technical drawings, material selection boards, and spatial documentation with precision finish.</p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl hover:border-purple-500/50 hover:shadow-2xl hover:shadow-purple-500/10 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-purple-500 to-indigo-500 p-[1px] mb-6">
+                        <div class="w-full h-full bg-slate-950 rounded-[11px] flex items-center justify-center text-purple-400 group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-laptop-code text-2xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Digital Prototyping</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Interactive visual prototypes that bring spatial ideas to life prior to execution and build-out.</p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl hover:border-pink-500/50 hover:shadow-2xl hover:shadow-pink-500/10 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-pink-500 to-purple-500 p-[1px] mb-6">
+                        <div class="w-full h-full bg-slate-950 rounded-[11px] flex items-center justify-center text-pink-400 group-hover:text-white transition-colors">
+                            <i class="fa-solid fa-lightbulb text-2xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Design Strategy & Research</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">In-depth market trends research, user sentiment analysis, and conceptual creative direction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-24 bg-slate-900/30 border-t border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+                <div>
+                    <span class="px-3 py-1 bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold rounded-full uppercase tracking-wider">Showcase</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight mt-3">Selected Conceptual Work</h2>
+                </div>
+                <p class="text-slate-400 text-sm mt-4 md:mt-0 max-w-xs">A snapshot of creative studies and studio project contributions.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="group relative rounded-2xl overflow-hidden bg-slate-900 border border-slate-800 hover:border-indigo-500/50 transition-all duration-300">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="Minimalist Residence" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <span class="px-4 py-2 bg-indigo-600 text-white rounded-xl text-xs font-semibold shadow-lg">View Details</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs text-indigo-400 font-medium">Interior Architecture</span>
+                        <h3 class="text-lg font-bold text-white mt-1 group-hover:text-indigo-400 transition-colors">Minimalist Sanctuary Concept</h3>
+                        <p class="text-slate-400 text-xs mt-2 line-clamp-2">Spatial redesign balancing natural light, organic textures, and open-plan flow.</p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="group relative rounded-2xl overflow-hidden bg-slate-900 border border-slate-800 hover:border-purple-500/50 transition-all duration-300">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=600&q=80" alt="Modern Living Concept" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <span class="px-4 py-2 bg-purple-600 text-white rounded-xl text-xs font-semibold shadow-lg">View Details</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs text-purple-400 font-medium">Studio Design</span>
+                        <h3 class="text-lg font-bold text-white mt-1 group-hover:text-purple-400 transition-colors">Urban Living Pavilion</h3>
+                        <p class="text-slate-400 text-xs mt-2 line-clamp-2">Conceptual space study integrating acoustic elements and modular furniture solutions.</p>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="group relative rounded-2xl overflow-hidden bg-slate-900 border border-slate-800 hover:border-pink-500/50 transition-all duration-300">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=600&q=80" alt="Visual Brand Experience" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <span class="px-4 py-2 bg-pink-600 text-white rounded-xl text-xs font-semibold shadow-lg">View Details</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs text-pink-400 font-medium">Design System</span>
+                        <h3 class="text-lg font-bold text-white mt-1 group-hover:text-pink-400 transition-colors">Studio Experience Guide</h3>
+                        <p class="text-slate-400 text-xs mt-2 line-clamp-2">A complete visual toolkit and layout structure for high-end studio showcases.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="px-3 py-1 bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold rounded-full uppercase tracking-wider">Endorsements</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight mt-3">What Collaborators Say</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Testimonial 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl relative">
+                    <div class="flex items-center gap-1 text-amber-400 mb-4 text-sm">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                        "Vrushti brings an exceptional eye for detail and design clarity to every project. Her dedication at Chaukhat Design Studio has been truly inspiring."
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 flex items-center justify-center font-bold text-white text-sm">
+                            CD
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-white">Chaukhat Lead Lead Architect</div>
+                            <div class="text-xs text-slate-400">Design Mentor</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl relative">
+                    <div class="flex items-center gap-1 text-amber-400 mb-4 text-sm">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                        "Highly creative, fast learner, and visually adept. Vrushti translates complex design requirements into crisp, elegant spatial concepts."
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center font-bold text-white text-sm">
+                            SD
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-white">Senior Associate</div>
+                            <div class="text-xs text-slate-400">Studio Team Member</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-slate-900/50 border-t border-slate-800/80 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12">
+                <!-- Contact Info -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="px-3 py-1 bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold rounded-full uppercase tracking-wider">Connect</span>
+                        <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight mt-3">Let's Create Something Stunning Together</h2>
+                        <p class="text-slate-400 mt-4 leading-relaxed font-light">
+                            Open for creative collaborations, design inquiries, and professional opportunities. Feel free to reach out anytime.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900 border border-slate-800">
+                            <div class="w-12 h-12 rounded-lg bg-indigo-500/20 text-indigo-400 flex items-center justify-center">
+                                <i class="fa-solid fa-building text-lg"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 font-medium">Current Role</div>
+                                <div class="text-sm font-semibold text-white">Intern @ Chaukhat Design Studio</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900 border border-slate-800">
+                            <div class="w-12 h-12 rounded-lg bg-purple-500/20 text-purple-400 flex items-center justify-center">
+                                <i class="fa-solid fa-envelope text-lg"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 font-medium">Direct Email</div>
+                                <a href="mailto:vrushti@chaukhatdesign.com" class="text-sm font-semibold text-white hover:text-indigo-400 transition-colors">vrushti@chaukhatdesign.com</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900 border border-slate-800">
+                            <div class="w-12 h-12 rounded-lg bg-pink-500/20 text-pink-400 flex items-center justify-center">
+                                <i class="fa-solid fa-user-check text-lg"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 font-medium">Network Connection</div>
+                                <div class="text-sm font-semibold text-white">Connected 23 Aug 2026</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="lg:col-span-7">
+                    <form class="bg-slate-900/80 border border-slate-800 p-8 rounded-2xl shadow-xl space-y-6">
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Name</label>
+                                <input type="text" placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Email</label>
+                                <input type="email" placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Subject</label>
+                            <input type="text" placeholder="Design Inquiry / Collaboration" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Message</label>
+                            <textarea rows="4" placeholder="Tell me about your project..." class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white font-semibold shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.01] transition-all duration-300">
+                            Send Message <i class="fa-solid fa-paper-plane ml-2 text-xs"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-slate-950 border-t border-slate-900 text-center text-slate-500 text-xs">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+                © 2026 Vrushti Prajapati. Designed with precision & vision.
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-brands fa-linkedin text-base"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-brands fa-behance text-base"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-brands fa-dribbble text-base"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-brands fa-instagram text-base"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
