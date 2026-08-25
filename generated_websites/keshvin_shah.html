@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Keshvin Shah | Premier Dentist & Dental Surgeon</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            cyan: '#06b6d4',
+                            teal: '#14b8a6',
+                            indigo: '#6366f1',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+        }
+        .glow-mesh {
+            background-image: radial-gradient(at 50% 0%, rgba(6, 182, 212, 0.15) 0px, transparent 50%),
+                              radial-gradient(at 100% 100%, rgba(99, 102, 241, 0.12) 0px, transparent 50%);
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card:hover {
+            border-color: rgba(6, 182, 212, 0.4);
+            box-shadow: 0 10px 30px -10px rgba(6, 182, 212, 0.2);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #38bdf8 0%, #2dd4bf 50%, #818cf8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased glow-mesh selection:bg-teal-500 selection:text-white">
+
+    <!-- Navigation Bar -->
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Brand Logo -->
+                <a href="#" class="flex items-center space-x-3 group">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center text-white shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform duration-300">
+                        <i class="fa-solid fa-tooth text-xl"></i>
+                    </div>
+                    <div>
+                        <span class="text-xl font-bold tracking-tight text-white block">Dr. Keshvin Shah</span>
+                        <span class="text-xs text-cyan-400 font-medium tracking-wide">Dashmesh Hospital</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-300">
+                    <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                    <a href="#services" class="hover:text-cyan-400 transition-colors">Specialties</a>
+                    <a href="#clinical-care" class="hover:text-cyan-400 transition-colors">Clinical Care</a>
+                    <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Testimonials</a>
+                    <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+                </nav>
+
+                <!-- CTA Button -->
+                <div class="hidden sm:flex items-center space-x-4">
+                    <a href="#contact" class="relative inline-flex items-center justify-center px-6 py-2.5 text-sm font-semibold text-white transition-all duration-300 rounded-full group bg-gradient-to-r from-cyan-500 via-teal-500 to-indigo-600 hover:shadow-lg hover:shadow-cyan-500/25 active:scale-95">
+                        <span>Book Consultation</span>
+                        <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="text-slate-400 hover:text-white focus:outline-none p-2">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900/95 border-b border-slate-800 px-4 pt-2 pb-6 space-y-3">
+            <a href="#about" class="block py-2 text-slate-300 hover:text-cyan-400 font-medium">About</a>
+            <a href="#services" class="block py-2 text-slate-300 hover:text-cyan-400 font-medium">Specialties</a>
+            <a href="#clinical-care" class="block py-2 text-slate-300 hover:text-cyan-400 font-medium">Clinical Care</a>
+            <a href="#testimonials" class="block py-2 text-slate-300 hover:text-cyan-400 font-medium">Testimonials</a>
+            <a href="#contact" class="block py-2 text-slate-300 hover:text-cyan-400 font-medium">Contact</a>
+            <a href="#contact" class="inline-block w-full text-center py-3 px-6 rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 font-semibold text-white">Book Appointment</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <!-- Background Ambient Lights -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute top-1/3 right-10 w-[400px] h-[400px] bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Content -->
+                <div class="lg:col-span-7 text-center lg:text-left">
+                    <!-- Status Badge -->
+                    <div class="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-slate-900/90 border border-slate-800 text-xs sm:text-sm font-medium mb-6">
+                        <span class="flex h-2 w-2 rounded-full bg-teal-400 animate-pulse"></span>
+                        <span class="text-slate-300">Senior Dental Surgeon</span>
+                        <span class="text-slate-600">•</span>
+                        <span class="text-cyan-400 font-semibold">Dashmesh Hospital</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight sm:leading-none mb-6">
+                        Transforming Smiles With <br class="hidden sm:inline"/>
+                        <span class="gradient-text">Precision & Passion</span>
+                    </h1>
+
+                    <p class="text-slate-400 text-lg sm:text-xl font-normal max-w-2xl mb-8 leading-relaxed mx-auto lg:mx-0">
+                        Welcome! I'm Dr. Keshvin Shah, delivering state-of-the-art restorative, aesthetic, and surgical oral healthcare designed around your absolute comfort and long-term health.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-teal-500 to-indigo-600 font-bold text-white shadow-xl shadow-cyan-500/20 hover:scale-[1.02] transition-all flex items-center justify-center space-x-2">
+                            <i class="fa-solid fa-calendar-check text-lg"></i>
+                            <span>Book Consultation</span>
+                        </a>
+                        <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 font-semibold text-slate-200 transition-all flex items-center justify-center space-x-2">
+                            <span>View Specialties</span>
+                            <i class="fa-solid fa-arrow-down text-xs text-slate-400"></i>
+                        </a>
+                    </div>
+
+                    <!-- Trust Metric Badges -->
+                    <div class="grid grid-cols-3 gap-4 mt-12 pt-8 border-t border-slate-800/80">
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-white">99.8%</p>
+                            <p class="text-xs sm:text-sm text-slate-400">Patient Satisfaction</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-cyan-400">10+ Yrs</p>
+                            <p class="text-xs sm:text-sm text-slate-400">Clinical Expertise</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-indigo-400">5,000+</p>
+                            <p class="text-xs sm:text-sm text-slate-400">Healthy Smiles</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Profile Frame -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative">
+                        <!-- Glowing Ring Backing -->
+                        <div class="absolute -inset-1.5 bg-gradient-to-r from-cyan-500 via-teal-500 to-indigo-600 rounded-3xl blur-xl opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+                        
+                        <div class="relative rounded-3xl p-3 bg-slate-900 border border-slate-800 shadow-2xl overflow-hidden max-w-sm">
+                            <img src="https://ui-avatars.com/api/?name=Keshvin+Shah&size=200&background=0D8ABC&color=fff&bold=true" 
+                                 alt="Dr. Keshvin Shah" 
+                                 class="w-full h-80 object-cover rounded-2xl bg-slate-800 shadow-inner">
+                            
+                            <!-- Floating Overlay Card -->
+                            <div class="mt-4 p-4 rounded-xl bg-slate-950/80 border border-slate-800 flex items-center space-x-4">
+                                <div class="w-12 h-12 rounded-xl bg-teal-500/10 border border-teal-500/20 flex items-center justify-center text-teal-400 text-xl flex-shrink-0">
+                                    <i class="fa-solid fa-hospital"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-white">Dashmesh Hospital</h4>
+                                    <p class="text-xs text-slate-400">Department of Dental Sciences</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-20 relative bg-slate-900/40 border-y border-slate-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Clinical Image Grid -->
+                <div class="lg:col-span-6">
+                    <div class="relative">
+                        <div class="rounded-2xl overflow-hidden border border-slate-800 shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Modern Dental Operatory" 
+                                 class="w-full h-[420px] object-cover hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <!-- Decorative Stats Overlay Badge -->
+                        <div class="absolute -bottom-6 -right-6 hidden sm:flex items-center space-x-4 bg-slate-900/90 backdrop-blur-xl border border-slate-700 p-4 rounded-2xl shadow-2xl">
+                            <div class="w-12 h-12 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center text-2xl">
+                                <i class="fa-solid fa-microscope"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm font-bold text-white">Advanced Dental Tech</p>
+                                <p class="text-xs text-slate-400">Digital Dentistry & Micro-Surgery</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center space-x-2 text-cyan-400 font-semibold text-sm tracking-wider uppercase">
+                        <i class="fa-solid fa-stethoscope"></i>
+                        <span>About Dr. Keshvin Shah</span>
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+                        Dedicated to Gentle, High-Precision Dental Healthcare
+                    </h2>
+
+                    <p class="text-slate-300 leading-relaxed">
+                        Dr. Keshvin Shah is an esteemed Dentist practicing at <strong>Dashmesh Hospital</strong>. Combining clinical precision with a warm, patient-first philosophy, Dr. Shah specializes in comprehensive oral treatments ranging from restorative procedures to cosmetic smile makeovers.
+                    </p>
+
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        At Dashmesh Hospital, Dr. Shah utilizes cutting-edge diagnostic equipment and painless modern techniques to ensure every patient experiences stress-free, effective dental treatments in a sterile and supportive environment.
+                    </p>
+
+                    <!-- Key Pillars Grid -->
+                    <div class="grid grid-cols-2 gap-4 pt-4">
+                        <div class="p-4 rounded-xl bg-slate-950/60 border border-slate-800/80">
+                            <i class="fa-solid fa-heart-pulse text-cyan-400 text-xl mb-2"></i>
+                            <h4 class="font-bold text-white text-sm">Patient-Centric Care</h4>
+                            <p class="text-xs text-slate-400 mt-1">Customized treatment plans designed around individual comfort.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-950/60 border border-slate-800/80">
+                            <i class="fa-solid fa-shield-halved text-indigo-400 text-xl mb-2"></i>
+                            <h4 class="font-bold text-white text-sm">Ultra-Sterile Hygiene</h4>
+                            <p class="text-xs text-slate-400 mt-1">Strict adherence to international clinical sanitation protocols.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Clinical Services Grid -->
+    <section id="services" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-cyan-400 text-sm font-semibold tracking-wider uppercase">Clinical Excellence</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mt-2">Specialized Treatments</h2>
+                <p class="text-slate-400 mt-4 text-lg">Providing a full spectrum of world-class dental services tailored to your aesthetic and health goals.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Cosmetic Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Transform your aesthetic with porcelain veneers, professional teeth whitening, and complete smile design makeovers.</p>
+                    <a href="#contact" class="text-xs font-semibold text-cyan-400 hover:text-cyan-300 inline-flex items-center space-x-1">
+                        <span>Learn More</span>
+                        <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-teal-500/10 border border-teal-500/20 text-teal-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-teal-400 transition-colors">Dental Implants & Restorative</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Permanent, natural-looking tooth replacement solutions with high-precision implant surgery and durability.</p>
+                    <a href="#contact" class="text-xs font-semibold text-teal-400 hover:text-teal-300 inline-flex items-center space-x-1">
+                        <span>Learn More</span>
+                        <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-briefcase-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-indigo-400 transition-colors">Painless Endodontics</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Advanced root canal treatments using rotary technology designed for efficient, gentle, and painless tooth preservation.</p>
+                    <a href="#contact" class="text-xs font-semibold text-indigo-400 hover:text-indigo-300 inline-flex items-center space-x-1">
+                        <span>Learn More</span>
+                        <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-teeth-open"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">Orthodontics & Aligners</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Straighten misaligned teeth discreetly with modern clear aligner solutions and conventional orthodontic care.</p>
+                    <a href="#contact" class="text-xs font-semibold text-purple-400 hover:text-purple-300 inline-flex items-center space-x-1">
+                        <span>Learn More</span>
+                        <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-rose-500/10 border border-rose-500/20 text-rose-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-shield-virus"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-rose-400 transition-colors">Preventive Dental Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Comprehensive checkups, ultrasonic scaling, fluoride treatments, and patient education for optimal oral hygiene.</p>
+                    <a href="#contact" class="text-xs font-semibold text-rose-400 hover:text-rose-300 inline-flex items-center space-x-1">
+                        <span>Learn More</span>
+                        <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-hospital-user"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-amber-400 transition-colors">Oral Surgery & Wisdom Teeth</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Safe extractions, impacted wisdom tooth removal, and minor surgical interventions performed with expert care.</p>
+                    <a href="#contact" class="text-xs font-semibold text-amber-400 hover:text-amber-300 inline-flex items-center space-x-1">
+                        <span>Learn More</span>
+                        <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Dashmesh Hospital Section -->
+    <section id="clinical-care" class="py-20 relative bg-slate-900/60 border-y border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center space-x-2 text-cyan-400 font-semibold text-sm">
+                        <i class="fa-solid fa-building-hospital"></i>
+                        <span>Hospital Infrastructure</span>
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white">World-Class Clinical Standards at Dashmesh Hospital</h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        Operating from Dashmesh Hospital, Dr. Keshvin Shah's practice is equipped with modern medical amenities, 3D digital imaging, and stringent infection control systems to deliver reliable and comfortable care.
+                    </p>
+
+                    <ul class="space-y-4 pt-2">
+                        <li class="flex items-start space-x-3">
+                            <div class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <span class="text-slate-300 text-sm">3D CBCT Imaging & Intraoral Scanning for accurate diagnostics</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <div class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <span class="text-slate-300 text-sm">Hospital-grade sterilization & multi-tier hygiene protocols</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <div class="w-6 h-6 rounded-full bg-teal-500/20 text-teal-400 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <span class="text-slate-300 text-sm">Compassionate, pain-free treatment approach tailored to anxious patients</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-span-6">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="p-6 rounded-2xl bg-slate-950 border border-slate-800 text-center">
+                            <i class="fa-solid fa-user-doctor text-3xl text-cyan-400 mb-3"></i>
+                            <h4 class="text-lg font-bold text-white">Expert Diagnosis</h4>
+                            <p class="text-xs text-slate-400 mt-2">Comprehensive evaluation using modern dental tech.</p>
+                        </div>
+                        <div class="p-6 rounded-2xl bg-slate-950 border border-slate-800 text-center">
+                            <i class="fa-solid fa-clock-rotate-left text-3xl text-indigo-400 mb-3"></i>
+                            <h4 class="text-lg font-bold text-white">Flexible Scheduling</h4>
+                            <p class="text-xs text-slate-400 mt-2">Priority appointment slots for busy professionals.</p>
+                        </div>
+                        <div class="p-6 rounded-2xl bg-slate-950 border border-slate-800 text-center">
+                            <i class="fa-solid fa-kit-medical text-3xl text-teal-400 mb-3"></i>
+                            <h4 class="text-lg font-bold text-white">Emergency Care</h4>
+                            <p class="text-xs text-slate-400 mt-2">Prompt management of toothache and trauma cases.</p>
+                        </div>
+                        <div class="p-6 rounded-2xl bg-slate-950 border border-slate-800 text-center">
+                            <i class="fa-solid fa-face-smile text-3xl text-pink-400 mb-3"></i>
+                            <h4 class="text-lg font-bold text-white">Gentle Touch</h4>
+                            <p class="text-xs text-slate-400 mt-2">Focus on minimal discomfort and relaxed patient environment.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Patient Reviews -->
+    <section id="testimonials" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-cyan-400 text-sm font-semibold tracking-wider uppercase">Patient Feedback</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mt-2">Trusted By Thousands</h2>
+                <p class="text-slate-400 mt-4 text-lg">Read what patients say about their clinical experience with Dr. Keshvin Shah.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Review 1 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center space-x-1 text-amber-400 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "Dr. Keshvin Shah is exceptionally skilled and patient. I had severe dental anxiety before my root canal, but Dr. Shah made the entire procedure completely painless. Truly the best dental experience!"
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-800 flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 font-bold flex items-center justify-center text-sm">
+                            RP
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Rajesh Patel</h4>
+                            <p class="text-xs text-slate-400">Dashmesh Hospital Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center space-x-1 text-amber-400 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "The cosmetic smile transformation done by Dr. Keshvin Shah exceeded my expectations. Professional, meticulous, and extremely knowledgeable. Highly recommend!"
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-800 flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-teal-500/20 text-teal-400 font-bold flex items-center justify-center text-sm">
+                            SS
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Sneha Sharma</h4>
+                            <p class="text-xs text-slate-400">Cosmetic Dentistry Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center space-x-1 text-amber-400 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "Dashmesh Hospital's dental department under Dr. Shah is outstanding. Clean facilities, prompt service, and top-tier expertise for dental implants."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-800 flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 font-bold flex items-center justify-center text-sm">
+                            AM
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Anil Mehta</h4>
+                            <p class="text-xs text-slate-400">Implant Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment & Contact Section -->
+    <section id="contact" class="py-24 relative bg-slate-900/40 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Info -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-cyan-400 text-sm font-semibold tracking-wider uppercase">Get In Touch</span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Schedule Your Visit Today</h2>
+                        <p class="text-slate-400 mt-4 leading-relaxed">
+                            Ready to restore or enhance your smile? Reach out to schedule a consultation with Dr. Keshvin Shah at Dashmesh Hospital.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center text-xl flex-shrink-0">
+                                <i class="fa-solid fa-hospital"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold">Clinical Practice</h4>
+                                <p class="text-slate-400 text-sm">Dashmesh Hospital, Department of Oral Healthcare</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-teal-500/10 border border-teal-500/20 text-teal-400 flex items-center justify-center text-xl flex-shrink-0">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold">Consultation Hours</h4>
+                                <p class="text-slate-400 text-sm">Mon - Sat: 9:00 AM - 7:00 PM</p>
+                                <p class="text-slate-500 text-xs mt-0.5">Emergency Care Available</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center text-xl flex-shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold">Direct Inquiry</h4>
+                                <p class="text-slate-400 text-sm">appointments@dashmeshhospital.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Verified Network Badge -->
+                    <div class="p-4 rounded-xl bg-slate-950 border border-slate-800 flex items-center justify-between">
+                        <div class="flex items-center space-x-3">
+                            <i class="fa-solid fa-shield-check text-cyan-400 text-xl"></i>
+                            <span class="text-xs text-slate-300 font-medium">Verified Professional Connection • Aug 2026</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Appointment Form Card -->
+                <div class="lg:col-span-7">
+                    <div class="glass-card p-8 sm:p-10 rounded-3xl relative">
+                        <h3 class="text-2xl font-bold text-white mb-2">Book a Dental Appointment</h3>
+                        <p class="text-slate-400 text-sm mb-6">Fill out the form below and our clinic team at Dashmesh Hospital will confirm your slot.</p>
+
+                        <form onsubmit="event.preventDefault(); alert('Thank you! Your appointment request has been submitted to Dr. Keshvin Shah.');" class="space-y-4">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Full Name</label>
+                                    <input type="text" required placeholder="John Doe" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-200 text-sm focus:outline-none focus:border-cyan-500 transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Phone Number</label>
+                                    <input type="tel" required placeholder="+1 (555) 000-0000" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-200 text-sm focus:outline-none focus:border-cyan-500 transition-colors">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Preferred Service</label>
+                                    <select class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-300 text-sm focus:outline-none focus:border-cyan-500 transition-colors">
+                                        <option>General Checkup & Cleaning</option>
+                                        <option>Cosmetic Consultation</option>
+                                        <option>Dental Implants</option>
+                                        <option>Root Canal Therapy</option>
+                                        <option>Orthodontics / Aligners</option>
+                                        <option>Emergency Tooth Care</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Preferred Date</label>
+                                    <input type="date" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-300 text-sm focus:outline-none focus:border-cyan-500 transition-colors">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Additional Notes / Symptoms</label>
+                                <textarea rows="4" placeholder="Briefly describe your dental concern..." class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-200 text-sm focus:outline-none focus:border-cyan-500 transition-colors"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-teal-500 to-indigo-600 font-bold text-white shadow-lg shadow-cyan-500/20 hover:scale-[1.01] active:scale-[0.99] transition-all flex items-center justify-center space-x-2">
+                                <i class="fa-solid fa-paper-plane"></i>
+                                <span>Confirm Appointment Request</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-slate-950 border-t border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                
+                <div class="flex items-center space-x-3">
+                    <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center text-white text-sm">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <span class="text-base font-bold text-white">Dr. Keshvin Shah</span>
+                    <span class="text-slate-600">|</span>
+                    <span class="text-xs text-slate-400">Dashmesh Hospital</span>
+                </div>
+
+                <p class="text-xs text-slate-500">
+                    © 2026 Dr. Keshvin Shah. All rights reserved. Ultra-Premium Showcase.
+                </p>
+
+                <div class="flex space-x-4 text-slate-400 text-base">
+                    <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-solid fa-globe"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
