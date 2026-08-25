@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Aliza Fatima | Premier Dentist & Dental Specialist</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            cyan: '#06b6d4',
+                            teal: '#14b8a6',
+                            indigo: '#6366f1',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+        
+        .glass-card {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(51, 65, 85, 0.6);
+        }
+        
+        .glass-card:hover {
+            border-color: rgba(6, 182, 212, 0.5);
+            box-shadow: 0 10px 30px -10px rgba(6, 182, 212, 0.2);
+        }
+
+        .glow-effect {
+            position: relative;
+        }
+        .glow-effect::before {
+            content: '';
+            position: absolute;
+            top: -2px; left: -2px; right: -2px; bottom: -2px;
+            background: linear-gradient(45deg, #06b6d4, #6366f1, #ec4899);
+            border-radius: inherit;
+            z-index: -1;
+            filter: blur(12px);
+            opacity: 0.4;
+            transition: opacity 0.3s ease;
+        }
+        .glow-effect:hover::before {
+            opacity: 0.8;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #22d3ee 0%, #2dd4bf 50%, #818cf8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-white">
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-500 flex items-center justify-center font-bold text-white shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform duration-300">
+                    AF
+                </div>
+                <div>
+                    <span class="font-bold text-lg text-white tracking-tight block">Dr. Aliza Fatima</span>
+                    <span class="text-xs text-cyan-400 font-medium">Dental College Azamgarh</span>
+                </div>
+            </a>
+
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-cyan-400 transition-colors">Expertise</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Testimonials</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+            </div>
+
+            <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider text-white bg-gradient-to-r from-cyan-500 via-teal-500 to-indigo-600 hover:opacity-90 transition-all shadow-md shadow-cyan-500/20 hover:shadow-cyan-500/40">
+                <span>Book Consultation</span>
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden">
+        <!-- Background Ambient Glows -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-cyan-500/20 to-indigo-500/20 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute top-10 right-10 w-72 h-72 bg-teal-500/10 rounded-full blur-[90px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Left Hero Text -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 text-xs text-cyan-400 font-medium tracking-wide">
+                        <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                        Dentist & Clinical Practitioner
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight">
+                        Crafting Healthy, <br>
+                        <span class="gradient-text">Radiant Smiles</span> with Precision & Care.
+                    </h1>
+
+                    <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Welcome to the official practice showcase of <strong class="text-slate-200">Dr. Aliza Fatima</strong>, Dentist at <strong class="text-cyan-400">Dental College Azamgarh</strong>. Dedicated to advanced oral healthcare, aesthetic restorative treatments, and patient-centered excellence.
+                    </p>
+
+                    <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-teal-500 to-indigo-600 text-white font-semibold text-sm shadow-xl shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:-translate-y-0.5 transition-all text-center">
+                            Schedule Appointment <i class="fa-solid fa-calendar-check ml-2"></i>
+                        </a>
+                        <a href="#about" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900/90 text-slate-300 font-semibold text-sm border border-slate-800 hover:border-slate-700 hover:bg-slate-800/60 transition-all text-center">
+                            Explore Clinical Expertise
+                        </a>
+                    </div>
+
+                    <!-- Trust Badges -->
+                    <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-4 text-center lg:text-left">
+                        <div>
+                            <div class="text-2xl font-bold text-white">100%</div>
+                            <div class="text-xs text-slate-400 mt-1">Patient Focused</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-white">Advanced</div>
+                            <div class="text-xs text-slate-400 mt-1">Clinical Techniques</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-white">Azamgarh</div>
+                            <div class="text-xs text-slate-400 mt-1">Dental College Faculty</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Hero Avatar Display -->
+                <div class="lg:col-span-5 flex justify-center relative">
+                    <div class="relative w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96">
+                        <!-- Dual Glowing Rings -->
+                        <div class="absolute inset-0 rounded-full bg-gradient-to-tr from-cyan-500 via-teal-400 to-indigo-500 animate-spin-slow blur-md opacity-70"></div>
+                        <div class="absolute inset-2 rounded-full bg-gradient-to-bl from-indigo-500 via-purple-500 to-cyan-400 opacity-60"></div>
+
+                        <!-- Image Container -->
+                        <div class="absolute inset-3 rounded-full bg-slate-950 p-2 overflow-hidden shadow-2xl border border-slate-800 flex items-center justify-center">
+                            <img src="https://ui-avatars.com/api/?name=Dr.Aliza+Fatima&size=200&background=0D8ABC&color=fff&bold=true" 
+                                 alt="Dr. Aliza Fatima" 
+                                 class="w-full h-full object-cover rounded-full transform hover:scale-105 transition-transform duration-500">
+                        </div>
+
+                        <!-- Floating Glass Badges -->
+                        <div class="absolute -bottom-2 -left-4 glass-card px-4 py-3 rounded-2xl flex items-center gap-3 border border-slate-700/60 shadow-xl">
+                            <div class="w-10 h-10 rounded-xl bg-cyan-500/20 border border-cyan-500/40 flex items-center justify-center text-cyan-400">
+                                <i class="fa-solid fa-tooth text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-white">Modern Dentistry</p>
+                                <p class="text-[10px] text-slate-400">Painless & Gentle Care</p>
+                            </div>
+                        </div>
+
+                        <div class="absolute top-4 -right-4 glass-card px-4 py-3 rounded-2xl flex items-center gap-3 border border-slate-700/60 shadow-xl">
+                            <div class="w-10 h-10 rounded-xl bg-teal-500/20 border border-teal-500/40 flex items-center justify-center text-teal-400">
+                                <i class="fa-solid fa-award text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-white">Clinical Quality</p>
+                                <p class="text-[10px] text-slate-400">Dental College Specialist</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-24 relative bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Clinical Image -->
+                <div class="lg:col-span-6 relative">
+                    <div class="relative rounded-3xl overflow-hidden border border-slate-800 group">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Modern Dental Facility" 
+                             class="w-full h-[450px] object-cover object-center group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        
+                        <div class="absolute bottom-6 left-6 right-6 p-6 glass-card rounded-2xl border border-slate-800">
+                            <p class="text-xs text-cyan-400 font-semibold tracking-wider uppercase">Facility & Standard</p>
+                            <h3 class="text-lg font-bold text-white mt-1">State-of-the-art Dental Hygiene & Surgery</h3>
+                            <p class="text-xs text-slate-400 mt-1">Equipped with ultra-modern diagnostic tools and sterilisation procedures.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-xs font-medium text-cyan-400">
+                        About Dr. Aliza Fatima
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white leading-tight">
+                        Dedicated to Excellence in Dental Health & Aesthetic Rehabilitation
+                    </h2>
+
+                    <p class="text-slate-400 leading-relaxed text-sm sm:text-base">
+                        Dr. Aliza Fatima serves as a prominent Dentist at <strong class="text-slate-200">Dental College Azamgarh</strong>. Combining academic rigor with a compassionate clinical approach, Dr. Aliza is committed to providing modern dental care tailored to each patient’s unique smile structure and health goals.
+                    </p>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-lg bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 shrink-0 mt-1">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Comprehensive Diagnostic Precision</h4>
+                                <p class="text-xs text-slate-400 mt-1">Utilizing modern imaging and conservative dentistry protocols for accurate, pain-free treatments.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-lg bg-teal-500/10 border border-teal-500/30 flex items-center justify-center text-teal-400 shrink-0 mt-1">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Academic & Clinical Synergy</h4>
+                                <p class="text-xs text-slate-400 mt-1">Active contributor to clinical research and practical dentistry at Dental College Azamgarh.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-lg bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 shrink-0 mt-1">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Patient Comfort & Wellness First</h4>
+                                <p class="text-xs text-slate-400 mt-1">Emphasizing gentle procedures, transparent treatment plans, and post-care support.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Clinical Services Grid -->
+    <section id="services" class="py-24 relative bg-slate-900/40 border-y border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-xs font-medium text-cyan-400">
+                    Clinical Offerings
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white">Specialized Dental Services</h2>
+                <p class="text-slate-400 text-sm">Comprehensive oral healthcare solutions crafted with high aesthetic precision and medical integrity.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="glass-card p-8 rounded-3xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-2xl mb-6">
+                        <i class="fa-solid fa-teeth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Cosmetic Smile Design</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Enhance your smile aesthetics through professional teeth whitening, composite bonding, and veneer placements.</p>
+                    <a href="#contact" class="text-xs text-cyan-400 font-semibold inline-flex items-center gap-1 hover:gap-2 transition-all">
+                        Book Service <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="glass-card p-8 rounded-3xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-teal-500/10 border border-teal-500/30 flex items-center justify-center text-teal-400 text-2xl mb-6">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Restorative Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Precision crown restorations, tooth-colored cavity fillings, and full dental structural repair for long-term durability.</p>
+                    <a href="#contact" class="text-xs text-teal-400 font-semibold inline-flex items-center gap-1 hover:gap-2 transition-all">
+                        Book Service <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="glass-card p-8 rounded-3xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-2xl mb-6">
+                        <i class="fa-solid fa-notes-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Preventative Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Comprehensive oral scaling, deep cleaning, fluoride applications, and early diagnostic checkups for families.</p>
+                    <a href="#contact" class="text-xs text-indigo-400 font-semibold inline-flex items-center gap-1 hover:gap-2 transition-all">
+                        Book Service <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="glass-card p-8 rounded-3xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 text-2xl mb-6">
+                        <i class="fa-solid fa-syringe"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Endodontics & Root Canals</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Gentle, painless root canal therapy aimed at preserving your natural teeth and eliminating oral infection.</p>
+                    <a href="#contact" class="text-xs text-purple-400 font-semibold inline-flex items-center gap-1 hover:gap-2 transition-all">
+                        Book Service <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="glass-card p-8 rounded-3xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-pink-500/10 border border-pink-500/30 flex items-center justify-center text-pink-400 text-2xl mb-6">
+                        <i class="fa-solid fa-child"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Pediatric Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Friendly, gentle oral care tailored specifically for children to build lifelong healthy dental habits.</p>
+                    <a href="#contact" class="text-xs text-pink-400 font-semibold inline-flex items-center gap-1 hover:gap-2 transition-all">
+                        Book Service <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="glass-card p-8 rounded-3xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-2xl mb-6">
+                        <i class="fa-solid fa-user-doctor"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Surgical Consultations</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Professional evaluations for wisdom tooth extractions, minor oral surgeries, and alignment consultations.</p>
+                    <a href="#contact" class="text-xs text-emerald-400 font-semibold inline-flex items-center gap-1 hover:gap-2 transition-all">
+                        Book Service <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-xs font-medium text-cyan-400">
+                    Endorsements & Reviews
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white">What Patients & Colleagues Say</h2>
+                <p class="text-slate-400 text-sm">Commitment to patient comfort and clinical precision reflected in real words.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Review 1 -->
+                <div class="glass-card p-8 rounded-3xl relative">
+                    <div class="flex items-center gap-1 text-amber-400 mb-4 text-xs">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-6 italic">
+                        "Dr. Aliza Fatima was exceptionally gentle during my root canal procedure. Her clear explanation of every step put my dental anxiety completely at ease."
+                    </p>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold text-xs">
+                            AK
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-white">Ananya K.</p>
+                            <p class="text-[11px] text-slate-400">Patient • Azamgarh</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="glass-card p-8 rounded-3xl relative">
+                    <div class="flex items-center gap-1 text-amber-400 mb-4 text-xs">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-6 italic">
+                        "Highly meticulous practitioner. Her clinical dedication at Dental College Azamgarh shows in the top-tier care she provides to every patient."
+                    </p>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-xs">
+                            RM
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-white">Dr. R. Mishra</p>
+                            <p class="text-[11px] text-slate-400">Clinical Department Colleague</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="glass-card p-8 rounded-3xl relative">
+                    <div class="flex items-center gap-1 text-amber-400 mb-4 text-xs">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-6 italic">
+                        "The cosmetic smile enhancement done by Dr. Aliza gave me back my confidence! She is thorough, professional, and very friendly."
+                    </p>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-teal-500/20 text-teal-400 flex items-center justify-center font-bold text-xs">
+                            SR
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-white">Sana Raza</p>
+                            <p class="text-[11px] text-slate-400">Cosmetic Dentistry Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Booking Section -->
+    <section id="contact" class="py-24 relative bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <!-- Info Column -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-xs font-medium text-cyan-400 mb-3">
+                            Direct Appointment
+                        </div>
+                        <h2 class="text-3xl sm:text-4xl font-bold text-white">Get in Touch</h2>
+                        <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+                            Schedule a consultation or inquire about specific dental procedures at Dental College Azamgarh.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="glass-card p-5 rounded-2xl flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-lg shrink-0">
+                                <i class="fa-solid fa-hospital"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Clinical Affiliation</p>
+                                <p class="text-sm font-semibold text-white">Dental College Azamgarh</p>
+                            </div>
+                        </div>
+
+                        <div class="glass-card p-5 rounded-2xl flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-teal-500/10 border border-teal-500/30 flex items-center justify-center text-teal-400 text-lg shrink-0">
+                                <i class="fa-solid fa-user-doctor"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Practitioner</p>
+                                <p class="text-sm font-semibold text-white">Dr. Aliza Fatima (Dentist)</p>
+                            </div>
+                        </div>
+
+                        <div class="glass-card p-5 rounded-2xl flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-lg shrink-0">
+                                <i class="fa-solid fa-network-wired"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Network Connected</p>
+                                <p class="text-sm font-semibold text-white">24 Aug 2026</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-gradient-to-r from-cyan-950/40 to-indigo-950/40 border border-cyan-800/40">
+                        <p class="text-xs text-cyan-300 font-medium leading-relaxed">
+                            <i class="fa-solid fa-circle-info mr-2"></i> Standard consultation hours are according to Dental College Azamgarh clinical schedules.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Form Column -->
+                <div class="lg:col-span-7">
+                    <div class="glass-card p-8 sm:p-10 rounded-3xl relative border border-slate-800">
+                        <h3 class="text-xl font-bold text-white mb-2">Request an Appointment</h3>
+                        <p class="text-xs text-slate-400 mb-6">Fill in your details and preferred timing. Our clinic team will reach out to confirm.</p>
+
+                        <form onsubmit="event.preventDefault(); alert('Appointment Request Submitted Successfully!');" class="space-y-5">
+                            <div class="grid sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">Full Name</label>
+                                    <input type="text" placeholder="John Doe" required 
+                                           class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-cyan-500 transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">Phone Number</label>
+                                    <input type="tel" placeholder="+91 98765 43210" required 
+                                           class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-cyan-500 transition-colors">
+                                </div>
+                            </div>
+
+                            <div class="grid sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">Email Address</label>
+                                    <input type="email" placeholder="patient@example.com" required 
+                                           class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-cyan-500 transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">Service Required</label>
+                                    <select class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700 text-slate-300 text-sm focus:outline-none focus:border-cyan-500 transition-colors">
+                                        <option>General Checkup & Routine</option>
+                                        <option>Cosmetic Smile Design</option>
+                                        <option>Restorative / Cavity Treatment</option>
+                                        <option>Root Canal Therapy</option>
+                                        <option>Pediatric Consultation</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Additional Notes / Symptoms</label>
+                                <textarea rows="4" placeholder="Briefly describe your dental query or preferred appointment time..." 
+                                          class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-700 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-cyan-500 transition-colors"></textarea>
+                            </div>
+
+                            <button type="submit" 
+                                    class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-teal-500 to-indigo-600 text-white font-semibold text-sm shadow-xl shadow-cyan-500/20 hover:shadow-cyan-500/40 hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2">
+                                <span>Submit Appointment Request</span>
+                                <i class="fa-solid fa-paper-plane text-xs"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 bg-slate-950 border-t border-slate-900 text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© 2026 Dr. Aliza Fatima | Dental College Azamgarh. All rights reserved.</p>
+            <div class="flex items-center gap-6">
+                <a href="#" class="hover:text-cyan-400 transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-cyan-400 transition-colors">Terms of Care</a>
+                <a href="#about" class="hover:text-cyan-400 transition-colors">Clinical Info</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
