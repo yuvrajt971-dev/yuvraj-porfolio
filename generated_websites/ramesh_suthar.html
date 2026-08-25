@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramesh Suthar | Master Interior Designer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(99, 102, 241, 0.3);
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card:hover {
+            border-color: rgba(99, 102, 241, 0.4);
+            box-shadow: 0 10px 30px -10px rgba(99, 102, 241, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 selection:bg-indigo-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-wider text-white flex items-center gap-3 group">
+                <span class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-amber-500 flex items-center justify-center text-white shadow-lg group-hover:scale-105 transition-transform duration-300">
+                    <i class="fa-solid font-bold fa-compass-drafting text-lg"></i>
+                </span>
+                <span>Ramesh <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">Suthar</span></span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+                <a href="#services" class="hover:text-indigo-400 transition-colors">Services</a>
+                <a href="#portfolio" class="hover:text-indigo-400 transition-colors">Portfolio</a>
+                <a href="#testimonials" class="hover:text-indigo-400 transition-colors">Testimonials</a>
+                <a href="#contact" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-semibold shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-105 transition-all duration-300">
+                    Get In Touch
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="menuBtn" class="md:hidden text-2xl text-slate-300 hover:text-white focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobileMenu" class="hidden md:hidden bg-slate-900/95 border-b border-slate-800 px-6 py-4 space-y-4 text-center">
+            <a href="#about" class="block text-slate-300 hover:text-indigo-400">About</a>
+            <a href="#services" class="block text-slate-300 hover:text-indigo-400">Services</a>
+            <a href="#portfolio" class="block text-slate-300 hover:text-indigo-400">Portfolio</a>
+            <a href="#testimonials" class="block text-slate-300 hover:text-indigo-400">Testimonials</a>
+            <a href="#contact" class="block w-full py-2.5 rounded-full bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-semibold">Get In Touch</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-20 md:pt-48 md:pb-32 overflow-hidden">
+        <!-- Background Glows -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-indigo-600/15 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute top-1/3 right-10 w-[400px] h-[400px] bg-purple-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
+            
+            <!-- Avatar Frame -->
+            <div class="inline-block relative mb-8">
+                <div class="absolute -inset-1.5 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-amber-500 blur-md opacity-80 animate-pulse"></div>
+                <img src="https://ui-avatars.com/api/?name=Ramesh+Suthar&size=200&background=0D8ABC&color=fff&bold=true" 
+                     alt="Ramesh Suthar" 
+                     class="relative w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-2 border-slate-950 shadow-2xl">
+                <span class="absolute bottom-2 right-2 bg-slate-900 text-amber-400 p-2 rounded-full border border-slate-700 shadow-md" title="Certified Interior Designer">
+                    <i class="fa-solid fa-certificate text-sm"></i>
+                </span>
+            </div>
+
+            <!-- Role Badge -->
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card text-xs md:text-sm font-medium text-slate-300 mb-6 border border-slate-700/50">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                Interior Designer at <span class="text-amber-400 font-semibold">Shree Shivam Hardware & Co</span>
+            </div>
+
+            <!-- Main Heading -->
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 max-w-4xl mx-auto leading-tight">
+                Crafting <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-amber-400">Atmospheric Spaces</span> & Architectural Perfection
+            </h1>
+
+            <p class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+                Elevating residential and commercial interiors through modern spatial design, bespoke material finishes, and precision hardware solutions.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+                <a href="#portfolio" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-amber-500 text-white font-bold text-base shadow-xl shadow-indigo-500/20 hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-layer-group"></i> View Portfolio
+                </a>
+                <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full glass-card hover:bg-slate-800/80 text-slate-200 font-semibold text-base transition-all duration-300 flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-paper-plane text-indigo-400"></i> Book Consultation
+                </a>
+            </div>
+
+            <!-- Trust Badges / Stats Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto pt-8 border-t border-slate-800/60">
+                <div class="p-4 rounded-2xl glass-card">
+                    <h3 class="text-2xl md:text-3xl font-extrabold text-indigo-400">8+</h3>
+                    <p class="text-xs md:text-sm text-slate-400 mt-1">Years Experience</p>
+                </div>
+                <div class="p-4 rounded-2xl glass-card">
+                    <h3 class="text-2xl md:text-3xl font-extrabold text-purple-400">120+</h3>
+                    <p class="text-xs md:text-sm text-slate-400 mt-1">Projects Delivered</p>
+                </div>
+                <div class="p-4 rounded-2xl glass-card">
+                    <h3 class="text-2xl md:text-3xl font-extrabold text-amber-400">100%</h3>
+                    <p class="text-xs md:text-sm text-slate-400 mt-1">Bespoke Hardware</p>
+                </div>
+                <div class="p-4 rounded-2xl glass-card">
+                    <h3 class="text-2xl md:text-3xl font-extrabold text-emerald-400">4.9★</h3>
+                    <p class="text-xs md:text-sm text-slate-400 mt-1">Client Satisfaction</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-20 relative bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                
+                <!-- Image Side -->
+                <div class="relative group">
+                    <div class="absolute -inset-2 rounded-3xl bg-gradient-to-r from-indigo-500 to-amber-500 opacity-30 blur-lg group-hover:opacity-50 transition duration-500"></div>
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-800">
+                        <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=800&q=80" 
+                             alt="Interior Design Studio" 
+                             class="w-full h-[450px] object-cover object-center group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-4 glass-card rounded-xl">
+                            <p class="text-xs font-semibold text-amber-400 uppercase tracking-widest mb-1">Design Philosophy</p>
+                            <p class="text-sm text-slate-200 italic">"Where structural strength meets refined aesthetic elegance."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Side -->
+                <div class="space-y-6">
+                    <div class="inline-block px-3 py-1 rounded-md bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold uppercase tracking-wider">
+                        About Ramesh Suthar
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold leading-tight">
+                        Transforming Spaces with Precision Hardware & Master Craftsmanship
+                    </h2>
+                    <p class="text-slate-400 leading-relaxed">
+                        As a lead Interior Designer at <strong class="text-slate-200">Shree Shivam Hardware & Co</strong>, I specialize in creating functional yet breathtaking interiors. By blending luxury architectural hardware with modern spatial ergonomics, I ensure every project radiates elegance and purpose.
+                    </p>
+                    <p class="text-slate-400 leading-relaxed">
+                        From high-end residential villas to modern corporate suites, my approach combines premium materials, seamless hardware integrations, and bespoke layout styling.
+                    </p>
+
+                    <!-- Key Pillars -->
+                    <div class="grid grid-cols-2 gap-4 pt-4">
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 flex-shrink-0">
+                                <i class="fa-solid fa-ruler-combined"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-slate-200 text-sm">Spatial Optimization</h4>
+                                <p class="text-xs text-slate-400">Maximizing spatial flow & natural lighting</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 flex-shrink-0">
+                                <i class="fa-solid fa-cube"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-slate-200 text-sm">Premium Hardware</h4>
+                                <p class="text-xs text-slate-400">Top-tier architectural fittings & metals</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid Section -->
+    <section id="services" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="px-3 py-1 rounded-md bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-semibold uppercase tracking-wider">Services Offered</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-3">Tailored Interior & Design Solutions</h2>
+                <p class="text-slate-400 mt-2">Comprehensive design expertise from concept blueprinting to turnkey execution.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-2xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-couch"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-100">Residential Interior Design</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Custom living room, modular kitchen, and luxury bedroom layouts designed to reflect your personal aesthetic.
+                    </p>
+                    <a href="#contact" class="text-xs font-semibold text-indigo-400 flex items-center gap-1 group-hover:gap-2 transition-all">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-purple-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-key"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-100">Hardware & Fittings Curation</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Handpicked premium fittings, handles, concealed hinges, and glass fixtures via Shree Shivam Hardware & Co.
+                    </p>
+                    <a href="#contact" class="text-xs font-semibold text-purple-400 flex items-center gap-1 group-hover:gap-2 transition-all">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-amber-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-100">Commercial Space Planning</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Ergonomic office layouts, retail storefront display concepts, and high-impact commercial spaces.
+                    </p>
+                    <a href="#contact" class="text-xs font-semibold text-amber-400 flex items-center gap-1 group-hover:gap-2 transition-all">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-2xl bg-rose-500/10 border border-rose-500/30 flex items-center justify-center text-rose-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-rose-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-cubes-stacked"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-100">3D Spatial Visualization</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        High-definition 3D rendering and virtual walk-throughs to preview textures, lights, and materials before building.
+                    </p>
+                    <a href="#contact" class="text-xs font-semibold text-rose-400 flex items-center gap-1 group-hover:gap-2 transition-all">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-pen-ruler"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-100">Custom Furniture Crafting</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Bespoke woodwork, custom wardrobes, and accent furniture tailored specifically to your dimensions.
+                    </p>
+                    <a href="#contact" class="text-xs font-semibold text-emerald-400 flex items-center gap-1 group-hover:gap-2 transition-all">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-cyan-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-100">Turnkey Project Supervision</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        End-to-end site management, contractor coordination, and quality assurance until key handover.
+                    </p>
+                    <a href="#contact" class="text-xs font-semibold text-cyan-400 flex items-center gap-1 group-hover:gap-2 transition-all">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 relative bg-slate-950/60">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="px-3 py-1 rounded-md bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-semibold uppercase tracking-wider">Showcase</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-3">Featured Design Works</h2>
+                <p class="text-slate-400 mt-2">A glimpse into recent interior design transformations.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="glass-card rounded-2xl overflow-hidden group">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" alt="Modern Minimalist Living" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60"></div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-medium text-amber-400">Residential Design</span>
+                        <h3 class="text-xl font-bold text-white mt-1 mb-2">Minimalist Modern Living Suite</h3>
+                        <p class="text-slate-400 text-sm">Harmonizing warm ambient lighting with matte brass hardware accents.</p>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="glass-card rounded-2xl overflow-hidden group">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Contemporary Kitchen" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60"></div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-medium text-indigo-400">Modular Kitchen</span>
+                        <h3 class="text-xl font-bold text-white mt-1 mb-2">Luxury Marble & Metal Kitchen</h3>
+                        <p class="text-slate-400 text-sm">Custom soft-close fittings and sleek quartz island countertops.</p>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="glass-card rounded-2xl overflow-hidden group">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Executive Office" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60"></div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-medium text-emerald-400">Commercial</span>
+                        <h3 class="text-xl font-bold text-white mt-1 mb-2">Executive Corporate Studio</h3>
+                        <p class="text-slate-400 text-sm">Acoustic paneling integrated with glass hardware partitioning.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="px-3 py-1 rounded-md bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold uppercase tracking-wider">Endorsements</span>
+                <h2 class="text-3xl md:text-4xl font-bold mt-3">What Clients & Partners Say</h2>
+                <p class="text-slate-400 mt-2">Trusted by homeowners, builders, and commercial space owners.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="glass-card p-8 rounded-2xl relative">
+                    <div class="text-amber-400 flex gap-1 mb-4 text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm italic mb-6">"Ramesh's deep understanding of both interior styling and architectural hardware made our penthouse project effortless. Highly skilled!"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 flex items-center justify-center text-indigo-400 font-bold text-sm">VS</div>
+                        <div>
+                            <h4 class="text-slate-200 text-sm font-semibold">Vikram Sharma</h4>
+                            <p class="text-xs text-slate-400">Villa Owner, Green Acres</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="glass-card p-8 rounded-2xl relative">
+                    <div class="text-amber-400 flex gap-1 mb-4 text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm italic mb-6">"The material curation from Shree Shivam Hardware & Co combined with Ramesh's spatial planning gave our office an incredible vibe."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center text-purple-400 font-bold text-sm">AP</div>
+                        <div>
+                            <h4 class="text-slate-200 text-sm font-semibold">Ananya Patel</h4>
+                            <p class="text-xs text-slate-400">Founder, Nexa Studios</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="glass-card p-8 rounded-2xl relative">
+                    <div class="text-amber-400 flex gap-1 mb-4 text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm italic mb-6">"Precision, timeliness, and an eye for architectural details. Ramesh Suthar is our go-to interior design expert."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-emerald-500/20 flex items-center justify-center text-emerald-400 font-bold text-sm">RK</div>
+                        <div>
+                            <h4 class="text-slate-200 text-sm font-semibold">Rajesh Mehta</h4>
+                            <p class="text-xs text-slate-400">Real Estate Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Direct Inquiry Section -->
+    <section id="contact" class="py-20 relative bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-12 glass-card p-8 md:p-12 rounded-3xl border border-slate-800">
+                
+                <!-- Info Column -->
+                <div>
+                    <span class="px-3 py-1 rounded-md bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold uppercase tracking-wider">Contact Direct</span>
+                    <h2 class="text-3xl md:text-4xl font-bold mt-3 mb-6">Let's Discuss Your Next Space</h2>
+                    <p class="text-slate-400 mb-8 leading-relaxed">
+                        Looking for bespoke interior designs or premium architectural hardware consultations? Get in touch today to turn your vision into reality.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400">
+                                <i class="fa-solid fa-building"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Company</h4>
+                                <p class="text-slate-200 font-medium">Shree Shivam Hardware & Co</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400">
+                                <i class="fa-solid fa-compass"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Role</h4>
+                                <p class="text-slate-200 font-medium">Lead Interior Designer</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400">
+                                <i class="fa-solid fa-handshake"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Network Connection</h4>
+                                <p class="text-slate-200 font-medium">Connected on 23 Aug 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Form -->
+                <div>
+                    <form id="contactForm" onsubmit="handleSubmit(event)" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Your Name</label>
+                            <input type="text" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-800 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Email Address</label>
+                            <input type="email" required placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-800 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Project Scope / Details</label>
+                            <textarea rows="4" required placeholder="Describe your interior space project..." class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-800 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors"></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-amber-500 text-white font-bold text-base hover:shadow-lg hover:shadow-indigo-500/25 transition-all duration-300">
+                            Send Consultation Request
+                        </button>
+                    </form>
+                    <div id="formSuccess" class="hidden mt-4 p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-center text-sm font-semibold">
+                        Thank you Ramesh! Your message placeholder has been recorded.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 border-t border-slate-900 bg-slate-950 text-slate-500 text-sm">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+            <p>© 2026 Ramesh Suthar | Shree Shivam Hardware & Co. All rights reserved.</p>
+            <div class="flex items-center space-x-6 text-slate-400">
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-brands fa-linkedin text-lg"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-brands fa-instagram text-lg"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-solid fa-envelope text-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Form Submit Handler
+        function handleSubmit(e) {
+            e.preventDefault();
+            const form = document.getElementById('contactForm');
+            const success = document.getElementById('formSuccess');
+            form.reset();
+            success.classList.remove('hidden');
+            setTimeout(() => {
+                success.classList.add('hidden');
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
