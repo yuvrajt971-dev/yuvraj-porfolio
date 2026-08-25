@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul A. N | Junior Architect & Spatial Designer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -12px rgba(14, 165, 233, 0.35);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-border {
+            position: relative;
+            background: linear-gradient(135deg, rgba(56, 189, 248, 0.2), rgba(192, 132, 252, 0.2));
+            padding: 1px;
+            border-radius: 1rem;
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card:hover {
+            border-color: rgba(56, 189, 248, 0.4);
+            box-shadow: 0 10px 30px -10px rgba(14, 165, 233, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-slate-950">
+
+    <!-- Background Grid Accent -->
+    <div class="fixed inset-0 bg-[linear-gradient(to_right,#1e293b15_1px,transparent_1px),linear-gradient(to_bottom,#1e293b15_1px,transparent_1px)] bg-[size:4rem_4rem] pointer-events-none z-0"></div>
+
+    <!-- Glowing Orbs -->
+    <div class="fixed top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-sky-500/10 rounded-full blur-[140px] pointer-events-none z-0"></div>
+    <div class="fixed bottom-10 right-10 w-[400px] h-[400px] bg-purple-500/10 rounded-full blur-[120px] pointer-events-none z-0"></div>
+
+    <!-- Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-500 to-indigo-600 flex items-center justify-center font-bold text-white shadow-lg shadow-sky-500/20 group-hover:scale-105 transition-transform">
+                    RA
+                </div>
+                <span class="font-bold text-lg tracking-tight text-white group-hover:text-sky-400 transition-colors">
+                    Rahul A. N<span class="text-sky-400">.</span>
+                </span>
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-sky-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-sky-400 transition-colors">Expertise</a>
+                <a href="#projects" class="hover:text-sky-400 transition-colors">Portfolio</a>
+                <a href="#testimonials" class="hover:text-sky-400 transition-colors">Endorsements</a>
+                <a href="#contact" class="hover:text-sky-400 transition-colors">Contact</a>
+            </nav>
+
+            <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-white bg-gradient-to-r from-sky-500 to-indigo-600 rounded-full shadow-lg shadow-sky-500/25 hover:shadow-sky-500/40 hover:scale-[1.02] active:scale-95 transition-all">
+                Let's Build
+            </a>
+        </div>
+    </header>
+
+    <main class="relative z-10 pt-20">
+
+        <!-- Hero Section -->
+        <section class="min-h-[90vh] flex items-center justify-center px-6 py-20">
+            <div class="max-w-5xl mx-auto text-center flex flex-col items-center">
+                
+                <!-- Glowing Double-Gradient Avatar Frame -->
+                <div class="relative mb-8 group">
+                    <div class="absolute -inset-1.5 bg-gradient-to-r from-sky-500 via-indigo-500 to-purple-600 rounded-full blur-md opacity-75 group-hover:opacity-100 transition duration-500 group-hover:scale-105"></div>
+                    <div class="relative p-1 bg-slate-950 rounded-full">
+                        <img src="https://ui-avatars.com/api/?name=Rahul+A.+N&size=200&background=0D8ABC&color=fff&bold=true" 
+                             alt="Rahul A. N" 
+                             class="w-32 h-32 md:w-36 md:h-36 rounded-full object-cover shadow-2xl">
+                    </div>
+                </div>
+
+                <!-- Badges -->
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/90 border border-slate-800 text-sky-400 text-xs md:text-sm font-medium mb-6 backdrop-blur-md">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    Junior Architect &bull; Parul University, Vadodara
+                </div>
+
+                <!-- Headline -->
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-[1.15]">
+                    Designing Spatial Elegance & <br class="hidden sm:inline"/>
+                    <span class="gradient-text">Architectural Innovation</span>
+                </h1>
+
+                <!-- Subtitle -->
+                <p class="text-slate-400 text-base md:text-xl max-w-2xl mb-10 leading-relaxed font-normal">
+                    Transforming abstract concepts into structural masterpieces. Crafting sustainable, functional, and visionary environments with technical accuracy and aesthetic depth.
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
+                    <a href="#projects" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-sky-500 to-indigo-600 text-white font-semibold shadow-xl shadow-sky-500/25 hover:shadow-sky-500/40 hover:scale-[1.02] active:scale-95 transition-all text-center">
+                        Explore Architectural Works <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                    </a>
+                    <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full bg-slate-900 border border-slate-800 text-slate-200 font-semibold hover:bg-slate-800 hover:border-slate-700 transition-all text-center">
+                        Initiate Consultation
+                    </a>
+                </div>
+
+                <!-- Trust Badges / Quick Specs -->
+                <div class="mt-16 pt-10 border-t border-slate-800/60 grid grid-cols-2 md:grid-cols-4 gap-6 w-full max-w-4xl text-left">
+                    <div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800/60">
+                        <div class="text-2xl font-bold text-white mb-1">BIM & CAD</div>
+                        <div class="text-xs text-slate-400">Precision Drafting</div>
+                    </div>
+                    <div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800/60">
+                        <div class="text-2xl font-bold text-white mb-1">3D Renderings</div>
+                        <div class="text-xs text-slate-400">Photorealistic Output</div>
+                    </div>
+                    <div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800/60">
+                        <div class="text-2xl font-bold text-white mb-1">Sustainable</div>
+                        <div class="text-xs text-slate-400">Eco-Conscious Tech</div>
+                    </div>
+                    <div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800/60">
+                        <div class="text-2xl font-bold text-white mb-1">Institutional</div>
+                        <div class="text-xs text-slate-400">Campus & Civic Planning</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- About & Expertise Section -->
+        <section id="about" class="py-24 px-6 relative">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- Left Column: Featured Image -->
+                    <div class="lg:col-span-6 relative">
+                        <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-800 group">
+                            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Modern Architectural Design" 
+                                 class="w-full h-[450px] object-cover object-center group-hover:scale-105 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+                            <div class="absolute bottom-6 left-6 right-6 p-6 rounded-xl glass-card">
+                                <p class="text-sm font-semibold text-sky-400 mb-1">Architectural Philosophy</p>
+                                <p class="text-xs text-slate-300">"Architecture should speak of its time and place, but yearn for timelessness."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Text Content -->
+                    <div class="lg:col-span-6 space-y-6">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-sky-500/10 border border-sky-500/20 text-sky-400 text-xs font-semibold tracking-wide uppercase">
+                            About Rahul A. N
+                        </div>
+                        <h2 class="text-3xl md:text-4xl font-bold text-white leading-tight">
+                            Bridging Technical Mastery & Spatial Vision at Parul University
+                        </h2>
+                        <p class="text-slate-400 text-base leading-relaxed">
+                            As a dedicated <strong class="text-slate-200">Junior Architect at Parul University, Vadodara</strong>, Rahul combines analytical precision with modern aesthetic concepts to deliver spatial designs that inspire and endure. 
+                        </p>
+                        <p class="text-slate-400 text-base leading-relaxed">
+                            Focusing on institutional spaces, commercial complexes, and contemporary residential layouts, he utilizes advanced BIM tools, parametric modeling, and eco-responsive building techniques to optimize both form and function.
+                        </p>
+
+                        <!-- Key Pillars Grid -->
+                        <div class="grid grid-cols-2 gap-4 pt-4">
+                            <div class="flex items-start gap-3">
+                                <div class="w-8 h-8 rounded-lg bg-sky-500/10 flex items-center justify-center text-sky-400 shrink-0">
+                                    <i class="fa-solid fa-compass-drafting text-sm"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-semibold text-white">Spatial Planning</h4>
+                                    <p class="text-xs text-slate-400">Ergonomic & efficient</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-8 h-8 rounded-lg bg-indigo-500/10 flex items-center justify-center text-indigo-400 shrink-0">
+                                    <i class="fa-solid fa-cube text-sm"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-semibold text-white">3D Parametrics</h4>
+                                    <p class="text-xs text-slate-400">Revit, Rhino & V-Ray</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="expertise" class="py-24 px-6 bg-slate-900/30 border-y border-slate-800/50">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-sky-400 bg-sky-500/10 px-3 py-1 rounded-full border border-sky-500/20">
+                        Capabilities & Expertise
+                    </span>
+                    <h2 class="text-3xl md:text-5xl font-bold text-white mt-4 mb-4">Architectural Services</h2>
+                    <p class="text-slate-400 text-sm md:text-base">Comprehensive design solutions from preliminary schematic sketches to comprehensive BIM execution models.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Card 1 -->
+                    <div class="glass-card p-8 rounded-2xl transition-all duration-300">
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-sky-500/20 to-indigo-500/20 border border-sky-500/30 flex items-center justify-center text-sky-400 text-2xl mb-6">
+                            <i class="fa-solid fa-building-columns"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Architectural Design</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Holistic building concepts tailored for educational, residential, and commercial projects with a strong focus on contextual harmony.
+                        </p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="glass-card p-8 rounded-2xl transition-all duration-300">
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-indigo-500/20 to-purple-500/20 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-2xl mb-6">
+                            <i class="fa-solid fa-layer-group"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">BIM & Technical Documentation</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Detailed CAD construction drawings, Revit modeling, elevation plans, and precise structural coordination schedules.
+                        </p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="glass-card p-8 rounded-2xl transition-all duration-300">
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-purple-500/20 to-pink-500/20 border border-purple-500/30 flex items-center justify-center text-purple-400 text-2xl mb-6">
+                            <i class="fa-solid fa-vr-cardboard"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">3D Visualization & VR</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Photorealistic renders, walkthrough animations, and immersive spatial previews that bring blueprints to vibrant life.
+                        </p>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="glass-card p-8 rounded-2xl transition-all duration-300">
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-emerald-500/20 to-sky-500/20 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-2xl mb-6">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Sustainable Design</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Passive solar strategies, eco-friendly material selection, thermal comfort optimization, and low-carbon footprint planning.
+                        </p>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="glass-card p-8 rounded-2xl transition-all duration-300">
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-amber-500/20 to-rose-500/20 border border-amber-500/30 flex items-center justify-center text-amber-400 text-2xl mb-6">
+                            <i class="fa-solid fa-couch"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Interior & Spatial Ergonomics</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Thoughtfully curated interior spaces balancing acoustics, custom millwork, lighting design, and fluid user interaction.
+                        </p>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="glass-card p-8 rounded-2xl transition-all duration-300">
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-cyan-500/20 to-blue-500/20 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-2xl mb-6">
+                            <i class="fa-solid fa-city"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Urban & Site Masterplanning</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Macro-scale spatial layout design for institutional campuses, landscape integrations, and public accessibility frameworks.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Gallery Section -->
+        <section id="projects" class="py-24 px-6">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+                    <div>
+                        <span class="text-xs font-semibold uppercase tracking-wider text-sky-400 bg-sky-500/10 px-3 py-1 rounded-full border border-sky-500/20">
+                            Portfolio
+                        </span>
+                        <h2 class="text-3xl md:text-5xl font-bold text-white mt-4">Selected Works</h2>
+                    </div>
+                    <p class="text-slate-400 text-sm max-w-md mt-4 md:mt-0">
+                        Explore conceptual designs, campus planning initiatives, and modern structural models developed by Rahul.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Project 1 -->
+                    <div class="group relative rounded-2xl overflow-hidden glass-card">
+                        <div class="h-64 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" alt="Institutional Hub" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        </div>
+                        <div class="p-6">
+                            <div class="text-xs font-semibold text-sky-400 mb-1">Institutional Planning</div>
+                            <h3 class="text-lg font-bold text-white group-hover:text-sky-400 transition-colors">Parul Academic Pavilion</h3>
+                            <p class="text-slate-400 text-xs mt-2">A sustainable multi-tier learning center featuring natural light wells and green roofs.</p>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="group relative rounded-2xl overflow-hidden glass-card">
+                        <div class="h-64 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Minimalist Villa" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        </div>
+                        <div class="p-6">
+                            <div class="text-xs font-semibold text-indigo-400 mb-1">Residential</div>
+                            <h3 class="text-lg font-bold text-white group-hover:text-sky-400 transition-colors">The Monolith Residence</h3>
+                            <p class="text-slate-400 text-xs mt-2">Contemporary cantilevers integrated with local stone and smart climate management.</p>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="group relative rounded-2xl overflow-hidden glass-card">
+                        <div class="h-64 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="Commercial Tower" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        </div>
+                        <div class="p-6">
+                            <div class="text-xs font-semibold text-purple-400 mb-1">Commercial</div>
+                            <h3 class="text-lg font-bold text-white group-hover:text-sky-400 transition-colors">Vadodara Innovation Tower</h3>
+                            <p class="text-slate-400 text-xs mt-2">High-performance double-skin facade designed for maximum energy efficiency.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-24 px-6 bg-slate-900/30 border-t border-slate-800/50">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-sky-400 bg-sky-500/10 px-3 py-1 rounded-full border border-sky-500/20">
+                        Peer Recognition
+                    </span>
+                    <h2 class="text-3xl md:text-5xl font-bold text-white mt-4">Endorsements</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                        <div>
+                            <div class="flex text-amber-400 text-xs gap-1 mb-4">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                                "Rahul possesses an exceptionally sharp eye for spatial layout and technical execution. His parametric modeling work at Parul University elevated our design team's speed and quality."
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                            <div class="w-10 h-10 rounded-full bg-sky-500/20 text-sky-400 flex items-center justify-center font-bold text-sm">
+                                SK
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Senior Project Lead</h4>
+                                <p class="text-xs text-slate-400">Parul University Architecture Faculty</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                        <div>
+                            <div class="flex text-amber-400 text-xs gap-1 mb-4">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                                "His grasp of sustainable material application and 3D visualization is remarkable. Rahul seamlessly converts structural ideas into clear, visually compelling presentations."
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                            <div class="w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-sm">
+                                AM
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Principal Architect</h4>
+                                <p class="text-xs text-slate-400">Urban Design Studio</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                        <div>
+                            <div class="flex text-amber-400 text-xs gap-1 mb-4">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                                "Collaborating with Rahul on BIM documentation was smooth and efficient. His dedication to accuracy in structural drafting is top tier."
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                            <div class="w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 flex items-center justify-center font-bold text-sm">
+                                RP
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Structural Engineer Consultant</h4>
+                                <p class="text-xs text-slate-400">Vadodara Development Projects</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-24 px-6 relative">
+            <div class="max-w-6xl mx-auto">
+                <div class="glass-card rounded-3xl p-8 md:p-12 border border-slate-800 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-96 h-96 bg-sky-500/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                        <!-- Left Info -->
+                        <div class="lg:col-span-5 space-y-6">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-sky-400 bg-sky-500/10 px-3 py-1 rounded-full border border-sky-500/20">
+                                Get In Touch
+                            </span>
+                            <h2 class="text-3xl md:text-4xl font-bold text-white leading-tight">
+                                Let's Build Something Exceptional
+                            </h2>
+                            <p class="text-slate-400 text-sm leading-relaxed">
+                                Open to design collaborations, institutional consultations, and novel architectural projects.
+                            </p>
+
+                            <div class="space-y-4 pt-4">
+                                <div class="flex items-center gap-4">
+                                    <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-sky-400">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+                                    <div>
+                                        <div class="text-xs text-slate-400">Location</div>
+                                        <div class="text-sm font-medium text-white">Parul University, Vadodara, Gujarat</div>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center gap-4">
+                                    <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-sky-400">
+                                        <i class="fa-solid fa-briefcase"></i>
+                                    </div>
+                                    <div>
+                                        <div class="text-xs text-slate-400">Current Role</div>
+                                        <div class="text-sm font-medium text-white">Junior Architect</div>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center gap-4">
+                                    <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-sky-400">
+                                        <i class="fa-solid fa-user-check"></i>
+                                    </div>
+                                    <div>
+                                        <div class="text-xs text-slate-400">Network Connected</div>
+                                        <div class="text-sm font-medium text-white">24 Aug 2026</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Form -->
+                        <div class="lg:col-span-7">
+                            <form onsubmit="event.preventDefault();" class="space-y-5">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                    <div>
+                                        <label class="block text-xs font-medium text-slate-300 mb-2">Your Name</label>
+                                        <input type="text" placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-sky-500 transition-colors">
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs font-medium text-slate-300 mb-2">Email Address</label>
+                                        <input type="email" placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-sky-500 transition-colors">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label class="block text-xs font-medium text-slate-300 mb-2">Project Subject</label>
+                                    <input type="text" placeholder="Architectural Consultation / CAD Modeling" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-sky-500 transition-colors">
+                                </div>
+
+                                <div>
+                                    <label class="block text-xs font-medium text-slate-300 mb-2">Message</label>
+                                    <textarea rows="4" placeholder="Tell me about your architectural project details..." class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-sky-500 transition-colors"></textarea>
+                                </div>
+
+                                <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-sky-500 to-indigo-600 text-white font-semibold shadow-lg shadow-sky-500/25 hover:shadow-sky-500/40 hover:scale-[1.01] active:scale-95 transition-all">
+                                    Send Message <i class="fa-solid fa-paper-plane ml-2 text-xs"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800/80 py-10 px-6 relative z-10 bg-slate-950">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-slate-500">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-sky-500 to-indigo-600 flex items-center justify-center font-bold text-white text-xs">
+                    RA
+                </div>
+                <span>&copy; 2026 Rahul A. N. All rights reserved.</span>
+            </div>
+
+            <div class="flex items-center space-x-6 text-slate-400">
+                <a href="#" class="hover:text-sky-400 transition-colors"><i class="fa-brands fa-linkedin text-lg"></i></a>
+                <a href="#" class="hover:text-sky-400 transition-colors"><i class="fa-brands fa-instagram text-lg"></i></a>
+                <a href="#" class="hover:text-sky-400 transition-colors"><i class="fa-solid fa-envelope text-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
