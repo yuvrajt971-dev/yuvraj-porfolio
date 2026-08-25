@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hem Piyush Shah | Junior Architect Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+        .glass-panel {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-panel:hover {
+            border-color: rgba(99, 102, 241, 0.4);
+            box-shadow: 0 10px 30px -10px rgba(99, 102, 241, 0.2);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-border {
+            position: relative;
+            border-radius: 9999px;
+            background: linear-gradient(135deg, #6366f1, #a855f7, #ec4899);
+            padding: 3px;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- Ambient Glow Background Effects -->
+    <div class="fixed top-0 left-1/4 w-96 h-96 bg-indigo-600/15 rounded-full blur-3xl pointer-events-none -z-10 animate-pulse-slow"></div>
+    <div class="fixed bottom-1/3 right-1/4 w-96 h-96 bg-pink-600/10 rounded-full blur-3xl pointer-events-none -z-10 animate-pulse-slow" style="animation-delay: 2s;"></div>
+
+    <!-- Navigation Bar -->
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/60 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-tight flex items-center space-x-2">
+                <span class="w-9 h-9 rounded-lg bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center text-white text-sm font-extrabold shadow-lg shadow-indigo-500/20">
+                    HS
+                </span>
+                <span class="tracking-wider text-slate-100 font-extrabold text-lg">HEM SHAH<span class="text-indigo-400">.ARCH</span></span>
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+                <a href="#services" class="hover:text-indigo-400 transition-colors">Services</a>
+                <a href="#projects" class="hover:text-indigo-400 transition-colors">Portfolio</a>
+                <a href="#testimonials" class="hover:text-indigo-400 transition-colors">Endorsements</a>
+                <a href="#contact" class="px-4 py-2 rounded-full bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-semibold shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.02] transition-all duration-300">
+                    Contact Me
+                </a>
+            </nav>
+
+            <button id="mobile-menu-btn" class="md:hidden text-slate-300 hover:text-white focus:outline-none text-xl" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900/95 border-b border-slate-800 px-6 py-4 space-y-4">
+            <a href="#about" class="block text-slate-300 hover:text-indigo-400">About</a>
+            <a href="#services" class="block text-slate-300 hover:text-indigo-400">Services</a>
+            <a href="#projects" class="block text-slate-300 hover:text-indigo-400">Portfolio</a>
+            <a href="#testimonials" class="block text-slate-300 hover:text-indigo-400">Endorsements</a>
+            <a href="#contact" class="inline-block px-5 py-2 rounded-full bg-indigo-600 text-white font-semibold">Contact Me</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen pt-32 pb-20 flex items-center justify-center relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Left Text Content -->
+            <div class="lg:col-span-7 space-y-8 text-center lg:text-left order-2 lg:order-1">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-panel border border-indigo-500/30 text-indigo-300 text-xs font-semibold tracking-wide uppercase">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                    Junior Architect @ ART & ARCHITECTURE ASSOCIATES
+                </div>
+
+                <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight">
+                    Shaping Visionary <br>
+                    <span class="gradient-text">Spaces & Structural</span> Harmony.
+                </h1>
+
+                <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+                    Transforming abstract concepts into tangible architectural masterpieces. Specializing in sustainable urban design, 3D visualization, spatial planning, and innovative building information modeling (BIM).
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                    <a href="#projects" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold shadow-xl shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.02] transition-all duration-300 flex items-center justify-center gap-2">
+                        <span>Explore Portfolio</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                    <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl glass-panel text-slate-200 font-semibold hover:bg-slate-800/80 hover:text-white transition-all duration-300 text-center border border-slate-700">
+                        Initiate Collaboration
+                    </a>
+                </div>
+
+                <!-- Trust Badges & Metrics -->
+                <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0 text-center lg:text-left">
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-white">100%</div>
+                        <div class="text-xs text-slate-400 uppercase tracking-wider mt-1">Design Precision</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-white">3D / BIM</div>
+                        <div class="text-xs text-slate-400 uppercase tracking-wider mt-1">Expert Workflow</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-white">Eco-First</div>
+                        <div class="text-xs text-slate-400 uppercase tracking-wider mt-1">Architectural Philosophy</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Avatar Frame -->
+            <div class="lg:col-span-5 flex justify-center order-1 lg:order-2">
+                <div class="relative group">
+                    <!-- Glow Behind Image -->
+                    <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full blur-xl opacity-70 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse-slow"></div>
+                    
+                    <!-- Avatar Container -->
+                    <div class="relative gradient-border rounded-full p-1.5 bg-slate-950 shadow-2xl">
+                        <img 
+                            src="https://ui-avatars.com/api/?name=Hem+Piyush+Shah&size=200&background=0D8ABC&color=fff&bold=true" 
+                            alt="Hem Piyush Shah" 
+                            class="w-56 h-56 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-full object-cover shadow-inner transform group-hover:scale-105 transition-all duration-500"
+                        >
+                    </div>
+
+                    <!-- Floating Badge -->
+                    <div class="absolute -bottom-4 -right-4 glass-panel px-5 py-3 rounded-2xl border border-indigo-500/40 shadow-xl flex items-center space-x-3 animate-float">
+                        <div class="w-10 h-10 rounded-xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-compass-drafting"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs text-slate-400">Firm Associate</div>
+                            <div class="text-sm font-bold text-slate-100">ART & ARCHITECTURE</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Architecture Highlight Image -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 shadow-2xl group">
+                        <img 
+                            src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" 
+                            alt="Modern Architectural Design" 
+                            class="w-full h-[420px] object-cover transform group-hover:scale-110 transition-transform duration-700"
+                        >
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-4 glass-panel rounded-xl">
+                            <p class="text-xs font-semibold text-indigo-400 uppercase tracking-widest">Design Ideal</p>
+                            <p class="text-sm text-slate-200 mt-1 font-medium">"Architecture is the learned game, correct and magnificent, of forms assembled in the light."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-block text-xs font-bold tracking-widest text-indigo-400 uppercase">About Hem Piyush Shah</div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Dedicated to Crafting Meaningful Environments</h2>
+                    <p class="text-slate-400 leading-relaxed">
+                        As a Junior Architect at <strong class="text-slate-200 font-semibold">ART & ARCHITECTURE ASSOCIATES</strong>, I bridge creative artistic vision with structural feasibility. My workflow focuses on precision drafting, contemporary aesthetic forms, functional space allocation, and sustainable build environments.
+                    </p>
+                    <p class="text-slate-400 leading-relaxed">
+                        Through meticulous attention to material selection, spatial ergonomics, and modern design tools, I collaborate closely with senior partners and clients to turn blueprints into architectural realities.
+                    </p>
+
+                    <!-- Tech Stack / Skills Badges -->
+                    <div class="pt-4">
+                        <h4 class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-3">Architectural Toolkit & Capabilities</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3.5 py-1.5 rounded-lg text-xs font-medium glass-panel border-slate-800 text-slate-300 hover:text-indigo-400 transition-colors">AutoCAD</span>
+                            <span class="px-3.5 py-1.5 rounded-lg text-xs font-medium glass-panel border-slate-800 text-slate-300 hover:text-indigo-400 transition-colors">Revit Architecture</span>
+                            <span class="px-3.5 py-1.5 rounded-lg text-xs font-medium glass-panel border-slate-800 text-slate-300 hover:text-indigo-400 transition-colors">3D Modeling & SketchUp</span>
+                            <span class="px-3.5 py-1.5 rounded-lg text-xs font-medium glass-panel border-slate-800 text-slate-300 hover:text-indigo-400 transition-colors">Lumion Rendering</span>
+                            <span class="px-3.5 py-1.5 rounded-lg text-xs font-medium glass-panel border-slate-800 text-slate-300 hover:text-indigo-400 transition-colors">Rhino & Grasshopper</span>
+                            <span class="px-3.5 py-1.5 rounded-lg text-xs font-medium glass-panel border-slate-800 text-slate-300 hover:text-indigo-400 transition-colors">BIM Execution</span>
+                            <span class="px-3.5 py-1.5 rounded-lg text-xs font-medium glass-panel border-slate-800 text-slate-300 hover:text-indigo-400 transition-colors">Sustainable Materials</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid Section -->
+    <section id="services" class="py-24 relative bg-slate-900/30">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-xs font-bold tracking-widest text-indigo-400 uppercase">Specialized Solutions</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white">Architectural Services</h2>
+                <p class="text-slate-400 text-base">Comprehensive architectural and interior planning tailored for residential, commercial, and institutional projects.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="glass-panel p-8 rounded-2xl transition-all duration-300 group hover:-translate-y-2">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-indigo-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-pen-ruler"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Architectural Drafting</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Precise, detail-oriented blueprint creation and structural layouts adhering to international building codes and standards.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="glass-panel p-8 rounded-2xl transition-all duration-300 group hover:-translate-y-2">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 border border-purple-500/30 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-purple-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-cube"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">3D Rendering & Viz</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Photorealistic 3D interior and exterior renderings that allow clients to experience spatial dynamics prior to construction.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="glass-panel p-8 rounded-2xl transition-all duration-300 group hover:-translate-y-2">
+                    <div class="w-14 h-14 rounded-xl bg-pink-500/10 border border-pink-500/30 text-pink-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-pink-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Spatial & Interior Design</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Optimizing indoor flow, ergonomics, aesthetic materials, and lighting schemes for maximum comfort and operational utility.</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="glass-panel p-8 rounded-2xl transition-all duration-300 group hover:-translate-y-2">
+                    <div class="w-14 h-14 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-emerald-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Sustainable Solutions</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Integrating energy-efficient concepts, passive cooling techniques, and sustainable materials into modern structures.</p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="glass-panel p-8 rounded-2xl transition-all duration-300 group hover:-translate-y-2">
+                    <div class="w-14 h-14 rounded-xl bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-cyan-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-building-user"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">BIM Modeling</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Collaborative Building Information Modeling ensuring seamless coordination across engineering and design departments.</p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="glass-panel p-8 rounded-2xl transition-all duration-300 group hover:-translate-y-2">
+                    <div class="w-14 h-14 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-amber-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-clipboard-check"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Site Analysis & Feasibility</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Conducting site evaluations, zoning checks, structural assessments, and visual feasibility studies for development projects.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Showcase Section -->
+    <section id="projects" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+                <div>
+                    <span class="text-xs font-bold tracking-widest text-indigo-400 uppercase">Selected Works</span>
+                    <h2 class="text-3xl sm:text-5xl font-extrabold text-white mt-2">Design Gallery</h2>
+                </div>
+                <p class="text-slate-400 text-sm max-w-md">A curated glimpse into architectural concepts, 3D visual models, and urban structure concepts developed with precision.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="glass-panel rounded-2xl overflow-hidden group border border-slate-800">
+                    <div class="h-64 sm:h-80 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Modern Minimalist Villa" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+                        <span class="absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/80 text-white backdrop-blur-md">Residential</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-indigo-400 transition-colors">The Horizon Residence</h3>
+                        <p class="text-slate-400 text-sm mb-4">A modern luxury residence incorporating floor-to-ceiling glass facets, cantilevered terraces, and natural stone textures.</p>
+                        <div class="flex items-center space-x-4 text-xs font-medium text-slate-400">
+                            <span><i class="fa-solid fa-ruler-combined text-indigo-400 mr-1"></i> 4,500 sq.ft</span>
+                            <span><i class="fa-solid fa-cube text-purple-400 mr-1"></i> Revit + V-Ray</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="glass-panel rounded-2xl overflow-hidden group border border-slate-800">
+                    <div class="h-64 sm:h-80 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" alt="Urban Commercial Hub" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+                        <span class="absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-semibold bg-purple-500/80 text-white backdrop-blur-md">Commercial</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-indigo-400 transition-colors">Aether Dynamic Tower</h3>
+                        <p class="text-slate-400 text-sm mb-4">Urban high-rise concept featuring parametric facade shading to optimize daylighting while mitigating solar heat gain.</p>
+                        <div class="flex items-center space-x-4 text-xs font-medium text-slate-400">
+                            <span><i class="fa-solid fa-ruler-combined text-indigo-400 mr-1"></i> 24 Floors</span>
+                            <span><i class="fa-solid fa-cube text-purple-400 mr-1"></i> Rhino + Grasshopper</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 relative bg-slate-900/30">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                <span class="text-xs font-bold tracking-widest text-indigo-400 uppercase">Feedback & Endorsements</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Professional Endorsements</h2>
+                <p class="text-slate-400 text-sm">Words from senior colleagues, project leads, and collaborators.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Endorsement 1 -->
+                <div class="glass-panel p-6 rounded-2xl flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 text-xs space-x-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">"Hem's structural drafting skills and technical proficiency in BIM have proven invaluable during complex project phase deliveries."</p>
+                    </div>
+                    <div class="pt-6 border-t border-slate-800/80 mt-6 flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-indigo-600/30 border border-indigo-400 flex items-center justify-center font-bold text-indigo-300 text-xs">
+                            RA
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-slate-100">Senior Architect</div>
+                            <div class="text-xs text-slate-400">ART & ARCHITECTURE ASSOCIATES</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Endorsement 2 -->
+                <div class="glass-panel p-6 rounded-2xl flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 text-xs space-x-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">"His 3D renders bring schematic designs to life effortlessly. Hem possesses exceptional aesthetic intuition and eye for detail."</p>
+                    </div>
+                    <div class="pt-6 border-t border-slate-800/80 mt-6 flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-purple-600/30 border border-purple-400 flex items-center justify-center font-bold text-purple-300 text-xs">
+                            MK
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-slate-100">Design Lead</div>
+                            <div class="text-xs text-slate-400">Urban Studio Partner</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Endorsement 3 -->
+                <div class="glass-panel p-6 rounded-2xl flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 text-xs space-x-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">"Reliable, highly communicative, and quick to adapt complex client requirements into functional blueprint solutions."</p>
+                    </div>
+                    <div class="pt-6 border-t border-slate-800/80 mt-6 flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-pink-600/30 border border-pink-400 flex items-center justify-center font-bold text-pink-300 text-xs">
+                            SS
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-slate-100">Project Manager</div>
+                            <div class="text-xs text-slate-400">BuildTech Development</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Outreach Section -->
+    <section id="contact" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Direct Info -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-xs font-bold tracking-widest text-indigo-400 uppercase">Get In Touch</span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Let's Build Something Exceptional</h2>
+                        <p class="text-slate-400 text-sm mt-4 leading-relaxed">
+                            Interested in collaborating on architectural concepts, spatial designs, or consulting? Reach out directly via the form or professional networks.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <!-- Contact Detail Card 1 -->
+                        <div class="glass-panel p-4 rounded-xl flex items-center space-x-4">
+                            <div class="w-12 h-12 rounded-lg bg-indigo-500/20 text-indigo-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-building"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400">Current Role</div>
+                                <div class="text-sm font-bold text-slate-200">Junior Architect at ART & ARCHITECTURE ASSOCIATES</div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Detail Card 2 -->
+                        <div class="glass-panel p-4 rounded-xl flex items-center space-x-4">
+                            <div class="w-12 h-12 rounded-lg bg-purple-500/20 text-purple-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-user-check"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400">Network Connection</div>
+                                <div class="text-sm font-bold text-slate-200">Connected on 23 Aug 2026</div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Detail Card 3 -->
+                        <div class="glass-panel p-4 rounded-xl flex items-center space-x-4">
+                            <div class="w-12 h-12 rounded-lg bg-pink-500/20 text-pink-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400">Direct Message</div>
+                                <div class="text-sm font-bold text-slate-200">Available via LinkedIn Outreach</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Interactive Form -->
+                <div class="lg:col-span-7">
+                    <form onsubmit="event.preventDefault(); alert('Thank you! Your message has been received.');" class="glass-panel p-8 rounded-2xl space-y-6">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold uppercase text-slate-400 mb-2">Your Name</label>
+                                <input type="text" required placeholder="John Doe" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-200 focus:outline-none focus:border-indigo-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold uppercase text-slate-400 mb-2">Your Email</label>
+                                <input type="email" required placeholder="john@example.com" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-200 focus:outline-none focus:border-indigo-500 transition-colors">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold uppercase text-slate-400 mb-2">Subject / Inquiry Type</label>
+                            <input type="text" required placeholder="Architectural Consultation / Project Proposal" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-200 focus:outline-none focus:border-indigo-500 transition-colors">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold uppercase text-slate-400 mb-2">Message</label>
+                            <textarea rows="4" required placeholder="Tell me about your vision or architectural inquiry..." class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-200 focus:outline-none focus:border-indigo-500 transition-colors"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-bold tracking-wide shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.01] transition-all duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-900 bg-slate-950 py-10">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div class="text-slate-400 text-xs">
+                © <script>document.write(new Date().getFullYear())</script> <span class="text-slate-200 font-semibold">Hem Piyush Shah</span>. Junior Architect at ART & ARCHITECTURE ASSOCIATES. All rights reserved.
+            </div>
+            <div class="flex space-x-6 text-slate-400 text-lg">
+                <a href="#" class="hover:text-indigo-400 transition-colors" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition-colors" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition-colors" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if(mobileBtn && mobileMenu) {
+            mobileBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+    </script>
+</body>
+</html>
