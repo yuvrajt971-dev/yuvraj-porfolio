@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aarvi Jain | Senior Interior Designer & Spatial Strategist</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(99, 102, 241, 0.3);
+        }
+        .glow-card:hover {
+            box-shadow: 0 0 30px -5px rgba(168, 85, 247, 0.3);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #818cf8 0%, #c084fc 50%, #f472b6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-border {
+            position: relative;
+            background-clip: padding-box;
+            border: 1px solid transparent;
+        }
+        .gradient-border::before {
+            content: '';
+            position: absolute;
+            top: 0; right: 0; bottom: 0; left: 0;
+            z-index: -1;
+            margin: -1px;
+            border-radius: inherit;
+            background: linear-gradient(to bottom right, #6366f1, #a855f7, #ec4899);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-purple-500 selection:text-white">
+
+    <!-- Ambient Background Glows -->
+    <div class="fixed top-0 left-1/4 w-96 h-96 bg-indigo-600/20 rounded-full blur-[120px] pointer-events-none -z-10 animate-pulse-slow"></div>
+    <div class="fixed bottom-1/3 right-10 w-[500px] h-[500px] bg-purple-600/15 rounded-full blur-[150px] pointer-events-none -z-10"></div>
+    <div class="fixed top-2/3 left-10 w-80 h-80 bg-pink-600/10 rounded-full blur-[100px] pointer-events-none -z-10"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 p-[2px] flex items-center justify-center">
+                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center group-hover:bg-transparent transition-colors duration-300">
+                        <span class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-pink-400 group-hover:text-white">AJ</span>
+                    </div>
+                </div>
+                <div>
+                    <span class="text-lg font-bold tracking-tight block leading-none">Aarvi Jain</span>
+                    <span class="text-xs text-slate-400 font-medium">Design Converse</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-indigo-400 transition-colors">Expertise</a>
+                <a href="#services" class="hover:text-indigo-400 transition-colors">Services</a>
+                <a href="#testimonials" class="hover:text-indigo-400 transition-colors">Endorsements</a>
+            </div>
+
+            <!-- CTA Button -->
+            <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:shadow-lg hover:shadow-indigo-500/25 transition-all duration-300 transform hover:-translate-y-0.5">
+                <span>Inquire Space</span>
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen pt-32 pb-20 flex items-center relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Left Text Content -->
+                <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 backdrop-blur-xl text-xs font-semibold text-indigo-400">
+                        <span class="w-2 h-2 rounded-full bg-indigo-500 animate-ping"></span>
+                        <span>Interior Designer &bull; Design Converse</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.1]">
+                        Architecting <br>
+                        <span class="gradient-text">Atmospheric & Spatial</span> <br>
+                        Elegance.
+                    </h1>
+
+                    <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        Transforming high-end residential and commercial environments through sculptural design, bespoke materiality, and timeless interior concepts at Design Converse.
+                    </p>
+
+                    <!-- Trust Badges / Quick Metrics -->
+                    <div class="pt-4 flex flex-wrap gap-4 justify-center lg:justify-start">
+                        <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800/80 px-4 py-3 rounded-2xl flex items-center gap-3">
+                            <i class="fa-solid fa-compass-drafting text-purple-400 text-xl"></i>
+                            <div class="text-left">
+                                <p class="text-xs text-slate-400">Focus</p>
+                                <p class="text-sm font-semibold text-slate-200">Luxury Architectural Interiors</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800/80 px-4 py-3 rounded-2xl flex items-center gap-3">
+                            <i class="fa-solid fa-building text-pink-400 text-xl"></i>
+                            <div class="text-left">
+                                <p class="text-xs text-slate-400">Studio</p>
+                                <p class="text-sm font-semibold text-slate-200">Design Converse</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800/80 px-4 py-3 rounded-2xl flex items-center gap-3">
+                            <i class="fa-solid fa-award text-indigo-400 text-xl"></i>
+                            <div class="text-left">
+                                <p class="text-xs text-slate-400">Standard</p>
+                                <p class="text-sm font-semibold text-slate-200">Bespoke Spatial Design</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="pt-2 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:shadow-xl hover:shadow-purple-500/20 transition-all duration-300 text-center">
+                            Start Spatial Project
+                        </a>
+                        <a href="#about" class="w-full sm:w-auto px-8 py-4 rounded-xl text-sm font-semibold text-slate-300 bg-slate-900/80 border border-slate-800 hover:border-slate-700 hover:text-white transition-all text-center">
+                            Explore Portfolio Vision
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Avatar & Dynamic Display Frame -->
+                <div class="lg:col-span-5 flex justify-center relative">
+                    <div class="relative w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96">
+                        <!-- Glowing Outer Frame Rings -->
+                        <div class="absolute -inset-4 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 opacity-40 blur-xl animate-pulse-slow"></div>
+                        <div class="absolute inset-0 rounded-full bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 p-1.5 shadow-2xl">
+                            <div class="w-full h-full rounded-full bg-slate-950 p-3 overflow-hidden flex items-center justify-center relative">
+                                <img src="https://ui-avatars.com/api/?name=Aarvi+Jain&size=200&background=0D8ABC&color=fff&bold=true" alt="Aarvi Jain" class="w-full h-full object-cover rounded-full">
+                            </div>
+                        </div>
+
+                        <!-- Floating Badges -->
+                        <div class="absolute -bottom-2 -left-4 bg-slate-900/90 backdrop-blur-xl border border-slate-800 p-4 rounded-2xl shadow-xl flex items-center gap-3 animate-float">
+                            <div class="w-10 h-10 rounded-xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center">
+                                <i class="fa-solid fa-couch text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Design Philosophy</p>
+                                <p class="text-sm font-bold text-slate-100">Functional Artistry</p>
+                            </div>
+                        </div>
+
+                        <div class="absolute top-8 -right-4 bg-slate-900/90 backdrop-blur-xl border border-slate-800 p-3 px-4 rounded-2xl shadow-xl flex items-center gap-3">
+                            <div class="w-3 h-3 rounded-full bg-emerald-400 animate-ping"></div>
+                            <p class="text-xs font-semibold text-slate-200">Design Converse Lead</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-24 relative border-t border-slate-800/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Image Showcase -->
+                <div class="lg:col-span-6 relative">
+                    <div class="relative rounded-3xl overflow-hidden border border-slate-800 group">
+                        <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=800&q=80" alt="Interior Design Concept" class="w-full h-[480px] object-cover transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-6 rounded-2xl bg-slate-900/80 backdrop-blur-md border border-slate-800">
+                            <p class="text-xs text-indigo-400 font-semibold tracking-wider uppercase">Design Studio Showcase</p>
+                            <h3 class="text-lg font-bold text-white mt-1">Harmonizing Modern Aesthetics & Human Ergonomics</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Narrative -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-block px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-semibold uppercase tracking-wider">
+                        About Aarvi Jain
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">
+                        Crafting Sophisticated Interiors That Tell a <span class="gradient-text">Distinct Story</span>.
+                    </h2>
+                    <p class="text-slate-300 leading-relaxed text-base">
+                        As an Interior Designer at <strong class="text-white">Design Converse</strong>, Aarvi Jain specializes in bridging conceptual brilliance with architectural precision. Her portfolio spans curated residential sanctuaries, modern executive suites, and luxury experiential spaces.
+                    </p>
+                    <p class="text-slate-400 leading-relaxed text-sm">
+                        With an intuitive eye for scale, light interplay, tactile natural textures, and bespoke lighting setups, Aarvi transforms blank layouts into immersive environments tailored to every client's unique lifestyle.
+                    </p>
+
+                    <!-- Key Pillars Grid -->
+                    <div class="grid grid-cols-2 gap-4 pt-4">
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80">
+                            <h4 class="text-indigo-400 font-bold text-2xl">100%</h4>
+                            <p class="text-xs text-slate-400 font-medium mt-1">Tailored Spatial Layouts</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80">
+                            <h4 class="text-pink-400 font-bold text-2xl">Full-Spectrum</h4>
+                            <p class="text-xs text-slate-400 font-medium mt-1">Concept to Handover Execution</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services" class="py-24 relative bg-slate-900/30">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-bold text-indigo-400 tracking-widest uppercase">Signature Offerings</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold mt-3 tracking-tight">Interior Design <span class="gradient-text">Services</span></h2>
+                <p class="text-slate-400 text-sm mt-4">Elevating spatial experiences through specialized design solutions tailored for discerning clients and corporate spaces.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 p-8 rounded-3xl group glow-card">
+                    <div class="w-14 h-14 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-house-chimney-window"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Residential Spatial Design</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        End-to-end luxury home interior concepts, from space planning and palette selection to fine joinery details and furniture curation.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 transition-all duration-300 p-8 rounded-3xl group glow-card">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-purple-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Commercial Interiors</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        High-performance office, lounge, and showroom environments built around brand identity, productivity, and modern ergonomics.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-pink-500/50 transition-all duration-300 p-8 rounded-3xl group glow-card">
+                    <div class="w-14 h-14 rounded-2xl bg-pink-500/10 border border-pink-500/20 text-pink-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-pink-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-palette"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Material & Texture Styling</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Meticulous sourcing of organic stones, rare woods, artisanal textiles, and custom metalwork to infuse richness into spaces.
+                    </p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 p-8 rounded-3xl group glow-card">
+                    <div class="w-14 h-14 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-cube"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">3D Architectural Visualization</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Hyper-realistic 3D walkthroughs and photorealistic interior renderings that give clients full immersion prior to execution.
+                    </p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 transition-all duration-300 p-8 rounded-3xl group glow-card">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-purple-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Lighting & Acoustic Architecture</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Sculptural lighting design combined with sound-absorbing architectural panels to foster optimal ambience and mood.
+                    </p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-pink-500/50 transition-all duration-300 p-8 rounded-3xl group glow-card">
+                    <div class="w-14 h-14 rounded-2xl bg-pink-500/10 border border-pink-500/20 text-pink-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-pink-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-chair"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Bespoke Furniture Design</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Custom furniture pieces designed from scratch to complement signature spatial layouts seamlessly without compromise.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Industry Praise -->
+    <section id="testimonials" class="py-24 relative border-t border-slate-800/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-xl mx-auto mb-16">
+                <span class="text-xs font-bold text-pink-400 tracking-widest uppercase">Client Endorsements</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold mt-3">Refined Words from Clients</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Review 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-3xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-400 mb-4 text-xs">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Aarvi completely transformed our duplex villa. Her eye for proportion, warm minimalism, and luxury textures is unmatched. Working with her via Design Converse was smooth and inspiring."
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-slate-800/80 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 flex items-center justify-center font-bold text-xs text-white">
+                            RS
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-slate-100">Rohan Sharma</p>
+                            <p class="text-xs text-slate-400">Private Penthouse Owner</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-3xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-400 mb-4 text-xs">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Our flagship store redesign exceeded all creative expectations. Aarvi Jain brought an artistic identity to the floor layout that boosted customer engagement instantly."
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-slate-800/80 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center font-bold text-xs text-white">
+                            AM
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-slate-100">Ananya Mehta</p>
+                            <p class="text-xs text-slate-400">Retail Brand Director</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-3xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-400 mb-4 text-xs">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Detail-oriented, incredibly creative, and deeply professional. Aarvi's architectural interior vision turned our corporate headquarters into an architectural benchmark."
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-slate-800/80 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-pink-500 to-indigo-500 flex items-center justify-center font-bold text-xs text-white">
+                            VK
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-slate-100">Vikram Kapoor</p>
+                            <p class="text-xs text-slate-400">Managing Partner</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Consultation Section -->
+    <section id="contact" class="py-24 relative bg-slate-900/40">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Details -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-xs font-bold text-indigo-400 tracking-widest uppercase">Get in Touch</span>
+                        <h2 class="text-3xl sm:text-5xl font-extrabold text-white mt-2 tracking-tight">Let's Design Your Next <span class="gradient-text">Masterpiece</span>.</h2>
+                        <p class="text-slate-400 text-sm mt-4 leading-relaxed">
+                            Reach out to discuss your upcoming residential, commercial, or spatial design venture with Aarvi Jain at Design Converse.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-building flex-shrink-0"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Design Studio</p>
+                                <p class="text-sm font-semibold text-slate-200">Design Converse</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Direct Contact</p>
+                                <p class="text-sm font-semibold text-slate-200">aarvi@designconverse.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-2xl bg-pink-500/10 border border-pink-500/20 text-pink-400 flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-user-check"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Professional Connection</p>
+                                <p class="text-sm font-semibold text-slate-200">Connected since Aug 23, 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Interactive Form -->
+                <div class="lg:col-span-7 bg-slate-900/80 backdrop-blur-xl border border-slate-800 p-8 sm:p-10 rounded-3xl glow-effect">
+                    <form onsubmit="event.preventDefault(); alert('Thank you for reaching out to Aarvi Jain! We will connect soon.');" class="space-y-6">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Name</label>
+                                <input type="text" required placeholder="Jane Doe" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3.5 text-slate-200 text-sm focus:outline-none focus:border-indigo-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Email</label>
+                                <input type="email" required placeholder="jane@example.com" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3.5 text-slate-200 text-sm focus:outline-none focus:border-indigo-500 transition-colors">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Project Category</label>
+                            <select class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3.5 text-slate-200 text-sm focus:outline-none focus:border-indigo-500 transition-colors">
+                                <option>Luxury Residential Interior</option>
+                                <option>Corporate Workspace / Office</option>
+                                <option>Bespoke Furniture & Styling</option>
+                                <option>3D Architectural Rendering</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Project Scope & Details</label>
+                            <textarea rows="4" required placeholder="Tell us about your space, dimensions, and vision..." class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3.5 text-slate-200 text-sm focus:outline-none focus:border-indigo-500 transition-colors"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300">
+                            Send Design Inquiry
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Minimalist Footer -->
+    <footer class="py-8 border-t border-slate-800/80 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p class="text-xs text-slate-500">&copy; 2026 Aarvi Jain &bull; Interior Designer at Design Converse. All rights reserved.</p>
+            <div class="flex items-center gap-6 text-slate-400 text-sm">
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
