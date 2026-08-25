@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nihal Choudhary | Design Consultant & Interior Specialist</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            glow: '#6366f1',
+                            accent: '#a855f7',
+                            pink: '#ec4899',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #818cf8 0%, #c084fc 50%, #f472b6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-border {
+            position: relative;
+            border-radius: 1rem;
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.3), rgba(168, 85, 247, 0.3), rgba(236, 72, 153, 0.3));
+            padding: 1px;
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(51, 65, 85, 0.5);
+        }
+        .glass-card:hover {
+            border-color: rgba(99, 102, 241, 0.5);
+            box-shadow: 0 10px 30px -10px rgba(99, 102, 241, 0.25);
+        }
+        .glow-bg {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, rgba(168, 85, 247, 0.08) 50%, transparent 70%);
+            filter: blur(60px);
+            z-index: 0;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- NAVIGATION BAR -->
+    <header class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 p-[2px] transition-transform duration-300 group-hover:scale-105">
+                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center font-bold text-lg text-white">
+                        NC
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-lg tracking-tight text-white group-hover:text-indigo-400 transition-colors">Nihal Choudhary</span>
+                    <span class="text-xs text-slate-400 -mt-1">Decorpot Consultant</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-indigo-400 transition-colors">Expertise</a>
+                <a href="#services" class="hover:text-indigo-400 transition-colors">Services</a>
+                <a href="#portfolio" class="hover:text-indigo-400 transition-colors">Projects</a>
+                <a href="#testimonials" class="hover:text-indigo-400 transition-colors">Endorsements</a>
+            </nav>
+
+            <!-- CTA Button -->
+            <div class="hidden sm:flex items-center gap-4">
+                <a href="#contact" class="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-semibold rounded-full group bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 group-hover:from-indigo-500 group-hover:to-pink-500 hover:text-white text-white focus:ring-4 focus:outline-none focus:ring-indigo-800">
+                    <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-slate-950 rounded-full group-hover:bg-opacity-0">
+                        Book Consultation
+                    </span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="md:hidden text-slate-300 hover:text-white focus:outline-none" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900/95 border-b border-slate-800 px-6 py-4 space-y-3 backdrop-blur-xl">
+            <a href="#about" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block text-slate-300 hover:text-indigo-400 py-1">About</a>
+            <a href="#expertise" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block text-slate-300 hover:text-indigo-400 py-1">Expertise</a>
+            <a href="#services" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block text-slate-300 hover:text-indigo-400 py-1">Services</a>
+            <a href="#portfolio" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block text-slate-300 hover:text-indigo-400 py-1">Projects</a>
+            <a href="#testimonials" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block text-slate-300 hover:text-indigo-400 py-1">Endorsements</a>
+            <a href="#contact" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block w-full text-center mt-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-indigo-500 to-pink-500 text-white font-semibold">Book Consultation</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative pt-36 pb-20 md:pt-48 md:pb-32 overflow-hidden">
+        <!-- Glow Orbs -->
+        <div class="glow-bg top-10 left-1/4"></div>
+        <div class="glow-bg bottom-10 right-10"></div>
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Left Hero Column -->
+                <div class="lg:col-span-7 text-center lg:text-left">
+                    <!-- Status Badge -->
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card text-xs md:text-sm font-medium text-slate-300 mb-6 border border-slate-800">
+                        <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                        <span>Design Consultant at <strong class="text-white">Decorpot</strong></span>
+                    </div>
+
+                    <!-- Main Headline -->
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">
+                        Crafting Luxury Interiors & <span class="gradient-text">Architectural Elegance</span>
+                    </h1>
+
+                    <!-- Subtitle -->
+                    <p class="text-slate-400 text-base sm:text-lg lg:text-xl font-normal leading-relaxed mb-8 max-w-2xl mx-auto lg:mx-0">
+                        Transforming premium residential and commercial environments through custom spatial planning, high-end aesthetics, and ergonomic mastery.
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-12">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold text-center hover:shadow-lg hover:shadow-indigo-500/30 transition-all duration-300 hover:-translate-y-0.5">
+                            Start Your Project
+                        </a>
+                        <a href="#portfolio" class="w-full sm:w-auto px-8 py-4 rounded-full glass-card text-slate-200 font-semibold text-center hover:bg-slate-800/80 transition-all duration-300 flex items-center justify-center gap-2">
+                            <span>Explore Showcase</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+
+                    <!-- Key Statistics Badges -->
+                    <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-4 text-center lg:text-left">
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-white">200+</p>
+                            <p class="text-xs sm:text-sm text-slate-400 mt-1">Spaces Transformed</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-white">99%</p>
+                            <p class="text-xs sm:text-sm text-slate-400 mt-1">Client Satisfaction</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-white">Top Tier</p>
+                            <p class="text-xs sm:text-sm text-slate-400 mt-1">Decorpot Excellence</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Hero Column (Avatar Frame) -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative">
+                        <!-- Outer Glow Effect -->
+                        <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 blur-xl opacity-70 animate-pulse"></div>
+                        
+                        <!-- Double Gradient Frame Container -->
+                        <div class="relative p-2 rounded-full bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 shadow-2xl">
+                            <div class="p-2 rounded-full bg-slate-950">
+                                <img 
+                                    src="https://ui-avatars.com/api/?name=Nihal+Choudhary&size=200&background=0D8ABC&color=fff&bold=true" 
+                                    alt="Nihal Choudhary Profile Picture" 
+                                    class="w-56 h-56 sm:w-64 sm:h-64 lg:w-72 lg:h-72 rounded-full object-cover shadow-inner"
+                                >
+                            </div>
+                        </div>
+
+                        <!-- Floating Floating Pill Badge 1 -->
+                        <div class="absolute -bottom-4 -left-4 glass-card px-4 py-2.5 rounded-2xl flex items-center gap-3 shadow-xl border border-slate-700">
+                            <div class="w-8 h-8 rounded-lg bg-indigo-500/20 text-indigo-400 flex items-center justify-center">
+                                <i class="fa-solid fa-wand-magic-sparkles text-sm"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-semibold text-white">Spatial Visionary</p>
+                                <p class="text-[10px] text-slate-400">Custom Luxury Interiors</p>
+                            </div>
+                        </div>
+
+                        <!-- Floating Pill Badge 2 -->
+                        <div class="absolute top-4 -right-4 glass-card px-4 py-2.5 rounded-2xl flex items-center gap-3 shadow-xl border border-slate-700">
+                            <div class="w-8 h-8 rounded-lg bg-pink-500/20 text-pink-400 flex items-center justify-center">
+                                <i class="fa-solid fa-certificate text-sm"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-semibold text-white">Decorpot Expert</p>
+                                <p class="text-[10px] text-slate-400">Design Advisory</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT & EXPERTISE SECTION -->
+    <section id="about" class="py-20 relative bg-slate-900/40 border-y border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-indigo-400 bg-indigo-500/10 px-3 py-1 rounded-full">About Nihal Choudhary</span>
+                <h2 class="text-3xl sm:text-4xl font-bold mt-4">Merging Ergonomics with High-End Aesthetics</h2>
+                <p class="text-slate-400 mt-3 text-sm sm:text-base">Guiding clients through complete interior transformations with Decorpot's industry-leading expertise.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Image Column -->
+                <div class="lg:col-span-6">
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 group">
+                        <img 
+                            src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=800&q=80" 
+                            alt="Interior Design Studio & Material Palette" 
+                            class="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-500"
+                        >
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+                        
+                        <div class="absolute bottom-6 left-6 right-6 glass-card p-4 rounded-xl">
+                            <p class="text-xs text-indigo-400 font-semibold uppercase tracking-wider">Design Approach</p>
+                            <p class="text-sm text-slate-200 mt-1">"Every spatial detail should tell a story of function, luxury, and individual lifestyle."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Column -->
+                <div class="lg:col-span-6 space-y-6">
+                    <h3 class="text-2xl font-bold text-white">Design Consultant at Decorpot</h3>
+                    <p class="text-slate-300 leading-relaxed text-sm sm:text-base">
+                        As a specialized Design Consultant at <span class="text-indigo-400 font-semibold">Decorpot</span>, I specialize in translating complex client visions into functional, breathtaking interior architectures. From luxury villa layouts to smart modern apartments, my practice focuses on precision space planning, premium material selection, and end-to-end design strategy.
+                    </p>
+
+                    <!-- Features List -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-indigo-500/20 text-indigo-400 flex items-center justify-center shrink-0 mt-1">
+                                <i class="fa-solid fa-drafting-compass text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Spatial Efficiency</h4>
+                                <p class="text-xs text-slate-400">Maximizing floor plans with ergonomic & fluid design balance.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-purple-500/20 text-purple-400 flex items-center justify-center shrink-0 mt-1">
+                                <i class="fa-solid fa-swatchbook text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Material Curation</h4>
+                                <p class="text-xs text-slate-400">Selecting world-class textures, finishes, and durable materials.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-pink-500/20 text-pink-400 flex items-center justify-center shrink-0 mt-1">
+                                <i class="fa-solid fa-cube text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">3D Renderings</h4>
+                                <p class="text-xs text-slate-400">Photorealistic previews before physical execution starts.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 mt-1">
+                                <i class="fa-solid fa-handshake text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Turnkey Advisory</h4>
+                                <p class="text-xs text-slate-400">Seamless coordination from concept to final handover.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Connection Callout -->
+                    <div class="p-4 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-between text-xs text-slate-400">
+                        <span><i class="fa-solid fa-link text-indigo-400 mr-2"></i> Professional Network Active</span>
+                        <span class="text-slate-300 font-mono">Connected: 23 Aug 2026</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES GRID SECTION -->
+    <section id="services" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-pink-400 bg-pink-500/10 px-3 py-1 rounded-full">Capabilities</span>
+                <h2 class="text-3xl sm:text-4xl font-bold mt-4">Consulting Services & Expertise</h2>
+                <p class="text-slate-400 mt-3 text-sm sm:text-base">Comprehensive interior design solutions tailored to elevate lifestyle and brand spaces.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service Card 1 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-indigo-500/20 to-indigo-500/5 text-indigo-400 border border-indigo-500/20 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-house-laptop"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Residential Interior Design</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Complete end-to-end design consultations for luxury apartments, villas, and penthouses tailored to modern living.
+                    </p>
+                    <ul class="space-y-2 text-xs text-slate-300">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Custom Modular Kitchens</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Bespoke Living Room Layouts</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Master Suite Concepts</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-500/20 to-purple-500/5 text-purple-400 border border-purple-500/20 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">3D Spatial Visualization</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Experience hyper-realistic 3D visual walkthroughs and lighting simulations before committing to construction.
+                    </p>
+                    <ul class="space-y-2 text-xs text-slate-300">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400"></i> High-Definition Renders</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400"></i> Lighting & Color Palette Maps</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400"></i> Virtual Space Walkthroughs</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-pink-500/20 to-pink-500/5 text-pink-400 border border-pink-500/20 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-compass-drafting"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Architectural Planning</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Optimizing structural flow, wall positioning, false ceiling designs, and custom cabinetry planning.
+                    </p>
+                    <ul class="space-y-2 text-xs text-slate-300">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pink-400"></i> Floor Blueprint Optimization</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pink-400"></i> Electrical & Plumbing Layouts</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pink-400"></i> Ceiling & Accent Integration</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-emerald-500/20 to-emerald-500/5 text-emerald-400 border border-emerald-500/20 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-swatchbook"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Finish & Material Selection</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Curating premium wood veneers, Italian marble, accent metals, and sustainable fabrics for luxury appeal.
+                    </p>
+                    <ul class="space-y-2 text-xs text-slate-300">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Luxury Material Sourcing</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Texture & Lighting Matching</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> High-Durability Guidance</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-amber-500/20 to-amber-500/5 text-amber-400 border border-amber-500/20 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Decorpot Project Advisory</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Bridging site managers, design engineers, and homeowners to maintain timelines and budget precision.
+                    </p>
+                    <ul class="space-y-2 text-xs text-slate-300">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Milestone Auditing</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Cost Estimation & Control</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Quality Assurance Checks</li>
+                    </ul>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-cyan-500/20 to-cyan-500/5 text-cyan-400 border border-cyan-500/20 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Commercial & Office Design</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Designing productive, brand-aligned office spaces and boutique commercial environments.
+                    </p>
+                    <ul class="space-y-2 text-xs text-slate-300">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Ergonomic Workstations</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Executive Lounge Planning</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-cyan-400"></i> Acoustic Treatment Concepts</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO / FEATURED SHOWCASE -->
+    <section id="portfolio" class="py-20 relative bg-slate-900/30">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-widest text-indigo-400 bg-indigo-500/10 px-3 py-1 rounded-full">Portfolio Highlights</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold mt-4">Featured Design Concepts</h2>
+                </div>
+                <p class="text-slate-400 text-sm max-w-md mt-4 md:mt-0">
+                    A glimpse into bespoke living environments designed for modern lifestyle, comfort, and aesthetic value.
+                </p>
+            </div>
+
+            <!-- Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Project 1 -->
+                <div class="glass-card rounded-2xl overflow-hidden group">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Minimalist Villa Living" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80"></div>
+                        <span class="absolute top-4 right-4 bg-slate-900/80 backdrop-blur-md border border-slate-700 text-xs px-3 py-1 rounded-full text-indigo-300">Luxury Residential</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Modern Minimalist Villa</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed mb-4">Open-concept layout featuring warm timber textures, concealed lighting, and seamless indoor-outdoor transition.</p>
+                        <div class="flex items-center gap-2 text-xs font-semibold text-indigo-400 group-hover:text-indigo-300">
+                            <span>Explore Design Details</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="glass-card rounded-2xl overflow-hidden group">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" alt="Urban Penthouse Lounge" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80"></div>
+                        <span class="absolute top-4 right-4 bg-slate-900/80 backdrop-blur-md border border-slate-700 text-xs px-3 py-1 rounded-full text-purple-300">Penthouse Concept</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Urban Penthouse Lounge</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed mb-4">Rich moody tones, ambient cove illumination, and custom acoustic wall paneled media rooms.</p>
+                        <div class="flex items-center gap-2 text-xs font-semibold text-purple-400 group-hover:text-purple-300">
+                            <span>Explore Design Details</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="glass-card rounded-2xl overflow-hidden group">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80" alt="Contemporary Kitchen Space" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80"></div>
+                        <span class="absolute top-4 right-4 bg-slate-900/80 backdrop-blur-md border border-slate-700 text-xs px-3 py-1 rounded-full text-pink-300">Modular Kitchen</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Contemporary Kitchen Suite</h3>
+                        <p class="text-slate-400 text-xs leading-relaxed mb-4">High-gloss quartz island, handleless cabinetry, integrated intelligent storage systems.</p>
+                        <div class="flex items-center gap-2 text-xs font-semibold text-pink-400 group-hover:text-pink-300">
+                            <span>Explore Design Details</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS / ENDORSEMENTS -->
+    <section id="testimonials" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full">Client Feedback</span>
+                <h2 class="text-3xl sm:text-4xl font-bold mt-4">Endorsements & Testimonials</h2>
+                <p class="text-slate-400 mt-3 text-sm sm:text-base">What homeowners and clients say about Nihal Choudhary's design guidance.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Nihal's design eye at Decorpot converted our raw 3BHK flat into a warm luxury sanctuary. His spatial planning made our home look twice as spacious!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 flex items-center justify-center font-bold text-white text-sm">
+                            RK
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-white">Rajesh & Kavita</p>
+                            <p class="text-xs text-slate-400">Homeowners, Prestige Lakefront</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Extremely professional and meticulous with details. Nihal guided us through color selections, material choices, and lighting seamlessly."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center font-bold text-white text-sm">
+                            AS
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-white">Ananya Sharma</p>
+                            <p class="text-xs text-slate-400">Villa Owner, Green Acres</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Working with Nihal from Decorpot was the best decision we made for our commercial studio. His 3D renders were spot-on with the final output!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-emerald-500 to-teal-500 flex items-center justify-center font-bold text-white text-sm">
+                            VM
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-white">Vikram Malhotra</p>
+                            <p class="text-xs text-slate-400">Founder, Apex Digital Studio</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-20 relative bg-slate-900/50 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Info -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-widest text-indigo-400 bg-indigo-500/10 px-3 py-1 rounded-full">Let's Connect</span>
+                        <h2 class="text-3xl sm:text-4xl font-bold mt-4">Book a Private Design Consultation</h2>
+                        <p class="text-slate-400 mt-3 text-sm leading-relaxed">
+                            Have an upcoming residential or commercial project? Reach out to schedule a consultation with Nihal Choudhary at Decorpot.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="glass-card p-4 rounded-xl flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-user-tie"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Role & Organization</p>
+                                <p class="text-sm font-semibold text-white">Design Consultant @ Decorpot</p>
+                            </div>
+                        </div>
+
+                        <div class="glass-card p-4 rounded-xl flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/20 text-purple-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Network Connected Since</p>
+                                <p class="text-sm font-semibold text-white">23 August 2026</p>
+                            </div>
+                        </div>
+
+                        <div class="glass-card p-4 rounded-xl flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-pink-500/20 text-pink-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Direct Contact</p>
+                                <p class="text-sm font-semibold text-white">nihal.choudhary@decorpot.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="lg:col-span-7">
+                    <div class="glass-card p-8 sm:p-10 rounded-3xl relative">
+                        <h3 class="text-2xl font-bold text-white mb-6">Send a Project Query</h3>
+                        
+                        <form onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent to Nihal Choudhary.');" class="space-y-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">Your Name</label>
+                                    <input type="text" placeholder="John Doe" required class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 text-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">Phone Number</label>
+                                    <input type="tel" placeholder="+91 98765 43210" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 text-sm">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Property / Project Type</label>
+                                <select class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-300 focus:outline-none focus:border-indigo-500 text-sm">
+                                    <option>3BHK / 4BHK Luxury Apartment</option>
+                                    <option>Independent Villa / Bungalow</option>
+                                    <option>Penthouse Renovation</option>
+                                    <option>Commercial / Office Interior</option>
+                                    <option>General Design Consultation</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Project Message & Requirements</label>
+                                <textarea rows="4" placeholder="Briefly describe your vision, floor area, or requirements..." required class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 text-sm"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-bold text-sm tracking-wide hover:shadow-lg hover:shadow-indigo-500/25 transition-all duration-300">
+                                Send Message to Nihal
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-8 bg-slate-950 border-t border-slate-800/80 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© 2026 Nihal Choudhary. Design Consultant at Decorpot. All Rights Reserved.</p>
+            <div class="flex gap-4 text-slate-400">
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-brands fa-linkedin text-base"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-brands fa-instagram text-base"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-brands fa-houzz text-base"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
