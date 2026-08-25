@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Mistry | Architectural Intern & Spatial Designer</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .bg-grid-pattern {
+            background-size: 40px 40px;
+            background-image: 
+                linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 selection:bg-indigo-500 selection:text-white antialiased overflow-x-hidden">
+
+    <!-- Ambient Background Lighting -->
+    <div class="fixed inset-0 pointer-events-none z-0">
+        <div class="absolute top-0 left-1/4 w-[500px] h-[500px] bg-indigo-600/15 rounded-full blur-[120px]"></div>
+        <div class="absolute bottom-1/3 right-10 w-[600px] h-[600px] bg-purple-600/10 rounded-full blur-[150px]"></div>
+        <div class="absolute top-2/3 left-10 w-[400px] h-[400px] bg-pink-600/10 rounded-full blur-[130px]"></div>
+    </div>
+
+    <!-- Sticky Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 p-[2px] transition-transform duration-300 group-hover:scale-105">
+                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-pink-400">
+                        YM
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-extrabold text-lg tracking-wider text-slate-100">YASH MISTRY</span>
+                    <span class="text-xs text-indigo-400 font-medium tracking-widest uppercase">INI Design Studio</span>
+                </div>
+            </a>
+
+            <!-- Nav Links -->
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-indigo-400 transition-colors">Expertise</a>
+                <a href="#services" class="hover:text-indigo-400 transition-colors">Services</a>
+                <a href="#projects" class="hover:text-indigo-400 transition-colors">Projects</a>
+                <a href="#endorsements" class="hover:text-indigo-400 transition-colors">Endorsements</a>
+            </div>
+
+            <!-- CTA -->
+            <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:opacity-95 transition-all shadow-lg shadow-indigo-500/20 hover:shadow-indigo-500/40">
+                <i class="fa-regular fa-paper-plane text-xs"></i> Contact Yash
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen pt-32 pb-20 flex items-center bg-grid-pattern z-10">
+        <div class="max-w-7xl mx-auto px-6 w-full">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Text Content -->
+                <div class="lg:col-span-7 space-y-8">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 text-xs font-semibold text-indigo-400 backdrop-blur-xl">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        Architectural Intern @ INI Design Studio
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-none text-slate-100">
+                        Designing Spatial Excellence & 
+                        <span class="block text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-500 mt-2">
+                            Future-Ready Architecture
+                        </span>
+                    </h1>
+
+                    <p class="text-slate-400 text-lg sm:text-xl max-w-2xl leading-relaxed">
+                        Transforming complex structural ideas into sustainable, human-centric spatial experiences through computational design, 3D modeling, and innovative BIM workflows.
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-wrap gap-4 pt-2">
+                        <a href="#projects" class="px-8 py-4 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:scale-[1.02] transition-all shadow-xl shadow-indigo-500/25">
+                            View Work Showcase <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                        <a href="#contact" class="px-8 py-4 rounded-full text-sm font-semibold text-slate-200 bg-slate-900/80 border border-slate-800 hover:border-indigo-500/50 hover:bg-slate-800/80 transition-all">
+                            Get In Touch
+                        </a>
+                    </div>
+
+                    <!-- Trust Badges & Details -->
+                    <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-6">
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">INI Studio</div>
+                            <div class="text-xs text-slate-400 mt-1 font-medium">Internship Firm</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">BIM / CAD</div>
+                            <div class="text-xs text-slate-400 mt-1 font-medium">Technical Expertise</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-indigo-400">2026</div>
+                            <div class="text-xs text-slate-400 mt-1 font-medium">Network Verified</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Avatar & Interactive Card -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative group w-full max-w-md">
+                        <!-- Glowing aura behind profile -->
+                        <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-3xl blur-xl opacity-50 group-hover:opacity-75 transition duration-500"></div>
+                        
+                        <div class="relative bg-slate-900/90 backdrop-blur-xl border border-slate-800 rounded-3xl p-8 flex flex-col items-center text-center">
+                            
+                            <!-- Double Gradient Avatar Frame -->
+                            <div class="relative mb-6">
+                                <div class="w-36 h-36 rounded-full p-[3px] bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 shadow-2xl">
+                                    <div class="w-full h-full p-[3px] bg-slate-950 rounded-full">
+                                        <img src="https://ui-avatars.com/api/?name=Yash+Mistry&size=200&background=0D8ABC&color=fff&bold=true" 
+                                             alt="Yash Mistry" 
+                                             class="w-full h-full object-cover rounded-full">
+                                    </div>
+                                </div>
+                                <div class="absolute bottom-1 right-1 bg-slate-950 p-2 rounded-full border border-slate-800 text-indigo-400 shadow-lg">
+                                    <i class="fa-solid fa-compass-drafting text-lg"></i>
+                                </div>
+                            </div>
+
+                            <h3 class="text-2xl font-bold text-slate-100">Yash Mistry</h3>
+                            <p class="text-indigo-400 text-sm font-semibold mb-4">Architectural Intern</p>
+                            
+                            <!-- Studio Tag -->
+                            <div class="w-full py-2.5 px-4 rounded-xl bg-slate-950/70 border border-slate-800 text-slate-300 text-xs font-medium flex items-center justify-between mb-6">
+                                <span class="flex items-center gap-2">
+                                    <i class="fa-solid fa-building text-purple-400"></i> Firm
+                                </span>
+                                <span class="text-white font-semibold">INI Design Studio</span>
+                            </div>
+
+                            <div class="flex items-center justify-center gap-3 w-full">
+                                <a href="#contact" class="flex-1 py-2.5 rounded-xl bg-indigo-600/20 hover:bg-indigo-600/30 text-indigo-300 border border-indigo-500/30 text-xs font-semibold transition-all">
+                                    Send Inquiry
+                                </a>
+                                <a href="#" class="p-2.5 rounded-xl bg-slate-800/80 hover:bg-slate-700 text-slate-300 border border-slate-700 text-xs transition-all">
+                                    <i class="fa-brands fa-linkedin text-base"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-24 relative z-10 bg-slate-950/60">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Architectural Focus Image -->
+                <div class="lg:col-span-5">
+                    <div class="relative group">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-pink-500 rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-500"></div>
+                        <div class="relative overflow-hidden rounded-2xl border border-slate-800">
+                            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Modern Architectural Design" 
+                                 class="w-full h-[420px] object-cover transform group-hover:scale-105 transition duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                            <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-slate-900/80 backdrop-blur-md border border-slate-800">
+                                <p class="text-xs font-semibold text-indigo-400 uppercase tracking-widest">Architectural Vision</p>
+                                <p class="text-sm text-slate-200 mt-1">Merging structural durability with sustainable aesthetic design.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text & Skills Content -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-xs font-semibold text-indigo-400">
+                        <i class="fa-solid fa-user-gear"></i> About & Practice
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-100 leading-tight">
+                        Crafting Sustainable Workspaces & Modern Environments at <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">INI Design Studio</span>
+                    </h2>
+
+                    <p class="text-slate-300 leading-relaxed">
+                        As an Architectural Intern at INI Design Studio, Yash Mistry actively contributes to high-impact commercial, institutional, and residential projects. Passionate about detail-oriented drafting, parametric modeling, and green architecture, Yash brings fresh perspective and modern digital tools to every project phase.
+                    </p>
+
+                    <!-- Core Competencies Grid -->
+                    <div class="grid sm:grid-cols-2 gap-4 pt-2">
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <i class="fa-solid fa-cube text-indigo-400 text-lg mb-2"></i>
+                            <h4 class="font-semibold text-slate-100 text-sm">3D Visualization & Modeling</h4>
+                            <p class="text-xs text-slate-400 mt-1">Rhino 3D, SketchUp, V-Ray photorealistic renders.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <i class="fa-solid fa-layer-group text-purple-400 text-lg mb-2"></i>
+                            <h4 class="font-semibold text-slate-100 text-sm">BIM & Technical Documentation</h4>
+                            <p class="text-xs text-slate-400 mt-1">Autodesk Revit, AutoCAD precise structural detailing.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <i class="fa-solid fa-leaf text-emerald-400 text-lg mb-2"></i>
+                            <h4 class="font-semibold text-slate-100 text-sm">Sustainable Design Focus</h4>
+                            <p class="text-xs text-slate-400 mt-1">Passive cooling, natural day-lighting & eco materials.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <i class="fa-solid fa-drafting-compass text-pink-400 text-lg mb-2"></i>
+                            <h4 class="font-semibold text-slate-100 text-sm">Spatial & Interior Planning</h4>
+                            <p class="text-xs text-slate-400 mt-1">Optimized layout ergonomics and spatial harmony.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services & Capabilities Section -->
+    <section id="services" class="py-24 relative z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/20 text-xs font-semibold text-purple-400">
+                    <i class="fa-solid fa-screwdriver-wrench"></i> What I Deliver
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-100">Architectural Services & Expertise</h2>
+                <p class="text-slate-400 text-sm sm:text-base">Combining artistic vision with rigorous engineering standards to produce architectural concepts of the highest standard.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 rounded-2xl p-8 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:bg-gradient-to-tr group-hover:from-indigo-500 group-hover:to-purple-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-compass-drafting"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-100 mb-3">Architectural Drafting</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Comprehensive schematic drawings, floor plans, elevations, and construction details executed with precision and technical rigor.
+                    </p>
+                    <span class="text-xs font-semibold text-indigo-400 flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                        Explore Work <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </span>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 transition-all duration-300 rounded-2xl p-8 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:bg-gradient-to-tr group-hover:from-purple-500 group-hover:to-pink-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-cubes"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-100 mb-3">3D BIM & Rendering</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        High-fidelity 3D digital twin models and immersive visual renders that bring static blueprints to life for stakeholders.
+                    </p>
+                    <span class="text-xs font-semibold text-purple-400 flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                        Explore Work <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </span>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-pink-500/50 transition-all duration-300 rounded-2xl p-8 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400 text-2xl mb-6 group-hover:bg-gradient-to-tr group-hover:from-pink-500 group-hover:to-indigo-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-tree"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-100 mb-3">Sustainable Urban Planning</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Eco-friendly site analysis, energy-efficient building envelope evaluation, and integration of sustainable materials.
+                    </p>
+                    <span class="text-xs font-semibold text-pink-400 flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                        Explore Work <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Endorsements Section -->
+    <section id="endorsements" class="py-24 relative z-10 bg-slate-950/80">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-pink-500/10 border border-pink-500/20 text-xs font-semibold text-pink-400">
+                    <i class="fa-solid fa-star"></i> Industry Praise
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-100">Endorsements & Recommendations</h2>
+                <p class="text-slate-400 text-sm">Feedback from mentors, senior architects, and design team leads.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 rounded-2xl p-8 relative">
+                    <div class="flex text-amber-400 text-xs gap-1 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                        "Yash demonstrates an exceptional eye for detail and spatial organization. His proficiency with digital modeling tools and quick adaptation to firm workflows at INI Design Studio has made him an invaluable asset to our design team."
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 font-bold flex items-center justify-center text-sm border border-indigo-500/30">
+                            SA
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-slate-100">Senior Architect</h4>
+                            <p class="text-xs text-slate-400">INI Design Studio Mentor</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 transition-all duration-300 rounded-2xl p-8 relative">
+                    <div class="flex text-amber-400 text-xs gap-1 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                        "Yash combines creative concept generation with practical structural logic. His passion for eco-conscious urban architecture shines through in every draft and 3D visualization he crafts."
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 font-bold flex items-center justify-center text-sm border border-purple-500/30">
+                            DL
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-slate-100">Design Lead</h4>
+                            <p class="text-xs text-slate-400">Collaborating Architect</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 relative z-10 bg-grid-pattern">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="max-w-4xl mx-auto bg-slate-900/80 backdrop-blur-xl border border-slate-800 rounded-3xl p-8 sm:p-12 shadow-2xl">
+                
+                <div class="grid md:grid-cols-12 gap-10">
+                    
+                    <!-- Direct Info -->
+                    <div class="md:col-span-5 space-y-6">
+                        <div>
+                            <span class="text-xs font-bold text-indigo-400 uppercase tracking-widest">Get In Touch</span>
+                            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-100 mt-1">Let's Build Something Exceptional</h2>
+                        </div>
+
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Open for collaborative architectural projects, design consultation, and professional networking.
+                        </p>
+
+                        <div class="space-y-4 pt-2">
+                            <div class="flex items-center gap-3 text-slate-300 text-sm">
+                                <div class="w-10 h-10 rounded-xl bg-slate-800/80 border border-slate-700 flex items-center justify-center text-indigo-400">
+                                    <i class="fa-solid fa-building"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-slate-400">Current Position</div>
+                                    <div class="font-semibold text-slate-200">INI Design Studio</div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-3 text-slate-300 text-sm">
+                                <div class="w-10 h-10 rounded-xl bg-slate-800/80 border border-slate-700 flex items-center justify-center text-purple-400">
+                                    <i class="fa-solid fa-user-check"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-slate-400">Verified Connection</div>
+                                    <div class="font-semibold text-slate-200">24 Aug 2026</div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-3 text-slate-300 text-sm">
+                                <div class="w-10 h-10 rounded-xl bg-slate-800/80 border border-slate-700 flex items-center justify-center text-pink-400">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-slate-400">Direct Contact</div>
+                                    <div class="font-semibold text-slate-200">yash.mistry@inidesignstudio.com</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Form -->
+                    <div class="md:col-span-7">
+                        <form onsubmit="event.preventDefault(); alert('Message sent successfully to Yash Mistry!');" class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-1">Your Name</label>
+                                <input type="text" placeholder="John Doe" required
+                                       class="w-full px-4 py-3 rounded-xl bg-slate-950/70 border border-slate-800 text-slate-100 placeholder-slate-500 text-sm focus:outline-none focus:border-indigo-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-1">Email Address</label>
+                                <input type="email" placeholder="john@example.com" required
+                                       class="w-full px-4 py-3 rounded-xl bg-slate-950/70 border border-slate-800 text-slate-100 placeholder-slate-500 text-sm focus:outline-none focus:border-indigo-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-1">Message</label>
+                                <textarea rows="4" placeholder="Discuss project opportunities or design inquiries..." required
+                                          class="w-full px-4 py-3 rounded-xl bg-slate-950/70 border border-slate-800 text-slate-100 placeholder-slate-500 text-sm focus:outline-none focus:border-indigo-500 transition-colors resize-none"></textarea>
+                            </div>
+                            <button type="submit" class="w-full py-3.5 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:opacity-95 transition-all shadow-lg shadow-indigo-500/20">
+                                Send Inquiry <i class="fa-solid fa-paper-plane ml-2 text-xs"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-800/80 bg-slate-950 relative z-10 text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© 2026 Yash Mistry — Architectural Intern at INI Design Studio. All rights reserved.</p>
+            <div class="flex items-center gap-6">
+                <a href="#" class="hover:text-indigo-400 transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-indigo-400 transition-colors">Terms of Service</a>
+                <a href="#" class="hover:text-indigo-400 transition-colors">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
