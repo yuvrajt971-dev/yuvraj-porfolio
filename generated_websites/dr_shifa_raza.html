@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Shifa Raza | Dental Resident & Clinical Specialist</title>
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            cyan: '#0D8ABC',
+                            teal: '#14b8a6',
+                            indigo: '#6366f1',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+
+        /* Ambient Glow Background Effects */
+        .glow-blob {
+            position: absolute;
+            filter: blur(120px);
+            opacity: 0.25;
+            border-radius: 50%;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #020617;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #0d8abc;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 relative selection:bg-cyan-500 selection:text-white">
+
+    <!-- Ambient Lighting Backgrounds -->
+    <div class="glow-blob w-[500px] h-[500px] bg-cyan-500 top-[-100px] left-[-100px]"></div>
+    <div class="glow-blob w-[600px] h-[600px] bg-indigo-600 top-[20%] right-[-150px]"></div>
+    <div class="glow-blob w-[500px] h-[500px] bg-purple-600 bottom-[10%] left-[-100px]"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-teal-400 to-indigo-500 flex items-center justify-center text-slate-950 font-extrabold text-xl shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
+                    SR
+                </div>
+                <div>
+                    <span class="font-bold text-lg tracking-tight bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent block leading-tight">
+                        Dr. Shifa Raza
+                    </span>
+                    <span class="text-xs text-cyan-400 font-medium">Dental Surgeon & Resident</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-cyan-400 transition-colors">Expertise</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
+                <a href="#endorsements" class="hover:text-cyan-400 transition-colors">Endorsements</a>
+                <a href="#contact" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 to-indigo-600 text-white font-semibold shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:scale-105 active:scale-95 transition-all">
+                    Book Consultation
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="md:hidden text-slate-300 hover:text-white text-xl focus:outline-none" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900/95 border-b border-slate-800 px-6 py-4 flex flex-col gap-4 text-sm font-medium text-slate-300">
+            <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+            <a href="#expertise" class="hover:text-cyan-400 transition-colors">Expertise</a>
+            <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
+            <a href="#endorsements" class="hover:text-cyan-400 transition-colors">Endorsements</a>
+            <a href="#contact" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 to-indigo-600 text-white text-center font-semibold">
+                Book Consultation
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-20 md:pt-48 md:pb-32 px-6 overflow-hidden">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-16 relative z-10">
+            
+            <!-- Left Text Content -->
+            <div class="flex-1 text-center lg:text-left space-y-6">
+                <!-- Status Badge -->
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 text-xs font-semibold text-cyan-400 backdrop-blur-md shadow-inner">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                    Junior Resident • Saraswati Dental College & Hospital
+                </div>
+
+                <!-- Main Title -->
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-none">
+                    Transforming Smiles <br class="hidden sm:inline" />
+                    Through <span class="bg-gradient-to-r from-cyan-400 via-teal-300 to-indigo-400 bg-clip-text text-transparent">Clinical Excellence</span>
+                </h1>
+
+                <!-- Subtitle -->
+                <p class="text-base sm:text-lg text-slate-400 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                    Dedicated to advanced patient care, restorative oral surgery, and modern evidence-based dentistry. Combining clinical precision with compassionate healthcare standard practices.
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                    <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-cyan-500 via-teal-500 to-indigo-600 text-white font-bold shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:scale-105 transition-all flex items-center justify-center gap-3 group">
+                        <span>Schedule Appointment</span>
+                        <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                    <a href="#about" class="w-full sm:w-auto px-8 py-4 rounded-full bg-slate-900/80 border border-slate-800 text-slate-200 font-semibold hover:border-slate-700 hover:bg-slate-800/80 transition-all flex items-center justify-center gap-2">
+                        <span>Explore Background</span>
+                    </a>
+                </div>
+
+                <!-- Trust Badges -->
+                <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-4 max-w-md mx-auto lg:mx-0 text-center">
+                    <div>
+                        <div class="text-2xl font-extrabold text-white">100%</div>
+                        <div class="text-xs text-slate-400 mt-0.5">Patient Focus</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-extrabold text-white">SDCH</div>
+                        <div class="text-xs text-slate-400 mt-0.5">Resident Care</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-extrabold text-white">5.0 ★</div>
+                        <div class="text-xs text-slate-400 mt-0.5">Clinical Rating</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Avatar Frame -->
+            <div class="flex-1 flex justify-center relative">
+                <!-- Glowing Backdrop Ring -->
+                <div class="relative group">
+                    <!-- Double Gradient Animated Glow Layer -->
+                    <div class="absolute -inset-1.5 rounded-full bg-gradient-to-r from-cyan-500 via-indigo-500 to-pink-500 opacity-75 blur-xl group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+                    <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-teal-400 to-indigo-600 opacity-90"></div>
+                    
+                    <!-- Avatar Image Container -->
+                    <div class="relative rounded-full p-2 bg-slate-950 overflow-hidden w-64 h-64 sm:w-80 sm:h-80 shadow-2xl">
+                        <img 
+                            src="https://ui-avatars.com/api/?name=Dr.+Shifa+Raza&size=200&background=0D8ABC&color=fff&bold=true" 
+                            alt="Dr. Shifa Raza" 
+                            class="w-full h-full object-cover rounded-full transform group-hover:scale-105 transition-transform duration-500"
+                        />
+                    </div>
+
+                    <!-- Floating Badge 1 -->
+                    <div class="absolute -bottom-2 -left-4 bg-slate-900/90 border border-slate-800 backdrop-blur-xl px-4 py-3 rounded-2xl shadow-xl flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400">
+                            <i class="fa-solid fa-user-doctor text-lg"></i>
+                        </div>
+                        <div class="text-left">
+                            <p class="text-xs text-slate-400 font-medium">Position</p>
+                            <p class="text-sm font-bold text-white">Junior Resident</p>
+                        </div>
+                    </div>
+
+                    <!-- Floating Badge 2 -->
+                    <div class="absolute -top-2 -right-4 bg-slate-900/90 border border-slate-800 backdrop-blur-xl px-4 py-3 rounded-2xl shadow-xl flex items-center gap-3 hidden sm:flex">
+                        <div class="w-10 h-10 rounded-xl bg-teal-500/10 border border-teal-500/20 flex items-center justify-center text-teal-400">
+                            <i class="fa-solid fa-hospital-user text-lg"></i>
+                        </div>
+                        <div class="text-left">
+                            <p class="text-xs text-slate-400 font-medium">Institution</p>
+                            <p class="text-xs font-bold text-white">Saraswati Dental College</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-20 px-6 relative z-10 border-t border-slate-900 bg-slate-950/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+                
+                <!-- Clinical Image Card -->
+                <div class="flex-1 w-full">
+                    <div class="relative rounded-3xl overflow-hidden border border-slate-800 bg-slate-900/60 p-3 shadow-2xl group">
+                        <img 
+                            src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                            alt="Dental Clinical Practice" 
+                            class="w-full h-[400px] sm:h-[480px] object-cover rounded-2xl group-hover:scale-105 transition-transform duration-700"
+                        />
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent rounded-2xl"></div>
+                        
+                        <div class="absolute bottom-8 left-8 right-8">
+                            <div class="bg-slate-900/80 backdrop-blur-xl border border-slate-800 p-5 rounded-2xl">
+                                <div class="flex items-center gap-3 mb-2">
+                                    <i class="fa-solid fa-microscope text-cyan-400"></i>
+                                    <span class="text-xs font-semibold uppercase tracking-wider text-cyan-400">Clinical Excellence</span>
+                                </div>
+                                <p class="text-sm text-slate-300">
+                                    Focused on state-of-the-art restorative procedures, patient comfort, and contemporary endodontic practices.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Info -->
+                <div class="flex-1 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold">
+                        <i class="fa-solid fa-stethoscope"></i> About Dr. Shifa Raza
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+                        Advancing Dental Healthcare with Precision & Empathy
+                    </h2>
+
+                    <p class="text-slate-400 leading-relaxed">
+                        As a Junior Resident at **Saraswati Dental College & Hospital**, Dr. Shifa Raza brings together rigorous clinical training, advanced diagnostic skills, and a passionate commitment to patient welfare.
+                    </p>
+
+                    <p class="text-slate-400 leading-relaxed">
+                        Handling complex oral healthcare cases, clinical diagnosis, routine dental procedures, and surgical care, Dr. Raza prioritizes patient education and minimal discomfort during every clinical interaction.
+                    </p>
+
+                    <div id="expertise" class="pt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-4 rounded-xl flex items-start gap-3 hover:border-cyan-500/40 transition-colors">
+                            <i class="fa-solid fa-tooth text-cyan-400 text-xl mt-1"></i>
+                            <div>
+                                <h4 class="text-white font-semibold text-sm">Oral Diagnosis</h4>
+                                <p class="text-xs text-slate-400">Comprehensive examination and treatment planning.</p>
+                            </div>
+                        </div>
+                        <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-4 rounded-xl flex items-start gap-3 hover:border-cyan-500/40 transition-colors">
+                            <i class="fa-solid fa-shield-halved text-teal-400 text-xl mt-1"></i>
+                            <div>
+                                <h4 class="text-white font-semibold text-sm">Preventive Care</h4>
+                                <p class="text-xs text-slate-400">Prophylaxis and long-term oral hygiene care.</p>
+                            </div>
+                        </div>
+                        <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-4 rounded-xl flex items-start gap-3 hover:border-cyan-500/40 transition-colors">
+                            <i class="fa-solid fa-syringe text-indigo-400 text-xl mt-1"></i>
+                            <div>
+                                <h4 class="text-white font-semibold text-sm">Restorative Dentistry</h4>
+                                <p class="text-xs text-slate-400">Fillings, crowns, aesthetic restorations.</p>
+                            </div>
+                        </div>
+                        <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-4 rounded-xl flex items-start gap-3 hover:border-cyan-500/40 transition-colors">
+                            <i class="fa-solid fa-hospital-user text-purple-400 text-xl mt-1"></i>
+                            <div>
+                                <h4 class="text-white font-semibold text-sm">Resident Surgery</h4>
+                                <p class="text-xs text-slate-400">Assisting and performing core minor surgeries.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 px-6 relative z-10">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-500/10 border border-teal-500/20 text-teal-400 text-xs font-semibold">
+                    <i class="fa-solid fa-briefcase"></i> Key Clinical Offerings
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+                    Specialized Medical Services
+                </h2>
+                <p class="text-slate-400 text-sm sm:text-base">
+                    Delivering patient-first dental care backed by academic excellence and clinical experience.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service Card 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-cyan-500 group-hover:text-slate-950 transition-all">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">General & Operative Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Thorough oral evaluations, cavity restoration, cosmetic fillings, and preventative treatments aimed at maintaining natural teeth.
+                    </p>
+                    <span class="text-xs font-semibold text-cyan-400 flex items-center gap-2 group-hover:translate-x-1 transition-transform">
+                        Learn More <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-teal-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-2xl bg-teal-500/10 border border-teal-500/20 flex items-center justify-center text-teal-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-teal-500 group-hover:text-slate-950 transition-all">
+                        <i class="fa-solid fa-notes-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Diagnostic & Treatment Planning</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Comprehensive clinical assessment, radiographic analysis, and structured treatment roadmaps for multi-phase dental care.
+                    </p>
+                    <span class="text-xs font-semibold text-teal-400 flex items-center gap-2 group-hover:translate-x-1 transition-transform">
+                        Learn More <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-indigo-500 group-hover:text-slate-950 transition-all">
+                        <i class="fa-solid fa-hands-holding-child"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Pediatric & Preventive Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Gentle dental care tailored for young patients, fluoride applications, sealants, and early dental health guidance.
+                    </p>
+                    <span class="text-xs font-semibold text-indigo-400 flex items-center gap-2 group-hover:translate-x-1 transition-transform">
+                        Learn More <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-purple-500 group-hover:text-slate-950 transition-all">
+                        <i class="fa-solid fa-viruses"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Periodontal & Oral Hygiene</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Scaling and root planing, gum therapy, and disease prevention techniques to ensure long-term periodontal stability.
+                    </p>
+                    <span class="text-xs font-semibold text-purple-400 flex items-center gap-2 group-hover:translate-x-1 transition-transform">
+                        Learn More <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-pink-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-2xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-pink-500 group-hover:text-slate-950 transition-all">
+                        <i class="fa-solid fa-kit-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Minor Oral Surgery Assistance</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Uncomplicated extractions, pre-and-post operative care management, and surgical assistance in hospital clinical settings.
+                    </p>
+                    <span class="text-xs font-semibold text-pink-400 flex items-center gap-2 group-hover:translate-x-1 transition-transform">
+                        Learn More <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-amber-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-2xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-amber-500 group-hover:text-slate-950 transition-all">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Emergency Oral Consultation</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Prompt clinical diagnosis and management of acute dental pain, trauma cases, and urgent oral distress.
+                    </p>
+                    <span class="text-xs font-semibold text-amber-400 flex items-center gap-2 group-hover:translate-x-1 transition-transform">
+                        Learn More <i class="fa-solid fa-arrow-right"></i>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Endorsements Section -->
+    <section id="endorsements" class="py-20 px-6 relative z-10 bg-slate-950/40 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-semibold">
+                    <i class="fa-solid fa-star"></i> Recommendations & Feedback
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+                    Peer & Patient Endorsements
+                </h2>
+                <p class="text-slate-400 text-sm sm:text-base">
+                    Recognized for clinical discipline, patient communication, and dedication at Saraswati Dental College & Hospital.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Endorsement Card 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl relative flex flex-col justify-between hover:border-slate-700 transition-all">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 text-sm gap-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Dr. Shifa Raza displays remarkable focus and empathy during patient care. Her surgical assistance and methodical treatment planning during residency are truly commendable."
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold text-sm">
+                            SD
+                        </div>
+                        <div>
+                            <h4 class="text-white font-semibold text-sm">Senior Consultant</h4>
+                            <p class="text-xs text-slate-400">Saraswati Dental College & Hospital</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Endorsement Card 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl relative flex flex-col justify-between hover:border-slate-700 transition-all">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 text-sm gap-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Extremely gentle and attentive during my restoration procedure. Dr. Shifa explained every step clearly, eliminating any anxiety I had."
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-teal-500/20 text-teal-400 flex items-center justify-center font-bold text-sm">
+                            AP
+                        </div>
+                        <div>
+                            <h4 class="text-white font-semibold text-sm">Patient Review</h4>
+                            <p class="text-xs text-slate-400">Restorative Care Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Endorsement Card 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl relative flex flex-col justify-between hover:border-slate-700 transition-all">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 text-sm gap-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "A very hard-working resident colleague with sound theoretical understanding and strong hands-on skills in operative dentistry."
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-sm">
+                            CR
+                        </div>
+                        <div>
+                            <h4 class="text-white font-semibold text-sm">Clinical Resident Peer</h4>
+                            <p class="text-xs text-slate-400">Dental Surgery Department</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Booking Section -->
+    <section id="contact" class="py-20 px-6 relative z-10 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                
+                <!-- Direct Details -->
+                <div class="space-y-8">
+                    <div class="space-y-3">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold">
+                            <i class="fa-solid fa-envelope"></i> Get in Touch
+                        </div>
+                        <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+                            Connect with Dr. Shifa Raza
+                        </h2>
+                        <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
+                            For clinical inquiries, academic collaboration, or consultation requests, feel free to reach out directly through the form or official channels.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-lg shrink-0">
+                                <i class="fa-solid fa-hospital"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Primary Practice</p>
+                                <p class="text-sm font-semibold text-white">Saraswati Dental College & Hospital</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-12 h-12 rounded-xl bg-teal-500/10 border border-teal-500/20 flex items-center justify-center text-teal-400 text-lg shrink-0">
+                                <i class="fa-solid fa-user-check"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Professional Status</p>
+                                <p class="text-sm font-semibold text-white">Junior Resident • Active Network (Connected Sep 2026)</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-lg shrink-0">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">OPD & Residency Hours</p>
+                                <p class="text-sm font-semibold text-white">Mon – Sat: 09:00 AM – 04:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Glassmorphism Form -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-3xl shadow-2xl relative">
+                    <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
+                        <i class="fa-solid fa-paper-plane text-cyan-400"></i> Send a Direct Message
+                    </h3>
+
+                    <form onsubmit="event.preventDefault(); alert('Thank you! Your message has been received.');" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">Your Full Name</label>
+                            <input type="text" required placeholder="e.g. John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-200 text-sm focus:outline-none focus:border-cyan-500 transition-colors" />
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">Email Address</label>
+                            <input type="email" required placeholder="name@example.com" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-200 text-sm focus:outline-none focus:border-cyan-500 transition-colors" />
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">Subject / Clinical Purpose</label>
+                            <select class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-200 text-sm focus:outline-none focus:border-cyan-500 transition-colors">
+                                <option>General Consultation Inquiry</option>
+                                <option>Academic Collaboration</option>
+                                <option>Patient Appointment</option>
+                                <option>Other Professional Inquiry</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">Message</label>
+                            <textarea rows="4" required placeholder="Describe your inquiry..." class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-200 text-sm focus:outline-none focus:border-cyan-500 transition-colors resize-none"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-teal-500 to-indigo-600 text-white font-bold shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:scale-[1.02] active:scale-[0.98] transition-all">
+                            Submit Inquiry
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-900 bg-slate-950 text-slate-500 text-xs relative z-10">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© 2026 Dr. Shifa Raza • Saraswati Dental College & Hospital. All rights reserved.</p>
+            <div class="flex items-center gap-6 text-slate-400">
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-linkedin text-base"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-solid fa-hospital text-base"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-solid fa-envelope text-base"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
