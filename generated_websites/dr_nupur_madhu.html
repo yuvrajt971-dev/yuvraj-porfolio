@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr Nupur Madhu | Specialist Doctor & Dental Surgeon</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        medical: {
+                            50: '#f0fdfa',
+                            500: '#14b8a6',
+                            600: '#0d9488',
+                            900: '#134e4a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+        }
+
+        .glass-card {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(51, 65, 85, 0.7);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(20, 184, 166, 0.5);
+            box-shadow: 0 10px 30px -10px rgba(20, 184, 166, 0.2);
+        }
+
+        .text-gradient {
+            background: linear-gradient(135deg, #38bdf8 0%, #14b8a6 50%, #818cf8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .glow-effect {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(20,184,166,0.15) 0%, rgba(0,0,0,0) 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 8px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #020617;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #14b8a6;
+        }
+    </style>
+</head>
+<body class="custom-scrollbar selection:bg-teal-500 selection:text-white relative overflow-x-hidden">
+
+    <!-- Background Ambient Glows -->
+    <div class="fixed top-0 left-1/4 w-[600px] h-[600px] bg-teal-500/10 rounded-full blur-[120px] pointer-events-none z-0"></div>
+    <div class="fixed bottom-0 right-1/4 w-[600px] h-[600px] bg-indigo-500/10 rounded-full blur-[120px] pointer-events-none z-0"></div>
+
+    <!-- Navigation Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-teal-500 to-indigo-600 flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-teal-500/20 group-hover:scale-105 transition-transform duration-300">
+                    <i class="fa-solid fa-[#Tooth] fa-tooth"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-bold tracking-tight text-white block leading-none">Dr Nupur Madhu</span>
+                    <span class="text-xs text-teal-400 font-medium tracking-wider uppercase">Dental Clinic Specialist</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-teal-400 transition-colors duration-200">About</a>
+                <a href="#expertise" class="hover:text-teal-400 transition-colors duration-200">Expertise</a>
+                <a href="#services" class="hover:text-teal-400 transition-colors duration-200">Services</a>
+                <a href="#testimonials" class="hover:text-teal-400 transition-colors duration-200">Testimonials</a>
+                <a href="#contact" class="hover:text-teal-400 transition-colors duration-200">Contact</a>
+            </nav>
+
+            <!-- CTA Button -->
+            <div class="hidden sm:flex items-center gap-4">
+                <a href="#contact" class="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium rounded-xl group bg-gradient-to-br from-teal-500 via-indigo-500 to-purple-600 group-hover:from-teal-500 group-hover:to-purple-600 text-white shadow-lg shadow-teal-500/20 hover:shadow-teal-500/40 transition-all duration-300">
+                    <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-slate-950 rounded-[10px] group-hover:bg-opacity-0 font-semibold flex items-center gap-2">
+                        <i class="fa-regular fa-calendar-check text-teal-400 group-hover:text-white transition-colors"></i> Book Appointment
+                    </span>
+                </a>
+            </div>
+
+            <!-- Mobile menu button -->
+            <button id="mobile-menu-btn" class="md:hidden text-slate-300 hover:text-white p-2 focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900/95 border-b border-slate-800 px-4 pt-2 pb-6 space-y-3">
+            <a href="#about" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">About</a>
+            <a href="#expertise" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Expertise</a>
+            <a href="#services" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Services</a>
+            <a href="#testimonials" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Testimonials</a>
+            <a href="#contact" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-300 hover:text-white hover:bg-slate-800">Contact</a>
+            <a href="#contact" class="block text-center w-full mt-4 py-3 bg-gradient-to-r from-teal-500 to-indigo-600 rounded-xl font-semibold text-white shadow-lg">Book Appointment</a>
+        </div>
+    </header>
+
+    <main class="relative z-10 pt-28">
+
+        <!-- HERO SECTION -->
+        <section class="min-h-[88vh] flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8 relative">
+            <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Hero Content -->
+                <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full glass-card border border-teal-500/30 text-teal-300 text-xs sm:text-sm font-semibold tracking-wide uppercase shadow-inner">
+                        <span class="w-2 h-2 rounded-full bg-teal-400 animate-ping"></span>
+                        <i class="fa-solid fa-award text-teal-400"></i> Leading Dental Specialist at Dental Clinic
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl lg:text-6xl font-extrabold tracking-tight leading-[1.15]">
+                        Crafting Healthy, <br class="hidden sm:inline" />
+                        <span class="text-gradient">Radiant Smiles</span> With Precision Medical Care.
+                    </h1>
+
+                    <p class="text-lg sm:text-xl text-slate-400 font-normal max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Welcome to the official practice showcase of <strong class="text-slate-200">Dr Nupur Madhu</strong>. Dedicated to delivering world-class dental treatments, state-of-the-art procedures, and personalized patient wellness with standard-setting surgical excellence.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-teal-500 via-teal-600 to-indigo-600 hover:from-teal-400 hover:to-indigo-500 text-white font-bold text-base shadow-xl shadow-teal-500/25 hover:shadow-teal-500/40 transition-all duration-300 transform hover:-translate-y-0.5 flex items-center justify-center gap-3">
+                            <i class="fa-solid fa-calendar-check"></i> Schedule Consultation
+                        </a>
+                        <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-xl glass-card text-slate-200 hover:text-white font-semibold text-base hover:bg-slate-800/80 transition-all duration-300 flex items-center justify-center gap-2">
+                            Explore Treatments <i class="fa-solid fa-arrow-right text-teal-400 text-sm"></i>
+                        </a>
+                    </div>
+
+                    <!-- Trust Stats Bar -->
+                    <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0">
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-white">100%</div>
+                            <div class="text-xs sm:text-sm text-slate-400 font-medium">Patient Satisfaction</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-teal-400">10+ Yrs</div>
+                            <div class="text-xs sm:text-sm text-slate-400 font-medium">Clinical Practice</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-indigo-400">5.0 ★</div>
+                            <div class="text-xs sm:text-sm text-slate-400 font-medium">Care Rating</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Image Frame -->
+                <div class="lg:col-span-5 flex justify-center items-center relative">
+                    <!-- Glowing Background Backdrop -->
+                    <div class="absolute w-72 h-72 sm:w-96 sm:h-96 bg-gradient-to-tr from-teal-500 to-indigo-600 rounded-full blur-3xl opacity-30 animate-pulse"></div>
+
+                    <!-- Outer Avatar Frame -->
+                    <div class="relative p-2.5 rounded-3xl bg-gradient-to-tr from-teal-500 via-indigo-500 to-purple-600 shadow-2xl shadow-teal-500/20 max-w-xs sm:max-w-sm w-full">
+                        <div class="bg-slate-950 p-2 rounded-[22px] overflow-hidden relative group">
+                            <img src="https://ui-avatars.com/api/?name=Dr+Nupur+madhu&size=200&background=0D8ABC&color=fff&bold=true" 
+                                 alt="Dr Nupur Madhu" 
+                                 class="w-full h-auto rounded-2xl object-cover transform group-hover:scale-105 transition-transform duration-500" />
+                            
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent opacity-80"></div>
+                            
+                            <!-- Floating Card Overlay -->
+                            <div class="absolute bottom-4 left-4 right-4 p-4 rounded-xl glass-card border border-slate-700/80 text-left">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-3 h-3 rounded-full bg-emerald-400 animate-ping"></div>
+                                    <span class="text-xs font-semibold text-emerald-300">Accepting New Patients</span>
+                                </div>
+                                <p class="text-sm font-bold text-white mt-1">Dental Clinic Practice</p>
+                                <p class="text-xs text-slate-400">Comprehensive Dental Care & Surgery</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ABOUT & CLINICAL EXPERTISE -->
+        <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 relative bg-slate-950/50">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- Feature Image -->
+                    <div class="lg:col-span-5 order-2 lg:order-1 relative">
+                        <div class="relative rounded-2xl overflow-hidden glass-card p-2 border border-slate-800 shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Modern Dental Clinic Setup" 
+                                 class="w-full h-[400px] object-cover rounded-xl hover:scale-105 transition-transform duration-500" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60"></div>
+                        </div>
+                        
+                        <!-- Floating Badge -->
+                        <div class="absolute -bottom-6 -right-2 sm:right-6 glass-card p-4 rounded-2xl border border-teal-500/40 shadow-xl max-w-[220px]">
+                            <div class="flex items-center gap-3">
+                                <i class="fa-solid fa-microscope text-2xl text-teal-400"></i>
+                                <div>
+                                    <div class="text-xs text-slate-400 font-medium">Technology</div>
+                                    <div class="text-sm font-bold text-white">Advanced Equipment</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Narrative -->
+                    <div class="lg:col-span-7 order-1 lg:order-2 space-y-6">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-teal-500/10 text-teal-400 text-xs font-semibold uppercase tracking-wider">
+                            <i class="fa-solid fa-user-doctor"></i> Professional Profile
+                        </div>
+                        <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">
+                            Dedicated To Excellence In <span class="text-gradient">Modern Oral Healthcare</span>
+                        </h2>
+                        <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+                            Dr Nupur Madhu is a distinguished practitioner at <strong class="text-white">Dental Clinic</strong>, recognized for a holistic and compassionate approach to oral health. With an unwavering commitment to patient comfort and surgical perfection, Dr. Madhu combines modern dental science with customized care plans.
+                        </p>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                            <div class="glass-card p-4 rounded-xl flex items-start gap-3">
+                                <div class="w-8 h-8 rounded-lg bg-teal-500/20 text-teal-400 flex items-center justify-center shrink-0 mt-1">
+                                    <i class="fa-solid fa-shield-halved"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-semibold text-sm">Painless Dentistry</h4>
+                                    <p class="text-xs text-slate-400 mt-0.5">Gentle, patient-centric protocols designed to maximize comfort.</p>
+                                </div>
+                            </div>
+
+                            <div class="glass-card p-4 rounded-xl flex items-start gap-3">
+                                <div class="w-8 h-8 rounded-lg bg-indigo-500/20 text-indigo-400 flex items-center justify-center shrink-0 mt-1">
+                                    <i class="fa-solid fa-[#Tooth] fa-tooth"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-semibold text-sm">Cosmetic Excellence</h4>
+                                    <p class="text-xs text-slate-400 mt-0.5">Precision smile redesign, veneers, whitening, and aligners.</p>
+                                </div>
+                            </div>
+
+                            <div class="glass-card p-4 rounded-xl flex items-start gap-3">
+                                <div class="w-8 h-8 rounded-lg bg-purple-500/20 text-purple-400 flex items-center justify-center shrink-0 mt-1">
+                                    <i class="fa-solid fa-notes-medical"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-semibold text-sm">Preventive Wellness</h4>
+                                    <p class="text-xs text-slate-400 mt-0.5">Comprehensive screenings and proactive dental preservation.</p>
+                                </div>
+                            </div>
+
+                            <div class="glass-card p-4 rounded-xl flex items-start gap-3">
+                                <div class="w-8 h-8 rounded-lg bg-sky-500/20 text-sky-400 flex items-center justify-center shrink-0 mt-1">
+                                    <i class="fa-solid fa-[#Stethoscope] fa-stethoscope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-semibold text-sm">Surgical Expertise</h4>
+                                    <p class="text-xs text-slate-400 mt-0.5">Advanced endodontics, implants, and oral reconstructions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- CLINICAL SERVICES -->
+        <section id="services" class="py-20 px-4 sm:px-6 lg:px-8 relative">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-teal-500/10 text-teal-400 text-xs font-semibold uppercase tracking-wider">
+                        <i class="fa-solid fa-kit-medical"></i> Specialized Services
+                    </div>
+                    <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight">
+                        Comprehensive <span class="text-gradient">Dental Care Solutions</span>
+                    </h2>
+                    <p class="text-slate-400 text-base sm:text-lg">
+                        Offering an array of advanced restorative, cosmetic, and preventive dental treatments tailored to your unique smile goals.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Service 1 -->
+                    <div class="glass-card rounded-2xl p-8 relative group transition-all duration-300 flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-teal-500/20 to-teal-500/5 text-teal-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300 border border-teal-500/30">
+                                <i class="fa-solid fa-[#Tooth] fa-tooth"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3 group-hover:text-teal-300 transition-colors">Cosmetic & Smile Redesign</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                                Transform your appearance with custom porcelain veneers, premium teeth whitening, aesthetic contouring, and full smile makeovers.
+                            </p>
+                        </div>
+                        <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold text-teal-400 hover:text-teal-300 uppercase tracking-wider">
+                            Book Service <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                        </a>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="glass-card rounded-2xl p-8 relative group transition-all duration-300 flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-indigo-500/20 to-indigo-500/5 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300 border border-indigo-500/30">
+                                <i class="fa-solid fa-arrows-to-circle"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3 group-hover:text-indigo-300 transition-colors">Dental Implants</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                                Permanent, natural-looking implant restorations engineered for durability, function, and seamless integration with your natural smile.
+                            </p>
+                        </div>
+                        <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold text-indigo-400 hover:text-indigo-300 uppercase tracking-wider">
+                            Book Service <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                        </a>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="glass-card rounded-2xl p-8 relative group transition-all duration-300 flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-purple-500/20 to-purple-500/5 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300 border border-purple-500/30">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3 group-hover:text-purple-300 transition-colors">Root Canal Therapy</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                                Pain-free endodontic procedures using microscopic precision technology to restore infected teeth safely and preserve natural structure.
+                            </p>
+                        </div>
+                        <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold text-purple-400 hover:text-purple-300 uppercase tracking-wider">
+                            Book Service <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                        </a>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="glass-card rounded-2xl p-8 relative group transition-all duration-300 flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-sky-500/20 to-sky-500/5 text-sky-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300 border border-sky-500/30">
+                                <i class="fa-solid fa-face-smile"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3 group-hover:text-sky-300 transition-colors">Aligners & Orthodontics</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                                Discretely straighten teeth using advanced clear aligner therapies designed for comfortable, fast, and highly predictable results.
+                            </p>
+                        </div>
+                        <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold text-sky-400 hover:text-sky-300 uppercase tracking-wider">
+                            Book Service <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                        </a>
+                    </div>
+
+                    <!-- Service 5 -->
+                    <div class="glass-card rounded-2xl p-8 relative group transition-all duration-300 flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-emerald-500/20 to-emerald-500/5 text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300 border border-emerald-500/30">
+                                <i class="fa-solid fa-shield-heart"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3 group-hover:text-emerald-300 transition-colors">Preventive & Oral Health</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                                Regular checkups, periodontal care, ultrasonic cleaning, and oral cancer screenings designed to keep your teeth and gums optimal.
+                            </p>
+                        </div>
+                        <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold text-emerald-400 hover:text-emerald-300 uppercase tracking-wider">
+                            Book Service <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                        </a>
+                    </div>
+
+                    <!-- Service 6 -->
+                    <div class="glass-card rounded-2xl p-8 relative group transition-all duration-300 flex flex-col justify-between">
+                        <div>
+                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-pink-500/20 to-pink-500/5 text-pink-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300 border border-pink-500/30">
+                                <i class="fa-solid fa-hospital-user"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3 group-hover:text-pink-300 transition-colors">Family & Pediatric Dentistry</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                                Gentle, friendly, and protective dental solutions for patients of all ages, ensuring a lifetime of healthy dental habits.
+                            </p>
+                        </div>
+                        <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold text-pink-400 hover:text-pink-300 uppercase tracking-wider">
+                            Book Service <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- PATIENT ENDORSEMENTS / TESTIMONIALS -->
+        <section id="testimonials" class="py-20 px-4 sm:px-6 lg:px-8 relative bg-slate-950/60">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-teal-500/10 text-teal-400 text-xs font-semibold uppercase tracking-wider">
+                        <i class="fa-solid fa-star"></i> Patient Experiences
+                    </div>
+                    <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight">
+                        Trusted By <span class="text-gradient">Hundreds of Patients</span>
+                    </h2>
+                    <p class="text-slate-400 text-base sm:text-lg">
+                        Read genuine feedback from patients who have experienced Dr Nupur Madhu's clinical care.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <div class="glass-card p-8 rounded-2xl relative flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <div class="flex text-amber-400 text-sm gap-1">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-300 text-sm italic leading-relaxed">
+                                "Dr. Nupur Madhu is completely exceptional! I was anxious about my root canal procedure, but her calm demeanor and completely painless technique made the whole process seamless."
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-4 pt-6 mt-6 border-t border-slate-800">
+                            <div class="w-10 h-10 rounded-full bg-teal-500/30 text-teal-300 flex items-center justify-center font-bold text-sm">
+                                A.S.
+                            </div>
+                            <div>
+                                <h4 class="text-white text-sm font-bold">Ananya Sharma</h4>
+                                <p class="text-xs text-slate-400">Cosmetic Patient</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card p-8 rounded-2xl relative flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <div class="flex text-amber-400 text-sm gap-1">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-300 text-sm italic leading-relaxed">
+                                "The clinic environment is incredibly hygienic and modern. Dr Nupur's attention to detail during my dental implant restoration was top-tier. Highly recommended!"
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-4 pt-6 mt-6 border-t border-slate-800">
+                            <div class="w-10 h-10 rounded-full bg-indigo-500/30 text-indigo-300 flex items-center justify-center font-bold text-sm">
+                                R.K.
+                            </div>
+                            <div>
+                                <h4 class="text-white text-sm font-bold">Rajesh Kumar</h4>
+                                <p class="text-xs text-slate-400">Restorative Care</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card p-8 rounded-2xl relative flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <div class="flex text-amber-400 text-sm gap-1">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-300 text-sm italic leading-relaxed">
+                                "My teeth whitening and alignment results exceeded all expectations. Dr. Nupur took the time to explain every single step clearly. Truly a 5-star doctor!"
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-4 pt-6 mt-6 border-t border-slate-800">
+                            <div class="w-10 h-10 rounded-full bg-purple-500/30 text-purple-300 flex items-center justify-center font-bold text-sm">
+                                M.P.
+                            </div>
+                            <div>
+                                <h4 class="text-white text-sm font-bold">Meera Patel</h4>
+                                <p class="text-xs text-slate-400">Orthodontic Patient</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- APPOINTMENT & CONTACT SECTION -->
+        <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 relative">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    
+                    <!-- Contact Details -->
+                    <div class="lg:col-span-5 space-y-8">
+                        <div>
+                            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-teal-500/10 text-teal-400 text-xs font-semibold uppercase tracking-wider mb-4">
+                                <i class="fa-solid fa-hospital"></i> Reach Out
+                            </div>
+                            <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">
+                                Ready for a <span class="text-gradient">Healthier Smile?</span>
+                            </h2>
+                            <p class="text-slate-400 text-base mt-3 leading-relaxed">
+                                Book your consultation with Dr Nupur Madhu today. Experience compassionate, state-of-the-art treatment at Dental Clinic.
+                            </p>
+                        </div>
+
+                        <div class="space-y-4">
+                            <!-- Location -->
+                            <div class="glass-card p-5 rounded-xl flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-teal-500/20 text-teal-400 flex items-center justify-center text-xl shrink-0">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-bold text-sm">Clinic Location</h4>
+                                    <p class="text-xs text-slate-400">Dental Clinic, Main Healthcare Avenue</p>
+                                </div>
+                            </div>
+
+                            <!-- Work Hours -->
+                            <div class="glass-card p-5 rounded-xl flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center text-xl shrink-0">
+                                    <i class="fa-solid fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-bold text-sm">Consultation Hours</h4>
+                                    <p class="text-xs text-slate-400">Mon - Sat: 9:00 AM – 7:30 PM</p>
+                                </div>
+                            </div>
+
+                            <!-- Direct Email / Phone -->
+                            <div class="glass-card p-5 rounded-xl flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-purple-500/20 text-purple-400 flex items-center justify-center text-xl shrink-0">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-bold text-sm">Direct Contact</h4>
+                                    <p class="text-xs text-slate-400">appointments@drnupurmadhu.com</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Professional Status Badge -->
+                        <div class="p-4 rounded-xl bg-teal-500/10 border border-teal-500/20 text-teal-300 text-xs flex items-center gap-3">
+                            <i class="fa-solid fa-circle-check text-teal-400 text-lg"></i>
+                            <span>Connected & Active Practice since <strong>02 Sep 2026</strong></span>
+                        </div>
+                    </div>
+
+                    <!-- Appointment Booking Form -->
+                    <div class="lg:col-span-7">
+                        <div class="glass-card p-8 sm:p-10 rounded-3xl border border-slate-800 relative">
+                            <h3 class="text-2xl font-bold text-white mb-2">Book an Appointment</h3>
+                            <p class="text-xs text-slate-400 mb-6">Fill in your details below and our team will get back to confirm your time slot.</p>
+
+                            <form onsubmit="event.preventDefault(); alert('Appointment request submitted successfully!');" class="space-y-4">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <div>
+                                        <label class="block text-xs font-medium text-slate-300 mb-1">Full Name</label>
+                                        <input type="text" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-teal-500 transition-colors text-sm" />
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs font-medium text-slate-300 mb-1">Phone Number</label>
+                                        <input type="tel" required placeholder="+1 (555) 000-0000" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-teal-500 transition-colors text-sm" />
+                                    </div>
+                                </div>
+
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <div>
+                                        <label class="block text-xs font-medium text-slate-300 mb-1">Email Address</label>
+                                        <input type="email" placeholder="patient@example.com" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-teal-500 transition-colors text-sm" />
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs font-medium text-slate-300 mb-1">Treatment Type</label>
+                                        <select class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-800 text-white focus:outline-none focus:border-teal-500 transition-colors text-sm">
+                                            <option>General Consultation</option>
+                                            <option>Cosmetic Dentistry</option>
+                                            <option>Root Canal Treatment</option>
+                                            <option>Teeth Whitening</option>
+                                            <option>Dental Implants</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label class="block text-xs font-medium text-slate-300 mb-1">Message / Medical Notes</label>
+                                    <textarea rows="4" placeholder="Briefly describe your dental concerns or preferred appointment dates..." class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-teal-500 transition-colors text-sm"></textarea>
+                                </div>
+
+                                <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-teal-500 via-teal-600 to-indigo-600 hover:from-teal-400 hover:to-indigo-500 text-white font-bold text-base shadow-lg shadow-teal-500/25 transition-all duration-300 flex items-center justify-center gap-2">
+                                    <i class="fa-solid fa-paper-plane"></i> Submit Request
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-slate-900 bg-slate-950 py-12 relative z-10 text-slate-400 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-teal-500 flex items-center justify-center text-slate-950 font-bold text-lg">
+                    <i class="fa-solid fa-[#Tooth] fa-tooth"></i>
+                </div>
+                <span class="text-white font-semibold text-base">Dr Nupur Madhu</span>
+                <span class="text-slate-600">|</span>
+                <span class="text-xs text-slate-400">Dental Clinic Doctor</span>
+            </div>
+
+            <p class="text-xs text-slate-500 text-center md:text-left">
+                &copy; <script>document.write(new Date().getFullYear())</script> Dr Nupur Madhu. All rights reserved. Premium Digital Showcase.
+            </p>
+
+            <div class="flex items-center gap-4">
+                <a href="#" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-teal-400 hover:border-teal-500/50 transition-all">
+                    <i class="fa-brands fa-linkedin-in text-sm"></i>
+                </a>
+                <a href="#" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-teal-400 hover:border-teal-500/50 transition-all">
+                    <i class="fa-brands fa-twitter text-sm"></i>
+                </a>
+                <a href="#" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-teal-400 hover:border-teal-500/50 transition-all">
+                    <i class="fa-solid fa-envelope text-sm"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Navigation Drawer Script -->
+    <script>
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close menu on link click
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
