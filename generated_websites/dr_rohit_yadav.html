@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Rohit Yadav | Premier Dental Care & Aesthetic Dentistry</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            cyan: '#0D8ABC',
+                            teal: '#14b8a6',
+                            sky: '#0284c7',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(13, 138, 188, 0.3);
+        }
+        .glow-effect-lg {
+            box-shadow: 0 0 100px -20px rgba(13, 138, 188, 0.4);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #38bdf8 0%, #14b8a6 50%, #818cf8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .text-gradient-gold {
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-white">
+
+    <!-- Ambient Background Lighting -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none -z-10">
+        <div class="absolute -top-40 -right-40 w-96 h-96 bg-cyan-500/15 rounded-full blur-3xl"></div>
+        <div class="absolute top-1/3 -left-40 w-96 h-96 bg-teal-500/15 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-1/4 right-10 w-96 h-96 bg-indigo-500/15 rounded-full blur-3xl"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Brand Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-600 to-teal-400 flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform duration-300">
+                        <i class="fa-solid fa-[# tooth] fa-tooth"></i>
+                    </div>
+                    <div>
+                        <span class="text-xl font-bold tracking-tight text-white block leading-none">Dr. Rohit Yadav</span>
+                        <span class="text-xs text-cyan-400 font-medium tracking-wider uppercase">Dental Specialist</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors">About</a>
+                    <a href="#services" class="text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors">Services</a>
+                    <a href="#testimonials" class="text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors">Testimonials</a>
+                    <a href="#contact" class="text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors">Contact</a>
+                </nav>
+
+                <!-- Action Button -->
+                <div class="hidden md:flex items-center gap-4">
+                    <a href="#contact" class="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium rounded-full group bg-gradient-to-br from-cyan-500 via-teal-400 to-indigo-500 group-hover:from-cyan-500 group-hover:to-indigo-500 hover:text-white text-white shadow-lg shadow-cyan-500/25 transition-all duration-300 hover:shadow-cyan-500/40">
+                        <span class="relative px-6 py-2.5 transition-all ease-in duration-75 bg-slate-950 rounded-full group-hover:bg-opacity-0 font-semibold">
+                            Book Consultation
+                        </span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-slate-300 hover:text-white focus:outline-none p-2">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900/95 backdrop-blur-xl border-b border-slate-800 px-4 pt-2 pb-6">
+            <div class="flex flex-col space-y-4 pt-2">
+                <a href="#about" class="text-slate-300 hover:text-cyan-400 transition-colors font-medium">About</a>
+                <a href="#services" class="text-slate-300 hover:text-cyan-400 transition-colors font-medium">Services</a>
+                <a href="#testimonials" class="text-slate-300 hover:text-cyan-400 transition-colors font-medium">Testimonials</a>
+                <a href="#contact" class="text-slate-300 hover:text-cyan-400 transition-colors font-medium">Contact</a>
+                <a href="#contact" class="inline-block text-center px-6 py-3 rounded-full bg-gradient-to-r from-cyan-500 to-teal-400 text-white font-semibold text-sm shadow-md">
+                    Book Consultation
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-12 pb-24 lg:pt-20 lg:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Left Text Content -->
+                <div class="lg:col-span-7 text-center lg:text-left">
+                    <!-- Status Badge -->
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 text-cyan-400 text-xs font-semibold uppercase tracking-wider mb-6 shadow-inner">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 -ml-4"></span>
+                        Accepting New Patients & Consultations
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">
+                        Crafting Healthy, <br>
+                        <span class="text-gradient">Radiant Smiles</span> With Precision.
+                    </h1>
+
+                    <p class="text-lg text-slate-400 mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+                        Welcome! I am <strong class="text-slate-200 font-semibold">Dr. Rohit Yadav</strong>, a dedicated Dental Specialist committed to restoring confidence through state-of-the-art dental care, personalized treatment plans, and comfortable patient experiences.
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-12">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-cyan-500 via-teal-500 to-indigo-500 hover:from-cyan-400 hover:to-indigo-400 text-white font-bold text-center shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 transition-all duration-300 transform hover:-translate-y-0.5">
+                            Schedule Appointment <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                        <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-full bg-slate-900/80 hover:bg-slate-800 border border-slate-700/80 text-slate-200 font-semibold text-center backdrop-blur-xl transition-all duration-300">
+                            Explore Treatments
+                        </a>
+                    </div>
+
+                    <!-- Hero Stats / Badges -->
+                    <div class="grid grid-cols-3 gap-4 pt-8 border-t border-slate-800/80 max-w-xl mx-auto lg:mx-0">
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-white">10+</p>
+                            <p class="text-xs sm:text-sm text-slate-400 font-medium">Years Experience</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-white">5,000+</p>
+                            <p class="text-xs sm:text-sm text-slate-400 font-medium">Happy Patients</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-white">99.8%</p>
+                            <p class="text-xs sm:text-sm text-slate-400 font-medium">Satisfaction Rate</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Avatar Visual -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative">
+                        <!-- Background Glowing Aura -->
+                        <div class="absolute inset-0 bg-gradient-to-tr from-cyan-500 via-teal-400 to-purple-600 rounded-3xl filter blur-2xl opacity-40 animate-pulse"></div>
+
+                        <!-- Double Gradient Frame Container -->
+                        <div class="relative p-2.5 rounded-3xl bg-gradient-to-b from-cyan-400 via-slate-800 to-indigo-500 shadow-2xl glow-effect-lg">
+                            <div class="bg-slate-950 p-4 rounded-[22px] text-center">
+                                <img src="https://ui-avatars.com/api/?name=Dr.+Rohit+Yadav&size=200&background=0D8ABC&color=fff&bold=true" 
+                                     alt="Dr. Rohit Yadav" 
+                                     class="w-56 h-56 sm:w-64 sm:h-64 rounded-2xl mx-auto shadow-md object-cover">
+                                
+                                <div class="mt-4 pt-3 border-t border-slate-800">
+                                    <h3 class="text-xl font-bold text-white">Dr. Rohit Yadav</h3>
+                                    <p class="text-sm text-cyan-400 font-medium">Doctor of Dental Surgery (DDS)</p>
+                                    
+                                    <div class="mt-3 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-xs text-slate-300">
+                                        <i class="fa-solid fa-certificate text-cyan-400"></i> Board Certified Specialist
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Micro Badge 1 -->
+                        <div class="absolute -bottom-6 -left-6 bg-slate-900/90 backdrop-blur-xl border border-slate-800 p-3.5 rounded-2xl shadow-xl flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-teal-500/20 text-teal-400 flex items-center justify-center font-bold">
+                                <i class="fa-solid fa-shield-halved text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-white">Painless Care</p>
+                                <p class="text-[10px] text-slate-400">Advanced Techniques</p>
+                            </div>
+                        </div>
+
+                        <!-- Floating Micro Badge 2 -->
+                        <div class="absolute -top-6 -right-6 bg-slate-900/90 backdrop-blur-xl border border-slate-800 p-3.5 rounded-2xl shadow-xl flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold">
+                                <i class="fa-solid fa-star text-lg text-amber-400"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-white">5.0 Star Rated</p>
+                                <p class="text-[10px] text-slate-400">Top Patient Reviews</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-3xl p-8 lg:p-12 hover:border-cyan-500/30 transition-all duration-300 shadow-2xl">
+                <div class="grid lg:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- Industry Image -->
+                    <div class="lg:col-span-5">
+                        <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-800 group">
+                            <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Modern Dental Clinic" 
+                                 class="w-full h-80 lg:h-96 object-cover transform group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60"></div>
+                            <div class="absolute bottom-4 left-4 right-4 p-4 bg-slate-900/80 backdrop-blur-md rounded-xl border border-slate-800">
+                                <p class="text-xs text-cyan-400 font-semibold uppercase tracking-wider">State-of-the-Art Facility</p>
+                                <p class="text-sm font-medium text-slate-200">Equipped with leading dental technology for precision diagnostics.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- About Text Content -->
+                    <div class="lg:col-span-7">
+                        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold uppercase tracking-wider mb-4">
+                            About Dr. Rohit Yadav
+                        </div>
+                        <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">
+                            Dedicated to Delivering World-Class Dental Excellence
+                        </h2>
+                        <p class="text-slate-300 leading-relaxed mb-6 font-normal">
+                            Dr. Rohit Yadav is an independent practitioner who blends clinical accuracy with an artistic eye to deliver remarkable aesthetic and restorative dental solutions. Focused on preventive care, full-mouth restorations, and smile makeovers, Dr. Yadav ensures every patient receives compassionate, painless treatment tailored to their unique needs.
+                        </p>
+
+                        <!-- Key Pillars Grid -->
+                        <div class="grid sm:grid-cols-2 gap-4 my-6">
+                            <div class="p-4 rounded-xl bg-slate-950/60 border border-slate-800/80 flex items-start gap-3">
+                                <div class="p-2.5 rounded-lg bg-cyan-500/10 text-cyan-400 mt-0.5">
+                                    <i class="fa-solid fa-microscope text-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-white text-sm">Advanced Technology</h4>
+                                    <p class="text-xs text-slate-400 mt-1">Digital scanning, 3D imaging, and laser dentistry.</p>
+                                </div>
+                            </div>
+
+                            <div class="p-4 rounded-xl bg-slate-950/60 border border-slate-800/80 flex items-start gap-3">
+                                <div class="p-2.5 rounded-lg bg-teal-500/10 text-teal-400 mt-0.5">
+                                    <i class="fa-solid fa-heart-pulse text-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-white text-sm">Patient-Centric Care</h4>
+                                    <p class="text-xs text-slate-400 mt-1">Comfortable, anxiety-free procedures tailored to you.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-2 flex items-center gap-6">
+                            <div class="flex items-center gap-2 text-amber-400">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span class="text-slate-300 text-sm font-semibold ml-2">5.0 Clinical Rating</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold uppercase tracking-wider mb-4">
+                    Comprehensive Care
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">Specialized Dental Services</h2>
+                <p class="text-slate-400 text-base">Offering a full spectrum of advanced dental treatments designed to restore health, functionality, and beautiful aesthetics to your smile.</p>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service Card 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-cyan-500/50 transition-all duration-300 group hover:-translate-y-1 shadow-lg">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-cyan-500/20 to-teal-500/10 border border-cyan-500/30 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Cosmetic Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Transform your smile with porcelain veneers, teeth whitening, and aesthetic bonding customized to your facial features.</p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-semibold text-cyan-400 hover:text-cyan-300 gap-1.5">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-cyan-500/50 transition-all duration-300 group hover:-translate-y-1 shadow-lg">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-cyan-500/20 to-indigo-500/10 border border-cyan-500/30 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Dental Implants</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Permanent, natural-looking tooth replacement solutions designed to preserve jaw structure and restore full chewing confidence.</p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-semibold text-cyan-400 hover:text-cyan-300 gap-1.5">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-cyan-500/50 transition-all duration-300 group hover:-translate-y-1 shadow-lg">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-teal-500/20 to-emerald-500/10 border border-teal-500/30 text-teal-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-align-center"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-teal-400 transition-colors">Invisalign & Orthodontics</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Straighten your teeth discretely with clear aligner technology, achieving optimal alignment without traditional metal braces.</p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-semibold text-teal-400 hover:text-teal-300 gap-1.5">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-cyan-500/50 transition-all duration-300 group hover:-translate-y-1 shadow-lg">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-indigo-500/20 to-purple-500/10 border border-indigo-500/30 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-kit-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-indigo-400 transition-colors">General & Preventive Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Comprehensive dental exams, deep cleanings, cavity prevention, and periodontics to keep your oral health at its peak.</p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-semibold text-indigo-400 hover:text-indigo-300 gap-1.5">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-cyan-500/50 transition-all duration-300 group hover:-translate-y-1 shadow-lg">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-cyan-500/20 to-sky-500/10 border border-cyan-500/30 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-crown"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Crowns & Root Canals</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Gentle root canal therapy and durable ceramic crowns designed to preserve damaged teeth and eliminate toothache pain.</p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-semibold text-cyan-400 hover:text-cyan-300 gap-1.5">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-cyan-500/50 transition-all duration-300 group hover:-translate-y-1 shadow-lg">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-rose-500/20 to-amber-500/10 border border-rose-500/30 text-rose-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-house-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-rose-400 transition-colors">Emergency Dental Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Same-day urgent dental appointments for tooth pain, chipped teeth, lost crowns, or accidental dental trauma.</p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-semibold text-rose-400 hover:text-rose-300 gap-1.5">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 relative bg-slate-900/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold uppercase tracking-wider mb-4">
+                    Patient Endorsements
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">Stories of Transformed Smiles</h2>
+                <p class="text-slate-400 text-base">Read authentic experiences from patients who entrusted Dr. Rohit Yadav with their oral health and smile transformations.</p>
+            </div>
+
+            <!-- Testimonials Grid -->
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-8 relative flex flex-col justify-between hover:border-cyan-500/40 transition-all duration-300">
+                    <div>
+                        <div class="flex text-amber-400 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6 italic">
+                            "Dr. Rohit Yadav is completely changing my perception of visiting the dentist! His attention to detail during my veneer treatment was astonishing. My smile has never looked better."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold text-sm">
+                            AN
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-semibold text-white">Ananya N.</h4>
+                            <p class="text-xs text-slate-400">Cosmetic Veneer Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-8 relative flex flex-col justify-between hover:border-cyan-500/40 transition-all duration-300">
+                    <div>
+                        <div class="flex text-amber-400 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6 italic">
+                            "I had a severe toothache and needed emergency dental care. Dr. Yadav saw me immediately and made the procedure 100% painless. Highly recommended specialist!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-teal-500/20 text-teal-400 flex items-center justify-center font-bold text-sm">
+                            VS
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-semibold text-white">Vikram S.</h4>
+                            <p class="text-xs text-slate-400">Root Canal & Crown Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-8 relative flex flex-col justify-between hover:border-cyan-500/40 transition-all duration-300">
+                    <div>
+                        <div class="flex text-amber-400 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6 italic">
+                            "Professional, calm, and highly skilled. The aligner treatment prescribed by Dr. Rohit Yadav perfectly corrected my bite in less time than anticipated."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-sm">
+                            PR
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-semibold text-white">Pooja R.</h4>
+                            <p class="text-xs text-slate-400">Invisalign Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Booking Section -->
+    <section id="contact" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-slate-900/70 backdrop-blur-xl border border-slate-800 rounded-3xl p-8 lg:p-12 shadow-2xl">
+                <div class="grid lg:grid-cols-12 gap-12">
+                    
+                    <!-- Contact Details -->
+                    <div class="lg:col-span-5">
+                        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold uppercase tracking-wider mb-4">
+                            Get In Touch
+                        </div>
+                        <h2 class="text-3xl font-bold text-white mb-4">Book Your Appointment Today</h2>
+                        <p class="text-slate-400 text-sm mb-8 leading-relaxed">
+                            Take the first step toward a healthier, brighter smile. Fill out the consultation request or reach out through our direct office channels.
+                        </p>
+
+                        <div class="space-y-6">
+                            <!-- Detail Item 1 -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center text-lg shrink-0">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-semibold text-white">Clinic Address</h4>
+                                    <p class="text-xs text-slate-400 mt-1">Medical Center Drive, Suite 402<br>Dental Excellence Practice</p>
+                                </div>
+                            </div>
+
+                            <!-- Detail Item 2 -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-teal-500/10 border border-teal-500/20 text-teal-400 flex items-center justify-center text-lg shrink-0">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-semibold text-white">Direct Email</h4>
+                                    <p class="text-xs text-slate-400 mt-1">contact@drrohityadav.com</p>
+                                </div>
+                            </div>
+
+                            <!-- Detail Item 3 -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center text-lg shrink-0">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-semibold text-white">Phone Enquiries</h4>
+                                    <p class="text-xs text-slate-400 mt-1">+1 (800) 555-DENT / Direct Office</p>
+                                </div>
+                            </div>
+
+                            <!-- Connection Info Badge -->
+                            <div class="p-4 rounded-2xl bg-slate-950/60 border border-slate-800 text-xs text-slate-400 flex items-center justify-between mt-6">
+                                <span><i class="fa-solid fa-circle-check text-cyan-400 mr-1.5"></i> Network Connected: 31 Aug 2026</span>
+                                <span class="text-cyan-400 font-medium">Self-employed</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Contact Form -->
+                    <div class="lg:col-span-7">
+                        <form onsubmit="event.preventDefault(); alert('Thank you, Dr. Rohit Yadav will review your appointment request shortly!');" class="space-y-4">
+                            <div class="grid sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-1.5">Full Name</label>
+                                    <input type="text" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white text-sm focus:outline-none focus:border-cyan-500 transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-1.5">Phone Number</label>
+                                    <input type="tel" required placeholder="+1 (555) 000-0000" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white text-sm focus:outline-none focus:border-cyan-500 transition-colors">
+                                </div>
+                            </div>
+
+                            <div class="grid sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-1.5">Email Address</label>
+                                    <input type="email" placeholder="patient@example.com" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white text-sm focus:outline-none focus:border-cyan-500 transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-1.5">Requested Treatment</label>
+                                    <select class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white text-sm focus:outline-none focus:border-cyan-500 transition-colors">
+                                        <option>General Checkup / Cleaning</option>
+                                        <option>Cosmetic Dentistry & Veneers</option>
+                                        <option>Teeth Whitening</option>
+                                        <option>Dental Implants</option>
+                                        <option>Orthodontics / Aligners</option>
+                                        <option>Emergency Dentistry</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-1.5">Message / Patient Notes</label>
+                                <textarea rows="4" placeholder="Briefly describe your dental needs or preferred appointment day/time..." class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white text-sm focus:outline-none focus:border-cyan-500 transition-colors resize-none"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-teal-500 to-indigo-500 text-white font-bold text-sm shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 transition-all duration-300">
+                                Send Appointment Request <i class="fa-solid fa-paper-plane ml-2"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800/80 bg-slate-950 py-12 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                
+                <!-- Logo & Brand -->
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-600 to-teal-400 flex items-center justify-center text-white font-bold text-sm">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <span class="text-base font-bold text-white">Dr. Rohit Yadav</span>
+                </div>
+
+                <!-- Copyright -->
+                <p class="text-xs text-slate-500">
+                    &copy; 2026 Dr. Rohit Yadav Dental Practice. All rights reserved.
+                </p>
+
+                <!-- Social Icons -->
+                <div class="flex items-center space-x-4">
+                    <a href="#" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-cyan-400 hover:border-cyan-500/40 transition-colors">
+                        <i class="fa-brands fa-linkedin-in text-xs"></i>
+                    </a>
+                    <a href="#" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-cyan-400 hover:border-cyan-500/40 transition-colors">
+                        <i class="fa-brands fa-instagram text-xs"></i>
+                    </a>
+                    <a href="#" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-cyan-400 hover:border-cyan-500/40 transition-colors">
+                        <i class="fa-solid fa-globe text-xs"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
