@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Ridhima Sharma | General Dentist & Oral Health Specialist</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            cyan: '#0D8ABC',
+                            teal: '#14b8a6',
+                            indigo: '#6366f1',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-white overflow-x-hidden">
+
+    <!-- Glowing Background Elements -->
+    <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+        <div class="absolute -top-40 -left-40 w-96 h-96 bg-cyan-500/15 rounded-full blur-3xl"></div>
+        <div class="absolute top-1/3 -right-40 w-96 h-96 bg-indigo-500/15 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-40 left-1/3 w-96 h-96 bg-teal-500/15 rounded-full blur-3xl"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-500 flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform duration-300">
+                    <i class="fa-solid fa-tooth text-lg"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-lg leading-tight tracking-tight text-white group-hover:text-cyan-400 transition-colors">Dr. Ridhima Sharma</span>
+                    <span class="text-xs text-slate-400 font-medium">General Dentist</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-cyan-400 transition-colors">Expertise</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Testimonials</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 via-teal-500 to-indigo-500 text-white font-semibold text-sm hover:opacity-95 shadow-lg shadow-cyan-500/25 transition-all hover:shadow-cyan-500/40 hover:-translate-y-0.5">
+                    <i class="fa-solid fa-calendar-check text-xs"></i>
+                    <span>Book Appointment</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-20 md:pt-48 md:pb-32 px-6 z-10 overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Text Content -->
+                <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 text-cyan-400 text-xs md:text-sm font-medium backdrop-blur-xl">
+                        <span class="flex h-2 w-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                        Metro Heart Institute with Multispeciality
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                        Crafting Healthy, <br class="hidden sm:inline" />
+                        <span class="bg-gradient-to-r from-cyan-400 via-teal-300 to-indigo-400 bg-clip-text text-transparent">
+                            Radiant Smiles
+                        </span> With Precision
+                    </h1>
+
+                    <p class="text-slate-400 text-base md:text-lg max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        Welcome! I am <strong class="text-slate-200 font-semibold">Dr. Ridhima Sharma</strong>, a General Dentist dedicated to delivering modern, painless, and gentle dental care. Bringing advanced multispeciality dentistry to patients with personal empathy and perfection.
+                    </p>
+
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#contact" class="px-8 py-4 rounded-full bg-gradient-to-r from-cyan-500 via-teal-500 to-indigo-500 text-white font-bold text-sm shadow-xl shadow-cyan-500/20 hover:shadow-cyan-500/35 hover:-translate-y-0.5 transition-all flex items-center gap-2">
+                            <i class="fa-solid fa-tooth"></i>
+                            <span>Schedule Consultation</span>
+                        </a>
+                        <a href="#services" class="px-8 py-4 rounded-full bg-slate-900/80 border border-slate-800 hover:border-slate-700 text-slate-200 font-semibold text-sm backdrop-blur-xl transition-all hover:bg-slate-800/50 flex items-center gap-2">
+                            <span>Explore Treatments</span>
+                            <i class="fa-solid fa-arrow-right text-xs text-slate-400"></i>
+                        </a>
+                    </div>
+
+                    <!-- Trust Badges -->
+                    <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0">
+                        <div class="text-center lg:text-left">
+                            <div class="text-2xl font-bold text-white flex items-center justify-center lg:justify-start gap-1">
+                                <span>100%</span>
+                            </div>
+                            <div class="text-xs text-slate-400">Patient Centric Care</div>
+                        </div>
+                        <div class="text-center lg:text-left">
+                            <div class="text-2xl font-bold text-white flex items-center justify-center lg:justify-start gap-1">
+                                <span>Advanced</span>
+                            </div>
+                            <div class="text-xs text-slate-400">Clinical Diagnostics</div>
+                        </div>
+                        <div class="text-center lg:text-left">
+                            <div class="text-2xl font-bold text-white flex items-center justify-center lg:justify-start gap-1">
+                                <span>Top Rated</span>
+                            </div>
+                            <div class="text-xs text-slate-400">Dental Excellence</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Profile Frame with Double Gradient Glow -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative group">
+                        <!-- Outer Ambient Glows -->
+                        <div class="absolute -inset-1 bg-gradient-to-r from-cyan-500 via-teal-500 to-indigo-500 rounded-full blur-2xl opacity-60 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+                        
+                        <!-- Avatar Frame with double border gradient -->
+                        <div class="relative p-2 rounded-full bg-slate-950 border border-slate-800 shadow-2xl">
+                            <div class="p-2 rounded-full bg-gradient-to-tr from-cyan-500 via-teal-400 to-indigo-500">
+                                <img src="https://ui-avatars.com/api/?name=Dr+Ridhima+Sharma&size=200&background=0D8ABC&color=fff&bold=true" 
+                                     alt="Dr. Ridhima Sharma" 
+                                     class="w-64 h-64 sm:w-80 sm:h-80 rounded-full object-cover shadow-inner bg-slate-900 border-4 border-slate-950">
+                            </div>
+
+                            <!-- Floating Badge 1 -->
+                            <div class="absolute bottom-4 -left-4 bg-slate-900/90 border border-slate-800 backdrop-blur-xl px-4 py-3 rounded-2xl shadow-xl flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-xl bg-cyan-500/20 flex items-center justify-center text-cyan-400">
+                                    <i class="fa-solid fa-hospital text-lg"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs font-bold text-white">Metro Heart Institute</div>
+                                    <div class="text-[10px] text-slate-400">Multispeciality Department</div>
+                                </div>
+                            </div>
+
+                            <!-- Floating Badge 2 -->
+                            <div class="absolute top-6 -right-4 bg-slate-900/90 border border-slate-800 backdrop-blur-xl px-4 py-3 rounded-2xl shadow-xl flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-xl bg-teal-500/20 flex items-center justify-center text-teal-400">
+                                    <i class="fa-solid fa-shield-halved text-lg"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs font-bold text-white">Certified Specialist</div>
+                                    <div class="text-[10px] text-slate-400">General & Aesthetic Dentistry</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-24 relative z-10 bg-slate-900/30 border-y border-slate-800/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Image Showcase -->
+                <div class="lg:col-span-5">
+                    <div class="relative rounded-3xl overflow-hidden border border-slate-800 bg-slate-900 shadow-2xl group">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent z-10"></div>
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Dental Practice Facilities" 
+                             class="w-full h-[450px] object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute bottom-6 left-6 right-6 z-20">
+                            <span class="inline-block px-3 py-1 bg-cyan-500/20 border border-cyan-500/30 text-cyan-300 text-xs font-semibold rounded-full mb-2">State-of-the-Art Facility</span>
+                            <h3 class="text-xl font-bold text-white">Comprehensive Oral Healthcare</h3>
+                            <p class="text-slate-300 text-xs mt-1">Utilizing modern technology for comfortable and effective dental procedures.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Content -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold">
+                        <i class="fa-solid fa-stethoscope"></i> About Dr. Ridhima Sharma
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-snug">
+                        Dedicated to Gentle, High-Precision Dental Care at <span class="bg-gradient-to-r from-cyan-400 to-indigo-400 bg-clip-text text-transparent">Metro Heart Institute</span>
+                    </h2>
+
+                    <p class="text-slate-300 leading-relaxed text-sm md:text-base">
+                        As a General Dentist at <strong>Metro Heart Institute with Multispeciality</strong>, Dr. Ridhima Sharma brings together clinical excellence, advanced modern dental technologies, and a deep-rooted commitment to patient satisfaction.
+                    </p>
+
+                    <p class="text-slate-400 leading-relaxed text-sm">
+                        Whether performing routine preventive care, restorative treatments, or aesthetic smile enhancements, Dr. Ridhima prioritizes patient comfort, comprehensive diagnosis, and individualized treatment plans designed to maintain lifelong oral health.
+                    </p>
+
+                    <!-- Feature Pillars -->
+                    <div class="grid sm:grid-cols-2 gap-4 pt-4">
+                        <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 p-4 rounded-2xl flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-cyan-500/20 text-cyan-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-heart-pulse"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Patient-Centric Care</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">Gentle, stress-free treatments designed for maximum comfort.</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 p-4 rounded-2xl flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-indigo-500/20 text-indigo-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Cosmetic & Restoration</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">Custom smile enhancements and durable restorative care.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services" class="py-24 relative z-10 px-6">
+        <div class="max-w-7xl mx-auto">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-teal-500/10 border border-teal-500/20 text-teal-400 text-xs font-semibold">
+                    <i class="fa-solid fa-notes-medical"></i> Specialized Services
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                    Comprehensive Clinical Dental Services
+                </h2>
+                <p class="text-slate-400 text-sm md:text-base">
+                    From routine check-ups to complex dental restorations, explore treatments personalized for your unique oral health needs.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service Card 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 rounded-3xl p-8 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-cyan-500/20 to-teal-500/20 border border-cyan-500/30 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">General Dental Checkups</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Thorough dental examinations, digital X-rays, professional cleaning, and early decay detection to maintain optimal hygiene.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-cyan-400 hover:text-cyan-300">
+                        <span>Book Examination</span>
+                        <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 rounded-3xl p-8 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-teal-500/20 to-indigo-500/20 border border-teal-500/30 text-teal-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-teal-400 transition-colors">Cosmetic Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Transform your smile with professional laser teeth whitening, aesthetic porcelain veneers, and cosmetic contouring.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-teal-400 hover:text-teal-300">
+                        <span>Smile Makeover</span>
+                        <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 rounded-3xl p-8 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-indigo-500/20 to-purple-500/20 border border-indigo-500/30 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-shield-virus"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-indigo-400 transition-colors">Restorative Procedures</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        High-quality tooth-colored composite fillings, durable crowns, and painless root canal treatments for tooth preservation.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-indigo-400 hover:text-indigo-300">
+                        <span>Learn More</span>
+                        <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 rounded-3xl p-8 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-blue-500/20 to-cyan-500/20 border border-blue-500/30 text-blue-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-child-reaching"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">Preventive & Pediatric Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Fluoride treatments, dental sealants, and gentle dental habits coaching tailored specifically for younger patients.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-blue-400 hover:text-blue-300">
+                        <span>Family Booking</span>
+                        <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 rounded-3xl p-8 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-teal-500/20 to-emerald-500/20 border border-teal-500/30 text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-pump-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-emerald-400 transition-colors">Periodontal Gum Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Comprehensive gum health assessments, deep scaling, root planing, and treatment for gingivitis and periodontitis.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-emerald-400 hover:text-emerald-300">
+                        <span>Gum Health Check</span>
+                        <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 rounded-3xl p-8 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-rose-500/20 to-pink-500/20 border border-rose-500/30 text-rose-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-kit-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-rose-400 transition-colors">Emergency Dental Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Prompt relief for toothaches, chipped or broken teeth, trauma, and urgent dental emergencies at Metro Heart Institute.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-rose-400 hover:text-rose-300">
+                        <span>Emergency Consultation</span>
+                        <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 relative z-10 bg-slate-900/30 border-y border-slate-800/50 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold">
+                    <i class="fa-solid fa-star"></i> Patient Reviews
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                    Trusted by Hundreds of Happy Patients
+                </h2>
+                <p class="text-slate-400 text-sm md:text-base">
+                    Read firsthand experiences from individuals who restored their confidence and oral health under Dr. Ridhima’s care.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 p-8 rounded-3xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Dr. Ridhima Sharma is extremely patient and thorough! I used to be deeply anxious about dental visits, but her gentle demeanor and clear explanations made my treatment completely stress-free."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold text-sm">
+                            AN
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Ananya Narang</h4>
+                            <p class="text-xs text-slate-400">Restorative Care Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 p-8 rounded-3xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Visited Metro Heart Institute for a smile correction. Dr. Ridhima's cosmetic expertise is phenomenal. My teeth look completely natural and radiant now. Highly recommended!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-teal-500/20 text-teal-400 flex items-center justify-center font-bold text-sm">
+                            RK
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Rajesh Kapoor</h4>
+                            <p class="text-xs text-slate-400">Cosmetic Dentistry</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 p-8 rounded-3xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Dr. Ridhima handled my urgent root canal procedure with absolute perfection and zero pain during or after. Truly a skilled professional in general dentistry."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-sm">
+                            PM
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Pooja Mehra</h4>
+                            <p class="text-xs text-slate-400">Emergency Care</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Appointment Section -->
+    <section id="contact" class="py-24 relative z-10 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Info Card -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold mb-4">
+                            <i class="fa-solid fa-paper-plane"></i> Get in Touch
+                        </div>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                            Schedule Your Visit
+                        </h2>
+                        <p class="text-slate-400 text-sm mt-2">
+                            Ready for a healthier smile? Reach out to book your appointment or request a dental consultation.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <!-- Location Detail -->
+                        <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-5 rounded-2xl flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-hospital-user text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Clinic Location</h4>
+                                <p class="text-xs text-slate-300 font-medium mt-0.5">Metro Heart Institute with Multispeciality</p>
+                                <p class="text-xs text-slate-400 mt-0.5">Dental Department, Sector 16A, Faridabad, Haryana</p>
+                            </div>
+                        </div>
+
+                        <!-- Availability Detail -->
+                        <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-5 rounded-2xl flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-teal-500/20 text-teal-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-clock text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">OPD Timings</h4>
+                                <p class="text-xs text-slate-300 mt-0.5">Mon - Sat: 09:00 AM – 05:00 PM</p>
+                                <p class="text-xs text-slate-400 mt-0.5">Emergency Services: Available 24/7</p>
+                            </div>
+                        </div>
+
+                        <!-- Connection Badge -->
+                        <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-5 rounded-2xl flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-circle-nodes text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Professional Connection</h4>
+                                <p class="text-xs text-slate-300 mt-0.5">Connected since: 03 Sep 2026</p>
+                                <p class="text-xs text-slate-400 mt-0.5">Verified Medical Profile</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Appointment Form -->
+                <div class="lg:col-span-7">
+                    <div class="bg-slate-900/80 backdrop-blur-xl border border-slate-800 p-8 sm:p-10 rounded-3xl shadow-2xl relative">
+                        <div class="absolute -top-10 -right-10 w-40 h-40 bg-cyan-500/10 rounded-full blur-2xl pointer-events-none"></div>
+
+                        <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
+                            <i class="fa-solid fa-calendar-plus text-cyan-400"></i>
+                            <span>Request an Appointment</span>
+                        </h3>
+
+                        <form onsubmit="event.preventDefault(); alert('Appointment Request Received! We will contact you shortly.');" class="space-y-5">
+                            <div class="grid sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">Patient Full Name</label>
+                                    <input type="text" required placeholder="e.g. John Doe" class="w-full bg-slate-950/80 border border-slate-800 focus:border-cyan-500 rounded-xl px-4 py-3 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-1 focus:ring-cyan-500 transition-all">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">Contact Number</label>
+                                    <input type="tel" required placeholder="+91 98765 43210" class="w-full bg-slate-950/80 border border-slate-800 focus:border-cyan-500 rounded-xl px-4 py-3 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-1 focus:ring-cyan-500 transition-all">
+                                </div>
+                            </div>
+
+                            <div class="grid sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">Preferred Date</label>
+                                    <input type="date" required class="w-full bg-slate-950/80 border border-slate-800 focus:border-cyan-500 rounded-xl px-4 py-3 text-sm text-slate-100 focus:outline-none focus:ring-1 focus:ring-cyan-500 transition-all">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">Service Required</label>
+                                    <select class="w-full bg-slate-950/80 border border-slate-800 focus:border-cyan-500 rounded-xl px-4 py-3 text-sm text-slate-100 focus:outline-none focus:ring-1 focus:ring-cyan-500 transition-all">
+                                        <option>General Dental Checkup</option>
+                                        <option>Cosmetic Smile Design</option>
+                                        <option>Root Canal / Filling</option>
+                                        <option>Teeth Whitening</option>
+                                        <option>Pediatric Consultation</option>
+                                        <option>Emergency Care</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Notes / Medical Description</label>
+                                <textarea rows="4" placeholder="Mention any specific concerns or symptoms..." class="w-full bg-slate-950/80 border border-slate-800 focus:border-cyan-500 rounded-xl px-4 py-3 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-1 focus:ring-cyan-500 transition-all resize-none"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-teal-500 to-indigo-500 text-white font-bold text-sm shadow-xl shadow-cyan-500/20 hover:shadow-cyan-500/40 hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-paper-plane text-xs"></i>
+                                <span>Confirm Appointment Request</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-slate-950 border-t border-slate-800/80 relative z-10 text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-tooth text-cyan-400"></i>
+                <span class="text-slate-300 font-semibold">Dr. Ridhima Sharma</span>
+                <span>• General Dentist at Metro Heart Institute with Multispeciality</span>
+            </div>
+            <div>
+                &copy; 2026 Dr. Ridhima Sharma. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
