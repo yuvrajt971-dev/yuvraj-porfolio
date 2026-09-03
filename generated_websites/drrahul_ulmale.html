@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Rahul Ulmale | Associate Dentist & Clear Aligner Specialist</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            cyan: '#06b6d4',
+                            teal: '#14b8a6',
+                            indigo: '#6366f1',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(6, 182, 212, 0.3);
+        }
+        .glow-avatar {
+            box-shadow: 0 0 40px -5px rgba(20, 184, 166, 0.4);
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(51, 65, 85, 0.5);
+        }
+        .glass-card:hover {
+            border-color: rgba(6, 182, 212, 0.5);
+            box-shadow: 0 10px 30px -10px rgba(6, 182, 212, 0.15);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #38bdf8 0%, #14b8a6 50%, #818cf8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-slate-950">
+
+    <!-- Ambient Background Glows -->
+    <div class="fixed top-0 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+    <div class="fixed bottom-1/3 right-1/4 w-[500px] h-[500px] bg-teal-500/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+    <div class="fixed top-2/3 left-1/3 w-80 h-80 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-teal-400 flex items-center justify-center text-slate-950 font-bold text-xl shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform duration-300">
+                    <i class="fa-solid fa-tooth"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-extrabold text-lg tracking-tight text-white group-hover:text-cyan-400 transition-colors">Dr. Rahul Ulmale</span>
+                    <span class="text-xs text-slate-400 font-medium">toothsialigners</span>
+                </div>
+            </a>
+
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-cyan-400 transition-colors">Expertise</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Patient Care</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+            </div>
+
+            <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 to-teal-500 text-slate-950 font-semibold text-sm hover:opacity-90 hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 active:scale-95">
+                <i class="fa-regular fa-calendar-check text-xs"></i>
+                <span>Book Consultation</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-16 pb-24 lg:pt-24 lg:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Text Content -->
+                <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card text-xs font-semibold text-cyan-400 border border-cyan-500/30">
+                        <span class="flex h-2 w-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                        Associate Dentist at toothsialigners
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-none">
+                        Crafting Perfect <br>
+                        <span class="gradient-text">Confident Smiles.</span>
+                    </h1>
+
+                    <p class="text-lg sm:text-xl text-slate-400 max-w-2xl font-normal leading-relaxed">
+                        Specializing in modern clear aligner therapy, smile restoration, and advanced general dentistry. Combining clinical excellence with digital precision to transform patient confidence.
+                    </p>
+
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#contact" class="px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-teal-500 to-indigo-500 text-slate-950 font-bold text-base shadow-xl shadow-cyan-500/20 hover:shadow-cyan-500/40 hover:-translate-y-0.5 transition-all duration-300">
+                            Schedule Appointment
+                        </a>
+                        <a href="#about" class="px-8 py-4 rounded-xl glass-card text-slate-200 font-semibold text-base hover:bg-slate-800/80 hover:text-white transition-all duration-300">
+                            Learn More
+                        </a>
+                    </div>
+
+                    <!-- Trust Stats Badges -->
+                    <div class="pt-8 grid grid-cols-3 gap-4 border-t border-slate-800/80">
+                        <div class="glass-card p-4 rounded-xl text-center">
+                            <div class="text-2xl sm:text-3xl font-bold text-cyan-400">100%</div>
+                            <div class="text-xs text-slate-400 mt-1">Digital Alignment</div>
+                        </div>
+                        <div class="glass-card p-4 rounded-xl text-center">
+                            <div class="text-2xl sm:text-3xl font-bold text-teal-400">5.0★</div>
+                            <div class="text-xs text-slate-400 mt-1">Patient Rating</div>
+                        </div>
+                        <div class="glass-card p-4 rounded-xl text-center">
+                            <div class="text-2xl sm:text-3xl font-bold text-indigo-400">Advanced</div>
+                            <div class="text-xs text-slate-400 mt-1">3D Scanner Tech</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Avatar Visual Frame -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative group">
+                        <!-- Glowing aura background -->
+                        <div class="absolute -inset-1.5 bg-gradient-to-r from-cyan-500 via-teal-400 to-indigo-500 rounded-3xl blur-xl opacity-70 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+                        
+                        <div class="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-3xl glass-card p-4 flex flex-col items-center justify-center overflow-hidden border border-slate-700/50">
+                            <img src="https://ui-avatars.com/api/?name=Dr.Rahul++Ulmale&size=200&background=0D8ABC&color=fff&bold=true" 
+                                 alt="Dr. Rahul Ulmale" 
+                                 class="w-48 h-48 sm:w-56 sm:h-56 rounded-full object-cover border-4 border-cyan-500/30 shadow-2xl glow-avatar transform group-hover:scale-105 transition-all duration-500">
+                            
+                            <div class="mt-6 text-center">
+                                <h3 class="text-xl font-bold text-white">Dr. Rahul Ulmale</h3>
+                                <p class="text-sm text-cyan-400 font-medium">Associate Dentist</p>
+                                <span class="inline-block mt-2 text-xs px-3 py-1 rounded-full bg-slate-800 text-slate-300 border border-slate-700">
+                                    <i class="fa-solid fa-hospital text-cyan-400 mr-1.5"></i>toothsialigners
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-6 relative">
+                    <div class="relative rounded-2xl overflow-hidden glass-card p-2 border border-slate-800">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Modern Dental Practice" 
+                             class="rounded-xl w-full h-[420px] object-cover opacity-90 hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-4 glass-card rounded-xl border border-slate-700/60">
+                            <p class="text-sm text-slate-300 italic">
+                                "Precision dentistry is not just about correcting teeth; it's about engineering confidence and long-term oral vitality."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 text-cyan-400 text-xs font-semibold border border-cyan-500/20">
+                        <i class="fa-solid fa-user-doctor"></i> About Dr. Rahul Ulmale
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                        Pioneering Modern Orthodontics & Clear Aligner Solutions
+                    </h2>
+
+                    <p class="text-slate-300 leading-relaxed">
+                        As an Associate Dentist at <strong class="text-cyan-400">toothsialigners</strong>, Dr. Rahul Ulmale integrates state-of-the-art digital dental techniques with customized patient care. With a sharp focus on clear aligners, aesthetic restorations, and preventive care, Dr. Ulmale ensures every smile transformation is smooth, painless, and highly predictable.
+                    </p>
+
+                    <div class="grid sm:grid-cols-2 gap-4 pt-2">
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-cyan-500/20 text-cyan-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Clear Aligner Specialist</h4>
+                                <p class="text-xs text-slate-400">Custom tailored invisible orthodontic plans.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-teal-500/20 text-teal-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-microscope"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Digital Precision</h4>
+                                <p class="text-xs text-slate-400">3D intraoral mapping and digital planning.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-slate-900/40 relative border-y border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="text-center max-w-2xl mx-auto space-y-4 mb-16">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-teal-500/10 text-teal-400 text-xs font-semibold border border-teal-500/20">
+                    <i class="fa-solid fa-notes-medical"></i> Clinical Specializations
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Comprehensive Dental Excellence</h2>
+                <p class="text-slate-400 text-sm sm:text-base">Delivering high-precision dental treatments equipped with the latest diagnostic technology.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Card 1 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-cyan-500/20 to-teal-500/20 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-teeth-open"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Clear Aligner Therapy</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Seamless invisible aligners for alignment and bite correction without traditional metal braces.
+                    </p>
+                    <span class="text-xs font-semibold text-cyan-400 flex items-center gap-1">
+                        toothsialigners Core Practice <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </span>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-teal-500/20 to-indigo-500/20 text-teal-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-smile"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-teal-400 transition-colors">Cosmetic Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Smile design, composite bonding, teeth whitening, and aesthetic enhancements tailored to individual facial symmetry.
+                    </p>
+                    <span class="text-xs font-semibold text-teal-400 flex items-center gap-1">
+                        Aesthetic Excellence <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </span>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-indigo-500/20 to-cyan-500/20 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-cubes"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-indigo-400 transition-colors">3D Intraoral Scanning</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Go mold-free with state-of-the-art optical scanners for ultra-accurate digital impressions and quick setup.
+                    </p>
+                    <span class="text-xs font-semibold text-indigo-400 flex items-center gap-1">
+                        Digital Diagnostics <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </span>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-purple-500/20 to-cyan-500/20 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">Preventive Oral Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Thorough oral health screenings, deep scaling, enamel strengthening, and customized preventative hygiene regimens.
+                    </p>
+                    <span class="text-xs font-semibold text-purple-400 flex items-center gap-1">
+                        Long-term Health <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </span>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-pink-500/20 to-teal-500/20 text-pink-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-pink-400 transition-colors">Restorative Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        High-grade crowns, dental restorations, and tooth-colored fillings built for strength and natural optical properties.
+                    </p>
+                    <span class="text-xs font-semibold text-pink-400 flex items-center gap-1">
+                        Functional Renewal <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </span>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-cyan-500/20 to-purple-500/20 text-cyan-300 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-user-check"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-300 transition-colors">Orthodontic Consultations</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Comprehensive assessments and treatment roadmaps designed to correct alignment efficiently and comfortably.
+                    </p>
+                    <span class="text-xs font-semibold text-cyan-300 flex items-center gap-1">
+                        Personalized Care <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Patient Endorsements -->
+    <section id="testimonials" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="text-center max-w-2xl mx-auto space-y-4 mb-16">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-500/10 text-indigo-400 text-xs font-semibold border border-indigo-500/20">
+                    <i class="fa-solid fa-star"></i> Patient Reviews
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">What Patients Say</h2>
+                <p class="text-slate-400 text-sm sm:text-base">Real experiences from patients who transformed their smiles with Dr. Rahul Ulmale.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 text-sm gap-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            "Dr. Rahul explained my clear aligner journey step by step. The entire process at toothsialigners was virtually invisible and surprisingly comfortable!"
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold text-sm">
+                            P
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Priya Sharma</h4>
+                            <p class="text-xs text-slate-400">Clear Aligner Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 text-sm gap-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            "Extremely gentle and meticulous doctor. Dr. Rahul transformed my front tooth gaps without any discomfort. Highly recommended!"
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-teal-500/20 text-teal-400 flex items-center justify-center font-bold text-sm">
+                            A
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Amit V.</h4>
+                            <p class="text-xs text-slate-400">Smile Design Client</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 text-sm gap-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            "The 3D scanning process was fascinating and accurate. Dr. Rahul Ulmale’s professionalism and attention to detail made all the difference."
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-sm">
+                            S
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Sneha Patel</h4>
+                            <p class="text-xs text-slate-400">Preventive & Aligner Care</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 relative bg-slate-900/50 border-t border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Info -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 text-cyan-400 text-xs font-semibold border border-cyan-500/20">
+                        <i class="fa-solid fa-paper-plane"></i> Get In Touch
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
+                        Book Your Consultation
+                    </h2>
+
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Ready to start your smile transformation? Schedule an appointment with Dr. Rahul Ulmale for personalized clear aligners and comprehensive dental care.
+                    </p>
+
+                    <div class="space-y-4 pt-4">
+                        <div class="glass-card p-4 rounded-xl flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-cyan-500/20 text-cyan-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-hospital"></i>
+                            </div>
+                            <div>
+                                <h5 class="text-xs text-slate-400 uppercase tracking-wider">Practice / Clinic</h5>
+                                <p class="text-sm font-semibold text-white">toothsialigners</p>
+                            </div>
+                        </div>
+
+                        <div class="glass-card p-4 rounded-xl flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-teal-500/20 text-teal-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-user-doctor"></i>
+                            </div>
+                            <div>
+                                <h5 class="text-xs text-slate-400 uppercase tracking-wider">Designation</h5>
+                                <p class="text-sm font-semibold text-white">Associate Dentist</p>
+                            </div>
+                        </div>
+
+                        <div class="glass-card p-4 rounded-xl flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-indigo-500/20 text-indigo-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                            <div>
+                                <h5 class="text-xs text-slate-400 uppercase tracking-wider">Professional Network</h5>
+                                <p class="text-sm font-semibold text-white">Connected: 01 Sep 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div class="lg:col-span-7">
+                    <form onsubmit="event.preventDefault(); alert('Thank you for reaching out! Dr. Rahul Ulmale\'s office will contact you shortly.');" class="glass-card p-8 rounded-2xl border border-slate-800 space-y-6">
+                        <h3 class="text-xl font-bold text-white">Send a Message</h3>
+                        
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Full Name</label>
+                                <input type="text" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-950/60 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Phone Number</label>
+                                <input type="tel" required placeholder="+1 (555) 000-0000" class="w-full px-4 py-3 rounded-xl bg-slate-950/60 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">Interested Treatment</label>
+                            <select class="w-full px-4 py-3 rounded-xl bg-slate-950/60 border border-slate-800 text-slate-300 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                                <option>Clear Aligner Consultation</option>
+                                <option>Cosmetic Smile Design</option>
+                                <option>General Dental Checkup</option>
+                                <option>Other Specialty Services</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">Message or Notes</label>
+                            <textarea rows="4" placeholder="How can Dr. Rahul assist you today?" class="w-full px-4 py-3 rounded-xl bg-slate-950/60 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-teal-500 to-indigo-500 text-slate-950 font-bold text-base hover:opacity-95 shadow-lg shadow-cyan-500/20 active:scale-98 transition-all">
+                            Submit Consultation Request
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 border-t border-slate-800/80 bg-slate-950 text-slate-400">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+            <div class="flex items-center gap-2">
+                <span class="font-bold text-white">Dr. Rahul Ulmale</span>
+                <span>• Associate Dentist at toothsialigners</span>
+            </div>
+            <p>© 2026 Dr. Rahul Ulmale. All rights reserved.</p>
+            <div class="flex gap-4 text-slate-400">
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-linkedin text-base"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-solid fa-globe text-base"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
