@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Madhurya Shekhawat | General Dental Practitioner</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            cyan: '#0D8ABC',
+                            indigo: '#6366f1',
+                            purple: '#a855f7',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+
+        .glass-card {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(99, 102, 241, 0.4);
+            box-shadow: 0 10px 40px -10px rgba(99, 102, 241, 0.2);
+        }
+
+        .glass-nav {
+            background: rgba(2, 6, 23, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gradient-border {
+            position: relative;
+            border-radius: 9999px;
+            background: linear-gradient(135deg, #0D8ABC, #6366f1, #ec4899);
+            padding: 4px;
+        }
+
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(13, 138, 188, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-nav transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-tooth"></i>
+                </div>
+                <div>
+                    <span class="text-lg font-bold tracking-tight block text-white leading-tight">Madhurya Shekhawat</span>
+                    <span class="text-xs text-cyan-400 font-medium">Shyam Dental Care</span>
+                </div>
+            </a>
+
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Treatments</a>
+                <a href="#expertise" class="hover:text-cyan-400 transition-colors">Clinical Focus</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Testimonials</a>
+            </div>
+
+            <a href="#contact" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 via-indigo-600 to-purple-600 text-white font-semibold text-sm shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-105 transition-all">
+                Book Consultation
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen pt-32 pb-20 flex items-center justify-center overflow-hidden">
+        <!-- Ambient Background Light -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-cyan-500/20 via-indigo-500/20 to-purple-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute -bottom-20 -left-20 w-96 h-96 bg-blue-600/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+                
+                <!-- Avatar & Frame -->
+                <div class="relative flex-shrink-0">
+                    <div class="gradient-border glow-effect">
+                        <div class="bg-slate-950 p-2 rounded-full">
+                            <img src="https://ui-avatars.com/api/?name=Madhurya+Shekhawat&size=200&background=0D8ABC&color=fff&bold=true" 
+                                 alt="Dr. Madhurya Shekhawat" 
+                                 class="w-48 h-48 sm:w-56 sm:h-56 rounded-full object-cover shadow-2xl">
+                        </div>
+                    </div>
+                    <div class="absolute -bottom-2 right-2 bg-slate-900/90 border border-slate-700/80 px-4 py-1.5 rounded-full backdrop-blur-md flex items-center gap-2 text-xs font-semibold text-cyan-300 shadow-xl">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        Accepting Patients
+                    </div>
+                </div>
+
+                <!-- Bio & Title -->
+                <div class="text-center lg:text-left max-w-2xl">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 text-cyan-400 text-xs font-semibold tracking-wide uppercase mb-6 backdrop-blur-md">
+                        <i class="fa-solid fa-award text-indigo-400"></i> General Dental Practitioner
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+                        Crafting Healthy, Radiant Smiles with <span class="gradient-text">Precision & Care</span>
+                    </h1>
+                    
+                    <p class="text-slate-400 text-lg sm:text-xl leading-relaxed mb-8">
+                        Welcome! I am <strong class="text-slate-200">Dr. Madhurya Shekhawat</strong>, practitioner at <strong class="text-slate-200">Shyam Dental Care</strong>. Dedicated to delivering state-of-the-art general, preventive, and cosmetic dental procedures tailored for patient comfort and enduring oral health.
+                    </p>
+
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4">
+                        <a href="#contact" class="px-8 py-4 rounded-full bg-gradient-to-r from-cyan-500 via-indigo-600 to-purple-600 text-white font-bold text-sm tracking-wide shadow-xl shadow-cyan-500/20 hover:scale-105 transition-all">
+                            Request Appointment <i class="fa-solid fa-arrow-right ml-2"></i>
+                        </a>
+                        <a href="#services" class="px-8 py-4 rounded-full bg-slate-900/80 hover:bg-slate-800 border border-slate-800 text-slate-200 font-semibold text-sm transition-all">
+                            View Treatments
+                        </a>
+                    </div>
+
+                    <!-- Trust Badges -->
+                    <div class="grid grid-cols-3 gap-4 mt-12 pt-8 border-t border-slate-800/80">
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-white">100%</div>
+                            <div class="text-xs text-slate-400 font-medium mt-1">Patient Focus</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-white">Modern</div>
+                            <div class="text-xs text-slate-400 font-medium mt-1">Dental Clinic</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-white">Gentle</div>
+                            <div class="text-xs text-slate-400 font-medium mt-1">Oral Hygiene</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-24 relative bg-slate-950/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                
+                <!-- Clinical Image -->
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-3xl blur-xl opacity-20 group-hover:opacity-40 transition duration-500"></div>
+                    <div class="relative rounded-3xl overflow-hidden border border-slate-800 glass-card">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Modern Dental Operatory" 
+                             class="w-full h-[450px] object-cover object-center transform group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-6 rounded-2xl glass-card backdrop-blur-xl">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-cyan-500/20 border border-cyan-500/30 flex items-center justify-center text-cyan-400">
+                                    <i class="fa-solid fa-hospital-user text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white text-base">Shyam Dental Care</h4>
+                                    <p class="text-xs text-slate-400">Advanced General Dentistry & Oral Healthcare Solutions</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div>
+                    <span class="text-cyan-400 font-semibold text-xs uppercase tracking-widest block mb-2">Excellence in Dental Care</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-6 leading-tight">
+                        Comprehensive Dental Health Tailored to Your Unique Needs
+                    </h2>
+                    <p class="text-slate-400 mb-6 leading-relaxed">
+                        At Shyam Dental Care, Dr. Madhurya Shekhawat delivers personalized dental treatments with an emphasis on gentle, empathetic care. Utilizing modern dental techniques and diagnostic tools, every procedure is performed with strict hygiene protocols and patient comfort in mind.
+                    </p>
+
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-lg bg-indigo-500/20 text-indigo-400 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-check text-sm"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-white">Preventive & Maintenance Care</h3>
+                                <p class="text-xs text-slate-400">Comprehensive checkups, scaling, polishing, and early diagnostic assessments.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-lg bg-cyan-500/20 text-cyan-400 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-check text-sm"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-white">Restorative Dentistry</h3>
+                                <p class="text-xs text-slate-400">High-grade composite tooth-colored fillings, crowns, and structural restorations.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-lg bg-purple-500/20 text-purple-400 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-check text-sm"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-white">Patient-Centric Comfort</h3>
+                                <p class="text-xs text-slate-400">Painless treatment options designed to eliminate dental anxiety for all ages.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-cyan-400 font-semibold text-xs uppercase tracking-widest block mb-2">Our Key Treatments</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">Complete Dental Solutions</h2>
+                <p class="text-slate-400 text-sm">Providing top-quality dental care aimed at preserving natural teeth and boosting confidence.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="glass-card rounded-2xl p-8 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-cyan-500/20 to-indigo-500/20 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-teeth-open"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">General Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Routine oral examinations, cavity detection, tooth cleaning, and overall oral hygiene management.</p>
+                    <a href="#contact" class="text-cyan-400 text-xs font-semibold inline-flex items-center gap-1 group-hover:gap-2 transition-all">Book Session <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="glass-card rounded-2xl p-8 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-indigo-500/20 to-purple-500/20 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Cosmetic Enhancement</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Teeth whitening, smile design, stain removal, and aesthetic bonding for a brilliant smile.</p>
+                    <a href="#contact" class="text-indigo-400 text-xs font-semibold inline-flex items-center gap-1 group-hover:gap-2 transition-all">Book Session <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="glass-card rounded-2xl p-8 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-purple-500/20 to-pink-500/20 border border-purple-500/30 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Root Canal Therapy</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Effective endodontic treatments to save infected natural teeth and relieve toothaches smoothly.</p>
+                    <a href="#contact" class="text-purple-400 text-xs font-semibold inline-flex items-center gap-1 group-hover:gap-2 transition-all">Book Session <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="glass-card rounded-2xl p-8 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-emerald-500/20 to-cyan-500/20 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Preventive Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Fluoride treatments, dental sealants, and custom mouthguards to safeguard enamel against decay.</p>
+                    <a href="#contact" class="text-emerald-400 text-xs font-semibold inline-flex items-center gap-1 group-hover:gap-2 transition-all">Book Session <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="glass-card rounded-2xl p-8 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-pink-500/20 to-red-500/20 border border-pink-500/30 flex items-center justify-center text-pink-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Crowns & Bridges</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Custom restorative ceramic crowns and prosthetic bridges designed for long-lasting functionality.</p>
+                    <a href="#contact" class="text-pink-400 text-xs font-semibold inline-flex items-center gap-1 group-hover:gap-2 transition-all">Book Session <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="glass-card rounded-2xl p-8 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-amber-500/20 to-orange-500/20 border border-amber-500/30 flex items-center justify-center text-amber-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-child-reaching"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Pediatric Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Friendly and gentle dental consultations crafted specifically to make young patients feel at ease.</p>
+                    <a href="#contact" class="text-amber-400 text-xs font-semibold inline-flex items-center gap-1 group-hover:gap-2 transition-all">Book Session <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-24 bg-slate-950/60 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-cyan-400 font-semibold text-xs uppercase tracking-widest block mb-2">Patient Feedback</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Trusted by Our Patients</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-400 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Dr. Madhurya Shekhawat made my dental checkup completely stress-free. The clinic setting at Shyam Dental Care is modern, ultra-clean, and very comforting."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 font-bold flex items-center justify-center text-sm">A.P.</div>
+                        <div>
+                            <p class="text-sm font-semibold text-white">Ananya Sharma</p>
+                            <p class="text-xs text-slate-500">Regular Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-400 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Extremely gentle hands during my root canal procedure. Dr. Shekhawat explained every step clearly and made sure I felt zero pain throughout."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 font-bold flex items-center justify-center text-sm">R.K.</div>
+                        <div>
+                            <p class="text-sm font-semibold text-white">Rajesh Kumar</p>
+                            <p class="text-xs text-slate-500">Tooth Restoration</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-400 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Top notch hygiene and professional care! The teeth whitening treatment results exceeded my expectations. Highly recommended!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 font-bold flex items-center justify-center text-sm">P.M.</div>
+                        <div>
+                            <p class="text-sm font-semibold text-white">Pooja Mehra</p>
+                            <p class="text-xs text-slate-500">Cosmetic Treatment</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Consultation Form -->
+    <section id="contact" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 glass-card p-8 sm:p-12 rounded-3xl border border-slate-800">
+                
+                <div>
+                    <span class="text-cyan-400 font-semibold text-xs uppercase tracking-widest block mb-2">Get in Touch</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-6">Schedule Your Visit Today</h2>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-8">
+                        Ready for a healthier, brighter smile? Send an appointment request or contact Dr. Madhurya Shekhawat directly at Shyam Dental Care.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400">
+                                <i class="fa-solid fa-clinic-medical"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Practice Location</p>
+                                <p class="text-sm font-semibold text-white">Shyam Dental Care Clinic</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400">
+                                <i class="fa-solid fa-user-doctor"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Consultant</p>
+                                <p class="text-sm font-semibold text-white">Dr. Madhurya Shekhawat</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Working Hours</p>
+                                <p class="text-sm font-semibold text-white">Mon - Sat: 9:00 AM - 7:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <form onsubmit="event.preventDefault(); alert('Appointment request submitted successfully!');" class="space-y-4">
+                    <div>
+                        <label class="block text-xs text-slate-400 font-medium mb-1">Full Name</label>
+                        <input type="text" placeholder="John Doe" required class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-800 text-white text-sm focus:outline-none focus:border-cyan-500 transition-colors">
+                    </div>
+                    <div>
+                        <label class="block text-xs text-slate-400 font-medium mb-1">Phone Number / Email</label>
+                        <input type="text" placeholder="yourname@example.com / +91..." required class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-800 text-white text-sm focus:outline-none focus:border-cyan-500 transition-colors">
+                    </div>
+                    <div>
+                        <label class="block text-xs text-slate-400 font-medium mb-1">Preferred Treatment</label>
+                        <select class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-800 text-slate-300 text-sm focus:outline-none focus:border-cyan-500 transition-colors">
+                            <option>General Oral Checkup</option>
+                            <option>Teeth Cleaning & Polishing</option>
+                            <option>Cosmetic Whitening</option>
+                            <option>Root Canal Treatment</option>
+                            <option>Dental Fillings / Crowns</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs text-slate-400 font-medium mb-1">Message / Notes</label>
+                        <textarea rows="3" placeholder="Specify any pain or preferences..." class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-800 text-white text-sm focus:outline-none focus:border-cyan-500 transition-colors"></textarea>
+                    </div>
+                    <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-600 to-purple-600 text-white font-bold text-sm tracking-wide shadow-lg shadow-cyan-500/25 hover:opacity-95 transition-all">
+                        Confirm Appointment Request
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-900 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© 2026 Dr. Madhurya Shekhawat — General Dental Practitioner at Shyam Dental Care.</p>
+            <div class="flex items-center gap-6">
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-linkedin text-lg"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-solid fa-envelope text-lg"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-solid fa-phone text-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
