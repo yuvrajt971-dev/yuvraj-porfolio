@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debaprasad Nayak | Technology Leader & Digital Architect</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f5ff',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            900: '#0f172a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(99, 102, 241, 0.3);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #818cf8 0%, #c084fc 50%, #f472b6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .border-gradient {
+            border-image: linear-gradient(to right, #6366f1, #a855f7, #ec4899) 1;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- Background Glowing Orbs -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none -z-10">
+        <div class="absolute -top-40 -left-40 w-96 h-96 bg-indigo-600/20 rounded-full blur-3xl"></div>
+        <div class="absolute top-1/3 -right-40 w-96 h-96 bg-purple-600/20 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-40 left-1/3 w-96 h-96 bg-pink-600/20 rounded-full blur-3xl"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-indigo-500/30 group-hover:scale-105 transition-transform duration-300">
+                    DN
+                </div>
+                <span class="font-extrabold text-xl tracking-tight text-white group-hover:text-indigo-400 transition-colors">Debaprasad Nayak</span>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
+                <a href="#about" class="hover:text-white transition-colors">About</a>
+                <a href="#expertise" class="hover:text-white transition-colors">Expertise</a>
+                <a href="#services" class="hover:text-white transition-colors">Services</a>
+                <a href="#testimonials" class="hover:text-white transition-colors">Testimonials</a>
+                <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+            </nav>
+
+            <div class="hidden md:flex items-center gap-4">
+                <a href="#contact" class="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-semibold rounded-xl group bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 group-hover:from-indigo-500 group-hover:to-pink-500 hover:text-white text-white shadow-lg shadow-indigo-500/20">
+                    <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-slate-950 rounded-[10px] group-hover:bg-opacity-0">
+                        Let's Connect
+                    </span>
+                </a>
+            </div>
+
+            <button class="md:hidden text-slate-400 hover:text-white text-2xl" id="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-20">
+
+        <!-- Hero Section -->
+        <section class="min-h-[90vh] flex items-center justify-center relative py-20 px-6">
+            <div class="max-w-5xl mx-auto text-center flex flex-col items-center">
+                
+                <!-- Avatar Frame -->
+                <div class="relative mb-8 group">
+                    <div class="absolute -inset-1.5 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full blur-md opacity-75 group-hover:opacity-100 transition duration-500 group-hover:scale-105 animate-pulse"></div>
+                    <img src="https://ui-avatars.com/api/?name=Debaprasad+Nayak&size=200&background=0D8ABC&color=fff&bold=true" 
+                         alt="Debaprasad Nayak" 
+                         class="relative w-36 h-36 md:w-44 md:h-44 rounded-full border-4 border-slate-950 object-cover shadow-2xl">
+                </div>
+
+                <!-- Status Pill -->
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 text-xs font-semibold text-indigo-400 mb-6 backdrop-blur-xl">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                    Available for Strategic Advisory & Leadership Roles
+                </div>
+
+                <!-- Headline -->
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
+                    Architecting the Future of <br class="hidden sm:block"/>
+                    <span class="text-gradient">Digital Innovation & Tech Strategy</span>
+                </h1>
+
+                <!-- Subtitle -->
+                <p class="text-slate-400 text-lg md:text-xl max-w-3xl mb-10 font-normal leading-relaxed">
+                    Hi, I'm <strong class="text-slate-200">Debaprasad Nayak</strong>. I specialize in building enterprise-grade digital systems, scaling technology infrastructure, and executing transformative software solution strategies.
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row items-center gap-4 w-full justify-center">
+                    <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold shadow-xl shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.02] transition-all duration-300 flex items-center justify-center gap-2">
+                        <span>Initiate Project</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                    <a href="#about" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-300 font-semibold hover:text-white transition-all duration-300 flex items-center justify-center gap-2">
+                        <i class="fa-regular fa-user"></i>
+                        <span>Explore Overview</span>
+                    </a>
+                </div>
+
+                <!-- Trust Badges -->
+                <div class="mt-16 pt-8 border-t border-slate-800/60 w-full grid grid-cols-2 md:grid-cols-4 gap-6 text-slate-400 text-xs font-medium uppercase tracking-wider">
+                    <div class="flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-shield-halved text-indigo-400 text-base"></i> Enterprise Scalability
+                    </div>
+                    <div class="flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-code-branch text-purple-400 text-base"></i> Modern Architecture
+                    </div>
+                    <div class="flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-brain text-pink-400 text-base"></i> AI & Cloud Integration
+                    </div>
+                    <div class="flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-chart-line text-emerald-400 text-base"></i> Product Strategy
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About & Expertise Section -->
+        <section id="about" class="py-24 px-6 relative border-t border-slate-900">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- Left Column: Image -->
+                    <div class="lg:col-span-5 relative">
+                        <div class="relative rounded-3xl overflow-hidden border border-slate-800 shadow-2xl group">
+                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Tech Collaboration" 
+                                 class="w-full h-[450px] object-cover group-hover:scale-105 transition duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                            
+                            <!-- Floating Card -->
+                            <div class="absolute bottom-6 left-6 right-6 p-6 rounded-2xl bg-slate-900/80 backdrop-blur-xl border border-slate-800">
+                                <div class="flex items-center gap-4">
+                                    <div class="w-12 h-12 rounded-xl bg-indigo-500/20 border border-indigo-500/40 flex items-center justify-center text-indigo-400 text-xl font-bold">
+                                        <i class="fa-solid fa-network-wired"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-white text-base">Connected Executive</h4>
+                                        <p class="text-xs text-slate-400">Verified Network Member since Aug 2026</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Text & Skills -->
+                    <div class="lg:col-span-7">
+                        <span class="text-xs font-bold uppercase tracking-widest text-indigo-400 mb-3 block">Background & Strategic Focus</span>
+                        <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-6 leading-tight">
+                            Driving Digital Excellence Through Strategic Engineering
+                        </h2>
+                        <p class="text-slate-400 mb-6 leading-relaxed">
+                            With extensive expertise in digital infrastructure and strategic technology deployment, I partner with organizations to solve complex technical challenges. My approach combines robust engineering practices with visionary execution to deliver sustainable business value.
+                        </p>
+
+                        <!-- Highlights Grid -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                            <div class="p-4 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300">
+                                <div class="text-indigo-400 text-lg mb-2"><i class="fa-solid fa-cubes"></i></div>
+                                <h3 class="font-bold text-white mb-1 text-sm">System Architecture</h3>
+                                <p class="text-xs text-slate-400">Designing resilient, microservice-driven enterprise ecosystems.</p>
+                            </div>
+                            <div class="p-4 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300">
+                                <div class="text-purple-400 text-lg mb-2"><i class="fa-solid fa-rocket"></i></div>
+                                <h3 class="font-bold text-white mb-1 text-sm">Product Leadership</h3>
+                                <p class="text-xs text-slate-400">Guiding tech projects from roadmap planning to flawless launch.</p>
+                            </div>
+                            <div class="p-4 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300">
+                                <div class="text-pink-400 text-lg mb-2"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+                                <h3 class="font-bold text-white mb-1 text-sm">Cloud Modernization</h3>
+                                <p class="text-xs text-slate-400">Optimizing multi-cloud setups for security and cost efficiency.</p>
+                            </div>
+                            <div class="p-4 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300">
+                                <div class="text-emerald-400 text-lg mb-2"><i class="fa-solid fa-lock"></i></div>
+                                <h3 class="font-bold text-white mb-1 text-sm">Security & Compliance</h3>
+                                <p class="text-xs text-slate-400">Implementing strict governance and zero-trust security standards.</p>
+                            </div>
+                        </div>
+
+                        <!-- Skill Tags -->
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-xs font-semibold text-slate-300">Distributed Systems</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-xs font-semibold text-slate-300">API Architecture</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-xs font-semibold text-slate-300">DevOps & CI/CD</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-xs font-semibold text-slate-300">Data Engineering</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-xs font-semibold text-slate-300">Agile Management</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Grid -->
+        <section id="services" class="py-24 px-6 relative bg-slate-950/50 border-t border-slate-900">
+            <div class="max-w-7xl mx-auto">
+                
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-xs font-bold uppercase tracking-widest text-pink-400 mb-3 block">Offerings</span>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">High-Impact Professional Services</h2>
+                    <p class="text-slate-400 text-sm md:text-base">Targeted capabilities engineered to accelerate growth, enhance agility, and ensure technical dominance.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Card 1 -->
+                    <div class="p-8 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 group hover:-translate-y-2">
+                        <div class="w-14 h-14 rounded-2xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Custom Web & System Solutions</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Building performant, responsive, and secure digital applications engineered for global scale and bulletproof reliability.</p>
+                        <a href="#contact" class="inline-flex items-center gap-2 text-indigo-400 text-xs font-bold group-hover:text-indigo-300">
+                            <span>Learn More</span> <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="p-8 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 transition-all duration-300 group hover:-translate-y-2">
+                        <div class="w-14 h-14 rounded-2xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:bg-purple-500 group-hover:text-white transition-all duration-300">
+                            <i class="fa-solid fa-cloud"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Cloud Infrastructure & DevOps</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Designing modern AWS/Azure cloud architectures, automated deployment pipelines, and high-availability systems.</p>
+                        <a href="#contact" class="inline-flex items-center gap-2 text-purple-400 text-xs font-bold group-hover:text-purple-300">
+                            <span>Learn More</span> <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="p-8 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-pink-500/50 transition-all duration-300 group hover:-translate-y-2">
+                        <div class="w-14 h-14 rounded-2xl bg-pink-500/10 border border-pink-500/30 flex items-center justify-center text-pink-400 text-2xl mb-6 group-hover:bg-pink-500 group-hover:text-white transition-all duration-300">
+                            <i class="fa-solid fa-diagram-project"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Technical Advisory & Strategy</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Providing strategic leadership to align tech investments, modernizing legacy systems, and leading high-performing teams.</p>
+                        <a href="#contact" class="inline-flex items-center gap-2 text-pink-400 text-xs font-bold group-hover:text-pink-300">
+                            <span>Learn More</span> <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-24 px-6 relative border-t border-slate-900">
+            <div class="max-w-7xl mx-auto">
+                
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-xs font-bold uppercase tracking-widest text-indigo-400 mb-3 block">Endorsements</span>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">Trusted by Industry Leaders</h2>
+                    <p class="text-slate-400 text-sm md:text-base">What colleagues and partners say about working with me.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <!-- Testimonial 1 -->
+                    <div class="p-8 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex flex-col justify-between">
+                        <div>
+                            <div class="flex text-amber-400 gap-1 mb-4 text-xs">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                                "Debaprasad brings a rare mix of deep technical mastery and clear strategic vision. He transformed our technical roadmap into actionable execution flawlessly."
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                            <img src="https://ui-avatars.com/api/?name=Sarah+Jenkins&background=6366f1&color=fff" class="w-10 h-10 rounded-full" alt="Client Avatar">
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Sarah Jenkins</h4>
+                                <p class="text-xs text-slate-500">VP of Engineering</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="p-8 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex flex-col justify-between">
+                        <div>
+                            <div class="flex text-amber-400 gap-1 mb-4 text-xs">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                                "Outstanding problem solver. Debaprasad's architectural guidance allowed our platform to handle 10x scale while cutting cloud infrastructure overhead significantly."
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                            <img src="https://ui-avatars.com/api/?name=Michael+Chen&background=a855f7&color=fff" class="w-10 h-10 rounded-full" alt="Client Avatar">
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Michael Chen</h4>
+                                <p class="text-xs text-slate-500">Chief Technology Officer</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="p-8 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex flex-col justify-between">
+                        <div>
+                            <div class="flex text-amber-400 gap-1 mb-4 text-xs">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                                "Collaborating with Debaprasad was seamless. His ability to lead complex engineering initiatives with crystal-clear communication is top tier."
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                            <img src="https://ui-avatars.com/api/?name=Alex+Morgan&background=ec4899&color=fff" class="w-10 h-10 rounded-full" alt="Client Avatar">
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Alex Morgan</h4>
+                                <p class="text-xs text-slate-500">Director of Product Strategy</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-24 px-6 relative border-t border-slate-900 bg-slate-950">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    
+                    <!-- Contact Info -->
+                    <div class="lg:col-span-5">
+                        <span class="text-xs font-bold uppercase tracking-widest text-indigo-400 mb-3 block">Get In Touch</span>
+                        <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-6">Let's Build Something Extraordinary Together</h2>
+                        <p class="text-slate-400 mb-8 leading-relaxed">
+                            Interested in initiating a project, strategic advisory, or discussing potential collaboration opportunities? Send me a direct inquiry.
+                        </p>
+
+                        <div class="space-y-6">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-2xl bg-slate-900 border border-slate-800 flex items-center justify-center text-indigo-400">
+                                    <i class="fa-regular fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <span class="text-xs text-slate-500 uppercase font-semibold">Direct Contact</span>
+                                    <p class="text-white font-medium">debaprasad.nayak@network.executive</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-2xl bg-slate-900 border border-slate-800 flex items-center justify-center text-purple-400">
+                                    <i class="fa-solid fa-calendar-check"></i>
+                                </div>
+                                <div>
+                                    <span class="text-xs text-slate-500 uppercase font-semibold">Network Connection</span>
+                                    <p class="text-white font-medium">Established 29 Aug 2026</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-2xl bg-slate-900 border border-slate-800 flex items-center justify-center text-pink-400">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <span class="text-xs text-slate-500 uppercase font-semibold">Global Operations</span>
+                                    <p class="text-white font-medium">Remote & Global Strategic Engagements</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="lg:col-span-7">
+                        <form onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent successfully.');" class="p-8 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 space-y-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Your Name</label>
+                                    <input type="text" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-indigo-500 transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Your Email</label>
+                                    <input type="email" required placeholder="john@company.com" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-indigo-500 transition-colors">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Subject</label>
+                                <input type="text" required placeholder="Strategic Engagement / Collaboration Inquiry" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-indigo-500 transition-colors">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Message</label>
+                                <textarea rows="4" required placeholder="Outline your inquiry or project details..." class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-indigo-500 transition-colors"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-bold tracking-wide hover:shadow-lg hover:shadow-indigo-500/25 hover:scale-[1.01] transition-all duration-300">
+                                Send Direct Message
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-slate-900 bg-slate-950 text-slate-500 text-sm text-center">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-2">
+                <div class="w-7 h-7 rounded-lg bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-xs">DN</div>
+                <span class="text-slate-300 font-semibold">Debaprasad Nayak</span>
+            </div>
+            <p>© 2026 Debaprasad Nayak. All rights reserved. Ultra-Premium Portfolio Showcase.</p>
+            <div class="flex gap-4 text-slate-400 text-base">
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
