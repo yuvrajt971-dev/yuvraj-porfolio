@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Tarandeep Kaur | Event Curator & VIP Guest Listing Specialist</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            purple: '#8B5CF6',
+                            pink: '#EC4899',
+                            indigo: '#6366F1',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(139, 92, 246, 0.3);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #6366F1 0%, #8B5CF6 50%, #EC4899 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-border {
+            position: relative;
+            border-radius: 9999px;
+            background: linear-gradient(135deg, #6366F1, #8B5CF6, #EC4899);
+            padding: 4px;
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card:hover {
+            border-color: rgba(139, 92, 246, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- Background Ambient Glows -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
+        <div class="absolute -top-40 -left-40 w-96 h-96 bg-indigo-600/20 rounded-full blur-3xl"></div>
+        <div class="absolute top-1/3 -right-40 w-96 h-96 bg-purple-600/20 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-40 left-1/3 w-96 h-96 bg-pink-600/15 rounded-full blur-3xl"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 to-pink-500 flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-indigo-500/30 group-hover:scale-105 transition-transform duration-300">
+                    TK
+                </div>
+                <span class="font-bold text-xl tracking-tight text-white group-hover:text-indigo-400 transition-colors">
+                    Dr. Tarandeep Kaur
+                </span>
+            </a>
+
+            <!-- Desktop Links -->
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-white transition-colors">About</a>
+                <a href="#expertise" class="hover:text-white transition-colors">Expertise</a>
+                <a href="#services" class="hover:text-white transition-colors">Services</a>
+                <a href="#testimonials" class="hover:text-white transition-colors">Testimonials</a>
+            </div>
+
+            <div class="hidden md:flex items-center gap-4">
+                <a href="#contact" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold text-sm shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40 hover:scale-105 transition-all duration-300">
+                    Get In Touch
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden text-slate-300 hover:text-white text-2xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-6 py-4 flex flex-col gap-4 text-slate-300 font-medium">
+            <a href="#about" class="hover:text-white transition-colors" onclick="document.getElementById('mobile-menu').classList.add('hidden')">About</a>
+            <a href="#expertise" class="hover:text-white transition-colors" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Expertise</a>
+            <a href="#services" class="hover:text-white transition-colors" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Services</a>
+            <a href="#testimonials" class="hover:text-white transition-colors" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Testimonials</a>
+            <a href="#contact" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-indigo-500 to-pink-500 text-white font-semibold text-sm text-center shadow-lg shadow-purple-500/25" onclick="document.getElementById('mobile-menu').classList.add('hidden')">
+                Get In Touch
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Left Text Column -->
+                <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/90 border border-slate-800 text-indigo-400 text-sm font-semibold shadow-inner">
+                        <span class="w-2 h-2 rounded-full bg-indigo-500 animate-pulse"></span>
+                        Premier Event Curator & Guest Listing Specialist
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-[1.1]">
+                        Curating <span class="text-gradient">Unforgettable</span> VIP Experiences.
+                    </h1>
+
+                    <p class="text-slate-400 text-lg sm:text-xl max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+                        Elevating high-profile gatherings, luxury brand activations, and bespoke galas through meticulous guest strategy, executive protocol, and seamless event management.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-bold text-base shadow-xl shadow-purple-500/30 hover:shadow-purple-500/50 hover:scale-105 transition-all duration-300 flex items-center justify-center gap-3">
+                            <span>Request Consultation</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-full bg-slate-900/80 border border-slate-800 text-slate-200 hover:text-white hover:border-slate-700 font-semibold text-base transition-all duration-300 flex items-center justify-center">
+                            Explore Services
+                        </a>
+                    </div>
+
+                    <!-- Trust Stats Badge Grid -->
+                    <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0">
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-white">150+</p>
+                            <p class="text-xs sm:text-sm text-slate-400">Curated Events</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-gradient">99%</p>
+                            <p class="text-xs sm:text-sm text-slate-400">VIP Attendance</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-white">100%</p>
+                            <p class="text-xs sm:text-sm text-slate-400">Discretion & Prestige</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Profile Frame Column -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative">
+                        <!-- Background Decorative Glow Ring -->
+                        <div class="absolute inset-0 rounded-full bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 blur-2xl opacity-40 animate-pulse"></div>
+                        
+                        <!-- Glowing Double-Gradient Avatar Frame -->
+                        <div class="gradient-border glow-effect relative z-10">
+                            <div class="p-2 bg-slate-950 rounded-full">
+                                <img src="https://ui-avatars.com/api/?name=Dr.Tarandeep+Kaur&size=200&background=0D8ABC&color=fff&bold=true" 
+                                     alt="Dr. Tarandeep Kaur" 
+                                     class="w-56 h-56 sm:w-72 sm:h-72 rounded-full object-cover shadow-2xl">
+                            </div>
+                        </div>
+
+                        <!-- Floating Glass Badge -->
+                        <div class="absolute -bottom-6 left-1/2 -translate-x-1/2 z-20 glass-card px-6 py-3 rounded-full flex items-center gap-3 border border-indigo-500/30 whitespace-nowrap shadow-xl">
+                            <div class="w-3 h-3 rounded-full bg-emerald-400 animate-ping"></div>
+                            <span class="text-xs font-semibold tracking-wide text-slate-200">Available for Luxury Projects</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-24 relative z-10 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Image Column -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative rounded-3xl overflow-hidden glass-card p-3 border border-slate-800 shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" 
+                             alt="Event Curation & Team Strategic Planning" 
+                             class="rounded-2xl w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <p class="text-xs font-semibold uppercase tracking-wider text-indigo-400">Mastery in Action</p>
+                            <p class="text-white font-bold text-lg">Designing high-stakes engagements with effortless flair.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Description Column -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 text-purple-400 text-xs font-semibold uppercase tracking-wider">
+                        About Dr. Tarandeep Kaur
+                    </div>
+                    
+                    <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight">
+                        Transforming Gatherings into <span class="text-gradient">Iconic Milestones</span>.
+                    </h2>
+
+                    <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+                        With an exceptional track record in event orchestration and strategic guest list management, Dr. Tarandeep Kaur bridges the gap between high-level vision and execution. Specializing in bespoke event curation, she connects brands, leaders, and influencers in environments tailored to inspire impact.
+                    </p>
+
+                    <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
+                        From ultra-exclusive galas to high-level executive summits, her approach integrates precise guest targeting, luxury brand aesthetics, and absolute operational discretion.
+                    </p>
+
+                    <!-- Core Skill Pills -->
+                    <div id="expertise" class="pt-4 flex flex-wrap gap-3">
+                        <span class="px-4 py-2 rounded-xl glass-card text-xs font-semibold text-slate-200 border border-slate-800 flex items-center gap-2">
+                            <i class="fa-solid fa-gem text-indigo-400"></i> VIP Guest Curation
+                        </span>
+                        <span class="px-4 py-2 rounded-xl glass-card text-xs font-semibold text-slate-200 border border-slate-800 flex items-center gap-2">
+                            <i class="fa-solid fa-wand-magic-sparkles text-purple-400"></i> Experiential Design
+                        </span>
+                        <span class="px-4 py-2 rounded-xl glass-card text-xs font-semibold text-slate-200 border border-slate-800 flex items-center gap-2">
+                            <i class="fa-solid fa-handshake text-pink-400"></i> HNW & Executive Outreach
+                        </span>
+                        <span class="px-4 py-2 rounded-xl glass-card text-xs font-semibold text-slate-200 border border-slate-800 flex items-center gap-2">
+                            <i class="fa-solid fa-chess-king text-indigo-400"></i> Protocol Management
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid Section -->
+    <section id="services" class="py-24 relative z-10 bg-slate-950/50 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 text-pink-400 text-xs font-semibold uppercase tracking-wider">
+                    Tailored Offerings
+                </div>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
+                    World-Class <span class="text-gradient">Services</span>
+                </h2>
+                <p class="text-slate-400 text-base sm:text-lg">
+                    Comprehensive solutions designed to guarantee your high-profile event leaves an indelible mark.
+                </p>
+            </div>
+
+            <!-- Service Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="glass-card p-8 rounded-3xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-indigo-500 to-indigo-700 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-indigo-500/30 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-crown"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-indigo-400 transition-colors">
+                        Bespoke Event Curation
+                    </h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        End-to-end thematic conceptualization, high-end production oversight, and luxury venue sourcing customized for elite audiences.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="glass-card p-8 rounded-3xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-purple-500 to-purple-700 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-purple-500/30 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-users-viewfinder"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">
+                        VIP Guest Listing & Outreach
+                    </h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Strategic guest acquiring, private invitation management, and high-conversion RSVP coordination for exclusive lists.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="glass-card p-8 rounded-3xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-pink-500 to-pink-700 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-pink-500/30 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-pink-400 transition-colors">
+                        Experiential Brand Activations
+                    </h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Crafting immersive, memorable brand moments that captivate attendees, generate buzz, and foster meaningful connections.
+                    </p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="glass-card p-8 rounded-3xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-indigo-500 to-purple-500 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-indigo-500/30 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-handshake-angle"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-indigo-400 transition-colors">
+                        Sponsorship & Partner Curation
+                    </h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Connecting event concepts with strategic corporate sponsors and luxury brand partners for win-win brand alignments.
+                    </p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="glass-card p-8 rounded-3xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-purple-500 to-pink-500 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-purple-500/30 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">
+                        Executive Protocol & Security
+                    </h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Seamless management of executive arrival protocols, private access control, and high-grade security coordination.
+                    </p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="glass-card p-8 rounded-3xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-pink-500 to-indigo-500 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-pink-500/30 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-pink-400 transition-colors">
+                        Post-Event Analytics & Impact
+                    </h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Comprehensive follow-up strategies, attendee feedback analytics, and ROI reporting for continuous brand elevation.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 relative z-10 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 text-indigo-400 text-xs font-semibold uppercase tracking-wider">
+                    Client Endorsements
+                </div>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
+                    Trusted by <span class="text-gradient">Industry Leaders</span>
+                </h2>
+                <p class="text-slate-400 text-base sm:text-lg">
+                    Hear from top executives and brands who have experienced Dr. Kaur’s signature curation.
+                </p>
+            </div>
+
+            <!-- Testimonial Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <div class="glass-card p-8 rounded-3xl flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "Dr. Tarandeep transformed our annual private gala into an extraordinary experience. Her ability to secure top-tier VIP guests while maintaining flawless execution is unmatched."
+                        </p>
+                    </div>
+                    <div class="pt-6 border-t border-slate-800/80 mt-6 flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-500 flex items-center justify-center font-bold text-white text-sm">
+                            EA
+                        </div>
+                        <div>
+                            <p class="text-white font-semibold text-sm">Elena Rostova</p>
+                            <p class="text-slate-400 text-xs">Director of Global Events, Luxury Brand Co.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-3xl flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "The discretion, level of detail, and high-impact guest strategy Dr. Kaur delivered for our executive summit was simply impressive. Highly recommended."
+                        </p>
+                    </div>
+                    <div class="pt-6 border-t border-slate-800/80 mt-6 flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-purple-500 to-pink-500 flex items-center justify-center font-bold text-white text-sm">
+                            MS
+                        </div>
+                        <div>
+                            <p class="text-white font-semibold text-sm">Marcus Sterling</p>
+                            <p class="text-slate-400 text-xs">Managing Director, Apex Ventures</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-3xl flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "Working with Dr. Tarandeep Kaur guarantees peace of mind. Her guest listing management and guest experience setup are second to none."
+                        </p>
+                    </div>
+                    <div class="pt-6 border-t border-slate-800/80 mt-6 flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-pink-500 to-indigo-500 flex items-center justify-center font-bold text-white text-sm">
+                            SL
+                        </div>
+                        <div>
+                            <p class="text-white font-semibold text-sm">Sophia Laurent</p>
+                            <p class="text-slate-400 text-xs">Founder, Horizon Private Club</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 relative z-10 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Left Info Card -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 text-indigo-400 text-xs font-semibold uppercase tracking-wider mb-4">
+                            Let's Connect
+                        </div>
+                        <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
+                            Initiate Your Next <span class="text-gradient">Masterpiece Event</span>.
+                        </h2>
+                        <p class="text-slate-400 text-base mt-4 leading-relaxed">
+                            Reach out to discuss bespoke event curation, VIP guest list coordination, or strategic brand consultations.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="glass-card p-5 rounded-2xl flex items-center gap-4 border border-slate-800">
+                            <div class="w-12 h-12 rounded-xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 uppercase font-semibold">Direct Inquiries</p>
+                                <a href="mailto:contact@drtarandeepkaur.com" class="text-slate-200 hover:text-indigo-400 font-medium text-sm transition-colors">
+                                    contact@drtarandeepkaur.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="glass-card p-5 rounded-2xl flex items-center gap-4 border border-slate-800">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/20 text-purple-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 uppercase font-semibold">Location & Availability</p>
+                                <p class="text-slate-200 font-medium text-sm">Global Concierge & On-site Activation</p>
+                            </div>
+                        </div>
+
+                        <div class="glass-card p-5 rounded-2xl flex items-center gap-4 border border-slate-800">
+                            <div class="w-12 h-12 rounded-xl bg-pink-500/20 text-pink-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 uppercase font-semibold">Network Priority</p>
+                                <p class="text-slate-200 font-medium text-sm">Connected 30 Aug 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Contact Form -->
+                <div class="lg:col-span-7">
+                    <form onsubmit="event.preventDefault(); alert('Thank you, Dr. Kaur will be in touch shortly!');" class="glass-card p-8 sm:p-10 rounded-3xl space-y-6 border border-slate-800 shadow-2xl">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold uppercase text-slate-300 mb-2">Your Full Name</label>
+                                <input type="text" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-800 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold uppercase text-slate-300 mb-2">Email Address</label>
+                                <input type="email" required placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-800 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold uppercase text-slate-300 mb-2">Event Category & Scope</label>
+                            <input type="text" placeholder="e.g. Luxury Product Launch / Gala Dinner" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-800 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold uppercase text-slate-300 mb-2">Message & Vision</label>
+                            <textarea rows="4" required placeholder="Describe your project, timeline, and guest list requirements..." class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-800 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-bold text-base shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40 hover:scale-[1.01] transition-all duration-300 flex items-center justify-center gap-2">
+                            <span>Send Message</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 border-t border-slate-900 relative z-10 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p class="text-xs text-slate-500">
+                &copy; <script>document.write(new Date().getFullYear());</script> Dr. Tarandeep Kaur. All rights reserved.
+            </p>
+            <div class="flex items-center gap-6 text-slate-400 text-sm">
+                <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-linkedin text-lg"></i></a>
+                <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-instagram text-lg"></i></a>
+                <a href="#" class="hover:text-white transition-colors"><i class="fa-brands fa-twitter text-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
