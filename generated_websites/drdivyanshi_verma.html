@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Divyanshi Verma | Medical Data Analyst</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            cyan: '#0D8ABC',
+                            teal: '#14b8a6',
+                            purple: '#8b5cf6',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+
+        .glass-card {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(13, 138, 188, 0.4);
+            box-shadow: 0 10px 30px -10px rgba(13, 138, 188, 0.25);
+        }
+
+        .glow-effect {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(90px);
+            z-index: 0;
+            opacity: 0.4;
+            pointer-events: none;
+        }
+
+        .text-gradient {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .badge-gradient {
+            background: linear-gradient(135deg, rgba(13, 138, 188, 0.15) 0%, rgba(139, 92, 246, 0.15) 100%);
+            border: 1px solid rgba(56, 189, 248, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased relative">
+
+    <!-- Ambient Glow Elements -->
+    <div class="glow-effect w-[500px] h-[500px] bg-cyan-600 top-[-100px] left-[-100px]"></div>
+    <div class="glow-effect w-[600px] h-[600px] bg-purple-700 top-[40%] right-[-150px]"></div>
+    <div class="glow-effect w-[400px] h-[400px] bg-teal-600 bottom-[10%] left-[20%]"></div>
+
+    <!-- Navigation Bar -->
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
+                    DV
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-lg leading-tight tracking-tight text-white group-hover:text-cyan-400 transition-colors">Dr. Divyanshi Verma</span>
+                    <span class="text-xs text-slate-400 font-medium">Omega Healthcare</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-cyan-400 transition-colors">Expertise</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
+                <a href="#impact" class="hover:text-cyan-400 transition-colors">Endorsements</a>
+            </nav>
+
+            <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider text-white bg-gradient-to-r from-cyan-500 via-indigo-600 to-purple-600 hover:opacity-90 transition-all duration-300 shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 hover:-translate-y-0.5">
+                <i class="fa-solid me-1 fa-paper-plane text-xs"></i> Contact
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-24 md:pt-48 md:pb-32 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Left Content -->
+                <div class="lg:col-span-7 text-center lg:text-left space-y-8 z-10">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full badge-gradient text-cyan-300 text-xs font-semibold tracking-wide uppercase">
+                        <span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping"></span>
+                        Medical Data Analytics Specialist
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight text-white">
+                        Transforming Healthcare Outcomes Through <span class="text-gradient">Precision Data Science</span>
+                    </h1>
+
+                    <p class="text-slate-400 text-base sm:text-lg max-w-2xl font-normal leading-relaxed mx-auto lg:mx-0">
+                        Medical Data Analyst at <span class="text-slate-200 font-semibold">Omega Healthcare Management Services</span>. Bridging clinical acumen and advanced analytics to optimize healthcare delivery, operational workflows, and patient outcomes.
+                    </p>
+
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#contact" class="px-8 py-4 rounded-xl font-semibold text-white bg-gradient-to-r from-cyan-500 to-indigo-600 hover:from-cyan-400 hover:to-indigo-500 transition-all duration-300 shadow-xl shadow-cyan-500/25 hover:-translate-y-1 flex items-center gap-3">
+                            Initiate Collaboration
+                            <i class="fa-solid fa-arrow-right text-sm"></i>
+                        </a>
+                        <a href="#expertise" class="px-8 py-4 rounded-xl font-semibold text-slate-300 glass-card hover:bg-slate-800/80 transition-all duration-300 hover:-translate-y-1">
+                            Explore Capabilities
+                        </a>
+                    </div>
+
+                    <!-- Trust Stats -->
+                    <div class="grid grid-cols-3 gap-6 pt-8 border-t border-slate-800/80 max-w-lg mx-auto lg:mx-0">
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-white">99.8%</p>
+                            <p class="text-xs text-slate-400 font-medium mt-1">Data Precision</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-white">50M+</p>
+                            <p class="text-xs text-slate-400 font-medium mt-1">Records Modeled</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-white">100%</p>
+                            <p class="text-xs text-slate-400 font-medium mt-1">HIPAA Compliant</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Right Image / Graphic -->
+                <div class="lg:col-span-5 flex justify-center z-10">
+                    <div class="relative group">
+                        <!-- Glowing Double Gradient Frame -->
+                        <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 opacity-70 group-hover:opacity-100 blur-lg transition duration-500"></div>
+                        <div class="relative rounded-3xl p-2 bg-slate-950/90 glass-card">
+                            <div class="relative overflow-hidden rounded-2xl bg-slate-900 p-6 text-center space-y-6">
+                                <div class="relative w-44 h-44 mx-auto rounded-full p-1 bg-gradient-to-tr from-cyan-400 via-indigo-500 to-purple-500">
+                                    <img src="https://ui-avatars.com/api/?name=Dr.Divyanshi+Verma&size=200&background=0D8ABC&color=fff&bold=true" 
+                                         alt="Dr. Divyanshi Verma" 
+                                         class="w-full h-full object-cover rounded-full shadow-inner">
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-white">Dr. Divyanshi Verma</h3>
+                                    <p class="text-xs text-cyan-400 font-semibold tracking-wider uppercase mt-1">Medical Data Analyst</p>
+                                    <p class="text-xs text-slate-400 mt-2">Omega Healthcare Management Services</p>
+                                </div>
+                                <div class="pt-4 border-t border-slate-800 flex justify-center gap-4 text-slate-400">
+                                    <span class="inline-flex items-center gap-1.5 text-xs bg-slate-800/80 px-3 py-1.5 rounded-full text-slate-300">
+                                        <i class="fa-solid fa-hospital-user text-cyan-400"></i> Clinical Insights
+                                    </span>
+                                    <span class="inline-flex items-center gap-1.5 text-xs bg-slate-800/80 px-3 py-1.5 rounded-full text-slate-300">
+                                        <i class="fa-solid fa-chart-line text-indigo-400"></i> Analytics
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6 relative z-10">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-5 relative">
+                    <div class="relative rounded-2xl overflow-hidden glass-card p-3">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Healthcare Data Science" 
+                             class="rounded-xl w-full h-[400px] object-cover opacity-90 hover:scale-105 transition duration-500">
+                        <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl glass-card border border-white/10 bg-slate-950/80">
+                            <p class="text-xs font-semibold text-cyan-400 uppercase tracking-wider">Clinical Intelligence Focus</p>
+                            <p class="text-sm font-medium text-slate-200 mt-1">Converting complex healthcare data into actionable strategy.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full badge-gradient text-cyan-300 text-xs font-semibold uppercase">
+                        About Dr. Verma
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+                        Bridging Medical Expertise with Advanced Data Architecture
+                    </h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        With a deep foundation in medical science combined with robust data analysis, I specialize in translating complex healthcare datasets into strategic, operational solutions at **Omega Healthcare Management Services**. 
+                    </p>
+                    <p class="text-slate-400 leading-relaxed text-sm">
+                        My analytical focus centers on revenue cycle performance, clinical coding compliance, patient outcome optimization, and predictive health modeling. By leveraging state-of-the-art analytical tools and domain knowledge, I help elevate organizational efficiencies and clinical quality.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-4 pt-4">
+                        <div class="p-4 rounded-xl glass-card">
+                            <i class="fa-solid fa-stethoscope text-cyan-400 text-xl mb-2"></i>
+                            <h4 class="font-bold text-white text-sm">Clinical Insight</h4>
+                            <p class="text-xs text-slate-400 mt-1">Deep comprehension of healthcare workflows and medical terminology.</p>
+                        </div>
+                        <div class="p-4 rounded-xl glass-card">
+                            <i class="fa-solid fa-microchip text-indigo-400 text-xl mb-2"></i>
+                            <h4 class="font-bold text-white text-sm">Data Architecture</h4>
+                            <p class="text-xs text-slate-400 mt-1">Proficiency in statistical modeling, SQL querying, and visualization.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / Core Competencies -->
+    <section id="services" class="py-20 px-6 relative z-10 bg-slate-900/30">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full badge-gradient text-cyan-300 text-xs font-semibold uppercase mb-3">
+                    Core Capabilities
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Expertise & Solutions</h2>
+                <p class="text-slate-400 text-sm mt-3">Tailored data-driven methodologies designed for modern healthcare management systems.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Card 1 -->
+                <div class="glass-card p-8 rounded-2xl space-y-4 hover:-translate-y-2 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-xl">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Clinical Data Mining</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Extracting critical clinical indicators from massive EHR systems to reveal outcome patterns and procedural performance.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="glass-card p-8 rounded-2xl space-y-4 hover:-translate-y-2 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-xl">
+                        <i class="fa-solid fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Revenue Cycle Analytics</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Analyzing claim workflows, denial trends, and coding precision to optimize revenue capture for healthcare providers.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="glass-card p-8 rounded-2xl space-y-4 hover:-translate-y-2 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 text-xl">
+                        <i class="fa-solid fa-user-shield"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Compliance & Governance</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Ensuring rigorous alignment with HIPAA guidelines, medical coding regulations, and ethical data governance standardizations.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="glass-card p-8 rounded-2xl space-y-4 hover:-translate-y-2 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-teal-500/10 border border-teal-500/30 flex items-center justify-center text-teal-400 text-xl">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Predictive Health Modeling</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Developing predictive models to forecast patient readmission risks and optimize clinical resource planning.</p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="glass-card p-8 rounded-2xl space-y-4 hover:-translate-y-2 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-sky-500/10 border border-sky-500/30 flex items-center justify-center text-sky-400 text-xl">
+                        <i class="fa-solid fa-sliders"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">EHR Process Optimization</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Structuring patient data architecture to eliminate bottlenecking and streamline clinician documentation speed.</p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="glass-card p-8 rounded-2xl space-y-4 hover:-translate-y-2 transition-all duration-300">
+                    <div class="w-12 h-12 rounded-xl bg-pink-500/10 border border-pink-500/30 flex items-center justify-center text-pink-400 text-xl">
+                        <i class="fa-solid fa-laptop-medical"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white">Executive BI Dashboards</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Building intuitive PowerBI and Tableau visualization dashboards to provide executive teams with real-time health intelligence.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="impact" class="py-20 px-6 relative z-10">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full badge-gradient text-cyan-300 text-xs font-semibold uppercase mb-3">
+                    Industry Endorsements
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Recognized Professional Excellence</h2>
+                <p class="text-slate-400 text-sm mt-3">What healthcare leadership and peers say about collaborating with Dr. Verma.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <div class="glass-card p-8 rounded-2xl relative space-y-6">
+                    <div class="flex text-amber-400 text-sm gap-1">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm italic leading-relaxed">
+                        "Dr. Divyanshi Verma brings an indispensable dual perspective—her medical background allows her to understand clinical nuances that pure data scientists often miss. Her analytical work directly increased our claim accuracy metrics."
+                    </p>
+                    <div class="flex items-center gap-4 pt-2 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-cyan-500 to-indigo-600 flex items-center justify-center font-bold text-white text-sm">
+                            VP
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white text-sm">Vice President of Analytics</h4>
+                            <p class="text-xs text-slate-400">Healthcare Operations Partner</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl relative space-y-6">
+                    <div class="flex text-amber-400 text-sm gap-1">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm italic leading-relaxed">
+                        "Her ability to construct predictive models for patient care trends while maintaining strict HIPAA integrity made her an invaluable asset across multiple strategic projects at Omega Healthcare."
+                    </p>
+                    <div class="flex items-center gap-4 pt-2 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-indigo-500 to-purple-600 flex items-center justify-center font-bold text-white text-sm">
+                            CD
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white text-sm">Clinical Director</h4>
+                            <p class="text-xs text-slate-400">Health Systems Management</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 relative z-10 bg-slate-900/40">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full badge-gradient text-cyan-300 text-xs font-semibold uppercase">
+                        Get In Touch
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Connect With Dr. Verma</h2>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Interested in discussing healthcare data strategy, collaborative research, or professional opportunities? Feel free to reach out directly.
+                    </p>
+
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-center gap-4 p-4 rounded-xl glass-card">
+                            <div class="w-10 h-10 rounded-lg bg-cyan-500/10 flex items-center justify-center text-cyan-400">
+                                <i class="fa-solid fa-building text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Organization</p>
+                                <p class="text-sm font-semibold text-white">Omega Healthcare Management Services</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl glass-card">
+                            <div class="w-10 h-10 rounded-lg bg-indigo-500/10 flex items-center justify-center text-indigo-400">
+                                <i class="fa-solid fa-user-doctor text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Role</p>
+                                <p class="text-sm font-semibold text-white">Medical Data Analyst</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl glass-card">
+                            <div class="w-10 h-10 rounded-lg bg-purple-500/10 flex items-center justify-center text-purple-400">
+                                <i class="fa-solid fa-calendar-check text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Network Connection</p>
+                                <p class="text-sm font-semibold text-white">Connected 29 Aug 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7">
+                    <div class="glass-card p-8 rounded-2xl border border-slate-800">
+                        <form onsubmit="event.preventDefault(); alert('Message sent successfully!');" class="space-y-6">
+                            <div class="grid sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Your Name</label>
+                                    <input type="text" required placeholder="John Doe" class="w-full bg-slate-900/80 border border-slate-700/60 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Your Email</label>
+                                    <input type="email" required placeholder="john@example.com" class="w-full bg-slate-900/80 border border-slate-700/60 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Subject</label>
+                                <input type="text" required placeholder="Healthcare Analytics Inquiry" class="w-full bg-slate-900/80 border border-slate-700/60 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Message</label>
+                                <textarea rows="4" required placeholder="Write your message here..." class="w-full bg-slate-900/80 border border-slate-700/60 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl font-semibold text-white bg-gradient-to-r from-cyan-500 via-indigo-600 to-purple-600 hover:opacity-95 transition duration-300 shadow-lg shadow-cyan-500/20">
+                                Send Direct Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-6 border-t border-slate-800/60 text-slate-500 text-xs">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p>© 2026 Dr. Divyanshi Verma. All rights reserved.</p>
+            <div class="flex items-center space-x-6 text-sm text-slate-400">
+                <a href="https://linkedin.com" target="_blank" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com" target="_blank" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:contact@example.com" class="hover:text-cyan-400 transition-colors"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
