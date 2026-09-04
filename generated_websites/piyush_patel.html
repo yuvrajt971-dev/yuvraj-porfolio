@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piyush Patel | Senior Interior Designer</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f7ff',
+                            500: '#0d8abc',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -12px rgba(13, 138, 188, 0.35);
+        }
+        .gradient-border {
+            background: linear-gradient(135deg, #0d8abc, #a855f7, #ec4899);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-sky-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-500 to-indigo-600 flex items-center justify-center font-bold text-white text-xl shadow-lg shadow-sky-500/20 group-hover:scale-105 transition-transform">
+                    PP
+                </div>
+                <div>
+                    <span class="font-bold text-lg text-white block leading-tight">Piyush Patel</span>
+                    <span class="text-xs text-slate-400 block font-medium">Core Space Design</span>
+                </div>
+            </a>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-sky-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-sky-400 transition-colors">Expertise</a>
+                <a href="#portfolio" class="hover:text-sky-400 transition-colors">Projects</a>
+                <a href="#testimonials" class="hover:text-sky-400 transition-colors">Endorsements</a>
+                <a href="#contact" class="hover:text-sky-400 transition-colors">Contact</a>
+            </div>
+
+            <a href="#contact" class="hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-sky-500 to-indigo-600 text-white font-semibold text-sm shadow-md shadow-sky-500/25 hover:opacity-95 hover:shadow-sky-500/40 transition-all">
+                <span>Start a Project</span>
+                <i class="fa-solid font-xs fa-arrow-right"></i>
+            </a>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-btn" class="md:hidden text-slate-300 focus:outline-none" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-6 py-4 space-y-3">
+            <a href="#about" class="block text-slate-300 hover:text-sky-400 py-1">About</a>
+            <a href="#expertise" class="block text-slate-300 hover:text-sky-400 py-1">Expertise</a>
+            <a href="#portfolio" class="block text-slate-300 hover:text-sky-400 py-1">Projects</a>
+            <a href="#testimonials" class="block text-slate-300 hover:text-sky-400 py-1">Endorsements</a>
+            <a href="#contact" class="block text-slate-300 hover:text-sky-400 py-1">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-24 md:pt-48 md:pb-32 overflow-hidden flex items-center min-h-screen">
+        <!-- Background Ambient Glows -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-sky-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-10 right-10 w-[400px] h-[400px] bg-purple-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 w-full relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Left / Content -->
+                <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/90 border border-slate-800 text-sky-400 text-xs font-semibold uppercase tracking-wider shadow-inner">
+                        <span class="w-2 h-2 rounded-full bg-sky-400 animate-pulse"></span>
+                        Senior Interior Designer @ Core Space Design Consultants
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-[1.1]">
+                        Designing <span class="bg-clip-text text-transparent bg-gradient-to-r from-sky-400 via-indigo-400 to-pink-400">Atmospheric</span> & Functional Spaces
+                    </h1>
+
+                    <p class="text-slate-400 text-lg sm:text-xl max-w-2xl font-light leading-relaxed mx-auto lg:mx-0">
+                        Elevating corporate, commercial, and bespoke residential interiors through precision space planning, material innovation, and timeless architectural aesthetics.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#portfolio" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-sky-500 via-indigo-600 to-purple-600 text-white font-semibold shadow-lg shadow-sky-500/20 hover:shadow-sky-500/35 hover:scale-[1.02] transition-all text-center">
+                            View Featured Projects
+                        </a>
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900 border border-slate-800 text-slate-200 font-semibold hover:border-slate-700 hover:bg-slate-800/60 transition-all text-center">
+                            Let's Connect
+                        </a>
+                    </div>
+
+                    <!-- Trust Stats -->
+                    <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-6 text-center lg:text-left">
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-white">10+</div>
+                            <div class="text-xs text-slate-400 font-medium mt-1">Years Experience</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-white">150+</div>
+                            <div class="text-xs text-slate-400 font-medium mt-1">Spaces Transformed</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-white">100%</div>
+                            <div class="text-xs text-slate-400 font-medium mt-1">Design Precision</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Right / Avatar Frame -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative group">
+                        <!-- Glowing Outer Ring -->
+                        <div class="absolute -inset-1 rounded-3xl gradient-border blur-lg opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+                        
+                        <!-- Main Card -->
+                        <div class="relative w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-3xl bg-slate-900 border border-slate-800 p-4 flex flex-col items-center justify-center text-center shadow-2xl">
+                            <div class="relative mb-6">
+                                <div class="absolute -inset-1 bg-gradient-to-r from-sky-500 to-pink-500 rounded-full blur"></div>
+                                <img src="https://ui-avatars.com/api/?name=Piyush+Patel&size=200&background=0D8ABC&color=fff&bold=true" 
+                                     alt="Piyush Patel" 
+                                     class="relative w-36 h-36 sm:w-40 sm:h-40 rounded-full object-cover border-4 border-slate-950 shadow-md">
+                            </div>
+
+                            <h3 class="text-2xl font-bold text-white">Piyush Patel</h3>
+                            <p class="text-sky-400 font-medium text-sm mt-1">Senior Interior Designer</p>
+                            <p class="text-slate-400 text-xs mt-2">Core Space Design Consultants Pvt Ltd</p>
+
+                            <div class="flex items-center gap-3 mt-4 text-slate-400">
+                                <span class="px-3 py-1 bg-slate-800/80 rounded-full text-xs text-slate-300 font-medium border border-slate-700">Commercial</span>
+                                <span class="px-3 py-1 bg-slate-800/80 rounded-full text-xs text-slate-300 font-medium border border-slate-700">Residential</span>
+                                <span class="px-3 py-1 bg-slate-800/80 rounded-full text-xs text-slate-300 font-medium border border-slate-700">Turnkey</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-24 bg-slate-900/40 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Image Visual -->
+                <div class="lg:col-span-6">
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 shadow-2xl group">
+                        <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=800&q=80" 
+                             alt="Interior Design Studio" 
+                             class="w-full h-[450px] object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        
+                        <div class="absolute bottom-6 left-6 right-6 bg-slate-900/80 backdrop-blur-md p-6 rounded-xl border border-slate-800">
+                            <p class="text-xs text-sky-400 font-semibold tracking-wider uppercase">Design Philosophy</p>
+                            <h4 class="text-lg font-bold text-white mt-1">"Merging spatial ergonomics with striking architectural identity."</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Narrative -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-sky-400 text-xs font-semibold uppercase">
+                        About Piyush Patel
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white leading-tight">
+                        Crafting High-Performance Interiors at Core Space Design
+                    </h2>
+
+                    <p class="text-slate-400 text-base leading-relaxed">
+                        As a Senior Interior Designer at <strong class="text-slate-200">Core Space Design Consultants Pvt Ltd</strong>, Piyush Patel leads transformative interior architecture projects. With a deep passion for balance, texture, and light, Piyush translates client aspirations into immersive, highly functional physical environments.
+                    </p>
+
+                    <p class="text-slate-400 text-base leading-relaxed">
+                        From corporate headquarters to bespoke residential sanctuaries, his holistic approach oversees conceptual modeling, material specification, lighting dynamics, and flawless site implementation.
+                    </p>
+
+                    <!-- Key Pillars -->
+                    <div class="grid grid-cols-2 gap-4 pt-4">
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <i class="fa-solid fa-cube text-sky-400 text-xl mb-2"></i>
+                            <h5 class="text-white font-semibold text-sm">Spatial Optimization</h5>
+                            <p class="text-slate-400 text-xs mt-1">Maximizing square footage efficiency and fluid layout traffic.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <i class="fa-solid fa-layer-group text-purple-400 text-xl mb-2"></i>
+                            <h5 class="text-white font-semibold text-sm">Material Curation</h5>
+                            <p class="text-slate-400 text-xs mt-1">Sourcing sustainable, high-durability, premium finishes.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="expertise" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-sky-400 text-xs font-semibold uppercase">
+                    Core Specializations
+                </div>
+                <h2 class="text-3xl sm:text-5xl font-bold text-white mt-4">Tailored Interior Solutions</h2>
+                <p class="text-slate-400 mt-4 text-base">Comprehensive design and consulting services tailored to modern commercial and high-end residential spaces.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl hover:border-sky-500/50 hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-sky-500/10 text-sky-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-sky-500 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Corporate Workspace Design</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Designing agile, collaborative, and inspiring office environments that foster company culture and boost workplace productivity.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl hover:border-indigo-500/50 hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-indigo-500 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-couch"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Luxury Residential Interiors</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Custom living spaces crafted with refined elegance, bespoke joinery, smart lighting integration, and exquisite finishes.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl hover:border-purple-500/50 hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-purple-500 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-compass-drafting"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">3D Architectural Planning</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Photorealistic 3D visualization and CAD layout strategies that ensure clarity and accuracy long before build execution.
+                    </p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl hover:border-pink-500/50 hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-pink-500/10 text-pink-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-pink-500 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Lighting & Atmosphere Curation</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Architectural lighting design that enhances moods, accentuates materials, and complies with modern energy standards.
+                    </p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl hover:border-emerald-500/50 hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-emerald-500 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-vector-square"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Custom Millwork & Detailing</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Tailor-made furniture, custom cabinetry, and bespoke millwork designs built for unique spatial demands.
+                    </p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl hover:border-amber-500/50 hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-amber-500 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-list-check"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Turnkey Site Supervision</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        End-to-end management of contractors, vendors, schedules, and quality control from layout sign-off to handover.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Gallery Showcase -->
+    <section id="portfolio" class="py-24 bg-slate-900/40 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+                <div>
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-sky-400 text-xs font-semibold uppercase">
+                        Portfolio Highlights
+                    </div>
+                    <h2 class="text-3xl sm:text-5xl font-bold text-white mt-4">Selected Spatial Creations</h2>
+                </div>
+                <p class="text-slate-400 max-w-md mt-4 md:mt-0 text-sm">
+                    A look into commercial and high-end residential interiors conceptualized and delivered by Piyush Patel.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="group relative rounded-2xl overflow-hidden bg-slate-900 border border-slate-800 shadow-xl">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Tech Hub Corporate Office" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-semibold text-sky-400 uppercase tracking-wider">Corporate Interior</span>
+                        <h3 class="text-xl font-bold text-white mt-1">Tech Corporate Headquarters</h3>
+                        <p class="text-slate-400 text-xs mt-2">Open-plan workspace, acoustic zoning, and executive boardrooms built for high collaboration.</p>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="group relative rounded-2xl overflow-hidden bg-slate-900 border border-slate-800 shadow-xl">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80" alt="Modern Penthouse Villa" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-semibold text-purple-400 uppercase tracking-wider">Luxury Living</span>
+                        <h3 class="text-xl font-bold text-white mt-1">Minimalist Penthouse Residence</h3>
+                        <p class="text-slate-400 text-xs mt-2">Harmonious color schemes, customized mood lighting, and stone architectural accents.</p>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="group relative rounded-2xl overflow-hidden bg-slate-900 border border-slate-800 shadow-xl">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" alt="Bespoke Design Studio" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-semibold text-emerald-400 uppercase tracking-wider">Bespoke Commercial</span>
+                        <h3 class="text-xl font-bold text-white mt-1">Bespoke Design Studio</h3>
+                        <p class="text-slate-400 text-xs mt-2">An inspiring workspace highlighting creative spatial divisions and artisanal custom finishes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Endorsements -->
+    <section id="testimonials" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-sky-400 text-xs font-semibold uppercase">
+                    Client & Colleague Praise
+                </div>
+                <h2 class="text-3xl sm:text-5xl font-bold text-white mt-4">Professional Endorsements</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "Piyush's interior vision completely elevated our corporate headquarters. His keen understanding of workspace utility combined with modern elegance gave us an enviable environment."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-slate-800/80 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center font-bold text-white text-xs">
+                            RK
+                        </div>
+                        <div>
+                            <div class="text-white font-semibold text-sm">Rajesh Kumar</div>
+                            <div class="text-slate-400 text-xs">Managing Director, Horizon Tech</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "Working alongside Piyush Patel at Core Space Design is always inspiring. His attention to fine details and material selections is unmatched in the industry."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-slate-800/80 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center font-bold text-white text-xs">
+                            AS
+                        </div>
+                        <div>
+                            <div class="text-white font-semibold text-sm">Ananya Sharma</div>
+                            <div class="text-slate-400 text-xs">Principal Architect</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "Piyush turned our luxury apartment vision into reality. Every angle, piece of furniture, and lighting fixture was chosen with distinct intent and elegance."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-slate-800/80 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center font-bold text-white text-xs">
+                            VM
+                        </div>
+                        <div>
+                            <div class="text-white font-semibold text-sm">Vikram Mehta</div>
+                            <div class="text-slate-400 text-xs">Private Residence Owner</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-slate-900/40 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Info -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-sky-400 text-xs font-semibold uppercase">
+                        Get In Touch
+                    </div>
+
+                    <h2 class="text-3xl sm:text-5xl font-bold text-white leading-tight">
+                        Let's Design Your Next Signature Space
+                    </h2>
+
+                    <p class="text-slate-400 text-base leading-relaxed">
+                        Whether you are planning a high-end corporate headquarters, a commercial redesign, or a luxury residence, Piyush Patel is ready to bring your vision to life.
+                    </p>
+
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900 border border-slate-800">
+                            <div class="w-10 h-10 rounded-lg bg-sky-500/10 text-sky-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-building flex-shrink-0"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-slate-400 block">Company</span>
+                                <span class="text-sm font-semibold text-white">Core Space Design Consultants Pvt Ltd</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900 border border-slate-800">
+                            <div class="w-10 h-10 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-briefcase flex-shrink-0"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-slate-400 block">Role</span>
+                                <span class="text-sm font-semibold text-white">Senior Interior Designer</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900 border border-slate-800">
+                            <div class="w-10 h-10 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-envelope flex-shrink-0"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-slate-400 block">Direct Inquiry</span>
+                                <span class="text-sm font-semibold text-white">piyush@corespacedesign.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Glassmorphism Form -->
+                <div class="lg:col-span-7">
+                    <form class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 sm:p-10 rounded-3xl space-y-6 shadow-2xl" onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent successfully.');">
+                        <h3 class="text-2xl font-bold text-white mb-2">Send a Message</h3>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Name</label>
+                                <input type="text" placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white focus:outline-none focus:border-sky-500 transition-colors text-sm" required>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Email</label>
+                                <input type="email" placeholder="john@company.com" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white focus:outline-none focus:border-sky-500 transition-colors text-sm" required>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Project Type</label>
+                            <select class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white focus:outline-none focus:border-sky-500 transition-colors text-sm">
+                                <option>Commercial Office Space</option>
+                                <option>Luxury Residential Design</option>
+                                <option>Architectural Consultation</option>
+                                <option>Turnkey Interior Execution</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Project Scope / Details</label>
+                            <textarea rows="4" placeholder="Tell us about your space, dimensions, and project goals..." class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white focus:outline-none focus:border-sky-500 transition-colors text-sm" required></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-sky-500 via-indigo-600 to-purple-600 text-white font-bold text-sm shadow-lg shadow-sky-500/20 hover:shadow-sky-500/40 hover:opacity-95 transition-all">
+                            Submit Inquiry
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 py-12 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+            <div>
+                <div class="font-bold text-lg text-white">Piyush Patel</div>
+                <p class="text-xs text-slate-400 mt-1">Senior Interior Designer | Core Space Design Consultants Pvt Ltd</p>
+            </div>
+            
+            <div class="flex items-center gap-6 text-slate-400 text-sm">
+                <a href="#about" class="hover:text-white transition-colors">About</a>
+                <a href="#expertise" class="hover:text-white transition-colors">Services</a>
+                <a href="#portfolio" class="hover:text-white transition-colors">Portfolio</a>
+                <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+            </div>
+
+            <div class="text-xs text-slate-400">
+                &copy; 2026 Piyush Patel. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
