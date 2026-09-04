@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandni Vishwakarma | Executive & Interior Design Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            glow: '#0D8ABC',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(13, 138, 188, 0.3);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-border {
+            background: linear-gradient(135deg, #0D8ABC, #6366f1, #ec4899);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white relative overflow-x-hidden">
+
+    <!-- Glowing Background Orbs -->
+    <div class="fixed top-0 left-1/4 w-96 h-96 bg-indigo-600/20 rounded-full blur-3xl pointer-events-none -z-10 animate-pulse"></div>
+    <div class="fixed bottom-0 right-1/4 w-[30rem] h-[30rem] bg-pink-600/15 rounded-full blur-3xl pointer-events-none -z-10"></div>
+    <div class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[40rem] h-[40rem] bg-sky-600/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-tight text-white flex items-center gap-3 group">
+                <span class="w-10 h-10 rounded-xl gradient-border p-0.5 flex items-center justify-center shadow-lg shadow-indigo-500/20">
+                    <span class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center font-extrabold text-indigo-400 group-hover:bg-transparent group-hover:text-white transition-all duration-300">
+                        CV
+                    </span>
+                </span>
+                <span class="tracking-wide">Chandni <span class="text-indigo-400 font-light">Vishwakarma</span></span>
+            </a>
+
+            <!-- Desktop Links -->
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+                <a href="#services" class="hover:text-indigo-400 transition-colors">Services</a>
+                <a href="#portfolio" class="hover:text-indigo-400 transition-colors">Portfolio</a>
+                <a href="#testimonials" class="hover:text-indigo-400 transition-colors">Testimonials</a>
+                <a href="#contact" class="hover:text-indigo-400 transition-colors">Contact</a>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="hidden md:block">
+                <a href="#contact" class="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-xs font-semibold rounded-full group gradient-border">
+                    <span class="px-5 py-2.5 transition-all ease-in duration-75 bg-slate-950 rounded-full group-hover:bg-opacity-0 text-white flex items-center gap-2">
+                        Get In Touch <i class="fa-solid font-xs fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                    </span>
+                </a>
+            </div>
+
+            <!-- Mobile menu button -->
+            <button class="md:hidden text-slate-400 hover:text-white text-xl focus:outline-none" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-6 py-4 space-y-3">
+            <a href="#about" class="block text-slate-300 hover:text-white">About</a>
+            <a href="#services" class="block text-slate-300 hover:text-white">Services</a>
+            <a href="#portfolio" class="block text-slate-300 hover:text-white">Portfolio</a>
+            <a href="#testimonials" class="block text-slate-300 hover:text-white">Testimonials</a>
+            <a href="#contact" class="block text-slate-300 hover:text-white">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-16 pb-24 md:pt-28 md:pb-36 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Hero Content Left -->
+            <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 backdrop-blur-md shadow-inner text-xs font-semibold text-indigo-400">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                    RedPlus Interiors India Pvt Ltd
+                </div>
+
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
+                    Crafting Visionary Interior Environments <br class="hidden sm:inline" />
+                    <span class="gradient-text">With Masterful Precision</span>
+                </h1>
+
+                <p class="text-slate-400 text-lg sm:text-xl max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
+                    Elevating corporate and luxury residential spaces across India. Championing architectural elegance, functional innovation, and seamless turnkey execution at <strong class="text-slate-200">RedPlus Interiors India Private Limited</strong>.
+                </p>
+
+                <!-- Action Buttons -->
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                    <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 font-semibold text-white shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 text-center">
+                        Initiate a Project
+                    </a>
+                    <a href="#portfolio" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-slate-700 font-semibold text-slate-300 hover:text-white backdrop-blur-xl transition-all duration-200 text-center flex items-center justify-center gap-2">
+                        View Showcase <i class="fa-solid fa-angle-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Trust Badges / Quick Stats -->
+                <div class="pt-10 grid grid-cols-3 gap-6 border-t border-slate-900 max-w-lg mx-auto lg:mx-0">
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-white">100+</div>
+                        <div class="text-xs text-slate-400 uppercase tracking-wider font-medium mt-1">Projects Delivered</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-indigo-400">100%</div>
+                        <div class="text-xs text-slate-400 uppercase tracking-wider font-medium mt-1">Client Precision</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-pink-400">Top Tier</div>
+                        <div class="text-xs text-slate-400 uppercase tracking-wider font-medium mt-1">Architectural Standards</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Avatar Right -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative group">
+                    <!-- Glowing Backing Halo -->
+                    <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full blur-2xl opacity-50 group-hover:opacity-80 transition duration-1000 group-hover:duration-200"></div>
+                    
+                    <!-- Double Gradient Avatar Outer Frame -->
+                    <div class="relative p-1.5 rounded-full bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 shadow-2xl">
+                        <div class="p-2 bg-slate-950 rounded-full">
+                            <img src="https://ui-avatars.com/api/?name=Chandni+Vishwakarma&size=200&background=0D8ABC&color=fff&bold=true" 
+                                 alt="Chandni Vishwakarma" 
+                                 class="w-64 h-64 sm:w-80 sm:h-80 rounded-full object-cover shadow-inner hover:scale-105 transition-transform duration-500">
+                        </div>
+                    </div>
+
+                    <!-- Floating Badge -->
+                    <div class="absolute -bottom-4 right-0 bg-slate-900/90 border border-slate-800 backdrop-blur-xl px-5 py-3 rounded-2xl shadow-xl flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold">
+                            <i class="fa-solid fa-gem"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400 font-medium">Role Specialist</p>
+                            <p class="text-sm font-bold text-white">Interior Architect</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6 bg-slate-900/40 relative border-t border-b border-slate-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Section Image -->
+                <div class="lg:col-span-6 relative">
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 shadow-2xl group">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" 
+                             alt="Team Collaboration at RedPlus Interiors" 
+                             class="w-full h-[420px] object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <p class="text-xs uppercase tracking-widest font-semibold text-indigo-400 mb-1">Executive Leadership</p>
+                            <h3 class="text-xl font-bold text-white">RedPlus Interiors India Private Limited</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section Details -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-block px-3 py-1 rounded-md bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 text-xs font-semibold">
+                        ABOUT CHANDNI VISHWAKARMA
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">
+                        Pioneering Modern Workspaces & Luxury Environments
+                    </h2>
+                    <p class="text-slate-400 leading-relaxed font-light">
+                        At <strong class="text-slate-200">RedPlus Interiors India Pvt Ltd</strong>, Chandni Vishwakarma brings together functional spatially-optimized layouts and high-end aesthetic sensibilities. Dedicated to redefining how people experience interior spaces, every project seamlessly merges commercial durability with timeless luxury.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="p-4 rounded-xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all">
+                            <i class="fa-solid fa-compass-drafting text-indigo-400 text-xl mb-2"></i>
+                            <h4 class="font-semibold text-white">Spatial Optimization</h4>
+                            <p class="text-xs text-slate-400 mt-1">Maximizing utility and aesthetic impact in every square foot.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all">
+                            <i class="fa-solid fa-layer-group text-purple-400 text-xl mb-2"></i>
+                            <h4 class="font-semibold text-white">Turnkey Solutions</h4>
+                            <p class="text-xs text-slate-400 mt-1">End-to-end execution from initial concept rendering to final handover.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services" class="py-24 px-6 relative">
+        <div class="max-w-7xl mx-auto space-y-16">
+            <div class="text-center max-w-3xl mx-auto space-y-4">
+                <span class="px-3 py-1 rounded-md bg-pink-500/10 text-pink-400 border border-pink-500/20 text-xs font-semibold">SPECIALIZATION & SERVICES</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white">Comprehensive Interior Capabilities</h2>
+                <p class="text-slate-400">Tailored, luxury interior solutions designed for corporate headquarters, high-end residences, and modern retail environments.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 rounded-2xl p-8 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 flex items-center justify-center text-2xl group-hover:scale-110 group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mt-6 mb-3">Corporate Offices</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Designing inspirational workspace interiors that boost productivity, foster collaboration, and reflect corporate identity.</p>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 rounded-2xl p-8 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 text-purple-400 border border-purple-500/20 flex items-center justify-center text-2xl group-hover:scale-110 group-hover:bg-purple-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-couch"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mt-6 mb-3">Luxury Residential</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Bespoke home interiors crafted around personal lifestyles, featuring curated textures, lighting, and premium finishes.</p>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 rounded-2xl p-8 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-xl bg-pink-500/10 text-pink-400 border border-pink-500/20 flex items-center justify-center text-2xl group-hover:scale-110 group-hover:bg-pink-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-cubes"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mt-6 mb-3">3D Architectural Visualization</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Photorealistic spatial models and walk-throughs allowing stakeholders to experience the space before construction.</p>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 rounded-2xl p-8 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-xl bg-sky-500/10 text-sky-400 border border-sky-500/20 flex items-center justify-center text-2xl group-hover:scale-110 group-hover:bg-sky-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-key"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mt-6 mb-3">Turnkey Fit-Outs</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Full project management from material sourcing and vendor coordination to quality compliance and timely handover.</p>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 rounded-2xl p-8 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-xl bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 flex items-center justify-center text-2xl group-hover:scale-110 group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mt-6 mb-3">Sustainable Design</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Integrating eco-friendly materials, energy-efficient illumination, and sustainable acoustic elements into modern interiors.</p>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 rounded-2xl p-8 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-xl bg-amber-500/10 text-amber-400 border border-amber-500/20 flex items-center justify-center text-2xl group-hover:scale-110 group-hover:bg-amber-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-palette"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mt-6 mb-3">Custom Furniture & Curation</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Handpicked art, custom-crafted millwork, and bespoke furnishings that serve as focal points for luxury environments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio / Project Highlights -->
+    <section id="portfolio" class="py-20 px-6 bg-slate-900/30 border-t border-b border-slate-900">
+        <div class="max-w-7xl mx-auto space-y-12">
+            <div class="flex flex-col md:flex-row md:items-end justify-between">
+                <div>
+                    <span class="px-3 py-1 rounded-md bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 text-xs font-semibold">DESIGN PORTFOLIO</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white mt-3">Signature Interior Projects</h2>
+                </div>
+                <p class="text-slate-400 max-w-md text-sm mt-4 md:mt-0">
+                    A glimpse into high-profile commercial and residential interiors executed with perfection.
+                </p>
+            </div>
+
+            <!-- Project Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="rounded-2xl overflow-hidden bg-slate-900 border border-slate-800 hover:border-indigo-500/50 transition-all group">
+                    <div class="relative overflow-hidden h-60">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Corporate Headquarters" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <span class="px-4 py-2 rounded-full bg-indigo-600 text-white font-semibold text-xs">View Concept</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-semibold text-indigo-400">Commercial Workplace</span>
+                        <h3 class="text-lg font-bold text-white mt-1">Tech Corporate HQ Interior</h3>
+                        <p class="text-slate-400 text-xs mt-2">Open-plan collaborative layout with state-of-the-art acoustic solutions.</p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="rounded-2xl overflow-hidden bg-slate-900 border border-slate-800 hover:border-indigo-500/50 transition-all group">
+                    <div class="relative overflow-hidden h-60">
+                        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" alt="Luxury Residence" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <span class="px-4 py-2 rounded-full bg-indigo-600 text-white font-semibold text-xs">View Concept</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-semibold text-purple-400">Luxury Living</span>
+                        <h3 class="text-lg font-bold text-white mt-1">The Grand Penthouse</h3>
+                        <p class="text-slate-400 text-xs mt-2">Minimalist Scandinavian aesthetic merged with warm ambient linear lighting.</p>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="rounded-2xl overflow-hidden bg-slate-900 border border-slate-800 hover:border-indigo-500/50 transition-all group">
+                    <div class="relative overflow-hidden h-60">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Modern Villa" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <span class="px-4 py-2 rounded-full bg-indigo-600 text-white font-semibold text-xs">View Concept</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-semibold text-pink-400">Bespoke Residential</span>
+                        <h3 class="text-lg font-bold text-white mt-1">Modern Minimalist Villa</h3>
+                        <p class="text-slate-400 text-xs mt-2">High-contrast palette featuring Italian marble and custom hardwood fit-outs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 px-6 relative">
+        <div class="max-w-7xl mx-auto space-y-16">
+            <div class="text-center max-w-2xl mx-auto space-y-4">
+                <span class="px-3 py-1 rounded-md bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs font-semibold">TESTIMONIALS</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white">Client & Peer Endorsements</h2>
+                <p class="text-slate-400">What leaders say about working with Chandni Vishwakarma and RedPlus Interiors.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Chandni’s strategic vision for interior spatial planning completely revolutionized our corporate headquarters. The attention to detail, timeline adherence, and material selection were flawless."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold">
+                            RK
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Rajesh Kumar</h4>
+                            <p class="text-xs text-slate-400">Managing Director, Enterprise Tech</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "RedPlus Interiors India Private Limited delivered beyond our expectations. Chandni Vishwakarma brings an exceptional eye for contemporary design without compromising function."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 flex items-center justify-center font-bold">
+                            AS
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Ananya Sharma</h4>
+                            <p class="text-xs text-slate-400">Luxury Homeowner</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Exemplary professionalism and creative innovation. Chandni's expertise in space utility transformed our retail store network, increasing customer footprint significantly."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-pink-500/20 text-pink-400 flex items-center justify-center font-bold">
+                            VM
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Vikram Mehta</h4>
+                            <p class="text-xs text-slate-400">VP Operations, Retail Brands</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-6 bg-slate-900/40 relative border-t border-slate-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Info Left -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="px-3 py-1 rounded-md bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 text-xs font-semibold">GET IN TOUCH</span>
+                        <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white mt-4">Let's Build Something Extraordinary</h2>
+                        <p class="text-slate-400 mt-4 leading-relaxed font-light">
+                            Ready to transform your physical space into an architectural benchmark? Connect directly with Chandni Vishwakarma at RedPlus Interiors.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 text-indigo-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-building flex-shrink-0"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs text-slate-400 font-medium">Organization</h4>
+                                <p class="text-base font-semibold text-white">RedPlus Interiors India Pvt Ltd</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 text-purple-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-location-dot flex-shrink-0"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs text-slate-400 font-medium">Location</h4>
+                                <p class="text-base font-semibold text-white">India</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 text-pink-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-user-check flex-shrink-0"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs text-slate-400 font-medium">Professional Network</h4>
+                                <p class="text-base font-semibold text-white">Connected since 31 Aug 2026</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media Links -->
+                    <div class="flex items-center gap-4 pt-4">
+                        <a href="https://linkedin.com" target="_blank" class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 hover:border-indigo-500 text-slate-400 hover:text-white flex items-center justify-center transition-colors">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 hover:border-indigo-500 text-slate-400 hover:text-white flex items-center justify-center transition-colors">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 hover:border-indigo-500 text-slate-400 hover:text-white flex items-center justify-center transition-colors">
+                            <i class="fa-solid fa-globe"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form Right -->
+                <div class="lg:col-span-7">
+                    <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 sm:p-10 rounded-3xl shadow-2xl relative">
+                        <form onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent to Chandni Vishwakarma.');" class="space-y-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Name</label>
+                                    <input type="text" placeholder="John Doe" required class="w-full px-4 py-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Email</label>
+                                    <input type="email" placeholder="john@company.com" required class="w-full px-4 py-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Project Type</label>
+                                <select class="w-full px-4 py-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-300 focus:outline-none focus:border-indigo-500 transition-colors">
+                                    <option>Corporate Workspaces</option>
+                                    <option>Luxury Residential Interior</option>
+                                    <option>Turnkey Fit-Out Consultancy</option>
+                                    <option>Other Interior Solution</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Project Brief & Details</label>
+                                <textarea rows="4" placeholder="Share scope, timeline, and space requirements..." required class="w-full px-4 py-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 font-bold text-white shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.01] active:scale-[0.99] transition-all duration-200">
+                                Send Direct Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 border-t border-slate-900 bg-slate-950">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6 text-xs text-slate-500">
+            <p>© 2026 Chandni Vishwakarma | RedPlus Interiors India Private Limited. All Rights Reserved.</p>
+            <div class="flex items-center space-x-6">
+                <a href="#" class="hover:text-slate-300 transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-slate-300 transition-colors">Terms of Service</a>
+                <a href="#about" class="hover:text-slate-300 transition-colors">Back to Top</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
