@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Mridul Gupta | Consultant Dental Surgeon</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        medical: {
+                            50: '#f0fdfa',
+                            500: '#14b8a6',
+                            600: '#0d9488',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -12px rgba(99, 102, 241, 0.35);
+        }
+        .glow-cyan {
+            box-shadow: 0 0 50px -12px rgba(6, 182, 212, 0.35);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-indigo-500 to-purple-500 p-[2px] flex items-center justify-center">
+                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+                        <i class="fa-solid fa-[#0D8ABC] fa-tooth text-cyan-400 group-hover:rotate-12 transition-transform duration-300"></i>
+                    </div>
+                </div>
+                <div>
+                    <span class="text-lg font-bold bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent block leading-tight">Dr. Mridul Gupta</span>
+                    <span class="text-xs text-cyan-400 font-medium tracking-wide">Kota Dental Institute</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Menu -->
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Specialties</a>
+                <a href="#endorsements" class="hover:text-cyan-400 transition-colors">Testimonials</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+            </div>
+
+            <div class="hidden md:flex items-center">
+                <a href="#contact" class="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-semibold rounded-full group bg-gradient-to-br from-cyan-500 to-indigo-600 group-hover:from-cyan-500 group-hover:to-indigo-500 text-white shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 transition-all duration-300">
+                    <span class="relative px-6 py-2.5 transition-all ease-in duration-75 rounded-full bg-slate-950 group-hover:bg-opacity-0">
+                        Book Consultation
+                    </span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-btn" class="md:hidden text-slate-300 hover:text-white text-xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900/95 border-b border-slate-800 px-6 py-4 space-y-4">
+            <a href="#about" class="block text-slate-300 hover:text-cyan-400 font-medium">About</a>
+            <a href="#services" class="block text-slate-300 hover:text-cyan-400 font-medium">Specialties</a>
+            <a href="#endorsements" class="block text-slate-300 hover:text-cyan-400 font-medium">Testimonials</a>
+            <a href="#contact" class="block text-slate-300 hover:text-cyan-400 font-medium">Contact</a>
+            <a href="#contact" class="inline-block w-full text-center px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 to-indigo-600 font-semibold text-sm">Book Consultation</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="relative min-h-screen pt-32 pb-20 flex items-center justify-center overflow-hidden">
+        <!-- Background Ambient Glows -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-cyan-500/20 via-indigo-500/20 to-purple-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-10 right-10 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10 grid lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Left Column: Content -->
+            <div class="lg:col-span-7 text-center lg:text-left space-y-8">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 backdrop-blur-md">
+                    <span class="flex h-2 w-2 rounded-full bg-cyan-400 animate-ping"></span>
+                    <span class="text-xs font-semibold text-cyan-300 tracking-wider uppercase">Consultant Dental Surgeon</span>
+                </div>
+
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.15]">
+                    Transforming Smiles with <span class="bg-gradient-to-r from-cyan-400 via-indigo-400 to-purple-400 bg-clip-text text-transparent">Precision Care.</span>
+                </h1>
+
+                <p class="text-slate-400 text-lg md:text-xl font-normal max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                    Welcome to the digital practice of <strong class="text-slate-200 font-semibold">Dr. Mridul Gupta</strong> at <span class="text-cyan-400">Kota Dental Institute</span>. Delivering world-class oral surgery, smile transformations, and patient-centric dentistry.
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                    <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 hover:opacity-95 text-white font-bold text-base shadow-xl shadow-indigo-500/25 transition-all transform hover:-translate-y-0.5 text-center">
+                        Schedule an Appointment
+                    </a>
+                    <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-full bg-slate-900 border border-slate-800 hover:border-slate-700 text-slate-300 font-semibold text-base transition-all text-center">
+                        Explore Specialties
+                    </a>
+                </div>
+
+                <!-- Trust Badges -->
+                <div class="pt-8 border-t border-slate-800/80 grid grid-cols-2 sm:grid-cols-3 gap-6 text-center lg:text-left">
+                    <div class="space-y-1">
+                        <div class="text-2xl font-bold text-white flex items-center justify-center lg:justify-start gap-1">
+                            <span>10+</span>
+                            <span class="text-cyan-400 text-sm">Years</span>
+                        </div>
+                        <p class="text-xs text-slate-400 uppercase tracking-wider">Clinical Experience</p>
+                    </div>
+                    <div class="space-y-1">
+                        <div class="text-2xl font-bold text-white flex items-center justify-center lg:justify-start gap-1">
+                            <span>5000+</span>
+                            <span class="text-indigo-400 text-sm">Smiles</span>
+                        </div>
+                        <p class="text-xs text-slate-400 uppercase tracking-wider">Happy Patients</p>
+                    </div>
+                    <div class="space-y-1 col-span-2 sm:col-span-1">
+                        <div class="text-2xl font-bold text-white flex items-center justify-center lg:justify-start gap-1">
+                            <span>100%</span>
+                            <span class="text-purple-400 text-sm">Precision</span>
+                        </div>
+                        <p class="text-xs text-slate-400 uppercase tracking-wider">Advanced Tech</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Avatar & Card -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative">
+                    <!-- Outer Glow Frame -->
+                    <div class="absolute -inset-1 bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 rounded-3xl blur-xl opacity-70 animate-pulse"></div>
+                    
+                    <!-- Inner Container -->
+                    <div class="relative bg-slate-900/90 border border-slate-800 rounded-3xl p-8 backdrop-blur-xl max-w-sm text-center space-y-6 glow-effect">
+                        
+                        <!-- Glowing Double-Gradient Avatar Frame -->
+                        <div class="relative inline-block mx-auto">
+                            <div class="absolute -inset-1.5 rounded-full bg-gradient-to-tr from-cyan-400 via-indigo-500 to-purple-500 blur-sm"></div>
+                            <div class="relative p-1 rounded-full bg-gradient-to-r from-cyan-400 via-indigo-500 to-purple-500">
+                                <img src="https://ui-avatars.com/api/?name=Dr.+Mridul+Gupta&size=200&background=0D8ABC&color=fff&bold=true" 
+                                     alt="Dr. Mridul Gupta" 
+                                     class="w-36 h-36 rounded-full object-cover shadow-2xl bg-slate-950">
+                            </div>
+                            <div class="absolute bottom-1 right-1 bg-emerald-500 border-2 border-slate-950 w-5 h-5 rounded-full" title="Available for Practice"></div>
+                        </div>
+
+                        <div>
+                            <h3 class="text-2xl font-bold text-white">Dr. Mridul Gupta</h3>
+                            <p class="text-cyan-400 font-medium text-sm mt-1">Consultant Dental Surgeon</p>
+                            <p class="text-slate-400 text-xs mt-0.5">Kota Dental Institute</p>
+                        </div>
+
+                        <div class="bg-slate-950/60 rounded-xl p-4 border border-slate-800/80 space-y-2 text-left">
+                            <div class="flex items-center gap-3 text-xs text-slate-300">
+                                <i class="fa-solid fa-hospital-user text-cyan-400"></i>
+                                <span>Advanced Dental & Oral Surgery</span>
+                            </div>
+                            <div class="flex items-center gap-3 text-xs text-slate-300">
+                                <i class="fa-solid fa-certificate text-indigo-400"></i>
+                                <span>Certified Implantologist</span>
+                            </div>
+                            <div class="flex items-center gap-3 text-xs text-slate-300">
+                                <i class="fa-solid fa-location-dot text-purple-400"></i>
+                                <span>Kota, Rajasthan</span>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-center gap-4 text-slate-400">
+                            <a href="#" class="w-10 h-10 rounded-full bg-slate-800/80 hover:bg-cyan-500/20 hover:text-cyan-400 flex items-center justify-center transition-all border border-slate-700/50"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-slate-800/80 hover:bg-cyan-500/20 hover:text-cyan-400 flex items-center justify-center transition-all border border-slate-700/50"><i class="fa-solid fa-envelope"></i></a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-slate-800/80 hover:bg-cyan-500/20 hover:text-cyan-400 flex items-center justify-center transition-all border border-slate-700/50"><i class="fa-solid fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-24 relative bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left: Clinical Image -->
+                <div class="lg:col-span-6 relative">
+                    <div class="absolute -inset-2 bg-gradient-to-tr from-cyan-500 to-indigo-600 rounded-3xl blur-lg opacity-30"></div>
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Modern Dental Clinic" 
+                             class="w-full h-[450px] object-cover hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-slate-900/80 backdrop-blur-md border border-slate-800">
+                            <p class="text-sm font-semibold text-white">State-of-the-Art Dental Facility</p>
+                            <p class="text-xs text-slate-400">Kota Dental Institute - Advanced Patient Care</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Information -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold uppercase tracking-wider">
+                        Clinical Distinction
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">
+                        Dedicated to Exceeding International Standards in Dental Care.
+                    </h2>
+                    <p class="text-slate-400 leading-relaxed text-base">
+                        As a Consultant Dental Surgeon at Kota Dental Institute, <strong class="text-slate-200">Dr. Mridul Gupta</strong> combines extensive surgical skill with an empathetic, painless patient philosophy. Specializing in advanced oral reconstructions, cosmetic dentistry, and complex surgical procedures, every patient receives tailor-made care designed to restore both health and confidence.
+                    </p>
+
+                    <div class="grid sm:grid-cols-2 gap-4 pt-4">
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-cyan-500/40 transition-all">
+                            <i class="fa-solid fa-microscope text-2xl text-cyan-400 mb-2"></i>
+                            <h4 class="text-white font-semibold text-sm">Microscopic Precision</h4>
+                            <p class="text-xs text-slate-400 mt-1">Advanced diagnostic accuracy and minimal intervention techniques.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-indigo-500/40 transition-all">
+                            <i class="fa-solid fa-wand-magic-sparkles text-2xl text-indigo-400 mb-2"></i>
+                            <h4 class="text-white font-semibold text-sm">Smile Rejuvenation</h4>
+                            <p class="text-xs text-slate-400 mt-1">Aesthetic restorations crafted to enhance your natural features.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES GRID -->
+    <section id="services" class="py-24 bg-slate-900/40 relative border-t border-b border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-cyan-400 font-semibold text-xs uppercase tracking-wider px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20">Comprehensive Specialties</span>
+                <h2 class="text-3xl md:text-5xl font-bold text-white">Advanced Dental Services</h2>
+                <p class="text-slate-400">Comprehensive surgical and restorative solutions designed for optimal oral health and aesthetic perfection.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Card 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 rounded-2xl p-8 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-teeth-open"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Dental Implants</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Permanent, natural-looking tooth replacements using bio-compatible titanium posts and high-translucency crowns.</p>
+                    <a href="#contact" class="text-xs font-semibold text-cyan-400 flex items-center gap-2 group-hover:gap-3 transition-all">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 rounded-2xl p-8 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-[#0D8ABC] fa-tooth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Cosmetic Smile Design</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Complete aesthetic makeovers including porcelain veneers, composite bonding, and professional whitening.</p>
+                    <a href="#contact" class="text-xs font-semibold text-indigo-400 flex items-center gap-2 group-hover:gap-3 transition-all">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 transition-all duration-300 rounded-2xl p-8 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-syringe"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Painless Root Canal (Endodontics)</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Microscopic rotary endodontic treatments for efficient infection removal and natural tooth preservation.</p>
+                    <a href="#contact" class="text-xs font-semibold text-purple-400 flex items-center gap-2 group-hover:gap-3 transition-all">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 rounded-2xl p-8 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-user-doctor"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Oral & Maxillofacial Surgery</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Expert extraction of impacted wisdom teeth, cyst removals, and surgical bone grafting procedures.</p>
+                    <a href="#contact" class="text-xs font-semibold text-cyan-400 flex items-center gap-2 group-hover:gap-3 transition-all">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 rounded-2xl p-8 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-[#0D8ABC] fa-teeth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Full Mouth Rehabilitation</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Comprehensive restoration of full arch functionality for complex worn-down or missing tooth cases.</p>
+                    <a href="#contact" class="text-xs font-semibold text-indigo-400 flex items-center gap-2 group-hover:gap-3 transition-all">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 transition-all duration-300 rounded-2xl p-8 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-[#0D8ABC] fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Preventive Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Routine oral screenings, deep ultrasonic cleaning, fluoride treatments, and patient education.</p>
+                    <a href="#contact" class="text-xs font-semibold text-purple-400 flex items-center gap-2 group-hover:gap-3 transition-all">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="endorsements" class="py-24 relative bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                <span class="text-purple-400 font-semibold text-xs uppercase tracking-wider px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20">Patient Endorsements</span>
+                <h2 class="text-3xl md:text-5xl font-bold text-white">Words of Appreciation</h2>
+                <p class="text-slate-400">Read what patients say about their experience with Dr. Mridul Gupta.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl relative space-y-4">
+                    <div class="flex text-amber-400 text-sm gap-1">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed italic">
+                        "Dr. Mridul Gupta's surgical precision and gentle demeanor made my implant surgery completely painless. Kota Dental Institute is lucky to have such a skilled surgeon."
+                    </p>
+                    <div class="pt-4 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold text-sm">R</div>
+                        <div>
+                            <h4 class="text-white font-semibold text-sm">Rajesh Sharma</h4>
+                            <p class="text-slate-400 text-xs">Implant Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl relative space-y-4">
+                    <div class="flex text-amber-400 text-sm gap-1">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed italic">
+                        "The smile transformation I received exceeded all my expectations. Dr. Gupta explained every step clearly and ensured absolute comfort throughout."
+                    </p>
+                    <div class="pt-4 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-sm">P</div>
+                        <div>
+                            <h4 class="text-white font-semibold text-sm">Priya Verma</h4>
+                            <p class="text-slate-400 text-xs">Cosmetic Dental Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl relative space-y-4">
+                    <div class="flex text-amber-400 text-sm gap-1">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed italic">
+                        "Extremely professional root canal therapy. I was nervous initially, but Dr. Gupta's calm approach and state-of-the-art technique made it effortless."
+                    </p>
+                    <div class="pt-4 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 flex items-center justify-center font-bold text-sm">A</div>
+                        <div>
+                            <h4 class="text-white font-semibold text-sm">Amitabh Roy</h4>
+                            <p class="text-slate-400 text-xs">Root Canal Patient</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-24 relative bg-slate-900/30 border-t border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <!-- Left Details -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-cyan-400 font-semibold text-xs uppercase tracking-wider px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20">Get In Touch</span>
+                        <h2 class="text-3xl md:text-5xl font-bold text-white mt-4">Schedule Your Consultation</h2>
+                        <p class="text-slate-400 mt-4 leading-relaxed">
+                            Connect directly with Dr. Mridul Gupta for expert clinical evaluation and customized treatment plans.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-cyan-400 text-xl shrink-0">
+                                <i class="fa-solid fa-building-columns"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold text-base">Practice Location</h4>
+                                <p class="text-slate-400 text-sm mt-1">Kota Dental Institute, Kota, Rajasthan, India</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-indigo-400 text-xl shrink-0">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold text-base">Connection Verified</h4>
+                                <p class="text-slate-400 text-sm mt-1">Verified Member • 30 Aug 2026</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-purple-400 text-xl shrink-0">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold text-base">Clinical Hours</h4>
+                                <p class="text-slate-400 text-sm mt-1">Mon - Sat: 09:00 AM - 07:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Interactive Form -->
+                <div class="lg:col-span-7">
+                    <div class="bg-slate-900/80 backdrop-blur-xl border border-slate-800 rounded-3xl p-8 shadow-2xl">
+                        <form id="booking-form" onsubmit="event.preventDefault(); alert('Thank you, Dr. Gupta\'s office will reach out to confirm your appointment.');" class="space-y-6">
+                            <div class="grid sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Full Name</label>
+                                    <input type="text" required placeholder="John Doe" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-200 focus:outline-none focus:border-cyan-500 transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Phone Number</label>
+                                    <input type="tel" required placeholder="+91 98765 43210" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-200 focus:outline-none focus:border-cyan-500 transition-colors">
+                                </div>
+                            </div>
+
+                            <div class="grid sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Email Address</label>
+                                    <input type="email" placeholder="john@example.com" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-200 focus:outline-none focus:border-cyan-500 transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Service Needed</label>
+                                    <select class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-200 focus:outline-none focus:border-cyan-500 transition-colors">
+                                        <option value="consultation">General Consultation</option>
+                                        <option value="implants">Dental Implants</option>
+                                        <option value="cosmetic">Cosmetic Dentistry</option>
+                                        <option value="rootcanal">Root Canal Therapy</option>
+                                        <option value="surgery">Oral Surgery</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Patient Message / Medical Query</label>
+                                <textarea rows="4" placeholder="Please describe your symptoms or request..." class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-200 focus:outline-none focus:border-cyan-500 transition-colors"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 hover:opacity-95 text-white font-bold text-base shadow-xl shadow-cyan-500/20 transition-all">
+                                Request Appointment
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 border-t border-slate-900 py-12 text-slate-500 text-sm">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-cyan-500/10 flex items-center justify-center text-cyan-400 border border-cyan-500/20">
+                    <i class="fa-solid fa-[#0D8ABC] fa-tooth"></i>
+                </div>
+                <span class="text-slate-300 font-semibold text-base">Dr. Mridul Gupta</span>
+            </div>
+
+            <p>© 2026 Dr. Mridul Gupta • Kota Dental Institute. All rights reserved.</p>
+
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-cyan-400 transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-cyan-400 transition-colors">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
