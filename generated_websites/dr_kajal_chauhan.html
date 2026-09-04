@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Kajal Chauhan | Dental Surgeon - Swayam Dental Clinic</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        teal: {
+                            400: '#2dd4bf',
+                            500: '#14b8a6',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(99, 102, 241, 0.3);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .text-gradient-teal {
+            background: linear-gradient(135deg, #2dd4bf 0%, #38bdf8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 selection:bg-cyan-500 selection:text-white relative overflow-x-hidden">
+
+    <!-- Ambient Glow Backdrop Elements -->
+    <div class="fixed top-0 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+    <div class="fixed top-1/3 right-10 w-[30rem] h-[30rem] bg-indigo-500/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+    <div class="fixed bottom-10 left-1/3 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center text-white shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform duration-300">
+                    <i class="fa-solid fa-tooth text-lg"></i>
+                </div>
+                <div>
+                    <span class="font-bold text-lg tracking-tight block text-white leading-tight">Dr. Kajal Chauhan</span>
+                    <span class="text-xs text-cyan-400 font-medium">Swayam Dental Clinic</span>
+                </div>
+            </a>
+            
+            <div class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
+                <a href="#philosophy" class="hover:text-cyan-400 transition-colors">Philosophy</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Testimonials</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+            </div>
+
+            <div>
+                <a href="#contact" class="hidden sm:inline-flex items-center justify-center gap-2 px-5 py-2.5 text-sm font-semibold text-white bg-gradient-to-r from-cyan-500 via-indigo-600 to-purple-600 rounded-full shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300">
+                    <i class="fa-regular fa-calendar-check"></i>
+                    <span>Book Consultation</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen pt-32 pb-20 px-6 flex items-center justify-center relative">
+        <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Left Column: Content -->
+            <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-cyan-500/30 text-cyan-400 text-xs font-semibold tracking-wide uppercase backdrop-blur-md">
+                    <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                    Dentistry Beyond Smiles
+                </div>
+
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-none">
+                    Transforming Lives Through <br class="hidden sm:block"/>
+                    <span class="text-gradient">Precision Dental Care</span>
+                </h1>
+
+                <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                    Welcome to Swayam Dental Clinic. Led by Dr. Kajal Chauhan, we combine state-of-the-art dental technology with a gentle, patient-centric approach to deliver extraordinary clinical excellence.
+                </p>
+
+                <!-- Action Buttons -->
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                    <a href="#contact" class="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-cyan-500 via-indigo-600 to-purple-600 text-white font-semibold rounded-2xl shadow-xl shadow-cyan-500/20 hover:shadow-cyan-500/40 hover:-translate-y-0.5 transition-all duration-300 text-center">
+                        Schedule Appointment
+                    </a>
+                    <a href="#services" class="w-full sm:w-auto px-8 py-4 bg-slate-900/80 hover:bg-slate-800/80 border border-slate-800 text-slate-200 font-semibold rounded-2xl transition-all duration-300 text-center backdrop-blur-md">
+                        Explore Treatments
+                    </a>
+                </div>
+
+                <!-- Quick Badges -->
+                <div class="pt-8 border-t border-slate-900 grid grid-cols-3 gap-4 text-center lg:text-left">
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-white">100%</div>
+                        <div class="text-xs text-slate-400 mt-1 font-medium">Patient Satisfaction</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-white">Advanced</div>
+                        <div class="text-xs text-slate-400 mt-1 font-medium">Laser & Digital Tech</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-white">Gentle</div>
+                        <div class="text-xs text-slate-400 mt-1 font-medium">Painless Care</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Avatar Frame -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative group">
+                    <!-- Outer Glowing Double Gradient Ring -->
+                    <div class="absolute -inset-1.5 bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 rounded-full blur-xl opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+                    
+                    <!-- Inner Container -->
+                    <div class="relative w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full bg-slate-950 p-3 ring-1 ring-white/10 flex items-center justify-center">
+                        <img 
+                            src="https://ui-avatars.com/api/?name=Dr.+Kajal+chauhan&size=200&background=0D8ABC&color=fff&bold=true" 
+                            alt="Dr. Kajal Chauhan" 
+                            class="w-full h-full rounded-full object-cover shadow-2xl border-4 border-slate-900"
+                        />
+                    </div>
+
+                    <!-- Floating Badge -->
+                    <div class="absolute -bottom-4 right-4 bg-slate-900/90 border border-cyan-500/40 rounded-2xl p-4 shadow-2xl backdrop-blur-xl flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold">
+                            <i class="fa-solid fa-user-doctor"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Lead Surgeon</div>
+                            <div class="text-sm font-bold text-white">Dr. Kajal Chauhan</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 px-6 relative border-t border-slate-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Image Container -->
+                <div class="lg:col-span-6 relative">
+                    <div class="relative rounded-3xl overflow-hidden border border-slate-800 shadow-2xl group">
+                        <img 
+                            src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                            alt="Modern Dental Clinic" 
+                            class="w-full h-[450px] object-cover group-hover:scale-105 transition-transform duration-700"
+                        />
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-6 bg-slate-900/80 backdrop-blur-md rounded-2xl border border-slate-800">
+                            <p class="text-xs text-cyan-400 uppercase font-semibold tracking-wider">Clinical Philosophy</p>
+                            <h3 class="text-lg font-bold text-white mt-1">Compassionate, Modern & Precise</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold">
+                        About The Practice
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">
+                        Excellence in Dentistry, <br/>
+                        <span class="text-gradient">Designed Around You</span>
+                    </h2>
+
+                    <p class="text-slate-400 leading-relaxed">
+                        At <strong class="text-slate-200">Swayam Dental Clinic</strong>, Dr. Kajal Chauhan leads a practice dedicated to redefining the dental experience. Under the guiding motto <em>"Dentistry Beyond Smiles,"</em> our goal is not just to fix teeth, but to enhance overall wellness, self-confidence, and oral health.
+                    </p>
+
+                    <p class="text-slate-400 leading-relaxed">
+                        Whether you are visiting for preventive care, cosmetic alignment, complex restorative surgery, or emergency care, Dr. Kajal integrates modern technology with empathetic clinical standards.
+                    </p>
+
+                    <!-- Feature Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                        <div class="flex items-start gap-3 p-4 bg-slate-900/40 rounded-xl border border-slate-800/80">
+                            <i class="fa-solid fa-microscope text-cyan-400 text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-white text-sm">Digital Diagnostics</h4>
+                                <p class="text-xs text-slate-400 mt-1">3D imaging & ultra-precise evaluation.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3 p-4 bg-slate-900/40 rounded-xl border border-slate-800/80">
+                            <i class="fa-solid fa-heart-pulse text-indigo-400 text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-white text-sm">Painless Dentistry</h4>
+                                <p class="text-xs text-slate-400 mt-1">Comfort-first protocols for anxiety-free visits.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid Section -->
+    <section id="services" class="py-24 px-6 relative bg-slate-950/50 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold">
+                    Comprehensive Care
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">Specialized Dental Treatments</h2>
+                <p class="text-slate-400">Delivering a full spectrum of dental services crafted with precision, art, and modern science.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service Card 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 p-8 rounded-3xl transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-cyan-500/20 to-blue-500/20 border border-cyan-500/30 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Cosmetic Smile Makeover</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Veneers, teeth whitening, and alignment procedures designed to create your ideal radiant smile.</p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-cyan-400 text-sm font-semibold hover:gap-3 transition-all">
+                        Learn More <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-8 rounded-3xl transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-indigo-500/20 to-purple-500/20 border border-indigo-500/30 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-teeth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Dental Implants & Crowns</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Permanent restoration of missing teeth with natural-looking digital implants and durable crowns.</p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-indigo-400 text-sm font-semibold hover:gap-3 transition-all">
+                        Learn More <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 p-8 rounded-3xl transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-purple-500/20 to-pink-500/20 border border-purple-500/30 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-briefcase-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Root Canal Therapy</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Advanced micro-endodontic treatments to save damaged teeth effortlessly and painlessly.</p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-purple-400 text-sm font-semibold hover:gap-3 transition-all">
+                        Learn More <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-teal-400/50 p-8 rounded-3xl transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-teal-500/20 to-emerald-500/20 border border-teal-500/30 text-teal-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Preventive Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Comprehensive checkups, deep scaling, fluoride treatments, and oral disease screenings.</p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-teal-400 text-sm font-semibold hover:gap-3 transition-all">
+                        Learn More <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 p-8 rounded-3xl transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-cyan-500/20 to-indigo-500/20 border border-cyan-500/30 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-child-reaching"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Pediatric Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Warm, gentle, and fun dental care tailored specifically for children and young teens.</p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-cyan-400 text-sm font-semibold hover:gap-3 transition-all">
+                        Learn More <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-8 rounded-3xl transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-indigo-500/20 to-pink-500/20 border border-indigo-500/30 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-kit-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Emergency Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Immediate attention for toothaches, trauma, broken restorations, and urgent clinical needs.</p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-indigo-400 text-sm font-semibold hover:gap-3 transition-all">
+                        Learn More <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 px-6 relative border-t border-slate-900">
+        <div class="max-w-7xl mx-auto">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-semibold">
+                    Patient Endorsements
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">What Patients Say</h2>
+                <p class="text-slate-400">Real experiences from people who trusted Dr. Kajal Chauhan with their dental wellness.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-3xl relative">
+                    <div class="flex text-amber-400 gap-1 mb-4 text-sm">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                        "Dr. Kajal Chauhan is incredibly skilled and empathetic. I used to be deeply anxious about dental procedures, but her team made me feel relaxed and completely pain-free!"
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 font-bold flex items-center justify-center text-sm">
+                            AP
+                        </div>
+                        <div>
+                            <div class="font-bold text-white text-sm">Ananya Patel</div>
+                            <div class="text-xs text-slate-500">Smile Makeover Patient</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-3xl relative">
+                    <div class="flex text-amber-400 gap-1 mb-4 text-sm">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                        "The hygiene standards and high-tech setup at Swayam Dental Clinic are outstanding. My root canal treatment was smooth and fast. Highly recommended!"
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 font-bold flex items-center justify-center text-sm">
+                            RS
+                        </div>
+                        <div>
+                            <div class="font-bold text-white text-sm">Rajesh Sharma</div>
+                            <div class="text-xs text-slate-500">Restorative Dental Patient</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-3xl relative">
+                    <div class="flex text-amber-400 gap-1 mb-4 text-sm">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                        "Truly 'Dentistry Beyond Smiles'. Dr. Kajal transformed my confidence with alignment treatment. She explains everything in detail and treats with immense warmth."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 font-bold flex items-center justify-center text-sm">
+                            VM
+                        </div>
+                        <div>
+                            <div class="font-bold text-white text-sm">Vandana Mehta</div>
+                            <div class="text-xs text-slate-500">Cosmetic Alignment Patient</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Consultation Section -->
+    <section id="contact" class="py-24 px-6 relative border-t border-slate-900 bg-slate-950">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Info -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold mb-4">
+                            Get In Touch
+                        </div>
+                        <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">Book Your Visit Today</h2>
+                        <p class="text-slate-400 mt-3 leading-relaxed">
+                            Take the first step toward a healthier, brighter smile. Reach out to schedule a comprehensive evaluation at Swayam Dental Clinic.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-10 h-10 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-lg shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white text-sm">Clinic Location</h4>
+                                <p class="text-xs text-slate-400 mt-1">Swayam Dental Clinic, Dentistry Beyond Smiles</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-10 h-10 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-lg shrink-0">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white text-sm">Working Hours</h4>
+                                <p class="text-xs text-slate-400 mt-1">Mon - Sat: 09:30 AM - 08:30 PM <br/>Sunday: By Appointment</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-10 h-10 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-lg shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white text-sm">Direct Contact</h4>
+                                <p class="text-xs text-slate-400 mt-1">Appointments & Inquiries</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Card -->
+                <div class="lg:col-span-7">
+                    <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 sm:p-10 rounded-3xl shadow-2xl relative">
+                        <h3 class="text-xl font-bold text-white mb-6">Schedule an Appointment</h3>
+                        
+                        <form onsubmit="event.preventDefault(); alert('Thank you! Your request has been submitted to Dr. Kajal Chauhan\'s team.');" class="space-y-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Your Name</label>
+                                    <input type="text" placeholder="John Doe" required class="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-xl text-white placeholder-slate-600 focus:outline-none focus:border-cyan-500 transition-colors text-sm" />
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Phone Number</label>
+                                    <input type="tel" placeholder="+91 98765 43210" required class="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-xl text-white placeholder-slate-600 focus:outline-none focus:border-cyan-500 transition-colors text-sm" />
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Preferred Service</label>
+                                    <select class="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-xl text-slate-300 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                                        <option>General Checkup</option>
+                                        <option>Cosmetic Dentistry</option>
+                                        <option>Dental Implants</option>
+                                        <option>Root Canal Treatment</option>
+                                        <option>Pediatric Care</option>
+                                        <option>Other / Consultation</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Preferred Date</label>
+                                    <input type="date" class="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-xl text-white focus:outline-none focus:border-cyan-500 transition-colors text-sm" />
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Message or Dental Concerns</label>
+                                <textarea rows="4" placeholder="Briefly describe your symptoms or requested consultation..." class="w-full px-4 py-3 bg-slate-950 border border-slate-800 rounded-xl text-white placeholder-slate-600 focus:outline-none focus:border-cyan-500 transition-colors text-sm"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 bg-gradient-to-r from-cyan-500 via-indigo-600 to-purple-600 text-white font-semibold rounded-xl shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:scale-[1.01] active:scale-[0.99] transition-all duration-300">
+                                Send Appointment Request
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 px-6 border-t border-slate-900 text-center text-slate-500 text-sm">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-tooth text-cyan-400"></i>
+                <span class="font-semibold text-slate-300">Dr. Kajal Chauhan</span> — Swayam Dental Clinic
+            </div>
+            <div>
+                <p>&copy; 2026 Swayam Dental Clinic. All Rights Reserved. "Dentistry Beyond Smiles"</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
