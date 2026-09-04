@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Aquib Mujtaba | Dental Surgeon & Clinical Specialist</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            cyan: '#06b6d4',
+                            teal: '#14b8a6',
+                            indigo: '#6366f1',
+                            purple: '#a855f7',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-border {
+            position: relative;
+            background: linear-gradient(135deg, rgba(56, 189, 248, 0.3), rgba(168, 85, 247, 0.3));
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(56, 189, 248, 0.25);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-white">
+
+    <!-- Ambient Glow Backgrounds -->
+    <div class="fixed top-0 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+    <div class="fixed bottom-0 right-1/4 w-[30rem] h-[30rem] bg-indigo-500/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+    <div class="fixed top-1/2 right-10 w-72 h-72 bg-purple-500/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
+                    <i class="fa-solid font-bold fa-tooth"></i>
+                </div>
+                <div>
+                    <span class="text-lg font-bold tracking-tight text-white block leading-tight">Dr. Aquib Mujtaba</span>
+                    <span class="text-xs text-cyan-400 font-medium">Dental Surgeon</span>
+                </div>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Specialties</a>
+                <a href="#expertise" class="hover:text-cyan-400 transition-colors">Clinical Excellence</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Testimonials</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <a href="#contact" class="px-5 py-2.5 rounded-full text-sm font-semibold bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 text-white hover:opacity-90 transition-all duration-300 shadow-md shadow-indigo-500/20 hover:shadow-cyan-500/30">
+                    Book Consultation
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-16 pb-24 md:pt-28 md:pb-36 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-12 items-center">
+            <div class="md:col-span-7 space-y-8">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 text-slate-300 text-xs font-semibold backdrop-blur-xl">
+                    <span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping"></span>
+                    <span class="text-cyan-400 font-bold uppercase tracking-wider">Bhatnagar Advanced Dental Care Clinic</span>
+                </div>
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-slate-100 leading-[1.15]">
+                    Transforming Smiles with <span class="gradient-text">Precision & Elegance</span>
+                </h1>
+                <p class="text-slate-400 text-lg sm:text-xl font-normal leading-relaxed max-w-2xl">
+                    Welcome to high-precision oral healthcare. Dr. Aquib Mujtaba specializes in advanced cosmetic dentistry, surgical implantology, and pain-free restorative therapies designed to revive your confidence and oral health.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <a href="#contact" class="px-8 py-4 rounded-xl font-semibold bg-gradient-to-r from-cyan-500 to-indigo-600 text-white hover:from-cyan-400 hover:to-indigo-500 transition-all duration-300 shadow-xl shadow-cyan-500/25 flex items-center gap-3 group">
+                        <span>Schedule Appointment</span>
+                        <i class="fa-solid fa-calendar-check group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                    <a href="#services" class="px-8 py-4 rounded-xl font-semibold bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-200 transition-all duration-300 flex items-center gap-3">
+                        <span>Explore Treatments</span>
+                        <i class="fa-solid fa-arrow-down text-slate-400"></i>
+                    </a>
+                </div>
+
+                <!-- Trust Badges / Stats -->
+                <div class="pt-8 grid grid-cols-3 gap-6 border-t border-slate-800/80">
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-bold text-white gradient-text">100%</div>
+                        <div class="text-xs text-slate-400 mt-1">Patient Focused</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-bold text-white gradient-text">Modern</div>
+                        <div class="text-xs text-slate-400 mt-1">Laser & Digital Tech</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-bold text-white gradient-text">Painless</div>
+                        <div class="text-xs text-slate-400 mt-1">Advanced Procedures</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Avatar Column -->
+            <div class="md:col-span-5 flex justify-center">
+                <div class="relative">
+                    <!-- Glow Outer Circle -->
+                    <div class="absolute -inset-1.5 rounded-full bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 blur-lg opacity-70 animate-pulse"></div>
+                    <!-- Double-Gradient Ring Container -->
+                    <div class="relative p-2 rounded-full bg-gradient-to-b from-slate-900 to-slate-950 border border-slate-700/50 glow-effect">
+                        <img src="https://ui-avatars.com/api/?name=Aquib+Mujtaba&size=200&background=0D8ABC&color=fff&bold=true" 
+                             alt="Dr. Aquib Mujtaba" 
+                             class="w-64 h-64 sm:w-80 sm:h-80 rounded-full object-cover border-4 border-slate-900 shadow-2xl">
+                    </div>
+                    <!-- Badge Floating Overlay -->
+                    <div class="absolute -bottom-4 right-4 bg-slate-900/90 backdrop-blur-xl border border-slate-700 p-4 rounded-2xl shadow-xl flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-cyan-500/20 text-cyan-400 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs font-semibold text-slate-400">Dental Surgeon</p>
+                            <p class="text-xs text-white font-bold">Advanced Clinic Specialist</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-20 bg-slate-900/40 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-12 gap-12 items-center">
+                <div class="md:col-span-5">
+                    <div class="relative rounded-3xl overflow-hidden border border-slate-800 shadow-2xl group">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Modern Dental Surgery Room" 
+                             class="w-full h-[420px] object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-slate-900/80 backdrop-blur-md border border-slate-800">
+                            <p class="text-sm font-semibold text-cyan-400">Bhatnagar Advanced Dental Care Clinic</p>
+                            <p class="text-xs text-slate-300">State-of-the-Art Dental Technology & Sterilization Standards</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 text-cyan-400 text-sm font-semibold">
+                        <i class="fa-solid fa-user-doctor"></i>
+                        <span>About Dr. Aquib Mujtaba</span>
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+                        Dedicated to Artistry, Precision, and Superior Patient Comfort
+                    </h2>
+                    <p class="text-slate-300 leading-relaxed font-normal">
+                        Dr. Aquib Mujtaba is a distinguished Dental Surgeon practicing at <strong>Bhatnagar Advanced Dental Care Clinic</strong>. Committed to providing unparalleled oral healthcare, Dr. Mujtaba integrates modern clinical protocols with personalized patient care. 
+                    </p>
+                    <p class="text-slate-400 leading-relaxed text-sm">
+                        Whether performing complex surgical procedures, aesthetic smile design, or preventive oral maintenance, his approach focuses on long-term dental health, minimal discomfort, and exceptional cosmetic outcomes.
+                    </p>
+                    
+                    <div class="grid sm:grid-cols-2 gap-4 pt-4">
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="flex items-center gap-3">
+                                <i class="fa-solid fa-microscope text-cyan-400 text-lg"></i>
+                                <span class="font-semibold text-slate-200">Microscopic Diagnostics</span>
+                            </div>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="flex items-center gap-3">
+                                <i class="fa-solid fa-wand-magic-sparkles text-purple-400 text-lg"></i>
+                                <span class="font-semibold text-slate-200">Cosmetic Restoration</span>
+                            </div>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="flex items-center gap-3">
+                                <i class="fa-solid fa-notes-medical text-indigo-400 text-lg"></i>
+                                <span class="font-semibold text-slate-200">Pain-Free Treatments</span>
+                            </div>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="flex items-center gap-3">
+                                <i class="fa-solid fa-shield-halved text-teal-400 text-lg"></i>
+                                <span class="font-semibold text-slate-200">Sterilized & Safe</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-cyan-400 text-sm font-bold tracking-wider uppercase">Clinical Specialties</span>
+                <h2 class="text-3xl sm:text-5xl font-bold text-white tracking-tight">Comprehensive Oral Healthcare</h2>
+                <p class="text-slate-400 text-base">Utilizing modern technology to deliver predictable, painless, and aesthetic clinical results.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-cyan-500/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-cyan-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-teeth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Dental Implants</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Permanent, natural-looking tooth replacements designed to restore full chewing functionality and jaw integrity.
+                    </p>
+                    <span class="text-xs font-semibold text-cyan-400 flex items-center gap-2">Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-indigo-500/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-indigo-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Cosmetic Smile Design</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Porcelain veneers, teeth whitening, and aesthetic reshaping for a flawless, bright smile.
+                    </p>
+                    <span class="text-xs font-semibold text-indigo-400 flex items-center gap-2">Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-purple-500/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-purple-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-kit-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Root Canal Therapy</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Advanced endodontic care aimed at eliminating infection and saving natural teeth efficiently and painlessly.
+                    </p>
+                    <span class="text-xs font-semibold text-purple-400 flex items-center gap-2">Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-teal-500/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-teal-500/10 text-teal-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-teal-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-teeth-open"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Orthodontics & Aligners</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Clear aligners and modern braces to correct malocclusion, teeth crowding, and bite alignment.
+                    </p>
+                    <span class="text-xs font-semibold text-teal-400 flex items-center gap-2">Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-pink-500/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-pink-500/10 text-pink-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-pink-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-stethoscope"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Surgical Extractions</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Safe, gentle removal of impacted wisdom teeth and complex oral surgical procedures with quick recovery.
+                    </p>
+                    <span class="text-xs font-semibold text-pink-400 flex items-center gap-2">Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-cyan-500/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-cyan-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Preventative & Gum Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Comprehensive periodontal scaling, deep cleaning, and oral cancer screenings for long-term health.
+                    </p>
+                    <span class="text-xs font-semibold text-cyan-400 flex items-center gap-2">Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-slate-900/30">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-cyan-400 text-sm font-bold uppercase tracking-wider">Patient & Peer Endorsements</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2">Trusted By Hundreds of Patients</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-4">
+                    <div class="flex text-amber-400 text-sm gap-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        "Dr. Aquib Mujtaba is extremely professional and gentle. I had a complex root canal procedure done at Bhatnagar Dental Clinic and felt absolutely no pain throughout!"
+                    </p>
+                    <div class="pt-2 border-t border-slate-800/60">
+                        <p class="text-white font-semibold text-sm">Rohan S.</p>
+                        <p class="text-xs text-slate-400">Dental Implant Patient</p>
+                    </div>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-4">
+                    <div class="flex text-amber-400 text-sm gap-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        "The smile transformation Dr. Aquib performed on my veneers was life-changing. His attention to modern techniques and aesthetic perfection is unparalleled."
+                    </p>
+                    <div class="pt-2 border-t border-slate-800/60">
+                        <p class="text-white font-semibold text-sm">Priya M.</p>
+                        <p class="text-xs text-slate-400">Cosmetic Dental Patient</p>
+                    </div>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-4">
+                    <div class="flex text-amber-400 text-sm gap-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        "Highly recommend Dr. Mujtaba for anyone anxious about dental procedures. He explains everything clearly and ensures total comfort at Bhatnagar Clinic."
+                    </p>
+                    <div class="pt-2 border-t border-slate-800/60">
+                        <p class="text-white font-semibold text-sm">Amit K.</p>
+                        <p class="text-xs text-slate-400">Routine Care Patient</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Consultation Section -->
+    <section id="contact" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="bg-gradient-to-r from-slate-900 via-slate-900 to-slate-950 border border-slate-800 rounded-3xl p-8 sm:p-12 lg:p-16 shadow-2xl relative overflow-hidden">
+                <div class="grid lg:grid-cols-12 gap-12 items-center">
+                    <div class="lg:col-span-6 space-y-6">
+                        <span class="text-cyan-400 font-bold text-sm tracking-wider uppercase">Get In Touch</span>
+                        <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Schedule Your Dental Consultation Today</h2>
+                        <p class="text-slate-300 leading-relaxed">
+                            Experience state-of-the-art dental care with Dr. Aquib Mujtaba at Bhatnagar Advanced Dental Care Clinic. Reach out for appointments, consultation, or inquiries.
+                        </p>
+
+                        <div class="space-y-4 pt-4">
+                            <div class="flex items-center gap-4 text-slate-300">
+                                <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center text-xl">
+                                    <i class="fa-solid fa-hospital"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400 uppercase font-semibold">Location</p>
+                                    <p class="text-white font-medium">Bhatnagar Advanced Dental Care Clinic</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4 text-slate-300">
+                                <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center text-xl">
+                                    <i class="fa-solid fa-clock"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400 uppercase font-semibold">Clinic Hours</p>
+                                    <p class="text-white font-medium">Mon - Sat: 10:00 AM - 8:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-6">
+                        <form onsubmit="event.preventDefault(); alert('Appointment request submitted successfully!');" class="space-y-4 bg-slate-950/80 p-6 sm:p-8 rounded-2xl border border-slate-800">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-400 mb-2">Full Name</label>
+                                <input type="text" placeholder="John Doe" required class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-400 mb-2">Phone Number</label>
+                                <input type="tel" placeholder="+1 (555) 000-0000" required class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-400 mb-2">Requested Service</label>
+                                <select class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 focus:outline-none focus:border-cyan-500 transition-colors">
+                                    <option>General Consultation</option>
+                                    <option>Cosmetic Dentistry & Veneers</option>
+                                    <option>Dental Implants</option>
+                                    <option>Root Canal Treatment</option>
+                                    <option>Teeth Whitening</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-400 mb-2">Message (Optional)</label>
+                                <textarea rows="3" placeholder="Briefly describe your concern..." class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white focus:outline-none focus:border-cyan-500 transition-colors"></textarea>
+                            </div>
+                            <button type="submit" class="w-full py-4 rounded-xl font-bold bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 text-white hover:opacity-95 transition-all duration-300 shadow-lg shadow-cyan-500/20">
+                                Request Appointment
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-900 bg-slate-950 py-8">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-400">
+            <p>&copy; 2026 Dr. Aquib Mujtaba — Bhatnagar Advanced Dental Care Clinic. All rights reserved.</p>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                <a href="#" class="hover:text-white transition-colors">Patient Portal</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
