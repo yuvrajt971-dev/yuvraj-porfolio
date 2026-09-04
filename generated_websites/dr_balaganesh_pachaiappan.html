@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Balaganesh Pachaiappan | Senior Dental Surgeon</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(14, 165, 233, 0.3);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bg-grid-pattern {
+            background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-slate-950 min-h-screen bg-grid-pattern">
+
+    <!-- Navigation Bar -->
+    <header class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
+                    <i class="fa-solid me-0 fa-tooth"></i>
+                </div>
+                <div>
+                    <span class="font-bold text-lg tracking-tight block text-slate-100 group-hover:text-cyan-400 transition-colors">Dr. Balaganesh P.</span>
+                    <span class="text-xs text-slate-400 font-medium">Saraswati Dental Clinic</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Specializations</a>
+                <a href="#why-us" class="hover:text-cyan-400 transition-colors">Why Choose Us</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Patient Stories</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <a href="#contact" class="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-semibold rounded-xl group bg-gradient-to-br from-cyan-500 via-indigo-500 to-purple-600 group-hover:from-cyan-500 group-hover:to-purple-600 hover:text-white text-white shadow-lg shadow-cyan-500/20">
+                    <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-slate-950 rounded-[10px] group-hover:bg-opacity-0">
+                        Book Consultation
+                    </span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-24 md:pt-48 md:pb-32 overflow-hidden">
+        <!-- Ambient Glow Background -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-cyan-500/20 via-indigo-500/10 to-transparent rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 backdrop-blur-md text-xs font-semibold text-cyan-400">
+                        <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                        Leading Dental Surgeon at Saraswati Dental Clinic
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-[1.15]">
+                        Crafting Healthy, <br>
+                        <span class="text-gradient">Radiant Smiles</span> With Precision
+                    </h1>
+
+                    <p class="text-slate-400 text-lg sm:text-xl max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Welcome to the practice of <strong class="text-slate-200">Dr. Balaganesh Pachaiappan</strong>. Combining advanced surgical expertise, cutting-edge dental technology, and personalized care for unmatched oral wellness.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 font-semibold text-white shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 text-center flex items-center justify-center gap-3">
+                            <span>Schedule Appointment</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                        <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900/80 hover:bg-slate-800/80 border border-slate-800 font-semibold text-slate-300 hover:text-white transition-all text-center backdrop-blur-xl">
+                            Explore Treatments
+                        </a>
+                    </div>
+
+                    <!-- Trust Badges -->
+                    <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-6 max-w-lg mx-auto lg:mx-0">
+                        <div>
+                            <p class="text-2xl font-bold text-white">100%</p>
+                            <p class="text-xs text-slate-400 font-medium">Patient Focused</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-bold text-white">Advanced</p>
+                            <p class="text-xs text-slate-400 font-medium">Surgical Care</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-bold text-white">Modern</p>
+                            <p class="text-xs text-slate-400 font-medium">Dental Suite</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Avatar Frame & Visual -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative">
+                        <!-- Outer Decorative Rings -->
+                        <div class="absolute -inset-4 rounded-full bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 opacity-40 blur-xl animate-pulse"></div>
+                        <div class="relative p-2 rounded-full bg-slate-900/90 border border-slate-700/50 backdrop-blur-2xl">
+                            <div class="p-2 rounded-full bg-gradient-to-tr from-cyan-500 via-indigo-500 to-purple-600">
+                                <img src="https://ui-avatars.com/api/?name=Dr.+Balaganesh+Pachaiappan&size=200&background=0D8ABC&color=fff&bold=true" 
+                                     alt="Dr. Balaganesh Pachaiappan" 
+                                     class="w-64 h-64 sm:w-80 sm:h-80 rounded-full object-cover shadow-2xl border-4 border-slate-950">
+                            </div>
+                        </div>
+
+                        <!-- Floating Micro Badge -->
+                        <div class="absolute -bottom-4 right-2 bg-slate-900/90 border border-slate-700 backdrop-blur-xl p-4 rounded-2xl shadow-xl flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center border border-emerald-500/20">
+                                <i class="fa-solid fa-shield-halved text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Specialist</p>
+                                <p class="text-sm font-bold text-white">Dental Surgeon</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 relative bg-slate-900/40 border-y border-slate-800/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-6 relative">
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 shadow-2xl group">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Saraswati Dental Clinic State-of-the-Art Care" 
+                             class="w-full h-[450px] object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <p class="text-sm text-cyan-400 font-semibold mb-1">State-of-the-Art Technology</p>
+                            <p class="text-lg font-bold text-white">Saraswati Dental Clinic</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-block px-3 py-1 rounded-md bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold uppercase tracking-wider">
+                        About Dr. Balaganesh
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+                        Excellence in Dental Surgery & Comprehensive Patient Care
+                    </h2>
+                    <p class="text-slate-400 leading-relaxed">
+                        Dr. Balaganesh Pachaiappan is a highly skilled Dental Surgeon dedicated to delivering precision oral healthcare at Saraswati Dental Clinic. With a clinical emphasis on comfort, accuracy, and long-term vitality, Dr. Balaganesh employs contemporary surgical techniques to ensure every patient receives world-class treatment.
+                    </p>
+                    <p class="text-slate-400 leading-relaxed">
+                        Whether performing intricate surgical extractions, restorative procedures, or aesthetic smile design, his approach centers on modern minimal-pain protocols and clear patient guidance every step of the way.
+                    </p>
+
+                    <div class="grid sm:grid-cols-2 gap-4 pt-4">
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-cyan-400 text-lg mt-0.5"></i>
+                            <div>
+                                <h4 class="font-semibold text-white text-sm">Advanced Surgical Care</h4>
+                                <p class="text-xs text-slate-400 mt-1">High success rate in complex dental procedures.</p>
+                            </div>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-cyan-400 text-lg mt-0.5"></i>
+                            <div>
+                                <h4 class="font-semibold text-white text-sm">Personalized Approach</h4>
+                                <p class="text-xs text-slate-400 mt-1">Tailored treatment plans for every patient's needs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="inline-block px-3 py-1 rounded-md bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold uppercase tracking-wider">
+                    Clinical Services
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Comprehensive Surgical & Dental Solutions</h2>
+                <p class="text-slate-400">Combining state-of-the-art diagnostic technology with surgical precision to ensure long-term health and aesthetics.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-cyan-500 group-hover:text-slate-950 transition-colors">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Dental Implants & Restoration</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Permanent, natural-looking replacement of missing teeth with precision implant surgical placement and custom restorations.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-sm font-semibold text-cyan-400 hover:text-cyan-300 gap-2">
+                        <span>Learn More</span>
+                        <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-indigo-500 group-hover:text-slate-950 transition-colors">
+                        <i class="fa-solid fa-notes-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Oral & Maxillofacial Surgery</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Expert surgical extractions including wisdom teeth removal, jaw realignment, and soft-tissue treatments using gentle techniques.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-sm font-semibold text-indigo-400 hover:text-indigo-300 gap-2">
+                        <span>Learn More</span>
+                        <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-purple-500 group-hover:text-slate-950 transition-colors">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Cosmetic Smile Design</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Transform your aesthetic appearance through professional whitening, porcelain veneers, and complete smile makeovers.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-sm font-semibold text-purple-400 hover:text-purple-300 gap-2">
+                        <span>Learn More</span>
+                        <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-cyan-500 group-hover:text-slate-950 transition-colors">
+                        <i class="fa-solid fa-briefcase-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Root Canal Therapy (Endodontics)</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Save damaged or infected natural teeth with modern, pain-minimized endodontic root canal therapy.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-sm font-semibold text-cyan-400 hover:text-cyan-300 gap-2">
+                        <span>Learn More</span>
+                        <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-indigo-500 group-hover:text-slate-950 transition-colors">
+                        <i class="fa-solid fa-teeth-open"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Orthodontics & Realignment</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Correct misalignments, spacing, and bite issues with contemporary orthodontic options tailored to adult and teen smiles.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-sm font-semibold text-indigo-400 hover:text-indigo-300 gap-2">
+                        <span>Learn More</span>
+                        <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-purple-500 group-hover:text-slate-950 transition-colors">
+                        <i class="fa-solid fa-shield-virus"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Preventive Oral Hygiene</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Routine examinations, professional deep cleaning, scaling, and proactive preventive care to preserve oral vitality.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-sm font-semibold text-purple-400 hover:text-purple-300 gap-2">
+                        <span>Learn More</span>
+                        <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 relative bg-slate-900/40 border-y border-slate-800/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="inline-block px-3 py-1 rounded-md bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-semibold uppercase tracking-wider">
+                    Patient Endorsements
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Trusted by Happy Patients</h2>
+                <p class="text-slate-400">Read what individuals have to say about their care with Dr. Balaganesh Pachaiappan.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Dr. Balaganesh is an outstanding surgeon. I was extremely nervous about my extraction procedure, but his gentle approach and clear explanations made the experience seamless and pain-free."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800/80">
+                        <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold text-sm">
+                            RP
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-white text-sm">Rajesh P.</h4>
+                            <p class="text-xs text-slate-400">Dental Surgery Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "The modern technology and hygiene standard at Saraswati Dental Clinic under Dr. Balaganesh’s guidance is commendable. High precision treatment with exceptional patient care."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800/80">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-sm">
+                            SK
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-white text-sm">Sujata K.</h4>
+                            <p class="text-xs text-slate-400">Cosmetic Dentistry Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Got my root canal treatment done effortlessly. Dr. Balaganesh ensures you are completely relaxed throughout the session. Highly recommended surgeon!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800/80">
+                        <div class="w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 flex items-center justify-center font-bold text-sm">
+                            AM
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-white text-sm">Arun M.</h4>
+                            <p class="text-xs text-slate-400">Endodontic Patient</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Booking Section -->
+    <section id="contact" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <div class="inline-block px-3 py-1 rounded-md bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold uppercase tracking-wider mb-4">
+                            Connect & Book
+                        </div>
+                        <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Schedule Your Consultation Today</h2>
+                        <p class="text-slate-400 mt-4 leading-relaxed">
+                            Take the first step toward a healthier, more confident smile. Contact Saraswati Dental Clinic or send a message below to book an appointment with Dr. Balaganesh Pachaiappan.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 text-cyan-400 flex items-center justify-center flex-shrink-0 text-xl">
+                                <i class="fa-solid fa-hospital"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-white">Clinic Location</h4>
+                                <p class="text-sm text-slate-400 mt-1">Saraswati Dental Clinic, Premier Dental Care Center</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 text-cyan-400 flex items-center justify-center flex-shrink-0 text-xl">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-white">Consultation Hours</h4>
+                                <p class="text-sm text-slate-400 mt-1">Mon - Sat: 09:30 AM - 08:00 PM</p>
+                                <p class="text-xs text-slate-500">Sunday: By Appointment</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 text-cyan-400 flex items-center justify-center flex-shrink-0 text-xl">
+                                <i class="fa-solid fa-user-doctor"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-white">Specialist Surgeon</h4>
+                                <p class="text-sm text-slate-400 mt-1">Dr. Balaganesh Pachaiappan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7">
+                    <div class="bg-slate-900/80 border border-slate-800 p-8 sm:p-10 rounded-2xl backdrop-blur-xl shadow-2xl">
+                        <h3 class="text-xl font-bold text-white mb-6">Send Appointment Inquiry</h3>
+                        <form onsubmit="event.preventDefault(); alert('Thank you! Your appointment request has been logged.');" class="space-y-6">
+                            <div class="grid sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Full Name</label>
+                                    <input type="text" placeholder="John Doe" required class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-cyan-500 transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Phone Number</label>
+                                    <input type="tel" placeholder="+91 98765 43210" required class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-cyan-500 transition-colors">
+                                </div>
+                            </div>
+
+                            <div class="grid sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Service Required</label>
+                                    <select class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-300 focus:outline-none focus:border-cyan-500 transition-colors">
+                                        <option>General Dental Checkup</option>
+                                        <option>Dental Surgical Extraction</option>
+                                        <option>Dental Implants</option>
+                                        <option>Cosmetic Treatment</option>
+                                        <option>Root Canal Therapy</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Preferred Date</label>
+                                    <input type="date" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-300 focus:outline-none focus:border-cyan-500 transition-colors">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Additional Notes / Symptoms</label>
+                                <textarea rows="4" placeholder="Briefly describe your treatment interest or concerns..." class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-cyan-500 transition-colors"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 font-bold text-white shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 hover:scale-[1.01] active:scale-[0.99] transition-all">
+                                Request Booking
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800/80 py-12 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-cyan-500 flex items-center justify-center text-slate-950 font-bold text-sm">
+                    <i class="fa-solid fa-tooth"></i>
+                </div>
+                <span class="font-bold text-slate-200 text-sm">Dr. Balaganesh Pachaiappan &bull; Saraswati Dental Clinic</span>
+            </div>
+
+            <p class="text-xs text-slate-500">
+                &copy; 2026 Dr. Balaganesh Pachaiappan. All rights reserved. Ultra-Premium Dental Portfolio.
+            </p>
+
+            <div class="flex items-center gap-4 text-slate-400">
+                <a href="#" class="hover:text-cyan-400 transition-colors text-sm"><i class="fa-brands fa-linkedin text-lg"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors text-sm"><i class="fa-solid fa-envelope text-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
