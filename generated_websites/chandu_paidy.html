@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Chandu Paidy | General Dentist & Orthodontic Care Specialist</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(99, 102, 241, 0.3);
+        }
+        .glow-effect-teal {
+            box-shadow: 0 0 50px -10px rgba(14, 165, 233, 0.35);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-border {
+            position: relative;
+            background-clip: padding-box;
+            border: 1px solid transparent;
+        }
+        .gradient-border::before {
+            content: '';
+            position: absolute;
+            top: 0; right: 0; bottom: 0; left: 0;
+            z-index: -1;
+            margin: -1px;
+            border-radius: inherit;
+            background: linear-gradient(to right, #0ea5e9, #6366f1, #ec4899);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-white">
+
+    <!-- Background Orbs -->
+    <div class="fixed top-0 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+    <div class="fixed bottom-1/3 right-1/4 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+    <div class="fixed top-2/3 left-1/3 w-80 h-80 bg-pink-500/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+    <!-- Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-indigo-500 to-pink-500 flex items-center justify-center p-0.5 shadow-lg group-hover:scale-105 transition-transform duration-300">
+                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+                        <i class="fa-solid fa-tooth text-cyan-400 text-lg"></i>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-lg tracking-tight text-white group-hover:text-cyan-400 transition-colors">Dr. Chandu Paidy</span>
+                    <span class="text-xs text-slate-400">Gowri Dental Clinic</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
+                <a href="#philosophy" class="hover:text-cyan-400 transition-colors">Care Philosophy</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Testimonials</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+            </nav>
+
+            <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white font-semibold text-sm hover:opacity-90 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300 active:scale-95">
+                <i class="fa-regular fa-calendar-check"></i>
+                <span>Book Consultation</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-20 md:pt-48 md:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Content Left -->
+                <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/90 border border-slate-800 text-cyan-400 text-xs font-semibold tracking-wide uppercase">
+                        <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                        General Dentistry & Orthodontic Care
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                        Crafting Healthy, <br>
+                        <span class="text-gradient">Radiant Smiles</span> With Precision Care.
+                    </h1>
+                    
+                    <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed font-light">
+                        Welcome to the practice of <strong class="text-slate-200">Dr. Chandu Paidy</strong>. Delivering comprehensive oral healthcare, advanced orthodontics, and personalized dental solutions at Gowri Dental clinic and orthodontic care.
+                    </p>
+
+                    <!-- CTAs & Actions -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white font-semibold text-base shadow-lg shadow-indigo-500/25 hover:shadow-cyan-500/40 hover:-translate-y-0.5 transition-all duration-300 text-center">
+                            Schedule Appointment <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                        </a>
+                        <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-slate-700 text-slate-200 font-semibold text-base hover:bg-slate-800/50 transition-all duration-300 text-center">
+                            Explore Treatments
+                        </a>
+                    </div>
+
+                    <!-- Trust Badges / Stats -->
+                    <div class="pt-8 grid grid-cols-3 gap-4 border-t border-slate-800/80">
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-bold text-white">100%</div>
+                            <div class="text-xs text-slate-400 mt-1">Patient Focused</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-bold text-white">Modern</div>
+                            <div class="text-xs text-slate-400 mt-1">Orthodontic Tech</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-bold text-white">Gentle</div>
+                            <div class="text-xs text-slate-400 mt-1">Painless Dentistry</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Image Right / Avatar Frame -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative group">
+                        <!-- Double Glowing Ring -->
+                        <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-pink-500 blur-xl opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+                        <div class="absolute -inset-0.5 rounded-3xl bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 opacity-90"></div>
+                        
+                        <div class="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-3xl overflow-hidden bg-slate-950 p-3">
+                            <img 
+                                src="https://ui-avatars.com/api/?name=Chandu+Paidy&size=200&background=0D8ABC&color=fff&bold=true" 
+                                alt="Dr. Chandu Paidy" 
+                                class="w-full h-full object-cover rounded-2xl filter brightness-105 contrast-105"
+                            />
+                            
+                            <!-- Floating Card Overlay -->
+                            <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-slate-900/90 backdrop-blur-xl border border-slate-700/60 shadow-2xl">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center shrink-0">
+                                        <i class="fa-solid fa-hospital-user text-lg"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-xs text-slate-400 font-medium">Practicing at</p>
+                                        <p class="text-sm font-bold text-white">Gowri Dental Clinic</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 relative bg-slate-900/40 border-y border-slate-800/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- About Image -->
+                <div class="lg:col-span-6">
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 group">
+                        <img 
+                            src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                            alt="Dental Clinic Infrastructure" 
+                            class="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700"
+                        />
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <span class="text-xs font-semibold text-cyan-400 uppercase tracking-wider">Modern Clinical Facility</span>
+                            <h3 class="text-xl font-bold text-white mt-1">State-of-the-Art Dental Care Environment</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About Text -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold">
+                        About Dr. Chandu Paidy
+                    </div>
+                    
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+                        Dedicated to Excellence in Dental & Orthodontic Health
+                    </h2>
+                    
+                    <p class="text-slate-300 leading-relaxed font-light">
+                        As a General Dentist at <strong>Gowri Dental clinic and orthodontic care</strong>, Dr. Chandu Paidy combines clinical precision with a gentle, patient-first approach. With expertise ranging from preventive dental healthcare to intricate alignment procedures, Dr. Paidy ensures every patient enjoys a comfortable experience and achieves optimal oral health.
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                        <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-4 rounded-xl hover:border-cyan-500/40 transition-all">
+                            <i class="fa-solid fa-microscope text-cyan-400 text-xl mb-2"></i>
+                            <h4 class="font-bold text-white text-sm">Advanced Diagnostics</h4>
+                            <p class="text-xs text-slate-400 mt-1">Digital mapping and modern imaging for complete accuracy.</p>
+                        </div>
+                        <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-4 rounded-xl hover:border-purple-500/40 transition-all">
+                            <i class="fa-solid fa-heart-pulse text-purple-400 text-xl mb-2"></i>
+                            <h4 class="font-bold text-white text-sm">Patient Comfort First</h4>
+                            <p class="text-xs text-slate-400 mt-1">Stress-free, gentle treatments tailored for all ages.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-xs font-semibold text-cyan-400 uppercase tracking-widest">Comprehensive Dental Care</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Specialized Services & Treatments</h2>
+                <p class="text-slate-400 text-base font-light">
+                    From routine preventive checkups to transformative orthodontic solutions, offering a full spectrum of dental care.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service Card 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 rounded-2xl p-8 hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-cyan-500 group-hover:text-slate-950 transition-all duration-300">
+                        <i class="fa-solid fa-teeth-open"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Orthodontics & Aligners</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Correction of misaligned teeth and jaw structure using modern braces and discreet clear aligners for a perfectly aligned smile.
+                    </p>
+                    <span class="inline-flex items-center text-xs font-semibold text-cyan-400 group-hover:translate-x-1 transition-transform">
+                        Learn More <i class="fa-solid fa-arrow-right ml-1"></i>
+                    </span>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 rounded-2xl p-8 hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-purple-500 group-hover:text-slate-950 transition-all duration-300">
+                        <i class="fa-solid fa-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Cosmetic Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Enhance your smile aesthetics with professional teeth whitening, dental veneers, bonding, and total smile makeovers.
+                    </p>
+                    <span class="inline-flex items-center text-xs font-semibold text-purple-400 group-hover:translate-x-1 transition-transform">
+                        Learn More <i class="fa-solid fa-arrow-right ml-1"></i>
+                    </span>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 rounded-2xl p-8 hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-indigo-500 group-hover:text-slate-950 transition-all duration-300">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Preventive Dental Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Comprehensive dental exams, deep scaling, fluoride treatments, and oral hygiene education to prevent cavities and gum issues.
+                    </p>
+                    <span class="inline-flex items-center text-xs font-semibold text-indigo-400 group-hover:translate-x-1 transition-transform">
+                        Learn More <i class="fa-solid fa-arrow-right ml-1"></i>
+                    </span>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 rounded-2xl p-8 hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-pink-500/10 text-pink-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-pink-500 group-hover:text-slate-950 transition-all duration-300">
+                        <i class="fa-solid fa-kit-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Root Canal Therapy</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Gentle and effective endodontic procedures to relieve tooth pain, treat infection, and save your natural tooth structure.
+                    </p>
+                    <span class="inline-flex items-center text-xs font-semibold text-pink-400 group-hover:translate-x-1 transition-transform">
+                        Learn More <i class="fa-solid fa-arrow-right ml-1"></i>
+                    </span>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 rounded-2xl p-8 hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-teal-500/10 text-teal-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-teal-500 group-hover:text-slate-950 transition-all duration-300">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Restorative Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        High-quality dental crowns, bridges, tooth-colored fillings, and restorative implants to return full function to your teeth.
+                    </p>
+                    <span class="inline-flex items-center text-xs font-semibold text-teal-400 group-hover:translate-x-1 transition-transform">
+                        Learn More <i class="fa-solid fa-arrow-right ml-1"></i>
+                    </span>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 rounded-2xl p-8 hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-amber-500 group-hover:text-slate-950 transition-all duration-300">
+                        <i class="fa-solid fa-face-smile"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Pediatric Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Friendly, compassionate oral care for children and teenagers, promoting healthy habits and positive dental experiences.
+                    </p>
+                    <span class="inline-flex items-center text-xs font-semibold text-amber-400 group-hover:translate-x-1 transition-transform">
+                        Learn More <i class="fa-solid fa-arrow-right ml-1"></i>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 relative bg-slate-900/30 border-t border-slate-800/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-semibold text-cyan-400 uppercase tracking-widest">Patient Feedback</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight mt-2">What Our Patients Say</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 text-sm gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed font-light italic">
+                            "Dr. Chandu Paidy is exceptional! I was always nervous about dental appointments, but his calm manner and painless approach made my orthodontic journey effortless."
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 font-bold flex items-center justify-center text-sm">
+                            AR
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Ananya R.</h4>
+                            <p class="text-xs text-slate-400">Orthodontic Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 text-sm gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed font-light italic">
+                            "Top-notch facility at Gowri Dental clinic. Dr. Chandu took the time to explain my treatment plan thoroughly. My teeth whitening result was amazing!"
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 font-bold flex items-center justify-center text-sm">
+                            SK
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Suresh K.</h4>
+                            <p class="text-xs text-slate-400">Cosmetic Dentistry Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 text-sm gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed font-light italic">
+                            "Extremely professional, clean, and patient-centered practice. I highly recommend Dr. Chandu Paidy for anyone seeking reliable dental care."
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 font-bold flex items-center justify-center text-sm">
+                            PV
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Priya V.</h4>
+                            <p class="text-xs text-slate-400">General Dentistry Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Consultation Section -->
+    <section id="contact" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Info Column -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-xs font-semibold text-cyan-400 uppercase tracking-widest">Get In Touch</span>
+                        <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight mt-2">Ready for a Healthier Smile?</h2>
+                        <p class="text-slate-400 text-sm font-light mt-4 leading-relaxed">
+                            Schedule a consultation with Dr. Chandu Paidy at Gowri Dental clinic and orthodontic care today.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-10 h-10 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Clinic Location</h4>
+                                <p class="text-xs text-slate-400 mt-1">Gowri Dental clinic and orthodontic care</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-10 h-10 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Working Hours</h4>
+                                <p class="text-xs text-slate-400 mt-1">Mon - Sat: 9:00 AM - 8:00 PM | Sun: By Appointment</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-10 h-10 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Direct Email</h4>
+                                <p class="text-xs text-slate-400 mt-1">contact@gowridentalcare.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Column -->
+                <div class="lg:col-span-7">
+                    <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl">
+                        <h3 class="text-xl font-bold text-white mb-6">Book an Appointment</h3>
+                        <form onsubmit="event.preventDefault(); alert('Thank you! Your appointment request has been submitted.');" class="space-y-4">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs text-slate-400 mb-2">Full Name</label>
+                                    <input type="text" placeholder="John Doe" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-500 transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-xs text-slate-400 mb-2">Phone Number</label>
+                                    <input type="tel" placeholder="+91 98765 43210" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-500 transition-colors">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-xs text-slate-400 mb-2">Service Required</label>
+                                <select class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-300 focus:outline-none focus:border-cyan-500 transition-colors">
+                                    <option>General Dental Consultation</option>
+                                    <option>Orthodontics & Aligners</option>
+                                    <option>Teeth Whitening / Cosmetic</option>
+                                    <option>Root Canal Treatment</option>
+                                    <option>Other Services</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs text-slate-400 mb-2">Message or Symptoms (Optional)</label>
+                                <textarea rows="4" placeholder="Briefly describe your dental concern..." class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-500 transition-colors"></textarea>
+                            </div>
+                            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white font-semibold text-sm hover:opacity-90 hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300">
+                                Confirm Booking Request
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-slate-950 border-t border-slate-800/80 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-tooth text-cyan-400"></i>
+                <span class="font-bold text-slate-300">Dr. Chandu Paidy</span> &mdash; Gowri Dental clinic and orthodontic care
+            </div>
+            <p>© 2026 Dr. Chandu Paidy. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
