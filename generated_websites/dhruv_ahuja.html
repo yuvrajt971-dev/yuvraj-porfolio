@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Dhruv Ahuja | Chief Dental Surgeon & Orthodontist</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            cyan: '#0D8ABC',
+                            teal: '#14b8a6',
+                            accent: '#6366f1',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(13, 138, 188, 0.35);
+        }
+        .glow-purple {
+            box-shadow: 0 0 50px -10px rgba(147, 51, 234, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-white">
+
+    <!-- NAVIGATION BAR -->
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-indigo-500 to-purple-500 p-0.5">
+                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+                        <i class="fa-solid font-bold text-cyan-400 fa-tooth text-lg group-hover:scale-110 transition-transform duration-300"></i>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-lg tracking-tight text-white group-hover:text-cyan-400 transition-colors">Dr. Dhruv Ahuja</span>
+                    <span class="text-xs text-slate-400 tracking-wider uppercase font-medium">Dental Studio & Orthodontics</span>
+                </div>
+            </a>
+
+            <!-- Nav Links -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About Practice</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Specializations</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Patient Stories</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+            </nav>
+
+            <!-- Action Button -->
+            <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 to-indigo-600 text-white font-semibold text-sm hover:opacity-90 hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300">
+                <i class="fa-regular fa-calendar-check text-xs"></i>
+                Book Consultation
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative pt-36 pb-20 md:pt-48 md:pb-32 overflow-hidden">
+        <!-- Background Ambient Glows -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-cyan-600/20 via-indigo-600/20 to-pink-500/10 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+        <div class="absolute top-10 right-10 w-72 h-72 bg-teal-500/10 rounded-full blur-2xl -z-10 pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Left Column Content -->
+            <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 backdrop-blur-md">
+                    <span class="flex h-2 w-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                    <span class="text-xs font-semibold tracking-wide uppercase text-cyan-400">Chief Dental Surgeon & Orthodontist</span>
+                </div>
+
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-none text-white">
+                    Crafting Confident & <br class="hidden sm:block">
+                    <span class="bg-gradient-to-r from-cyan-400 via-indigo-400 to-pink-400 bg-clip-text text-transparent">
+                        Flawless Smiles
+                    </span>
+                </h1>
+
+                <p class="text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                    Welcome to <strong class="text-white">Dr. Dhruv Ahuja's Dental Studio & Orthodontic Centre</strong>. Combining state-of-the-art clinical tech with artistic precision to deliver world-class dental care, cosmetic transformations, and orthodontic excellence.
+                </p>
+
+                <!-- Call to action buttons -->
+                <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                    <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-600 to-purple-600 text-white font-bold text-center hover:shadow-xl hover:shadow-cyan-500/20 hover:scale-[1.02] transition-all duration-300">
+                        Schedule an Appointment <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                    </a>
+                    <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900/80 hover:bg-slate-800 text-slate-200 border border-slate-800 font-semibold text-center backdrop-blur-md transition-all duration-300">
+                        Explore Specializations
+                    </a>
+                </div>
+
+                <!-- Trust Badges & Stats -->
+                <div class="pt-10 grid grid-cols-3 gap-4 border-t border-slate-800/80">
+                    <div class="text-center lg:text-left">
+                        <p class="text-2xl sm:text-3xl font-extrabold text-cyan-400">12+</p>
+                        <p class="text-xs sm:text-sm text-slate-400 font-medium">Years Excellence</p>
+                    </div>
+                    <div class="text-center lg:text-left">
+                        <p class="text-2xl sm:text-3xl font-extrabold text-indigo-400">8,500+</p>
+                        <p class="text-xs sm:text-sm text-slate-400 font-medium">Smiles Restored</p>
+                    </div>
+                    <div class="text-center lg:text-left">
+                        <p class="text-2xl sm:text-3xl font-extrabold text-pink-400">99.8%</p>
+                        <p class="text-xs sm:text-sm text-slate-400 font-medium">Patient Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column Profile Card -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative w-full max-w-md">
+                    <!-- Glowing Outline Frame -->
+                    <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 opacity-75 blur-lg group-hover:opacity-100 transition duration-1000"></div>
+                    
+                    <div class="relative rounded-3xl bg-slate-900/90 border border-slate-800 p-8 backdrop-blur-xl flex flex-col items-center text-center">
+                        
+                        <!-- Avatar Wrapper with Glowing Gradient -->
+                        <div class="relative mb-6">
+                            <div class="w-36 h-36 rounded-full p-1 bg-gradient-to-tr from-cyan-400 via-indigo-500 to-purple-500 glow-effect">
+                                <img src="https://ui-avatars.com/api/?name=Dhruv+Ahuja&size=200&background=0D8ABC&color=fff&bold=true" 
+                                     alt="Dr. Dhruv Ahuja" 
+                                     class="w-full h-full object-cover rounded-full bg-slate-950">
+                            </div>
+                            <div class="absolute bottom-0 right-0 bg-cyan-500 text-white p-2 rounded-full shadow-lg border-2 border-slate-900" title="Verified Specialist">
+                                <i class="fa-solid fa-circle-check text-base"></i>
+                            </div>
+                        </div>
+
+                        <h2 class="text-2xl font-bold text-white">Dr. Dhruv Ahuja</h2>
+                        <p class="text-cyan-400 text-sm font-semibold mt-1">Chief Dental Surgeon</p>
+                        <p class="text-xs text-slate-400 mt-0.5">Dr. Dhruv Ahuja's Dental Studio & Orthodontic Centre</p>
+
+                        <!-- Specialties Pills -->
+                        <div class="flex flex-wrap gap-2 justify-center mt-6">
+                            <span class="px-3 py-1 rounded-full text-xs font-medium bg-slate-800/90 text-slate-300 border border-slate-700/60">
+                                <i class="fa-solid fa-wand-magic-sparkles text-cyan-400 mr-1"></i> Smile Design
+                            </span>
+                            <span class="px-3 py-1 rounded-full text-xs font-medium bg-slate-800/90 text-slate-300 border border-slate-700/60">
+                                <i class="fa-solid fa-teeth text-indigo-400 mr-1"></i> Aligners
+                            </span>
+                            <span class="px-3 py-1 rounded-full text-xs font-medium bg-slate-800/90 text-slate-300 border border-slate-700/60">
+                                <i class="fa-solid fa-microscope text-pink-400 mr-1"></i> Implants
+                            </span>
+                        </div>
+
+                        <!-- Floating Micro Badges -->
+                        <div class="mt-6 w-full pt-6 border-t border-slate-800 flex justify-between items-center text-xs text-slate-400">
+                            <span class="flex items-center gap-1.5">
+                                <i class="fa-solid fa-shield-halved text-emerald-400"></i> Painless Laser Tech
+                            </span>
+                            <span class="flex items-center gap-1.5">
+                                <i class="fa-solid fa-award text-amber-400"></i> Awarded Studio
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-24 relative bg-slate-900/40 border-y border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Image Side -->
+                <div class="lg:col-span-6 relative">
+                    <div class="absolute -inset-2 bg-gradient-to-r from-cyan-500 to-indigo-600 rounded-3xl opacity-20 blur-xl"></div>
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Modern Dental Studio" 
+                             class="w-full h-[420px] object-cover hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-slate-950/80 backdrop-blur-md border border-slate-800">
+                            <p class="text-sm font-semibold text-white">Next-Generation Orthodontics & Dental Care</p>
+                            <p class="text-xs text-slate-400">Equipped with 3D digital scanners and low-radiation digital radiography.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Side -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-950/60 border border-cyan-800/50 text-cyan-400 text-xs font-semibold">
+                        <i class="fa-solid fa-hospital-user"></i> ABOUT THE STUDIO
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white leading-tight">
+                        Pioneering Advanced Dentistry with a Gentle, Personalized Touch
+                    </h2>
+
+                    <p class="text-slate-300 leading-relaxed text-sm sm:text-base">
+                        Under the leadership of <strong class="text-white">Dr. Dhruv Ahuja</strong>, our studio has established a reputation for patient comfort, uncompromising hygiene standards, and world-class cosmetic and reconstructive results.
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <i class="fa-solid fa-check-circle text-cyan-400 text-lg mb-2"></i>
+                            <h3 class="font-semibold text-white text-sm">Tailored Treatment Plans</h3>
+                            <p class="text-xs text-slate-400 mt-1">Every smile is unique; we customize solutions specifically for your facial aesthetics.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <i class="fa-solid fa-microchip text-indigo-400 text-lg mb-2"></i>
+                            <h3 class="font-semibold text-white text-sm">Ultra-Modern Diagnostics</h3>
+                            <p class="text-xs text-slate-400 mt-1">Intraoral 3D scanning ensures quick, clear, and painless diagnostics.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="px-3.5 py-1.5 rounded-full bg-indigo-950/60 border border-indigo-800/50 text-indigo-400 text-xs font-semibold uppercase tracking-wider">
+                    Clinical Offerings
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white">Comprehensive Clinical & Aesthetic Services</h2>
+                <p class="text-slate-400 text-sm sm:text-base">Providing complete oral health care, from preventive routine maintenance to complex orthodontic alignment and full-mouth restorations.</p>
+            </div>
+
+            <!-- Grid Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="group bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 p-8 rounded-2xl hover:translate-y-[-4px] transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-2xl mb-6 group-hover:bg-cyan-500 group-hover:text-white transition-colors duration-300">
+                        <i class="fa-solid fa-teeth-open"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">Orthodontics & Clear Aligners</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Straighten teeth discreetly using custom clear aligners or high-precision ceramic and metal braces designed for optimal alignment.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-semibold text-cyan-400 hover:text-cyan-300 gap-1">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="group bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-8 rounded-2xl hover:translate-y-[-4px] transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:bg-indigo-500 group-hover:text-white transition-colors duration-300">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-indigo-400 transition-colors">Digital Smile Makeover</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Reinvent your smile with porcelain veneers, composite bonding, and aesthetic contouring tailored to match your unique facial structure.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-semibold text-indigo-400 hover:text-indigo-300 gap-1">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="group bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-pink-500/50 p-8 rounded-2xl hover:translate-y-[-4px] transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-pink-500/10 border border-pink-500/30 flex items-center justify-center text-pink-400 text-2xl mb-6 group-hover:bg-pink-500 group-hover:text-white transition-colors duration-300">
+                        <i class="fa-solid fa-screwdriver font-bold"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-pink-400 transition-colors">Precision Dental Implants</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Permanent, natural-looking replacement for missing teeth using titanium implants that look, feel, and function just like natural teeth.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-semibold text-pink-400 hover:text-pink-300 gap-1">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="group bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-teal-500/50 p-8 rounded-2xl hover:translate-y-[-4px] transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-teal-500/10 border border-teal-500/30 flex items-center justify-center text-teal-400 text-2xl mb-6 group-hover:bg-teal-500 group-hover:text-white transition-colors duration-300">
+                        <i class="fa-solid fa-notes-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-teal-400 transition-colors">Single-Visit Root Canals</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Pain-free root canal treatments utilizing rotary endodontic tech to save damaged teeth effectively in minimal time.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-semibold text-teal-400 hover:text-teal-300 gap-1">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="group bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 p-8 rounded-2xl hover:translate-y-[-4px] transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:bg-purple-500 group-hover:text-white transition-colors duration-300">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-purple-400 transition-colors">Laser Teeth Whitening</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Safely lift years of stains and discoloration in under 60 minutes with advanced clinical laser whitening technology.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-semibold text-purple-400 hover:text-purple-300 gap-1">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="group bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-amber-500/50 p-8 rounded-2xl hover:translate-y-[-4px] transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 text-2xl mb-6 group-hover:bg-amber-500 group-hover:text-white transition-colors duration-300">
+                        <i class="fa-solid fa-shield-heart"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-amber-400 transition-colors">Preventive & Pediatric Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Gentle dental checkups, ultrasonic cleanings, fluoride treatments, and dental sealants for whole-family oral hygiene.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-semibold text-amber-400 hover:text-amber-300 gap-1">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials" class="py-24 bg-slate-900/30 relative border-t border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="px-3.5 py-1.5 rounded-full bg-pink-950/60 border border-pink-800/50 text-pink-400 text-xs font-semibold uppercase tracking-wider">
+                    Patient Experience
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mt-3">Words From Our Happy Patients</h2>
+                <p class="text-slate-400 text-sm mt-2">See how Dr. Dhruv Ahuja transformed smiles and elevated confidence.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Review 1 -->
+                <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 backdrop-blur-xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm mb-4 gap-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Dr. Dhruv Ahuja is exceptional! His clear aligner treatment transformed my smile in less than 8 months. Completely painless and hyper-professional service."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between">
+                        <div>
+                            <p class="font-bold text-white text-sm">Rohan Mehta</p>
+                            <p class="text-xs text-slate-400">Clear Aligner Patient</p>
+                        </div>
+                        <span class="text-xs text-emerald-400 font-medium bg-emerald-950/50 px-2 py-1 rounded border border-emerald-800/40">Verified</span>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 backdrop-blur-xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm mb-4 gap-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "The clinic ambiance feels like a luxury lounge rather than a dental clinic. Dr. Ahuja explained every step during my implant procedure. Highly recommended!"
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between">
+                        <div>
+                            <p class="font-bold text-white text-sm">Ananya Sharma</p>
+                            <p class="text-xs text-slate-400">Smile Design Patient</p>
+                        </div>
+                        <span class="text-xs text-emerald-400 font-medium bg-emerald-950/50 px-2 py-1 rounded border border-emerald-800/40">Verified</span>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 backdrop-blur-xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm mb-4 gap-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "I had a severe fear of dentists, but Dr. Dhruv's team made my single-visit root canal totally stress-free and pain-free. Truly the best dental studio!"
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between">
+                        <div>
+                            <p class="font-bold text-white text-sm">Karan Verma</p>
+                            <p class="text-xs text-slate-400">Restorative Care Patient</p>
+                        </div>
+                        <span class="text-xs text-emerald-400 font-medium bg-emerald-950/50 px-2 py-1 rounded border border-emerald-800/40">Verified</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT & BOOKING SECTION -->
+    <section id="contact" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Info Left -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="px-3.5 py-1.5 rounded-full bg-cyan-950/60 border border-cyan-800/50 text-cyan-400 text-xs font-semibold uppercase tracking-wider">
+                            Book an Appointment
+                        </span>
+                        <h2 class="text-3xl sm:text-4xl font-bold text-white mt-3">Visit Dental Studio & Orthodontic Centre</h2>
+                        <p class="text-slate-400 text-sm mt-2">Ready to transform your smile? Schedule your confidential clinical consultation today.</p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <!-- Location -->
+                        <div class="p-5 rounded-xl bg-slate-900/60 border border-slate-800 flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-location-dot text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 uppercase font-semibold">Studio Location</p>
+                                <p class="text-sm font-semibold text-white mt-0.5">Dr. Dhruv Ahuja's Dental Studio & Orthodontic Centre</p>
+                                <p class="text-xs text-slate-400 mt-1">Prime Medical Zone, Suite 402, Main Boulevard</p>
+                            </div>
+                        </div>
+
+                        <!-- Hours -->
+                        <div class="p-5 rounded-xl bg-slate-900/60 border border-slate-800 flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-clock text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 uppercase font-semibold">Consultation Hours</p>
+                                <p class="text-sm font-semibold text-white mt-0.5">Mon – Sat: 10:00 AM – 8:00 PM</p>
+                                <p class="text-xs text-slate-400 mt-1">Sunday: Emergency Appointments Only</p>
+                            </div>
+                        </div>
+
+                        <!-- Direct Email / Contact -->
+                        <div class="p-5 rounded-xl bg-slate-900/60 border border-slate-800 flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-pink-500/10 text-pink-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-envelope text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 uppercase font-semibold">Direct Inquiry</p>
+                                <p class="text-sm font-semibold text-white mt-0.5">appointments@ahujadentalstudio.com</p>
+                                <p class="text-xs text-slate-400 mt-1">Priority response within 24 business hours</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Appointment Form Right -->
+                <div class="lg:col-span-7">
+                    <div class="p-8 sm:p-10 rounded-3xl bg-slate-900/80 border border-slate-800 backdrop-blur-xl shadow-2xl relative">
+                        <h3 class="text-2xl font-bold text-white mb-2">Schedule Your Visit</h3>
+                        <p class="text-slate-400 text-sm mb-6">Fill in your details below and our patient care team will get in touch with you shortly.</p>
+
+                        <form onsubmit="event.preventDefault(); alert('Thank you, Dr. Dhruv Ahuja\'s team will contact you shortly!');" class="space-y-4">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Full Name</label>
+                                    <input type="text" placeholder="e.g. John Doe" required class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Phone Number</label>
+                                    <input type="tel" placeholder="+1 (555) 000-0000" required class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Preferred Service</label>
+                                    <select class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-300 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                                        <option>Orthodontics & Aligners</option>
+                                        <option>Digital Smile Makeover</option>
+                                        <option>Dental Implants</option>
+                                        <option>General Checkup / Cleaning</option>
+                                        <option>Laser Teeth Whitening</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Preferred Date</label>
+                                    <input type="date" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-300 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Notes / Medical History (Optional)</label>
+                                <textarea rows="4" placeholder="Mention any specific concerns or dental requirements..." class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white focus:outline-none focus:border-cyan-500 transition-colors text-sm"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-600 to-purple-600 text-white font-bold text-sm tracking-wide hover:shadow-lg hover:shadow-cyan-500/25 hover:scale-[1.01] transition-all duration-300">
+                                Confirm Consultation Request <i class="fa-solid fa-paper-plane ml-2"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-12 border-t border-slate-900 bg-slate-950 text-slate-500 text-sm">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-500 to-indigo-600 p-0.5">
+                    <div class="w-full h-full bg-slate-950 rounded-[6px] flex items-center justify-center">
+                        <i class="fa-solid fa-tooth text-cyan-400 text-xs"></i>
+                    </div>
+                </div>
+                <span class="font-bold text-slate-200">Dr. Dhruv Ahuja's Dental Studio</span>
+            </div>
+
+            <p class="text-xs text-center">
+                © <script>document.write(new Date().getFullYear())</script> Dr. Dhruv Ahuja. All rights reserved. Precision Dental & Orthodontic Care.
+            </p>
+
+            <div class="flex items-center gap-4 text-slate-400">
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-linkedin text-lg"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-instagram text-lg"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-facebook text-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
