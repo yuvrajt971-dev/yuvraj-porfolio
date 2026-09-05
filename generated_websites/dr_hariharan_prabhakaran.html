@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Hariharan Prabhakaran | Associate Dentist</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        dental: {
+                            50: '#f0f9ff',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(14, 165, 233, 0.3);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .border-gradient {
+            border-image: linear-gradient(to right, #0ea5e9, #818cf8) 1;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-slate-950 min-h-screen">
+
+    <!-- Background Decorative Glows -->
+    <div class="fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-96 bg-cyan-500/10 blur-[120px] pointer-events-none -z-10 rounded-full"></div>
+    <div class="fixed bottom-0 right-0 w-96 h-96 bg-indigo-500/10 blur-[140px] pointer-events-none -z-10 rounded-full"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-tight text-white flex items-center gap-2">
+                <span class="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-500 to-indigo-500 flex items-center justify-center text-slate-950 font-black text-sm">
+                    HP
+                </span>
+                <span>Dr. Hariharan<span class="text-cyan-400">.</span></span>
+            </a>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Specialties</a>
+                <a href="#experience" class="hover:text-cyan-400 transition-colors">Experience</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Endorsements</a>
+            </div>
+
+            <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-slate-950 bg-gradient-to-r from-cyan-400 to-sky-400 hover:from-cyan-300 hover:to-sky-300 rounded-full transition-all duration-300 shadow-lg shadow-cyan-500/20 hover:scale-[1.02]">
+                Book Consultation
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 md:pt-44 md:pb-32 px-6">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-12 items-center">
+            
+            <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/80 border border-slate-800 text-xs font-medium text-cyan-400 backdrop-blur-md">
+                    <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                    Smile Atelier Dental & Surgicals
+                </div>
+
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                    Transforming Dentistry into <span class="text-gradient">Precision Artistry</span>
+                </h1>
+
+                <p class="text-lg text-slate-400 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-light">
+                    Welcome to the official portfolio of <strong class="text-slate-200">Dr. Hariharan Prabhakaran</strong>, Associate Dentist dedicated to state-of-the-art oral care, surgical excellence, and crafting brilliant, healthy smiles.
+                </p>
+
+                <!-- Action Buttons -->
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                    <a href="#contact" class="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 text-white font-semibold rounded-xl shadow-xl shadow-cyan-500/20 hover:shadow-cyan-500/40 transition-all duration-300 text-center hover:-translate-y-0.5">
+                        Get in Touch
+                    </a>
+                    <a href="#services" class="w-full sm:w-auto px-8 py-4 bg-slate-900/80 hover:bg-slate-800 border border-slate-800 text-slate-300 font-semibold rounded-xl transition-all duration-300 text-center backdrop-blur-xl">
+                        View Dental Care
+                    </a>
+                </div>
+
+                <!-- Trust Badges -->
+                <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0">
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-bold text-white">5+</div>
+                        <div class="text-xs text-slate-400 mt-1">Years Clinical Excellence</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-bold text-white">1,500+</div>
+                        <div class="text-xs text-slate-400 mt-1">Smiles Restored</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-bold text-white">100%</div>
+                        <div class="text-xs text-slate-400 mt-1">Patient Focus</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Avatar & Frame Section -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative group">
+                    <!-- Glowing Gradient Aura -->
+                    <div class="absolute -inset-1 bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 rounded-3xl blur-xl opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+                    
+                    <!-- Main Image Frame -->
+                    <div class="relative bg-slate-900 p-3 rounded-3xl border border-slate-800 overflow-hidden shadow-2xl">
+                        <img src="https://ui-avatars.com/api/?name=Dr.+Hariharan+Prabhakaran&size=200&background=0D8ABC&color=fff&bold=true" 
+                             alt="Dr. Hariharan Prabhakaran" 
+                             class="w-72 h-72 sm:w-80 sm:h-80 object-cover rounded-2xl mx-auto transform transition duration-500 group-hover:scale-105">
+                        
+                        <div class="mt-4 p-4 rounded-xl bg-slate-950/80 backdrop-blur-md border border-slate-800/80 text-center">
+                            <h3 class="font-bold text-white text-lg">Dr. Hariharan Prabhakaran</h3>
+                            <p class="text-xs text-cyan-400 font-medium">Associate Dentist</p>
+                            <div class="flex items-center justify-center gap-1 text-amber-400 text-xs mt-2">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span class="text-slate-400 text-xs ml-1">(5.0 Rating)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6 border-t border-slate-900 bg-slate-950/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-6">
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 group">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Advanced Dental Care Studio" 
+                             class="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-slate-900/80 backdrop-blur-md border border-slate-800">
+                            <p class="text-xs font-semibold text-cyan-400 uppercase tracking-wider">Practice</p>
+                            <p class="text-sm font-bold text-white mt-1">Smile Atelier Dental & Surgicals</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-block px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-xs text-cyan-400 font-semibold uppercase tracking-wider">
+                        About The Doctor
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white">
+                        Dedicated to Gentle, High-Precision Dental Care
+                    </h2>
+                    <p class="text-slate-400 leading-relaxed font-light">
+                        Dr. Hariharan Prabhakaran brings clinical rigor and a empathetic, patient-first approach to <strong>Smile Atelier Dental & Surgicals</strong>. Focused on modern restorative, cosmetic, and surgical dentistry, Dr. Hariharan utilizes modern technology to deliver painless, precise, and visually stunning results.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-4 pt-2">
+                        <div class="p-4 rounded-xl bg-slate-900/60 backdrop-blur-xl border border-slate-800">
+                            <i class="fa-solid fa-tooth text-cyan-400 text-xl mb-2"></i>
+                            <h4 class="font-semibold text-white text-sm">Comprehensive Dentistry</h4>
+                            <p class="text-xs text-slate-400 mt-1">From preventative care to advanced surgical treatments.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-900/60 backdrop-blur-xl border border-slate-800">
+                            <i class="fa-solid fa-wand-magic-sparkles text-purple-400 text-xl mb-2"></i>
+                            <h4 class="font-semibold text-white text-sm">Smile Restoration</h4>
+                            <p class="text-xs text-slate-400 mt-1">Tailored cosmetic enhancements for a lasting glow.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / Specialties Grid -->
+    <section id="services" class="py-24 px-6 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                <div class="inline-block px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-xs text-cyan-400 font-semibold uppercase tracking-wider">
+                    Clinical Services
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white">Advanced Dental Solutions</h2>
+                <p class="text-slate-400 text-sm">Expert clinical care tailored to each patient's unique health and aesthetic goals.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Service Card 1 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Cosmetic Dentistry</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Veneers, teeth whitening, and full smile design to boost your aesthetic confidence.</p>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Restorative & Implantology</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Durable crowns, bridges, and dental implant procedures to restore full functionality.</p>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 text-xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-scissors"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Oral Surgery</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Gentle surgical extractions and specialized care at Smile Atelier Dental & Surgicals.</p>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-pink-500/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-12 h-12 rounded-xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400 text-xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Preventive Oral Care</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Comprehensive cleanings, risk evaluations, and long-term oral hygiene coaching.</p>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-sky-500/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-12 h-12 rounded-xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400 text-xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Root Canal Therapy</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Painless endodontic procedures aimed at preserving natural teeth with precision.</p>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-emerald-500/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 text-xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-notes-medical"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Personalized Diagnostics</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Thorough exams backed by modern digital imaging and customized treatment plans.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 px-6 border-t border-slate-900 bg-slate-950/40">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                <div class="inline-block px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-xs text-cyan-400 font-semibold uppercase tracking-wider">
+                    Patient & Peer Endorsements
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white">Trusted by Patients</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Dr. Hariharan made my entire surgical process completely stress-free. His expertise and reassuring manner at Smile Atelier are top tier!"
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-800/80">
+                        <p class="font-bold text-white text-sm">Arun Kumar</p>
+                        <p class="text-xs text-slate-400">Restorative Care Patient</p>
+                    </div>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Extremely detailed, precise, and attentive. The smile makeover Dr. Hariharan crafted exceeded all of my expectations."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-800/80">
+                        <p class="font-bold text-white text-sm">Priya Sharma</p>
+                        <p class="text-xs text-slate-400">Cosmetic Patient</p>
+                    </div>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "A true professional who combines art with clinical dentistry. I highly recommend Dr. Hariharan for anyone seeking quality care."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-800/80">
+                        <p class="font-bold text-white text-sm">Karthik R.</p>
+                        <p class="text-xs text-slate-400">Regular Patient</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Consultation Section -->
+    <section id="contact" class="py-24 px-6 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <div class="inline-block px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-xs text-cyan-400 font-semibold uppercase tracking-wider mb-4">
+                            Get In Touch
+                        </div>
+                        <h2 class="text-3xl sm:text-4xl font-bold text-white">Schedule a Consultation</h2>
+                        <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                            Reach out directly to discuss clinical inquiries, professional collaborations, or patient care appointments.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-10 h-10 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-hospital"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Practice Location</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">Smile Atelier Dental & Surgicals</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-10 h-10 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Email Address</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">contact@smileatelier.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-10 h-10 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-user-doctor"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Role</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">Associate Dentist</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7">
+                    <form onsubmit="event.preventDefault(); alert('Thank you for reaching out, Dr. Hariharan\'s team will contact you shortly!');" 
+                          class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 space-y-6">
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Name</label>
+                                <input type="text" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Email</label>
+                                <input type="email" required placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Subject / Treatment Interest</label>
+                            <input type="text" placeholder="e.g. Cosmetic Consultation, Dental Surgery, General Checkup" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-cyan-500 transition-colors">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Message</label>
+                            <textarea rows="4" required placeholder="How can Dr. Hariharan assist you?" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-cyan-500 transition-colors"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 text-white font-semibold shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 transition-all duration-300 hover:opacity-95">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-900 bg-slate-950 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© 2026 Dr. Hariharan Prabhakaran. All rights reserved.</p>
+            <p class="text-slate-600">Smile Atelier Dental & Surgicals</p>
+        </div>
+    </footer>
+
+</body>
+</html>
