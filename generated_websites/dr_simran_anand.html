@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr Simran Anand | Healthcare Practice & Innovation</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -12px rgba(14, 165, 233, 0.35);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-slate-950 relative overflow-x-hidden">
+
+    <!-- Background Glow Elements -->
+    <div class="fixed top-0 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+    <div class="fixed bottom-1/3 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+    <!-- Navigation Bar -->
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
+                    SA
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-slate-100 tracking-tight leading-none text-lg">Dr Simran Anand</span>
+                    <span class="text-xs text-cyan-400 font-medium mt-1">AUX Trust</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-cyan-400 transition-colors">Expertise</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
+                <a href="#endorsements" class="hover:text-cyan-400 transition-colors">Endorsements</a>
+            </nav>
+
+            <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-slate-900 border border-slate-700 hover:border-cyan-500 text-slate-200 text-sm font-semibold hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
+                <span>Connect</span>
+                <i class="fa-solid fa-arrow-right text-xs text-cyan-400"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen pt-32 pb-20 flex items-center relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 w-full">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Column: Content -->
+                <div class="lg:col-span-7 space-y-8">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 backdrop-blur-xl">
+                        <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                        <span class="text-xs font-semibold text-slate-300 uppercase tracking-wider">Healthcare Practice & Innovation</span>
+                    </div>
+
+                    <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight">
+                        Pioneering the Next Era of <span class="gradient-text">Clinical Excellence</span> & Healthcare Tech
+                    </h1>
+
+                    <p class="text-lg text-slate-400 leading-relaxed max-w-2xl">
+                        Driving patient-centric outcomes, transformative practice methodologies, and innovation frameworks at <strong class="text-slate-200">AUX Trust</strong>. Bridging medical wisdom with future-ready healthcare solutions.
+                    </p>
+
+                    <div class="flex flex-wrap gap-4 pt-2">
+                        <a href="#contact" class="px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white font-bold hover:opacity-90 transition-all shadow-xl shadow-cyan-500/20 hover:scale-[1.02]">
+                            Initiate Collaboration
+                        </a>
+                        <a href="#about" class="px-8 py-4 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-slate-700 text-slate-200 font-semibold transition-all hover:bg-slate-900">
+                            Explore Impact
+                        </a>
+                    </div>
+
+                    <!-- Trust Metrics / Badges -->
+                    <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-6">
+                        <div>
+                            <div class="text-2xl md:text-3xl font-bold text-slate-100">AUX Trust</div>
+                            <div class="text-xs text-slate-400 mt-1">Healthcare Practice</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl md:text-3xl font-bold text-slate-100">100%</div>
+                            <div class="text-xs text-slate-400 mt-1">Innovation Commitment</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl md:text-3xl font-bold text-slate-100">Global</div>
+                            <div class="text-xs text-slate-400 mt-1">Practice Standards</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Avatar Frame -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative group">
+                        <!-- Glowing double gradient rings -->
+                        <div class="absolute -inset-1.5 rounded-full bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 blur-lg opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+                        <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-purple-600 to-cyan-500 blur-sm"></div>
+                        
+                        <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full p-2 bg-slate-950 overflow-hidden glow-effect">
+                            <img src="https://ui-avatars.com/api/?name=Dr+Simran+Anand&size=200&background=0D8ABC&color=fff&bold=true" 
+                                 alt="Dr Simran Anand" 
+                                 class="w-full h-full object-cover rounded-full transform group-hover:scale-105 transition duration-500">
+                        </div>
+
+                        <!-- Floating Badge -->
+                        <div class="absolute -bottom-2 -right-2 bg-slate-900/90 border border-slate-700/80 backdrop-blur-xl px-4 py-3 rounded-2xl shadow-2xl flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400">
+                                <i class="fa-solid fa-user-doctor text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Leader in</p>
+                                <p class="text-xs font-bold text-slate-100">Healthcare Practice</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Industry Showcase Section -->
+    <section id="about" class="py-24 relative bg-slate-900/30">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Industry Image Frame -->
+                <div class="lg:col-span-6">
+                    <div class="relative rounded-3xl overflow-hidden border border-slate-800 group">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Healthcare Innovation" 
+                             class="w-full h-[450px] object-cover group-hover:scale-105 transition duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        
+                        <div class="absolute bottom-8 left-8 right-8 p-6 bg-slate-900/80 backdrop-blur-xl rounded-2xl border border-slate-800">
+                            <p class="text-sm font-semibold text-cyan-400 uppercase tracking-wider mb-1">Impact & Strategic Vision</p>
+                            <p class="text-slate-200 text-sm">Revolutionizing clinical workflows, healthcare delivery, and patient outcomes through intelligent system design.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 text-cyan-400 text-sm font-bold tracking-wider uppercase">
+                        <i class="fa-solid fa-microscope"></i>
+                        <span>About Dr. Anand</span>
+                    </div>
+
+                    <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-slate-100">
+                        Advancing Healthcare Innovation at <span class="gradient-text">AUX Trust</span>
+                    </h2>
+
+                    <p class="text-slate-300 leading-relaxed">
+                        With a steadfast commitment to clinical excellence, Dr. Simran Anand drives the convergence of strategic healthcare practice and cutting-edge innovation. Positioned at the vanguard of modern medicine, Dr. Anand develops framework solutions that streamline delivery, elevate patient care, and navigate the future of health systems.
+                    </p>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-10 h-10 rounded-lg bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 shrink-0">
+                                <i class="fa-solid fa-heart-pulse"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-200">Patient-Centric Systems</h4>
+                                <p class="text-sm text-slate-400 mt-1">Designing intuitive and responsive healthcare frameworks that prioritize patient safety and clinical satisfaction.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-10 h-10 rounded-lg bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 shrink-0">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-200">Institutional Governance</h4>
+                                <p class="text-sm text-slate-400 mt-1">Fostering high trust standards, compliance models, and ethical practice across healthcare networks.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-cyan-400 uppercase tracking-widest mb-3">Core Pillars</h2>
+                <p class="text-3xl md:text-4xl font-extrabold text-slate-100">Healthcare Innovation & Practice Services</p>
+                <p class="text-slate-400 mt-4">Delivering high-value strategic solutions tailored for modern medical enterprises and trusts.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Card 1 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-laptop-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-100 mb-3 group-hover:text-cyan-400 transition-colors">Clinical Innovation Strategy</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Implementing novel clinical pathways, technological adoption models, and integrated modern healthcare solutions.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-hospital-user"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-100 mb-3 group-hover:text-indigo-400 transition-colors">Practice Transformation</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Optimizing healthcare operations, provider workflows, and quality metrics to enhance overall care delivery.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-100 mb-3 group-hover:text-purple-400 transition-colors">Healthcare Governance</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Establishing robust trust standards, patient safety policies, and evidence-based operational frameworks.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Endorsements Section -->
+    <section id="endorsements" class="py-24 bg-slate-900/30 border-y border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-bold text-cyan-400 uppercase tracking-widest">Endorsements</span>
+                <h2 class="text-3xl font-extrabold text-slate-100 mt-2">Professional Peer Recognition</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 relative">
+                    <div class="flex gap-1 text-amber-400 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 italic mb-6">
+                        "Dr. Simran Anand's vision at AUX Trust has radically shifted how our clinical innovation strategy operates. Her foresight into modern healthcare integration is unmatched."
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center font-bold text-cyan-400">
+                            CM
+                        </div>
+                        <div>
+                            <p class="font-bold text-slate-100 text-sm">Chief Medical Officer</p>
+                            <p class="text-xs text-slate-400">Healthcare Leadership Network</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 relative">
+                    <div class="flex gap-1 text-amber-400 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 italic mb-6">
+                        "Working alongside Dr. Anand on practice innovation frameworks has demonstrated her commitment to clinical safety and forward-thinking operational models."
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center font-bold text-indigo-400">
+                            VP
+                        </div>
+                        <div>
+                            <p class="font-bold text-slate-100 text-sm">VP of Innovation</p>
+                            <p class="text-xs text-slate-400">Global Medical Systems</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Direct Details Section -->
+    <section id="contact" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Info Column -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-xs font-bold text-cyan-400 uppercase tracking-widest">Get In Touch</span>
+                        <h2 class="text-3xl font-extrabold text-slate-100 mt-2">Connect with Dr. Simran Anand</h2>
+                        <p class="text-slate-400 mt-4 leading-relaxed">
+                            Interested in discussing healthcare practice innovations, clinical frameworks, or collaborative opportunities at AUX Trust?
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400">
+                                <i class="fa-solid fa-building"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Organization</p>
+                                <p class="font-semibold text-slate-200">AUX Trust</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400">
+                                <i class="fa-solid fa-stethoscope"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Domain Focus</p>
+                                <p class="font-semibold text-slate-200">Healthcare Practice & Innovation</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Network Connection Established</p>
+                                <p class="font-semibold text-slate-200">28 Aug 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Column -->
+                <div class="lg:col-span-7">
+                    <form class="p-8 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 space-y-6" onsubmit="event.preventDefault();">
+                        <h3 class="text-xl font-bold text-slate-100">Send an Inquiry</h3>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-400 uppercase mb-2">Your Name</label>
+                                <input type="text" placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-400 uppercase mb-2">Email Address</label>
+                                <input type="email" placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-400 uppercase mb-2">Subject</label>
+                            <input type="text" placeholder="Healthcare Innovation Inquiry" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-cyan-500 transition-colors">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-400 uppercase mb-2">Message</label>
+                            <textarea rows="4" placeholder="How can Dr. Anand assist your practice or initiative?" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-cyan-500 transition-colors resize-none"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 text-white font-bold hover:opacity-90 transition-all shadow-lg shadow-cyan-500/20">
+                            Send Professional Message
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-800/80 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+            <p class="text-xs text-slate-500">
+                &copy; 2026 Dr Simran Anand | Healthcare Practice & Innovation at AUX Trust.
+            </p>
+            <div class="flex items-center gap-6 text-slate-400 text-sm">
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-solid fa-globe"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
