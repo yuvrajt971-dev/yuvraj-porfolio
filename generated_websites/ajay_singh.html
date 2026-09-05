@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajay Singh | Senior Process Designer</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(99, 102, 241, 0.25);
+        }
+        .glow-avatar {
+            box-shadow: 0 0 40px rgba(13, 138, 188, 0.4), 0 0 80px rgba(168, 85, 247, 0.2);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #818cf8 0%, #c084fc 50%, #f472b6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-border {
+            position: relative;
+            border-radius: 1rem;
+            background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.03));
+        }
+        .gradient-border::before {
+            content: '';
+            position: absolute;
+            inset: -1px;
+            border-radius: 1rem;
+            padding: 1px;
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.5), rgba(168, 85, 247, 0.3), transparent);
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white relative overflow-x-hidden">
+
+    <!-- Background Glow Blobs -->
+    <div class="fixed top-0 left-1/4 w-96 h-96 bg-indigo-600/15 rounded-full blur-[120px] pointer-events-none -z-10"></div>
+    <div class="fixed bottom-1/3 right-1/4 w-96 h-96 bg-purple-600/15 rounded-full blur-[120px] pointer-events-none -z-10"></div>
+    <div class="fixed top-2/3 left-1/3 w-80 h-80 bg-pink-600/10 rounded-full blur-[100px] pointer-events-none -z-10"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 to-purple-500 flex items-center justify-center font-bold text-white shadow-lg shadow-indigo-500/20 group-hover:scale-105 transition-transform">
+                    AS
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-lg text-white tracking-wide group-hover:text-indigo-400 transition-colors">Ajay Singh</span>
+                    <span class="text-xs text-slate-400 font-medium">Process Designer</span>
+                </div>
+            </a>
+
+            <!-- Desktop Links -->
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-indigo-400 transition-colors">Expertise</a>
+                <a href="#services" class="hover:text-indigo-400 transition-colors">Services</a>
+                <a href="#testimonials" class="hover:text-indigo-400 transition-colors">Endorsements</a>
+            </div>
+
+            <!-- CTA Button -->
+            <a href="#contact" class="px-5 py-2.5 rounded-full text-sm font-semibold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white shadow-lg shadow-indigo-500/20 hover:shadow-indigo-500/40 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200">
+                Get In Touch
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-36 pb-24 md:pt-44 md:pb-32 px-6 relative">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Left Hero Content -->
+            <div class="lg:col-span-7 space-y-8">
+                <!-- Status Badge -->
+                <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 text-xs font-semibold text-slate-300 backdrop-blur-md">
+                    <span class="relative flex h-2 w-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                    </span>
+                    Senior Process Designer @ Makajosoft Pvt. Ltd.
+                </div>
+
+                <!-- Main Heading -->
+                <h1 class="text-4xl sm:text-6xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.1]">
+                    Architecting <br>
+                    <span class="gradient-text">High-Efficiency Workflows</span> & Enterprise Systems
+                </h1>
+
+                <!-- Subtitle -->
+                <p class="text-lg text-slate-400 max-w-2xl leading-relaxed font-normal">
+                    Transforming complex organizational operational bottlenecks into streamlined, scalable digital architectures. Empowering enterprise productivity through lean design, automated systems, and operational clarity.
+                </p>
+
+                <!-- Actions -->
+                <div class="flex flex-wrap items-center gap-4 pt-2">
+                    <a href="#services" class="px-8 py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold shadow-xl shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.02] transition-all">
+                        Explore Solutions
+                    </a>
+                    <a href="#about" class="px-8 py-4 rounded-xl bg-slate-900/80 hover:bg-slate-800 text-slate-200 font-semibold border border-slate-800 hover:border-slate-700 transition-all">
+                        View Background
+                    </a>
+                </div>
+
+                <!-- Trust Badges -->
+                <div class="pt-8 border-t border-slate-900 grid grid-cols-3 gap-6">
+                    <div>
+                        <p class="text-2xl sm:text-3xl font-bold text-white">100%</p>
+                        <p class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Process Precision</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl sm:text-3xl font-bold text-white">40%+</p>
+                        <p class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Avg Yield Boost</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl sm:text-3xl font-bold text-white">Enterprise</p>
+                        <p class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Scale Architecture</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Hero Image Frame -->
+            <div class="lg:col-span-5 flex justify-center relative">
+                <div class="relative group">
+                    <!-- Glowing Outer Rings -->
+                    <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 blur-xl opacity-70 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse-slow"></div>
+                    
+                    <!-- Avatar Frame -->
+                    <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full p-2 bg-slate-950 border-2 border-indigo-500/30 glow-avatar overflow-hidden">
+                        <img 
+                            src="https://ui-avatars.com/api/?name=Ajay+singh&size=200&background=0D8ABC&color=fff&bold=true" 
+                            alt="Ajay Singh" 
+                            class="w-full h-full object-cover rounded-full transform group-hover:scale-105 transition-transform duration-500"
+                        >
+                    </div>
+
+                    <!-- Floating Badge 1 -->
+                    <div class="absolute -top-4 -right-4 bg-slate-900/90 border border-slate-800 backdrop-blur-xl px-4 py-3 rounded-2xl shadow-2xl flex items-center gap-3 animate-float">
+                        <div class="w-10 h-10 rounded-xl bg-indigo-500/20 flex items-center justify-center text-indigo-400">
+                            <i class="fa-solid fa-diagram-project text-lg"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400 font-medium">Role</p>
+                            <p class="text-sm font-bold text-white">Senior Process Designer</p>
+                        </div>
+                    </div>
+
+                    <!-- Floating Badge 2 -->
+                    <div class="absolute -bottom-4 -left-4 bg-slate-900/90 border border-slate-800 backdrop-blur-xl px-4 py-3 rounded-2xl shadow-2xl flex items-center gap-3 animate-float" style="animation-delay: 2s;">
+                        <div class="w-10 h-10 rounded-xl bg-purple-500/20 flex items-center justify-center text-purple-400">
+                            <i class="fa-solid fa-building text-lg"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400 font-medium">Company</p>
+                            <p class="text-sm font-bold text-white">Makajosoft Pvt. Ltd.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-24 px-6 relative border-t border-slate-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Image Visual -->
+                <div class="lg:col-span-5">
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900/60 backdrop-blur-xl group">
+                        <img 
+                            src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=800&q=80" 
+                            alt="Process Engineering Studio" 
+                            class="w-full h-[420px] object-cover group-hover:scale-105 transition-transform duration-700 opacity-90"
+                        >
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+                        
+                        <div class="absolute bottom-6 left-6 right-6 p-6 rounded-xl bg-slate-900/80 border border-slate-800/80 backdrop-blur-md">
+                            <p class="text-sm font-semibold text-indigo-400">Makajosoft Pvt. Ltd.</p>
+                            <p class="text-xs text-slate-400 mt-1">Driving innovation and structured workflows through enterprise process redesign.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Narrative -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 text-indigo-400 font-semibold text-sm uppercase tracking-widest">
+                        <i class="fa-solid fa-user text-xs"></i> About Ajay Singh
+                    </div>
+                    
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white">
+                        Bridging Strategic Vision with <span class="gradient-text">Flawless Process Architecture</span>
+                    </h2>
+                    
+                    <p class="text-slate-300 leading-relaxed">
+                        As a <strong>Senior Process Designer at Makajosoft Pvt. Ltd.</strong>, Ajay Singh brings a rigorous methodological approach to operational transformation. With years of experience optimizing cross-functional systems, he excels at evaluating complex enterprise ecosystems and distilling them into high-performing, user-centric processes.
+                    </p>
+
+                    <p class="text-slate-400 leading-relaxed text-sm">
+                        His core philosophy revolves around continuous improvement, lean system modeling, and aligning human workflow needs with cutting-edge technology infrastructure to eliminate friction, lower costs, and fuel scalable organizational growth.
+                    </p>
+
+                    <!-- Feature Bullet Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80 flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-indigo-400 mt-1"></i>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Workflow Design</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">End-to-end blueprinting & optimization</p>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80 flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-indigo-400 mt-1"></i>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Lean Operations</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">Eliminating overhead & task redundancy</p>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80 flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-indigo-400 mt-1"></i>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">System Integration</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">Seamless software & operational harmony</p>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80 flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-indigo-400 mt-1"></i>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Data-Driven Metrics</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">KPI alignment & process analytics</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services & Capabilities Section -->
+    <section id="services" class="py-24 px-6 relative bg-slate-950/50">
+        <div class="max-w-7xl mx-auto space-y-16">
+            
+            <!-- Section Header -->
+            <div class="text-center max-w-2xl mx-auto space-y-4">
+                <div class="inline-flex items-center gap-2 text-indigo-400 font-semibold text-sm uppercase tracking-widest">
+                    <i class="fa-solid fa-gears text-xs"></i> Core Capabilities
+                </div>
+                <h2 class="text-3xl sm:text-5xl font-bold text-white">Specialized Solutions</h2>
+                <p class="text-slate-400 text-sm sm:text-base">Customized process architecture strategies designed for resilience, efficiency, and long-term organizational value.</p>
+            </div>
+
+            <!-- Grid Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service Card 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1.5 group glow-effect">
+                    <div class="w-14 h-14 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-2xl group-hover:scale-110 group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-diagram-nested"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mt-6 group-hover:text-indigo-400 transition-colors">Business Process Re-engineering</h3>
+                    <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                        Redesigning core operational workflows from the ground up to achieve dramatic improvements in critical measures of performance.
+                    </p>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1.5 group glow-effect">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 text-2xl group-hover:scale-110 group-hover:bg-purple-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mt-6 group-hover:text-purple-400 transition-colors">Workflow Automation</h3>
+                    <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                        Identifying repetitive task patterns and introducing smart automated tooling to elevate team throughput and eliminate human error.
+                    </p>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-pink-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1.5 group glow-effect">
+                    <div class="w-14 h-14 rounded-2xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400 text-2xl group-hover:scale-110 group-hover:bg-pink-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mt-6 group-hover:text-pink-400 transition-colors">Performance Analytics & KPIs</h3>
+                    <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                        Establishing robust telemetry and custom dashboard architectures to continuously track cycle times, quality metrics, and operational yield.
+                    </p>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-emerald-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1.5 group glow-effect">
+                    <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 text-2xl group-hover:scale-110 group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-sitemap"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mt-6 group-hover:text-emerald-400 transition-colors">Enterprise System Architecture</h3>
+                    <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                        Mapping multi-departmental interactions into coherent, frictionless blueprints that support growth at scale without organizational drag.
+                    </p>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-amber-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1.5 group glow-effect">
+                    <div class="w-14 h-14 rounded-2xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 text-2xl group-hover:scale-110 group-hover:bg-amber-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-sliders"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mt-6 group-hover:text-amber-400 transition-colors">Lean Operations Optimization</h3>
+                    <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                        Applying Six Sigma & Kaizen principles to eliminate procedural waste, streamline communication pipelines, and optimize operational velocity.
+                    </p>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1.5 group glow-effect">
+                    <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-2xl group-hover:scale-110 group-hover:bg-cyan-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-users-gear"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mt-6 group-hover:text-cyan-400 transition-colors">Change Management Enablement</h3>
+                    <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                        Guiding technical teams and leadership through seamless structural transitions with comprehensive documentation, frameworks, and training.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Endorsements Section -->
+    <section id="testimonials" class="py-24 px-6 relative border-t border-slate-900">
+        <div class="max-w-7xl mx-auto space-y-16">
+            
+            <div class="text-center max-w-2xl mx-auto space-y-4">
+                <div class="inline-flex items-center gap-2 text-indigo-400 font-semibold text-sm uppercase tracking-widest">
+                    <i class="fa-solid fa-quote-left text-xs"></i> Recommendations
+                </div>
+                <h2 class="text-3xl sm:text-5xl font-bold text-white">Executive Endorsements</h2>
+                <p class="text-slate-400 text-sm sm:text-base">Here is what industry colleagues and engineering leaders say about Ajay's strategic impact.</p>
+            </div>
+
+            <!-- Testimonial Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Card 1 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 border border-slate-800 backdrop-blur-xl flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Ajay’s foresight in restructuring our internal delivery pipeline saved us hundreds of redundant hours monthly. His process designs are elegant, sustainable, and laser-focused on business outcome."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4 pt-4 border-t border-slate-800/60">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-500 flex items-center justify-center font-bold text-xs text-white">
+                            VP
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">VP of Engineering</h4>
+                            <p class="text-xs text-slate-400">Enterprise Tech Leader</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 border border-slate-800 backdrop-blur-xl flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Working alongside Ajay at Makajosoft Pvt. Ltd. has been eye-opening. He possesses a rare talent for cutting through noise and establishing logical, high-speed operational frameworks."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4 pt-4 border-t border-slate-800/60">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-purple-500 to-pink-500 flex items-center justify-center font-bold text-xs text-white">
+                            PM
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Principal Program Manager</h4>
+                            <p class="text-xs text-slate-400">Makajosoft Collaborator</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 border border-slate-800 backdrop-blur-xl flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Ajay doesn't just re-design workflows; he transforms team dynamics. His systemic vision and attention to operational details make him an invaluable senior asset."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4 pt-4 border-t border-slate-800/60">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-pink-500 to-amber-500 flex items-center justify-center font-bold text-xs text-white">
+                            CTO
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Chief Technology Officer</h4>
+                            <p class="text-xs text-slate-400">Digital Transformation Director</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-6 relative bg-slate-950/80">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Direct Details -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div class="space-y-4">
+                        <div class="inline-flex items-center gap-2 text-indigo-400 font-semibold text-sm uppercase tracking-widest">
+                            <i class="fa-solid fa-paper-plane text-xs"></i> Contact
+                        </div>
+                        <h2 class="text-3xl sm:text-5xl font-bold text-white">Let's Connect</h2>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Interested in optimizing your organization's process architecture or collaborating on custom workflow solutions? Reach out today.
+                        </p>
+                    </div>
+
+                    <!-- Contact Cards -->
+                    <div class="space-y-4">
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400">
+                                <i class="fa-solid fa-building"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Organization</p>
+                                <p class="text-sm font-semibold text-white">Makajosoft Pvt. Ltd.</p>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400">
+                                <i class="fa-solid fa-user-check"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Network Connection Date</p>
+                                <p class="text-sm font-semibold text-white">27 Aug 2026</p>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-pink-500/10 flex items-center justify-center text-pink-400">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Direct Outreach</p>
+                                <p class="text-sm font-semibold text-white">Available via Direct Form</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Form -->
+                <div class="lg:col-span-7">
+                    <form onsubmit="event.preventDefault(); alert('Thank you, Ajay! Your message has been sent successfully.');" class="p-8 sm:p-10 rounded-2xl bg-slate-900/60 border border-slate-800 backdrop-blur-xl space-y-6">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Name</label>
+                                <input type="text" placeholder="John Doe" class="w-full px-4 py-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all text-sm" required>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Email</label>
+                                <input type="email" placeholder="john@company.com" class="w-full px-4 py-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all text-sm" required>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Subject</label>
+                            <input type="text" placeholder="Process Optimization Consultation" class="w-full px-4 py-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all text-sm" required>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Message</label>
+                            <textarea rows="4" placeholder="Describe your workflow challenges or collaboration ideas..." class="w-full px-4 py-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all text-sm" required></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold shadow-xl shadow-indigo-500/20 hover:shadow-indigo-500/40 hover:scale-[1.01] active:scale-[0.99] transition-all">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-6 border-t border-slate-900 bg-slate-950 text-slate-500 text-xs text-center">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© 2026 Ajay Singh. All rights reserved.</p>
+            <p class="flex items-center gap-2">
+                <span>Senior Process Designer</span> • 
+                <span class="text-slate-400">Makajosoft Pvt. Ltd.</span>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
