@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Atrey Pai Khot | Senior Lecturer & Dental Specialist</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(14, 165, 233, 0.3);
+        }
+        .glow-card:hover {
+            box-shadow: 0 0 30px -5px rgba(99, 102, 241, 0.4);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-border {
+            position: relative;
+            border-radius: 1rem;
+            background: linear-gradient(135deg, rgba(56, 189, 248, 0.2), rgba(192, 132, 252, 0.2));
+            padding: 1px;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 selection:bg-cyan-500 selection:text-slate-950 overflow-x-hidden">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center font-bold text-white shadow-lg group-hover:scale-105 transition-transform">
+                    <i class="fa-solid font-bold">AP</i>
+                </div>
+                <div>
+                    <span class="text-lg font-bold text-slate-100 group-hover:text-cyan-400 transition-colors">Dr. Atrey Pai Khot</span>
+                    <span class="block text-xs text-slate-400">Goa Dental College</span>
+                </div>
+            </a>
+            
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-cyan-400 transition-colors">Expertise</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Endorsements</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+            </div>
+
+            <a href="#contact" class="hidden md:inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-semibold px-5 py-2.5 rounded-full shadow-lg shadow-cyan-500/20 transition-all hover:shadow-cyan-500/40 hover:-translate-y-0.5">
+                <span>Connect</span>
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="md:hidden text-slate-300 hover:text-white" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900/95 border-b border-slate-800 px-6 py-4 space-y-3 text-sm font-medium">
+            <a href="#about" class="block text-slate-300 hover:text-cyan-400 py-1">About</a>
+            <a href="#expertise" class="block text-slate-300 hover:text-cyan-400 py-1">Expertise</a>
+            <a href="#services" class="block text-slate-300 hover:text-cyan-400 py-1">Services</a>
+            <a href="#testimonials" class="block text-slate-300 hover:text-cyan-400 py-1">Endorsements</a>
+            <a href="#contact" class="block text-slate-300 hover:text-cyan-400 py-1">Contact</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden flex items-center min-h-screen">
+        <!-- Background Decorative Elements -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-cyan-600/20 via-indigo-600/20 to-purple-600/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute top-1/3 right-10 w-72 h-72 bg-blue-500/10 rounded-full blur-2xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10 w-full">
+            <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Left Content -->
+                <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 backdrop-blur-md">
+                        <span class="flex h-2 w-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                        <span class="text-xs font-semibold uppercase tracking-wider text-slate-300">Senior Lecturer & Academic Clinician</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        Advancing Dental Education & <span class="gradient-text">Clinical Excellence</span>
+                    </h1>
+
+                    <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Mentoring the next generation of dental surgeons at <span class="text-slate-200 font-semibold">Goa Dental College & Hospital Bambolim</span> while delivering evidence-based clinical care and innovative healthcare solutions.
+                    </p>
+
+                    <!-- Trust Badges & Metrics -->
+                    <div class="grid grid-cols-3 gap-4 pt-4 border-t border-slate-800/80 max-w-xl mx-auto lg:mx-0">
+                        <div class="text-center lg:text-left">
+                            <p class="text-2xl sm:text-3xl font-extrabold text-white">100s</p>
+                            <p class="text-xs text-slate-400 uppercase tracking-wider mt-1">Students Mentored</p>
+                        </div>
+                        <div class="text-center lg:text-left">
+                            <p class="text-2xl sm:text-3xl font-extrabold text-white">GDC</p>
+                            <p class="text-xs text-slate-400 uppercase tracking-wider mt-1">Hospital Bambolim</p>
+                        </div>
+                        <div class="text-center lg:text-left">
+                            <p class="text-2xl sm:text-3xl font-extrabold text-white">100%</p>
+                            <p class="text-xs text-slate-400 uppercase tracking-wider mt-1">Clinical Precision</p>
+                        </div>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white font-semibold shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.02] transition-all text-center">
+                            Get In Touch <i class="fa-solid fa-paper-plane ml-2 text-sm"></i>
+                        </a>
+                        <a href="#expertise" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900/80 hover:bg-slate-800/80 text-slate-200 font-semibold border border-slate-800 transition-all text-center backdrop-blur-md">
+                            Academic Profile
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Avatar & Interactive Card -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative group">
+                        <!-- Outer Glowing Frame -->
+                        <div class="absolute -inset-1.5 bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 rounded-3xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+                        
+                        <div class="relative bg-slate-900 border border-slate-800 rounded-3xl p-8 max-w-sm text-center shadow-2xl backdrop-blur-xl">
+                            <div class="relative w-44 h-44 mx-auto mb-6">
+                                <div class="absolute inset-0 rounded-full bg-gradient-to-tr from-cyan-400 to-purple-500 p-1">
+                                    <img src="https://ui-avatars.com/api/?name=Dr.+Atrey+Pai+Khot&size=200&background=0D8ABC&color=fff&bold=true" 
+                                         alt="Dr. Atrey Pai Khot" 
+                                         class="w-full h-full rounded-full object-cover border-4 border-slate-950 shadow-inner">
+                                </div>
+                                <div class="absolute bottom-2 right-2 bg-emerald-500 border-2 border-slate-950 w-6 h-6 rounded-full flex items-center justify-center" title="Active Academic Member">
+                                    <i class="fa-solid fa-check text-[10px] text-white"></i>
+                                </div>
+                            </div>
+
+                            <h3 class="text-xl font-bold text-white mb-1">Dr. Atrey Pai Khot</h3>
+                            <p class="text-cyan-400 font-medium text-sm mb-3">Senior Lecturer</p>
+                            
+                            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-800/80 text-slate-300 text-xs mb-6 border border-slate-700/50">
+                                <i class="fa-solid fa-hospital text-cyan-400"></i>
+                                <span>Goa Dental College & Hospital</span>
+                            </div>
+
+                            <div class="pt-4 border-t border-slate-800/80 flex justify-center space-x-4 text-slate-400">
+                                <a href="#contact" class="w-10 h-10 rounded-full bg-slate-800 hover:bg-cyan-500/20 hover:text-cyan-400 flex items-center justify-center transition-colors">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </a>
+                                <a href="https://linkedin.com" target="_blank" class="w-10 h-10 rounded-full bg-slate-800 hover:bg-cyan-500/20 hover:text-cyan-400 flex items-center justify-center transition-colors">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://scholar.google.com" target="_blank" class="w-10 h-10 rounded-full bg-slate-800 hover:bg-cyan-500/20 hover:text-cyan-400 flex items-center justify-center transition-colors">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT & EXPERTISE SECTION -->
+    <section id="about" class="py-24 bg-slate-900/40 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Image Showcase -->
+                <div class="lg:col-span-5">
+                    <div class="relative">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-indigo-500 rounded-2xl blur opacity-30"></div>
+                        <div class="relative overflow-hidden rounded-2xl border border-slate-800 bg-slate-900 shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Dental Education & Clinical Care" 
+                                 class="w-full h-[420px] object-cover hover:scale-105 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                            <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-slate-900/80 backdrop-blur-md border border-slate-800">
+                                <p class="text-xs text-slate-400 uppercase tracking-widest font-semibold">Institutional Excellence</p>
+                                <p class="text-sm font-semibold text-slate-200 mt-1">Goa Dental College & Hospital, Bambolim</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Content -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-block px-3 py-1 rounded-md bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold uppercase tracking-wider">
+                        Professional Background
+                    </div>
+                    
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                        Bridging Academic Rigor with Patient-Centered Care
+                    </h2>
+
+                    <p class="text-slate-300 leading-relaxed">
+                        As a Senior Lecturer at Goa Dental College & Hospital Bambolim, <span class="text-cyan-400 font-semibold">Dr. Atrey Pai Khot</span> combines clinical acumen with a strong passion for medical education. Dr. Khot is committed to advancing oral health outcomes through comprehensive instruction, hands-on clinical training, and evidence-based practice.
+                    </p>
+
+                    <p class="text-slate-400 leading-relaxed text-sm">
+                        With an emphasis on modern dental techniques and patient comfort, Dr. Khot plays an instrumental role in shaping competent, compassionate healthcare professionals while contributing to institutional research and public health initiatives.
+                    </p>
+
+                    <!-- Core Strengths Grid -->
+                    <div class="grid sm:grid-cols-2 gap-4 pt-4">
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80 flex items-start space-x-3">
+                            <div class="w-10 h-10 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-user-graduate"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-100">Academic Pedagogy</h4>
+                                <p class="text-xs text-slate-400 mt-1">Curriculum planning & clinical mentoring for dental undergraduates.</p>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80 flex items-start space-x-3">
+                            <div class="w-10 h-10 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-tooth"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-100">Clinical Expertise</h4>
+                                <p class="text-xs text-slate-400 mt-1">Advanced diagnostic and treatment methodologies in dentistry.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES & FOCUS AREAS -->
+    <section id="services" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="px-3 py-1 rounded-md bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold uppercase tracking-wider">
+                    Areas of Expertise
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mt-3">
+                    Academic & Clinical Capabilities
+                </h2>
+                <p class="text-slate-400 text-sm mt-3">
+                    Delivering high-standard dental care and academic leadership across various domains.
+                </p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service Card 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 group glow-card">
+                    <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Undergraduate Mentorship</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Leading lectures, clinical rotations, and practical training modules at Goa Dental College to develop fundamental clinical skills.
+                    </p>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 group glow-card">
+                    <div class="w-14 h-14 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-kit-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-indigo-400 transition-colors">Comprehensive Dental Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Providing specialized, evidence-based diagnostic assessment and treatment protocols in institutional and clinical setups.
+                    </p>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 group glow-card">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-microscope"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">Clinical Research</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Engaging in scholarly research and publications aimed at improving dental technologies and patient rehabilitation methods.
+                    </p>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-emerald-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 group glow-card">
+                    <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-people-roof"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-emerald-400 transition-colors">Public Health Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Participating in oral hygiene awareness initiatives and community outreach camps across Bambolim and greater Goa.
+                    </p>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-pink-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 group glow-card">
+                    <div class="w-14 h-14 rounded-2xl bg-pink-500/10 border border-pink-500/20 text-pink-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-book-open border-cyan-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-pink-400 transition-colors">Academic Governance</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Contributing to departmental curriculum updates, examination evaluation, and academic compliance protocols.
+                    </p>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-amber-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 group glow-card">
+                    <div class="w-14 h-14 rounded-2xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-handshake"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-amber-400 transition-colors">Professional Consultation</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Offering clinical second opinions and collaborative interdisciplinary consultation for complex oral healthcare cases.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS / ENDORSEMENTS -->
+    <section id="testimonials" class="py-24 bg-slate-900/30 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="px-3 py-1 rounded-md bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold uppercase tracking-wider">
+                    Endorsements
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mt-3">
+                    What Colleagues & Students Say
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="bg-slate-900/80 border border-slate-800 p-8 rounded-2xl backdrop-blur-md relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Dr. Atrey Pai Khot is an outstanding educator. His approachability and clinical guidance during hospital duties made complex dental procedures much easier to master."
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800/80">
+                        <p class="text-white font-semibold text-sm">Dental Graduate</p>
+                        <p class="text-xs text-slate-400">Goa Dental College & Hospital</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-slate-900/80 border border-slate-800 p-8 rounded-2xl backdrop-blur-md relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "A deeply dedicated academician who consistently puts clinical precision and patient care first. Working alongside Dr. Khot is a privilege."
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800/80">
+                        <p class="text-white font-semibold text-sm">Senior Faculty Colleague</p>
+                        <p class="text-xs text-slate-400">Department of Dentistry</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-slate-900/80 border border-slate-800 p-8 rounded-2xl backdrop-blur-md relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Dr. Atrey's meticulous patient communication and methodical teaching style reflect the high academic standards of Goa Dental College."
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-slate-800/80">
+                        <p class="text-white font-semibold text-sm">Clinical Resident</p>
+                        <p class="text-xs text-slate-400">Oral Healthcare Division</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Information -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="px-3 py-1 rounded-md bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold uppercase tracking-wider">
+                            Get In Touch
+                        </span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mt-3">
+                            Let's Connect & Collaborate
+                        </h2>
+                        <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                            For academic inquiries, clinical discussions, guest lectures, or institutional collaborations, please feel free to send a message.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-12 h-12 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center shrink-0 text-xl">
+                                <i class="fa-solid fa-hospital"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 uppercase">Institution</p>
+                                <p class="text-sm font-semibold text-slate-200">Goa Dental College & Hospital, Bambolim</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-12 h-12 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center shrink-0 text-xl">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 uppercase">Location</p>
+                                <p class="text-sm font-semibold text-slate-200">Bambolim, Goa 403202, India</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-12 h-12 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center shrink-0 text-xl">
+                                <i class="fa-solid fa-user-tie"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 uppercase">Designation</p>
+                                <p class="text-sm font-semibold text-slate-200">Senior Lecturer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="lg:col-span-7">
+                    <form onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent successfully.');" class="bg-slate-900/80 border border-slate-800 rounded-2xl p-8 backdrop-blur-xl space-y-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Send a Message</h3>
+                        
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Name</label>
+                                <input type="text" required placeholder="Dr. / Mr. / Ms. John Doe" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-200 focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Email Address</label>
+                                <input type="email" required placeholder="john@example.com" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-200 focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Subject</label>
+                            <input type="text" required placeholder="Academic / Professional Collaboration" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-200 focus:outline-none focus:border-cyan-500 transition-colors">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Message</label>
+                            <textarea rows="4" required placeholder="Write your message here..." class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-200 focus:outline-none focus:border-cyan-500 transition-colors resize-none"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white font-semibold hover:shadow-lg hover:shadow-cyan-500/25 hover:scale-[1.01] transition-all">
+                            Submit Inquiry <i class="fa-solid fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-slate-800/80 bg-slate-950 py-12 text-sm text-slate-500">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-6">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-lg bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold text-xs">
+                    AP
+                </div>
+                <span class="text-slate-300 font-semibold text-base">Dr. Atrey Pai Khot</span>
+            </div>
+
+            <p class="text-xs text-center sm:text-left">
+                &copy; <script>document.write(new Date().getFullYear())</script> Dr. Atrey Pai Khot. All rights reserved. Goa Dental College & Hospital Bambolim.
+            </p>
+
+            <a href="#" class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:border-cyan-500 transition-colors">
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
