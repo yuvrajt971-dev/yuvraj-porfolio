@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Mahesh Babu | Associate Dental Surgeon</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        teal: {
+                            400: '#2dd4bf',
+                            500: '#14b8a6',
+                            600: '#0d9488',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(13, 148, 136, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-teal-500 selection:text-white">
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-teal-500 via-cyan-500 to-indigo-500 flex items-center justify-center font-bold text-slate-950 text-lg shadow-lg group-hover:scale-105 transition-transform duration-300">
+                    MB
+                </div>
+                <div>
+                    <span class="text-lg font-bold bg-gradient-to-r from-white via-slate-200 to-teal-400 bg-clip-text text-transparent">Dr. Mahesh Babu</span>
+                    <span class="block text-xs text-slate-400 font-medium">Abhay Dental Clinc</span>
+                </div>
+            </a>
+            
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-teal-400 transition-colors duration-200">About</a>
+                <a href="#expertise" class="hover:text-teal-400 transition-colors duration-200">Expertise</a>
+                <a href="#services" class="hover:text-teal-400 transition-colors duration-200">Services</a>
+                <a href="#testimonials" class="hover:text-teal-400 transition-colors duration-200">Testimonials</a>
+                <a href="#contact" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-teal-500 via-cyan-500 to-indigo-500 text-slate-950 font-semibold hover:shadow-lg hover:shadow-teal-500/25 hover:scale-105 transition-all duration-300">
+                    Book Consultation
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden text-slate-300 hover:text-white focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-6 py-4 space-y-3">
+            <a href="#about" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block text-slate-300 hover:text-teal-400 font-medium">About</a>
+            <a href="#expertise" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block text-slate-300 hover:text-teal-400 font-medium">Expertise</a>
+            <a href="#services" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block text-slate-300 hover:text-teal-400 font-medium">Services</a>
+            <a href="#testimonials" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block text-slate-300 hover:text-teal-400 font-medium">Testimonials</a>
+            <a href="#contact" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="inline-block w-full text-center py-2.5 rounded-full bg-gradient-to-r from-teal-500 to-indigo-500 text-slate-950 font-semibold">
+                Book Consultation
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden">
+        <!-- Background Ambient Glow -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-gradient-to-tr from-teal-500/20 via-cyan-500/10 to-purple-500/20 blur-[120px] rounded-full pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-12 md:gap-16">
+                
+                <!-- Avatar & Frame -->
+                <div class="relative group order-1 md:order-2">
+                    <div class="absolute -inset-1.5 bg-gradient-to-r from-teal-500 via-cyan-500 to-indigo-500 rounded-full blur-lg opacity-70 group-hover:opacity-100 transition duration-500"></div>
+                    <div class="relative p-2 bg-slate-900 rounded-full border border-slate-700/50">
+                        <img src="https://ui-avatars.com/api/?name=Dr+Mahesh+Babu&size=200&background=0D8ABC&color=fff&bold=true" 
+                             alt="Dr. Mahesh Babu" 
+                             class="w-44 h-44 md:w-56 md:h-56 rounded-full object-cover shadow-2xl">
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div class="flex-1 text-center md:text-left order-2 md:order-1">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 text-teal-400 text-xs md:text-sm font-semibold mb-6 shadow-inner">
+                        <span class="w-2 h-2 rounded-full bg-teal-400 animate-pulse"></span>
+                        Associate Dental Surgeon • Abhay Dental Clinc
+                    </div>
+
+                    <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white leading-tight mb-6">
+                        Crafting Confident Smiles Through <span class="bg-gradient-to-r from-teal-400 via-cyan-300 to-indigo-400 bg-clip-text text-transparent">Precision & Patient Care</span>
+                    </h1>
+
+                    <p class="text-slate-400 text-base md:text-lg max-w-2xl mb-8 font-normal leading-relaxed">
+                        Dedicated to deliver comprehensive dental treatments, pain-free procedures, and modern restorative techniques at Abhay Dental Clinc. Transforming oral health with clinical excellence and personalized compassion.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-teal-500 via-cyan-500 to-indigo-500 text-slate-950 font-bold text-center shadow-lg shadow-teal-500/20 hover:scale-105 hover:shadow-teal-500/40 transition-all duration-300">
+                            Book Appointment <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                        <a href="#about" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900/80 border border-slate-800 text-slate-300 font-semibold text-center hover:bg-slate-800/80 hover:text-white transition-all duration-300">
+                            Learn More
+                        </a>
+                    </div>
+
+                    <!-- Trust Badges -->
+                    <div class="mt-12 pt-8 border-t border-slate-800/60 grid grid-cols-3 gap-4 text-center md:text-left">
+                        <div>
+                            <div class="text-2xl md:text-3xl font-bold text-white">1000+</div>
+                            <div class="text-xs md:text-sm text-slate-400 font-medium">Happy Patients</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl md:text-3xl font-bold text-white">Advanced</div>
+                            <div class="text-xs md:text-sm text-slate-400 font-medium">Clinical Care</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl md:text-3xl font-bold text-white">100%</div>
+                            <div class="text-xs md:text-sm text-slate-400 font-medium">Pain-Free Focus</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-20 md:py-28 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- Industry Image Frame -->
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-teal-500 to-indigo-500 rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-500"></div>
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Modern Dental Clinic Setup" 
+                             class="w-full h-[400px] md:h-[500px] object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-slate-950/80 backdrop-blur-md border border-slate-800">
+                            <p class="text-xs text-teal-400 font-semibold uppercase tracking-wider mb-1">Clinical Standard</p>
+                            <p class="text-sm font-medium text-slate-200">State-of-the-art dentistry tools & sterile environment at Abhay Dental Clinc.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bio Content -->
+                <div>
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-teal-500/10 border border-teal-500/30 text-teal-400 text-xs font-semibold uppercase tracking-wider mb-4">
+                        About Dr. Mahesh Babu
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">
+                        Dedicated to Oral Health, Comfort & Modern Aesthetic Solutions
+                    </h2>
+                    <p class="text-slate-400 text-base leading-relaxed mb-6">
+                        As an Associate Dental Surgeon at <span class="text-slate-200 font-semibold">Abhay Dental Clinc</span>, Dr. Mahesh Babu combines technical precision with a gentle, patient-centered approach. With a focus on minimally invasive dental interventions, preventative techniques, and aesthetic restorations, he ensures that every patient receives tailored treatment in a stress-free clinical setting.
+                    </p>
+                    <p class="text-slate-400 text-base leading-relaxed mb-8">
+                        Whether performing complex endodontic treatments, routine oral hygiene enhancements, or modern smile redesigns, Dr. Mahesh prioritizes patient comfort, open communication, and long-lasting oral wellness.
+                    </p>
+
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-teal-400 shrink-0">
+                                <i class="fa-solid fa-tooth"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold text-base">Comprehensive Diagnostics</h4>
+                                <p class="text-slate-400 text-sm">Thorough evaluation using modern dental mapping and imaging technique.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-cyan-400 shrink-0">
+                                <i class="fa-solid fa-shield-heart"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold text-base">Patient Comfort First</h4>
+                                <p class="text-slate-400 text-sm">Gentle techniques engineered to eliminate dental anxiety and pain.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid Section -->
+    <section id="services" class="py-20 md:py-28 bg-slate-950/60 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-teal-500/10 border border-teal-500/30 text-teal-400 text-xs font-semibold uppercase tracking-wider mb-4">
+                    Clinical Expertise
+                </div>
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">Comprehensive Dental Services</h2>
+                <p class="text-slate-400 text-base">High-precision dental interventions crafted for maximum functional integrity and radiant aesthetics.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-teal-500/50 transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-teal-500/20 to-cyan-500/20 border border-teal-500/30 flex items-center justify-center text-teal-400 text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-teal-400 transition-colors">Cosmetic & Smile Design</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Veneers, teeth whitening, and alignment corrections customized for a naturally stunning smile makeover.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-teal-500/50 transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-cyan-500/20 to-indigo-500/20 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-microscope"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-teal-400 transition-colors">Root Canal & Restorative</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Precision endodontics designed to save natural teeth with minimal pain and rapid recovery times.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-teal-500/50 transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-indigo-500/20 to-purple-500/20 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-syringe"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-teal-400 transition-colors">Surgical Extractions</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Expert surgical removal of impacted wisdom teeth and complex extractions with optimal anesthesia.</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-teal-500/50 transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-purple-500/20 to-pink-500/20 border border-purple-500/30 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-teeth-open"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-teal-400 transition-colors">Preventative Oral Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Routine scaling, deep cleaning, fluoride treatments, and decay prevention for long-term health.</p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-teal-500/50 transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-teal-500/20 to-emerald-500/20 border border-teal-500/30 flex items-center justify-center text-teal-400 text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-child-reaching"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-teal-400 transition-colors">Pediatric Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Warm and friendly dental care tailored specifically for children to build early healthy habits.</p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-teal-500/50 transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-cyan-500/20 to-blue-500/20 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-crown"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-teal-400 transition-colors">Crowns, Bridges & Prosthetics</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Durable, natural-looking tooth replacements engineered for seamless function and aesthetics.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Endorsements Section -->
+    <section id="testimonials" class="py-20 md:py-28 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-teal-500/10 border border-teal-500/30 text-teal-400 text-xs font-semibold uppercase tracking-wider mb-4">
+                    Patient & Peer Feedback
+                </div>
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">Trusted by Patients</h2>
+                <p class="text-slate-400 text-base">Real experiences from individuals who restored their health and confidence.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                            "Dr. Mahesh Babu made my root canal procedure completely painless! I was extremely nervous before coming to Abhay Dental Clinc, but his reassuring behavior and gentle hands put me at total ease."
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-800 pt-4">
+                        <div class="text-white font-semibold text-sm">Rajesh K.</div>
+                        <div class="text-xs text-slate-500">Verified Patient</div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                            "Extremely skilled surgeon. His diagnosis was sharp, and the treatment plan suggested at Abhay Dental Clinc was transparent and affordable. Highly recommend Dr. Mahesh for any dental issue!"
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-800 pt-4">
+                        <div class="text-white font-semibold text-sm">Priya Sharma</div>
+                        <div class="text-xs text-slate-500">Verified Patient</div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                            "The cosmetic smile alignment done by Dr. Mahesh completely boosted my self-confidence. Brilliant clinical skills combined with genuine patient care."
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-800 pt-4">
+                        <div class="text-white font-semibold text-sm">Suresh V.</div>
+                        <div class="text-xs text-slate-500">Verified Patient</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Booking Section -->
+    <section id="contact" class="py-20 md:py-28 bg-slate-950/80 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                
+                <!-- Direct Details -->
+                <div>
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-teal-500/10 border border-teal-500/30 text-teal-400 text-xs font-semibold uppercase tracking-wider mb-4">
+                        Get In Touch
+                    </div>
+                    <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">Schedule Your Dental Visit</h2>
+                    <p class="text-slate-400 text-base leading-relaxed mb-8">
+                        Ready to experience modern, painless dentistry? Visit Dr. Mahesh Babu at Abhay Dental Clinc or send an appointment request below.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-teal-400 text-lg shrink-0">
+                                <i class="fa-solid fa-hospital"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-500 font-medium uppercase">Clinical Practice</p>
+                                <p class="text-slate-200 font-semibold">Abhay Dental Clinc</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-cyan-400 text-lg shrink-0">
+                                <i class="fa-solid fa-user-doctor"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-500 font-medium uppercase">Role / Position</p>
+                                <p class="text-slate-200 font-semibold">Associate Dental Surgeon</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-indigo-400 text-lg shrink-0">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-500 font-medium uppercase">Consultation Hours</p>
+                                <p class="text-slate-200 font-semibold">Mon - Sat: 9:30 AM - 8:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Card -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800">
+                    <form onsubmit="event.preventDefault(); alert('Appointment request submitted successfully!');" class="space-y-5">
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Patient Full Name</label>
+                            <input type="text" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-teal-500 transition-colors">
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Phone Number</label>
+                                <input type="tel" required placeholder="+91 98765 43210" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-teal-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Preferred Date</label>
+                                <input type="date" required class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-teal-500 transition-colors">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Service / Procedure</label>
+                            <select class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-teal-500 transition-colors">
+                                <option>General Consultation & Checkup</option>
+                                <option>Cosmetic Dentistry & Whitening</option>
+                                <option>Root Canal Treatment</option>
+                                <option>Tooth Extraction / Surgery</option>
+                                <option>Pediatric Consultation</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Message or Notes</label>
+                            <textarea rows="3" placeholder="Describe your symptoms or requirements..." class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-teal-500 transition-colors"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-teal-500 via-cyan-500 to-indigo-500 text-slate-950 font-bold text-center shadow-lg shadow-teal-500/20 hover:scale-[1.02] transition-all duration-300">
+                            Confirm Booking Request
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-800/80 bg-slate-950 text-slate-500 text-sm">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+            <p>© 2026 Dr. Mahesh Babu • Associate Dental Surgeon at Abhay Dental Clinc. All Rights Reserved.</p>
+            <div class="flex items-center space-x-6 text-slate-400">
+                <a href="#" class="hover:text-teal-400 transition-colors"><i class="fa-brands fa-linkedin text-lg"></i></a>
+                <a href="#" class="hover:text-teal-400 transition-colors"><i class="fa-brands fa-instagram text-lg"></i></a>
+                <a href="#" class="hover:text-teal-400 transition-colors"><i class="fa-solid fa-envelope text-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
