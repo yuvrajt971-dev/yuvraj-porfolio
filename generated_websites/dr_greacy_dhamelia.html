@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Greacy Dhamelia | Dental Practitioner & Care Specialist</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            teal: '#0D8ABC',
+                            cyan: '#06b6d4',
+                            emerald: '#10b981',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+        }
+        .glow-bg {
+            position: absolute;
+            border-radius: 9999px;
+            filter: blur(120px);
+            opacity: 0.25;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen relative overflow-x-hidden selection:bg-cyan-500 selection:text-slate-950">
+
+    <!-- Ambient Background Glows -->
+    <div class="glow-bg w-96 h-96 bg-cyan-500 -top-20 -left-20"></div>
+    <div class="glow-bg w-[500px] h-[500px] bg-indigo-600 top-1/3 -right-32"></div>
+    <div class="glow-bg w-96 h-96 bg-teal-500 bottom-20 left-10"></div>
+
+    <!-- Navigation Bar -->
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-500 flex items-center justify-center text-slate-950 font-bold text-lg shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
+                    GD
+                </div>
+                <div>
+                    <span class="font-bold text-lg text-slate-100 tracking-tight block leading-tight">Dr. Greacy Dhamelia</span>
+                    <span class="text-xs text-cyan-400 font-medium tracking-wider uppercase block">Dental Specialist</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About & Practice</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
+                <a href="#endorsements" class="hover:text-cyan-400 transition-colors">Testimonials</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+            </nav>
+
+            <!-- CTA Button -->
+            <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 to-indigo-600 text-white font-semibold text-sm shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:scale-[1.02] active:scale-[0.98] transition-all">
+                <i class="fa-regular fa-calendar-check text-xs"></i>
+                <span>Book Consultation</span>
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button id="menuBtn" class="md:hidden text-slate-300 hover:text-white text-xl focus:outline-none" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobileMenu" class="hidden md:hidden bg-slate-900/95 border-b border-slate-800 px-6 py-4 space-y-3">
+            <a href="#about" class="block text-slate-300 hover:text-cyan-400 text-sm font-medium py-1">About & Practice</a>
+            <a href="#services" class="block text-slate-300 hover:text-cyan-400 text-sm font-medium py-1">Services</a>
+            <a href="#endorsements" class="block text-slate-300 hover:text-cyan-400 text-sm font-medium py-1">Testimonials</a>
+            <a href="#contact" class="block text-slate-300 hover:text-cyan-400 text-sm font-medium py-1">Contact</a>
+            <a href="#contact" class="inline-block mt-2 w-full text-center px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 to-indigo-600 text-white font-semibold text-sm">
+                Book Consultation
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-20 md:pt-48 md:pb-32 max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Hero Content -->
+            <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                <!-- Trust Badge -->
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-950/60 border border-cyan-500/30 text-cyan-300 text-xs font-semibold uppercase tracking-wider backdrop-blur-md">
+                    <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                    Junior Dentist @ Dr. Bagadiya’s Dental Clinic
+                </div>
+
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                    Crafting Healthy, <br class="hidden sm:inline" />
+                    <span class="bg-gradient-to-r from-cyan-400 via-teal-300 to-indigo-400 bg-clip-text text-transparent">
+                        Confident Smiles
+                    </span> With Precision Care.
+                </h1>
+
+                <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                    Dedicated to providing modern, gentle, and comprehensive oral healthcare. Combining clinical excellence with patient comfort at Dr. Bagadiya’s Dental Clinic.
+                </p>
+
+                <!-- Hero Buttons -->
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                    <a href="#contact" class="w-full sm:w-auto px-7 py-3.5 rounded-full bg-gradient-to-r from-cyan-500 to-indigo-600 text-white font-semibold text-sm shadow-xl shadow-cyan-500/20 hover:shadow-cyan-500/35 hover:scale-105 transition-all text-center">
+                        Schedule Appointment
+                    </a>
+                    <a href="#services" class="w-full sm:w-auto px-7 py-3.5 rounded-full bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-700 font-semibold text-sm transition-all text-center">
+                        Explore Dental Services
+                    </a>
+                </div>
+
+                <!-- Stats / Metrics -->
+                <div class="pt-8 grid grid-cols-3 gap-4 border-t border-slate-800/80 max-w-lg mx-auto lg:mx-0">
+                    <div>
+                        <p class="text-2xl sm:text-3xl font-bold text-white">100%</p>
+                        <p class="text-xs text-slate-400 mt-1">Patient Focus</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl sm:text-3xl font-bold text-cyan-400">Painless</p>
+                        <p class="text-xs text-slate-400 mt-1">Modern Care</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl sm:text-3xl font-bold text-indigo-400">Clinical</p>
+                        <p class="text-xs text-slate-400 mt-1">Excellence</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Avatar & Frame -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative group">
+                    <!-- Glowing Backlight Rings -->
+                    <div class="absolute -inset-1.5 bg-gradient-to-r from-cyan-500 to-indigo-600 rounded-full blur-xl opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+                    
+                    <!-- Outer Decorative Border -->
+                    <div class="relative p-3 rounded-full bg-slate-900 border border-slate-700/80 shadow-2xl">
+                        <img 
+                            src="https://ui-avatars.com/api/?name=Dr.+Greacy+Dhamelia&size=200&background=0D8ABC&color=fff&bold=true" 
+                            alt="Dr. Greacy Dhamelia" 
+                            class="w-56 h-56 sm:w-64 sm:h-64 rounded-full object-cover shadow-inner"
+                        />
+                        
+                        <!-- Floating Badge -->
+                        <div class="absolute bottom-2 right-2 bg-slate-900/90 backdrop-blur-md border border-cyan-500/40 py-2 px-4 rounded-2xl shadow-xl flex items-center gap-2">
+                            <i class="fa-solid fa-tooth text-cyan-400 text-base"></i>
+                            <div>
+                                <p class="text-[10px] uppercase text-slate-400 font-semibold leading-none">Status</p>
+                                <p class="text-xs font-bold text-white leading-tight">Accepting Patients</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About & Practice Section -->
+    <section id="about" class="py-20 bg-slate-900/40 relative border-t border-slate-800/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Clinical Image Card -->
+                <div class="lg:col-span-5 order-2 lg:order-1">
+                    <div class="relative group rounded-3xl overflow-hidden border border-slate-800 bg-slate-900/60 backdrop-blur-xl p-3">
+                        <div class="overflow-hidden rounded-2xl relative">
+                            <img 
+                                src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                                alt="Dental Clinic Setup" 
+                                class="w-full h-80 sm:h-96 object-cover transform group-hover:scale-105 transition-transform duration-500"
+                            />
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60"></div>
+                        </div>
+                        <div class="p-4 flex items-center justify-between text-xs text-slate-400">
+                            <span class="flex items-center gap-1.5"><i class="fa-solid fa-clinic-medical text-cyan-400"></i> Dr. Bagadiya’s Dental Clinic</span>
+                            <span class="text-cyan-400 font-medium">Modern Technology</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div class="lg:col-span-7 space-y-6 order-1 lg:order-2">
+                    <div class="inline-block px-3.5 py-1.5 rounded-full bg-slate-800/80 border border-slate-700 text-cyan-400 text-xs font-semibold tracking-wider uppercase">
+                        About Dr. Greacy
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+                        Dedicated to Delivering Personalized & Pain-Free Oral Care
+                    </h2>
+
+                    <p class="text-slate-300 leading-relaxed">
+                        As a Junior Dentist at <strong class="text-cyan-300 font-semibold">Dr. Bagadiya’s Dental Clinic</strong>, Dr. Greacy Dhamelia brings a modern clinical perspective paired with a compassionate, patient-centered approach. She specializes in preventive treatments, restorative procedures, and cosmetic enhancements designed to improve both function and confidence.
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="p-4 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all">
+                            <i class="fa-solid fa-heart-pulse text-cyan-400 text-xl mb-2"></i>
+                            <h3 class="font-bold text-white text-sm">Gentle Patient Care</h3>
+                            <p class="text-xs text-slate-400 mt-1">Ensuring stress-free experiences for adults and children alike.</p>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all">
+                            <i class="fa-solid fa-microscope text-indigo-400 text-xl mb-2"></i>
+                            <h3 class="font-bold text-white text-sm">Modern Diagnostics</h3>
+                            <p class="text-xs text-slate-400 mt-1">Utilizing modern techniques for precise diagnoses and lasting solutions.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid Section -->
+    <section id="services" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <div class="inline-block px-3.5 py-1.5 rounded-full bg-slate-800/80 border border-slate-700 text-cyan-400 text-xs font-semibold tracking-wider uppercase mb-3">
+                Clinical Expertise
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Comprehensive Dental Services</h2>
+            <p class="text-slate-400 text-sm sm:text-base mt-3">Tailored procedures aimed at maintaining optimal oral health and aesthetic brilliance.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Service 1 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 p-8 rounded-3xl transition-all duration-300 group hover:-translate-y-1">
+                <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-tooth"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">General Dentistry & Exams</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">Routine check-ups, diagnostic X-rays, and comprehensive treatment planning to maintain healthy teeth and gums.</p>
+                <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold text-cyan-400 hover:text-cyan-300 transition-colors">Book Consultation <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 p-8 rounded-3xl transition-all duration-300 group hover:-translate-y-1">
+                <div class="w-14 h-14 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Teeth Whitening & Aesthetics</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">Professional whitening procedures to remove discoloration and restore a bright, confident smile safely.</p>
+                <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold text-indigo-400 hover:text-indigo-300 transition-colors">Book Consultation <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 p-8 rounded-3xl transition-all duration-300 group hover:-translate-y-1">
+                <div class="w-14 h-14 rounded-2xl bg-teal-500/10 border border-teal-500/20 text-teal-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Preventive Oral Care</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">Scaling, cleaning, cavity prevention, and personalized guidance to protect against long-term issues.</p>
+                <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold text-teal-400 hover:text-teal-300 transition-colors">Book Consultation <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 p-8 rounded-3xl transition-all duration-300 group hover:-translate-y-1">
+                <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-fill-drip"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Restorative Fillings</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">Tooth-colored composite fillings to repair cavities seamlessly while preserving maximum original structure.</p>
+                <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold text-cyan-400 hover:text-cyan-300 transition-colors">Book Consultation <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 p-8 rounded-3xl transition-all duration-300 group hover:-translate-y-1">
+                <div class="w-14 h-14 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-face-smile"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Pediatric Dentistry</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">Gentle, reassuring dental care tailored for young children, encouraging healthy habits from an early age.</p>
+                <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold text-indigo-400 hover:text-indigo-300 transition-colors">Book Consultation <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 p-8 rounded-3xl transition-all duration-300 group hover:-translate-y-1">
+                <div class="w-14 h-14 rounded-2xl bg-teal-500/10 border border-teal-500/20 text-teal-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-stethoscope"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Periodontal Hygiene</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">Focused treatments for gum health, deep cleaning, and managing early gum sensitivities efficiently.</p>
+                <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold text-teal-400 hover:text-teal-300 transition-colors">Book Consultation <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Testimonials / Endorsements Section -->
+    <section id="endorsements" class="py-20 bg-slate-900/40 border-t border-slate-800/50 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <div class="inline-block px-3.5 py-1.5 rounded-full bg-slate-800/80 border border-slate-700 text-cyan-400 text-xs font-semibold tracking-wider uppercase mb-3">
+                    Patient & Peer Trust
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Patient Endorsements</h2>
+                <p class="text-slate-400 text-sm sm:text-base mt-2">Real feedback on Dr. Greacy's gentle demeanor and professional clinical standard.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-400 mb-4 text-xs">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Dr. Greacy made my dental cleaning completely painless! She explains every step clearly, which put my usual dental anxiety completely at ease."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold text-xs">
+                            PR
+                        </div>
+                        <div>
+                            <p class="text-white text-sm font-semibold">Pooja R.</p>
+                            <p class="text-slate-400 text-xs">Clinic Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-400 mb-4 text-xs">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "An extremely skilled junior dentist with a keen eye for aesthetics. The whitening treatment at Dr. Bagadiya's clinic gave amazing results."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-xs">
+                            AS
+                        </div>
+                        <div>
+                            <p class="text-white text-sm font-semibold">Amit S.</p>
+                            <p class="text-slate-400 text-xs">Aesthetic Dental Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-400 mb-4 text-xs">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Her dedication and gentle hands make her stand out. She was great with my 8-year-old son during his first dental filling experience!"
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-full bg-teal-500/20 text-teal-400 flex items-center justify-center font-bold text-xs">
+                            MK
+                        </div>
+                        <div>
+                            <p class="text-white text-sm font-semibold">Meera K.</p>
+                            <p class="text-slate-400 text-xs">Parent & Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Booking Section -->
+    <section id="contact" class="py-24 max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 sm:p-12 rounded-3xl relative overflow-hidden">
+            
+            <!-- Glow effect inside box -->
+            <div class="absolute top-0 right-0 w-80 h-80 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="lg:col-span-5 space-y-6">
+                <div class="inline-block px-3 py-1 rounded-full bg-cyan-950 border border-cyan-500/30 text-cyan-300 text-xs font-semibold uppercase">
+                    Connect & Book
+                </div>
+
+                <h2 class="text-3xl font-bold text-white tracking-tight">Request an Appointment</h2>
+
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Have questions about dental treatments or want to schedule a visit? Fill out the form or reach out directly at Dr. Bagadiya’s Dental Clinic.
+                </p>
+
+                <div class="space-y-4 pt-4">
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-slate-800 border border-slate-700 text-cyan-400 flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-hospital-user text-base"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400 font-medium">Practice Location</p>
+                            <p class="text-sm font-bold text-white">Dr. Bagadiya’s Dental Clinic</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-slate-800 border border-slate-700 text-indigo-400 flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-user-doctor text-base"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400 font-medium">Role</p>
+                            <p class="text-sm font-bold text-white">Junior Dentist Practitioner</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-slate-800 border border-slate-700 text-teal-400 flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-calendar-days text-base"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400 font-medium">Consultation Availability</p>
+                            <p class="text-sm font-bold text-white">Monday - Saturday (By Appointment)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Contact Form -->
+            <div class="lg:col-span-7">
+                <form onsubmit="event.preventDefault(); alert('Thank you for reaching out! Your appointment query has been submitted.');" class="space-y-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-1.5">Full Name</label>
+                            <input type="text" required placeholder="e.g. John Doe" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-slate-100 text-sm focus:outline-none focus:border-cyan-500 transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-1.5">Phone Number</label>
+                            <input type="tel" required placeholder="+91 98765 43210" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-slate-100 text-sm focus:outline-none focus:border-cyan-500 transition-colors">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 mb-1.5">Desired Treatment / Reason</label>
+                        <select class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-slate-100 text-sm focus:outline-none focus:border-cyan-500 transition-colors">
+                            <option value="general">General Checkup & Routine Exam</option>
+                            <option value="cleaning">Teeth Cleaning & Scaling</option>
+                            <option value="whitening">Teeth Whitening</option>
+                            <option value="restoration">Fillings & Restoration</option>
+                            <option value="pediatric">Child Dental Care</option>
+                            <option value="other">Other Consultation</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 mb-1.5">Message / Notes</label>
+                        <textarea rows="4" placeholder="Mention any preferred time or specific dental concerns..." class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-slate-100 text-sm focus:outline-none focus:border-cyan-500 transition-colors"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 text-white font-bold text-sm shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:scale-[1.01] active:scale-[0.99] transition-all">
+                        Submit Appointment Request
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800/80 bg-slate-950 py-10">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-cyan-500 flex items-center justify-center text-slate-950 font-bold text-sm">
+                    GD
+                </div>
+                <p class="text-xs text-slate-400">
+                    © 2026 Dr. Greacy Dhamelia • Junior Dentist at Dr. Bagadiya’s Dental Clinic.
+                </p>
+            </div>
+
+            <div class="flex items-center gap-6 text-slate-400 text-xs">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors">Book Visit</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close menu on link click
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
