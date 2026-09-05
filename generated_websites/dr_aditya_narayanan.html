@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Aditya Narayanan | Consultant Endodontist</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            cyan: '#0D8ABC',
+                            teal: '#14b8a6',
+                            blue: '#3b82f6',
+                            purple: '#8b5cf6',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-radial {
+            background: radial-gradient(circle at 50% 0%, rgba(13, 138, 188, 0.25) 0%, rgba(15, 23, 42, 0) 70%);
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(51, 65, 85, 0.5);
+        }
+        .glass-card:hover {
+            border-color: rgba(13, 138, 188, 0.6);
+            box-shadow: 0 10px 30px -10px rgba(13, 138, 188, 0.3);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #38bdf8 0%, #0D8ABC 50%, #818cf8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen selection:bg-cyan-500 selection:text-white relative overflow-x-hidden">
+
+    <!-- Ambient Background Glows -->
+    <div class="fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-96 glow-radial pointer-events-none z-0"></div>
+    <div class="fixed top-1/3 -left-48 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none z-0"></div>
+    <div class="fixed bottom-1/4 -right-48 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl pointer-events-none z-0"></div>
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-600 to-indigo-600 flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-tooth"></i>
+                </div>
+                <div>
+                    <span class="text-lg font-bold tracking-tight text-white block leading-none">Dr. Aditya Narayanan</span>
+                    <span class="text-xs text-cyan-400 font-medium">PES University Hospital</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-cyan-400 transition-colors">Specialties</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Endorsements</a>
+                <a href="#contact" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-600 to-indigo-600 text-white font-semibold shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 hover:scale-105 transition-all">
+                    Book Consultation
+                </a>
+            </nav>
+
+            <!-- Mobile Menu Toggle -->
+            <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden text-slate-300 hover:text-white text-xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-6 py-4 flex flex-col gap-4 text-sm font-medium text-slate-300">
+            <a href="#about" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="hover:text-cyan-400">About</a>
+            <a href="#expertise" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="hover:text-cyan-400">Specialties</a>
+            <a href="#services" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="hover:text-cyan-400">Services</a>
+            <a href="#testimonials" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="hover:text-cyan-400">Endorsements</a>
+            <a href="#contact" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="px-5 py-2.5 text-center rounded-full bg-gradient-to-r from-cyan-600 to-indigo-600 text-white font-semibold">Book Consultation</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative z-10 pt-20 pb-16 md:pt-32 md:pb-24 max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Left Text Content -->
+            <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs font-semibold uppercase tracking-wider">
+                    <i class="fa-solid fa-hospital text-sm"></i> PES University Hospital Specialist
+                </div>
+
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                    Precision Micro-Endodontics & <span class="text-gradient">Tooth Preservation</span>
+                </h1>
+
+                <p class="text-lg text-slate-400 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                    Welcome to the specialized dental practice of <strong class="text-slate-200">Dr. Aditya Narayanan</strong>. Dedicated to painless root canal treatments, complex endodontic retreatments, and advanced clinical endodontics utilizing state-of-the-art microscopic technology.
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-4">
+                    <a href="#contact" class="px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-600 to-purple-600 text-white font-bold shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:-translate-y-0.5 transition-all">
+                        Schedule Patient Consultation <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                    </a>
+                    <a href="#about" class="px-8 py-4 rounded-xl glass-card text-slate-300 font-semibold hover:text-white hover:bg-slate-800/80 transition-all">
+                        Explore Expertise
+                    </a>
+                </div>
+
+                <!-- Trust Badges -->
+                <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-4 max-w-md mx-auto lg:mx-0">
+                    <div class="text-center lg:text-left">
+                        <div class="text-2xl font-bold text-white">100%</div>
+                        <div class="text-xs text-slate-400">Microscopic Precision</div>
+                    </div>
+                    <div class="text-center lg:text-left">
+                        <div class="text-2xl font-bold text-white">Painless</div>
+                        <div class="text-xs text-slate-400">Clinical Protocol</div>
+                    </div>
+                    <div class="text-center lg:text-left">
+                        <div class="text-2xl font-bold text-white">PES Hospital</div>
+                        <div class="text-xs text-slate-400">Consultant Practitioner</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Avatar Showcase -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative group">
+                    <!-- Glowing Double Ring Avatar Frame -->
+                    <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-cyan-500 via-purple-500 to-indigo-500 opacity-75 blur-xl group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+                    <div class="relative rounded-3xl p-2 bg-slate-900 border border-slate-800">
+                        <img src="https://ui-avatars.com/api/?name=Dr.+Aditya+Narayanan&size=200&background=0D8ABC&color=fff&bold=true" 
+                             alt="Dr. Aditya Narayanan" 
+                             class="w-72 h-72 sm:w-80 sm:h-80 object-cover rounded-2xl shadow-2xl">
+                        
+                        <!-- Floating Badge 1 -->
+                        <div class="absolute -bottom-4 -left-4 glass-card p-3 rounded-2xl flex items-center gap-3 shadow-xl">
+                            <div class="w-10 h-10 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold">
+                                <i class="fa-solid fa-microscope text-lg"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs font-bold text-white">Micro-Endodontist</div>
+                                <div class="text-[10px] text-slate-400">Microscopic RCT Expert</div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Badge 2 -->
+                        <div class="absolute -top-4 -right-4 glass-card p-3 rounded-2xl flex items-center gap-3 shadow-xl">
+                            <div class="w-10 h-10 rounded-xl bg-purple-500/20 text-purple-400 flex items-center justify-center font-bold">
+                                <i class="fa-solid fa-user-doctor text-lg"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs font-bold text-white">Consultant</div>
+                                <div class="text-[10px] text-slate-400">PES University Hospital</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 relative z-10 bg-slate-900/40 border-y border-slate-800/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Clinical Image Card -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-800 group">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" 
+                             alt="Clinical Care & Practice" 
+                             class="w-full h-96 object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <span class="text-xs uppercase font-bold text-cyan-400 tracking-wider">Clinical Excellence</span>
+                            <h3 class="text-lg font-bold text-white mt-1">State-of-the-Art Endodontics</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Info -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-block px-3 py-1 rounded-lg bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 text-xs font-semibold">
+                        BACKGROUND & PHILOSOPHY
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white">
+                        Dedicated to Saving Natural Teeth with Advanced Dental Science
+                    </h2>
+                    <p class="text-slate-400 leading-relaxed">
+                        Dr. Aditya Narayanan serves as a <strong class="text-slate-200">Consultant Endodontist</strong> at PES University Hospital. His clinical practice focuses on root canal therapy, complex endodontic retreatments, management of dental trauma, and surgical endodontics.
+                    </p>
+                    <p class="text-slate-400 leading-relaxed">
+                        With an emphasis on patient comfort, biomechanical accuracy, and micro-dentistry, Dr. Narayanan employs modern magnification tools and rotary instrumentation to deliver painless, precise, and long-lasting outcomes for every patient.
+                    </p>
+
+                    <!-- Feature Bullet Points -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="flex items-start gap-3">
+                            <div class="w-6 h-6 rounded-md bg-cyan-500/20 text-cyan-400 flex items-center justify-center shrink-0 mt-1">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Operating Microscope Integration</h4>
+                                <p class="text-xs text-slate-400">Enhanced vision for intricate canal anatomy.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <div class="w-6 h-6 rounded-md bg-cyan-500/20 text-cyan-400 flex items-center justify-center shrink-0 mt-1">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Biocompatible Materials</h4>
+                                <p class="text-xs text-slate-400">MTA & Bioceramic sealers for permanent healing.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <div class="w-6 h-6 rounded-md bg-cyan-500/20 text-cyan-400 flex items-center justify-center shrink-0 mt-1">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Painless Anesthesia Protocol</h4>
+                                <p class="text-xs text-slate-400">Minimally invasive, anxiety-free treatments.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <div class="w-6 h-6 rounded-md bg-cyan-500/20 text-cyan-400 flex items-center justify-center shrink-0 mt-1">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">PES Hospital Standard</h4>
+                                <p class="text-xs text-slate-400">Strict hygiene and clinical safety protocols.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Clinical Services Grid -->
+    <section id="services" class="py-24 relative z-10 max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+            <div class="inline-block px-3 py-1 rounded-lg bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs font-semibold uppercase tracking-wider">
+                Clinical Services
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-bold text-white">Specialized Endodontic Procedures</h2>
+            <p class="text-slate-400">Comprehensive care focused on preserving your natural teeth using advanced techniques.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Service Card 1 -->
+            <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-cyan-500/20 to-blue-500/20 border border-cyan-500/30 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-tooth"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Painless Root Canal Therapy</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                    Single-visit and multi-visit root canal treatments utilizing rotary nickel-titanium files and 3D obturation for total comfort.
+                </p>
+                <span class="text-xs font-semibold text-cyan-400 flex items-center gap-1 group-hover:gap-2 transition-all">
+                    Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                </span>
+            </div>
+
+            <!-- Service Card 2 -->
+            <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-purple-500/20 to-indigo-500/20 border border-purple-500/30 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-microscope"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Micro-Endodontic Surgery</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                    Apicoectomies, root-end fillings, and surgical repair of perforations under high-power dental magnification.
+                </p>
+                <span class="text-xs font-semibold text-purple-400 flex items-center gap-1 group-hover:gap-2 transition-all">
+                    Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                </span>
+            </div>
+
+            <!-- Service Card 3 -->
+            <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-blue-500/20 to-teal-500/20 border border-blue-500/30 text-teal-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-rotate-left"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Endodontic Retreatment</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                    Correction and retreatments of previously failed root canals, removing old fillings and sealing missed canals.
+                </p>
+                <span class="text-xs font-semibold text-teal-400 flex items-center gap-1 group-hover:gap-2 transition-all">
+                    Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                </span>
+            </div>
+
+            <!-- Service Card 4 -->
+            <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-pink-500/20 to-rose-500/20 border border-pink-500/30 text-pink-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-kit-medical"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Dental Trauma Management</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                    Immediate intervention for fractured, dislodged, or avulsed teeth due to sports injuries or accidents.
+                </p>
+                <span class="text-xs font-semibold text-pink-400 flex items-center gap-1 group-hover:gap-2 transition-all">
+                    Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                </span>
+            </div>
+
+            <!-- Service Card 5 -->
+            <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-amber-500/20 to-yellow-500/20 border border-amber-500/30 text-amber-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Internal Bleaching & Restoration</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                    Non-vital tooth whitening for discolored teeth following root canal therapy and aesthetic core build-ups.
+                </p>
+                <span class="text-xs font-semibold text-amber-400 flex items-center gap-1 group-hover:gap-2 transition-all">
+                    Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                </span>
+            </div>
+
+            <!-- Service Card 6 -->
+            <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-emerald-500/20 to-green-500/20 border border-emerald-500/30 text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">3D Diagnostics & CBCT Analysis</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                    Precision 3D imaging assessment for complex root canal anatomies, hidden canals, and bone tissue evaluation.
+                </p>
+                <span class="text-xs font-semibold text-emerald-400 flex items-center gap-1 group-hover:gap-2 transition-all">
+                    Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                </span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Testimonials / Endorsements Section -->
+    <section id="testimonials" class="py-20 relative z-10 bg-slate-900/40 border-y border-slate-800/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                <div class="inline-block px-3 py-1 rounded-lg bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 text-xs font-semibold uppercase tracking-wider">
+                    Endorsements
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white">Patient & Peer Recognition</h2>
+                <p class="text-slate-400">Feedback from patients and dental colleagues at PES University Hospital.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 text-sm gap-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "I was extremely nervous about getting a root canal, but Dr. Aditya Narayanan made the process completely pain-free. His microscopic technique was mesmerizing and accurate."
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-cyan-600/30 text-cyan-400 flex items-center justify-center font-bold text-sm">
+                            SK
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-white">Suresh Kumar</div>
+                            <div class="text-xs text-slate-400">Patient at PES Hospital</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 text-sm gap-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "Dr. Aditya is an outstanding endodontist. As a fellow consultant, I regularly refer complex root canal retreatment cases to him knowing they will be handled with exceptional precision."
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-purple-600/30 text-purple-400 flex items-center justify-center font-bold text-sm">
+                            DR
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-white">Dr. R. Mehta</div>
+                            <div class="text-xs text-slate-400">Consultant Prosthodontist</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 text-sm gap-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "Saved my molar when other dentists advised extraction. Dr. Aditya's expertise in endodontics is truly world-class. Grateful for his gentle approach."
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-teal-600/30 text-teal-400 flex items-center justify-center font-bold text-sm">
+                            AP
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-white">Ananya Patel</div>
+                            <div class="text-xs text-slate-400">Patient</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Consultation Section -->
+    <section id="contact" class="py-24 relative z-10 max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+            
+            <!-- Direct Info -->
+            <div class="lg:col-span-5 space-y-8">
+                <div>
+                    <div class="inline-block px-3 py-1 rounded-lg bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs font-semibold uppercase tracking-wider mb-4">
+                        Get In Touch
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">Schedule a Consultation</h2>
+                    <p class="text-slate-400 leading-relaxed">
+                        Consultations are available at the Department of Endodontics, PES University Hospital. Reach out directly or fill in the clinical referral form.
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="flex items-start gap-4 glass-card p-4 rounded-xl">
+                        <div class="w-12 h-12 rounded-lg bg-cyan-500/20 text-cyan-400 flex items-center justify-center text-xl shrink-0">
+                            <i class="fa-solid fa-hospital"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Clinical Location</h4>
+                            <p class="text-xs text-slate-400 mt-1">Department of Conservative Dentistry & Endodontics,<br>PES University Hospital, Bengaluru</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4 glass-card p-4 rounded-xl">
+                        <div class="w-12 h-12 rounded-lg bg-indigo-500/20 text-indigo-400 flex items-center justify-center text-xl shrink-0">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Email Consultation</h4>
+                            <p class="text-xs text-slate-400 mt-1">aditya.narayanan@pes.edu</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4 glass-card p-4 rounded-xl">
+                        <div class="w-12 h-12 rounded-lg bg-purple-500/20 text-purple-400 flex items-center justify-center text-xl shrink-0">
+                            <i class="fa-solid fa-calendar-check"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">OPD Timings</h4>
+                            <p class="text-xs text-slate-400 mt-1">Monday – Saturday: 9:00 AM – 4:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form -->
+            <div class="lg:col-span-7">
+                <div class="glass-card p-8 rounded-3xl relative">
+                    <h3 class="text-xl font-bold text-white mb-6">Send a Message / Request Appointment</h3>
+                    
+                    <form onsubmit="event.preventDefault(); alert('Thank you! Dr. Aditya Narayanan\'s office will reach out to you shortly.');" class="space-y-5">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Full Name</label>
+                                <input type="text" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Phone Number</label>
+                                <input type="tel" required placeholder="+91 98765 43210" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 text-sm">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">Email Address</label>
+                            <input type="email" required placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 text-sm">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">Service Required / Main Concern</label>
+                            <select class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 text-sm">
+                                <option>Root Canal Treatment (RCT)</option>
+                                <option>Re-treatment / Failed RCT</option>
+                                <option>Dental Trauma / Emergency</option>
+                                <option>Micro-Endodontic Surgery</option>
+                                <option>General Consultation & Diagnostics</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">Message / Symptoms</label>
+                            <textarea rows="4" placeholder="Briefly describe your tooth concern..." class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 text-sm"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-600 to-purple-600 text-white font-bold shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:scale-[1.01] transition-all">
+                            Submit Consultation Request
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800/80 py-12 relative z-10 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-600 to-indigo-600 flex items-center justify-center text-white font-bold text-sm">
+                    <i class="fa-solid fa-tooth"></i>
+                </div>
+                <span class="text-sm font-bold text-white">Dr. Aditya Narayanan</span>
+                <span class="text-xs text-slate-500">| Consultant Endodontist, PES University Hospital</span>
+            </div>
+
+            <div class="text-xs text-slate-500 text-center md:text-right">
+                © 2026 Dr. Aditya Narayanan. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
