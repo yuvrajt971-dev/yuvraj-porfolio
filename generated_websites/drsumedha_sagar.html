@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Sumedha Sagar | Cosmetic Dentist & Aesthetic Specialist</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f7ff',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(99, 102, 241, 0.3);
+        }
+        .glow-effect-teal {
+            box-shadow: 0 0 50px -10px rgba(13, 138, 188, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-indigo-500 selection:text-white relative overflow-x-hidden">
+
+    <!-- Background Ambient Glows -->
+    <div class="fixed top-0 left-1/4 w-[500px] h-[500px] bg-indigo-600/10 rounded-full blur-[120px] pointer-events-none -z-10"></div>
+    <div class="fixed bottom-1/3 right-10 w-[600px] h-[600px] bg-cyan-500/10 rounded-full blur-[140px] pointer-events-none -z-10"></div>
+
+    <!-- Navigation Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-indigo-500 to-pink-500 p-[2px] transition-transform duration-300 group-hover:scale-105">
+                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+                        <i class="fa-solid fa-tooth text-cyan-400 text-lg"></i>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-lg tracking-tight text-white leading-tight">Dr. Sumedha Sagar</span>
+                    <span class="text-xs text-slate-400 font-medium">Cosmetic Dentist</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-cyan-400 transition-colors">Expertise</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Testimonials</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 via-indigo-500 to-pink-500 text-white font-semibold text-sm shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.02] transition-all duration-300">
+                    <span>Book Consultation</span>
+                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-20 md:pt-48 md:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Left Content Column -->
+                <div class="lg:col-span-7 flex flex-col items-start space-y-6">
+                    <!-- Badge -->
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 text-cyan-400 text-xs font-semibold tracking-wide uppercase">
+                        <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                        Ryan Clinic : Skin & Hair Transplant Clinic
+                    </div>
+
+                    <!-- Headline -->
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.15]">
+                        Mastering the Art of <br class="hidden sm:block">
+                        <span class="bg-gradient-to-r from-cyan-400 via-indigo-400 to-pink-500 bg-clip-text text-transparent">
+                            Flawless Smiles
+                        </span>
+                    </h1>
+
+                    <!-- Paragraph -->
+                    <p class="text-slate-400 text-lg md:text-xl font-normal max-w-2xl leading-relaxed">
+                        Leading cosmetic dental transformations with clinical precision, advanced aesthetic smile design, and state-of-the-art care at Ryan Clinic.
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-wrap items-center gap-4 pt-4 w-full sm:w-auto">
+                        <a href="#contact" class="w-full sm:w-auto text-center px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-pink-500 text-white font-bold shadow-xl shadow-indigo-500/20 hover:shadow-indigo-500/35 hover:scale-[1.02] transition-all duration-300">
+                            Schedule Appointment
+                        </a>
+                        <a href="#services" class="w-full sm:w-auto text-center px-8 py-4 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-slate-700 text-slate-200 font-semibold hover:bg-slate-900 transition-all duration-300">
+                            Explore Treatments
+                        </a>
+                    </div>
+
+                    <!-- Mini Stats Badges -->
+                    <div class="grid grid-cols-3 gap-6 pt-8 border-t border-slate-800/80 w-full max-w-xl">
+                        <div>
+                            <div class="text-2xl lg:text-3xl font-extrabold text-white">100%</div>
+                            <div class="text-xs text-slate-400 mt-1 font-medium">Bespoke Aesthetics</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl lg:text-3xl font-extrabold text-white">5.0★</div>
+                            <div class="text-xs text-slate-400 mt-1 font-medium">Patient Satisfaction</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl lg:text-3xl font-extrabold text-white">Modern</div>
+                            <div class="text-xs text-slate-400 mt-1 font-medium">Clinical Innovation</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Avatar & Profile Frame Column -->
+                <div class="lg:col-span-5 flex justify-center relative">
+                    <div class="relative w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96">
+                        <!-- Double Gradient Glowing Halo Frame -->
+                        <div class="absolute -inset-4 rounded-3xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-pink-500 opacity-60 blur-2xl animate-pulse"></div>
+                        
+                        <!-- Inner Container with Frame -->
+                        <div class="relative w-full h-full rounded-3xl bg-slate-900 p-2 border border-slate-800 shadow-2xl flex flex-col items-center justify-center overflow-hidden">
+                            <img src="https://ui-avatars.com/api/?name=Dr.Sumedha+Sagar&size=200&background=0D8ABC&color=fff&bold=true" 
+                                 alt="Dr. Sumedha Sagar" 
+                                 class="w-full h-full object-cover rounded-2xl transform transition-transform duration-500 hover:scale-105">
+                            
+                            <!-- Overlay Label Card -->
+                            <div class="absolute bottom-4 left-4 right-4 bg-slate-950/85 backdrop-blur-xl border border-slate-800 p-4 rounded-xl shadow-xl flex items-center justify-between">
+                                <div>
+                                    <p class="text-sm font-bold text-white">Dr. Sumedha Sagar</p>
+                                    <p class="text-xs text-cyan-400">Cosmetic Dentist Specialist</p>
+                                </div>
+                                <div class="w-8 h-8 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center">
+                                    <i class="fa-solid fa-certificate text-sm"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Image Wrapper -->
+                <div class="lg:col-span-6 relative">
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900/60 backdrop-blur-xl group">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Modern Aesthetic Dentistry Clinic" 
+                             class="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-cyan-400">Excellence in Practice</span>
+                            <h3 class="text-xl font-bold text-white mt-1">Ryan Clinic : Skin & Hair Transplant Clinic</h3>
+                            <p class="text-sm text-slate-300 mt-1">Integrating smile enhancement with comprehensive aesthetic care.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Description -->
+                <div class="lg:col-span-6 flex flex-col space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold w-fit">
+                        ABOUT DR. SUMEDHA SAGAR
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight leading-tight">
+                        Transforming Smiles Through Modern Science & Artistry
+                    </h2>
+
+                    <p class="text-slate-300 leading-relaxed">
+                        Dr. Sumedha Sagar is a renowned Cosmetic Dentist practicing at <strong class="text-white">Ryan Clinic : Skin and Hair Transplant Clinic</strong>. With a profound passion for aesthetic facial harmony, Dr. Sagar combines cutting-edge dental technology with a artistic perspective to craft natural, radiant, and enduring smiles.
+                    </p>
+
+                    <p class="text-slate-400 leading-relaxed">
+                        Whether specializing in porcelain veneers, digital smile design, teeth whitening, or complete oral aesthetic rehabilitations, every treatment is tailored to accentuate each patient's unique facial features and boost self-confidence.
+                    </p>
+
+                    <!-- Feature Highlights List -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="flex items-center gap-3 p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <i class="fa-solid fa-wand-magic-sparkles text-cyan-400"></i>
+                            <span class="text-sm text-slate-200 font-medium">Digital Smile Designing</span>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <i class="fa-solid fa-gem text-indigo-400"></i>
+                            <span class="text-sm text-slate-200 font-medium">Ultra-Thin Porcelain Veneers</span>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <i class="fa-solid fa-bolt text-pink-400"></i>
+                            <span class="text-sm text-slate-200 font-medium">Laser Whitening Tech</span>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <i class="fa-solid fa-heart-pulse text-emerald-400"></i>
+                            <span class="text-sm text-slate-200 font-medium">Painless & Gentle Care</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 relative bg-slate-900/40">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <!-- Section Header -->
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold mb-3">
+                    SPECIALIZED CLINICAL SERVICES
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+                    Custom Tailored Cosmetic Treatments
+                </h2>
+                <p class="text-slate-400 mt-3 text-sm sm:text-base">
+                    Delivering precision dental procedures using world-class protocols and advanced materials.
+                </p>
+            </div>
+
+            <!-- Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service Card 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl hover:border-indigo-500/50 transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-cyan-500/20 to-indigo-500/20 border border-cyan-500/30 flex items-center justify-center text-cyan-400 mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-tooth text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Digital Smile Makeovers</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Comprehensive smile evaluation and 3D digital planning to construct perfectly symmetrical, natural-looking tooth proportion and shade.
+                    </p>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl hover:border-indigo-500/50 transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-indigo-500/20 to-pink-500/20 border border-indigo-500/30 flex items-center justify-center text-indigo-400 mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-gem text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-indigo-400 transition-colors">Porcelain Veneers & Crowns</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Minimal-prep, custom-crafted ceramic veneers that fix discoloration, gaps, and chips for a flawless red-carpet smile.
+                    </p>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl hover:border-indigo-500/50 transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-pink-500/20 to-purple-500/20 border border-pink-500/30 flex items-center justify-center text-pink-400 mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-wand-magic-sparkles text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-pink-400 transition-colors">Laser Teeth Whitening</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        In-office laser brightening technology that lifts stubborn stains by several shades safely without tooth sensitivity.
+                    </p>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl hover:border-indigo-500/50 transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-cyan-500/20 to-emerald-500/20 border border-cyan-500/30 flex items-center justify-center text-emerald-400 mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-shield-halved text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-emerald-400 transition-colors">Aesthetic Bonding & Restorations</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Seamless composite bonding to repair minor tooth imperfections, close gaps, and restore tooth structure invisibly.
+                    </p>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl hover:border-indigo-500/50 transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-purple-500/20 to-indigo-500/20 border border-purple-500/30 flex items-center justify-center text-purple-400 mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-sparkles text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">Gummy Smile Correction</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Gingival recontouring and smile line restructuring to balance the ratio between teeth and gums seamlessly.
+                    </p>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl hover:border-indigo-500/50 transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-indigo-500/20 to-cyan-500/20 border border-indigo-500/30 flex items-center justify-center text-cyan-400 mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-face-smile text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Clear Aligner Consultation</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Discreet orthodontic alignment solutions designed to straighten misaligned teeth prior to aesthetic finishing.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pink-500/10 border border-pink-500/20 text-pink-400 text-xs font-semibold mb-3">
+                    PATIENT STORIES & ENDORSEMENTS
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+                    Trusted by Delighted Patients
+                </h2>
+                <p class="text-slate-400 mt-3 text-sm sm:text-base">
+                    Read how Dr. Sumedha Sagar has transformed confidence and aesthetics at Ryan Clinic.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "Dr. Sumedha Sagar completely restored my smile with ultra-thin veneers at Ryan Clinic. Her attention to detail and gentle approach made the entire process smooth and completely stress-free."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold text-sm">
+                            AN
+                        </div>
+                        <div>
+                            <p class="text-white font-semibold text-sm">Ananya N.</p>
+                            <p class="text-xs text-slate-400">Smile Makeover Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "I went in for laser teeth whitening before my wedding. The results were dramatic yet so natural! Dr. Sagar is hands down the best cosmetic dentist I've ever consulted."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-sm">
+                            RK
+                        </div>
+                        <div>
+                            <p class="text-white font-semibold text-sm">Rohan K.</p>
+                            <p class="text-xs text-slate-400">Teeth Whitening Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "Extremely professional clinical standards. Dr. Sagar meticulously analyzed my facial structure before recommending cosmetic bonding. Highly recommend visiting Ryan Clinic!"
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-pink-500/20 text-pink-400 flex items-center justify-center font-bold text-sm">
+                            PM
+                        </div>
+                        <div>
+                            <p class="text-white font-semibold text-sm">Pooja M.</p>
+                            <p class="text-xs text-slate-400">Cosmetic Bonding Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 relative bg-slate-900/40">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Direct Details Column -->
+                <div class="lg:col-span-5 flex flex-col justify-between">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold mb-3">
+                            GET IN TOUCH
+                        </div>
+                        <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+                            Start Your Smile Transformation
+                        </h2>
+                        <p class="text-slate-400 mt-4 leading-relaxed text-sm sm:text-base">
+                            Schedule a private aesthetic consultation with Dr. Sumedha Sagar at Ryan Clinic : Skin and Hair Transplant Clinic.
+                        </p>
+
+                        <!-- Info Cards -->
+                        <div class="space-y-4 mt-8">
+                            <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+                                <div class="w-10 h-10 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center shrink-0">
+                                    <i class="fa-solid fa-hospital text-lg"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-semibold uppercase text-slate-400">Clinical Location</p>
+                                    <p class="text-sm font-medium text-white mt-0.5">Ryan Clinic : Skin and Hair Transplant Clinic</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+                                <div class="w-10 h-10 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center shrink-0">
+                                    <i class="fa-solid fa-envelope text-lg"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-semibold uppercase text-slate-400">Inquiry Email</p>
+                                    <p class="text-sm font-medium text-white mt-0.5">contact@ryanclinic.com</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+                                <div class="w-10 h-10 rounded-lg bg-pink-500/10 text-pink-400 flex items-center justify-center shrink-0">
+                                    <i class="fa-solid fa-clock text-lg"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-semibold uppercase text-slate-400">Consultation Hours</p>
+                                    <p class="text-sm font-medium text-white mt-0.5">Mon – Sat: 10:00 AM – 7:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Column -->
+                <div class="lg:col-span-7">
+                    <div class="bg-slate-900/80 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl shadow-2xl">
+                        <h3 class="text-xl font-bold text-white mb-6">Book an Appointment Consultation</h3>
+                        
+                        <form onsubmit="event.preventDefault(); alert('Thank you! Your appointment inquiry has been submitted.');" class="space-y-5">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2 uppercase">Full Name</label>
+                                    <input type="text" required placeholder="John Doe" 
+                                           class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2 uppercase">Phone Number</label>
+                                    <input type="tel" required placeholder="+1 (555) 000-0000" 
+                                           class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2 uppercase">Treatment Interest</label>
+                                <select class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-300 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                                    <option>Digital Smile Design</option>
+                                    <option>Porcelain Veneers</option>
+                                    <option>Laser Teeth Whitening</option>
+                                    <option>Cosmetic Composite Bonding</option>
+                                    <option>General Aesthetic Consultation</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2 uppercase">Your Message or Preferred Time</label>
+                                <textarea rows="4" placeholder="Describe your consultation request..." 
+                                          class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm"></textarea>
+                            </div>
+
+                            <button type="submit" 
+                                    class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-pink-500 text-white font-bold shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.01] transition-all duration-300">
+                                Confirm Consultation Request
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800/80 bg-slate-950 py-10">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6 text-sm text-slate-400">
+            <div class="flex items-center gap-3">
+                <span class="font-bold text-white">Dr. Sumedha Sagar</span>
+                <span>•</span>
+                <span>Ryan Clinic : Skin and Hair Transplant Clinic</span>
+            </div>
+            
+            <div class="flex items-center gap-6">
+                <a href="#about" class="hover:text-white transition-colors">About</a>
+                <a href="#services" class="hover:text-white transition-colors">Services</a>
+                <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+            </div>
+
+            <p class="text-xs text-slate-500">
+                © 2026 Dr. Sumedha Sagar. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
