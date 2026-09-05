@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Neha Dhamejani | Head Dentist & Clinical Specialist</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0fdfa',
+                            500: '#14b8a6',
+                            600: '#0d9488',
+                            900: '#134e4a',
+                        }
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #020617;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #0d9488;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-teal-500 selection:text-white">
+
+    <!-- Glowing Background Lights -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
+        <div class="absolute -top-40 -left-40 w-96 h-96 bg-cyan-500/15 rounded-full blur-[128px]"></div>
+        <div class="absolute top-1/3 -right-40 w-96 h-96 bg-teal-500/15 rounded-full blur-[128px]"></div>
+        <div class="absolute -bottom-40 left-1/3 w-96 h-96 bg-indigo-500/15 rounded-full blur-[128px]"></div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-teal-500 to-indigo-500 p-[2px] transition-transform duration-300 group-hover:scale-105">
+                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+                        <i class="fa-solid font-bold fa-tooth text-cyan-400 text-lg"></i>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-lg text-white tracking-tight group-hover:text-cyan-400 transition-colors">Dr. Neha Dhamejani</span>
+                    <span class="text-xs text-slate-400 font-medium">Head Dentist</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center gap-8">
+                <a href="#about" class="text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors">About & Leadership</a>
+                <a href="#services" class="text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors">Specialties</a>
+                <a href="#clinical-care" class="text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors">Clinical Standard</a>
+                <a href="#testimonials" class="text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors">Endorsements</a>
+            </nav>
+
+            <div class="hidden md:flex items-center gap-4">
+                <a href="#contact" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 to-teal-500 hover:from-cyan-400 hover:to-teal-400 text-slate-950 font-semibold text-sm shadow-lg shadow-teal-500/20 hover:shadow-teal-500/40 transition-all duration-300 transform hover:-translate-y-0.5">
+                    Book Consultation
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-slate-300 hover:text-white focus:outline-none p-2">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900/95 border-b border-slate-800 px-4 pt-2 pb-6 space-y-3">
+            <a href="#about" class="block py-2 text-slate-300 hover:text-cyan-400 font-medium">About & Leadership</a>
+            <a href="#services" class="block py-2 text-slate-300 hover:text-cyan-400 font-medium">Specialties</a>
+            <a href="#clinical-care" class="block py-2 text-slate-300 hover:text-cyan-400 font-medium">Clinical Standard</a>
+            <a href="#testimonials" class="block py-2 text-slate-300 hover:text-cyan-400 font-medium">Endorsements</a>
+            <a href="#contact" class="block w-full text-center py-3 mt-2 rounded-xl bg-gradient-to-r from-cyan-500 to-teal-500 text-slate-950 font-bold">Book Consultation</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="relative z-10">
+
+        <!-- Hero Section -->
+        <section class="pt-12 pb-20 md:pt-24 md:pb-32 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Hero Left Column -->
+                <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-teal-500/30 backdrop-blur-xl shadow-inner">
+                        <span class="flex h-2 w-2 rounded-full bg-teal-400 animate-ping"></span>
+                        <span class="text-xs font-semibold uppercase tracking-wider text-teal-300">Head Dentist & Clinical Specialist</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.15]">
+                        Elevating Smiles Through <br class="hidden sm:inline">
+                        <span class="bg-gradient-to-r from-cyan-400 via-teal-300 to-indigo-400 bg-clip-text text-transparent">Precision Dentistry</span>
+                    </h1>
+
+                    <p class="text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        Leading clinical operations at Hospital. Combining state-of-the-art technological innovation, compassionate patient care, and artistic smile restoration to deliver world-class dental outcomes.
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-cyan-500 via-teal-500 to-indigo-500 hover:from-cyan-400 hover:to-indigo-400 text-slate-950 font-bold text-base shadow-xl shadow-teal-500/20 hover:shadow-teal-500/35 transition-all duration-300 transform hover:-translate-y-1 text-center">
+                            Request Appointment <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                        </a>
+                        <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-full bg-slate-900/80 hover:bg-slate-800/80 text-slate-200 border border-slate-700/80 font-semibold text-base transition-all duration-300 backdrop-blur-xl text-center">
+                            Explore Clinical Services
+                        </a>
+                    </div>
+
+                    <!-- Trust Badges -->
+                    <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0">
+                        <div class="text-center lg:text-left">
+                            <p class="text-2xl lg:text-3xl font-extrabold text-white">12+</p>
+                            <p class="text-xs text-slate-400 font-medium">Years Excellence</p>
+                        </div>
+                        <div class="text-center lg:text-left">
+                            <p class="text-2xl lg:text-3xl font-extrabold text-white">8,500+</p>
+                            <p class="text-xs text-slate-400 font-medium">Patients Treated</p>
+                        </div>
+                        <div class="text-center lg:text-left">
+                            <p class="text-2xl lg:text-3xl font-extrabold text-white">99.8%</p>
+                            <p class="text-xs text-slate-400 font-medium">Satisfaction Rate</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Right Column / Avatar -->
+                <div class="lg:col-span-5 flex justify-center relative">
+                    <div class="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
+                        
+                        <!-- Glowing Outer Ring -->
+                        <div class="absolute -inset-4 rounded-full bg-gradient-to-r from-cyan-500 via-teal-500 to-indigo-500 opacity-70 blur-xl animate-pulse-slow"></div>
+                        
+                        <!-- Double Gradient Border Container -->
+                        <div class="relative w-full h-full rounded-full p-2 bg-gradient-to-tr from-cyan-400 via-teal-500 to-indigo-500 shadow-2xl">
+                            <div class="w-full h-full rounded-full bg-slate-950 p-2 overflow-hidden">
+                                <img src="https://ui-avatars.com/api/?name=Dr.Neha+Dhamejani&size=200&background=0D8ABC&color=fff&bold=true" 
+                                     alt="Dr. Neha Dhamejani" 
+                                     class="w-full h-full object-cover rounded-full transform hover:scale-105 transition-transform duration-500">
+                            </div>
+                        </div>
+
+                        <!-- Floating Glass Badges -->
+                        <div class="absolute -bottom-2 -left-4 bg-slate-900/90 border border-slate-700/80 backdrop-blur-xl p-3.5 rounded-2xl shadow-2xl flex items-center gap-3 animate-float">
+                            <div class="w-10 h-10 rounded-xl bg-teal-500/20 flex items-center justify-center text-teal-400">
+                                <i class="fa-solid fa-award text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-white">Head of Department</p>
+                                <p class="text-[10px] text-slate-400">Hospital Senior Staff</p>
+                            </div>
+                        </div>
+
+                        <div class="absolute -top-2 -right-4 bg-slate-900/90 border border-slate-700/80 backdrop-blur-xl p-3 rounded-2xl shadow-2xl flex items-center gap-2">
+                            <div class="flex text-amber-400 text-xs">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="text-xs font-bold text-slate-200">5.0 Star Rated</span>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- About & Leadership Section -->
+        <section id="about" class="py-20 bg-slate-900/40 relative border-y border-slate-800/80">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- Left Image Container -->
+                    <div class="lg:col-span-6 relative">
+                        <div class="relative rounded-3xl overflow-hidden border border-slate-800 shadow-2xl group">
+                            <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Modern Dental Clinic Facility" 
+                                 class="w-full h-[420px] object-cover object-center group-hover:scale-105 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                            
+                            <!-- Overlay Card -->
+                            <div class="absolute bottom-6 left-6 right-6 p-6 rounded-2xl bg-slate-900/80 backdrop-blur-xl border border-slate-700/60">
+                                <p class="text-sm font-semibold text-cyan-400 mb-1">Modern Clinical Excellence</p>
+                                <p class="text-xs text-slate-300">Equipped with 3D digital imaging, pain-free laser technologies, and sterile micro-surgical suites.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Bio Text -->
+                    <div class="lg:col-span-6 space-y-6">
+                        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-800/80 border border-slate-700 text-teal-400 text-xs font-semibold uppercase tracking-wider">
+                            Executive Profile
+                        </div>
+                        <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+                            Leading Hospital's Vision for <span class="text-teal-400">Advanced Oral Health</span>
+                        </h2>
+                        <p class="text-slate-300 leading-relaxed">
+                            As the Head Dentist at Hospital, Dr. Neha Dhamejani oversees comprehensive dental services, driving clinical innovation, patient safety protocols, and advanced aesthetic procedures.
+                        </p>
+                        <p class="text-slate-300 leading-relaxed">
+                            With extensive specialization in complex oral rehabilitations, micro-endodontics, and smile design, Dr. Dhamejani blends surgical precision with a gentle, patient-centric approach designed to make every clinical visit comfortable and seamless.
+                        </p>
+
+                        <!-- Key Pillars -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                            <div class="flex items-start gap-3 p-3.5 rounded-xl bg-slate-900/60 border border-slate-800">
+                                <div class="p-2 rounded-lg bg-cyan-500/10 text-cyan-400 mt-0.5">
+                                    <i class="fa-solid fa-microscope text-sm"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-white">Precision Tech</h4>
+                                    <p class="text-xs text-slate-400">Digital intraoral scanners & 3D CT imaging.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3 p-3.5 rounded-xl bg-slate-900/60 border border-slate-800">
+                                <div class="p-2 rounded-lg bg-teal-500/10 text-teal-400 mt-0.5">
+                                    <i class="fa-solid fa-heart-pulse text-sm"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-white">Painless Care</h4>
+                                    <p class="text-xs text-slate-400">Minimally invasive standard procedures.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Services / Specialties Grid -->
+        <section id="services" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-cyan-400 text-xs font-semibold uppercase tracking-wider">
+                    Clinical Specialties
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                    Comprehensive Dental & Surgical Excellence
+                </h2>
+                <p class="text-slate-400 text-base">
+                    Delivering high-precision procedures using state-of-the-art medical technology.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-teal-500/50 hover:bg-slate-900/90 transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-cyan-500/20 to-teal-500/20 flex items-center justify-center text-teal-400 mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-wand-magic-sparkles text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Cosmetic Dentistry & Smile Makeover</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Custom porcelain veneers, digital smile design, professional teeth whitening, and structural aesthetic alignment.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-bold text-teal-400 hover:text-teal-300 gap-2">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-teal-500/50 hover:bg-slate-900/90 transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-cyan-500/20 to-teal-500/20 flex items-center justify-center text-teal-400 mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-tooth text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Advanced Implantology</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Permanent titanium and zirconia dental implants, full-mouth restorations, and computer-guided implant surgery.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-bold text-teal-400 hover:text-teal-300 gap-2">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-teal-500/50 hover:bg-slate-900/90 transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-cyan-500/20 to-teal-500/20 flex items-center justify-center text-teal-400 mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-notes-medical text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Microscopic Endodontics</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Single-sitting painless root canal treatments utilizing precision clinical microscopy and rotary systems.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-bold text-teal-400 hover:text-teal-300 gap-2">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-teal-500/50 hover:bg-slate-900/90 transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-cyan-500/20 to-teal-500/20 flex items-center justify-center text-teal-400 mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-shield-halved text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Laser & Preventative Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Soft-tissue laser therapy, deep periodontal cleaning, enamel reinforcement, and oral cancer screenings.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-bold text-teal-400 hover:text-teal-300 gap-2">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-teal-500/50 hover:bg-slate-900/90 transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-cyan-500/20 to-teal-500/20 flex items-center justify-center text-teal-400 mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-hospital-user text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Full-Mouth Rehabilitation</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Comprehensive restorative therapy for complex wear, severe breakdown, jaw alignment, and bite correction.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-bold text-teal-400 hover:text-teal-300 gap-2">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-teal-500/50 hover:bg-slate-900/90 transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-cyan-500/20 to-teal-500/20 flex items-center justify-center text-teal-400 mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-user-doctor text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Emergency & Trauma Surgery</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Rapid-response hospital dental care for acute pain, broken teeth, facial trauma, and urgent surgical needs.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-bold text-teal-400 hover:text-teal-300 gap-2">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-20 bg-slate-900/30 border-t border-slate-800/80">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-teal-400 text-xs font-semibold uppercase tracking-wider">
+                        Patient & Peer Endorsements
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                        Trusted by Patients & Medical Professionals
+                    </h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <!-- Card 1 -->
+                    <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 backdrop-blur-xl flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <div class="flex text-amber-400 text-sm gap-1">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-300 text-sm italic leading-relaxed">
+                                "Dr. Neha Dhamejani transformed my smile completely. Her attention to detail during the entire implant process was world-class. Truly the best dental leadership in the hospital."
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-slate-800 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 font-bold flex items-center justify-center text-sm">
+                                AR
+                            </div>
+                            <div>
+                                <p class="text-sm font-bold text-white">Ananya Roy</p>
+                                <p class="text-xs text-slate-400">Smile Design Patient</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 backdrop-blur-xl flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <div class="flex text-amber-400 text-sm gap-1">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-300 text-sm italic leading-relaxed">
+                                "As a healthcare professional, I hold clinical standards to the highest degree. Dr. Neha's department sets the benchmark for hygiene, technological sophistication, and warmth."
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-slate-800 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-teal-500/20 text-teal-400 font-bold flex items-center justify-center text-sm">
+                                VK
+                            </div>
+                            <div>
+                                <p class="text-sm font-bold text-white">Dr. Vikram Kapoor</p>
+                                <p class="text-xs text-slate-400">Consultant Surgeon</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 backdrop-blur-xl flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <div class="flex text-amber-400 text-sm gap-1">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-300 text-sm italic leading-relaxed">
+                                "I was extremely anxious about my root canal, but Dr. Neha made the procedure totally painless and effortless. Exceptional care from start to finish!"
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-slate-800 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 font-bold flex items-center justify-center text-sm">
+                                MS
+                            </div>
+                            <div>
+                                <p class="text-sm font-bold text-white">Meera Sharma</p>
+                                <p class="text-xs text-slate-400">Restorative Care Patient</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Appointment Form Section -->
+        <section id="contact" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Info Column -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-teal-400 text-xs font-semibold uppercase tracking-wider mb-4">
+                            Schedule a Consultation
+                        </div>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                            Connect with Dr. Neha Dhamejani
+                        </h2>
+                        <p class="text-slate-400 mt-3 text-sm leading-relaxed">
+                            Book an executive appointment at Hospital or reach out for clinical inquiries and patient referrals.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="p-5 rounded-2xl bg-slate-900/60 border border-slate-800 backdrop-blur-xl flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-hospital text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Department Location</p>
+                                <p class="text-sm font-bold text-white">Hospital Dental Department, Main Medical Wing</p>
+                            </div>
+                        </div>
+
+                        <div class="p-5 rounded-2xl bg-slate-900/60 border border-slate-800 backdrop-blur-xl flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-teal-500/10 text-teal-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-clock text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Consultation Hours</p>
+                                <p class="text-sm font-bold text-white">Mon – Sat: 09:00 AM – 05:00 PM</p>
+                            </div>
+                        </div>
+
+                        <div class="p-5 rounded-2xl bg-slate-900/60 border border-slate-800 backdrop-blur-xl flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-envelope text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Direct Professional Contact</p>
+                                <p class="text-sm font-bold text-white">dr.neha.dhamejani@hospital.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Column -->
+                <div class="lg:col-span-7">
+                    <div class="p-8 sm:p-10 rounded-3xl bg-slate-900/80 border border-slate-800 backdrop-blur-2xl shadow-2xl relative">
+                        <h3 class="text-xl font-bold text-white mb-6">Request an Appointment</h3>
+                        
+                        <form id="appointment-form" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Patient Name</label>
+                                    <input type="text" required placeholder="John Doe" class="w-full px-4 py-3.5 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Phone Number</label>
+                                    <input type="tel" required placeholder="+1 (555) 000-0000" class="w-full px-4 py-3.5 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Service Required</label>
+                                    <select class="w-full px-4 py-3.5 rounded-xl bg-slate-950 border border-slate-800 text-white focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                                        <option>Cosmetic Smile Makeover</option>
+                                        <option>Dental Implants</option>
+                                        <option>Microscopic Root Canal</option>
+                                        <option>General Consultation</option>
+                                        <option>Emergency Care</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Preferred Date</label>
+                                    <input type="date" class="w-full px-4 py-3.5 rounded-xl bg-slate-950 border border-slate-800 text-white focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Notes or Symptoms</label>
+                                <textarea rows="4" placeholder="Briefly describe your concern or consultation goal..." class="w-full px-4 py-3.5 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm resize-none"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-teal-500 to-indigo-500 hover:from-cyan-400 hover:to-indigo-400 text-slate-950 font-bold text-base shadow-xl shadow-teal-500/20 hover:shadow-teal-500/40 transition-all duration-300">
+                                Confirm Appointment Request
+                            </button>
+                        </form>
+
+                        <!-- Toast Notification -->
+                        <div id="form-toast" class="hidden absolute inset-0 bg-slate-950/95 backdrop-blur-2xl rounded-3xl flex flex-col items-center justify-center p-8 text-center space-y-4 transition-all">
+                            <div class="w-16 h-16 rounded-full bg-teal-500/20 text-teal-400 flex items-center justify-center text-2xl">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <h4 class="text-2xl font-bold text-white">Appointment Requested!</h4>
+                            <p class="text-slate-300 text-sm max-w-md">
+                                Thank you for contacting Dr. Neha Dhamejani's office. Our clinical desk will reach out shortly to confirm your slot.
+                            </p>
+                            <button onclick="resetForm()" class="px-6 py-2.5 rounded-full bg-slate-800 hover:bg-slate-700 text-white text-xs font-semibold">
+                                Submit Another Request
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 border-t border-slate-800/80 py-12 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-teal-500/20 flex items-center justify-center text-teal-400">
+                    <i class="fa-solid fa-tooth text-sm"></i>
+                </div>
+                <span class="text-sm font-bold text-white">Dr. Neha Dhamejani &bull; Head Dentist</span>
+            </div>
+
+            <p class="text-xs text-slate-500">
+                &copy; <span id="year"></span> Dr. Neha Dhamejani. All Rights Reserved. Connected on 26 Aug 2026.
+            </p>
+
+            <a href="#" class="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 hover:border-teal-500 text-slate-400 hover:text-white flex items-center justify-center transition-colors">
+                <i class="fa-solid fa-arrow-up text-sm"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Interactive JS Scripts -->
+    <script>
+        // Set dynamic year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Form Submit Handler
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const toast = document.getElementById('form-toast');
+            toast.classList.remove('hidden');
+        }
+
+        function resetForm() {
+            const toast = document.getElementById('form-toast');
+            const form = document.getElementById('appointment-form');
+            form.reset();
+            toast.classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
