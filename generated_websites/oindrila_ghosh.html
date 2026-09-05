@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Oindrila Ghosh | Lead Dentist at Denteast</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            cyan: '#0D8ABC',
+                            teal: '#14b8a6',
+                            accent: '#6366f1'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gradient-border {
+            position: relative;
+            background: linear-gradient(135deg, rgba(13, 138, 188, 0.5), rgba(99, 102, 241, 0.5));
+            padding: 1px;
+            border-radius: 1rem;
+        }
+
+        .avatar-glow {
+            position: relative;
+        }
+        .avatar-glow::before {
+            content: '';
+            position: absolute;
+            inset: -8px;
+            background: linear-gradient(45deg, #0D8ABC, #6366f1, #ec4899, #14b8a6);
+            border-radius: 50%;
+            z-index: -1;
+            filter: blur(16px);
+            opacity: 0.75;
+            animation: pulse-glow 4s ease-in-out infinite alternate;
+        }
+
+        @keyframes pulse-glow {
+            0% { opacity: 0.5; transform: scale(0.98); }
+            100% { opacity: 0.85; transform: scale(1.03); }
+        }
+
+        .glass-card {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(51, 65, 85, 0.6);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(99, 102, 241, 0.5);
+            box-shadow: 0 10px 30px -10px rgba(13, 138, 188, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-white">
+
+    <!-- Ambient Background Glows -->
+    <div class="fixed top-0 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+    <div class="fixed bottom-1/3 right-1/4 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+    <!-- NAVIGATION BAR -->
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
+                    OG
+                </div>
+                <div>
+                    <span class="text-lg font-bold tracking-tight text-white block leading-tight">Dr. Oindrila Ghosh</span>
+                    <span class="text-xs text-cyan-400 font-medium tracking-wider uppercase">Denteast Specialist</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Specialties</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Testimonials</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+            </nav>
+
+            <div class="hidden md:flex items-center gap-4">
+                <a href="#contact" class="relative inline-flex items-center justify-center px-6 py-2.5 text-sm font-semibold text-white transition-all duration-200 bg-gradient-to-r from-cyan-500 to-indigo-600 rounded-full hover:shadow-lg hover:shadow-cyan-500/25 hover:scale-105 active:scale-95">
+                    Book Consultation
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-slate-300 hover:text-white text-2xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900/95 border-b border-slate-800 px-6 py-4 transition-all">
+            <nav class="flex flex-col gap-4 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Specialties</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Testimonials</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+                <a href="#contact" class="mt-2 text-center py-2.5 text-sm font-semibold text-white bg-gradient-to-r from-cyan-500 to-indigo-600 rounded-full">
+                    Book Consultation
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Column: Bio & Title -->
+                <div class="lg:col-span-7 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-950/80 border border-cyan-800/50 text-cyan-400 text-xs font-semibold tracking-wide uppercase mb-6 shadow-inner">
+                        <span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping"></span>
+                        Consultant Dentist at Denteast
+                    </div>
+                    
+                    <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+                        Crafting Healthy & <br class="hidden sm:inline"/>
+                        <span class="gradient-text">Radiant Smiles</span> With Precision
+                    </h1>
+                    
+                    <p class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto lg:mx-0 mb-8 font-light leading-relaxed">
+                        Welcome! I am Dr. Oindrila Ghosh, dedicated to providing compassionate, state-of-the-art dental care at Denteast. Combining advanced aesthetic techniques with gentle clinical care.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-12">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white font-semibold rounded-2xl shadow-xl shadow-indigo-500/20 hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2">
+                            <span>Schedule Appointment</span>
+                            <i class="fa-solid fa-arrow-right text-sm"></i>
+                        </a>
+                        <a href="#services" class="w-full sm:w-auto px-8 py-4 glass-card text-slate-200 font-semibold rounded-2xl hover:bg-slate-800/80 transition-all duration-300 flex items-center justify-center gap-2">
+                            <span>Explore Treatments</span>
+                        </a>
+                    </div>
+
+                    <!-- Trust Badges -->
+                    <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0">
+                        <div>
+                            <p class="text-2xl md:text-3xl font-extrabold text-white">100%</p>
+                            <p class="text-xs text-slate-400 font-medium">Patient Satisfaction</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl md:text-3xl font-extrabold text-white">Advanced</p>
+                            <p class="text-xs text-slate-400 font-medium">Dental Tech</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl md:text-3xl font-extrabold text-white">Denteast</p>
+                            <p class="text-xs text-slate-400 font-medium">Lead Specialist</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Avatar Frame -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative">
+                        <!-- Glowing Double-Gradient Avatar Frame -->
+                        <div class="avatar-glow p-2 rounded-full">
+                            <div class="p-2 rounded-full bg-slate-950 border-2 border-indigo-500/30">
+                                <img src="https://ui-avatars.com/api/?name=Oindrila+Ghosh&size=200&background=0D8ABC&color=fff&bold=true" 
+                                     alt="Dr. Oindrila Ghosh" 
+                                     class="w-56 h-56 md:w-72 md:h-72 rounded-full object-cover shadow-2xl">
+                            </div>
+                        </div>
+
+                        <!-- Floating Glass Badge 1 -->
+                        <div class="absolute -bottom-4 -left-4 glass-card p-4 rounded-2xl flex items-center gap-3 shadow-xl">
+                            <div class="w-10 h-10 rounded-xl bg-teal-500/20 text-teal-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-tooth"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Specialization</p>
+                                <p class="text-sm font-bold text-white">Aesthetic & Preventive</p>
+                            </div>
+                        </div>
+
+                        <!-- Floating Glass Badge 2 -->
+                        <div class="absolute top-4 -right-4 glass-card p-3 rounded-2xl flex items-center gap-3 shadow-xl">
+                            <div class="w-8 h-8 rounded-lg bg-yellow-500/20 text-yellow-400 flex items-center justify-center text-sm">
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-xs font-bold text-white pr-2">5.0 Rated Doctor</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT & EXPERTISE SECTION -->
+    <section id="about" class="py-24 bg-slate-900/40 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Industry Image with Glassmorphism Overlay -->
+                <div class="lg:col-span-6">
+                    <div class="relative rounded-3xl overflow-hidden group border border-slate-800">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Modern Dental Practice" 
+                             class="w-full h-[420px] object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 glass-card p-6 rounded-2xl">
+                            <p class="text-cyan-400 text-xs font-semibold uppercase tracking-wider mb-1">State of the Art Practice</p>
+                            <h3 class="text-lg font-bold text-white">Modern Clinical Standards at Denteast</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bio Content -->
+                <div class="lg:col-span-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800 text-cyan-400 text-xs font-medium mb-4">
+                        <i class="fa-solid fa-user-doctor"></i> About Dr. Oindrila Ghosh
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+                        Committed to Excellence in Patient-Centered Dental Care
+                    </h2>
+                    <p class="text-slate-300 leading-relaxed mb-6">
+                        As a lead dental practitioner at <strong class="text-white">Denteast</strong>, Dr. Oindrila Ghosh merges modern dental science with a personalized, empathetic approach. She believes every patient deserves a tailored treatment plan designed for long-term oral wellness and complete aesthetic confidence.
+                    </p>
+                    <p class="text-slate-400 leading-relaxed mb-8">
+                        Whether performing routine preventive care or modern cosmetic transformations, her emphasis remains on minimal discomfort, supreme precision, and transparent patient communication.
+                    </p>
+
+                    <!-- Key Strengths -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center shrink-0 mt-1">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Comprehensive Diagnosis</h4>
+                                <p class="text-xs text-slate-400">In-depth clinical evaluation for optimal oral health.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center shrink-0 mt-1">
+                                <i class="fa-solid fa-heart-pulse"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Pain-Free Treatments</h4>
+                                <p class="text-xs text-slate-400">Gentle and comfortable modern dentistry techniques.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES GRID -->
+    <section id="services" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-cyan-400 text-xs font-bold uppercase tracking-widest">Clinical Excellence</span>
+                <h2 class="text-3xl md:text-5xl font-extrabold text-white mt-2 mb-4">Specialized Treatments</h2>
+                <p class="text-slate-400">Providing a full spectrum of advanced dental care using modern equipment and evidence-based clinical techniques.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service Card 1 -->
+                <div class="glass-card p-8 rounded-3xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-cyan-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Cosmetic Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Transform your smile with veneers, bonding, and aesthetic restorations tailored to your facial structure.</p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-cyan-400 hover:text-cyan-300">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="glass-card p-8 rounded-3xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-indigo-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-teeth-open"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Teeth Whitening</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Safe, long-lasting clinical whitening treatments to eliminate stubborn stains and brighten your smile.</p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-indigo-400 hover:text-indigo-300">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="glass-card p-8 rounded-3xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-teal-500/10 border border-teal-500/20 text-teal-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-teal-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Preventive Oral Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Comprehensive checkups, ultrasonic scaling, and personalized hygiene advice to protect your oral health.</p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-teal-400 hover:text-teal-300">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="glass-card p-8 rounded-3xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-purple-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Restorative Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Durable composite fillings, crowns, and restorative therapies to protect weakened or damaged teeth.</p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-purple-400 hover:text-purple-300">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="glass-card p-8 rounded-3xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-pink-500/10 border border-pink-500/20 text-pink-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-pink-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-face-smile"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Orthodontic Consultation</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Aligner and brace evaluations to resolve crowding, bite issues, and improve structural harmony.</p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-pink-400 hover:text-pink-300">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="glass-card p-8 rounded-3xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-blue-500/10 border border-blue-500/20 text-blue-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-blue-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-stethoscope"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Root Canal Therapy</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Gentle, modern endodontic procedures designed to treat infection while saving your natural tooth.</p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-blue-400 hover:text-blue-300">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials" class="py-24 bg-slate-900/40 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-cyan-400 text-xs font-bold uppercase tracking-widest">Patient Feedback</span>
+                <h2 class="text-3xl md:text-5xl font-extrabold text-white mt-2">What Patients Say</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="glass-card p-8 rounded-3xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                            "Dr. Oindrila Ghosh made my entire treatment completely anxiety-free. She is extremely thorough and explains every step with incredible patience!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-cyan-600/30 text-cyan-300 font-bold flex items-center justify-center text-sm">
+                            AP
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-semibold text-white">Ananya P.</h4>
+                            <p class="text-xs text-slate-400">Denteast Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="glass-card p-8 rounded-3xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                            "The aesthetic whitening result exceeded my expectations! Her attention to detail and professional environment at Denteast are second to none."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-indigo-600/30 text-indigo-300 font-bold flex items-center justify-center text-sm">
+                            RM
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-semibold text-white">Rahul M.</h4>
+                            <p class="text-xs text-slate-400">Denteast Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="glass-card p-8 rounded-3xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                            "Extremely gentle and highly competent. Dr. Ghosh cured my tooth sensitivity and designed a maintenance program that works perfectly for me."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-purple-600/30 text-purple-300 font-bold flex items-center justify-center text-sm">
+                            S
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-semibold text-white">Sneha S.</h4>
+                            <p class="text-xs text-slate-400">Denteast Patient</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM & DIRECT DETAILS -->
+    <section id="contact" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Direct Details Column -->
+                <div class="lg:col-span-5 flex flex-col justify-between">
+                    <div>
+                        <span class="text-cyan-400 text-xs font-bold uppercase tracking-widest">Get In Touch</span>
+                        <h2 class="text-3xl md:text-5xl font-extrabold text-white mt-2 mb-6">Schedule Your Appointment</h2>
+                        <p class="text-slate-400 mb-8 leading-relaxed">
+                            Ready for a healthier, brighter smile? Book a personal consultation with Dr. Oindrila Ghosh at Denteast today.
+                        </p>
+
+                        <div class="space-y-6">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-2xl bg-slate-900 border border-slate-800 text-cyan-400 flex items-center justify-center text-xl shrink-0">
+                                    <i class="fa-solid fa-hospital"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400">Clinic Practice</p>
+                                    <p class="text-white font-semibold">Denteast Dental Clinic</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-2xl bg-slate-900 border border-slate-800 text-indigo-400 flex items-center justify-center text-xl shrink-0">
+                                    <i class="fa-solid fa-clock"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400">Working Hours</p>
+                                    <p class="text-white font-semibold">Mon - Sat: 10:00 AM - 7:00 PM</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-2xl bg-slate-900 border border-slate-800 text-teal-400 flex items-center justify-center text-xl shrink-0">
+                                    <i class="fa-solid fa-shield-halved"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400">Care Standard</p>
+                                    <p class="text-white font-semibold">100% Sterilized & Safe Environment</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-12 p-6 glass-card rounded-2xl border-indigo-500/30">
+                        <p class="text-xs text-indigo-400 font-semibold mb-1">Emergency Patient Line</p>
+                        <p class="text-sm text-slate-300">Need urgent dental advice? Request an express callback using the appointment form.</p>
+                    </div>
+                </div>
+
+                <!-- Contact Form Column -->
+                <div class="lg:col-span-7">
+                    <div class="glass-card p-8 md:p-10 rounded-3xl border border-slate-800">
+                        <h3 class="text-xl font-bold text-white mb-6">Request Consultation</h3>
+                        
+                        <form onsubmit="event.preventDefault(); alert('Thank you! Your appointment request has been logged.');" class="space-y-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2 uppercase tracking-wider">Full Name</label>
+                                    <input type="text" placeholder="John Doe" required 
+                                           class="w-full px-4 py-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2 uppercase tracking-wider">Phone Number</label>
+                                    <input type="tel" placeholder="+1 (555) 000-0000" required 
+                                           class="w-full px-4 py-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2 uppercase tracking-wider">Preferred Service</label>
+                                    <select class="w-full px-4 py-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-300 focus:outline-none focus:border-cyan-500 transition-colors">
+                                        <option>General Checkup & Scaling</option>
+                                        <option>Cosmetic Dentistry</option>
+                                        <option>Teeth Whitening</option>
+                                        <option>Orthodontic Consultation</option>
+                                        <option>Other Treatment</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2 uppercase tracking-wider">Preferred Date</label>
+                                    <input type="date" 
+                                           class="w-full px-4 py-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-300 focus:outline-none focus:border-cyan-500 transition-colors">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2 uppercase tracking-wider">Message or Notes</label>
+                                <textarea rows="4" placeholder="Briefly describe your symptoms or query..." 
+                                          class="w-full px-4 py-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors"></textarea>
+                            </div>
+
+                            <button type="submit" 
+                                    class="w-full py-4 bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white font-bold rounded-xl shadow-lg shadow-cyan-500/20 hover:scale-[1.01] active:scale-[0.99] transition-all">
+                                Confirm Appointment Request
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-12 border-t border-slate-800/80 bg-slate-950 text-slate-400 text-sm">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-cyan-500 flex items-center justify-center text-white font-bold text-sm">
+                    OG
+                </div>
+                <span class="text-white font-semibold">Dr. Oindrila Ghosh — Dentist at Denteast</span>
+            </div>
+            <p class="text-xs text-slate-500">
+                &copy; <script>document.write(new Date().getFullYear())</script> Dr. Oindrila Ghosh. All rights reserved. Designed for Dental Excellence.
+            </p>
+            <div class="flex gap-4 text-slate-400">
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-linkedin text-lg"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-instagram text-lg"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-solid fa-envelope text-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
