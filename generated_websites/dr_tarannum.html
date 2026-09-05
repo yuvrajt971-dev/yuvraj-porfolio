@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Tarannum | General Dentist Showcase Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-border {
+            position: relative;
+            background-clip: padding-box;
+            border: 1px solid transparent;
+        }
+        .gradient-border::before {
+            content: '';
+            position: absolute;
+            top: 0; right: 0; bottom: 0; left: 0;
+            z-index: -1;
+            margin: -1px;
+            border-radius: inherit;
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.5), rgba(168, 85, 247, 0.5), rgba(236, 72, 153, 0.5));
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(99, 102, 241, 0.25);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- Glowing Background Blur Elements -->
+    <div class="fixed top-0 left-1/4 -translate-x-1/2 w-[500px] h-[500px] bg-indigo-600/15 rounded-full blur-[120px] pointer-events-none -z-10"></div>
+    <div class="fixed bottom-0 right-1/4 translate-x-1/2 w-[500px] h-[500px] bg-purple-600/15 rounded-full blur-[120px] pointer-events-none -z-10"></div>
+
+    <!-- Navigation Bar -->
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 p-[2px] transition-transform duration-300 group-hover:scale-105">
+                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+                        <i class="fa-solid fa-tooth text-indigo-400 text-lg"></i>
+                    </div>
+                </div>
+                <span class="text-xl font-bold tracking-tight text-white">Dr. Tarannum<span class="text-indigo-400">.</span></span>
+            </a>
+            
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+                <a href="#services" class="hover:text-indigo-400 transition-colors">Services</a>
+                <a href="#testimonials" class="hover:text-indigo-400 transition-colors">Testimonials</a>
+                <a href="#contact" class="hover:text-indigo-400 transition-colors">Contact</a>
+            </nav>
+
+            <a href="#contact" class="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-medium rounded-xl group bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 group-hover:from-indigo-500 group-hover:to-pink-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-indigo-800">
+                <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-slate-950 rounded-[10px] group-hover:bg-opacity-0">
+                    Book Consultation
+                </span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-36 pb-20 px-6 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-12 items-center">
+            
+            <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                <!-- Trust Badge -->
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 text-xs font-semibold text-indigo-300 tracking-wide uppercase">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    Pak al satwa polyclinic • General Dentist
+                </div>
+
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight">
+                    Crafting Radiant, Healthy <span class="gradient-text">Smiles</span> With Modern Care.
+                </h1>
+
+                <p class="text-slate-400 text-lg md:text-xl max-w-2xl font-light leading-relaxed">
+                    Welcome! I am Dr. Tarannum, dedicated to providing world-class, painless, and compassionate dental care tailored to your unique healthcare needs.
+                </p>
+
+                <!-- Hero CTA Buttons -->
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                    <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.02] transition-all text-center">
+                        Schedule an Appointment
+                    </a>
+                    <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900/80 hover:bg-slate-800 border border-slate-800 text-slate-200 font-semibold transition-all text-center">
+                        View Dental Treatments
+                    </a>
+                </div>
+
+                <!-- Stats Badges -->
+                <div class="pt-8 grid grid-cols-3 gap-6 border-t border-slate-800/80">
+                    <div>
+                        <div class="text-2xl md:text-3xl font-bold text-white">100%</div>
+                        <div class="text-xs text-slate-400 mt-1">Patient Comfort</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl md:text-3xl font-bold text-white">Advanced</div>
+                        <div class="text-xs text-slate-400 mt-1">Dental Technology</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl md:text-3xl font-bold text-white">Top Rated</div>
+                        <div class="text-xs text-slate-400 mt-1">Clinic Care</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Avatar Frame with Glowing Double Gradient -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-3xl blur-xl opacity-50 group-hover:opacity-80 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+                    <div class="relative p-2 rounded-3xl bg-slate-900 border border-slate-800">
+                        <img src="https://ui-avatars.com/api/?name=Dr.+Tarannum&size=200&background=0D8ABC&color=fff&bold=true" 
+                             alt="Dr. Tarannum" 
+                             class="w-72 h-72 md:w-80 md:h-80 object-cover rounded-2xl shadow-2xl">
+                        
+                        <!-- Floating Badge -->
+                        <div class="absolute -bottom-6 -left-6 bg-slate-900/90 backdrop-blur-xl border border-slate-800 p-4 rounded-2xl shadow-2xl flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400">
+                                <i class="fa-solid fa-user-doctor text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="text-sm font-semibold text-white">Pak al satwa polyclinic</div>
+                                <div class="text-xs text-slate-400">General Dentistry</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-20 px-6 bg-slate-900/40 relative border-t border-b border-slate-800/50">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+            <div class="relative rounded-2xl overflow-hidden group border border-slate-800">
+                <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                     alt="Dental Technology" 
+                     class="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+                <div class="absolute bottom-6 left-6 right-6">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-indigo-400">Excellence in Dentistry</span>
+                    <h3 class="text-xl font-bold text-white mt-1">State-of-the-Art Care</h3>
+                </div>
+            </div>
+
+            <div class="space-y-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-xs font-semibold text-indigo-400">
+                    About Dr. Tarannum
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold text-white leading-tight">
+                    Dedicated To Professional Oral Healthcare & Painless Procedures
+                </h2>
+                <p class="text-slate-400 leading-relaxed">
+                    At Pak al satwa polyclinic, Dr. Tarannum emphasizes preventive care, patient comfort, and advanced clinical procedures. From initial consultations to complex restorative procedures, every treatment plan is customized for optimal dental hygiene and aesthetic beauty.
+                </p>
+
+                <div class="grid sm:grid-cols-2 gap-4 pt-2">
+                    <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-4 rounded-xl flex items-center gap-3">
+                        <i class="fa-solid fa-circle-check text-indigo-400 text-lg"></i>
+                        <span class="text-sm text-slate-200">Gentle Care & Anxiety Free</span>
+                    </div>
+                    <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-4 rounded-xl flex items-center gap-3">
+                        <i class="fa-solid fa-circle-check text-purple-400 text-lg"></i>
+                        <span class="text-sm text-slate-200">Modern Digital Diagnostics</span>
+                    </div>
+                    <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-4 rounded-xl flex items-center gap-3">
+                        <i class="fa-solid fa-circle-check text-pink-400 text-lg"></i>
+                        <span class="text-sm text-slate-200">Comprehensive Checkups</span>
+                    </div>
+                    <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-4 rounded-xl flex items-center gap-3">
+                        <i class="fa-solid fa-circle-check text-cyan-400 text-lg"></i>
+                        <span class="text-sm text-slate-200">Personalized Treatments</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services" class="py-24 px-6 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-semibold uppercase tracking-wider text-indigo-400 bg-indigo-500/10 px-3 py-1 rounded-full border border-indigo-500/20">Our Services</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mt-4">Comprehensive Dental Solutions</h2>
+                <p class="text-slate-400 mt-2">Providing high-end dental treatments designed around your well-being.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-8 rounded-2xl transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 group-hover:scale-110 transition-transform mb-6">
+                        <i class="fa-solid fa-tooth text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">General Oral Checkups</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Routine dental examinations, professional scaling, cleaning, and preventative fluoride treatments to maintain healthy teeth and gums.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 p-8 rounded-2xl transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 group-hover:scale-110 transition-transform mb-6">
+                        <i class="fa-solid fa-wand-magic-sparkles text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Teeth Whitening</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Advanced cosmetic bleaching to safely lighten discolored teeth, removing stubborn stains for a dazzling brighter smile.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-pink-500/50 p-8 rounded-2xl transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400 group-hover:scale-110 transition-transform mb-6">
+                        <i class="fa-solid fa-shield-halved text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Restorative Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">High-grade composite fillings, tooth restorations, and protective crowns to restore natural functionality and look.</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 p-8 rounded-2xl transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 group-hover:scale-110 transition-transform mb-6">
+                        <i class="fa-solid fa-microscope text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Root Canal Therapy</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Precision endodontic care designed to relieve severe toothache, eradicate infection, and save your natural tooth.</p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-emerald-500/50 p-8 rounded-2xl transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 group-hover:scale-110 transition-transform mb-6">
+                        <i class="fa-solid fa-child-reaching text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Pediatric Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Friendly, welcoming, and gentle dental checkups tailored specifically for children to build lifelong healthy habits.</p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-amber-500/50 p-8 rounded-2xl transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 group-hover:scale-110 transition-transform mb-6">
+                        <i class="fa-solid fa-kit-medical text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Emergency Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Prompt attention and emergency treatments for unexpected tooth pain, chipped teeth, trauma, or oral emergencies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 px-6 bg-slate-900/30 border-t border-slate-800/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-semibold uppercase tracking-wider text-indigo-400 bg-indigo-500/10 px-3 py-1 rounded-full border border-indigo-500/20">Endorsements</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mt-4">Patient Experiences</h2>
+                <p class="text-slate-400 mt-2">Hear directly from patients who trust Dr. Tarannum with their dental care.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl relative">
+                    <div class="flex text-amber-400 gap-1 mb-4 text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm italic leading-relaxed mb-6">"Dr. Tarannum made my root canal procedure completely painless! Her gentle demeanor and professionalism at Pak al satwa polyclinic put me at total ease."</p>
+                    <div class="font-semibold text-white text-sm">Amina H.</div>
+                    <div class="text-xs text-slate-500">Polyclinic Patient</div>
+                </div>
+
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl relative">
+                    <div class="flex text-amber-400 gap-1 mb-4 text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm italic leading-relaxed mb-6">"Best general dentist experience I've had. Very thorough cleaning and excellent advice on long-term tooth care. Highly recommend her services!"</p>
+                    <div class="font-semibold text-white text-sm">Rashid M.</div>
+                    <div class="text-xs text-slate-500">Polyclinic Patient</div>
+                </div>
+
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl relative">
+                    <div class="flex text-amber-400 gap-1 mb-4 text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm italic leading-relaxed mb-6">"Remarkable transformation with whitening treatment! Very clean environment, friendly team, and Dr. Tarannum takes real time to listen."</p>
+                    <div class="font-semibold text-white text-sm">Sarah K.</div>
+                    <div class="text-xs text-slate-500">Polyclinic Patient</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Booking Section -->
+    <section id="contact" class="py-24 px-6 relative">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-12">
+            
+            <div class="lg:col-span-5 space-y-8">
+                <div>
+                    <span class="text-xs font-semibold uppercase tracking-wider text-indigo-400 bg-indigo-500/10 px-3 py-1 rounded-full border border-indigo-500/20">Get In Touch</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mt-4">Schedule Your Dental Visit</h2>
+                    <p class="text-slate-400 mt-3 text-sm leading-relaxed">
+                        Ready for your consultation or checkup? Get in touch directly via email or reach out at Pak al satwa polyclinic.
+                    </p>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-6 rounded-2xl flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 shrink-0">
+                            <i class="fa-solid fa-envelope text-xl"></i>
+                        </div>
+                        <div class="overflow-hidden">
+                            <div class="text-xs text-slate-400">Direct Email</div>
+                            <a href="mailto:dr.tarannumafzalsyed786@gmail.com" class="text-sm font-semibold text-white hover:text-indigo-400 transition-colors truncate block">
+                                dr.tarannumafzalsyed786@gmail.com
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-6 rounded-2xl flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 shrink-0">
+                            <i class="fa-solid fa-hospital text-xl"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs text-slate-400">Clinic Location</div>
+                            <div class="text-sm font-semibold text-white">Pak al satwa polyclinic</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="lg:col-span-7 bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-3xl relative">
+                <form onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent to Dr. Tarannum.');" class="space-y-6">
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Name</label>
+                            <input type="text" required placeholder="John Doe" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 focus:outline-none focus:border-indigo-500 transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Email</label>
+                            <input type="email" required placeholder="john@example.com" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 focus:outline-none focus:border-indigo-500 transition-colors">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Requested Service</label>
+                        <select class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-300 focus:outline-none focus:border-indigo-500 transition-colors">
+                            <option>General Oral Checkup & Consultation</option>
+                            <option>Teeth Whitening</option>
+                            <option>Restorative Fillings / Crowns</option>
+                            <option>Root Canal Treatment</option>
+                            <option>Pediatric Dental Care</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Message or Notes</label>
+                        <textarea rows="4" placeholder="Briefly describe your requirements..." class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 focus:outline-none focus:border-indigo-500 transition-colors"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold shadow-lg shadow-indigo-500/20 hover:shadow-indigo-500/40 hover:scale-[1.01] transition-all text-center">
+                        Send Booking Request
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800/80 bg-slate-950 py-8 px-6 text-slate-500 text-xs text-center">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div>
+                © 2026 Dr. Tarannum | General Dentist at Pak al satwa polyclinic. All rights reserved.
+            </div>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-slate-300 transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-slate-300 transition-colors">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
