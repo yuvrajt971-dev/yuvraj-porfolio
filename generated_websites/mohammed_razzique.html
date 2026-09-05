@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Razzique | Interior Designer & Spatial Strategist</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#eef2ff',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            900: '#312e81',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        /* Custom Glowing Effect */
+        .glow-bg {
+            background: radial-gradient(circle at 50% 20%, rgba(99, 102, 241, 0.15) 0%, rgba(168, 85, 247, 0.1) 35%, rgba(15, 23, 42, 0) 70%);
+        }
+        .glow-card {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(51, 65, 85, 0.6);
+        }
+        .glow-card:hover {
+            border-color: rgba(99, 102, 241, 0.5);
+            box-shadow: 0 0 25px -5px rgba(99, 102, 241, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white relative overflow-x-hidden">
+
+    <!-- Ambient Glow Backgrounds -->
+    <div class="fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[600px] pointer-events-none z-0 glow-bg"></div>
+    <div class="fixed top-1/3 -left-48 w-96 h-96 bg-purple-600/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="fixed bottom-10 -right-48 w-96 h-96 bg-indigo-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <!-- Navigation Bar -->
+    <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 p-0.5 shadow-lg shadow-indigo-500/20 group-hover:scale-105 transition-transform duration-300">
+                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-pink-400 font-extrabold text-lg">MR</span>
+                    </div>
+                </div>
+                <span class="font-bold text-lg tracking-tight text-slate-100 group-hover:text-indigo-400 transition-colors">Mohammed Razzique</span>
+            </a>
+
+            <!-- Desktop Nav Menu -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+                <a href="#services" class="hover:text-indigo-400 transition-colors">Services</a>
+                <a href="#portfolio" class="hover:text-indigo-400 transition-colors">Portfolio</a>
+                <a href="#testimonials" class="hover:text-indigo-400 transition-colors">Testimonials</a>
+                <a href="#contact" class="hover:text-indigo-400 transition-colors">Contact</a>
+            </nav>
+
+            <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full hover:opacity-90 transition-all shadow-md shadow-indigo-500/20 hover:shadow-indigo-500/40">
+                <span>Hire Me</span>
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-20 md:pt-48 md:pb-32 px-6 z-10 max-w-7xl mx-auto">
+        <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+            
+            <!-- Hero Left Text Column -->
+            <div class="flex-1 text-center lg:text-left">
+                <!-- Status Badge -->
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-indigo-500/30 text-indigo-300 text-xs font-semibold mb-6 shadow-inner">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    <span>Available for Freelance Projects</span>
+                </div>
+
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.15]">
+                    Crafting <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400">Timeless</span> Spaces & Luxury Interiors
+                </h1>
+
+                <p class="mt-6 text-lg text-slate-400 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+                    Hi, I’m <strong class="text-slate-200">Mohammed Razzique</strong>. An independent Interior Designer delivering bespoke residential, commercial, and spatial environments that harmonize elegance, functionality, and modern architectural design.
+                </p>
+
+                <!-- Action Buttons -->
+                <div class="mt-8 flex flex-wrap items-center justify-center lg:justify-start gap-4">
+                    <a href="#portfolio" class="px-7 py-3.5 text-sm font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-xl hover:opacity-95 transition-all shadow-lg shadow-indigo-500/25 flex items-center gap-2">
+                        <span>Explore Portfolio</span>
+                        <i class="fa-solid fa-arrow-down text-xs"></i>
+                    </a>
+                    <a href="#contact" class="px-7 py-3.5 text-sm font-semibold text-slate-200 bg-slate-900 border border-slate-800 rounded-xl hover:bg-slate-800 hover:text-white transition-all">
+                        Get in Touch
+                    </a>
+                </div>
+
+                <!-- Trust Badges / Stats -->
+                <div class="mt-12 pt-8 border-t border-slate-800/60 grid grid-cols-3 gap-4 text-center lg:text-left">
+                    <div>
+                        <p class="text-2xl sm:text-3xl font-extrabold text-white">40+</p>
+                        <p class="text-xs text-slate-400 mt-1 uppercase tracking-wider font-semibold">Spaces Transformed</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl sm:text-3xl font-extrabold text-white">100%</p>
+                        <p class="text-xs text-slate-400 mt-1 uppercase tracking-wider font-semibold">Bespoke Designs</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl sm:text-3xl font-extrabold text-white">5★</p>
+                        <p class="text-xs text-slate-400 mt-1 uppercase tracking-wider font-semibold">Client Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Right Avatar Column -->
+            <div class="relative flex justify-center items-center">
+                <!-- Glowing Outer Rings -->
+                <div class="absolute inset-0 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full blur-2xl opacity-30 animate-pulse"></div>
+                
+                <!-- Double-Gradient Frame Container -->
+                <div class="relative p-1.5 rounded-full bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 shadow-2xl">
+                    <div class="p-2 bg-slate-950 rounded-full">
+                        <img 
+                            src="https://ui-avatars.com/api/?name=Mohammed+Razzique&size=200&background=0D8ABC&color=fff&bold=true" 
+                            alt="Mohammed Razzique - Interior Designer" 
+                            class="w-48 h-48 sm:w-64 sm:h-64 rounded-full object-cover shadow-inner hover:scale-105 transition-transform duration-500"
+                        >
+                    </div>
+                </div>
+
+                <!-- Floating Role Badge -->
+                <div class="absolute -bottom-4 bg-slate-900/90 backdrop-blur-md border border-slate-800 rounded-2xl px-5 py-3 shadow-xl flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-lg bg-indigo-500/20 text-indigo-400 flex items-center justify-center">
+                        <i class="fa-solid fa-couch text-lg"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-slate-400 font-medium">Role</p>
+                        <p class="text-sm font-bold text-slate-100">Interior Designer</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-20 px-6 max-w-7xl mx-auto z-10 relative">
+        <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+            
+            <!-- Left Image Showcase -->
+            <div class="w-full lg:w-1/2 relative group">
+                <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-500"></div>
+                <div class="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900">
+                    <img 
+                        src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=800&q=80" 
+                        alt="Interior Architecture Workspace & Sample Materials" 
+                        class="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700"
+                    >
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                    <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-slate-900/80 backdrop-blur-md border border-slate-800">
+                        <p class="text-xs text-indigo-400 font-semibold uppercase tracking-widest">Design Philosophy</p>
+                        <p class="text-sm text-slate-200 mt-1 italic">"Architecture is the learned game, correct and magnificent, of forms assembled in the light."</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Content -->
+            <div class="w-full lg:w-1/2">
+                <div class="inline-flex items-center gap-2 text-indigo-400 text-xs font-bold uppercase tracking-wider mb-2">
+                    <i class="fa-solid fa-compass-drafting"></i>
+                    <span>About Mohammed Razzique</span>
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                    Transforming Abstract Concepts into Living Art
+                </h2>
+                <p class="mt-4 text-slate-400 leading-relaxed">
+                    With a sharp eye for spatial aesthetics and functional harmony, I specialize in crafting tailor-made interior concepts. Operating independently as a freelance designer, I partner directly with residential homeowners, luxury developers, and commercial brands to bring inspiring design visions to life.
+                </p>
+
+                <!-- Skill Grid -->
+                <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="glow-card p-4 rounded-xl flex items-start gap-3">
+                        <i class="fa-solid fa-cube text-indigo-400 text-lg mt-0.5"></i>
+                        <div>
+                            <h3 class="text-sm font-semibold text-slate-200">3D Spatial Planning</h3>
+                            <p class="text-xs text-slate-400 mt-1">Optimizing layouts for maximal flow and light.</p>
+                        </div>
+                    </div>
+                    <div class="glow-card p-4 rounded-xl flex items-start gap-3">
+                        <i class="fa-solid fa-paint-roller text-purple-400 text-lg mt-0.5"></i>
+                        <div>
+                            <h3 class="text-sm font-semibold text-slate-200">Material Curation</h3>
+                            <p class="text-xs text-slate-400 mt-1">Sourcing high-end, sustainable luxury finishes.</p>
+                        </div>
+                    </div>
+                    <div class="glow-card p-4 rounded-xl flex items-start gap-3">
+                        <i class="fa-solid fa-lightbulb text-pink-400 text-lg mt-0.5"></i>
+                        <div>
+                            <h3 class="text-sm font-semibold text-slate-200">Architectural Lighting</h3>
+                            <p class="text-xs text-slate-400 mt-1">Designing mood & functional illumination.</p>
+                        </div>
+                    </div>
+                    <div class="glow-card p-4 rounded-xl flex items-start gap-3">
+                        <i class="fa-solid fa-layer-group text-indigo-400 text-lg mt-0.5"></i>
+                        <div>
+                            <h3 class="text-sm font-semibold text-slate-200">Bespoke Furniture</h3>
+                            <p class="text-xs text-slate-400 mt-1">Custom furniture design tailored to your space.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 px-6 max-w-7xl mx-auto z-10 relative">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <span class="text-indigo-400 text-xs font-bold uppercase tracking-widest">Tailored Expertise</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Comprehensive Interior Services</h2>
+            <p class="text-slate-400 mt-3 text-sm">End-to-end interior design solutions customized to fit your lifestyle, aesthetic preference, and functional needs.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Service 1 -->
+            <div class="glow-card p-8 rounded-2xl relative transition-all duration-300">
+                <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-indigo-500/20 to-purple-500/20 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-2xl mb-6">
+                    <i class="fa-solid fa-house-chimney-window"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Residential Interior Design</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                    Complete transformation of luxury apartments, villas, and private residences into elegant modern homes.
+                </p>
+                <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-indigo-400 hover:text-indigo-300 transition-colors">
+                    <span>Inquire Service</span>
+                    <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                </a>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="glow-card p-8 rounded-2xl relative transition-all duration-300">
+                <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-purple-500/20 to-pink-500/20 border border-purple-500/30 flex items-center justify-center text-purple-400 text-2xl mb-6">
+                    <i class="fa-solid fa-briefcase"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Commercial & Workplace</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                    Designing productive, inspiring corporate offices, boutiques, and hospitality venues that reflect brand identity.
+                </p>
+                <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-purple-400 hover:text-purple-300 transition-colors">
+                    <span>Inquire Service</span>
+                    <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                </a>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="glow-card p-8 rounded-2xl relative transition-all duration-300">
+                <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-pink-500/20 to-indigo-500/20 border border-pink-500/30 flex items-center justify-center text-pink-400 text-2xl mb-6">
+                    <i class="fa-solid fa-cubes-stacked"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">3D Rendering & Visualization</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                    Photorealistic 3D architectural renders allowing you to experience your space long before construction begins.
+                </p>
+                <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-pink-400 hover:text-pink-300 transition-colors">
+                    <span>Inquire Service</span>
+                    <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 px-6 max-w-7xl mx-auto z-10 relative">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+            <div>
+                <span class="text-indigo-400 text-xs font-bold uppercase tracking-widest">Selected Works</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Featured Projects</h2>
+            </div>
+            <p class="text-slate-400 text-sm max-w-md mt-4 md:mt-0">
+                A showcase of recent freelance interior design projects blending minimal luxury and modern ergonomics.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Portfolio Item 1 -->
+            <div class="glow-card rounded-2xl overflow-hidden group">
+                <div class="relative overflow-hidden h-64 sm:h-80">
+                    <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" alt="Modern Minimalist Villa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-slate-950/40 group-hover:bg-slate-950/20 transition-colors"></div>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-xs font-semibold text-indigo-400 uppercase tracking-wider">Residential Villa</span>
+                        <span class="text-xs text-slate-500">2024</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white group-hover:text-indigo-300 transition-colors">The Grand Zenith Lounge</h3>
+                    <p class="text-slate-400 text-sm mt-2">Harmonious blend of natural oak, ambient recessed lighting, and expansive open-plan layout.</p>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 2 -->
+            <div class="glow-card rounded-2xl overflow-hidden group">
+                <div class="relative overflow-hidden h-64 sm:h-80">
+                    <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80" alt="Executive Penthouse" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-slate-950/40 group-hover:bg-slate-950/20 transition-colors"></div>
+                </div>
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-xs font-semibold text-purple-400 uppercase tracking-wider">Penthouse Suite</span>
+                        <span class="text-xs text-slate-500">2023</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white group-hover:text-purple-300 transition-colors">Urban Skyline Residence</h3>
+                    <p class="text-slate-400 text-sm mt-2">Contemporary dark-mode aesthetic with custom matte black accents and marble textures.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 px-6 max-w-7xl mx-auto z-10 relative">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <span class="text-indigo-400 text-xs font-bold uppercase tracking-widest">Client Endorsements</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">What Clients Say</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Testimonial 1 -->
+            <div class="glow-card p-8 rounded-2xl relative">
+                <div class="flex items-center gap-1 text-amber-400 mb-4">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-slate-300 text-sm sm:text-base italic leading-relaxed">
+                    "Mohammed Razzique turned our blank canvas apartment into a breathtaking sanctuary. His attention to spatial balance and lighting detail is unmatched in the freelance market."
+                </p>
+                <div class="mt-6 flex items-center gap-4 pt-4 border-t border-slate-800">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 flex items-center justify-center font-bold text-white text-sm">
+                        AH
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-bold text-white">Alexander Hayes</h4>
+                        <p class="text-xs text-slate-400">Private Homeowner</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="glow-card p-8 rounded-2xl relative">
+                <div class="flex items-center gap-1 text-amber-400 mb-4">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-slate-300 text-sm sm:text-base italic leading-relaxed">
+                    "Working with Mohammed on our creative studio layout was a seamless process. His 3D renders allowed us to visualize every inch before making any structural purchases."
+                </p>
+                <div class="mt-6 flex items-center gap-4 pt-4 border-t border-slate-800">
+                    <div class="w-10 h-10 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center font-bold text-white text-sm">
+                        SL
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-bold text-white">Sophia Laurent</h4>
+                        <p class="text-xs text-slate-400">Creative Agency Director</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Reach Out Section -->
+    <section id="contact" class="py-20 px-6 max-w-7xl mx-auto z-10 relative">
+        <div class="glow-card p-8 sm:p-12 rounded-3xl relative overflow-hidden border border-slate-800">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                
+                <!-- Direct Details Column -->
+                <div>
+                    <span class="text-indigo-400 text-xs font-bold uppercase tracking-widest">Get In Touch</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Let's Design Your Next Masterpiece</h2>
+                    <p class="text-slate-400 text-sm mt-4 leading-relaxed">
+                        Have an upcoming interior design project or need expert consultation? Fill out the form or reach out directly to discuss your spatial requirements.
+                    </p>
+
+                    <div class="mt-8 space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-indigo-400 text-lg">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-500 font-medium">Direct Email</p>
+                                <a href="mailto:contact@mohammedrazzique.com" class="text-sm font-bold text-slate-200 hover:text-indigo-400 transition-colors">contact@mohammedrazzique.com</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-purple-400 text-lg">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-500 font-medium">Employment Status</p>
+                                <p class="text-sm font-bold text-slate-200">Freelance / Independent Consultant</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-pink-400 text-lg">
+                                <i class="fa-solid fa-network-wired"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-500 font-medium">Network Connection</p>
+                                <p class="text-sm font-bold text-slate-200">Connected on 27 Aug 2026</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Icons -->
+                    <div class="mt-10 flex items-center gap-4">
+                        <a href="#" class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:border-indigo-500/50 transition-all">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:border-indigo-500/50 transition-all">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:border-indigo-500/50 transition-all">
+                            <i class="fa-brands fa-behance"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form Column -->
+                <div class="bg-slate-950/60 p-6 sm:p-8 rounded-2xl border border-slate-800/80">
+                    <form class="space-y-4" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Name</label>
+                            <input type="text" placeholder="John Doe" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 focus:outline-none focus:border-indigo-500 transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Email</label>
+                            <input type="email" placeholder="john@example.com" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 focus:outline-none focus:border-indigo-500 transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Project Type</label>
+                            <select class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-300 focus:outline-none focus:border-indigo-500 transition-colors">
+                                <option>Residential Interior</option>
+                                <option>Commercial Office</option>
+                                <option>3D Spatial Rendering</option>
+                                <option>Design Consultation</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Message</label>
+                            <textarea rows="4" placeholder="Tell me about your vision..." class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 focus:outline-none focus:border-indigo-500 transition-colors"></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-3.5 text-sm font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-xl hover:opacity-95 transition-all shadow-lg shadow-indigo-500/25">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-900 text-center text-xs text-slate-500 relative z-10">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© 2026 Mohammed Razzique. All rights reserved.</p>
+            <p class="flex items-center gap-1">
+                Designed with <i class="fa-solid fa-heart text-pink-500 text-[10px]"></i> for Interior Architecture Excellence
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
