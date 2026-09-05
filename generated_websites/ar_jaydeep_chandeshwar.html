@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ar Jaydeep Chandeshwar | Jr. Architect Showcase</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            cyan: '#0D8ABC',
+                            purple: '#8B5CF6',
+                            pink: '#EC4899',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(13, 138, 188, 0.3);
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(51, 65, 85, 0.5);
+        }
+        .glass-card:hover {
+            border-color: rgba(99, 102, 241, 0.5);
+            box-shadow: 0 10px 30px -10px rgba(99, 102, 241, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-white overflow-x-hidden">
+
+    <!-- Ambient Background Lighting -->
+    <div class="fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-96 bg-gradient-to-tr from-cyan-600/20 via-purple-600/20 to-pink-500/10 blur-[120px] pointer-events-none -z-10 rounded-full"></div>
+    <div class="fixed bottom-0 right-0 w-96 h-96 bg-cyan-500/10 blur-[140px] pointer-events-none -z-10 rounded-full"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-indigo-500 to-pink-500 p-[2px] transition-transform duration-300 group-hover:scale-105">
+                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+                        <span class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-indigo-400 text-lg">JC</span>
+                    </div>
+                </div>
+                <div>
+                    <span class="font-bold text-lg tracking-tight text-white block leading-none">Ar. Jaydeep Chandeshwar</span>
+                    <span class="text-xs text-slate-400 tracking-wider uppercase font-medium">Ekveera Architects</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#about" class="text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors">About</a>
+                <a href="#services" class="text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors">Services</a>
+                <a href="#portfolio" class="text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors">Portfolio</a>
+                <a href="#testimonials" class="text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors">Endorsements</a>
+            </div>
+
+            <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 text-white hover:opacity-90 transition-all shadow-lg shadow-cyan-500/20 hover:scale-105">
+                <span>Let's Connect</span>
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen pt-32 pb-20 flex items-center relative">
+        <div class="max-w-7xl mx-auto px-6 w-full">
+            <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Left Text Column -->
+                <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border-indigo-500/30 text-cyan-400 text-xs sm:text-sm font-semibold tracking-wide">
+                        <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                        Jr. Architect at EKVEERA ARCHITECTS
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.1]">
+                        Transforming Spaces Through <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-indigo-400 to-pink-500">Architectural Precision</span>
+                    </h1>
+
+                    <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+                        Crafting innovative structural concepts, high-precision CAD modeling, and modern spatial designs that blend functionality with breathtaking aesthetic impact.
+                    </p>
+
+                    <!-- Action Buttons -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#portfolio" class="w-full sm:w-auto px-8 py-4 rounded-xl font-bold bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white shadow-lg shadow-indigo-500/25 hover:shadow-cyan-500/40 hover:-translate-y-0.5 transition-all duration-300 text-center">
+                            Explore Showcase
+                        </a>
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl font-bold glass-card text-slate-200 hover:text-white hover:border-slate-600 hover:-translate-y-0.5 transition-all duration-300 text-center">
+                            Get in Touch
+                        </a>
+                    </div>
+
+                    <!-- Trust Stats -->
+                    <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0">
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-white">3D Modeling</div>
+                            <div class="text-xs text-slate-400 font-medium">BIM & Rendering</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-white">Modern</div>
+                            <div class="text-xs text-slate-400 font-medium">Residential Design</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-white">Precision</div>
+                            <div class="text-xs text-slate-400 font-medium">Drafting & Site Plans</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Avatar & Frame Column -->
+                <div class="lg:col-span-5 flex justify-center relative">
+                    <div class="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
+                        <!-- Dual Glowing Ring Effect -->
+                        <div class="absolute -inset-1.5 bg-gradient-to-r from-cyan-500 via-indigo-500 to-pink-500 rounded-full blur-xl opacity-70 animate-pulse"></div>
+                        <div class="absolute inset-0 bg-gradient-to-tr from-cyan-400 via-indigo-500 to-pink-500 rounded-full p-1.5 shadow-2xl">
+                            <div class="w-full h-full bg-slate-950 rounded-full p-2 overflow-hidden relative">
+                                <img src="https://ui-avatars.com/api/?name=Ar+Jaydeep+Chandeshwar&size=200&background=0D8ABC&color=fff&bold=true" alt="Ar Jaydeep Chandeshwar" class="w-full h-full object-cover rounded-full">
+                            </div>
+                        </div>
+
+                        <!-- Floating Glass Badge -->
+                        <div class="absolute -bottom-2 -left-4 glass-card px-4 py-3 rounded-2xl shadow-xl flex items-center gap-3 border border-slate-700/60">
+                            <div class="w-10 h-10 rounded-xl bg-cyan-500/20 flex items-center justify-center text-cyan-400">
+                                <i class="fa-solid fa-compass-drafting text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs font-bold text-white">EKVEERA ARCHITECTS</div>
+                                <div class="text-[10px] text-slate-400">Junior Architect</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                
+                <!-- Architecture Image Banner -->
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-indigo-500 rounded-3xl blur opacity-30 group-hover:opacity-50 transition duration-500"></div>
+                    <div class="relative rounded-3xl overflow-hidden glass-card border border-slate-800">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" alt="Architectural Excellence" class="w-full h-[450px] object-cover hover:scale-105 transition duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-6 glass-card rounded-2xl">
+                            <span class="text-xs text-cyan-400 font-bold uppercase tracking-wider">Design Philosophy</span>
+                            <p class="text-sm text-slate-200 mt-1 font-medium">"Architecture is about balancing environmental harmony with bold structural utility."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text / Skills Content -->
+                <div class="space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-indigo-500/10 text-indigo-400 text-xs font-semibold uppercase tracking-wider border border-indigo-500/20">
+                        About Me
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                        Passionate Architectural Craftsman at <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-indigo-400">EKVEERA ARCHITECTS</span>
+                    </h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        As a Junior Architect at EKVEERA ARCHITECTS, Ar Jaydeep Chandeshwar specializes in bringing complex blueprint visions into living design realities. By combining spatial intelligence, environmental considerations, and cutting-edge digital drafting tools, every project achieves timeless form and seamless function.
+                    </p>
+
+                    <!-- Technical Skills Tag Cloud -->
+                    <div class="space-y-3 pt-2">
+                        <h4 class="text-sm font-semibold text-slate-300 uppercase tracking-wider">Technical Proficiency</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3.5 py-1.5 rounded-lg text-xs font-medium bg-slate-900 border border-slate-800 text-slate-300 hover:border-cyan-500/50 transition-colors">AutoCAD</span>
+                            <span class="px-3.5 py-1.5 rounded-lg text-xs font-medium bg-slate-900 border border-slate-800 text-slate-300 hover:border-cyan-500/50 transition-colors">Revit Architecture</span>
+                            <span class="px-3.5 py-1.5 rounded-lg text-xs font-medium bg-slate-900 border border-slate-800 text-slate-300 hover:border-cyan-500/50 transition-colors">3D Visualization</span>
+                            <span class="px-3.5 py-1.5 rounded-lg text-xs font-medium bg-slate-900 border border-slate-800 text-slate-300 hover:border-cyan-500/50 transition-colors">Site Planning</span>
+                            <span class="px-3.5 py-1.5 rounded-lg text-xs font-medium bg-slate-900 border border-slate-800 text-slate-300 hover:border-cyan-500/50 transition-colors">Interior Layouts</span>
+                            <span class="px-3.5 py-1.5 rounded-lg text-xs font-medium bg-slate-900 border border-slate-800 text-slate-300 hover:border-cyan-500/50 transition-colors">Sustainable Design</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-slate-950/50 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs text-cyan-400 font-bold uppercase tracking-wider px-3 py-1 bg-cyan-500/10 rounded-lg border border-cyan-500/20">Architectural Offerings</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mt-3">High-Impact Architectural Services</h2>
+                <p class="text-slate-400 text-sm sm:text-base mt-4">Delivering comprehensive design solutions from initial drafting sketches to structural completion.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="glass-card p-8 rounded-2xl hover:-translate-y-2 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-cyan-500/20 to-indigo-500/20 border border-cyan-500/30 flex items-center justify-center text-cyan-400 mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-ruler-combined text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Architectural Planning</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Detailed floor plans, structural drafting, and zoning layouts executed with surgical technical accuracy.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="glass-card p-8 rounded-2xl hover:-translate-y-2 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-purple-500/20 to-pink-500/20 border border-purple-500/30 flex items-center justify-center text-purple-400 mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-cube text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">3D Rendering & Modeling</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Photorealistic spatial visualizations bringing blueprint concepts to life before physical construction begins.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="glass-card p-8 rounded-2xl hover:-translate-y-2 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-cyan-500/20 to-purple-500/20 border border-cyan-500/30 flex items-center justify-center text-indigo-400 mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-house-laptop text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Interior Space Planning</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Optimized interior layouts harmonizing light, airflow, aesthetics, and modern functional living needs.</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="glass-card p-8 rounded-2xl hover:-translate-y-2 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-pink-500/20 to-indigo-500/20 border border-pink-500/30 flex items-center justify-center text-pink-400 mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-leaf text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Sustainable Design</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Eco-conscious architectural strategies incorporating efficient energy flow and eco-friendly materials.</p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="glass-card p-8 rounded-2xl hover:-translate-y-2 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-indigo-500/20 to-cyan-500/20 border border-indigo-500/30 flex items-center justify-center text-cyan-400 mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-building text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Residential & Commercial</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">End-to-end design conceptualization for luxury homes, multi-story apartments, and office spaces.</p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="glass-card p-8 rounded-2xl hover:-translate-y-2 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-purple-500/20 to-cyan-500/20 border border-purple-500/30 flex items-center justify-center text-purple-400 mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-clipboard-check text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Site Supervision Support</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Ensuring on-site construction faithfully adheres to blueprint standards and architectural metrics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Endorsements Section -->
+    <section id="testimonials" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs text-purple-400 font-bold uppercase tracking-wider px-3 py-1 bg-purple-500/10 rounded-lg border border-purple-500/20">Endorsements</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mt-3">What Colleagues & Clients Say</h2>
+                <p class="text-slate-400 text-sm sm:text-base mt-4">Recognition for meticulous dedication and architectural precision.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4">
+                            <i class="fa-solid fa-star text-sm"></i>
+                            <i class="fa-solid fa-star text-sm"></i>
+                            <i class="fa-solid fa-star text-sm"></i>
+                            <i class="fa-solid fa-star text-sm"></i>
+                            <i class="fa-solid fa-star text-sm"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">"Jaydeep's attention to detail during the drafting phase saved us immense time during site construction. His 3D renders gave our team a crystal clear vision."</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center font-bold text-cyan-400">
+                            EA
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-white">Senior Lead Architect</div>
+                            <div class="text-xs text-slate-400">EKVEERA ARCHITECTS</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4">
+                            <i class="fa-solid fa-star text-sm"></i>
+                            <i class="fa-solid fa-star text-sm"></i>
+                            <i class="fa-solid fa-star text-sm"></i>
+                            <i class="fa-solid fa-star text-sm"></i>
+                            <i class="fa-solid fa-star text-sm"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">"Working with Ar Jaydeep was an absolute breeze. His understanding of modern space utilization and client preferences is truly impressive for a Jr. Architect."</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center font-bold text-purple-400">
+                            RC
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-white">Residential Client</div>
+                            <div class="text-xs text-slate-400">Private Villa Owner</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4">
+                            <i class="fa-solid fa-star text-sm"></i>
+                            <i class="fa-solid fa-star text-sm"></i>
+                            <i class="fa-solid fa-star text-sm"></i>
+                            <i class="fa-solid fa-star text-sm"></i>
+                            <i class="fa-solid fa-star text-sm"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">"Jaydeep brings outstanding technical competence and energy to the design studio. His spatial layouts are both practical and aesthetically elevated."</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center font-bold text-pink-400">
+                            PM
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-white">Project Director</div>
+                            <div class="text-xs text-slate-400">Urban Developments</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Details Info -->
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="text-xs text-cyan-400 font-bold uppercase tracking-wider px-3 py-1 bg-cyan-500/10 rounded-lg border border-cyan-500/20">Initiate Contact</span>
+                    <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">Let's Build Something Visionary</h2>
+                    <p class="text-slate-400 text-sm sm:text-base">
+                        Whether you are planning a residential venture, modern commercial project, or seek architectural collaboration—get in touch today.
+                    </p>
+
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-center gap-4 p-4 rounded-xl glass-card">
+                            <div class="w-12 h-12 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-building"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 font-medium uppercase">Firm</div>
+                                <div class="text-sm font-semibold text-white">EKVEERA ARCHITECTS</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl glass-card">
+                            <div class="w-12 h-12 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-user-tie"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 font-medium uppercase">Position</div>
+                                <div class="text-sm font-semibold text-white">Jr. Architect</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl glass-card">
+                            <div class="w-12 h-12 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 font-medium uppercase">Direct Inquiries</div>
+                                <div class="text-sm font-semibold text-white">contact@ekveeraarchitects.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Interactive Form -->
+                <div class="lg:col-span-7">
+                    <form onsubmit="event.preventDefault(); alert('Message sent successfully!');" class="glass-card p-8 sm:p-10 rounded-3xl space-y-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Send a Direct Project Message</h3>
+                        
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Your Name</label>
+                                <input type="text" required placeholder="John Doe" class="w-full bg-slate-900/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Your Email</label>
+                                <input type="email" required placeholder="john@example.com" class="w-full bg-slate-900/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Subject / Interest</label>
+                            <input type="text" required placeholder="Residential Architectural Consultation" class="w-full bg-slate-900/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-500 transition-colors">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Project Brief</label>
+                            <textarea rows="4" required placeholder="Describe your structural requirements, scope, or timeline..." class="w-full bg-slate-900/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-500 transition-colors"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl font-bold bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 text-white shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:-translate-y-0.5 transition-all duration-300 text-center">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800/80 py-8 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="text-xs text-slate-400">
+                © <script>document.write(new Date().getFullYear())</script> Ar. Jaydeep Chandeshwar | <span class="text-slate-300">EKVEERA ARCHITECTS</span>. All rights reserved.
+            </div>
+            <div class="flex items-center space-x-6 text-slate-400 text-sm">
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-linkedin-in text-base"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-instagram text-base"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-solid fa-globe text-base"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
