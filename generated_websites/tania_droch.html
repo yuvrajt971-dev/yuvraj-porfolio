@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tania Droch | Graphic Designer & Brand Strategist</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+        .glow-bg {
+            background: radial-gradient(circle at 50% 20%, rgba(99, 102, 241, 0.15) 0%, rgba(168, 85, 247, 0.1) 35%, rgba(2, 6, 23, 0) 70%);
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(51, 65, 85, 0.5);
+        }
+        .glass-card:hover {
+            border-color: rgba(99, 102, 241, 0.5);
+            box-shadow: 0 0 25px -5px rgba(99, 102, 241, 0.2);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #818cf8 0%, #c084fc 50%, #f472b6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white relative min-h-screen">
+
+    <!-- Ambient Glow Background -->
+    <div class="fixed inset-0 glow-bg pointer-events-none z-0"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-2xl font-extrabold tracking-tight flex items-center gap-2 group">
+                <span class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center text-white text-lg font-black shadow-lg shadow-indigo-500/30 group-hover:scale-105 transition-transform duration-300">TD</span>
+                <span class="tracking-wider text-slate-200 group-hover:text-white transition-colors">TANIA DROCH</span>
+            </a>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+                <a href="#services" class="hover:text-indigo-400 transition-colors">Services</a>
+                <a href="#portfolio" class="hover:text-indigo-400 transition-colors">Selected Work</a>
+                <a href="#testimonials" class="hover:text-indigo-400 transition-colors">Endorsements</a>
+                <a href="#contact" class="hover:text-indigo-400 transition-colors">Contact</a>
+            </div>
+
+            <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:opacity-90 transition-opacity shadow-lg shadow-indigo-500/25">
+                <span>Start a Project</span>
+                <i class="fa-solid font-xs fa-arrow-right"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-20 md:pt-48 md:pb-32 z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
+                
+                <!-- Left Column: Content -->
+                <div class="flex-1 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border-indigo-500/30 text-indigo-300 text-xs sm:text-sm font-semibold mb-6">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        Available for Strategic Design Consultations
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight mb-6">
+                        Crafting Visual Identities That <span class="text-gradient">Define Brands.</span>
+                    </h1>
+
+                    <p class="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto lg:mx-0 mb-8 leading-relaxed">
+                        I'm <strong class="text-slate-200">Tania Droch</strong>, an independent Graphic Designer & Visual Strategist transforming bold ideas into unforgettable visual assets, bespoke brand identity systems, and digital experiences.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-12">
+                        <a href="#portfolio" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 font-bold text-white shadow-xl shadow-purple-500/20 hover:shadow-purple-500/40 hover:scale-[1.02] transition-all duration-300 text-center">
+                            Explore Selected Work
+                        </a>
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl glass-card text-slate-200 font-bold hover:bg-slate-800/80 hover:text-white transition-all text-center">
+                            Get in Touch
+                        </a>
+                    </div>
+
+                    <!-- Trust Stats -->
+                    <div class="grid grid-cols-3 gap-6 pt-8 border-t border-slate-800/80 max-w-lg mx-auto lg:mx-0">
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-white">100%</p>
+                            <p class="text-xs text-slate-400 font-medium">Independent Precision</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-white">50+</p>
+                            <p class="text-xs text-slate-400 font-medium">Brands Identity Systems</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-white">5★</p>
+                            <p class="text-xs text-slate-400 font-medium">Client Rating</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Avatar Frame -->
+                <div class="relative flex-shrink-0">
+                    <div class="relative group">
+                        <!-- Glowing Double Gradient Backdrop -->
+                        <div class="absolute -inset-1.5 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full blur-xl opacity-70 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse-slow"></div>
+                        
+                        <!-- Avatar Inner Frame -->
+                        <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-2 border-indigo-400/50 p-2 bg-slate-950">
+                            <img src="https://ui-avatars.com/api/?name=Tania+Droch&size=200&background=0D8ABC&color=fff&bold=true" 
+                                 alt="Tania Droch" 
+                                 class="w-full h-full object-cover rounded-full filter saturate-105 transition duration-500 group-hover:scale-105">
+                        </div>
+
+                        <!-- Floating Badge 1 -->
+                        <div class="absolute -bottom-2 -left-2 glass-card px-4 py-2 rounded-2xl flex items-center gap-3 border-slate-700 shadow-2xl animate-float">
+                            <div class="w-8 h-8 rounded-lg bg-pink-500/20 text-pink-400 flex items-center justify-center">
+                                <i class="fa-solid fa-palette text-sm"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Specialty</p>
+                                <p class="text-xs font-bold text-white">Visual Identity</p>
+                            </div>
+                        </div>
+
+                        <!-- Floating Badge 2 -->
+                        <div class="absolute top-4 -right-2 glass-card px-4 py-2 rounded-2xl flex items-center gap-3 border-slate-700 shadow-2xl animate-float" style="animation-delay: 2s;">
+                            <div class="w-8 h-8 rounded-lg bg-indigo-500/20 text-indigo-400 flex items-center justify-center">
+                                <i class="fa-solid fa-gem text-sm"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Quality</p>
+                                <p class="text-xs font-bold text-white">Bespoke Design</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 relative z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- About Image Container -->
+                <div class="relative rounded-3xl overflow-hidden glass-card p-3 border-slate-800">
+                    <div class="relative h-96 sm:h-[450px] rounded-2xl overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=800&q=80" 
+                             alt="Design Studio Workflow" 
+                             class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-6 glass-card rounded-xl border-slate-800/80">
+                            <p class="text-sm text-indigo-300 font-semibold mb-1">Design Philosophy</p>
+                            <p class="text-slate-200 text-sm italic">"Minimalism with intentional emotional impact—designing visuals that speak loud without shouting."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bio Content -->
+                <div>
+                    <span class="text-indigo-400 font-bold text-sm tracking-wider uppercase">About Tania</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2 mb-6">
+                        Independent Creative Visionary & Graphic Designer
+                    </h2>
+                    
+                    <p class="text-slate-300 leading-relaxed mb-6">
+                        As a self-employed Graphic Designer, I help businesses, startups, and creative brands stand out in crowded digital and physical landscapes. My work combines strategic typography, vibrant color palettes, and balanced layouts to craft authentic visual experiences.
+                    </p>
+                    
+                    <p class="text-slate-400 leading-relaxed mb-8">
+                        Whether creating full brand ecosystems from scratch or crafting elevated digital marketing collateral, my focus is always on clarity, elegance, and high client impact.
+                    </p>
+
+                    <!-- Expertise Pills -->
+                    <div class="flex flex-wrap gap-2 mb-8">
+                        <span class="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-indigo-950/80 text-indigo-300 border border-indigo-800/50">Brand Identity System</span>
+                        <span class="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-purple-950/80 text-purple-300 border border-purple-800/50">Logo Design</span>
+                        <span class="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-pink-950/80 text-pink-300 border border-pink-800/50">Typography & Print</span>
+                        <span class="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-slate-900 text-slate-300 border border-slate-800">Vector Illustration</span>
+                        <span class="px-3.5 py-1.5 rounded-full text-xs font-semibold bg-slate-900 text-slate-300 border border-slate-800">Packaging Design</span>
+                    </div>
+
+                    <a href="#contact" class="inline-flex items-center gap-2 text-indigo-400 font-bold hover:text-indigo-300 transition-colors">
+                        <span>Let's collaborate on your brand</span>
+                        <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 relative z-10 bg-slate-950/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-indigo-400 font-bold text-sm tracking-wider uppercase">Capabilities</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white mt-2 mb-4">Tailored Visual Solutions</h2>
+                <p class="text-slate-400">High-tier graphic design services designed to elevate your business presence across all touchpoints.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="glass-card rounded-2xl p-8 hover:-translate-y-2 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-indigo-500 to-purple-500 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-indigo-500/20">
+                        <i class="fa-solid fa-bezier-curve"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Brand Identity & Strategy</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Comprehensive brand identity packages including logo marks, color theory guidelines, brand books, and custom iconography.
+                    </p>
+                    <ul class="text-xs text-slate-300 space-y-2">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Logo Systems & Usage Rules</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Brand Style Guides & Manuals</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="glass-card rounded-2xl p-8 hover:-translate-y-2 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-purple-500 to-pink-500 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-purple-500/20">
+                        <i class="fa-solid fa-box-open"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Packaging & Collateral</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Tangible design experiences that leave an impact. Custom product packaging, merchandise, editorial layouts, and print assets.
+                    </p>
+                    <ul class="text-xs text-slate-300 space-y-2">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400"></i> Product Packaging & Labels</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400"></i> Print & Editorial Layouts</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="glass-card rounded-2xl p-8 hover:-translate-y-2 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-pink-500 to-rose-500 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-pink-500/20">
+                        <i class="fa-solid fa-object-group"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Digital Graphics & UI</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        High-converting digital graphics, web visuals, social media campaign kits, and user interface design overlays.
+                    </p>
+                    <ul class="text-xs text-slate-300 space-y-2">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pink-400"></i> Social Media Brand Assets</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pink-400"></i> Web & App Graphic Assets</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Selected Portfolio Showcase -->
+    <section id="portfolio" class="py-20 relative z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+                <div>
+                    <span class="text-indigo-400 font-bold text-sm tracking-wider uppercase">Visual Gallery</span>
+                    <h2 class="text-3xl sm:text-5xl font-extrabold text-white mt-2">Featured Projects</h2>
+                </div>
+                <p class="text-slate-400 max-w-md mt-4 md:mt-0 text-sm">
+                    A selection of creative identity concepts and graphic projects developed with precision.
+                </p>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="glass-card rounded-2xl overflow-hidden group">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600132806370-bf17e65e942f?auto=format&fit=crop&w=800&q=80" alt="Brand Redesign" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <span class="px-4 py-2 rounded-full glass-card text-xs font-bold text-white border-indigo-500/50">View Case Study</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-semibold text-indigo-400">Branding & Identity</span>
+                        <h3 class="text-lg font-bold text-white mt-1">Aura Skincare System</h3>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="glass-card rounded-2xl overflow-hidden group">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&w=800&q=80" alt="Abstract Art" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <span class="px-4 py-2 rounded-full glass-card text-xs font-bold text-white border-indigo-500/50">View Case Study</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-semibold text-purple-400">Digital Art Direction</span>
+                        <h3 class="text-lg font-bold text-white mt-1">Lumina Visual Exhibition</h3>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="glass-card rounded-2xl overflow-hidden group">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=800&q=80" alt="Editorial Layout" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <span class="px-4 py-2 rounded-full glass-card text-xs font-bold text-white border-indigo-500/50">View Case Study</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-semibold text-pink-400">Editorial & Typography</span>
+                        <h3 class="text-lg font-bold text-white mt-1">Vogue Modern Editorial</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 relative z-10 bg-slate-950/40">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-indigo-400 font-bold text-sm tracking-wider uppercase">Endorsements</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white mt-2">What Collaborators Say</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="glass-card rounded-2xl p-8 relative">
+                    <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-base italic leading-relaxed mb-6">
+                        "Tania completely reimagined our brand identity. Her eye for design, color harmony, and typographic details is outstanding. She delivered beyond expectations."
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-500 flex items-center justify-center text-white font-bold">
+                            MK
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-white">Marcus Vance</p>
+                            <p class="text-xs text-slate-400">Founder, Vance Studio</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="glass-card rounded-2xl p-8 relative">
+                    <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-base italic leading-relaxed mb-6">
+                        "Working with Tania on our product packaging was seamless. She brought structured creative direction and turned complex requirements into visual art."
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-purple-500 to-pink-500 flex items-center justify-center text-white font-bold">
+                            SL
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-white">Sophia Lin</p>
+                            <p class="text-xs text-slate-400">Creative Director, Apex Media</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 relative z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                
+                <!-- Direct Details -->
+                <div>
+                    <span class="text-indigo-400 font-bold text-sm tracking-wider uppercase">Get In Touch</span>
+                    <h2 class="text-3xl sm:text-5xl font-extrabold text-white mt-2 mb-6">Let's Create Something Iconic Together</h2>
+                    <p class="text-slate-400 leading-relaxed mb-8">
+                        Have a new brand project, design inquiry, or collaboration idea? Send a message and let's discuss how we can elevate your visual identity.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl glass-card flex items-center justify-center text-indigo-400">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Direct Contact</p>
+                                <p class="text-sm font-semibold text-white">hello@taniadroch.design</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl glass-card flex items-center justify-center text-purple-400">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Status</p>
+                                <p class="text-sm font-semibold text-white">Graphic Designer | Self Employed</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl glass-card flex items-center justify-center text-pink-400">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Network Connected</p>
+                                <p class="text-sm font-semibold text-white">28 Aug 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="glass-card rounded-3xl p-8 border-slate-800">
+                    <form onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent to Tania Droch.');" class="space-y-6">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">YOUR NAME</label>
+                            <input type="text" placeholder="Jane Doe" required class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-800 text-white focus:outline-none focus:border-indigo-500 transition-colors">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">YOUR EMAIL</label>
+                            <input type="email" placeholder="jane@example.com" required class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-800 text-white focus:outline-none focus:border-indigo-500 transition-colors">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">PROJECT TYPE</label>
+                            <select class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-800 text-slate-300 focus:outline-none focus:border-indigo-500 transition-colors">
+                                <option>Brand Identity System</option>
+                                <option>Logo & Typography</option>
+                                <option>Packaging & Collateral</option>
+                                <option>Digital & Social Design</option>
+                                <option>Other Consultation</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">MESSAGE</label>
+                            <textarea rows="4" placeholder="Tell me about your project, timeline, and scope..." required class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-800 text-white focus:outline-none focus:border-indigo-500 transition-colors resize-none"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-bold hover:opacity-95 transition-opacity shadow-lg shadow-indigo-500/25">
+                            Send Project Request
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-900 relative z-10 text-slate-500 text-xs">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© 2026 Tania Droch. All rights reserved.</p>
+            <p class="flex items-center gap-2">
+                <span>Designed & Developed with</span>
+                <i class="fa-solid fa-heart text-pink-500"></i>
+                <span>for Tania Droch</span>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
