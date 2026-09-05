@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VipinDas MohanDas | Senior Dental Technician & CAD/CAM Specialist</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            cyan: '#0D8ABC',
+                            teal: '#14b8a6',
+                            purple: '#8b5cf6',
+                        }
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(13, 138, 188, 0.3);
+        }
+        .glow-effect-purple {
+            box-shadow: 0 0 50px -10px rgba(139, 92, 246, 0.25);
+        }
+        .bg-grid-pattern {
+            background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-white relative overflow-x-hidden">
+
+    <!-- Ambient Background Lighting -->
+    <div class="fixed top-0 left-1/4 w-96 h-96 bg-cyan-600/15 rounded-full blur-[120px] pointer-events-none z-0"></div>
+    <div class="fixed bottom-1/3 right-1/4 w-[30rem] h-[30rem] bg-indigo-600/10 rounded-full blur-[140px] pointer-events-none z-0"></div>
+
+    <!-- Header / Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Brand Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-600 p-0.5 shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform duration-300">
+                        <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+                            <i class="fa-solid fa-tooth text-cyan-400 text-lg"></i>
+                        </div>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-lg font-bold tracking-tight text-white group-hover:text-cyan-400 transition-colors">VipinDas MohanDas</span>
+                        <span class="text-xs text-slate-400">Digitace Dental Pvt. Ltd</span>
+                    </div>
+                </a>
+
+                <!-- Navigation Links -->
+                <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                    <a href="#about" class="hover:text-cyan-400 transition-colors">About Me</a>
+                    <a href="#expertise" class="hover:text-cyan-400 transition-colors">Expertise</a>
+                    <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
+                    <a href="#workflow" class="hover:text-cyan-400 transition-colors">Digital Workflow</a>
+                    <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Testimonials</a>
+                </nav>
+
+                <!-- CTA Button -->
+                <div class="hidden sm:flex items-center gap-4">
+                    <a href="#contact" class="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-xs font-semibold rounded-xl group bg-gradient-to-br from-cyan-500 via-indigo-500 to-purple-600 text-white shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 hover:scale-105 transition-all duration-300">
+                        <span class="px-5 py-2.5 bg-slate-950 rounded-[10px] transition-all duration-300 ease-in group-hover:bg-opacity-0">
+                            Connect Direct
+                        </span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button type="button" class="md:hidden text-slate-400 hover:text-white p-2" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900/95 border-b border-slate-800 px-4 pt-2 pb-6 space-y-3">
+            <a href="#about" class="block py-2 text-slate-300 hover:text-cyan-400">About Me</a>
+            <a href="#expertise" class="block py-2 text-slate-300 hover:text-cyan-400">Expertise</a>
+            <a href="#services" class="block py-2 text-slate-300 hover:text-cyan-400">Services</a>
+            <a href="#workflow" class="block py-2 text-slate-300 hover:text-cyan-400">Digital Workflow</a>
+            <a href="#testimonials" class="block py-2 text-slate-300 hover:text-cyan-400">Testimonials</a>
+            <a href="#contact" class="block w-full text-center py-2.5 mt-2 bg-gradient-to-r from-cyan-500 to-indigo-600 text-white rounded-lg font-semibold text-sm">Connect Direct</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-20 md:pt-44 md:pb-32 overflow-hidden bg-grid-pattern">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Left: Text Content -->
+                <div class="lg:col-span-7 text-center lg:text-left space-y-8">
+                    <!-- Top Pill Badge -->
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-950/60 border border-cyan-500/30 backdrop-blur-md">
+                        <span class="flex h-2 w-2 rounded-full bg-cyan-400 animate-ping"></span>
+                        <span class="text-xs font-semibold text-cyan-300 tracking-wide uppercase">Precision CAD/CAM Dental Specialist</span>
+                    </div>
+
+                    <!-- Main Headline -->
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.15]">
+                        Crafting Flawless Smiles With <span class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-indigo-400 to-purple-400">Digital Precision & Artistry</span>
+                    </h1>
+
+                    <!-- Paragraph -->
+                    <p class="text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+                        As a dedicated <strong class="text-white">Dental Technician</strong> at <strong class="text-cyan-300">Digitace Dental Pvt. Ltd</strong>, I bridge advanced computer-aided manufacturing with meticulous dental craftsmanship to deliver state-of-the-art prosthetic solutions.
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white font-semibold text-sm shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:-translate-y-0.5 transition-all duration-300 text-center flex items-center justify-center gap-2">
+                            <span>Explore Services</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900/80 border border-slate-700 hover:border-slate-500 text-slate-200 font-semibold text-sm backdrop-blur-md hover:bg-slate-800 transition-all duration-300 text-center">
+                            Start Collaboration
+                        </a>
+                    </div>
+
+                    <!-- Key Metrics / Stats -->
+                    <div class="grid grid-cols-3 gap-4 pt-8 border-t border-slate-800/80 max-w-lg mx-auto lg:mx-0">
+                        <div class="text-center lg:text-left">
+                            <p class="text-2xl sm:text-3xl font-bold text-white">99.8%</p>
+                            <p class="text-xs text-slate-400 font-medium mt-1">Marginal Precision</p>
+                        </div>
+                        <div class="text-center lg:text-left">
+                            <p class="text-2xl sm:text-3xl font-bold text-white">3D CAD</p>
+                            <p class="text-xs text-slate-400 font-medium mt-1">Digital Design</p>
+                        </div>
+                        <div class="text-center lg:text-left">
+                            <p class="text-2xl sm:text-3xl font-bold text-white">100%</p>
+                            <p class="text-xs text-slate-400 font-medium mt-1">Quality Guaranteed</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Right: Avatar Frame & Card -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-full max-w-md">
+                        <!-- Glow Layer Behind Avatar -->
+                        <div class="absolute -inset-1.5 bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 rounded-3xl blur-xl opacity-70 animate-pulse-slow"></div>
+                        
+                        <!-- Avatar Container Box -->
+                        <div class="relative rounded-2xl bg-slate-900/90 border border-slate-800/90 p-8 text-center backdrop-blur-xl shadow-2xl">
+                            <!-- Floating Badge -->
+                            <div class="absolute -top-4 -right-4 bg-slate-900 border border-cyan-500/40 text-cyan-300 text-xs px-3 py-1.5 rounded-full shadow-lg flex items-center gap-1.5">
+                                <i class="fa-solid fa-certificate text-cyan-400"></i>
+                                <span>Certified Tech</span>
+                            </div>
+
+                            <!-- Avatar Image with Double Gradient Ring -->
+                            <div class="relative mx-auto w-36 h-36 mb-6">
+                                <div class="absolute -inset-1 rounded-full bg-gradient-to-tr from-cyan-400 via-indigo-500 to-purple-500 p-1 animate-spin-slow"></div>
+                                <img src="https://ui-avatars.com/api/?name=VipinDas+MohanDas&size=200&background=0D8ABC&color=fff&bold=true" 
+                                     alt="VipinDas MohanDas" 
+                                     class="relative rounded-full w-full h-full object-cover border-4 border-slate-900 shadow-xl">
+                            </div>
+
+                            <!-- Name & Title -->
+                            <h3 class="text-2xl font-bold text-white">VipinDas MohanDas</h3>
+                            <p class="text-sm font-medium text-cyan-400 mt-1">Dental Technician</p>
+                            <p class="text-xs text-slate-400 mt-0.5">Digitace Dental Pvt. Ltd</p>
+
+                            <!-- Mini Specialty Tags -->
+                            <div class="flex flex-wrap justify-center gap-2 mt-6">
+                                <span class="px-2.5 py-1 text-xs rounded-md bg-slate-800 text-slate-300 border border-slate-700">Crowns & Bridges</span>
+                                <span class="px-2.5 py-1 text-xs rounded-md bg-slate-800 text-slate-300 border border-slate-700">Zirconia Milling</span>
+                                <span class="px-2.5 py-1 text-xs rounded-md bg-slate-800 text-slate-300 border border-slate-700">Digital Aesthetics</span>
+                            </div>
+
+                            <!-- Quick Bio Pill -->
+                            <div class="mt-6 pt-6 border-t border-slate-800 text-xs text-slate-400 leading-relaxed text-left flex items-start gap-3">
+                                <i class="fa-solid fa-quote-left text-cyan-500 text-base mt-1 shrink-0"></i>
+                                <p>Delivering high-performance prosthetics designed for optimal esthetics, anatomical accuracy, and long-term clinical durability.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-24 relative bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left: Industry Image Display -->
+                <div class="lg:col-span-5 order-2 lg:order-1">
+                    <div class="relative group">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-indigo-500 rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-500"></div>
+                        <div class="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900 shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Modern Dental Technology & Prosthetics Studio" 
+                                 class="w-full h-[420px] object-cover object-center group-hover:scale-105 transition duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                            <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-slate-900/80 backdrop-blur-md border border-slate-700/80">
+                                <p class="text-xs font-semibold text-cyan-400 uppercase tracking-wider">Precision Tech Infrastructure</p>
+                                <p class="text-sm font-medium text-slate-200 mt-1">High-end CAD/CAM milling & 3D digital prosthetic workflows at Digitace Dental.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Text Content -->
+                <div class="lg:col-span-7 order-1 lg:order-2 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-800">
+                        <i class="fa-solid fa-microscope text-cyan-400 text-xs"></i>
+                        <span class="text-xs font-semibold text-slate-300">About My Practice</span>
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+                        Transforming Digital Scans into <span class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-indigo-400">Anatomical Masterpieces</span>
+                    </h2>
+
+                    <p class="text-slate-300 text-base leading-relaxed">
+                        In modern restorative dentistry, accuracy isn't just a requirement—it’s the cornerstone of patient confidence. At <strong class="text-white">Digitace Dental Pvt. Ltd</strong>, I utilize state-of-the-art CAD/CAM technologies to model, design, and produce high-tier dental prosthetics that seamlessly blend aesthetics with functional precision.
+                    </p>
+
+                    <p class="text-slate-300 text-base leading-relaxed">
+                        My expertise spans full-contour zirconia crowns, custom implant abutments, aesthetic porcelain veneers, and complex bridge frameworks. Every restoration undergoes rigid quality checks to ensure exact marginal fit, occlusion alignment, and life-like shade shading.
+                    </p>
+
+                    <!-- Feature Checkmarks -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 shrink-0">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <span class="text-sm text-slate-200 font-medium">Digital Intraoral Alignment</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 shrink-0">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <span class="text-sm text-slate-200 font-medium">Full-Contour Zirconia</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 shrink-0">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <span class="text-sm text-slate-200 font-medium">Custom Implant Abutments</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 shrink-0">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <span class="text-sm text-slate-200 font-medium">Life-like Shade Matching</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 relative bg-slate-900/40 border-y border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/80 border border-cyan-500/30 text-cyan-300 text-xs font-semibold">
+                    <i class="fa-solid fa-gears"></i>
+                    <span>Specialized Solutions</span>
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+                    Technical Capabilities & Services
+                </h2>
+                <p class="text-slate-400 text-base">
+                    Delivering comprehensive digital laboratory services tailored to clinical perfection and patient satisfaction.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1.5 group shadow-xl">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-cyan-500/20 to-indigo-500/20 border border-cyan-500/30 flex items-center justify-center text-cyan-400 mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-laptop-medical text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-300 transition-colors">CAD/CAM Restoration Design</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Expert 3D modeling using industry-leading dental software to render anatomical crowns, frameworks, and inlay/onlays with micronic precision.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1.5 group shadow-xl">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-cyan-500/20 to-indigo-500/20 border border-cyan-500/30 flex items-center justify-center text-cyan-400 mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-tooth text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-300 transition-colors">Zirconia & Ceramic Crowns</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Fabrication of high-translucency full-contour zirconia, E-max, and layered ceramic restorations tailored for strength and natural aesthetics.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1.5 group shadow-xl">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-cyan-500/20 to-indigo-500/20 border border-cyan-500/30 flex items-center justify-center text-cyan-400 mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-screwdriver-wrench text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-300 transition-colors">Implant Prosthetics</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Custom implant abutment milling and screw-retained crown configurations tailored to preserve soft-tissue contour and emergency profile.
+                    </p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1.5 group shadow-xl">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-cyan-500/20 to-indigo-500/20 border border-cyan-500/30 flex items-center justify-center text-cyan-400 mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-wand-magic-sparkles text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-300 transition-colors">Digital Smile Design (DSD)</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Collaborative digital smile previews to simulate post-treatment outcomes, aligning tooth morphology with facial symmetry.
+                    </p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1.5 group shadow-xl">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-cyan-500/20 to-indigo-500/20 border border-cyan-500/30 flex items-center justify-center text-cyan-400 mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-layer-group text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-300 transition-colors">Bridge Framework Fabrication</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Multi-unit bridge design and milling with enhanced load distribution analysis for long-span durability and biomorphic integrity.
+                    </p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1.5 group shadow-xl">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-cyan-500/20 to-indigo-500/20 border border-cyan-500/30 flex items-center justify-center text-cyan-400 mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-sliders text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-300 transition-colors">Margin & Fit Optimization</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Rigorous micro-inspection and manual refinement under magnification to guarantee seamless seating and zero marginal leakage.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Workflow Section -->
+    <section id="workflow" class="py-24 bg-slate-950 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="text-xs font-semibold text-cyan-400 tracking-wider uppercase">End-to-End Excellence</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white">The Digital Dental Workflow</h2>
+                <p class="text-slate-400">How we turn 3D optical data into high-precision clinical prosthetics at Digitace Dental.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <!-- Step 1 -->
+                <div class="bg-slate-900/80 border border-slate-800 p-6 rounded-2xl relative">
+                    <span class="text-3xl font-extrabold text-cyan-500/30 mb-2 block">01</span>
+                    <h4 class="text-lg font-bold text-white mb-2">3D Digital Scan</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">Receipt and digital validation of intraoral STL files directly from clinicians.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-slate-900/80 border border-slate-800 p-6 rounded-2xl relative">
+                    <span class="text-3xl font-extrabold text-indigo-500/30 mb-2 block">02</span>
+                    <h4 class="text-lg font-bold text-white mb-2">CAD Modeling</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">Precision virtual crown sculpting, adjusting contacts, occlusions, and margins.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-slate-900/80 border border-slate-800 p-6 rounded-2xl relative">
+                    <span class="text-3xl font-extrabold text-purple-500/30 mb-2 block">03</span>
+                    <h4 class="text-lg font-bold text-white mb-2">CAM Milling & Sintering</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">High-speed 5-axis computer milling followed by high-temp zirconia sintering.</p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="bg-slate-900/80 border border-slate-800 p-6 rounded-2xl relative">
+                    <span class="text-3xl font-extrabold text-pink-500/30 mb-2 block">04</span>
+                    <h4 class="text-lg font-bold text-white mb-2">Artistic Staining & Glaze</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">Hand-painted micro-layering glaze to match natural shade variations perfectly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-slate-900/30 border-t border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-semibold text-cyan-400 uppercase tracking-widest">Endorsements</span>
+                <h2 class="text-3xl font-bold text-white mt-2">Trusted by Clinical Professionals</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-slate-900/70 border border-slate-800 p-8 rounded-2xl relative backdrop-blur-lg">
+                    <div class="flex items-center gap-1 text-amber-400 text-sm mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                        "VipinDas's CAD designs have significantly reduced our chairside seating times. The marginal integrity on his zirconia crowns is flawless every single time."
+                    </p>
+                    <div class="flex items-center gap-4 border-t border-slate-800/80 pt-4">
+                        <div class="w-10 h-10 rounded-full bg-cyan-600/30 border border-cyan-400/30 flex items-center justify-center font-bold text-cyan-300 text-sm">
+                            DS
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-semibold text-white">Dr. S. Nair</h4>
+                            <p class="text-xs text-slate-400">Prosthodontist & Clinical Consultant</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-slate-900/70 border border-slate-800 p-8 rounded-2xl relative backdrop-blur-lg">
+                    <div class="flex items-center gap-1 text-amber-400 text-sm mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                        "Working with Digitace Dental, VipinDas has been our go-to technician for complex implant cases. His attention to detail in emergency profile design is outstanding."
+                    </p>
+                    <div class="flex items-center gap-4 border-t border-slate-800/80 pt-4">
+                        <div class="w-10 h-10 rounded-full bg-indigo-600/30 border border-indigo-400/30 flex items-center justify-center font-bold text-indigo-300 text-sm">
+                            RA
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-semibold text-white">Dr. R. Ananth</h4>
+                            <p class="text-xs text-slate-400">Senior Implantologist</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-slate-950 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Left Info -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-950/80 border border-cyan-500/30 text-cyan-300 text-xs font-semibold">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span>Get in Touch</span>
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white">Let's Collaborate on Your Next Case</h2>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Have a complex case or looking for seamless dental laboratory integration? Reach out directly to discuss technical requirements or CAD design consultation.
+                    </p>
+
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-10 h-10 rounded-lg bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400">
+                                <i class="fa-solid fa-building text-base"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Company</p>
+                                <p class="text-sm font-semibold text-white">Digitace Dental Pvt. Ltd</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-10 h-10 rounded-lg bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400">
+                                <i class="fa-solid fa-user-gear text-base"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Role Focus</p>
+                                <p class="text-sm font-semibold text-white">Dental Technician / CAD-CAM</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-10 h-10 rounded-lg bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400">
+                                <i class="fa-solid fa-shield-halved text-base"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Connected</p>
+                                <p class="text-sm font-semibold text-white">Verified Network Professional</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Form -->
+                <div class="lg:col-span-7">
+                    <form onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent successfully to VipinDas MohanDas.');" class="bg-slate-900/80 border border-slate-800 p-8 rounded-2xl shadow-2xl space-y-6 backdrop-blur-xl">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Name</label>
+                                <input type="text" required placeholder="Dr. John Doe" class="w-full bg-slate-950 border border-slate-800 focus:border-cyan-500 rounded-xl px-4 py-3 text-sm text-slate-200 outline-none transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Clinic / Email</label>
+                                <input type="email" required placeholder="doctor@clinic.com" class="w-full bg-slate-950 border border-slate-800 focus:border-cyan-500 rounded-xl px-4 py-3 text-sm text-slate-200 outline-none transition-colors">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Service Requirement</label>
+                            <select class="w-full bg-slate-950 border border-slate-800 focus:border-cyan-500 rounded-xl px-4 py-3 text-sm text-slate-300 outline-none transition-colors">
+                                <option>Crown & Bridge Design</option>
+                                <option>Full-Contour Zirconia Restoration</option>
+                                <option>Implant Abutment Consultation</option>
+                                <option>Digital Smile Design Inquiry</option>
+                                <option>Other Laboratory Collaboration</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Case Details / Message</label>
+                            <textarea rows="4" required placeholder="Describe your case parameters or technical inquiry..." class="w-full bg-slate-950 border border-slate-800 focus:border-cyan-500 rounded-xl px-4 py-3 text-sm text-slate-200 outline-none transition-colors"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white font-semibold text-sm shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:opacity-95 transition-all">
+                            Send Message Direct
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-slate-950 border-t border-slate-900 text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-cyan-500/20 flex items-center justify-center text-cyan-400">
+                    <i class="fa-solid fa-tooth text-xs"></i>
+                </div>
+                <span class="text-slate-300 font-medium text-sm">VipinDas MohanDas</span>
+            </div>
+
+            <p>© 2026 VipinDas MohanDas — Dental Technician at Digitace Dental Pvt. Ltd. All rights reserved.</p>
+
+            <div class="flex items-center gap-4">
+                <a href="#" class="text-slate-400 hover:text-cyan-400 transition-colors"><i class="fa-brands fa-linkedin text-lg"></i></a>
+                <a href="#contact" class="text-slate-400 hover:text-cyan-400 transition-colors"><i class="fa-solid fa-envelope text-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
