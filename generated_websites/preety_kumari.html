@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Preety Kumari | BDS Dental Specialist Portfolio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(99, 102, 241, 0.3);
+        }
+        .glow-effect-pink {
+            box-shadow: 0 0 50px -10px rgba(236, 72, 153, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 p-[2px] group-hover:scale-105 transition-transform duration-300">
+                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+                        <i class="fa-solid font-bold fa-tooth text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-pink-400"></i>
+                    </div>
+                </div>
+                <div>
+                    <span class="font-extrabold text-lg tracking-tight bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent block">Dr. Preety Kumari</span>
+                    <span class="text-xs text-indigo-400 font-medium block -mt-1">BDS | Sadhnani's Dental Care</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-indigo-400 transition-colors duration-200">About</a>
+                <a href="#expertise" class="hover:text-indigo-400 transition-colors duration-200">Expertise</a>
+                <a href="#services" class="hover:text-indigo-400 transition-colors duration-200">Services</a>
+                <a href="#testimonials" class="hover:text-indigo-400 transition-colors duration-200">Endorsements</a>
+                <a href="#contact" class="hover:text-indigo-400 transition-colors duration-200">Contact</a>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="hidden md:block">
+                <a href="#contact" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold text-sm hover:opacity-90 transition-all duration-300 hover:shadow-lg hover:shadow-indigo-500/25 inline-flex items-center gap-2">
+                    <span>Connect Now</span>
+                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="relative min-h-screen flex items-center justify-center pt-32 pb-20 overflow-hidden">
+        <!-- Background Ambient Glows -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-indigo-600/20 via-purple-600/20 to-pink-600/20 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute bottom-10 left-10 w-72 h-72 bg-blue-600/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Left Column -->
+                <div class="lg:col-span-7 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 backdrop-blur-xl mb-6">
+                        <span class="flex h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        <span class="text-xs font-semibold uppercase tracking-wider text-slate-300">BDS Dental Professional</span>
+                        <span class="text-slate-600">•</span>
+                        <span class="text-xs text-indigo-400 font-medium">Sadhnani's Dental Care</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.1] mb-6">
+                        Crafting Confident <br class="hidden sm:inline"/>
+                        <span class="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">Smiles & Precision Care</span>
+                    </h1>
+
+                    <p class="text-lg sm:text-xl text-slate-400 font-normal leading-relaxed mb-8 max-w-2xl mx-auto lg:mx-0">
+                        Dedicated BDS practitioner with a focus on modern oral healthcare, gentle clinical techniques, and personalized treatment plans for every patient.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-12">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-bold text-base hover:shadow-xl hover:shadow-indigo-500/25 transition-all duration-300 hover:-translate-y-0.5 text-center">
+                            Book Consultation
+                        </a>
+                        <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-full bg-slate-900/80 border border-slate-800 text-slate-200 font-semibold text-base hover:bg-slate-800/80 hover:border-slate-700 transition-all duration-300 backdrop-blur-xl text-center">
+                            Explore Clinical Services
+                        </a>
+                    </div>
+
+                    <!-- Trust Badges Grid -->
+                    <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-4">
+                        <div class="text-center lg:text-left">
+                            <div class="text-2xl font-bold text-white flex items-center justify-center lg:justify-start gap-2">
+                                <span>100%</span>
+                            </div>
+                            <p class="text-xs text-slate-400 mt-1">Patient Focus</p>
+                        </div>
+                        <div class="text-center lg:text-left">
+                            <div class="text-2xl font-bold text-white flex items-center justify-center lg:justify-start gap-2">
+                                <span>Modern</span>
+                            </div>
+                            <p class="text-xs text-slate-400 mt-1">Clinical Techniques</p>
+                        </div>
+                        <div class="text-center lg:text-left">
+                            <div class="text-2xl font-bold text-white flex items-center justify-center lg:justify-start gap-2">
+                                <span>Comprehensive</span>
+                            </div>
+                            <p class="text-xs text-slate-400 mt-1">Preventive Care</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Right Column (Avatar Frame) -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative group">
+                        <!-- Outer Glow Frames -->
+                        <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 opacity-70 blur-xl group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+                        <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 opacity-50 blur-lg"></div>
+                        
+                        <!-- Avatar Container -->
+                        <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full p-2 bg-slate-950 border border-slate-800">
+                            <img src="https://ui-avatars.com/api/?name=Preety+Kumari&size=200&background=0D8ABC&color=fff&bold=true" 
+                                 alt="Preety Kumari" 
+                                 class="w-full h-full object-cover rounded-full shadow-2xl">
+                        </div>
+
+                        <!-- Floating Badge -->
+                        <div class="absolute -bottom-4 right-0 sm:right-4 bg-slate-900/90 border border-slate-800 backdrop-blur-xl px-5 py-3 rounded-2xl shadow-xl flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-indigo-500/20 flex items-center justify-center text-indigo-400">
+                                <i class="fa-solid fa-award text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-medium text-slate-400">Practicing At</p>
+                                <p class="text-sm font-bold text-white">Sadhnani's Dental Care</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT & EXPERTISE SECTION -->
+    <section id="about" class="py-24 relative bg-slate-950/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Image Block -->
+                <div class="lg:col-span-5">
+                    <div class="relative rounded-3xl overflow-hidden border border-slate-800 group shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Dental Care Room" 
+                             class="w-full h-[450px] object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-6 rounded-2xl bg-slate-900/80 backdrop-blur-md border border-slate-800/80">
+                            <p class="text-indigo-400 text-xs font-semibold uppercase tracking-wider mb-1">Modern Dentistry</p>
+                            <p class="text-white font-bold text-base">Gentle, Patient-Centered Clinical Practice</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Content Block -->
+                <div class="lg:col-span-7">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold mb-4">
+                        <i class="fa-solid fa-user-doctor"></i> About Me
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-6">
+                        Committed to Delivering Excellence in Dental Health
+                    </h2>
+
+                    <p class="text-slate-400 text-base leading-relaxed mb-6">
+                        As a motivated BDS professional at <strong class="text-slate-200">Sadhnani's Dental Care</strong>, I specialize in clinical diagnostics, preventive dental care, restorative procedures, and empathetic patient education. My goal is to alleviate dental anxiety while delivering high-quality, evidence-based treatment.
+                    </p>
+
+                    <!-- Core Competencies Grid -->
+                    <div id="expertise" class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+                        <div class="p-4 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300">
+                            <div class="w-10 h-10 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 mb-3">
+                                <i class="fa-solid fa-notes-medical"></i>
+                            </div>
+                            <h3 class="text-white font-semibold text-base mb-1">Clinical Diagnostics</h3>
+                            <p class="text-slate-400 text-xs leading-relaxed">Accurate oral examinations and diagnosis using modern diagnostic methods.</p>
+                        </div>
+
+                        <div class="p-4 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300">
+                            <div class="w-10 h-10 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400 mb-3">
+                                <i class="fa-solid fa-sparkles"></i>
+                            </div>
+                            <h3 class="text-white font-semibold text-base mb-1">Scaling & Polishing</h3>
+                            <p class="text-slate-400 text-xs leading-relaxed">Comprehensive oral prophylaxis for long-term gum and enamel health.</p>
+                        </div>
+
+                        <div class="p-4 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300">
+                            <div class="w-10 h-10 rounded-xl bg-pink-500/10 flex items-center justify-center text-pink-400 mb-3">
+                                <i class="fa-solid fa-fill-drip"></i>
+                            </div>
+                            <h3 class="text-white font-semibold text-base mb-1">Restorative Dentistry</h3>
+                            <p class="text-slate-400 text-xs leading-relaxed">Composite fillings and conservative tooth restoration procedures.</p>
+                        </div>
+
+                        <div class="p-4 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 mb-3">
+                                <i class="fa-solid fa-hands-holding-child"></i>
+                            </div>
+                            <h3 class="text-white font-semibold text-base mb-1">Patient Education</h3>
+                            <p class="text-slate-400 text-xs leading-relaxed">Empowering patients with personalized preventative maintenance plans.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pink-500/10 border border-pink-500/20 text-pink-400 text-xs font-semibold mb-4">
+                    <i class="fa-solid fa-stethoscope"></i> Comprehensive Care
+                </div>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-4">
+                    Clinical Offerings & Dental Services
+                </h2>
+                <p class="text-slate-400 text-sm sm:text-base">
+                    Delivering gentle, modern dental solutions backed by the latest healthcare standards at Sadhnani's Dental Care.
+                </p>
+            </div>
+
+            <!-- Grid of Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service Card 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-3xl p-8 hover:border-indigo-500/50 transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Preventive Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Routine check-ups, dental cleanings, fluoride treatments, and sealant applications to keep oral diseases at bay.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-indigo-400 text-sm font-semibold hover:text-indigo-300">
+                        Learn More <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-3xl p-8 hover:border-purple-500/50 transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Cosmetic & Aesthetic Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Enhance your natural smile with aesthetic enamel contouring, tooth whitening guidance, and cosmetic touch-ups.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-purple-400 text-sm font-semibold hover:text-purple-300">
+                        Learn More <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-3xl p-8 hover:border-pink-500/50 transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400 text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Operative & Restorations</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Minimally invasive tooth restorations using aesthetic composite materials to rebuild function and structure.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-pink-400 text-sm font-semibold hover:text-pink-300">
+                        Learn More <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-3xl p-8 hover:border-emerald-500/50 transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Periodontal Maintenance</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Deep scaling and root planing to prevent gum inflammation, bleeding, and periodontal complications.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-emerald-400 text-sm font-semibold hover:text-emerald-300">
+                        Learn More <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-3xl p-8 hover:border-blue-500/50 transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-face-smile"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Pediatric Dental Hygiene</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Gentle, anxiety-free dental visits tailored for young children to establish lifelong healthy oral habits.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-blue-400 text-sm font-semibold hover:text-blue-300">
+                        Learn More <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-3xl p-8 hover:border-amber-500/50 transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-clipboard-check"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Oral Health Consultation</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Detailed consultations reviewing diet, hygiene routines, and customized care strategies for optimal health.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-amber-400 text-sm font-semibold hover:text-amber-300">
+                        Learn More <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS / ENDORSEMENTS SECTION -->
+    <section id="testimonials" class="py-24 relative bg-slate-950/60">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-semibold mb-4">
+                    <i class="fa-solid fa-star"></i> Feedback & Recognition
+                </div>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-4">
+                    Professional Endorsements
+                </h2>
+                <p class="text-slate-400 text-sm sm:text-base">
+                    What mentors and patients say about Dr. Preety Kumari's clinical approach and patient care.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Review Card 1 -->
+                <div class="p-8 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm mb-4 gap-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6 italic">
+                            "Dr. Preety's clinical precision and gentle behavior immediately comfort patients. She shows incredible dedication to learning modern dental protocols."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800/80">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 flex items-center justify-center font-bold text-white text-xs">
+                            SC
+                        </div>
+                        <div>
+                            <p class="text-white text-sm font-bold">Senior Consultant</p>
+                            <p class="text-xs text-slate-400">Sadhnani's Dental Care</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review Card 2 -->
+                <div class="p-8 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm mb-4 gap-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6 italic">
+                            "Extremely thorough during my teeth cleaning session! Dr. Preety explained every step in detail and made sure I felt zero pain throughout the process."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800/80">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center font-bold text-white text-xs">
+                            AP
+                        </div>
+                        <div>
+                            <p class="text-white text-sm font-bold">Ananya Sharma</p>
+                            <p class="text-xs text-slate-400">Verified Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review Card 3 -->
+                <div class="p-8 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm mb-4 gap-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6 italic">
+                            "A highly promising dental professional. Her keen understanding of restorative procedures and preventative counsel is commendable."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800/80">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-emerald-500 to-indigo-500 flex items-center justify-center font-bold text-white text-xs">
+                            AM
+                        </div>
+                        <div>
+                            <p class="text-white text-sm font-bold">Academic Mentor</p>
+                            <p class="text-xs text-slate-400">Dental Surgery Faculty</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Info Left -->
+                <div class="lg:col-span-5">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold mb-4">
+                        <i class="fa-solid fa-envelope"></i> Get In Touch
+                    </div>
+
+                    <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-6">
+                        Let's Connect & Discuss Oral Health
+                    </h2>
+
+                    <p class="text-slate-400 text-sm sm:text-base leading-relaxed mb-8">
+                        Whether you have inquiries regarding dental care options, wish to schedule a consultation, or connect professionally, feel free to reach out.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 text-lg shrink-0">
+                                <i class="fa-solid fa-clinic-medical"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold text-sm">Clinic Base</h4>
+                                <p class="text-slate-400 text-xs mt-0.5">Sadhnani's Dental Care</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400 text-lg shrink-0">
+                                <i class="fa-solid fa-user-graduate"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold text-sm">Qualification</h4>
+                                <p class="text-slate-400 text-xs mt-0.5">Bachelor of Dental Surgery (BDS)</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-12 h-12 rounded-xl bg-pink-500/10 flex items-center justify-center text-pink-400 text-lg shrink-0">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold text-sm">Professional Outreach</h4>
+                                <p class="text-slate-400 text-xs mt-0.5">Available for professional opportunities & clinical discussions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Right -->
+                <div class="lg:col-span-7">
+                    <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-3xl p-8 sm:p-10 shadow-2xl">
+                        <h3 class="text-2xl font-bold text-white mb-2">Send a Message</h3>
+                        <p class="text-slate-400 text-xs sm:text-sm mb-8">Fill out the form below and I will get back to you promptly.</p>
+
+                        <form onsubmit="event.preventDefault(); alert('Thank you for reaching out! Your message has been received.');" class="space-y-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Name</label>
+                                    <input type="text" required placeholder="John Doe" class="w-full px-4 py-3.5 rounded-xl bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-indigo-500 transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Email Address</label>
+                                    <input type="email" required placeholder="john@example.com" class="w-full px-4 py-3.5 rounded-xl bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-indigo-500 transition-colors">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Subject</label>
+                                <input type="text" required placeholder="Consultation Inquiry / Clinical Connection" class="w-full px-4 py-3.5 rounded-xl bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-indigo-500 transition-colors">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Message</label>
+                                <textarea rows="4" required placeholder="Write your query or message here..." class="w-full px-4 py-3.5 rounded-xl bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-indigo-500 transition-colors resize-none"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-bold text-sm hover:opacity-90 transition-all duration-300 hover:shadow-lg hover:shadow-indigo-500/25">
+                                Send Message <i class="fa-solid fa-paper-plane ml-2"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-8 border-t border-slate-800/80 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+                <span class="text-sm font-semibold text-slate-300">Dr. Preety Kumari</span>
+                <span class="text-slate-600">•</span>
+                <span class="text-xs text-slate-500">BDS Practitioner at Sadhnani's Dental Care</span>
+            </div>
+
+            <p class="text-xs text-slate-500">
+                &copy; 2026 Dr. Preety Kumari. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
