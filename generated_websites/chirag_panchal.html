@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chirag Panchal | Freelance Web Developer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(99, 102, 241, 0.3);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #818cf8 0%, #c084fc 50%, #f472b6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white relative overflow-x-hidden">
+
+    <!-- Glowing Background Ambient Orbs -->
+    <div class="fixed top-0 left-1/4 -translate-x-1/2 w-[500px] h-[500px] bg-indigo-600/15 rounded-full blur-[120px] pointer-events-none -z-10"></div>
+    <div class="fixed top-1/3 right-0 w-[400px] h-[400px] bg-purple-600/15 rounded-full blur-[120px] pointer-events-none -z-10"></div>
+    <div class="fixed bottom-10 left-1/3 w-[600px] h-[600px] bg-pink-600/10 rounded-full blur-[140px] pointer-events-none -z-10"></div>
+
+    <!-- Navigation Bar -->
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-tight text-white flex items-center gap-2">
+                <span class="w-8 h-8 rounded-lg bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center text-white text-sm font-extrabold shadow-lg shadow-indigo-500/30">CP</span>
+                <span>Chirag<span class="text-indigo-400">.dev</span></span>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-white transition-colors">About</a>
+                <a href="#services" class="hover:text-white transition-colors">Services</a>
+                <a href="#projects" class="hover:text-white transition-colors">Work</a>
+                <a href="#testimonials" class="hover:text-white transition-colors">Endorsements</a>
+                <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+            </nav>
+
+            <a href="#contact" class="relative group overflow-hidden rounded-full p-[1px] focus:outline-none">
+                <span class="absolute inset-0 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full"></span>
+                <span class="px-5 py-2.5 rounded-full bg-slate-950 block text-xs font-semibold tracking-wider uppercase transition duration-300 group-hover:bg-opacity-0">
+                    Hire Me
+                </span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-36 pb-24 md:pt-48 md:pb-32 px-6 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-indigo-500/30 text-indigo-300 text-xs font-semibold tracking-wide backdrop-blur-md">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    Available for New Web Development Projects
+                </div>
+
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight text-white">
+                    Crafting High-Performance <span class="gradient-text">Web Experiences</span> & Scalable Code.
+                </h1>
+
+                <p class="text-slate-400 text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0 font-normal">
+                    Hi, I'm <strong class="text-white">Chirag Panchal</strong>—a Freelance Web Developer specializing in building modern, responsive, and performance-driven web applications that turn visions into seamless digital reality.
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                    <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold text-sm shadow-xl shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.02] transition-all duration-300 flex items-center justify-center gap-2">
+                        Start a Project <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                    <a href="#projects" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900/80 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 text-slate-200 font-semibold text-sm transition-all duration-300 flex items-center justify-center gap-2">
+                        View Portfolio
+                    </a>
+                </div>
+
+                <!-- Trust Badges -->
+                <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-6 max-w-lg mx-auto lg:mx-0 text-left">
+                    <div>
+                        <p class="text-2xl font-bold text-white">100%</p>
+                        <p class="text-xs text-slate-400 uppercase tracking-wider font-medium">Custom Solutions</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl font-bold text-white">5.0 ★</p>
+                        <p class="text-xs text-slate-400 uppercase tracking-wider font-medium">Client Rating</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl font-bold text-white">Fast</p>
+                        <p class="text-xs text-slate-400 uppercase tracking-wider font-medium">Delivery & Quality</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Avatar Frame -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative group">
+                    <!-- Glowing Outer Rings -->
+                    <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full blur-xl opacity-70 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+                    <div class="relative p-2 bg-slate-950 rounded-full border border-slate-800">
+                        <img src="https://ui-avatars.com/api/?name=Chirag+Panchal&size=200&background=0D8ABC&color=fff&bold=true" 
+                             alt="Chirag Panchal" 
+                             class="w-64 h-64 sm:w-80 sm:h-80 rounded-full object-cover shadow-2xl">
+                    </div>
+                    <!-- Floating Badge -->
+                    <div class="absolute -bottom-4 -right-2 bg-slate-900/90 backdrop-blur-xl border border-slate-800 p-4 rounded-2xl shadow-xl flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center">
+                            <i class="fa-solid fa-code text-lg"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400 font-medium">Specialization</p>
+                            <p class="text-sm font-bold text-white">Full-Stack Web Dev</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-3xl p-8 sm:p-12 hover:border-indigo-500/30 transition-all duration-300">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-6 overflow-hidden rounded-2xl border border-slate-800 relative group">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" 
+                         alt="Team Collaboration & Web Development" 
+                         class="w-full h-80 sm:h-96 object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-slate-950/60 backdrop-blur-md border border-slate-800/80">
+                        <p class="text-xs text-slate-300 font-medium"><i class="fa-solid fa-laptop-code text-indigo-400 mr-2"></i> Modern Tech Stack Implementation</p>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-indigo-400 text-xs font-bold uppercase tracking-widest">About Me</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white leading-tight">
+                        Transforming Complex Requirements into Elegant Web Solutions
+                    </h2>
+                    <p class="text-slate-400 leading-relaxed text-sm sm:text-base">
+                        As an independent Freelance Web Developer, I help businesses, startups, and agencies bring their digital concepts to life. I emphasize pixel-perfect layout implementation, fast loading speeds, responsive interfaces, and maintainable, clean codebases.
+                    </p>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center shrink-0 mt-1">
+                                <i class="fa-solid fa-check text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold text-sm">Frontend Precision</h4>
+                                <p class="text-slate-400 text-xs">HTML5, CSS3, Tailwind CSS, JavaScript, React / Next.js ecosystem.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center shrink-0 mt-1">
+                                <i class="fa-solid fa-check text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold text-sm">Full-Stack Capability</h4>
+                                <p class="text-slate-400 text-xs">Node.js, API integrations, database architectures, and server management.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-lg bg-pink-500/10 text-pink-400 flex items-center justify-center shrink-0 mt-1">
+                                <i class="fa-solid fa-check text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold text-sm">Performance Optimization</h4>
+                                <p class="text-slate-400 text-xs">SEO-ready structure, Core Web Vitals refinement, and rapid load times.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+            <span class="text-indigo-400 text-xs font-bold uppercase tracking-widest">My Services</span>
+            <h2 class="text-3xl sm:text-4xl font-bold text-white">High-Impact Web Engineering</h2>
+            <p class="text-slate-400 text-sm">Comprehensive digital services designed to scale your brand and engage users effectively.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Service 1 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl hover:border-indigo-500/50 hover:translate-y-[-4px] transition-all duration-300 group">
+                <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-indigo-500/20 to-indigo-500/5 text-indigo-400 flex items-center justify-center mb-6 group-hover:scale-110 transition duration-300">
+                    <i class="fa-solid fa-desktop text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Custom Web Application</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">Tailor-made web solutions engineered with modern frameworks to meet unique business workflows and goals.</p>
+                <a href="#contact" class="text-xs font-semibold text-indigo-400 hover:text-indigo-300 flex items-center gap-2">Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl hover:border-purple-500/50 hover:translate-y-[-4px] transition-all duration-300 group">
+                <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-purple-500/20 to-purple-500/5 text-purple-400 flex items-center justify-center mb-6 group-hover:scale-110 transition duration-300">
+                    <i class="fa-solid fa-cubes text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">UI/UX Implementation</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">Converting Figma & Adobe XD designs into pixel-perfect, responsive HTML/CSS layouts with fluid interactions.</p>
+                <a href="#contact" class="text-xs font-semibold text-purple-400 hover:text-purple-300 flex items-center gap-2">Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl hover:border-pink-500/50 hover:translate-y-[-4px] transition-all duration-300 group">
+                <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-pink-500/20 to-pink-500/5 text-pink-400 flex items-center justify-center mb-6 group-hover:scale-110 transition duration-300">
+                    <i class="fa-solid fa-plug text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">API Integration & Backend</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">Seamless connection of third-party services, REST APIs, databases, and secure user authentication setups.</p>
+                <a href="#contact" class="text-xs font-semibold text-pink-400 hover:text-pink-300 flex items-center gap-2">Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl hover:border-indigo-500/50 hover:translate-y-[-4px] transition-all duration-300 group">
+                <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-indigo-500/20 to-indigo-500/5 text-indigo-400 flex items-center justify-center mb-6 group-hover:scale-110 transition duration-300">
+                    <i class="fa-solid fa-bolt text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Performance & SEO</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">Optimizing speed, accessibility, structural markup, and search engine visibility for higher domain ranking.</p>
+                <a href="#contact" class="text-xs font-semibold text-indigo-400 hover:text-indigo-300 flex items-center gap-2">Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl hover:border-purple-500/50 hover:translate-y-[-4px] transition-all duration-300 group">
+                <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-purple-500/20 to-purple-500/5 text-purple-400 flex items-center justify-center mb-6 group-hover:scale-110 transition duration-300">
+                    <i class="fa-solid fa-cart-shopping text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">E-Commerce Development</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">Building custom shopping experiences, secure checkout flows, and headless store integrations.</p>
+                <a href="#contact" class="text-xs font-semibold text-purple-400 hover:text-purple-300 flex items-center gap-2">Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl hover:border-pink-500/50 hover:translate-y-[-4px] transition-all duration-300 group">
+                <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-pink-500/20 to-pink-500/5 text-pink-400 flex items-center justify-center mb-6 group-hover:scale-110 transition duration-300">
+                    <i class="fa-solid fa-screwdriver-wrench text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Website Maintenance</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">Ongoing technical support, code refactoring, security patches, and feature additions for existing projects.</p>
+                <a href="#contact" class="text-xs font-semibold text-pink-400 hover:text-pink-300 flex items-center gap-2">Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+            <span class="text-indigo-400 text-xs font-bold uppercase tracking-widest">Endorsements</span>
+            <h2 class="text-3xl sm:text-4xl font-bold text-white">Client Feedback & Praise</h2>
+            <p class="text-slate-400 text-sm">Read what clients and collaborators have to say about working with me.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Review 1 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl flex flex-col justify-between space-y-6">
+                <div class="space-y-4">
+                    <div class="flex text-amber-400 gap-1 text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed italic">
+                        "Chirag converted our complex UI designs into code seamlessly. His attention to detail and swift communication made the development process smooth and stress-free."
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-slate-800/80 flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-indigo-600/30 text-indigo-300 font-bold flex items-center justify-center text-xs">
+                        JD
+                    </div>
+                    <div>
+                        <p class="text-sm font-semibold text-white">Jason Miller</p>
+                        <p class="text-xs text-slate-400">Founder, TechPulse Agency</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl flex flex-col justify-between space-y-6">
+                <div class="space-y-4">
+                    <div class="flex text-amber-400 gap-1 text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed italic">
+                        "Delivered our web application ahead of schedule with zero major bugs. Chirag's expertise in clean frontend architecture significantly improved our platform speed."
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-slate-800/80 flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-purple-600/30 text-purple-300 font-bold flex items-center justify-center text-xs">
+                        SK
+                    </div>
+                    <div>
+                        <p class="text-sm font-semibold text-white">Sarah Jenkins</p>
+                        <p class="text-xs text-slate-400">Product Manager, SaaSify</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl flex flex-col justify-between space-y-6">
+                <div class="space-y-4">
+                    <div class="flex text-amber-400 gap-1 text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed italic">
+                        "Top-tier web developer! Chirag possesses great technical skills combined with a clear understanding of modern UI trends. Highly recommended for any serious web project."
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-slate-800/80 flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-pink-600/30 text-pink-300 font-bold flex items-center justify-center text-xs">
+                        AL
+                    </div>
+                    <div>
+                        <p class="text-sm font-semibold text-white">Alex Lopez</p>
+                        <p class="text-xs text-slate-400">Creative Director, Apex Design</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-3xl p-8 sm:p-14">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="text-indigo-400 text-xs font-bold uppercase tracking-widest">Get In Touch</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white">Let's build something remarkable together.</h2>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Have an upcoming project, freelance inquiry, or need standard web development expertise? Feel free to reach out directly through the form or media channels below.
+                    </p>
+
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-slate-800/80 border border-slate-700 flex items-center justify-center text-indigo-400">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Direct Email</p>
+                                <p class="text-sm font-semibold text-white">chirag@panchal.dev</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-slate-800/80 border border-slate-700 flex items-center justify-center text-indigo-400">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Employment Status</p>
+                                <p class="text-sm font-semibold text-white">Freelance Web Developer</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-slate-800/80 border border-slate-700 flex items-center justify-center text-indigo-400">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Availability</p>
+                                <p class="text-sm font-semibold text-white">Worldwide / Remote</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="lg:col-span-7">
+                    <form onsubmit="event.preventDefault(); alert('Message sent successfully!');" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Your Name</label>
+                                <input type="text" required placeholder="John Doe" 
+                                       class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-indigo-500 transition">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Your Email</label>
+                                <input type="email" required placeholder="john@example.com" 
+                                       class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-indigo-500 transition">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">Subject</label>
+                            <input type="text" required placeholder="Project Inquiry / Freelance Web Dev" 
+                                   class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-indigo-500 transition">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">Message</label>
+                            <textarea rows="4" required placeholder="Tell me about your project scope, timeline, and goals..." 
+                                      class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-indigo-500 transition"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold text-sm shadow-xl shadow-indigo-500/20 hover:shadow-indigo-500/40 hover:opacity-95 transition duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800/80 py-8 px-6 text-center text-slate-500 text-xs">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© 2026 Chirag Panchal. All rights reserved.</p>
+            <div class="flex items-center gap-6">
+                <a href="#" class="hover:text-slate-300 transition-colors"><i class="fa-brands fa-github text-base"></i></a>
+                <a href="#" class="hover:text-slate-300 transition-colors"><i class="fa-brands fa-linkedin text-base"></i></a>
+                <a href="#" class="hover:text-slate-300 transition-colors"><i class="fa-brands fa-x-twitter text-base"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
