@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Atiya Khan | General Dentist & Dental Camp Specialist</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(14, 165, 233, 0.3);
+        }
+        .gradient-border {
+            position: relative;
+            background-clip: padding-box;
+        }
+        .gradient-border::before {
+            content: '';
+            position: absolute;
+            top: -2px; right: -2px; bottom: -2px; left: -2px;
+            z-index: -1;
+            background: linear-gradient(135deg, #06b6d4, #3b82f6, #ec4899);
+            border-radius: inherit;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-sky-500 selection:text-white">
+
+    <!-- Ambient Background Glows -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
+        <div class="absolute -top-40 -left-40 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl"></div>
+        <div class="absolute top-1/3 -right-40 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-40 left-1/3 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-tight text-white flex items-center gap-2">
+                <span class="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center text-white text-sm shadow-lg shadow-cyan-500/30">
+                    <i class="fa-solid font-black fa-tooth"></i>
+                </span>
+                <span>Dr. Atiya Khan</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
+                <a href="#impact" class="hover:text-cyan-400 transition-colors">Community Impact</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Testimonials</a>
+            </div>
+            <div>
+                <a href="#contact" class="hidden sm:inline-flex items-center px-5 py-2.5 rounded-full text-xs font-semibold bg-gradient-to-r from-cyan-500 to-blue-600 text-white hover:opacity-90 transition-all shadow-md shadow-cyan-500/20">
+                    Get In Touch
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative z-10 pt-32 pb-20 md:pt-44 md:pb-32 max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Left Text Column -->
+            <div class="lg:col-span-7 space-y-8">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 text-xs font-medium text-cyan-400 backdrop-blur-md">
+                    <span class="flex h-2 w-2 rounded-full bg-cyan-400 animate-ping"></span>
+                    <span>General Dentist (Camp) • Smile Foundation</span>
+                </div>
+                
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight text-white">
+                    Championing Dental Wellness & <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-sky-400 to-indigo-500">Community Health</span>
+                </h1>
+                
+                <p class="text-lg text-slate-400 leading-relaxed max-w-2xl">
+                    Dedicated to extending high-quality preventive, restorative, and educational oral healthcare to diverse communities through organized dental camps and clinical excellence.
+                </p>
+
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <a href="#contact" class="px-7 py-3.5 rounded-xl font-semibold text-sm bg-gradient-to-r from-cyan-500 via-blue-600 to-indigo-600 text-white hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300">
+                        Book Consultation / Outreach
+                    </a>
+                    <a href="#services" class="px-7 py-3.5 rounded-xl font-semibold text-sm bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-700 transition-all duration-300">
+                        Explore Expertise
+                    </a>
+                </div>
+
+                <!-- Trust Badges / Quick Stats -->
+                <div class="pt-8 grid grid-cols-3 gap-6 border-t border-slate-800/80">
+                    <div>
+                        <div class="text-2xl font-bold text-white">5,000+</div>
+                        <div class="text-xs text-slate-400 mt-1">Patients Treated</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-white">50+</div>
+                        <div class="text-xs text-slate-400 mt-1">Outreach Camps</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-white">100%</div>
+                        <div class="text-xs text-slate-400 mt-1">Care & Commitment</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Profile Avatar Column -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative">
+                    <!-- Glowing frame -->
+                    <div class="absolute -inset-1.5 bg-gradient-to-r from-cyan-500 via-blue-600 to-indigo-600 rounded-3xl blur-xl opacity-60 animate-pulse"></div>
+                    
+                    <div class="relative bg-slate-900 border border-slate-800 p-4 rounded-3xl backdrop-blur-xl">
+                        <img src="https://ui-avatars.com/api/?name=Dr.+Atiya+Khan&size=200&background=0D8ABC&color=fff&bold=true" 
+                             alt="Dr. Atiya Khan" 
+                             class="w-64 h-64 sm:w-80 sm:h-80 rounded-2xl object-cover shadow-2xl mx-auto">
+                             
+                        <div class="mt-4 p-4 rounded-xl bg-slate-950/80 border border-slate-800/80 text-center">
+                            <h3 class="text-lg font-bold text-white">Dr. Atiya Khan</h3>
+                            <p class="text-xs text-slate-400">General Dentist (Camp) at Smile Foundation</p>
+                            <div class="flex justify-center gap-3 mt-3 text-slate-400 text-sm">
+                                <span class="hover:text-cyan-400 transition-colors"><i class="fa-solid fa-award"></i> Registered Dental Surgeon</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="relative z-10 py-20 bg-slate-900/40 border-y border-slate-800/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-6">
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 group">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Dental Healthcare" 
+                             class="w-full h-[420px] object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-slate-900/90 backdrop-blur-md border border-slate-800">
+                            <p class="text-xs text-cyan-400 font-semibold uppercase tracking-wider">Mission Statement</p>
+                            <p class="text-sm text-slate-200 mt-1">"Empowering underserviced communities through preventive oral care, early diagnosis, and accessible dental treatments."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-block text-xs font-semibold uppercase tracking-wider text-cyan-400 bg-cyan-500/10 px-3 py-1 rounded-full border border-cyan-500/20">
+                        About Dr. Khan
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white">
+                        Dedicated Dental Professional Leading Outreach Initiatives
+                    </h2>
+                    <p class="text-slate-400 leading-relaxed text-sm">
+                        As a General Dentist leading camp initiatives at <strong>Smile Foundation</strong>, Dr. Atiya Khan brings compassion, clinical accuracy, and preventive care strategies to populations in need. She specializes in conducting comprehensive dental check-ups, administering essential treatments, and organizing community awareness camps.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <i class="fa-solid fa-hands-holding-child text-cyan-400 text-xl mb-2"></i>
+                            <h4 class="font-semibold text-white text-sm">Community Focus</h4>
+                            <p class="text-xs text-slate-400 mt-1">Delivering clinical excellence directly to underserved regions.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <i class="fa-solid fa-kit-medical text-cyan-400 text-xl mb-2"></i>
+                            <h4 class="font-semibold text-white text-sm">Preventive Care</h4>
+                            <p class="text-xs text-slate-400 mt-1">Promoting early detection and long-term oral hygiene practice.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services" class="relative z-10 py-20 max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+            <span class="text-xs font-semibold uppercase tracking-wider text-cyan-400 bg-cyan-500/10 px-3 py-1 rounded-full border border-cyan-500/20">
+                Core Clinical Capabilities
+            </span>
+            <h2 class="text-3xl sm:text-4xl font-bold text-white">Comprehensive Dental Services</h2>
+            <p class="text-slate-400 text-sm">Combining clinical accuracy with gentle care in every environment.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Card 1 -->
+            <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 hover:-translate-y-1 group">
+                <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-xl mb-6 group-hover:bg-cyan-500 group-hover:text-white transition-all">
+                    <i class="fa-solid fa-campground"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Community Dental Camps</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Organizing and executing large-scale mobile dental camps equipped for screenings, treatments, and referrals in outreach programs.
+                </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 hover:-translate-y-1 group">
+                <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-xl mb-6 group-hover:bg-cyan-500 group-hover:text-white transition-all">
+                    <i class="fa-solid fa-tooth"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">General & Preventive Dentistry</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Comprehensive examinations, routine cleanings, fluoride treatments, and scaling to preserve tooth health and prevent decay.
+                </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 hover:-translate-y-1 group">
+                <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-xl mb-6 group-hover:bg-cyan-500 group-hover:text-white transition-all">
+                    <i class="fa-solid fa-microscope"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Oral Diagnostics & Screening</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Precise diagnosis of dental caries, periodontal diseases, and initial screening for oral mucosal lesions.
+                </p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 hover:-translate-y-1 group">
+                <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-xl mb-6 group-hover:bg-cyan-500 group-hover:text-white transition-all">
+                    <i class="fa-solid fa-fill-drip"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Restorative Procedures</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Composite and amalgam cavity fillings, temporary restorations, and immediate relief treatments for dental pain.
+                </p>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 hover:-translate-y-1 group">
+                <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-xl mb-6 group-hover:bg-cyan-500 group-hover:text-white transition-all">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Oral Health Workshops</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Educational sessions for children and adults focusing on proper brushing techniques, diet habits, and preventive oral care.
+                </p>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 hover:-translate-y-1 group">
+                <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-xl mb-6 group-hover:bg-cyan-500 group-hover:text-white transition-all">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Emergency Care Relief</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    On-site management of acute toothaches, dental trauma stabilization, and referral management to specialized centers.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Testimonials / Endorsements Section -->
+    <section id="testimonials" class="relative z-10 py-20 bg-slate-900/40 border-t border-slate-800/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <span class="text-xs font-semibold uppercase tracking-wider text-cyan-400 bg-cyan-500/10 px-3 py-1 rounded-full border border-cyan-500/20">
+                    Endorsements & Feedback
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white">Recognized for Compassionate Care</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-4">
+                    <div class="flex text-amber-400 text-sm gap-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-xs leading-relaxed italic">
+                        "Dr. Atiya Khan's dedication during our community outreach program was exemplary. She treated hundreds of patients with extreme care, patience, and professional thoroughness."
+                    </p>
+                    <div class="pt-2 border-t border-slate-800">
+                        <div class="font-bold text-white text-sm">Smile Foundation Lead Coordinator</div>
+                        <div class="text-xs text-slate-500">Outreach Operations</div>
+                    </div>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-4">
+                    <div class="flex text-amber-400 text-sm gap-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-xs leading-relaxed italic">
+                        "Her gentle bedside manner puts even the most anxious dental patients at ease. She makes oral health education simple and engaging for children."
+                    </p>
+                    <div class="pt-2 border-t border-slate-800">
+                        <div class="font-bold text-white text-sm">Community Volunteer</div>
+                        <div class="text-xs text-slate-500">Health Camp Initiative</div>
+                    </div>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-4">
+                    <div class="flex text-amber-400 text-sm gap-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-xs leading-relaxed italic">
+                        "Dr. Khan combines exceptional diagnostic skills with real empathy. Her contributions to the dental camps have impacted thousands of lives."
+                    </p>
+                    <div class="pt-2 border-t border-slate-800">
+                        <div class="font-bold text-white text-sm">Senior Dental Consultant</div>
+                        <div class="text-xs text-slate-500">Healthcare Partner</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="relative z-10 py-20 max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+            
+            <div class="lg:col-span-5 space-y-6">
+                <span class="text-xs font-semibold uppercase tracking-wider text-cyan-400 bg-cyan-500/10 px-3 py-1 rounded-full border border-cyan-500/20">
+                    Get in Touch
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white">Let's Connect for Dental Outreach & Care</h2>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Interested in organizing a community dental camp, professional collaboration, or consultation? Reach out directly using the form or connection details.
+                </p>
+
+                <div class="space-y-4 pt-4">
+                    <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                        <div class="w-10 h-10 rounded-lg bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400">
+                            <i class="fa-solid fa-building-ngo"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs text-slate-400">Organization</div>
+                            <div class="text-sm font-semibold text-white">Smile Foundation</div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                        <div class="w-10 h-10 rounded-lg bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400">
+                            <i class="fa-solid fa-user-doctor"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs text-slate-400">Specialty</div>
+                            <div class="text-sm font-semibold text-white">General Dentistry & Camp Operations</div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                        <div class="w-10 h-10 rounded-lg bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400">
+                            <i class="fa-solid fa-calendar-check"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs text-slate-400">Network Connected</div>
+                            <div class="text-sm font-semibold text-white">27 Aug 2026</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-7">
+                <form onsubmit="event.preventDefault(); alert('Thank you for reaching out to Dr. Atiya Khan!');" class="p-8 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-5 backdrop-blur-xl">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">Your Name</label>
+                            <input type="text" placeholder="John Doe" required class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-cyan-500 transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">Email Address</label>
+                            <input type="email" placeholder="john@example.com" required class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-cyan-500 transition-colors">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 mb-2">Subject</label>
+                        <input type="text" placeholder="Dental Camp Request / Professional Collaboration" required class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-cyan-500 transition-colors">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 mb-2">Message</label>
+                        <textarea rows="4" placeholder="How can Dr. Atiya Khan assist you?" required class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-cyan-500 transition-colors"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full py-3.5 rounded-xl text-sm font-semibold bg-gradient-to-r from-cyan-500 via-blue-600 to-indigo-600 text-white hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="relative z-10 border-t border-slate-800/80 bg-slate-950 py-8">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+            <div>
+                © 2026 Dr. Atiya Khan • General Dentist (Camp) at Smile Foundation. All rights reserved.
+            </div>
+            <div class="flex gap-6">
+                <a href="#about" class="hover:text-slate-300 transition-colors">About</a>
+                <a href="#services" class="hover:text-slate-300 transition-colors">Services</a>
+                <a href="#contact" class="hover:text-slate-300 transition-colors">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
