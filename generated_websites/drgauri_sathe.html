@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Gauri Sathe | Patient Engagement Manager</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            cyan: '#0D8ABC',
+                            teal: '#06b6d4',
+                            indigo: '#6366f1',
+                            accent: '#38bdf8',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(13, 138, 188, 0.35);
+        }
+        .glow-effect-lg {
+            box-shadow: 0 0 80px -15px rgba(99, 102, 241, 0.4);
+        }
+        .bg-grid-pattern {
+            background-image: radial-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+            background-size: 32px 32px;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-brand-cyan selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-brand-cyan to-indigo-500 flex items-center justify-center font-bold text-white text-lg shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform duration-300">
+                    GS
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-slate-100 text-lg leading-tight tracking-tight">Dr. Gauri Sathe</span>
+                    <span class="text-xs text-brand-cyan font-medium">Clove Dental</span>
+                </div>
+            </a>
+            
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-brand-cyan transition-colors">About</a>
+                <a href="#expertise" class="hover:text-brand-cyan transition-colors">Expertise</a>
+                <a href="#services" class="hover:text-brand-cyan transition-colors">Services</a>
+                <a href="#testimonials" class="hover:text-brand-cyan transition-colors">Endorsements</a>
+            </div>
+
+            <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-cyan-600 via-brand-cyan to-indigo-600 hover:from-cyan-500 hover:to-indigo-500 transition-all duration-300 shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:-translate-y-0.5">
+                <span>Connect Directly</span>
+                <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen pt-32 pb-20 flex items-center justify-center overflow-hidden bg-grid-pattern">
+        <!-- Radial Gradient Blur Background -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-cyan-500/20 via-indigo-500/10 to-pink-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+                
+                <!-- Left Details Column -->
+                <div class="flex-1 text-center lg:text-left space-y-6">
+                    <div class="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 text-slate-300 text-sm font-medium backdrop-blur-md">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        <span>Patient Engagement Manager @ Clove Dental</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.15]">
+                        Redefining Patient Care <br>
+                        <span class="bg-gradient-to-r from-cyan-400 via-brand-cyan to-indigo-400 bg-clip-text text-transparent">
+                            Through Excellence & Empathy
+                        </span>
+                    </h1>
+
+                    <p class="text-slate-400 text-lg sm:text-xl max-w-2xl mx-auto lg:mx-0 leading-relaxed font-light">
+                        Driving strategic patient engagement initiatives, elevating service quality standards, and building enduring trust across healthcare networks at Clove Dental.
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#about" class="w-full sm:w-auto px-8 py-4 rounded-xl text-base font-semibold text-white bg-gradient-to-r from-cyan-600 via-brand-cyan to-indigo-600 hover:opacity-95 transition-all shadow-xl shadow-cyan-500/25 text-center">
+                            Explore Profile
+                        </a>
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl text-base font-semibold text-slate-300 bg-slate-900/80 hover:bg-slate-800/80 border border-slate-800 transition-all backdrop-blur-md text-center hover:text-white">
+                            Get In Touch
+                        </a>
+                    </div>
+
+                    <!-- Trust Stats Badge Grid -->
+                    <div class="pt-8 border-t border-slate-800/80 grid grid-cols-2 sm:grid-cols-3 gap-6 text-left">
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-bold text-slate-100">98%</p>
+                            <p class="text-xs text-slate-400 mt-1">Patient Satisfaction</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-bold text-slate-100">10k+</p>
+                            <p class="text-xs text-slate-400 mt-1">Care Touchpoints</p>
+                        </div>
+                        <div class="col-span-2 sm:col-span-1">
+                            <p class="text-2xl sm:text-3xl font-bold text-slate-100">Clove Dental</p>
+                            <p class="text-xs text-slate-400 mt-1">Healthcare Leadership</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Avatar & Hero Image -->
+                <div class="flex-1 flex justify-center items-center relative">
+                    <div class="relative group">
+                        <!-- Dual Glowing Gradient Rings -->
+                        <div class="absolute -inset-1.5 bg-gradient-to-r from-cyan-500 via-indigo-500 to-pink-500 rounded-full blur-xl opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+                        <div class="absolute -inset-1 bg-gradient-to-r from-brand-cyan to-indigo-600 rounded-full blur-sm"></div>
+                        
+                        <!-- Avatar Frame -->
+                        <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden p-2 bg-slate-950 border border-slate-800">
+                            <img src="https://ui-avatars.com/api/?name=Dr.Gauri+Sathe&size=200&background=0D8ABC&color=fff&bold=true" 
+                                 alt="Dr. Gauri Sathe" 
+                                 class="w-full h-full object-cover rounded-full transform group-hover:scale-105 transition duration-500">
+                        </div>
+
+                        <!-- Floating Glassmorphism Badge -->
+                        <div class="absolute -bottom-4 -right-2 sm:bottom-4 sm:right-0 bg-slate-900/90 border border-slate-800 backdrop-blur-xl p-4 rounded-2xl shadow-2xl flex items-center space-x-3">
+                            <div class="w-10 h-10 rounded-lg bg-emerald-500/20 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
+                                <i class="fa-solid fa-tooth text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Healthcare Specialty</p>
+                                <p class="text-sm font-semibold text-slate-200">Patient Experience</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-slate-950 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                
+                <!-- Image Container with Glass Overlay -->
+                <div class="relative">
+                    <div class="relative rounded-3xl overflow-hidden border border-slate-800 shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Clinical Dental Care" 
+                             class="w-full h-[450px] object-cover filter brightness-90 hover:scale-105 transition duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                    </div>
+                    
+                    <!-- Overlay Card -->
+                    <div class="absolute bottom-6 left-6 right-6 p-6 bg-slate-900/80 backdrop-blur-xl rounded-2xl border border-slate-800">
+                        <p class="text-brand-cyan text-sm font-semibold tracking-wider uppercase mb-1">Mission Driven</p>
+                        <p class="text-slate-200 font-medium text-sm sm:text-base">
+                            "Transforming dental visits into seamlessly reassuring, empathetic, and patient-centered experiences."
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Text Details -->
+                <div class="space-y-6">
+                    <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-brand-cyan text-xs font-semibold uppercase tracking-wider">
+                        <span>About Dr. Gauri Sathe</span>
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+                        Pioneering Patient Experience & Strategic Healthcare Operations
+                    </h2>
+
+                    <p class="text-slate-300 leading-relaxed font-light">
+                        As the <span class="text-brand-cyan font-semibold">Patient Engagement Manager at Clove Dental</span>, Dr. Gauri Sathe leads initiatives at the intersection of clinical excellence, strategic communication, and high-touch patient care. 
+                    </p>
+
+                    <p class="text-slate-400 leading-relaxed font-light">
+                        With deep domain understanding in dental healthcare operations, Dr. Sathe focuses on bridging communication gaps, building long-term patient loyalty, and refining operational workflows to ensure every individual receives outstanding treatment and empathetic support.
+                    </p>
+
+                    <!-- Key Pillars List -->
+                    <div class="grid sm:grid-cols-2 gap-4 pt-2">
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 flex items-start space-x-3">
+                            <i class="fa-solid fa-heart-circle-check text-brand-cyan text-xl mt-1"></i>
+                            <div>
+                                <h4 class="text-slate-100 font-semibold text-sm">Patient Care Journey</h4>
+                                <p class="text-slate-400 text-xs mt-1">End-to-end satisfaction & comfort protocols.</p>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 flex items-start space-x-3">
+                            <i class="fa-solid fa-chart-line text-brand-cyan text-xl mt-1"></i>
+                            <div>
+                                <h4 class="text-slate-100 font-semibold text-sm">Retention Strategies</h4>
+                                <p class="text-slate-400 text-xs mt-1">Data-driven patient recall and relationship building.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / Pillars Grid Section -->
+    <section id="services" class="py-24 bg-slate-900/50 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-brand-cyan text-xs font-semibold tracking-widest uppercase">Core Strengths</span>
+                <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white mt-2">Areas of Executive Leadership</h2>
+                <p class="text-slate-400 mt-4 text-base">Delivering consistent clinical quality and engagement frameworks across healthcare systems.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Card 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-brand-cyan/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-brand-cyan text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-user-doctor"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-100 mb-3">Patient Relations & Advocacy</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Establishing gold-standard communication channels to manage patient expectations, improve clinical outcomes, and resolve inquiries efficiently.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-brand-cyan/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-hand-holding-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-100 mb-3">Clinical Care Programs</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Designing customized patient outreach strategies and follow-up care workflows tailored to dental treatments and preventative healthcare.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-brand-cyan/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-100 mb-3">Feedback Architecture</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Implementing robust patient feedback systems and Net Promoter Score (NPS) methodologies to drive continuous operational improvement.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-brand-cyan/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-hospital-user"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-100 mb-3">Clinic Network Training</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Mentoring clinic teams and support staff on empathetic patient interaction protocols and brand quality standards.
+                    </p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-brand-cyan/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-100 mb-3">Brand & Service Trust</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Elevating Clove Dental's reputation by championing ethical patient engagement and transparent care methodologies.
+                    </p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-brand-cyan/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-cubes"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-100 mb-3">Operational Synergy</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Aligning clinical staff with management teams to optimize patient scheduling, treatment plans, and post-care checkups.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-slate-950 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-brand-cyan text-xs font-semibold tracking-widest uppercase">Endorsements</span>
+                <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white mt-2">Recognized for Excellence</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 space-x-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Dr. Gauri's dedication to improving the overall patient journey at Clove Dental has raised our benchmark for care. She bridges empathy and management seamlessly."
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-6 border-t border-slate-800 flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-cyan-500/20 flex items-center justify-center text-brand-cyan font-bold text-sm">
+                            CD
+                        </div>
+                        <div>
+                            <p class="text-slate-200 text-sm font-semibold">Clinical Lead</p>
+                            <p class="text-slate-400 text-xs">Clove Dental Network</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 space-x-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Her innovative approach to patient engagement and feedback management transformed how our clinic interacts with returning patients."
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-6 border-t border-slate-800 flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 flex items-center justify-center text-indigo-400 font-bold text-sm">
+                            OM
+                        </div>
+                        <div>
+                            <p class="text-slate-200 text-sm font-semibold">Operations Manager</p>
+                            <p class="text-slate-400 text-xs">Healthcare Systems</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 space-x-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Extremely professional, deeply empathetic, and efficient. Dr. Sathe ensures that patients feel listened to and truly valued."
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-6 border-t border-slate-800 flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-pink-500/20 flex items-center justify-center text-pink-400 font-bold text-sm">
+                            PT
+                        </div>
+                        <div>
+                            <p class="text-slate-200 text-sm font-semibold">Patient Advocate</p>
+                            <p class="text-slate-400 text-xs">Regional Dental Care</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Connect Section -->
+    <section id="contact" class="py-24 bg-slate-900/30 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16">
+                
+                <!-- Direct Details Side -->
+                <div class="space-y-8">
+                    <div>
+                        <span class="text-brand-cyan text-xs font-semibold tracking-widest uppercase">Get in Touch</span>
+                        <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white mt-2">Connect with Dr. Gauri Sathe</h2>
+                        <p class="text-slate-400 mt-4 leading-relaxed font-light">
+                            Interested in collaborating on healthcare engagement, patient experience strategies, or learning more about Clove Dental's care frameworks?
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4 p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+                            <div class="w-12 h-12 rounded-lg bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-brand-cyan text-lg">
+                                <i class="fa-solid fa-briefcase"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Current Role</p>
+                                <p class="text-slate-200 font-semibold">Patient Engagement Manager at Clove Dental</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4 p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+                            <div class="w-12 h-12 rounded-lg bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-lg">
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Network Connection</p>
+                                <p class="text-slate-200 font-semibold">Connected on 28 Aug 2026</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4 p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+                            <div class="w-12 h-12 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 text-lg">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Location</p>
+                                <p class="text-slate-200 font-semibold">India | Clove Dental Network</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Glassmorphism Form Container -->
+                <div class="bg-slate-900/70 backdrop-blur-xl border border-slate-800 p-8 rounded-3xl shadow-2xl">
+                    <form onsubmit="event.preventDefault(); alert('Message sent successfully!');" class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium text-slate-300 mb-2">Your Name</label>
+                            <input type="text" placeholder="Dr. John Doe" required class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-brand-cyan transition-colors">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-slate-300 mb-2">Email Address</label>
+                            <input type="email" placeholder="john@example.com" required class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-brand-cyan transition-colors">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-slate-300 mb-2">Subject</label>
+                            <input type="text" placeholder="Patient Engagement Inquiry" required class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-brand-cyan transition-colors">
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-slate-300 mb-2">Message</label>
+                            <textarea rows="4" placeholder="Share details about your message or inquiry..." required class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-brand-cyan transition-colors resize-none"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl text-base font-semibold text-white bg-gradient-to-r from-cyan-600 via-brand-cyan to-indigo-600 hover:opacity-95 transition-all shadow-lg shadow-cyan-500/25">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-slate-950 border-t border-slate-800/80 text-slate-400 text-sm">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-lg bg-brand-cyan flex items-center justify-center font-bold text-white text-xs">
+                    GS
+                </div>
+                <span class="font-medium text-slate-300">Dr. Gauri Sathe &bull; Patient Engagement Leader</span>
+            </div>
+
+            <p class="text-xs text-slate-500">
+                &copy; 2026 Dr. Gauri Sathe. All rights reserved. Professional Showcase Portfolio.
+            </p>
+
+            <a href="#" class="p-2.5 rounded-full bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-300 transition-colors">
+                <i class="fa-solid fa-arrow-up text-xs"></i>
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
