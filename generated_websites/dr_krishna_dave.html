@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr Krishna Dave | General Dentist & Implant Specialist</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            cyan: '#0D8ABC',
+                            sky: '#38bdf8',
+                            dark: '#020617',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(13, 138, 188, 0.35);
+        }
+        .glow-card:hover {
+            box-shadow: 0 0 30px -5px rgba(56, 189, 248, 0.25);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-white">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-500 flex items-center justify-center text-white shadow-lg shadow-cyan-500/30 group-hover:scale-105 transition-transform duration-300">
+                        <i class="fa-solid fa-[#0D8ABC] fa-tooth text-xl text-white"></i>
+                    </div>
+                    <div>
+                        <span class="font-bold text-lg tracking-tight block text-white">Dr. Krishna Dave</span>
+                        <span class="text-xs text-cyan-400 font-medium block">32 Pearls Dental Clinic</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav -->
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#about" class="text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors">About</a>
+                    <a href="#services" class="text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors">Services</a>
+                    <a href="#expertise" class="text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors">Expertise</a>
+                    <a href="#testimonials" class="text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors">Testimonials</a>
+                    <a href="#contact" class="px-5 py-2.5 rounded-full text-sm font-semibold bg-gradient-to-r from-cyan-500 via-sky-500 to-indigo-500 text-white shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 hover:scale-105 transition-all duration-300">
+                        Book Consultation
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-btn" class="md:hidden text-slate-300 hover:text-white focus:outline-none p-2">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900/95 border-b border-slate-800 px-6 py-4 space-y-3">
+            <a href="#about" class="block text-slate-300 hover:text-cyan-400 font-medium py-1">About</a>
+            <a href="#services" class="block text-slate-300 hover:text-cyan-400 font-medium py-1">Services</a>
+            <a href="#expertise" class="block text-slate-300 hover:text-cyan-400 font-medium py-1">Expertise</a>
+            <a href="#testimonials" class="block text-slate-300 hover:text-cyan-400 font-medium py-1">Testimonials</a>
+            <a href="#contact" class="block text-center w-full py-2.5 mt-2 rounded-xl text-sm font-semibold bg-gradient-to-r from-cyan-500 to-indigo-500 text-white">
+                Book Consultation
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden">
+        <!-- Background Ambient Glows -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute top-1/3 right-10 w-[400px] h-[400px] bg-purple-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Left Column Text Content -->
+                <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-cyan-500/30 text-cyan-400 text-xs sm:text-sm font-semibold tracking-wide backdrop-blur-xl">
+                        <span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping"></span>
+                        32 Pearls Multispeciality Dental Clinic & Implant Centre
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.15]">
+                        Mastery in Dentistry. <br>
+                        <span class="gradient-text">Precision in Every Smile.</span>
+                    </h1>
+
+                    <p class="text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-light">
+                        Welcome to the practice of <strong class="text-white font-semibold">Dr. Krishna Dave</strong>. Dedicated to exceptional oral healthcare, advanced dental implantology, and transformative smile aesthetics with modern, painless clinical solutions.
+                    </p>
+
+                    <!-- CTAs & Action Buttons -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl font-semibold bg-gradient-to-r from-cyan-500 via-sky-500 to-indigo-500 text-white shadow-xl shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:scale-[1.02] transition-all duration-300 flex items-center justify-center gap-3">
+                            <i class="fa-regular fa-calendar-check text-lg"></i>
+                            Schedule Appointment
+                        </a>
+                        <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-xl font-semibold bg-slate-900/80 hover:bg-slate-800 text-slate-200 border border-slate-700/80 hover:border-slate-600 transition-all duration-300 flex items-center justify-center gap-2">
+                            Explore Treatments
+                            <i class="fa-solid fa-arrow-right text-sm text-cyan-400"></i>
+                        </a>
+                    </div>
+
+                    <!-- Trust Badges -->
+                    <div class="pt-6 border-t border-slate-800/80 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0 text-left">
+                        <div>
+                            <div class="text-2xl font-bold text-white">100%</div>
+                            <div class="text-xs text-slate-400">Patient Comfort Focus</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-white">Advanced</div>
+                            <div class="text-xs text-slate-400">Implant Technology</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-white">Top Rated</div>
+                            <div class="text-xs text-slate-400">Dental Clinic</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column Profile Card Frame -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative group">
+                        <!-- Glowing Outer Ring Frame -->
+                        <div class="absolute -inset-1.5 bg-gradient-to-r from-cyan-500 via-purple-500 to-indigo-500 rounded-3xl blur-xl opacity-70 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+                        
+                        <!-- Main Frame -->
+                        <div class="relative bg-slate-900/90 border border-slate-800 p-8 rounded-3xl backdrop-blur-xl text-center flex flex-col items-center shadow-2xl max-w-sm">
+                            
+                            <!-- Profile Avatar with Double Gradient Ring -->
+                            <div class="relative mb-6">
+                                <div class="w-36 h-36 rounded-full p-1 bg-gradient-to-tr from-cyan-400 via-sky-500 to-indigo-500 shadow-xl">
+                                    <img src="https://ui-avatars.com/api/?name=Dr+Krishna+Dave&size=200&background=0D8ABC&color=fff&bold=true" 
+                                         alt="Dr Krishna Dave" 
+                                         class="w-full h-full rounded-full object-cover bg-slate-950">
+                                </div>
+                                <span class="absolute bottom-1 right-1 w-6 h-6 bg-emerald-500 border-4 border-slate-900 rounded-full" title="Available for appointments"></span>
+                            </div>
+
+                            <h2 class="text-2xl font-bold text-white">Dr. Krishna Dave</h2>
+                            <p class="text-cyan-400 font-medium text-sm mt-1">General Dentist & Dental Surgeon</p>
+                            
+                            <div class="mt-4 px-4 py-2 rounded-lg bg-slate-800/60 border border-slate-700/60 text-xs text-slate-300 w-full">
+                                <i class="fa-solid fa-hospital-user text-cyan-400 mr-2"></i>
+                                32 Pearls Multispeciality Dental Clinic
+                            </div>
+
+                            <div class="mt-6 pt-6 border-t border-slate-800/80 w-full flex items-center justify-around text-slate-400 text-xs">
+                                <span class="flex items-center gap-1.5"><i class="fa-solid fa-shield-halved text-cyan-400"></i> Certified Specialist</span>
+                                <span class="flex items-center gap-1.5"><i class="fa-solid fa-star text-amber-400"></i> 4.9/5 Rating</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- METRICS & HIGHLIGHTS BANNER -->
+    <section class="py-10 bg-slate-900/40 border-y border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-4 rounded-2xl bg-slate-900/60 border border-slate-800">
+                    <p class="text-3xl lg:text-4xl font-extrabold text-cyan-400">5,000+</p>
+                    <p class="text-xs sm:text-sm text-slate-400 mt-1 font-medium">Happy Smiles Transformed</p>
+                </div>
+                <div class="p-4 rounded-2xl bg-slate-900/60 border border-slate-800">
+                    <p class="text-3xl lg:text-4xl font-extrabold text-sky-400">100%</p>
+                    <p class="text-xs sm:text-sm text-slate-400 mt-1 font-medium">Sterilization & Hygiene</p>
+                </div>
+                <div class="p-4 rounded-2xl bg-slate-900/60 border border-slate-800">
+                    <p class="text-3xl lg:text-4xl font-extrabold text-indigo-400">15+</p>
+                    <p class="text-xs sm:text-sm text-slate-400 mt-1 font-medium">Specialized Dental Services</p>
+                </div>
+                <div class="p-4 rounded-2xl bg-slate-900/60 border border-slate-800">
+                    <p class="text-3xl lg:text-4xl font-extrabold text-purple-400">4.9 ★</p>
+                    <p class="text-xs sm:text-sm text-slate-400 mt-1 font-medium">Patient Satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT & CLINIC EXPERTISE SECTION -->
+    <section id="about" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Clinical Image Showcase -->
+                <div class="lg:col-span-6">
+                    <div class="relative group">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-indigo-500 rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-500"></div>
+                        <div class="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900">
+                            <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Modern Dental Clinic Care" 
+                                 class="w-full h-[420px] object-cover group-hover:scale-105 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                            <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-slate-900/90 backdrop-blur-md border border-slate-800">
+                                <p class="text-sm font-semibold text-white">32 Pearls Multispeciality Dental Clinic And Implant Centre</p>
+                                <p class="text-xs text-slate-400">Equipped with cutting-edge diagnostics & gentle care protocols</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 text-cyan-400 text-xs font-bold uppercase tracking-widest">
+                        <i class="fa-solid fa-user-doctor"></i> About Dr. Krishna Dave
+                    </div>
+                    
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white leading-tight">
+                        Dedicated to Delivering Painless, High-Precision Dental Excellence
+                    </h2>
+
+                    <p class="text-slate-300 leading-relaxed font-light">
+                        Dr. Krishna Dave is a renowned General Dentist at <strong>32 Pearls Multispeciality Dental Clinic And Implant Centre</strong>. With a deep passion for preventive, restorative, and cosmetic dentistry, Dr. Dave merges clinical mastery with a warm, compassionate approach.
+                    </p>
+
+                    <p class="text-slate-300 leading-relaxed font-light">
+                        Whether performing complex dental implant procedures, root canals, or routine smile enhancement, Dr. Dave ensures every patient receives custom tailored care designed for optimal health and long-term aesthetic perfection.
+                    </p>
+
+                    <!-- Feature Points -->
+                    <div class="grid sm:grid-cols-2 gap-4 pt-4">
+                        <div class="flex items-start gap-3 p-3 rounded-xl bg-slate-900/50 border border-slate-800/80">
+                            <i class="fa-solid fa-microscope text-cyan-400 text-lg mt-1"></i>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Advanced Diagnostics</h4>
+                                <p class="text-xs text-slate-400">Precision imaging for accurate treatment planning</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 p-3 rounded-xl bg-slate-900/50 border border-slate-800/80">
+                            <i class="fa-solid fa-heart-pulse text-cyan-400 text-lg mt-1"></i>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Painless Dentistry</h4>
+                                <p class="text-xs text-slate-400">Gentle technique focused on complete comfort</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SPECIALIZED SERVICES GRID -->
+    <section id="services" class="py-24 bg-slate-900/30 relative border-t border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-cyan-400 text-xs font-bold uppercase tracking-widest">Clinical Care & Treatments</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2">Comprehensive Dental Solutions</h2>
+                <p class="text-slate-400 text-sm mt-3">Tailored treatments using state-of-the-art dental technology at 32 Pearls Dental Clinic.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service Card 1 -->
+                <div class="bg-slate-900/60 border border-slate-800 hover:border-cyan-500/50 rounded-2xl p-8 backdrop-blur-xl transition-all duration-300 hover:-translate-y-2 glow-card group">
+                    <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 group-hover:bg-cyan-500 group-hover:text-white transition-all duration-300 mb-6 shadow-lg shadow-cyan-500/10">
+                        <i class="fa-solid fa-tooth text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors">Dental Implants</h3>
+                    <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                        Permanent, natural-looking tooth replacements engineered for structural stability, aesthetic harmony, and seamless bite strength.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-cyan-400 mt-6 group-hover:translate-x-1 transition-transform">
+                        Learn More <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-slate-900/60 border border-slate-800 hover:border-cyan-500/50 rounded-2xl p-8 backdrop-blur-xl transition-all duration-300 hover:-translate-y-2 glow-card group">
+                    <div class="w-14 h-14 rounded-2xl bg-sky-500/10 border border-sky-500/30 flex items-center justify-center text-sky-400 group-hover:bg-sky-500 group-hover:text-white transition-all duration-300 mb-6 shadow-lg shadow-sky-500/10">
+                        <i class="fa-solid fa-wand-magic-sparkles text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white group-hover:text-sky-400 transition-colors">Cosmetic Dentistry</h3>
+                    <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                        Smile makeovers, porcelain veneers, professional whitening, and aesthetic shaping to give you radiant confidence.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-sky-400 mt-6 group-hover:translate-x-1 transition-transform">
+                        Learn More <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-slate-900/60 border border-slate-800 hover:border-cyan-500/50 rounded-2xl p-8 backdrop-blur-xl transition-all duration-300 hover:-translate-y-2 glow-card group">
+                    <div class="w-14 h-14 rounded-2xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300 mb-6 shadow-lg shadow-indigo-500/10">
+                        <i class="fa-solid fa-shield-virus text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white group-hover:text-indigo-400 transition-colors">Root Canal Therapy</h3>
+                    <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                        Painless endodontic therapy designed to eliminate infection, preserve natural teeth, and immediately restore comfort.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-indigo-400 mt-6 group-hover:translate-x-1 transition-transform">
+                        Learn More <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="bg-slate-900/60 border border-slate-800 hover:border-cyan-500/50 rounded-2xl p-8 backdrop-blur-xl transition-all duration-300 hover:-translate-y-2 glow-card group">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 group-hover:bg-purple-500 group-hover:text-white transition-all duration-300 mb-6 shadow-lg shadow-purple-500/10">
+                        <i class="fa-solid fa-teeth-open text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white group-hover:text-purple-400 transition-colors">Orthodontics & Aligners</h3>
+                    <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                        Clear aligners and orthodontic solutions for correcting teeth alignment, occlusion, and enhancing structural bite balance.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-purple-400 mt-6 group-hover:translate-x-1 transition-transform">
+                        Learn More <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="bg-slate-900/60 border border-slate-800 hover:border-cyan-500/50 rounded-2xl p-8 backdrop-blur-xl transition-all duration-300 hover:-translate-y-2 glow-card group">
+                    <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300 mb-6 shadow-lg shadow-emerald-500/10">
+                        <i class="fa-solid fa-notes-medical text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">Preventive Care</h3>
+                    <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                        Comprehensive oral examinations, ultrasonic scaling, digital X-rays, and preventive checkups to protect lifelong oral health.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-emerald-400 mt-6 group-hover:translate-x-1 transition-transform">
+                        Learn More <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="bg-slate-900/60 border border-slate-800 hover:border-cyan-500/50 rounded-2xl p-8 backdrop-blur-xl transition-all duration-300 hover:-translate-y-2 glow-card group">
+                    <div class="w-14 h-14 rounded-2xl bg-pink-500/10 border border-pink-500/30 flex items-center justify-center text-pink-400 group-hover:bg-pink-500 group-hover:text-white transition-all duration-300 mb-6 shadow-lg shadow-pink-500/10">
+                        <i class="fa-solid fa-teeth text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white group-hover:text-pink-400 transition-colors">Full Mouth Rehabilitation</h3>
+                    <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                        Multidisciplinary oral rehabilitation restoring complete functionality, structure, and aesthetic beauty for damaged smiles.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-pink-400 mt-6 group-hover:translate-x-1 transition-transform">
+                        Learn More <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-cyan-400 text-xs font-bold uppercase tracking-widest">Patient Feedback</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2">Endorsed by Delighted Patients</h2>
+                <p class="text-slate-400 text-sm mt-2">Read direct experiences from individuals treated by Dr. Krishna Dave.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-slate-900/60 border border-slate-800 p-8 rounded-2xl backdrop-blur-xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Dr. Krishna Dave made my implant procedure completely stress-free. The level of gentleness and precision at 32 Pearls Dental Clinic is second to none!"
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-slate-800/80 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 font-bold flex items-center justify-center text-sm">
+                            AP
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-white">Ananya P.</p>
+                            <p class="text-xs text-slate-500">Implant Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-slate-900/60 border border-slate-800 p-8 rounded-2xl backdrop-blur-xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Highly professional and meticulous dentist. Dr. Dave explained every step of my treatment clearly and the results exceeded my expectations."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-slate-800/80 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 font-bold flex items-center justify-center text-sm">
+                            RM
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-white">Rajesh M.</p>
+                            <p class="text-xs text-slate-500">Cosmetic Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-slate-900/60 border border-slate-800 p-8 rounded-2xl backdrop-blur-xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "The best dental experience I've had! 32 Pearls Clinic is super clean, modern, and Dr. Krishna is extraordinarily attentive and skilled."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-slate-800/80 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-emerald-500/20 text-emerald-400 font-bold flex items-center justify-center text-sm">
+                            SS
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-white">Sneha S.</p>
+                            <p class="text-xs text-slate-500">Preventive Care Patient</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT & APPOINTMENT SECTION -->
+    <section id="contact" class="py-24 bg-slate-900/40 relative border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <!-- Direct Details -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-cyan-400 text-xs font-bold uppercase tracking-widest">Get In Touch</span>
+                        <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2">Book Your Visit Today</h2>
+                        <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                            Ready for a healthier, more confident smile? Reach out to schedule a private consultation with Dr. Krishna Dave at 32 Pearls Multispeciality Dental Clinic.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800 flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400">
+                                <i class="fa-solid fa-hospital text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Practice Location</p>
+                                <p class="text-sm font-semibold text-white">32 Pearls Multispeciality Dental Clinic & Implant Centre</p>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800 flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400">
+                                <i class="fa-solid fa-clock text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Clinic Hours</p>
+                                <p class="text-sm font-semibold text-white">Mon - Sat: 09:30 AM - 08:30 PM</p>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800 flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400">
+                                <i class="fa-solid fa-user-check text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Consultation Status</p>
+                                <p class="text-sm font-semibold text-emerald-400">Accepting New Patients</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Card -->
+                <div class="lg:col-span-7">
+                    <form onsubmit="event.preventDefault(); alert('Thank you! Your consultation request has been submitted successfully.');" class="bg-slate-900/80 border border-slate-800 rounded-2xl p-8 backdrop-blur-xl space-y-6 glow-effect">
+                        <h3 class="text-xl font-bold text-white">Request Consultation</h3>
+                        
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Full Name</label>
+                                <input type="text" placeholder="John Doe" required class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Phone Number</label>
+                                <input type="tel" placeholder="+91 98765 43210" required class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                            </div>
+                        </div>
+
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Service Required</label>
+                                <select class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-300 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                                    <option>General Consultation</option>
+                                    <option>Dental Implants</option>
+                                    <option>Cosmetic Dentistry</option>
+                                    <option>Root Canal Treatment</option>
+                                    <option>Teeth Whitening</option>
+                                    <option>Other Services</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Preferred Date</label>
+                                <input type="date" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-300 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">Message or Notes (Optional)</label>
+                            <textarea rows="4" placeholder="Briefly describe your symptoms or inquiry..." class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-cyan-500 transition-colors text-sm"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl font-bold bg-gradient-to-r from-cyan-500 via-sky-500 to-indigo-500 text-white shadow-xl shadow-cyan-500/20 hover:shadow-cyan-500/40 hover:scale-[1.01] transition-all duration-300">
+                            Confirm Appointment Request
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-8 bg-slate-950 border-t border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p class="text-xs text-slate-500">
+                © <script>document.write(new Date().getFullYear())</script> Dr. Krishna Dave — 32 Pearls Multispeciality Dental Clinic. All rights reserved.
+            </p>
+            <div class="flex items-center gap-6 text-slate-400 text-sm">
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-linkedin text-lg"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-facebook text-lg"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-instagram text-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE TOGGLE SCRIPT FOR MOBILE MENU -->
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
