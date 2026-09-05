@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kushal Mevada | Founder - Kavish Spaces Design Studio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            cyan: '#0D8ABC',
+                            purple: '#8B5CF6',
+                            pink: '#EC4899',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .bg-grid-pattern {
+            background-image: radial-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+            background-size: 32px 32px;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(13, 138, 188, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white relative">
+
+    <!-- Ambient Background Glows -->
+    <div class="fixed top-0 left-1/4 w-96 h-96 bg-indigo-600/20 rounded-full blur-3xl pointer-events-none -z-10"></div>
+    <div class="fixed top-1/3 right-10 w-96 h-96 bg-cyan-600/15 rounded-full blur-3xl pointer-events-none -z-10"></div>
+    <div class="fixed bottom-10 left-1/3 w-96 h-96 bg-purple-600/20 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+    <!-- Background Grid -->
+    <div class="fixed inset-0 bg-grid-pattern opacity-40 pointer-events-none -z-10"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform duration-300">
+                    K
+                </div>
+                <div>
+                    <span class="text-lg font-bold tracking-tight text-white block leading-none">Kushal Mevada</span>
+                    <span class="text-xs text-slate-400 tracking-wider">KAVISH SPACES</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About Studio</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
+                <a href="#portfolio" class="hover:text-cyan-400 transition-colors">Portfolio Showcase</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Endorsements</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+            </div>
+
+            <!-- Header CTA -->
+            <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white font-semibold text-sm shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:scale-105 transition-all duration-300">
+                <span>Initiate Project</span>
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-36 pb-20 md:pt-48 md:pb-32 px-6 max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-12 gap-12 items-center">
+            
+            <!-- Hero Text Content -->
+            <div class="md:col-span-7 space-y-6">
+                <!-- Status Badge -->
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 backdrop-blur-xl text-xs font-semibold text-cyan-400 shadow-inner">
+                    <span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping"></span>
+                    <span>Founder & Creative Director</span>
+                </div>
+
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                    Crafting Next-Generation <br/>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-indigo-400 to-pink-500">
+                        Architectural & Spatial
+                    </span> Experiences.
+                </h1>
+
+                <p class="text-lg text-slate-400 leading-relaxed max-w-2xl">
+                    I am <strong class="text-slate-200">Kushal Mevada</strong>, Founder of <strong class="text-slate-200">Kavish Spaces Design Studio</strong>. We redefine modern environments through intelligent design, artistic symmetry, and transformative interior architecture.
+                </p>
+
+                <!-- CTAs -->
+                <div class="flex flex-wrap items-center gap-4 pt-4">
+                    <a href="#portfolio" class="px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-600 to-purple-600 text-white font-bold text-base shadow-xl shadow-indigo-500/20 hover:shadow-indigo-500/40 hover:-translate-y-0.5 transition-all duration-300 flex items-center gap-3">
+                        <span>Explore Selected Works</span>
+                        <i class="fa-solid fa-compass"></i>
+                    </a>
+                    <a href="#contact" class="px-8 py-4 rounded-xl bg-slate-900/80 hover:bg-slate-800 text-slate-200 font-semibold text-base border border-slate-800 hover:border-slate-700 transition-all duration-300 backdrop-blur-xl flex items-center gap-2">
+                        <i class="fa-regular fa-envelope text-cyan-400"></i>
+                        <span>Get In Touch</span>
+                    </a>
+                </div>
+
+                <!-- Trust Badges Metrics -->
+                <div class="pt-8 border-t border-slate-900 grid grid-cols-3 gap-6">
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-white">100+</div>
+                        <div class="text-xs text-slate-400 mt-1">Spatial Concepts Executed</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-white">100%</div>
+                        <div class="text-xs text-slate-400 mt-1">Client Satisfaction</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-white">Bespoke</div>
+                        <div class="text-xs text-slate-400 mt-1">Design Precision</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Image Frame -->
+            <div class="md:col-span-5 flex justify-center">
+                <div class="relative group">
+                    <!-- Glowing Outer Frame Rings -->
+                    <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-cyan-500 via-indigo-500 to-pink-500 blur-lg opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+                    <div class="absolute -inset-4 rounded-full bg-gradient-to-tr from-indigo-500 to-cyan-400 opacity-30 blur-2xl"></div>
+                    
+                    <!-- Avatar Outer Frame -->
+                    <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full p-2 bg-slate-950 border border-slate-800 overflow-hidden shadow-2xl flex items-center justify-center">
+                        <img 
+                            src="https://ui-avatars.com/api/?name=Kushal+Mevada&size=200&background=0D8ABC&color=fff&bold=true" 
+                            alt="Kushal Mevada" 
+                            class="w-full h-full object-cover rounded-full transform group-hover:scale-105 transition-transform duration-500"
+                        />
+                    </div>
+
+                    <!-- Floating Badge -->
+                    <div class="absolute -bottom-2 -right-2 bg-slate-900/90 border border-slate-800 backdrop-blur-xl px-4 py-2.5 rounded-2xl shadow-xl flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-lg bg-cyan-500/20 text-cyan-400 flex items-center justify-center">
+                            <i class="fa-solid fa-cube text-sm"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-white">Kavish Spaces</p>
+                            <p class="text-[10px] text-slate-400">Lead Design Studio</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 px-6 max-w-7xl mx-auto border-t border-slate-900">
+        <div class="grid md:grid-cols-12 gap-12 items-center">
+            
+            <!-- Industry Visual -->
+            <div class="md:col-span-6 relative">
+                <div class="relative rounded-3xl overflow-hidden border border-slate-800 bg-slate-900/60 shadow-2xl group">
+                    <img 
+                        src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=800&q=80" 
+                        alt="Design Studio Workspace" 
+                        class="w-full h-[420px] object-cover group-hover:scale-105 transition-transform duration-700 opacity-90 group-hover:opacity-100"
+                    />
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-6 left-6 right-6 p-6 bg-slate-900/80 backdrop-blur-xl rounded-2xl border border-slate-800">
+                        <p class="text-xs text-cyan-400 font-semibold tracking-wider uppercase mb-1">Architectural Excellence</p>
+                        <p class="text-sm text-slate-300">Merging ergonomics, aesthetics, and modern spatial technology to elevate human interaction.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Text -->
+            <div class="md:col-span-6 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-xs font-semibold text-indigo-400">
+                    <i class="fa-solid fa-user-check"></i>
+                    <span>Founder Profile</span>
+                </div>
+
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
+                    Visionary Leadership at Kavish Spaces Design Studio
+                </h2>
+
+                <p class="text-slate-400 leading-relaxed">
+                    At <span class="text-slate-200 font-semibold">Kavish Spaces Design Studio</span>, we believe environment shapes experience. As Founder, I guide our studio in crafting timeless, functional, and deeply captivating architectural and interior spaces.
+                </p>
+
+                <p class="text-slate-400 leading-relaxed">
+                    From luxury residential environments to innovative corporate ecosystems, our methodology centers on structural innovation, meticulous detail, and an unwavering commitment to client aspirations.
+                </p>
+
+                <!-- Core Pillars Grid -->
+                <div class="grid grid-cols-2 gap-4 pt-2">
+                    <div class="p-4 rounded-xl bg-slate-900/60 backdrop-blur-xl border border-slate-800">
+                        <i class="fa-solid fa-drafting-compass text-cyan-400 text-xl mb-2"></i>
+                        <h4 class="text-sm font-bold text-white">Precision Planning</h4>
+                        <p class="text-xs text-slate-400 mt-1">Smart layouts engineered for maximum fluidity and lifestyle integration.</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-slate-900/60 backdrop-blur-xl border border-slate-800">
+                        <i class="fa-solid fa-lightbulb text-indigo-400 text-xl mb-2"></i>
+                        <h4 class="text-sm font-bold text-white">Bespoke Aesthetics</h4>
+                        <p class="text-xs text-slate-400 mt-1">Tailored materials, lighting, and textures unique to each client brand.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 px-6 max-w-7xl mx-auto border-t border-slate-900">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-xs font-semibold text-cyan-400 mb-4">
+                <i class="fa-solid fa-layer-group"></i>
+                <span>Our Capabilities</span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
+                Comprehensive Design Solutions
+            </h2>
+            <p class="text-slate-400 mt-4 text-base">
+                End-to-end spatial planning, interior engineering, and architectural styling delivered with world-class standard.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Service 1 -->
+            <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 group hover:-translate-y-1">
+                <div class="w-14 h-14 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-cyan-500 group-hover:text-white transition-all duration-300">
+                    <i class="fa-solid fa-house-chimney-window"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Architectural Planning</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                    Master planning, structural workflow optimization, and blueprint engineering crafted for high-performance living and working spaces.
+                </p>
+                <a href="#contact" class="inline-flex items-center text-xs font-bold text-cyan-400 hover:text-cyan-300 gap-1">
+                    Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                </a>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 group hover:-translate-y-1">
+                <div class="w-14 h-14 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300">
+                    <i class="fa-solid fa-couch"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Interior Design Strategy</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                    Custom millwork, curated furnishings, palette selection, and mood lighting engineered to align with your personal vision.
+                </p>
+                <a href="#contact" class="inline-flex items-center text-xs font-bold text-indigo-400 hover:text-indigo-300 gap-1">
+                    Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                </a>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 transition-all duration-300 group hover:-translate-y-1">
+                <div class="w-14 h-14 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-purple-500 group-hover:text-white transition-all duration-300">
+                    <i class="fa-solid fa-cubes"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">3D Visualization & VR</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                    Hyper-realistic 3D rendering and immersive virtual tours that give you complete clarity before construction begins.
+                </p>
+                <a href="#contact" class="inline-flex items-center text-xs font-bold text-purple-400 hover:text-purple-300 gap-1">
+                    Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                </a>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-pink-500/50 transition-all duration-300 group hover:-translate-y-1">
+                <div class="w-14 h-14 rounded-xl bg-pink-500/10 text-pink-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-pink-500 group-hover:text-white transition-all duration-300">
+                    <i class="fa-solid fa-building-user"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Commercial Spaces</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                    High-impact corporate offices, retail spaces, and boutique environments designed to elevate brand image and human focus.
+                </p>
+                <a href="#contact" class="inline-flex items-center text-xs font-bold text-pink-400 hover:text-pink-300 gap-1">
+                    Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                </a>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 group hover:-translate-y-1">
+                <div class="w-14 h-14 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-cyan-500 group-hover:text-white transition-all duration-300">
+                    <i class="fa-solid fa-diagram-project"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Turnkey Execution</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                    Full project management, vendor coordination, quality assurance, and flawless, on-schedule delivery from start to finish.
+                </p>
+                <a href="#contact" class="inline-flex items-center text-xs font-bold text-cyan-400 hover:text-cyan-300 gap-1">
+                    Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                </a>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 group hover:-translate-y-1">
+                <div class="w-14 h-14 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300">
+                    <i class="fa-solid fa-comments"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Strategic Consultation</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                    One-on-one spatial audits, budget allocation strategy, and design advisory tailored specifically for decision makers.
+                </p>
+                <a href="#contact" class="inline-flex items-center text-xs font-bold text-indigo-400 hover:text-indigo-300 gap-1">
+                    Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Showcase Portfolio -->
+    <section id="portfolio" class="py-24 px-6 max-w-7xl mx-auto border-t border-slate-900">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+            <div>
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/20 text-xs font-semibold text-purple-400 mb-4">
+                    <i class="fa-solid fa-grip"></i>
+                    <span>Studio Portfolio</span>
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
+                    Featured Design Masterpieces
+                </h2>
+            </div>
+            <p class="text-slate-400 max-w-md text-sm">
+                A selection of architectural & interior projects crafted with distinct elegance and flawless spatial balance.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            
+            <!-- Project 1 -->
+            <div class="group relative rounded-2xl overflow-hidden bg-slate-900 border border-slate-800 hover:border-slate-700 transition-all duration-500">
+                <div class="h-64 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Minimalist Villa" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                </div>
+                <div class="p-6 relative">
+                    <span class="text-[11px] font-bold text-cyan-400 uppercase tracking-wider">Luxury Residential</span>
+                    <h3 class="text-lg font-bold text-white mt-1">The Sanctuary Pavilion</h3>
+                    <p class="text-xs text-slate-400 mt-2">Harmonizing natural sunlight, expansive glass facades, and contemporary warm textures.</p>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="group relative rounded-2xl overflow-hidden bg-slate-900 border border-slate-800 hover:border-slate-700 transition-all duration-500">
+                <div class="h-64 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Modern Corporate Office" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                </div>
+                <div class="p-6 relative">
+                    <span class="text-[11px] font-bold text-indigo-400 uppercase tracking-wider">Commercial Headquarters</span>
+                    <h3 class="text-lg font-bold text-white mt-1">Aura Tech Executive Hub</h3>
+                    <p class="text-xs text-slate-400 mt-2">Open-plan innovation zones engineered with acoustic privacy and ergonomic design.</p>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="group relative rounded-2xl overflow-hidden bg-slate-900 border border-slate-800 hover:border-slate-700 transition-all duration-500">
+                <div class="h-64 overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" alt="Penthouse Suite" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                </div>
+                <div class="p-6 relative">
+                    <span class="text-[11px] font-bold text-pink-400 uppercase tracking-wider">Bespoke Interiors</span>
+                    <h3 class="text-lg font-bold text-white mt-1">Skyline Urban Residence</h3>
+                    <p class="text-xs text-slate-400 mt-2">An elevated urban refuge featuring custom brass accents, Italian marble, and ambient lighting.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Testimonials / Endorsements -->
+    <section id="testimonials" class="py-24 px-6 max-w-7xl mx-auto border-t border-slate-900">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-pink-500/10 border border-pink-500/20 text-xs font-semibold text-pink-400 mb-4">
+                <i class="fa-solid fa-star"></i>
+                <span>Client Endorsements</span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
+                Trusted by Visionary Clients
+            </h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            
+            <!-- Testimonial 1 -->
+            <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex flex-col justify-between">
+                <div>
+                    <div class="flex text-amber-400 text-xs gap-1 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed italic">
+                        "Kushal and the team at Kavish Spaces transformed our vision into an architectural reality. Their attention to structural flow and lighting selection was unmatched."
+                    </p>
+                </div>
+                <div class="pt-6 mt-6 border-t border-slate-800/60 flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold text-sm">
+                        RD
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-bold text-white">Rajesh Desai</h4>
+                        <p class="text-[11px] text-slate-400">Managing Director, Apex Infra</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex flex-col justify-between">
+                <div>
+                    <div class="flex text-amber-400 text-xs gap-1 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed italic">
+                        "Working with Kushal Mevada was seamless. He has a brilliant aesthetic sense and manages the execution with extraordinary precision."
+                    </p>
+                </div>
+                <div class="pt-6 mt-6 border-t border-slate-800/60 flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-sm">
+                        PS
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-bold text-white">Pooja Shah</h4>
+                        <p class="text-[11px] text-slate-400">Founder, Solace Living</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex flex-col justify-between">
+                <div>
+                    <div class="flex text-amber-400 text-xs gap-1 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed italic">
+                        "Kavish Spaces Design Studio delivered our corporate space ahead of schedule without sacrificing a single detail of quality. Highly recommended!"
+                    </p>
+                </div>
+                <div class="pt-6 mt-6 border-t border-slate-800/60 flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 flex items-center justify-center font-bold text-sm">
+                        AM
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-bold text-white">Anand Mehta</h4>
+                        <p class="text-[11px] text-slate-400">COO, Nexa Venture Labs</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact & Direct Details -->
+    <section id="contact" class="py-24 px-6 max-w-7xl mx-auto border-t border-slate-900">
+        <div class="grid lg:grid-cols-12 gap-12">
+            
+            <!-- Contact Info -->
+            <div class="lg:col-span-5 space-y-8">
+                <div>
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-xs font-semibold text-cyan-400 mb-4">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span>Direct Communication</span>
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
+                        Let’s Discuss Your Next Space
+                    </h2>
+                    <p class="text-slate-400 text-sm mt-4 leading-relaxed">
+                        Have a residential or commercial venture in mind? Reach out directly to discuss architectural concepts, interior strategies, or studio collaborations.
+                    </p>
+                </div>
+
+                <div class="space-y-4">
+                    <!-- Email Card -->
+                    <a href="mailto:kaushalmevada99@gmail.com" class="p-5 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all flex items-center gap-4 group">
+                        <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl group-hover:bg-cyan-500 group-hover:text-white transition-all">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400">Direct Email</p>
+                            <p class="text-sm font-bold text-white group-hover:text-cyan-400 transition-colors">kaushalmevada99@gmail.com</p>
+                        </div>
+                    </a>
+
+                    <!-- Company Card -->
+                    <div class="p-5 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400">Studio & Firm</p>
+                            <p class="text-sm font-bold text-white">Kavish Spaces Design Studio</p>
+                        </div>
+                    </div>
+
+                    <!-- Connection Card -->
+                    <div class="p-5 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-link"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400">Network Connection Date</p>
+                            <p class="text-sm font-bold text-white">27 Aug 2026</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="lg:col-span-7">
+                <form class="p-8 sm:p-10 rounded-3xl bg-slate-900/80 backdrop-blur-xl border border-slate-800 space-y-6 shadow-2xl">
+                    <h3 class="text-xl font-bold text-white mb-2">Send a Project Inquiry</h3>
+                    
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Name</label>
+                            <input type="text" placeholder="John Doe" class="w-full px-4 py-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-cyan-500 transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Email</label>
+                            <input type="email" placeholder="john@example.com" class="w-full px-4 py-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-cyan-500 transition-colors">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Project Category</label>
+                        <select class="w-full px-4 py-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-300 text-sm focus:outline-none focus:border-cyan-500 transition-colors">
+                            <option>Residential Architecture & Interior</option>
+                            <option>Commercial Workspace Design</option>
+                            <option>Turnkey Project Execution</option>
+                            <option>Design Consultation & Advisory</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Project Brief & Details</label>
+                        <textarea rows="4" placeholder="Tell us about your space, dimensions, timeline, and goals..." class="w-full px-4 py-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-cyan-500 transition-colors"></textarea>
+                    </div>
+
+                    <button type="button" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-600 to-purple-600 text-white font-bold text-sm shadow-xl shadow-cyan-500/20 hover:shadow-cyan-500/40 hover:scale-[1.01] transition-all duration-300 flex items-center justify-center gap-2">
+                        <span>Send Message to Kushal</span>
+                        <i class="fa-solid fa-paper-plane text-xs"></i>
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-6 border-t border-slate-900 bg-slate-950 text-slate-400 text-xs">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+                <span class="font-bold text-white text-sm">Kavish Spaces Design Studio</span>
+                <span>•</span>
+                <span>Kushal Mevada, Founder</span>
+            </div>
+
+            <div class="flex items-center gap-4 text-base">
+                <a href="mailto:kaushalmevada99@gmail.com" class="hover:text-cyan-400 transition-colors"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-behance"></i></a>
+            </div>
+
+            <p>© 2026 Kavish Spaces. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
