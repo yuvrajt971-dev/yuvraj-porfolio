@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Agnibesh Mukherjee | Associate Dentist</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -12px rgba(14, 165, 233, 0.35);
+        }
+        .glow-text {
+            text-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-slate-950">
+
+    <!-- Ambient Glow Background -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
+        <div class="absolute -top-40 -left-40 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl"></div>
+        <div class="absolute top-1/3 -right-40 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-40 left-1/3 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-500 flex items-center justify-center text-slate-950 font-bold text-xl shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform duration-300">
+                    <i class="fa-solid font-black fa-tooth"></i>
+                </div>
+                <div>
+                    <span class="text-lg font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-slate-100 via-slate-200 to-slate-400">Dr. Agnibesh Mukherjee</span>
+                    <span class="block text-xs text-cyan-400 font-medium">Great Lakes Dental</span>
+                </div>
+            </a>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About & Expertise</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Specialties</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Patient Stories</a>
+                <a href="#contact" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 to-teal-500 text-slate-950 font-semibold hover:opacity-90 transition-all shadow-md shadow-cyan-500/20">
+                    Book Consultation
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative z-10 pt-20 pb-28 px-6">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-8">
+                <!-- Trust Badge -->
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 text-xs font-semibold text-cyan-400">
+                    <span class="flex h-2 w-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                    Great Lakes Dental Clinic & Orthodontic Care
+                </div>
+                
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight">
+                    Crafting Healthy, <br>
+                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-teal-300 to-indigo-400 glow-text">
+                        Confident Smiles
+                    </span> With Precision.
+                </h1>
+
+                <p class="text-slate-400 text-lg md:text-xl leading-relaxed max-w-2xl">
+                    Dedicated Associate Dentist specializing in modern restorative dentistry, aesthetic enhancement, and comprehensive patient-centered orthodontic care.
+                </p>
+
+                <!-- Action Buttons -->
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <a href="#contact" class="px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-teal-500 to-indigo-500 text-slate-950 font-bold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 flex items-center gap-3">
+                        <i class="fa-regular fa-calendar-check text-lg"></i>
+                        Schedule Appointment
+                    </a>
+                    <a href="#services" class="px-8 py-4 rounded-xl bg-slate-900/80 border border-slate-800 text-slate-200 font-semibold hover:border-slate-700 hover:bg-slate-800/50 transition-all duration-300 flex items-center gap-3">
+                        View Clinical Services
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Trust Badges Grid -->
+                <div class="grid grid-cols-3 gap-6 pt-8 border-t border-slate-800/80">
+                    <div>
+                        <div class="text-2xl md:text-3xl font-bold text-slate-100">100%</div>
+                        <p class="text-xs text-slate-400 mt-1">Patient Focus</p>
+                    </div>
+                    <div>
+                        <div class="text-2xl md:text-3xl font-bold text-slate-100">Modern</div>
+                        <p class="text-xs text-slate-400 mt-1">Clinical Technology</p>
+                    </div>
+                    <div>
+                        <div class="text-2xl md:text-3xl font-bold text-slate-100">5.0 ★</div>
+                        <p class="text-xs text-slate-400 mt-1">Patient Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Profile Frame -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative group">
+                    <!-- Glowing Gradient Aura -->
+                    <div class="absolute -inset-1.5 bg-gradient-to-r from-cyan-500 via-indigo-500 to-teal-400 rounded-3xl blur-xl opacity-70 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+                    
+                    <div class="relative w-72 h-72 md:w-80 md:h-80 rounded-3xl overflow-hidden bg-slate-900 p-2 border border-slate-800">
+                        <div class="w-full h-full rounded-2xl overflow-hidden bg-slate-950 flex items-center justify-center relative">
+                            <img src="https://ui-avatars.com/api/?name=Dr+Agnibesh+Mukherjee&size=200&background=0D8ABC&color=fff&bold=true" 
+                                 alt="Dr Agnibesh Mukherjee" 
+                                 class="w-full h-full object-cover rounded-2xl transform group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-transparent p-4 text-center">
+                                <p class="text-sm font-bold text-slate-100">Dr. Agnibesh Mukherjee</p>
+                                <p class="text-xs text-cyan-400">Associate Dentist</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-20 px-6 bg-slate-900/30 border-y border-slate-800/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-6 relative">
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 shadow-2xl group">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Modern Dental Clinic" 
+                             class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-slate-900/80 backdrop-blur-xl border border-slate-800">
+                            <p class="text-xs font-semibold text-cyan-400 uppercase tracking-wider">Practice Location</p>
+                            <p class="text-sm font-medium text-slate-200 mt-1">Great Lakes Dental Clinic and Orthodontic Care</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold">
+                        ABOUT DR. MUKHERJEE
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-slate-100">
+                        Committed to Excellence in Dental Health & Orthodontic Care
+                    </h2>
+                    <p class="text-slate-400 leading-relaxed">
+                        Dr. Agnibesh Mukherjee serves as an Associate Dentist at Great Lakes Dental Clinic and Orthodontic Care. Combining state-of-the-art dental technology with a gentle, patient-first approach, Dr. Mukherjee delivers comprehensive dental treatments crafted to preserve natural beauty and ensure optimal oral health.
+                    </p>
+                    
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-lg bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 shrink-0 mt-1">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-base font-semibold text-slate-200">Patient-Centric Comfort</h4>
+                                <p class="text-sm text-slate-400">Tailored treatment plans designed for maximum comfort, minimal pain, and enduring health.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-lg bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 shrink-0 mt-1">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-base font-semibold text-slate-200">Advanced Orthodontics</h4>
+                                <p class="text-sm text-slate-400">Modern alignment solutions designed for optimal aesthetics and structural perfection.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-lg bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 shrink-0 mt-1">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-base font-semibold text-slate-200">Preventative Dentistry</h4>
+                                <p class="text-sm text-slate-400">Proactive diagnostic care and hygiene practices to safeguard your long-term smile.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 px-6 relative z-10">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-teal-500/10 border border-teal-500/20 text-teal-400 text-xs font-semibold mb-4">
+                    CLINICAL SERVICES
+                </div>
+                <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight text-slate-100">
+                    Comprehensive Dental & Orthodontic Solutions
+                </h2>
+                <p class="text-slate-400 mt-4 text-base">
+                    From preventative check-ups to complex orthodontic alignments, explore top-tier dental treatments customized to your needs.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-cyan-500/20 to-teal-500/20 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-100 mb-3">General Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Routine dental checkups, cavity restorations, deep cleanings, and proactive oral health management for all ages.
+                    </p>
+                    <a href="#contact" class="text-xs font-semibold text-cyan-400 flex items-center gap-2 group-hover:gap-3 transition-all">
+                        Learn More <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-teal-500/20 to-indigo-500/20 border border-teal-500/30 flex items-center justify-center text-teal-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-100 mb-3">Cosmetic Enhancement</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Transformative teeth whitening, porcelain veneers, and smile makeovers engineered for stunning aesthetic brilliance.
+                    </p>
+                    <a href="#contact" class="text-xs font-semibold text-teal-400 flex items-center gap-2 group-hover:gap-3 transition-all">
+                        Learn More <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-indigo-500/20 to-purple-500/20 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-align-left"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-100 mb-3">Orthodontic Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Precision alignment solutions, braces, and clear aligner consultations to correct bite and spacing effectively.
+                    </p>
+                    <a href="#contact" class="text-xs font-semibold text-indigo-400 flex items-center gap-2 group-hover:gap-3 transition-all">
+                        Learn More <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-cyan-500/20 to-indigo-500/20 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-100 mb-3">Preventative Diagnostics</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Advanced digital X-rays and comprehensive oral cancer screenings for early diagnosis and optimal wellness.
+                    </p>
+                    <a href="#contact" class="text-xs font-semibold text-cyan-400 flex items-center gap-2 group-hover:gap-3 transition-all">
+                        Learn More <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-teal-500/20 to-cyan-500/20 border border-teal-500/30 flex items-center justify-center text-teal-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-100 mb-3">Restorative Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Durable dental crowns, bridges, and tooth-colored fillings designed to restore strength and natural aesthetics.
+                    </p>
+                    <a href="#contact" class="text-xs font-semibold text-teal-400 flex items-center gap-2 group-hover:gap-3 transition-all">
+                        Learn More <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-purple-500/20 to-pink-500/20 border border-purple-500/30 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-100 mb-3">Emergency Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Prompt clinical attention for urgent dental needs, relieving discomfort quickly with expert care.
+                    </p>
+                    <a href="#contact" class="text-xs font-semibold text-purple-400 flex items-center gap-2 group-hover:gap-3 transition-all">
+                        Learn More <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 px-6 bg-slate-900/30 border-y border-slate-800/50 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold mb-4">
+                    PATIENT EXPERIENCES
+                </div>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-100">
+                    Trusted by Patients Across Great Lakes
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-slate-900/80 backdrop-blur-xl p-8 rounded-2xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Dr. Agnibesh Mukherjee made my entire procedure completely seamless and stress-free. His attention to detail and gentle care are unparalleled!"
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-cyan-500/20 border border-cyan-500/40 flex items-center justify-center font-bold text-cyan-400 text-sm">
+                            AR
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-slate-200">Ananya R.</p>
+                            <p class="text-xs text-slate-500">Orthodontic Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-slate-900/80 backdrop-blur-xl p-8 rounded-2xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "The team at Great Lakes Dental Clinic is exceptional. Dr. Mukherjee took the time to explain every step of my dental restorative treatment."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-teal-500/20 border border-teal-500/40 flex items-center justify-center font-bold text-teal-400 text-sm">
+                            SG
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-slate-200">Siddharth G.</p>
+                            <p class="text-xs text-slate-500">Restorative Care</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-slate-900/80 backdrop-blur-xl p-8 rounded-2xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Highly recommended! Warm atmosphere, state-of-the-art facility, and Dr. Mukherjee is thoroughly professional and kind."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 border border-indigo-500/40 flex items-center justify-center font-bold text-indigo-400 text-sm">
+                            PM
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-slate-200">Pooja M.</p>
+                            <p class="text-xs text-slate-500">General Dentistry</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Appointment Section -->
+    <section id="contact" class="py-24 px-6 relative z-10">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-12 gap-12 bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-3xl p-8 md:p-12">
+                
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold">
+                        GET IN TOUCH
+                    </div>
+                    <h2 class="text-3xl font-extrabold text-slate-100">
+                        Book Your Consultation Today
+                    </h2>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Ready to achieve a healthier, radiant smile? Contact Great Lakes Dental Clinic and Orthodontic Care to schedule an appointment with Dr. Agnibesh Mukherjee.
+                    </p>
+
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-cyan-400">
+                                <i class="fa-solid fa-hospital"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-500 uppercase font-semibold">Clinic</p>
+                                <p class="text-sm text-slate-200 font-medium">GREAT LAKES DENTAL CLINIC AND ORTHODONTIC CARE</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-cyan-400">
+                                <i class="fa-solid fa-user-doctor"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-500 uppercase font-semibold">Practitioner</p>
+                                <p class="text-sm text-slate-200 font-medium">Dr. Agnibesh Mukherjee (Associate Dentist)</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-cyan-400">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-500 uppercase font-semibold">Working Hours</p>
+                                <p class="text-sm text-slate-200 font-medium">Mon - Sat: 09:00 AM - 07:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="lg:col-span-7">
+                    <form onsubmit="event.preventDefault(); alert('Thank you! Your appointment request has been submitted.');" class="space-y-4">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Full Name</label>
+                                <input type="text" required placeholder="John Doe" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Phone Number</label>
+                                <input type="tel" required placeholder="+1 (555) 000-0000" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">Requested Service</label>
+                            <select class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-300 focus:outline-none focus:border-cyan-500 transition-colors">
+                                <option>General Dental Checkup</option>
+                                <option>Orthodontic Consultation</option>
+                                <option>Teeth Whitening / Cosmetic</option>
+                                <option>Restorative Dentistry</option>
+                                <option>Other Inquiry</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">Message or Specific Concerns</label>
+                            <textarea rows="4" placeholder="Please describe any symptoms or specific requests..." class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 focus:outline-none focus:border-cyan-500 transition-colors"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-teal-500 to-indigo-500 text-slate-950 font-bold hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300">
+                            Submit Consultation Request
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800/80 py-8 px-6 bg-slate-950 text-center text-slate-500 text-xs">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+            <p>© 2026 Dr. Agnibesh Mukherjee | Great Lakes Dental Clinic and Orthodontic Care. All rights reserved.</p>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-slate-300 transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-slate-300 transition-colors">Terms of Service</a>
+                <a href="#" class="hover:text-slate-300 transition-colors">Patient Portal</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
