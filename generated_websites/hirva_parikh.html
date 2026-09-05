@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hirva Parikh | UI/UX Designer Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            cyan: '#0D8ABC',
+                            purple: '#8B5CF6',
+                            pink: '#EC4899',
+                        }
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 4s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(13, 138, 188, 0.3);
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(51, 65, 85, 0.5);
+        }
+        .glass-card:hover {
+            border-color: rgba(99, 102, 241, 0.5);
+            box-shadow: 0 10px 30px -10px rgba(99, 102, 241, 0.2);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #38BDF8 0%, #818CF8 50%, #C084FC 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-white">
+
+    <!-- Ambient Background Glows -->
+    <div class="fixed top-0 left-1/4 w-96 h-96 bg-cyan-600/10 rounded-full blur-3xl pointer-events-none animate-pulse-slow"></div>
+    <div class="fixed bottom-1/3 right-10 w-[500px] h-[500px] bg-purple-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-tight flex items-center gap-2 group">
+                <span class="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-500 to-indigo-500 flex items-center justify-center text-white text-xs font-black shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
+                    HP
+                </span>
+                <span>Hirva<span class="text-cyan-400">.design</span></span>
+            </a>
+            
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
+                <a href="#work" class="hover:text-cyan-400 transition-colors">Work</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Testimonials</a>
+            </div>
+
+            <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-semibold bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 text-white shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 hover:scale-[1.02] transition-all">
+                <span>Let's Talk</span>
+                <i class="fa-solid font-xs fa-arrow-right"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-20 md:pt-48 md:pb-32 px-6 max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center gap-12 lg:gap-16">
+            
+            <!-- Avatar Frame -->
+            <div class="relative group">
+                <!-- Double Glowing Gradient Frame -->
+                <div class="absolute -inset-1 bg-gradient-to-r from-cyan-500 via-indigo-500 to-pink-500 rounded-full blur-xl opacity-70 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse-slow"></div>
+                <div class="absolute -inset-0.5 bg-gradient-to-r from-cyan-400 to-purple-600 rounded-full"></div>
+                
+                <div class="relative w-44 h-44 sm:w-56 sm:h-56 rounded-full overflow-hidden border-4 border-slate-950 bg-slate-900 flex items-center justify-center">
+                    <img src="https://ui-avatars.com/api/?name=Hirva+Parikh&size=200&background=0D8ABC&color=fff&bold=true" alt="Hirva Parikh" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+
+                <!-- Floating Status Badge -->
+                <div class="absolute -bottom-2 right-2 bg-slate-900/90 border border-slate-700/80 px-3 py-1.5 rounded-full backdrop-blur-md shadow-xl flex items-center gap-2 animate-float">
+                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+                    <span class="text-xs font-medium text-slate-200">Designing at Stackgenie</span>
+                </div>
+            </div>
+
+            <!-- Hero Text -->
+            <div class="flex-1 text-center md:text-left">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-300 text-xs font-semibold mb-6">
+                    <i class="fa-solid fa-sparkles"></i> Principal UI/UX Specialist
+                </div>
+
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight mb-6">
+                    Crafting Human-Centric <br class="hidden sm:block">
+                    <span class="gradient-text">Digital Products</span>
+                </h1>
+
+                <p class="text-slate-400 text-base sm:text-lg max-w-2xl mb-8 font-normal leading-relaxed">
+                    Hi, I'm <strong class="text-slate-200">Hirva Parikh</strong> — UI/UX Designer at <strong class="text-slate-200">Stackgenie</strong>. I transform complex ideas into intuitive, elegant, and high-converting digital interfaces that users love.
+                </p>
+
+                <!-- Hero Actions -->
+                <div class="flex flex-wrap items-center justify-center md:justify-start gap-4">
+                    <a href="#work" class="px-7 py-3.5 rounded-xl font-semibold text-sm bg-gradient-to-r from-cyan-500 to-indigo-600 text-white shadow-xl shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:-translate-y-0.5 transition-all">
+                        View Showcase
+                    </a>
+                    <a href="#contact" class="px-7 py-3.5 rounded-xl font-semibold text-sm glass-card text-slate-200 hover:text-white hover:bg-slate-800/80 transition-all">
+                        Get In Touch
+                    </a>
+                </div>
+
+                <!-- Trust Badges / Stats -->
+                <div class="mt-12 pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-4 max-w-lg">
+                    <div>
+                        <div class="text-2xl font-bold text-white">5+</div>
+                        <div class="text-xs text-slate-400 mt-1">Years Experience</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-white">40+</div>
+                        <div class="text-xs text-slate-400 mt-1">Projects Shipped</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-white">99%</div>
+                        <div class="text-xs text-slate-400 mt-1">Satisfaction Rate</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="glass-card rounded-3xl p-8 sm:p-12 relative overflow-hidden">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                
+                <!-- Image Container -->
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-500"></div>
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-700/60 aspect-video md:aspect-square">
+                        <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=800&q=80" alt="UI Design Process" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <span class="text-xs font-semibold text-cyan-400 uppercase tracking-widest">Design Philosophy</span>
+                            <h3 class="text-xl font-bold text-white mt-1">Form follows empathy & clarity</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div>
+                    <span class="text-cyan-400 text-xs font-bold uppercase tracking-widest">About Me</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2 mb-6">Designing products with purpose & precision</h2>
+                    <p class="text-slate-300 mb-6 leading-relaxed">
+                        At <strong class="text-cyan-400">Stackgenie</strong>, I specialize in bridging the gap between user needs and business objectives. My approach combines rigorous design research with seamless visual crafting, resulting in scalable design systems and effortless user journeys.
+                    </p>
+                    <p class="text-slate-400 mb-8 leading-relaxed">
+                        Whether architecting enterprise workflows or refining micro-interactions, my aim is always to create interfaces that feel natural, delightful, and impactful.
+                    </p>
+
+                    <!-- Skill Tags -->
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3.5 py-1.5 rounded-lg text-xs font-medium bg-slate-800/90 text-cyan-300 border border-slate-700">Figma</span>
+                        <span class="px-3.5 py-1.5 rounded-lg text-xs font-medium bg-slate-800/90 text-cyan-300 border border-slate-700">Design Systems</span>
+                        <span class="px-3.5 py-1.5 rounded-lg text-xs font-medium bg-slate-800/90 text-cyan-300 border border-slate-700">Prototyping</span>
+                        <span class="px-3.5 py-1.5 rounded-lg text-xs font-medium bg-slate-800/90 text-cyan-300 border border-slate-700">User Research</span>
+                        <span class="px-3.5 py-1.5 rounded-lg text-xs font-medium bg-slate-800/90 text-cyan-300 border border-slate-700">Wireframing</span>
+                        <span class="px-3.5 py-1.5 rounded-lg text-xs font-medium bg-slate-800/90 text-cyan-300 border border-slate-700">Usability Testing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services" class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <span class="text-cyan-400 text-xs font-bold uppercase tracking-widest">What I Deliver</span>
+            <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2">Comprehensive UI/UX Solutions</h2>
+            <p class="text-slate-400 mt-4">End-to-end design services tailored for modern SaaS platforms, mobile applications, and digital brands.</p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <!-- Service Card 1 -->
+            <div class="glass-card rounded-2xl p-8 relative group transition-all duration-300 hover:-translate-y-1">
+                <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-cyan-500/20 to-indigo-500/20 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-2xl mb-6 group-hover:scale-110 transition duration-300">
+                    <i class="fa-solid fa-palette"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">UI/UX Interface Design</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Crafting visually stunning, accessible, and intuitive UI interfaces tailored for desktop, web, and mobile environments.</p>
+            </div>
+
+            <!-- Service Card 2 -->
+            <div class="glass-card rounded-2xl p-8 relative group transition-all duration-300 hover:-translate-y-1">
+                <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-purple-500/20 to-pink-500/20 border border-purple-500/30 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:scale-110 transition duration-300">
+                    <i class="fa-solid fa-cubes-stacked"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Design Systems</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Building robust, scalable design systems and component libraries in Figma to ensure consistency and speed up dev handoff.</p>
+            </div>
+
+            <!-- Service Card 3 -->
+            <div class="glass-card rounded-2xl p-8 relative group transition-all duration-300 hover:-translate-y-1">
+                <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-indigo-500/20 to-cyan-500/20 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 transition duration-300">
+                    <i class="fa-solid fa-flask"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">User Research & Testing</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Uncovering deep user insights through interviews, usability testing, journey mapping, and competitive analysis.</p>
+            </div>
+
+            <!-- Service Card 4 -->
+            <div class="glass-card rounded-2xl p-8 relative group transition-all duration-300 hover:-translate-y-1">
+                <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-emerald-500/20 to-cyan-500/20 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-2xl mb-6 group-hover:scale-110 transition duration-300">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Interactive Prototyping</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Creating realistic, high-fidelity interactive prototypes to validate user flows and test concepts early with stakeholders.</p>
+            </div>
+
+            <!-- Service Card 5 -->
+            <div class="glass-card rounded-2xl p-8 relative group transition-all duration-300 hover:-translate-y-1">
+                <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-pink-500/20 to-purple-500/20 border border-pink-500/30 flex items-center justify-center text-pink-400 text-2xl mb-6 group-hover:scale-110 transition duration-300">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Mobile Experience</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Designing responsive mobile applications optimized for touch interactions, gesture navigation, and platform standards.</p>
+            </div>
+
+            <!-- Service Card 6 -->
+            <div class="glass-card rounded-2xl p-8 relative group transition-all duration-300 hover:-translate-y-1">
+                <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-amber-500/20 to-orange-500/20 border border-amber-500/30 flex items-center justify-center text-amber-400 text-2xl mb-6 group-hover:scale-110 transition duration-300">
+                    <i class="fa-solid fa-layer-group"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Design Sprints</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Leading fast-paced design sprints to solve product challenges and align cross-functional teams rapidly.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Testimonials / Endorsements -->
+    <section id="testimonials" class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <span class="text-cyan-400 text-xs font-bold uppercase tracking-widest">Endorsements</span>
+            <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2">What Teammates & Clients Say</h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            
+            <!-- Testimonial 1 -->
+            <div class="glass-card rounded-2xl p-8 flex flex-col justify-between">
+                <div>
+                    <div class="flex text-amber-400 text-sm mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                        "Hirva has a rare talent for turning convoluted product requirements into crisp, intuitive UI. Her attention to micro-interactions at Stackgenie set a new bar for our team."
+                    </p>
+                </div>
+                <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                    <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center font-bold text-cyan-400 text-sm">PM</div>
+                    <div>
+                        <div class="text-sm font-bold text-white">Product Lead</div>
+                        <div class="text-xs text-slate-400">Stackgenie Collaborator</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="glass-card rounded-2xl p-8 flex flex-col justify-between">
+                <div>
+                    <div class="flex text-amber-400 text-sm mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                        "The design system created by Hirva dramatically accelerated our frontend development timeline. Her Figma organization and token structures are world-class."
+                    </p>
+                </div>
+                <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                    <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center font-bold text-purple-400 text-sm">SE</div>
+                    <div>
+                        <div class="text-sm font-bold text-white">Senior Software Engineer</div>
+                        <div class="text-xs text-slate-400">Tech Partner</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="glass-card rounded-2xl p-8 flex flex-col justify-between">
+                <div>
+                    <div class="flex text-amber-400 text-sm mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                        "Hirva's user research insights completely reshaped our product roadmap for the better. She advocates passionately for the user while staying business-focused."
+                    </p>
+                </div>
+                <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                    <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center font-bold text-pink-400 text-sm">VP</div>
+                    <div>
+                        <div class="text-sm font-bold text-white">VP of Product</div>
+                        <div class="text-xs text-slate-400">Digital Strategy Client</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact & Outreach Section -->
+    <section id="contact" class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="glass-card rounded-3xl p-8 sm:p-12 relative overflow-hidden">
+            <div class="grid md:grid-cols-2 gap-12">
+                
+                <div>
+                    <span class="text-cyan-400 text-xs font-bold uppercase tracking-widest">Get In Touch</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2 mb-4">Let's build something remarkable together.</h2>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-8">
+                        Interested in collaborating on a product, reviewing potential design strategies, or discussing design leadership? Send a message directly.
+                    </p>
+
+                    <div class="space-y-4 text-sm text-slate-300">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-slate-800/80 flex items-center justify-center text-cyan-400">
+                                <i class="fa-solid fa-building"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-500">Current Role</div>
+                                <div class="font-medium text-white">UI/UX Designer at Stackgenie</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-slate-800/80 flex items-center justify-center text-purple-400">
+                                <i class="fa-solid fa-handshake"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-500">Network Connected</div>
+                                <div class="font-medium text-white">August 28, 2026</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-slate-800/80 flex items-center justify-center text-emerald-400">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-500">Availability</div>
+                                <div class="font-medium text-emerald-400">Open for UX Advising & Design Consulting</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <form class="space-y-4" onsubmit="event.preventDefault(); alert('Thank you for your message, Hirva will be in touch!');">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-400 uppercase mb-2">Your Name</label>
+                        <input type="text" placeholder="John Doe" required class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-cyan-500 transition">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-400 uppercase mb-2">Your Email</label>
+                        <input type="email" placeholder="john@example.com" required class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-cyan-500 transition">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-400 uppercase mb-2">Message</label>
+                        <textarea rows="4" placeholder="Hello Hirva, I'd love to connect regarding..." required class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-cyan-500 transition"></textarea>
+                    </div>
+                    <button type="submit" class="w-full py-3.5 rounded-xl font-semibold text-sm bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 text-white shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 hover:scale-[1.01] transition duration-300">
+                        Send Message
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-6 border-t border-slate-800/80 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div>
+                © 2026 Hirva Parikh — UI/UX Showcase. Designed for impact.
+            </div>
+            <div class="flex items-center gap-6 text-slate-400 text-base">
+                <a href="#" class="hover:text-cyan-400 transition"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition"><i class="fa-brands fa-dribbble"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition"><i class="fa-brands fa-figma"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
