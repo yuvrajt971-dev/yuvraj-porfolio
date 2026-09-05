@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Haneena Hasin | Premier Dental Care Specialist</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            cyan: '#0D8ABC',
+                            teal: '#14b8a6',
+                            purple: '#a855f7',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(51, 65, 85, 0.6);
+        }
+        .glass-card:hover {
+            border-color: rgba(99, 102, 241, 0.5);
+            box-shadow: 0 10px 30px -10px rgba(99, 102, 241, 0.2);
+        }
+        .glow-effect {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(90px);
+            opacity: 0.25;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-white">
+
+    <!-- Ambient Glowing Background Dynamics -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
+        <div class="glow-effect w-96 h-96 bg-indigo-600 -top-20 -left-20"></div>
+        <div class="glow-effect w-[500px] h-[500px] bg-cyan-600 top-1/3 -right-32"></div>
+        <div class="glow-effect w-96 h-96 bg-purple-600 bottom-10 left-1/4"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-500 flex items-center justify-center text-white font-bold shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform duration-300">
+                    <i class="fa-solid fa-tooth text-lg"></i>
+                </div>
+                <div>
+                    <span class="font-bold text-lg text-white block tracking-tight leading-none">Dr. Haneena Hasin</span>
+                    <span class="text-xs text-slate-400 font-medium">St.Mary’s Dental Clinic</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Treatments</a>
+                <a href="#expertise" class="hover:text-cyan-400 transition-colors">Clinical Expertise</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Testimonials</a>
+            </nav>
+
+            <a href="#contact" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 text-white font-semibold text-sm hover:shadow-lg hover:shadow-cyan-500/25 hover:scale-105 transition-all duration-300">
+                Book Consultation
+            </a>
+        </div>
+    </header>
+
+    <main class="relative z-10">
+        <!-- Hero Section -->
+        <section class="min-h-screen pt-32 pb-20 flex items-center justify-center relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Content -->
+                <div class="lg:col-span-7 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card text-cyan-400 text-xs font-semibold uppercase tracking-wider mb-6">
+                        <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                        Dentist at St.Mary’s Dental Clinic
+                    </div>
+                    
+                    <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+                        Crafting Confident, <br/>
+                        <span class="bg-gradient-to-r from-cyan-400 via-indigo-400 to-purple-400 bg-clip-text text-transparent">
+                            Radiant & Healthy Smiles
+                        </span>
+                    </h1>
+
+                    <p class="text-slate-400 text-lg md:text-xl max-w-2xl mb-8 font-light leading-relaxed">
+                        Welcome to world-class oral healthcare led by Dr. Haneena Hasin. Combining advanced dental technology with compassionate, gentle care to deliver exceptional results.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-12">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 text-white font-bold shadow-lg shadow-cyan-500/20 hover:shadow-indigo-500/40 hover:scale-105 transition-all duration-300 text-center">
+                            Schedule Your Visit <i class="fa-solid fa-arrow-right ml-2"></i>
+                        </a>
+                        <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-xl glass-card text-slate-200 font-semibold hover:bg-slate-800/80 transition-all text-center">
+                            Explore Treatments
+                        </a>
+                    </div>
+
+                    <!-- Trust Badges Grid -->
+                    <div class="grid grid-cols-3 gap-4 pt-8 border-t border-slate-800/80">
+                        <div class="text-left">
+                            <h3 class="text-2xl font-bold text-white">100%</h3>
+                            <p class="text-xs text-slate-400">Patient Centric</p>
+                        </div>
+                        <div class="text-left">
+                            <h3 class="text-2xl font-bold text-white">Modern</h3>
+                            <p class="text-xs text-slate-400">Clinical Facility</p>
+                        </div>
+                        <div class="text-left">
+                            <h3 class="text-2xl font-bold text-white">Gentle</h3>
+                            <p class="text-xs text-slate-400">Pain-Free Tech</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Avatar Profile Showcase -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative group">
+                        <!-- Double Glowing Gradient Ring -->
+                        <div class="absolute -inset-1.5 rounded-full bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 blur-lg opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+                        <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-indigo-500 to-cyan-500"></div>
+                        
+                        <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden bg-slate-900 border-4 border-slate-950 p-2">
+                            <img src="https://ui-avatars.com/api/?name=Dr.+Haneena+Hasin&size=200&background=0D8ABC&color=fff&bold=true" 
+                                 alt="Dr. Haneena Hasin" 
+                                 class="w-full h-full object-cover rounded-full transform group-hover:scale-105 transition-transform duration-500">
+                        </div>
+
+                        <!-- Floating Glass Experience Card -->
+                        <div class="absolute -bottom-4 -right-4 glass-card px-5 py-3 rounded-2xl flex items-center gap-3 shadow-xl border border-slate-700">
+                            <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center">
+                                <i class="fa-solid fa-award text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Practicing Specialist</p>
+                                <p class="text-sm font-bold text-white">St.Mary’s Clinic</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- About & Expertise Section -->
+        <section id="about" class="py-24 relative bg-slate-950/50">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- Clinical Image Frame -->
+                    <div class="lg:col-span-6">
+                        <div class="relative rounded-3xl overflow-hidden glass-card p-3 border border-slate-800">
+                            <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Modern Dental Technology" 
+                                 class="w-full h-[420px] object-cover rounded-2xl hover:scale-105 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60"></div>
+                            <div class="absolute bottom-8 left-8 right-8">
+                                <span class="text-xs font-bold text-cyan-400 uppercase tracking-widest">State-of-the-Art Dentistry</span>
+                                <h4 class="text-lg font-bold text-white mt-1">Precision Clinical Technology & Comfort</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- About Text Content -->
+                    <div class="lg:col-span-6 space-y-6">
+                        <div class="inline-flex items-center gap-2 text-cyan-400 font-semibold text-sm">
+                            <i class="fa-solid fa-user-doctor"></i> About Dr. Haneena Hasin
+                        </div>
+                        <h2 class="text-3xl md:text-4xl font-bold text-white">
+                            Dedicated to Delivering Exceptional Dental Excellence
+                        </h2>
+                        <p class="text-slate-400 leading-relaxed">
+                            Dr. Haneena Hasin is a highly skilled Dentist currently practicing at St.Mary’s Dental Clinic. Known for her gentle clinical approach and detail-oriented focus, she brings high standards of oral care to every patient interaction.
+                        </p>
+                        <p class="text-slate-400 leading-relaxed">
+                            From routine preventive consultations to complex smile restorations, Dr. Hasin prioritizes patient comfort, modern aesthetic techniques, and long-term oral health outcomes.
+                        </p>
+
+                        <!-- Key Highlights -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                            <div class="flex items-start gap-3 glass-card p-4 rounded-xl">
+                                <i class="fa-solid fa-circle-check text-cyan-400 text-xl mt-1"></i>
+                                <div>
+                                    <h5 class="font-semibold text-white text-sm">Comprehensive Diagnostics</h5>
+                                    <p class="text-xs text-slate-400 mt-0.5">In-depth evaluations for custom treatment plans.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3 glass-card p-4 rounded-xl">
+                                <i class="fa-solid fa-heart-pulse text-indigo-400 text-xl mt-1"></i>
+                                <div>
+                                    <h5 class="font-semibold text-white text-sm">Painless Procedures</h5>
+                                    <p class="text-xs text-slate-400 mt-0.5">Gentle techniques modern comfort protocols.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Grid Section -->
+        <section id="services" class="py-24 relative">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <span class="text-cyan-400 font-semibold text-sm tracking-wider uppercase">Services & Specialties</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mt-2">Comprehensive Dental Care</h2>
+                    <p class="text-slate-400 mt-4">Personalized dental solutions engineered for long-term health, aesthetic confidence, and optimal wellness.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Card 1 -->
+                    <div class="glass-card p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                        <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-cyan-500 group-hover:text-white transition-all duration-300">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Cosmetic Smile Makeovers</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Transform your smile with porcelain veneers, custom bonding, and aesthetic contouring tailored to your facial symmetry.</p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="glass-card p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                        <div class="w-14 h-14 rounded-2xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300">
+                            <i class="fa-solid fa-tooth"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Restorative Dentistry</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Durable crowns, bridges, and advanced restorative treatments designed to regain full bite function and aesthetics.</p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="glass-card p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                        <div class="w-14 h-14 rounded-2xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-purple-500 group-hover:text-white transition-all duration-300">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Preventive Care & Cleaning</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Proactive checkups, advanced hygiene polishing, and gum health monitoring to prevent issues before they arise.</p>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="glass-card p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                        <div class="w-14 h-14 rounded-2xl bg-pink-500/10 text-pink-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-pink-500 group-hover:text-white transition-all duration-300">
+                            <i class="fa-solid fa-gem"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Professional Teeth Whitening</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Safe, high-efficiency clinical whitening procedures that brighten discolored teeth by several shades instantly.</p>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="glass-card p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                        <div class="w-14 h-14 rounded-2xl bg-teal-500/10 text-teal-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-teal-500 group-hover:text-white transition-all duration-300">
+                            <i class="fa-solid fa-microscope"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Endodontic Therapy</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Gentle and effective root canal treatments using precision rotary technology to relieve pain and preserve natural teeth.</p>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="glass-card p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                        <div class="w-14 h-14 rounded-2xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-blue-500 group-hover:text-white transition-all duration-300">
+                            <i class="fa-solid fa-face-smile"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Pediatric & Family Care</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">Comfortable, anxiety-free dental visits tailored for children and entire families in a welcoming clinic setting.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials / Endorsements Section -->
+        <section id="testimonials" class="py-24 relative bg-slate-950/40">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <span class="text-cyan-400 font-semibold text-sm tracking-wider uppercase">Patient Feedback</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mt-2">Endorsements & Patient Stories</h2>
+                    <p class="text-slate-400 mt-4">Hear directly from patients who have experienced Dr. Hasin's attentive care at St. Mary's Dental Clinic.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <div class="glass-card p-8 rounded-2xl relative">
+                        <div class="flex text-amber-400 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                            "Dr. Haneena Hasin was incredibly patient and thorough during my consultation. She explained every step clearly and made sure I felt zero anxiety throughout the procedure."
+                        </p>
+                        <div class="flex items-center gap-3 border-t border-slate-800 pt-4">
+                            <div class="w-10 h-10 rounded-full bg-indigo-500/30 flex items-center justify-center font-bold text-indigo-300">
+                                S.M.
+                            </div>
+                            <div>
+                                <h5 class="text-sm font-bold text-white">Sarah M.</h5>
+                                <p class="text-xs text-slate-400">Patient at St. Mary's</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card p-8 rounded-2xl relative">
+                        <div class="flex text-amber-400 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                            "The modern technology at St. Mary’s Dental Clinic combined with Dr. Hasin’s gentle expertise made my smile restoration completely seamless. High recommendations!"
+                        </p>
+                        <div class="flex items-center gap-3 border-t border-slate-800 pt-4">
+                            <div class="w-10 h-10 rounded-full bg-cyan-500/30 flex items-center justify-center font-bold text-cyan-300">
+                                A.K.
+                            </div>
+                            <div>
+                                <h5 class="text-sm font-bold text-white">Ahmed K.</h5>
+                                <p class="text-xs text-slate-400">Restorative Patient</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card p-8 rounded-2xl relative">
+                        <div class="flex text-amber-400 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                            "Finding a dentist who truly cares about long-term hygiene and preventive treatment is rare. Dr. Haneena is remarkably skilled and friendly!"
+                        </p>
+                        <div class="flex items-center gap-3 border-t border-slate-800 pt-4">
+                            <div class="w-10 h-10 rounded-full bg-purple-500/30 flex items-center justify-center font-bold text-purple-300">
+                                P.R.
+                            </div>
+                            <div>
+                                <h5 class="text-sm font-bold text-white">Priya R.</h5>
+                                <p class="text-xs text-slate-400">Regular Care Patient</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contact" class="py-24 relative">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center glass-card rounded-3xl p-8 lg:p-12 border border-slate-800">
+                    
+                    <!-- Contact Info -->
+                    <div class="lg:col-span-5 space-y-6">
+                        <span class="text-cyan-400 font-semibold text-sm tracking-wider uppercase">Book Your Appointment</span>
+                        <h2 class="text-3xl md:text-4xl font-bold text-white">Get in Touch with Dr. Hasin</h2>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Ready for your dental checkup or smile consultation? Reach out directly or complete the form to schedule a visit at St. Mary's Dental Clinic.
+                        </p>
+
+                        <div class="space-y-4 pt-4">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-slate-800 flex items-center justify-center text-cyan-400">
+                                    <i class="fa-solid fa-clinic-medical text-xl"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400">Clinical Practice</p>
+                                    <p class="text-sm font-semibold text-white">St.Mary’s Dental Clinic</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-slate-800 flex items-center justify-center text-cyan-400">
+                                    <i class="fa-solid fa-calendar-check text-xl"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400">Network Connection</p>
+                                    <p class="text-sm font-semibold text-white">Connected 28 Aug 2026</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-slate-800 flex items-center justify-center text-cyan-400">
+                                    <i class="fa-solid fa-envelope text-xl"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400">Direct Inquiries</p>
+                                    <p class="text-sm font-semibold text-white">dr.haneena@stmarysdental.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="lg:col-span-7">
+                        <form onsubmit="event.preventDefault(); alert('Appointment request sent successfully!');" class="space-y-4">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">Patient Name</label>
+                                    <input type="text" placeholder="John Doe" required class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-500 transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">Phone / Email</label>
+                                    <input type="text" placeholder="your@email.com" required class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-500 transition-colors">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Service Required</label>
+                                <select class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-300 focus:outline-none focus:border-cyan-500 transition-colors">
+                                    <option>General Dental Checkup & Hygiene</option>
+                                    <option>Cosmetic Smile Consultation</option>
+                                    <option>Restorative Dentistry</option>
+                                    <option>Teeth Whitening</option>
+                                    <option>Other / Consultation</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Message or Preferred Date</label>
+                                <textarea rows="4" placeholder="How can Dr. Haneena Hasin help you?" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-500 transition-colors"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 text-white font-bold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300">
+                                Send Consultation Request
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800/80 bg-slate-950 py-12 relative z-10">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold">
+                    <i class="fa-solid fa-tooth"></i>
+                </div>
+                <span class="text-sm font-semibold text-slate-300">Dr. Haneena Hasin &bull; St.Mary’s Dental Clinic</span>
+            </div>
+
+            <p class="text-xs text-slate-500">
+                &copy; 2026 Dr. Haneena Hasin. All rights reserved. Professional Portfolio Showcase.
+            </p>
+
+            <div class="flex gap-4 text-slate-400 text-lg">
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
