@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Swati Solanki | Conservative Dentistry & Endodontics Specialist</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            teal: '#0D8ABC',
+                            cyan: '#06b6d4',
+                            indigo: '#6366f1',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(13, 138, 188, 0.35);
+        }
+        .glow-card:hover {
+            box-shadow: 0 0 30px -5px rgba(6, 182, 212, 0.25);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-slate-950 min-h-screen flex flex-col">
+
+    <!-- NAVIGATION BAR -->
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-500 flex items-center justify-center text-slate-950 font-bold text-xl shadow-lg group-hover:scale-105 transition-transform duration-300">
+                    <i class="fa-solid fa-tooth text-slate-950"></i>
+                </div>
+                <div>
+                    <span class="text-lg font-bold bg-gradient-to-r from-slate-100 via-slate-200 to-slate-400 bg-clip-text text-transparent block">Dr. Swati Solanki</span>
+                    <span class="text-xs text-cyan-400 font-medium tracking-wide block">Endodontics Specialist</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="#about" class="text-slate-300 hover:text-cyan-400 transition-colors duration-200">About</a>
+                <a href="#expertise" class="text-slate-300 hover:text-cyan-400 transition-colors duration-200">Specialties</a>
+                <a href="#clinical-care" class="text-slate-300 hover:text-cyan-400 transition-colors duration-200">Clinical Focus</a>
+                <a href="#endorsements" class="text-slate-300 hover:text-cyan-400 transition-colors duration-200">Endorsements</a>
+                <a href="#contact" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 to-indigo-600 text-white font-semibold shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 hover:scale-[1.02] active:scale-95 transition-all duration-300">
+                    Contact Doctor
+                </a>
+            </nav>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden text-slate-300 hover:text-white focus:outline-none">
+                <i class="fa-solid fa-bars-staggered text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-6 py-4 space-y-4">
+            <a href="#about" class="block text-slate-300 hover:text-cyan-400">About</a>
+            <a href="#expertise" class="block text-slate-300 hover:text-cyan-400">Specialties</a>
+            <a href="#clinical-care" class="block text-slate-300 hover:text-cyan-400">Clinical Focus</a>
+            <a href="#endorsements" class="block text-slate-300 hover:text-cyan-400">Endorsements</a>
+            <a href="#contact" class="block px-4 py-2 rounded-lg bg-gradient-to-r from-cyan-500 to-indigo-600 text-white text-center font-semibold">
+                Contact Doctor
+            </a>
+        </div>
+    </header>
+
+    <main class="flex-grow pt-24">
+
+        <!-- HERO SECTION -->
+        <section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden py-20">
+            <!-- Background Glow Orbs -->
+            <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-cyan-500/20 via-indigo-500/20 to-purple-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+            
+            <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-12 items-center relative z-10">
+                <!-- Text Column -->
+                <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs sm:text-sm font-semibold tracking-wide backdrop-blur-md">
+                        <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                        Postgraduate Resident Specialist
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        Precision Dental Artistry & <span class="bg-gradient-to-r from-cyan-400 via-indigo-400 to-pink-500 bg-clip-text text-transparent">Tooth Preservation</span>
+                    </h1>
+
+                    <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        Dedicated to advanced micro-endodontic therapies, aesthetic tooth preservation, and complex root canal treatments. Delivering clinical excellence at <strong class="text-slate-200 font-semibold">Inderprastha Dental College & Hospital</strong>.
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="flex flex-wrap gap-4 justify-center lg:justify-start items-center pt-2">
+                        <a href="#contact" class="px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white font-bold shadow-xl shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:scale-[1.02] active:scale-95 transition-all duration-300 flex items-center gap-3">
+                            <span>Schedule Consultation</span>
+                            <i class="fa-solid fa-arrow-right text-sm"></i>
+                        </a>
+                        <a href="#expertise" class="px-8 py-4 rounded-xl bg-slate-900/80 hover:bg-slate-800 border border-slate-700/80 text-slate-200 font-semibold hover:border-slate-500 transition-all duration-300 flex items-center gap-3">
+                            <i class="fa-solid fa-microscope text-cyan-400"></i>
+                            <span>View Specialties</span>
+                        </a>
+                    </div>
+
+                    <!-- Trust Stats & Badges -->
+                    <div class="pt-8 border-t border-slate-800/80 grid grid-cols-2 sm:grid-cols-3 gap-6 text-left">
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-white">Endodontics</div>
+                            <div class="text-xs sm:text-sm text-slate-400 font-medium">Specialized Discipline</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-cyan-400">Restorative</div>
+                            <div class="text-xs sm:text-sm text-slate-400 font-medium">Microscopic Precision</div>
+                        </div>
+                        <div class="col-span-2 sm:col-span-1">
+                            <div class="text-2xl sm:text-3xl font-extrabold text-indigo-400">IPDC & H</div>
+                            <div class="text-xs sm:text-sm text-slate-400 font-medium">Academic Center</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Profile Frame Column -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative">
+                        <!-- Double Glowing Gradient Ring -->
+                        <div class="absolute -inset-1.5 bg-gradient-to-r from-cyan-500 via-indigo-500 to-pink-500 rounded-full blur-xl opacity-75 animate-pulse"></div>
+                        <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-4 border-slate-900 shadow-2xl bg-slate-900">
+                            <img src="https://ui-avatars.com/api/?name=Dr.+Swati+Solanki&size=200&background=0D8ABC&color=fff&bold=true" alt="Dr. Swati Solanki" class="w-full h-full object-cover">
+                        </div>
+
+                        <!-- Floating Badges -->
+                        <div class="absolute -bottom-4 -left-4 bg-slate-900/90 backdrop-blur-xl border border-slate-800 p-3.5 rounded-2xl shadow-xl flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-teal-500/20 text-teal-400 flex items-center justify-center">
+                                <i class="fa-solid fa-tooth text-lg"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 font-medium">Clinical Specialty</div>
+                                <div class="text-sm font-bold text-white">Endodontics</div>
+                            </div>
+                        </div>
+
+                        <div class="absolute -top-2 -right-4 bg-slate-900/90 backdrop-blur-xl border border-slate-800 p-3.5 rounded-2xl shadow-xl flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-indigo-500/20 text-indigo-400 flex items-center justify-center">
+                                <i class="fa-solid fa-award text-lg"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 font-medium">Affiliation</div>
+                                <div class="text-sm font-bold text-white">PG Resident</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT & EXPERTISE SECTION -->
+        <section id="about" class="py-24 bg-slate-900/40 relative border-t border-slate-800/50">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid lg:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- Clinical Image Element -->
+                    <div class="lg:col-span-5 relative">
+                        <div class="relative rounded-3xl overflow-hidden border border-slate-800 shadow-2xl group">
+                            <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" alt="Clinical Precision & Dentistry" class="w-full h-[450px] object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                            
+                            <div class="absolute bottom-6 left-6 right-6 p-6 bg-slate-900/80 backdrop-blur-xl border border-slate-800 rounded-2xl">
+                                <p class="text-xs text-cyan-400 font-semibold uppercase tracking-wider mb-1">Academic & Clinical Base</p>
+                                <p class="text-sm font-bold text-slate-100">Inderprastha Dental College & Hospital</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Text Content -->
+                    <div class="lg:col-span-7 space-y-6">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 text-xs font-semibold tracking-wider uppercase">
+                            About Dr. Swati Solanki
+                        </div>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
+                            Merging Clinical Expertise with Pain-Free Dental Conservation
+                        </h2>
+                        <p class="text-slate-300 leading-relaxed">
+                            Dr. Swati Solanki is an accomplished Postgraduate Resident specializing in <span class="text-cyan-400 font-semibold">Conservative Dentistry and Endodontics</span> at Inderprastha Dental College & Hospital. Her clinical philosophy revolves around maximal preservation of natural tooth structures, adopting cutting-edge endodontic techniques, and mitigating patient anxiety through evidence-based treatments.
+                        </p>
+                        <p class="text-slate-400 leading-relaxed">
+                            With extensive training in rotary endodontics, biomimetic restorations, micro-surgical endodontics, and aesthetic smile enhancements, Dr. Solanki combines technical excellence with personalized patient care.
+                        </p>
+
+                        <!-- Highlights List -->
+                        <div class="grid sm:grid-cols-2 gap-4 pt-4">
+                            <div class="flex items-start gap-3 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                                <div class="p-2 rounded-lg bg-cyan-500/10 text-cyan-400">
+                                    <i class="fa-solid fa-notes-medical"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white text-sm">Root Canal Excellence</h4>
+                                    <p class="text-xs text-slate-400">Pain-free single & multi-visit root canals.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                                <div class="p-2 rounded-lg bg-indigo-500/10 text-indigo-400">
+                                    <i class="fa-solid fa-sparkles"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-white text-sm">Aesthetic Dentistry</h4>
+                                    <p class="text-xs text-slate-400">Composite restorations & veneer treatments.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES & SPECIALTIES GRID -->
+        <section id="expertise" class="py-24 relative">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="px-3.5 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-bold uppercase tracking-wider">
+                        Core Competencies
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-4">
+                        Clinical Specialties & Services
+                    </h2>
+                    <p class="text-slate-400 text-base mt-3">
+                        Advanced conservative dental therapies engineered for natural tooth longevity, comfort, and natural aesthetics.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service Card 1 -->
+                    <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 group glow-card">
+                        <div class="w-14 h-14 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-cyan-500 group-hover:text-slate-950 transition-all duration-300">
+                            <i class="fa-solid fa-tooth"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Microscopic Endodontics</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                            Precision root canal treatments utilizing magnified visualization for intricate canal anatomies and re-treatments.
+                        </p>
+                        <span class="text-xs text-cyan-400 font-semibold flex items-center gap-2">
+                            Advanced Therapy <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                        </span>
+                    </div>
+
+                    <!-- Service Card 2 -->
+                    <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 group glow-card">
+                        <div class="w-14 h-14 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-indigo-500 group-hover:text-slate-950 transition-all duration-300">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Aesthetic Restorations</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                            Biomimetic composite restorations, direct/indirect veneers, and tooth shade matching for seamless smiles.
+                        </p>
+                        <span class="text-xs text-indigo-400 font-semibold flex items-center gap-2">
+                            Cosmetic Excellence <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                        </span>
+                    </div>
+
+                    <!-- Service Card 3 -->
+                    <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 transition-all duration-300 group glow-card">
+                        <div class="w-14 h-14 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-purple-500 group-hover:text-slate-950 transition-all duration-300">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Tooth Preservation Care</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                            Preventive endodontics, pulp capping, and regenerative endodontic procedures for long-term tooth preservation.
+                        </p>
+                        <span class="text-xs text-purple-400 font-semibold flex items-center gap-2">
+                            Conservative Approach <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                        </span>
+                    </div>
+
+                    <!-- Service Card 4 -->
+                    <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 group glow-card">
+                        <div class="w-14 h-14 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-cyan-500 group-hover:text-slate-950 transition-all duration-300">
+                            <i class="fa-solid fa-user-doctor"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Endodontic Retreatment</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                            Specialized management of failed root canal cases, broken instrument retrieval, and complex root repairs.
+                        </p>
+                        <span class="text-xs text-cyan-400 font-semibold flex items-center gap-2">
+                            Surgical Precision <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                        </span>
+                    </div>
+
+                    <!-- Service Card 5 -->
+                    <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 group glow-card">
+                        <div class="w-14 h-14 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-indigo-500 group-hover:text-slate-950 transition-all duration-300">
+                            <i class="fa-solid fa-kit-medical"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Dental Trauma Management</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                            Immediate emergency endodontic care, splinting, and rehabilitation for fractured or avulsed teeth.
+                        </p>
+                        <span class="text-xs text-indigo-400 font-semibold flex items-center gap-2">
+                            Emergency Response <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                        </span>
+                    </div>
+
+                    <!-- Service Card 6 -->
+                    <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-pink-500/50 transition-all duration-300 group glow-card">
+                        <div class="w-14 h-14 rounded-xl bg-pink-500/10 text-pink-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-pink-500 group-hover:text-slate-950 transition-all duration-300">
+                            <i class="fa-solid fa-microscope"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Digital Intraoral Diagnosis</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                            High-precision diagnostic imaging and apex locators for exact root canal length determination and safety.
+                        </p>
+                        <span class="text-xs text-pink-400 font-semibold flex items-center gap-2">
+                            Digital Diagnostic <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS / ENDORSEMENTS SECTION -->
+        <section id="endorsements" class="py-24 bg-slate-900/40 relative border-t border-slate-800/50">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="px-3.5 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-bold uppercase tracking-wider">
+                        Patient & Peer Recognition
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-4">
+                        Endorsements & Testimonials
+                    </h2>
+                    <p class="text-slate-400 text-base mt-2">
+                        Trusted for clinical meticulousness, patient comfort, and exceptional restorative outcomes.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <div class="flex text-amber-400 gap-1 text-sm">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-300 text-sm leading-relaxed italic">
+                                "Dr. Swati handled my complex root canal treatment with absolute precision and completely painless execution. Her clinical calm and skill were truly impressive."
+                            </p>
+                        </div>
+                        <div class="pt-6 mt-6 border-t border-slate-800/80 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-cyan-500 to-indigo-500 text-slate-950 font-bold flex items-center justify-center text-xs">
+                                AK
+                            </div>
+                            <div>
+                                <h5 class="text-white font-bold text-sm">Ananya K.</h5>
+                                <p class="text-xs text-slate-400">Root Canal Patient</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <div class="flex text-amber-400 gap-1 text-sm">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-300 text-sm leading-relaxed italic">
+                                "Extremely dedicated resident who demonstrates thorough knowledge of endodontic techniques. Her restorative detail on composite fillings is remarkable."
+                            </p>
+                        </div>
+                        <div class="pt-6 mt-6 border-t border-slate-800/80 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-500 text-slate-950 font-bold flex items-center justify-center text-xs">
+                                RM
+                            </div>
+                            <div>
+                                <h5 class="text-white font-bold text-sm">Senior Faculty Review</h5>
+                                <p class="text-xs text-slate-400">Inderprastha Dental College</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <div class="flex text-amber-400 gap-1 text-sm">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-300 text-sm leading-relaxed italic">
+                                "I was terrified of root canal therapy until Dr. Swati explained the process. The procedure was smooth and saved my natural tooth perfectly."
+                            </p>
+                        </div>
+                        <div class="pt-6 mt-6 border-t border-slate-800/80 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-purple-500 to-pink-500 text-slate-950 font-bold flex items-center justify-center text-xs">
+                                VR
+                            </div>
+                            <div>
+                                <h5 class="text-white font-bold text-sm">Vikram R.</h5>
+                                <p class="text-xs text-slate-400">Restorative Patient</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="py-24 relative">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid lg:grid-cols-12 gap-12">
+                    
+                    <!-- Contact Details -->
+                    <div class="lg:col-span-5 space-y-8">
+                        <div>
+                            <span class="px-3.5 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-bold uppercase tracking-wider">
+                                Get In Touch
+                            </span>
+                            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-4">
+                                Book a Consultation or Academic Inquiry
+                            </h2>
+                            <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                                Feel free to reach out for endodontic consultations, academic collaborations, or restorative care inquiries at Inderprastha Dental College & Hospital.
+                            </p>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                                <div class="w-12 h-12 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl shrink-0">
+                                    <i class="fa-solid fa-hospital"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-slate-400 font-medium">Institution & Department</div>
+                                    <div class="text-sm font-semibold text-white">Department of Conservative Dentistry & Endodontics</div>
+                                    <div class="text-xs text-slate-400">Inderprastha Dental College & Hospital</div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                                <div class="w-12 h-12 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-xl shrink-0">
+                                    <i class="fa-solid fa-calendar-check"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-slate-400 font-medium">Availability</div>
+                                    <div class="text-sm font-semibold text-white">Postgraduate OPD Hours</div>
+                                    <div class="text-xs text-slate-400">Monday - Saturday (Departmental Schedule)</div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                                <div class="w-12 h-12 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl shrink-0">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-slate-400 font-medium">Professional Contact</div>
+                                    <div class="text-sm font-semibold text-white">Dr. Swati Solanki</div>
+                                    <div class="text-xs text-slate-400">PG Resident - Endodontics</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Form -->
+                    <div class="lg:col-span-7">
+                        <form onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent to Dr. Swati Solanki.');" class="p-8 sm:p-10 rounded-3xl bg-slate-900/70 backdrop-blur-xl border border-slate-800 space-y-6">
+                            <h3 class="text-xl font-bold text-white">Send a Direct Message</h3>
+                            
+                            <div class="grid sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">Your Name</label>
+                                    <input type="text" required placeholder="John Doe" class="w-full px-4 py-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-500 text-sm transition-all duration-200">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">Email Address</label>
+                                    <input type="email" required placeholder="john@example.com" class="w-full px-4 py-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-500 text-sm transition-all duration-200">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Inquiry Type</label>
+                                <select class="w-full px-4 py-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-300 focus:outline-none focus:border-cyan-500 text-sm transition-all duration-200">
+                                    <option>Endodontic Consultation (Root Canal)</option>
+                                    <option>Aesthetic Dental Restoration</option>
+                                    <option>Academic / Case Inquiry</option>
+                                    <option>General Consultation</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Message Details</label>
+                                <textarea rows="4" required placeholder="Describe your case or clinical inquiry here..." class="w-full px-4 py-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-500 text-sm transition-all duration-200"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white font-bold shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 hover:scale-[1.01] active:scale-95 transition-all duration-300">
+                                Submit Consultation Inquiry
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-slate-800/80 bg-slate-950 py-10 relative">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-400">
+            <div class="flex items-center gap-3">
+                <span class="font-bold text-white text-sm">Dr. Swati Solanki</span>
+                <span>•</span>
+                <span>Inderprastha Dental College & Hospital</span>
+            </div>
+            <div>
+                © 2026 Dr. Swati Solanki. Conservative Dentistry & Endodontics Specialist.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
