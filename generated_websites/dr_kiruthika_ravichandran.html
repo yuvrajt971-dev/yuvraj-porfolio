@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Kiruthika Ravichandran | Consultant Orthodontist</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(51, 65, 85, 0.5);
+        }
+        .glass-card:hover {
+            border-color: rgba(99, 102, 241, 0.5);
+            box-shadow: 0 0 25px -5px rgba(99, 102, 241, 0.15);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glow-bg {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(120px);
+            opacity: 0.25;
+            pointer-events: none;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-slate-950">
+
+    <!-- Ambient Gradient Glows -->
+    <div class="glow-bg w-96 h-96 bg-cyan-500 top-10 left-10"></div>
+    <div class="glow-bg w-[500px] h-[500px] bg-indigo-600 top-1/3 right-10"></div>
+    <div class="glow-bg w-96 h-96 bg-purple-600 bottom-10 left-1/3"></div>
+
+    <!-- Sticky Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-mx-auto px-6 py-4 flex items-center justify-between mx-auto">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center font-bold text-white text-xl shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
+                    <i class="fa-solid font-bold fa-teeth"></i>
+                </div>
+                <div>
+                    <span class="text-lg font-bold tracking-tight block leading-none">Dr. Kiruthika R.</span>
+                    <span class="text-xs text-cyan-400 font-medium">Orthodontist</span>
+                </div>
+            </a>
+            
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Specializations</a>
+                <a href="#why-choose" class="hover:text-cyan-400 transition-colors">Clinical Practice</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Testimonials</a>
+            </div>
+
+            <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-white bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 rounded-full shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-105 transition-all duration-300">
+                Book Consultation
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-20 md:pt-44 md:pb-32 px-6 overflow-hidden">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Hero Text -->
+            <div class="lg:col-span-7 space-y-8 text-center lg:text-left z-10">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border-cyan-500/30 text-cyan-300 text-xs sm:text-sm font-medium">
+                    <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                    Consultant Orthodontist • Kovai Medical Center and Hospital
+                </div>
+
+                <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight">
+                    Crafting Healthy, <br>
+                    <span class="gradient-text">Flawless Smiles</span> <br>
+                    With Precision Artistry.
+                </h1>
+
+                <p class="text-slate-400 text-lg sm:text-xl max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
+                    Transforming smiles and enhancing facial aesthetics through modern orthodontic innovation, invisible aligners, and personalized patient care at KMCH.
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                    <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white font-semibold text-center shadow-xl shadow-cyan-500/20 hover:scale-105 transition-all duration-300 flex items-center justify-center gap-3">
+                        <span>Schedule Appointment</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                    <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-full glass-card hover:bg-slate-800/80 text-slate-200 font-semibold text-center transition-all duration-300">
+                        Explore Treatments
+                    </a>
+                </div>
+
+                <!-- Trust Badges -->
+                <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0">
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-slate-100">10+</div>
+                        <div class="text-xs text-slate-400">Years Experience</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-cyan-400">3,500+</div>
+                        <div class="text-xs text-slate-400">Smiles Transformed</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-purple-400">100%</div>
+                        <div class="text-xs text-slate-400">Precision Driven</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Avatar & Frame -->
+            <div class="lg:col-span-5 flex justify-center z-10">
+                <div class="relative group">
+                    <!-- Glowing frame ring -->
+                    <div class="absolute -inset-1.5 bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 rounded-3xl blur-xl opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+                    
+                    <div class="relative w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-3xl overflow-hidden glass-card p-3">
+                        <img 
+                            src="https://ui-avatars.com/api/?name=Dr.+Kiruthika+Ravichandran&size=200&background=0D8ABC&color=fff&bold=true" 
+                            alt="Dr. Kiruthika Ravichandran" 
+                            class="w-full h-full object-cover rounded-2xl shadow-2xl transition-transform duration-500 group-hover:scale-105"
+                        >
+                        <!-- Floating Badge -->
+                        <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl glass-card border-indigo-500/40 bg-slate-900/90 text-center">
+                            <h3 class="text-sm font-bold text-slate-100">Dr. Kiruthika Ravichandran</h3>
+                            <p class="text-xs text-cyan-400 font-medium mt-0.5">KMCH Hospital, Coimbatore</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-24 px-6 relative z-10 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Industry Image -->
+                <div class="lg:col-span-6 relative">
+                    <div class="relative rounded-3xl overflow-hidden border border-slate-800 shadow-2xl group">
+                        <img 
+                            src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                            alt="Modern Dental Practice" 
+                            class="w-full h-[420px] object-cover group-hover:scale-105 transition-transform duration-700"
+                        >
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <span class="text-xs uppercase tracking-widest text-cyan-400 font-bold">State-Of-The-Art Care</span>
+                            <h4 class="text-xl font-bold text-white mt-1">World-Class Orthodontic Facility</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 text-xs font-semibold border border-indigo-500/20">
+                        Expertise & Philosophy
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">
+                        Excellence in Dentofacial Orthopedics & Aesthetic Dentistry
+                    </h2>
+
+                    <p class="text-slate-400 leading-relaxed font-light">
+                        As a Consultant Orthodontist at Kovai Medical Center and Hospital (KMCH), Dr. Kiruthika Ravichandran blends advanced clinical technology with personalized care. She specializes in correcting misaligned teeth, jaw discrepancies, and creating harmonized, long-lasting facial aesthetic results.
+                    </p>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center shrink-0 border border-cyan-500/20 mt-1">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-base font-bold text-slate-100">Customized Invisible Alignment</h4>
+                                <p class="text-sm text-slate-400">Tailored clear aligner solutions for discrete, comfortable, and efficient smile correction.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center shrink-0 border border-purple-500/20 mt-1">
+                                <i class="fa-solid fa-hospital-user"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-base font-bold text-slate-100">Comprehensive KMCH Care</h4>
+                                <p class="text-sm text-slate-400">Delivering multi-disciplinary clinical excellence in one of South India's premier hospital environments.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 px-6 relative z-10 bg-slate-950/50 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto">
+            
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="text-xs uppercase tracking-widest text-cyan-400 font-bold">Clinical Services</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight">Comprehensive Orthodontic Treatments</h2>
+                <p class="text-slate-400 font-light">Advanced solutions tailored for children, teens, and adults.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service Card 1 -->
+                <div class="glass-card p-8 rounded-2xl group transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-cyan-500/20 to-indigo-500/20 border border-cyan-500/30 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-100 group-hover:text-cyan-400 transition-colors">Clear Aligners / Invisalign</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6 font-light">
+                        Virtually invisible, removable trays designed with precision 3D digital scanning for maximum comfort and speed.
+                    </p>
+                    <span class="text-xs font-semibold text-cyan-400 flex items-center gap-2">
+                        Learn More <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </span>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="glass-card p-8 rounded-2xl group transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-indigo-500/20 to-purple-500/20 border border-indigo-500/30 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-sliders"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-100 group-hover:text-indigo-400 transition-colors">Ceramic & Metal Braces</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6 font-light">
+                        High-precision traditional and aesthetic tooth-colored ceramic bracket systems for optimal alignment outcomes.
+                    </p>
+                    <span class="text-xs font-semibold text-indigo-400 flex items-center gap-2">
+                        Learn More <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </span>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="glass-card p-8 rounded-2xl group transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-purple-500/20 to-pink-500/20 border border-purple-500/30 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-face-smile"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-100 group-hover:text-purple-400 transition-colors">Dentofacial Orthopedics</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6 font-light">
+                        Specialized jaw growth modification for growing children to balance facial symmetry and prevent complex issues.
+                    </p>
+                    <span class="text-xs font-semibold text-purple-400 flex items-center gap-2">
+                        Learn More <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </span>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="glass-card p-8 rounded-2xl group transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-cyan-500/20 to-indigo-500/20 border border-cyan-500/30 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-microscope"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-100 group-hover:text-cyan-400 transition-colors">Surgical Orthodontics</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6 font-light">
+                        Collaborative surgical-orthodontic treatment plans for severe jaw irregularities and facial disharmony.
+                    </p>
+                    <span class="text-xs font-semibold text-cyan-400 flex items-center gap-2">
+                        Learn More <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </span>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="glass-card p-8 rounded-2xl group transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-indigo-500/20 to-purple-500/20 border border-indigo-500/30 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-child"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-100 group-hover:text-indigo-400 transition-colors">Pediatric Orthodontics</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6 font-light">
+                        Early intervention screenings and habit-breaking appliances ensuring optimal adult dental development.
+                    </p>
+                    <span class="text-xs font-semibold text-indigo-400 flex items-center gap-2">
+                        Learn More <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </span>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="glass-card p-8 rounded-2xl group transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-purple-500/20 to-pink-500/20 border border-purple-500/30 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-100 group-hover:text-purple-400 transition-colors">Retention & Maintenance</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6 font-light">
+                        Custom bonded and removable retainers engineered to preserve your stunning post-treatment smile forever.
+                    </p>
+                    <span class="text-xs font-semibold text-purple-400 flex items-center gap-2">
+                        Learn More <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Endorsements Section -->
+    <section id="testimonials" class="py-24 px-6 relative z-10 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto">
+            
+            <div class="text-center max-w-2xl mx-auto space-y-4 mb-16">
+                <span class="text-xs uppercase tracking-widest text-indigo-400 font-bold">Patient Reviews</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight">Patient Stories & Smiles</h2>
+                <p class="text-slate-400 font-light">Real experiences from patients treated at Kovai Medical Center and Hospital.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 text-sm gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic font-light">
+                            "Dr. Kiruthika is exceptionally skilled and gentle. My aligner journey at KMCH was smooth and completely transformed my confidence!"
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-800/60 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold text-sm">
+                            AN
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-slate-200">Ananya N.</h4>
+                            <span class="text-xs text-slate-500">Clear Aligner Patient</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 text-sm gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic font-light">
+                            "Her attention to detail during my ceramic braces treatment was incredible. She takes time to explain every step clearly."
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-800/60 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-sm">
+                            RK
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-slate-200">Rajesh K.</h4>
+                            <span class="text-xs text-slate-500">Orthodontic Patient</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 text-sm gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic font-light">
+                            "We consulted Dr. Kiruthika for my daughter's bite correction. The results are remarkable and her compassionate approach made all the difference."
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-800/60 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 flex items-center justify-center font-bold text-sm">
+                            SM
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-slate-200">Sangeetha M.</h4>
+                            <span class="text-xs text-slate-500">Parent of Patient</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Appointment Section -->
+    <section id="contact" class="py-24 px-6 relative z-10 bg-slate-950/80 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Info -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div class="space-y-4">
+                        <span class="text-xs uppercase tracking-widest text-cyan-400 font-bold">Get In Touch</span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold">Book Your Orthodontic Consultation</h2>
+                        <p class="text-slate-400 font-light">
+                            Take the first step toward your dream smile. Visit Dr. Kiruthika Ravichandran at Kovai Medical Center and Hospital.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="glass-card p-5 rounded-xl flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-hospital text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs uppercase text-slate-400 font-medium">Practice Location</h4>
+                                <p class="text-sm font-semibold text-slate-100">Kovai Medical Center and Hospital (KMCH)</p>
+                                <p class="text-xs text-slate-400">Avinashi Road, Coimbatore, Tamil Nadu</p>
+                            </div>
+                        </div>
+
+                        <div class="glass-card p-5 rounded-xl flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-envelope text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs uppercase text-slate-400 font-medium">Direct Inquiry</h4>
+                                <p class="text-sm font-semibold text-slate-100">dr.kiruthika@kmch-ortho.com</p>
+                            </div>
+                        </div>
+
+                        <div class="glass-card p-5 rounded-xl flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-calendar-check text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs uppercase text-slate-400 font-medium">OPD Timings</h4>
+                                <p class="text-sm font-semibold text-slate-100">Mon - Sat: 9:00 AM - 5:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div class="lg:col-span-7">
+                    <form onsubmit="event.preventDefault(); alert('Appointment request submitted successfully!');" class="glass-card p-8 sm:p-10 rounded-3xl space-y-6">
+                        <h3 class="text-xl font-bold text-slate-100 mb-2">Send an Appointment Request</h3>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Full Name</label>
+                                <input type="text" required placeholder="John Doe" class="w-full bg-slate-900/80 border border-slate-800 rounded-xl px-4 py-3.5 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Phone Number</label>
+                                <input type="tel" required placeholder="+91 98765 43210" class="w-full bg-slate-900/80 border border-slate-800 rounded-xl px-4 py-3.5 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Service Required</label>
+                                <select class="w-full bg-slate-900/80 border border-slate-800 rounded-xl px-4 py-3.5 text-slate-300 focus:outline-none focus:border-cyan-500 transition-colors">
+                                    <option>Clear Aligners / Invisalign</option>
+                                    <option>Ceramic or Metal Braces</option>
+                                    <option>Pediatric Orthodontics</option>
+                                    <option>General Orthodontic Consultation</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Preferred Date</label>
+                                <input type="date" class="w-full bg-slate-900/80 border border-slate-800 rounded-xl px-4 py-3.5 text-slate-300 focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Additional Details</label>
+                            <textarea rows="4" placeholder="Briefly describe your dental goals or concerns..." class="w-full bg-slate-900/80 border border-slate-800 rounded-xl px-4 py-3.5 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white font-bold tracking-wide shadow-lg shadow-indigo-500/25 hover:scale-[1.01] active:scale-[0.99] transition-all duration-200">
+                            Confirm Consultation Request
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-slate-900 text-slate-500 text-xs relative z-10">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center font-bold text-white text-sm">
+                    <i class="fa-solid fa-teeth"></i>
+                </div>
+                <span class="text-sm font-semibold text-slate-300">Dr. Kiruthika Ravichandran</span>
+            </div>
+            
+            <p>© 2026 Dr. Kiruthika Ravichandran • Consultant Orthodontist, KMCH. All rights reserved.</p>
+
+            <div class="flex space-x-4 text-slate-400 text-sm">
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-solid fa-hospital"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
