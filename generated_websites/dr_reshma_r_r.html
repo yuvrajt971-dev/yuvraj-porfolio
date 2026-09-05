@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Reshma R R | General Dentist | Rals Healthcare</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            cyan: '#0D8ABC',
+                            teal: '#00D2FF',
+                            accent: '#6366F1'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        
+        /* Custom Glowing Effect & Keyframes */
+        .glow-gradient {
+            background: linear-gradient(135deg, #0D8ABC 0%, #6366F1 50%, #EC4899 100%);
+        }
+        
+        .glow-box {
+            box-shadow: 0 0 50px -10px rgba(13, 138, 187, 0.3);
+        }
+
+        .avatar-glow {
+            box-shadow: 0 0 35px 5px rgba(13, 138, 187, 0.4), 0 0 20px 2px rgba(99, 102, 241, 0.4);
+        }
+
+        .text-gradient {
+            background: linear-gradient(135deg, #38BDF8 0%, #818CF8 50%, #F472B6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .glass-card {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(56, 189, 248, 0.4);
+            box-shadow: 0 10px 30px -10px rgba(13, 138, 187, 0.25);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-white relative overflow-x-hidden">
+
+    <!-- Background Ambient Glows -->
+    <div class="fixed top-0 left-1/4 w-96 h-96 bg-cyan-600/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="fixed bottom-1/3 right-1/4 w-96 h-96 bg-indigo-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform duration-300">
+                    R
+                </div>
+                <div>
+                    <span class="text-lg font-bold tracking-tight text-white block">Dr. Reshma R R</span>
+                    <span class="text-xs text-cyan-400 font-medium block">Rals Healthcare</span>
+                </div>
+            </a>
+            
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-cyan-400 transition-colors">Expertise</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Reviews</a>
+            </div>
+
+            <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-cyan-500 to-indigo-600 hover:from-cyan-400 hover:to-indigo-500 shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 transition-all duration-300">
+                <i class="fa-regular font-bold fa-calendar-check"></i>
+                <span>Book Visit</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen pt-32 pb-20 flex items-center relative z-10">
+        <div class="max-w-7xl mx-auto px-6 w-full grid lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Hero Left Column -->
+            <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border-slate-700/60 text-cyan-400 text-xs font-semibold tracking-wide uppercase">
+                    <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                    Lead General Dentist • Rals Healthcare
+                </div>
+
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                    Crafting Healthy, <br/>
+                    <span class="text-gradient">Radiant Smiles</span> With Precision.
+                </h1>
+
+                <p class="text-slate-400 text-base sm:text-lg max-w-2xl leading-relaxed mx-auto lg:mx-0">
+                    Welcome! I am <strong class="text-slate-200">Dr. Reshma R R</strong>, dedicated to delivering comprehensive, world-class dental care at Rals Healthcare. Combining advanced clinical technique with compassionate, patient-first dentistry.
+                </p>
+
+                <!-- Action Buttons -->
+                <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+                    <a href="#contact" class="px-8 py-4 rounded-xl font-semibold text-white bg-gradient-to-r from-cyan-500 via-indigo-600 to-pink-500 hover:opacity-95 shadow-xl shadow-cyan-500/20 hover:shadow-cyan-500/40 transition-all duration-300 flex items-center gap-3">
+                        <span>Schedule Consultation</span>
+                        <i class="fa-solid fa-arrow-right text-sm"></i>
+                    </a>
+                    <a href="#services" class="px-8 py-4 rounded-xl font-semibold text-slate-300 glass-card hover:bg-slate-800/80 hover:text-white transition-all duration-300">
+                        View Dental Treatments
+                    </a>
+                </div>
+
+                <!-- Trust Badges Grid -->
+                <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0">
+                    <div class="text-center lg:text-left">
+                        <p class="text-2xl font-bold text-white">100%</p>
+                        <p class="text-xs text-slate-400 font-medium">Patient Care Focus</p>
+                    </div>
+                    <div class="text-center lg:text-left border-x border-slate-800 px-2">
+                        <p class="text-2xl font-bold text-cyan-400">Rals</p>
+                        <p class="text-xs text-slate-400 font-medium">Healthcare Excellence</p>
+                    </div>
+                    <div class="text-center lg:text-left">
+                        <p class="text-2xl font-bold text-white">5.0 ★</p>
+                        <p class="text-xs text-slate-400 font-medium">Patient Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Right Column (Avatar & Card Frame) -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative group">
+                    <!-- Glowing Outer Double Frame -->
+                    <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-cyan-500 via-indigo-500 to-pink-500 blur-xl opacity-70 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+                    
+                    <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full p-2 bg-slate-950 border border-slate-800 shadow-2xl flex items-center justify-center overflow-hidden avatar-glow">
+                        <img 
+                            src="https://ui-avatars.com/api/?name=Dr+Reshma+R+R&size=200&background=0D8ABC&color=fff&bold=true" 
+                            alt="Dr Reshma R R" 
+                            class="w-full h-full object-cover rounded-full transition-transform duration-500 group-hover:scale-105"
+                        />
+                    </div>
+
+                    <!-- Floating Badge -->
+                    <div class="absolute -bottom-4 right-2 sm:bottom-2 sm:right-0 glass-card px-5 py-3 rounded-2xl border border-slate-700/80 shadow-2xl flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-teal-500/20 text-teal-400 flex items-center justify-center">
+                            <i class="fa-solid fa-tooth text-lg"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400">Specialization</p>
+                            <p class="text-sm font-bold text-white">General Dentistry</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-24 relative z-10 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Clinical Image Column -->
+                <div class="lg:col-span-5 relative">
+                    <div class="absolute -inset-2 bg-gradient-to-tr from-cyan-500 to-indigo-600 rounded-3xl blur-lg opacity-30"></div>
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 shadow-2xl">
+                        <img 
+                            src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                            alt="Modern Dental Clinic" 
+                            class="w-full h-[420px] object-cover hover:scale-105 transition-transform duration-700"
+                        />
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <p class="text-xs text-cyan-400 font-semibold uppercase tracking-wider">Clinical Environment</p>
+                            <p class="text-lg font-bold text-white mt-1">Advanced Technology & Patient Comfort</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Content Column -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-block px-4 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs font-semibold">
+                        Professional Profile
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white">
+                        Dedicated to Gentle Care & Exceptional Oral Health
+                    </h2>
+                    <p class="text-slate-400 leading-relaxed">
+                        As a General Dentist at <strong class="text-slate-200">Rals Healthcare</strong>, Dr. Reshma R R brings a holistic approach to oral health. She believes that a healthy smile is the foundation of overall wellness. With meticulous attention to detail and modern therapeutic techniques, she ensures every patient receives personalized care in a stress-free environment.
+                    </p>
+
+                    <div class="grid sm:grid-cols-2 gap-4 pt-4">
+                        <div class="glass-card p-4 rounded-xl border border-slate-800">
+                            <div class="text-cyan-400 text-xl mb-2"><i class="fa-solid fa-microscope"></i></div>
+                            <h3 class="font-bold text-white mb-1">Modern Diagnostics</h3>
+                            <p class="text-xs text-slate-400">Utilizing state-of-the-art tools for precise clinical evaluation.</p>
+                        </div>
+
+                        <div class="glass-card p-4 rounded-xl border border-slate-800">
+                            <div class="text-cyan-400 text-xl mb-2"><i class="fa-solid fa-heart-pulse"></i></div>
+                            <h3 class="font-bold text-white mb-1">Patient-Centric Care</h3>
+                            <p class="text-xs text-slate-400">Gentle treatment protocols prioritizing complete patient comfort.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 relative z-10 bg-slate-900/30">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <div class="inline-block px-4 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 text-xs font-semibold mb-3">
+                    Comprehensive Treatments
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white">Clinical Dental Services</h2>
+                <p class="text-slate-400 text-sm sm:text-base mt-2">Expert dental solutions tailored for patients of all ages at Rals Healthcare.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service Card 1 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-cyan-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Preventive Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Routine checkups, scaling, polishing, and restorative fluoride therapies to maintain optimal oral hygiene.</p>
+                    <span class="text-xs font-semibold text-cyan-400 flex items-center gap-2">Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Cosmetic Enhancement</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Teeth whitening, aesthetic veneers, and custom smile design tailored to highlight your natural beauty.</p>
+                    <span class="text-xs font-semibold text-indigo-400 flex items-center gap-2">Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-pink-500/10 text-pink-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-pink-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Restorative Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Tooth-colored composite fillings, durable crowns, and bridges to restore functionality and aesthetic unity.</p>
+                    <span class="text-xs font-semibold text-pink-400 flex items-center gap-2">Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-teal-500/10 text-teal-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-teal-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-kit-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Root Canal Therapy</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Painless endodontic procedures designed to preserve natural tooth structures and eliminate tooth decay effectively.</p>
+                    <span class="text-xs font-semibold text-teal-400 flex items-center gap-2">Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-purple-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-teeth-open"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Orthodontic Alignments</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Modern consultation for clear aligners and corrective procedures to achieve ideal alignment and bite harmony.</p>
+                    <span class="text-xs font-semibold text-purple-400 flex items-center gap-2">Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-amber-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-face-smile"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Pediatric Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Friendly, gentle oral healthcare designed specifically to ensure children maintain strong, healthy growing teeth.</p>
+                    <span class="text-xs font-semibold text-amber-400 flex items-center gap-2">Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 relative z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <div class="inline-block px-4 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs font-semibold mb-3">
+                    Patient Endorsements
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white">What Patients Say</h2>
+                <p class="text-slate-400 text-sm sm:text-base mt-2">Real feedback from patients treated at Rals Healthcare.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass-card p-8 rounded-2xl relative">
+                    <div class="flex text-amber-400 gap-1 mb-4 text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                        "Dr. Reshma R R is exceptionally gentle and empathetic. I used to be terrified of dental procedures, but her calm demeanor made my root canal completely painless."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold text-sm">A.P.</div>
+                        <div>
+                            <p class="text-sm font-bold text-white">Ananya P.</p>
+                            <p class="text-xs text-slate-400">Rals Healthcare Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl relative">
+                    <div class="flex text-amber-400 gap-1 mb-4 text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                        "The smile transformation treatment I received was outstanding. Dr. Reshma took time to explain every step. Truly a world-class dentist!"
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-sm">M.K.</div>
+                        <div>
+                            <p class="text-sm font-bold text-white">Mahesh K.</p>
+                            <p class="text-xs text-slate-400">Cosmetic Consultation</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl relative">
+                    <div class="flex text-amber-400 gap-1 mb-4 text-sm">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                        "Extremely professional practice. The clinic hygiene standard is superb, and Dr. Reshma's diagnosis was spot-on. Highly recommended."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-pink-500/20 text-pink-400 flex items-center justify-center font-bold text-sm">S.N.</div>
+                        <div>
+                            <p class="text-sm font-bold text-white">Sujata N.</p>
+                            <p class="text-xs text-slate-400">Regular Patient</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Booking Section -->
+    <section id="contact" class="py-24 relative z-10 bg-slate-900/40 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <!-- Direct Details -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <div class="inline-block px-4 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs font-semibold mb-3">
+                            Get In Touch
+                        </div>
+                        <h2 class="text-3xl sm:text-4xl font-bold text-white">Schedule Your Appointment</h2>
+                        <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                            Reach out to arrange a consultation with Dr. Reshma R R at Rals Healthcare. We look forward to welcoming you!
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="glass-card p-4 rounded-xl flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-hospital"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Practice Location</p>
+                                <p class="text-sm font-semibold text-white">Rals Healthcare Clinic</p>
+                            </div>
+                        </div>
+
+                        <div class="glass-card p-4 rounded-xl flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Direct Contact</p>
+                                <p class="text-sm font-semibold text-white">Appointments via Rals Healthcare Desk</p>
+                            </div>
+                        </div>
+
+                        <div class="glass-card p-4 rounded-xl flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-pink-500/10 text-pink-400 flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Professional Network Connected</p>
+                                <p class="text-sm font-semibold text-white">28 Aug 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="lg:col-span-7">
+                    <form onsubmit="event.preventDefault(); alert('Thank you! Your appointment request has been submitted to Dr. Reshma\'s team.');" class="glass-card p-8 sm:p-10 rounded-2xl border border-slate-800 space-y-6">
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">FULL NAME</label>
+                                <input type="text" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">PHONE NUMBER</label>
+                                <input type="tel" required placeholder="+1 (555) 000-0000" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 text-sm">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">SERVICE REQUIRED</label>
+                            <select class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-300 focus:outline-none focus:border-cyan-500 text-sm">
+                                <option>General Consultation & Checkup</option>
+                                <option>Teeth Whitening / Cosmetic Enhancement</option>
+                                <option>Restorative Filling or Crown</option>
+                                <option>Root Canal Therapy</option>
+                                <option>Orthodontic Evaluation</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">MESSAGE / CLINICAL NOTES</label>
+                            <textarea rows="4" placeholder="Briefly describe your symptoms or inquiry..." class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 text-sm"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl font-bold text-white bg-gradient-to-r from-cyan-500 via-indigo-600 to-pink-500 hover:opacity-95 shadow-xl shadow-cyan-500/20 transition-all duration-300">
+                            Submit Visit Request
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-900 bg-slate-950 text-slate-500 text-sm">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© 2026 Dr. Reshma R R • General Dentist at Rals Healthcare. All rights reserved.</p>
+            <div class="flex gap-6 text-slate-400">
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-linkedin text-lg"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-solid fa-globe text-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
