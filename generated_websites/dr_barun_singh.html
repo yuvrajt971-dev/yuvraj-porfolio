@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Barun Singh | Healthcare Quality & Patient Safety Specialist</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        tealAccent: '#0D8ABC',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(13, 138, 188, 0.3);
+        }
+        .glow-effect-purple {
+            box-shadow: 0 0 50px -10px rgba(147, 51, 234, 0.25);
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(51, 65, 85, 0.6);
+        }
+        .glass-card:hover {
+            border-color: rgba(13, 138, 188, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 selection:bg-cyan-500 selection:text-white antialiased">
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Brand -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-600 to-indigo-600 flex items-center justify-center font-bold text-white shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform duration-300">
+                        BS
+                    </div>
+                    <div>
+                        <span class="text-lg font-bold text-white tracking-wide block leading-none">Dr. Barun Singh</span>
+                        <span class="text-xs text-cyan-400 font-medium tracking-wider uppercase">Delhi State Health Mission</span>
+                    </div>
+                </a>
+
+                <!-- Nav Links -->
+                <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                    <a href="#about" class="text-slate-300 hover:text-cyan-400 transition-colors">About</a>
+                    <a href="#expertise" class="text-slate-300 hover:text-cyan-400 transition-colors">Expertise</a>
+                    <a href="#initiatives" class="text-slate-300 hover:text-cyan-400 transition-colors">Initiatives</a>
+                    <a href="#endorsements" class="text-slate-300 hover:text-cyan-400 transition-colors">Endorsements</a>
+                    <a href="#contact" class="text-slate-300 hover:text-cyan-400 transition-colors">Contact</a>
+                </div>
+
+                <!-- CTA Button -->
+                <div class="hidden md:block">
+                    <a href="#contact" class="px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 transition-all duration-300 hover:-translate-y-0.5">
+                        Get In Touch
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="text-slate-300 hover:text-white focus:outline-none">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900/95 border-b border-slate-800 px-4 pt-2 pb-6 space-y-3">
+            <a href="#about" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block text-slate-300 hover:text-cyan-400 py-1">About</a>
+            <a href="#expertise" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block text-slate-300 hover:text-cyan-400 py-1">Expertise</a>
+            <a href="#initiatives" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block text-slate-300 hover:text-cyan-400 py-1">Initiatives</a>
+            <a href="#endorsements" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block text-slate-300 hover:text-cyan-400 py-1">Endorsements</a>
+            <a href="#contact" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block text-slate-300 hover:text-cyan-400 py-1">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden">
+        <!-- Ambient Glowing Background Elements -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-cyan-600/20 to-purple-600/20 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute top-1/3 right-10 w-96 h-96 bg-blue-600/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Left Column: Content -->
+                <div class="lg:col-span-7 text-center lg:text-left space-y-8">
+                    
+                    <!-- Trust Badge -->
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border-slate-700/80 text-xs sm:text-sm font-medium text-cyan-300 shadow-inner">
+                        <span class="flex h-2 w-2 rounded-full bg-cyan-400 animate-ping"></span>
+                        <i class="fa-solid fa-hospital-user text-cyan-400"></i>
+                        <span>Quality & Patient Safety Intern | Delhi State Health Mission</span>
+                    </div>
+
+                    <!-- Main Headline -->
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.15]">
+                        Advancing Healthcare <br class="hidden sm:inline" />
+                        <span class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-teal-300 to-indigo-400">
+                            Standards & Patient Safety
+                        </span>
+                    </h1>
+
+                    <!-- Paragraph -->
+                    <p class="text-base sm:text-lg text-slate-400 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Dedicated medical professional specializing in clinical quality assurance, public health governance, and patient safety protocols. Elevating hospital standard operating procedures and driving continuous improvement in public healthcare systems.
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#expertise" class="w-full sm:w-auto px-8 py-4 rounded-xl text-sm font-semibold bg-gradient-to-r from-cyan-500 via-blue-600 to-indigo-600 hover:from-cyan-400 hover:to-indigo-500 text-white shadow-xl shadow-cyan-500/20 hover:shadow-cyan-500/40 transition-all duration-300 flex items-center justify-center gap-2 group">
+                            <span>Explore Expertise</span>
+                            <i class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl text-sm font-semibold glass-card text-slate-200 hover:text-white hover:bg-slate-800/80 transition-all duration-300 flex items-center justify-center gap-2">
+                            <i class="fa-regular fa-envelope text-cyan-400"></i>
+                            <span>Get in Touch</span>
+                        </a>
+                    </div>
+
+                    <!-- Quick Stats Grid -->
+                    <div class="grid grid-cols-3 gap-4 pt-8 border-t border-slate-800/80 max-w-xl mx-auto lg:mx-0">
+                        <div class="text-center lg:text-left">
+                            <div class="text-2xl sm:text-3xl font-extrabold text-cyan-400">NQAS/NABH</div>
+                            <div class="text-xs text-slate-400 font-medium uppercase tracking-wider mt-1">Standard Alignment</div>
+                        </div>
+                        <div class="text-center lg:text-left">
+                            <div class="text-2xl sm:text-3xl font-extrabold text-teal-400">100%</div>
+                            <div class="text-xs text-slate-400 font-medium uppercase tracking-wider mt-1">Safety Focus</div>
+                        </div>
+                        <div class="text-center lg:text-left">
+                            <div class="text-2xl sm:text-3xl font-extrabold text-indigo-400">DSHM</div>
+                            <div class="text-xs text-slate-400 font-medium uppercase tracking-wider mt-1">Public Governance</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Column: Profile Avatar Frame -->
+                <div class="lg:col-span-5 flex justify-center relative">
+                    <div class="relative group">
+                        
+                        <!-- Glowing Double Rings -->
+                        <div class="absolute -inset-1.5 bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 rounded-3xl blur-xl opacity-70 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+                        <div class="absolute -inset-1 bg-gradient-to-r from-teal-400 to-blue-600 rounded-3xl blur opacity-50"></div>
+
+                        <!-- Card Container -->
+                        <div class="relative px-8 py-10 bg-slate-900 rounded-3xl border border-slate-800 flex flex-col items-center text-center space-y-6 glow-effect">
+                            
+                            <!-- Avatar -->
+                            <div class="relative">
+                                <div class="w-40 h-40 rounded-2xl overflow-hidden ring-4 ring-cyan-500/30 shadow-2xl">
+                                    <img src="https://ui-avatars.com/api/?name=Dr+Barun+Singh&size=200&background=0D8ABC&color=fff&bold=true" alt="Dr Barun Singh" class="w-full h-full object-cover">
+                                </div>
+                                <div class="absolute -bottom-2 -right-2 bg-cyan-500 text-slate-950 font-bold p-2.5 rounded-xl text-xs shadow-lg">
+                                    <i class="fa-solid fa-user-doctor text-base"></i>
+                                </div>
+                            </div>
+
+                            <!-- Name & Title Info -->
+                            <div>
+                                <h3 class="text-2xl font-bold text-white tracking-wide">Dr. Barun Singh</h3>
+                                <p class="text-sm text-cyan-400 font-medium mt-1">Quality & Patient Safety Specialist</p>
+                                <p class="text-xs text-slate-400 mt-2 flex items-center justify-center gap-1.5">
+                                    <i class="fa-solid fa-building-columns text-slate-500"></i>
+                                    Delhi State Health Mission
+                                </p>
+                            </div>
+
+                            <!-- Highlights Tag -->
+                            <div class="w-full pt-4 border-t border-slate-800/80 flex flex-wrap gap-2 justify-center">
+                                <span class="px-3 py-1 rounded-full text-[11px] font-semibold bg-cyan-950/80 text-cyan-300 border border-cyan-800/50">Clinical Governance</span>
+                                <span class="px-3 py-1 rounded-full text-[11px] font-semibold bg-indigo-950/80 text-indigo-300 border border-indigo-800/50">Infection Control</span>
+                                <span class="px-3 py-1 rounded-full text-[11px] font-semibold bg-purple-950/80 text-purple-300 border border-purple-800/50">Risk Mitigation</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-20 relative bg-slate-900/40 border-y border-slate-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <h2 class="text-xs uppercase tracking-widest text-cyan-400 font-extrabold">Professional Overview</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-white">Bridging Clinical Excellence & Institutional Safety</p>
+                <div class="w-16 h-1 bg-gradient-to-r from-cyan-500 to-indigo-500 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left: Industry Image Frame -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative rounded-2xl overflow-hidden glass-card p-2 border-slate-800 group">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" alt="Healthcare Quality & Safety" class="w-full h-[400px] object-cover rounded-xl transform group-hover:scale-105 transition-transform duration-500 opacity-90">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent rounded-xl"></div>
+                        
+                        <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl glass-card bg-slate-950/80 border-slate-700/60">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-lg bg-cyan-500/20 border border-cyan-500/40 flex items-center justify-center text-cyan-400">
+                                    <i class="fa-solid fa-clipboard-check text-lg"></i>
+                                </div>
+                                <div>
+                                    <div class="text-sm font-bold text-white">Quality Audit & Compliance</div>
+                                    <div class="text-xs text-slate-400">Delhi State Health Mission Framework</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Detailed Narrative -->
+                <div class="lg:col-span-7 space-y-6">
+                    <h3 class="text-2xl font-bold text-white">Dedicated to Transforming Patient Care Benchmarks</h3>
+                    <p class="text-slate-300 leading-relaxed text-sm sm:text-base">
+                        As a Quality and Patient Safety Intern at the <strong class="text-cyan-300 font-semibold">Delhi State Health Mission</strong>, Dr. Barun Singh plays a pivotal role in reviewing clinical protocols, analyzing safety metrics, and championing continuous quality improvement initiatives across health facilities.
+                    </p>
+                    <p class="text-slate-400 leading-relaxed text-sm sm:text-base">
+                        By combining medical knowledge with administrative quality frameworks (NQAS, NABH), Dr. Singh ensures that public health infrastructure adheres to rigorous safety parameters, minimizing healthcare-associated risks and maximizing patient satisfaction.
+                    </p>
+
+                    <!-- Key Pillars Grid -->
+                    <div class="grid sm:grid-cols-2 gap-4 pt-4">
+                        <div class="p-4 rounded-xl glass-card">
+                            <div class="flex items-center gap-3 mb-2">
+                                <i class="fa-solid fa-shield-virus text-cyan-400 text-lg"></i>
+                                <h4 class="font-bold text-white text-sm">Infection Control</h4>
+                            </div>
+                            <p class="text-xs text-slate-400">Implementation of stringent hygiene standards and clinical sanitation guidelines.</p>
+                        </div>
+
+                        <div class="p-4 rounded-xl glass-card">
+                            <div class="flex items-center gap-3 mb-2">
+                                <i class="fa-solid fa-chart-pie text-indigo-400 text-lg"></i>
+                                <h4 class="font-bold text-white text-sm">Quality Metrics</h4>
+                            </div>
+                            <p class="text-xs text-slate-400">Data-driven assessment of healthcare outcomes and facility compliance scorecards.</p>
+                        </div>
+
+                        <div class="p-4 rounded-xl glass-card">
+                            <div class="flex items-center gap-3 mb-2">
+                                <i class="fa-solid fa-file-contract text-teal-400 text-lg"></i>
+                                <h4 class="font-bold text-white text-sm">SOP Standardization</h4>
+                            </div>
+                            <p class="text-xs text-slate-400">Structuring clinical workflows to eliminate medical errors and administrative delays.</p>
+                        </div>
+
+                        <div class="p-4 rounded-xl glass-card">
+                            <div class="flex items-center gap-3 mb-2">
+                                <i class="fa-solid fa-people-roof text-purple-400 text-lg"></i>
+                                <h4 class="font-bold text-white text-sm">Patient Welfare</h4>
+                            </div>
+                            <p class="text-xs text-slate-400">Establishing robust feedback loops and patient safety incident reporting systems.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Services / Focus Areas Grid -->
+    <section id="expertise" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <h2 class="text-xs uppercase tracking-widest text-cyan-400 font-extrabold">Core Capabilities</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-white">Areas of Focus & Clinical Governance</p>
+                <p class="text-slate-400 text-sm">Comprehensive strategies to enhance public health infrastructure and patient outcome safety.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service Card 1 -->
+                <div class="p-8 rounded-2xl glass-card hover:translate-y-[-6px] transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-cyan-500 group-hover:text-slate-950 transition-all duration-300">
+                        <i class="fa-solid fa-notes-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-300 transition-colors">Quality Assurance Audits</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Conducting systematic audits against NQAS and national quality mandates to evaluate hospital performance and operational safety.
+                    </p>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="p-8 rounded-2xl glass-card hover:translate-y-[-6px] transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-indigo-500 group-hover:text-slate-950 transition-all duration-300">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-indigo-300 transition-colors">Patient Safety Protocols</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Formulating and implementing protocols to minimize clinical risks, prevent hospital-acquired infections, and protect patient rights.
+                    </p>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="p-8 rounded-2xl glass-card hover:translate-y-[-6px] transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-teal-500/10 border border-teal-500/30 flex items-center justify-center text-teal-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-teal-500 group-hover:text-slate-950 transition-all duration-300">
+                        <i class="fa-solid fa-file-signature"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-teal-300 transition-colors">SOP Development</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Designing clear Standard Operating Procedures for various clinical departments to ensure uniformity and compliance in patient care.
+                    </p>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="p-8 rounded-2xl glass-card hover:translate-y-[-6px] transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-purple-500 group-hover:text-slate-950 transition-all duration-300">
+                        <i class="fa-solid fa-user-nurse"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-purple-300 transition-colors">Capacity Building</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Organizing training sessions and workshops for healthcare practitioners to instill a strong culture of quality and accountability.
+                    </p>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="p-8 rounded-2xl glass-card hover:translate-y-[-6px] transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-rose-500/10 border border-rose-500/30 flex items-center justify-center text-rose-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-rose-500 group-hover:text-slate-950 transition-all duration-300">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-rose-300 transition-colors">Incident Reporting & Analysis</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Establishing non-punitive event reporting channels to analyze root causes of sentinel events and implement preventative measures.
+                    </p>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="p-8 rounded-2xl glass-card hover:translate-y-[-6px] transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-emerald-500 group-hover:text-slate-950 transition-all duration-300">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-emerald-300 transition-colors">Public Health Metrics</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Leveraging public health analytics to benchmark district performance and provide actionable insights for state health authorities.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Initiatives & Impact Timeline Section -->
+    <section id="initiatives" class="py-20 relative bg-slate-900/30 border-t border-slate-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <h2 class="text-xs uppercase tracking-widest text-cyan-400 font-extrabold">Track Record</h2>
+                <p class="text-3xl font-extrabold text-white">Impact & Key Contributions</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="p-6 rounded-2xl glass-card border-slate-800 relative">
+                    <div class="text-cyan-400 font-bold text-xs uppercase tracking-widest mb-2">Initiative 01</div>
+                    <h4 class="text-lg font-bold text-white mb-2">Delhi State Health Quality Assessment</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">Assisted in comprehensive quality audits across primary health centers, identifying critical operational bottlenecks and formulating corrective action plans.</p>
+                </div>
+
+                <div class="p-6 rounded-2xl glass-card border-slate-800 relative">
+                    <div class="text-indigo-400 font-bold text-xs uppercase tracking-widest mb-2">Initiative 02</div>
+                    <h4 class="text-lg font-bold text-white mb-2">Infection Prevention Campaign</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">Contributed to standardizing biomedical waste management and bio-safety guidelines to minimize nosocomial infections in state facilities.</p>
+                </div>
+
+                <div class="p-6 rounded-2xl glass-card border-slate-800 relative">
+                    <div class="text-teal-400 font-bold text-xs uppercase tracking-widest mb-2">Initiative 03</div>
+                    <h4 class="text-lg font-bold text-white mb-2">Patient Feedback & Grievance Loops</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">Participated in evaluating patient feedback systems to ensure transparency, accountability, and user-centric public health services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Endorsements Section -->
+    <section id="endorsements" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <h2 class="text-xs uppercase tracking-widest text-cyan-400 font-extrabold">Endorsements</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-white">Professional Recommendations</p>
+                <p class="text-slate-400 text-sm">Words from senior healthcare officers and clinical mentors.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="p-8 rounded-2xl glass-card relative space-y-6">
+                    <div class="flex items-center gap-1 text-amber-400 text-sm">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed italic">
+                        "Dr. Barun Singh demonstrates an extraordinary grasp of quality metrics and patient safety mandates. His meticulous approach during quality evaluations at the Delhi State Health Mission has significantly improved protocol compliance in public facilities."
+                    </p>
+                    <div class="flex items-center gap-4 pt-4 border-t border-slate-800/80">
+                        <div class="w-12 h-12 rounded-full bg-cyan-900/50 border border-cyan-500/30 flex items-center justify-center font-bold text-cyan-300">
+                            HQ
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-white">Senior Quality Consultant</div>
+                            <div class="text-xs text-slate-400">Public Health Division, New Delhi</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="p-8 rounded-2xl glass-card relative space-y-6">
+                    <div class="flex items-center gap-1 text-amber-400 text-sm">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed italic">
+                        "Dedicated, analytical, and deeply committed to clinical excellence. Dr. Singh's ability to translate complex quality directives into practical SOPs for healthcare staff is truly exceptional."
+                    </p>
+                    <div class="flex items-center gap-4 pt-4 border-t border-slate-800/80">
+                        <div class="w-12 h-12 rounded-full bg-indigo-900/50 border border-indigo-500/30 flex items-center justify-center font-bold text-indigo-300">
+                            CM
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-white">Clinical Mentor</div>
+                            <div class="text-xs text-slate-400">Hospital Quality & Standards Panel</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Form & Direct Details -->
+    <section id="contact" class="py-24 relative bg-slate-900/50 border-t border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Info Column -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <h2 class="text-xs uppercase tracking-widest text-cyan-400 font-extrabold mb-2">Connect</h2>
+                        <h3 class="text-3xl font-extrabold text-white">Let's Collaborate on Quality Healthcare</h3>
+                        <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                            Interested in quality assurance consultations, patient safety initiatives, or public health governance discussions? Feel free to send a direct message.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <!-- Location -->
+                        <div class="flex items-center gap-4 p-4 rounded-xl glass-card">
+                            <div class="w-12 h-12 rounded-lg bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400">
+                                <i class="fa-solid fa-location-dot text-lg"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 font-medium uppercase">Location</div>
+                                <div class="text-sm font-semibold text-white">New Delhi, India</div>
+                            </div>
+                        </div>
+
+                        <!-- Organization -->
+                        <div class="flex items-center gap-4 p-4 rounded-xl glass-card">
+                            <div class="w-12 h-12 rounded-lg bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400">
+                                <i class="fa-solid fa-building-flag text-lg"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 font-medium uppercase">Affiliation</div>
+                                <div class="text-sm font-semibold text-white">Delhi State Health Mission</div>
+                            </div>
+                        </div>
+
+                        <!-- Professional Status -->
+                        <div class="flex items-center gap-4 p-4 rounded-xl glass-card">
+                            <div class="w-12 h-12 rounded-lg bg-teal-500/10 border border-teal-500/30 flex items-center justify-center text-teal-400">
+                                <i class="fa-solid fa-user-check text-lg"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 font-medium uppercase">Role</div>
+                                <div class="text-sm font-semibold text-white">Quality & Patient Safety Intern</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Column -->
+                <div class="lg:col-span-7">
+                    <div class="p-8 sm:p-10 rounded-3xl glass-card border-slate-800 relative">
+                        <form onsubmit="event.preventDefault(); alert('Thank you for reaching out! Your message has been sent to Dr. Barun Singh.');" class="space-y-6">
+                            <div class="grid sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Name</label>
+                                    <input type="text" required placeholder="Dr. John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Email</label>
+                                    <input type="email" required placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Subject</label>
+                                <input type="text" required placeholder="Healthcare Quality Collaboration / Inquiry" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Message</label>
+                                <textarea rows="4" required placeholder="Dear Dr. Barun Singh, I would like to discuss..." class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm resize-none"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl text-sm font-semibold uppercase tracking-wider bg-gradient-to-r from-cyan-500 via-blue-600 to-indigo-600 hover:from-cyan-400 hover:to-indigo-500 text-white shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 transition-all duration-300 flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-paper-plane text-xs"></i>
+                                <span>Send Message</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-slate-950 border-t border-slate-900 text-slate-500 text-xs text-center">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+                &copy; 2026 Dr. Barun Singh. Quality & Patient Safety Specialist. All rights reserved.
+            </div>
+            <div class="flex items-center gap-4 text-slate-400">
+                <span class="hover:text-cyan-400 transition-colors cursor-pointer"><i class="fa-brands fa-linkedin text-lg"></i></span>
+                <span class="hover:text-cyan-400 transition-colors cursor-pointer"><i class="fa-solid fa-user-doctor text-lg"></i></span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
