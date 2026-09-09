@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Bhavya Sharma | Associate Dentist at Eternal Hospital</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f7ff',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -12px rgba(99, 102, 241, 0.25);
+        }
+        .glow-avatar {
+            box-shadow: 0 0 40px -5px rgba(14, 165, 233, 0.4), 0 0 20px -5px rgba(168, 85, 247, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- Navigation Bar -->
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center text-white font-bold text-xl shadow-lg group-hover:scale-105 transition-transform duration-300">
+                    <i class="fa-solid fa-tooth text-lg"></i>
+                </div>
+                <div>
+                    <span class="text-lg font-bold tracking-tight block leading-none">Dr. Bhavya Sharma</span>
+                    <span class="text-xs text-indigo-400 font-medium">Eternal Hospital</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-indigo-400 transition-colors">Expertise</a>
+                <a href="#services" class="hover:text-indigo-400 transition-colors">Services</a>
+                <a href="#testimonials" class="hover:text-indigo-400 transition-colors">Testimonials</a>
+                <a href="#contact" class="hover:text-indigo-400 transition-colors">Contact</a>
+            </nav>
+
+            <div class="hidden md:flex items-center gap-4">
+                <a href="#contact" class="px-5 py-2.5 rounded-full text-sm font-semibold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white shadow-lg hover:shadow-indigo-500/25 hover:scale-105 transition-all duration-300">
+                    Book Appointment
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-slate-300 hover:text-white focus:outline-none" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-6 py-4 space-y-3">
+            <a href="#about" class="block text-slate-300 hover:text-indigo-400 py-1">About</a>
+            <a href="#expertise" class="block text-slate-300 hover:text-indigo-400 py-1">Expertise</a>
+            <a href="#services" class="block text-slate-300 hover:text-indigo-400 py-1">Services</a>
+            <a href="#testimonials" class="block text-slate-300 hover:text-indigo-400 py-1">Testimonials</a>
+            <a href="#contact" class="block text-slate-300 hover:text-indigo-400 py-1">Contact</a>
+            <a href="#contact" class="inline-block mt-2 px-5 py-2 rounded-full text-sm font-semibold bg-gradient-to-r from-indigo-500 to-purple-500 text-white">Book Appointment</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-20 md:pt-48 md:pb-32 overflow-hidden">
+        <!-- Background Ambient Glow -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-indigo-600/20 via-purple-600/15 to-pink-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Left Content -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 backdrop-blur-md">
+                        <span class="flex h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        <span class="text-xs font-semibold text-slate-300">Associate Dentist &bull; Eternal Hospital</span>
+                    </div>
+
+                    <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                        Crafting Healthy, <br>
+                        <span class="bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400">
+                            Radiant Smiles
+                        </span>
+                        With Precision.
+                    </h1>
+
+                    <p class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        Dedicated to delivering world-class dental care, modern aesthetic transformations, and personalized clinical excellence at Eternal Hospital.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-center gap-3">
+                            <span>Schedule Consultation</span>
+                            <i class="fa-solid fa-arrow-right text-sm"></i>
+                        </a>
+                        <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-xl font-semibold text-slate-300 bg-slate-900/80 border border-slate-800 hover:bg-slate-800/80 hover:text-white transition-all duration-300 flex items-center justify-center gap-2">
+                            <span>Explore Treatments</span>
+                        </a>
+                    </div>
+
+                    <!-- Trust Badges -->
+                    <div class="pt-8 grid grid-cols-3 gap-4 border-t border-slate-800/80 max-w-xl mx-auto lg:mx-0">
+                        <div>
+                            <div class="text-2xl md:text-3xl font-bold text-white">5,000+</div>
+                            <div class="text-xs text-slate-400 mt-1">Happy Patients</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl md:text-3xl font-bold text-white">99.8%</div>
+                            <div class="text-xs text-slate-400 mt-1">Satisfaction Rate</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl md:text-3xl font-bold text-white">Advanced</div>
+                            <div class="text-xs text-slate-400 mt-1">Dental Care</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Avatar / Visual -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative">
+                        <!-- Glowing Double Gradient Ring Frame -->
+                        <div class="p-1.5 rounded-full bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 glow-avatar">
+                            <div class="p-2 rounded-full bg-slate-950">
+                                <img src="https://ui-avatars.com/api/?name=Dr+Bhavya+Sharma&size=200&background=0D8ABC&color=fff&bold=true" 
+                                     alt="Dr Bhavya Sharma" 
+                                     class="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover">
+                            </div>
+                        </div>
+
+                        <!-- Floating Badge 1 -->
+                        <div class="absolute -bottom-4 -left-4 bg-slate-900/90 backdrop-blur-xl border border-slate-800 p-4 rounded-2xl shadow-2xl flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-500/20 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
+                                <i class="fa-solid fa-award text-lg"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs font-semibold text-slate-300">Eternal Hospital</div>
+                                <div class="text-xs text-slate-400">Associate Dentist</div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Badge 2 -->
+                        <div class="absolute -top-4 -right-4 bg-slate-900/90 backdrop-blur-xl border border-slate-800 p-3.5 rounded-2xl shadow-2xl flex items-center gap-3">
+                            <div class="flex text-amber-400 text-sm">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="text-xs font-bold text-white">5.0 Star Rated</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Clinical Expertise Section -->
+    <section id="about" class="py-24 relative bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Image Side -->
+                <div class="lg:col-span-6">
+                    <div class="relative rounded-3xl overflow-hidden border border-slate-800 bg-slate-900/60 backdrop-blur-xl p-3">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Modern Dental Clinic" 
+                             class="w-full h-[420px] object-cover rounded-2xl filter brightness-95 hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60"></div>
+                        <div class="absolute bottom-8 left-8 right-8 p-6 bg-slate-900/90 backdrop-blur-xl border border-slate-800 rounded-2xl">
+                            <p class="text-sm italic text-slate-300">
+                                "Combining compassionate patient care with state-of-the-art dental technology to deliver painless, life-changing smile transformations."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Side -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold">
+                        <i class="fa-solid fa-user-doctor"></i> About Dr. Bhavya Sharma
+                    </div>
+
+                    <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight leading-snug">
+                        Dedicated to Excellence in Modern Clinical Dentistry
+                    </h2>
+
+                    <p class="text-slate-400 leading-relaxed">
+                        As an Associate Dentist at <strong class="text-slate-200">Eternal Hospital</strong>, Dr. Bhavya Sharma specializes in comprehensive dental care, preventive therapies, and state-of-the-art cosmetic treatments. With an unwavering focus on patient comfort and evidence-based practice, Dr. Sharma brings modern dental science to every treatment plan.
+                    </p>
+
+                    <!-- Key Pillars Grid -->
+                    <div class="grid sm:grid-cols-2 gap-4 pt-2">
+                        <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-4 rounded-xl hover:border-indigo-500/50 transition-all duration-300">
+                            <i class="fa-solid fa-microscope text-indigo-400 text-xl mb-2"></i>
+                            <h4 class="text-white font-semibold text-sm">Advanced Diagnostics</h4>
+                            <p class="text-xs text-slate-400 mt-1">High-precision digital imaging for accurate treatment planning.</p>
+                        </div>
+                        <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-4 rounded-xl hover:border-indigo-500/50 transition-all duration-300">
+                            <i class="fa-solid fa-heart-pulse text-purple-400 text-xl mb-2"></i>
+                            <h4 class="text-white font-semibold text-sm">Painless Procedures</h4>
+                            <p class="text-xs text-slate-400 mt-1">Gentle techniques prioritized for anxiety-free dental visits.</p>
+                        </div>
+                        <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-4 rounded-xl hover:border-indigo-500/50 transition-all duration-300">
+                            <i class="fa-solid fa-wand-magic-sparkles text-pink-400 text-xl mb-2"></i>
+                            <h4 class="text-white font-semibold text-sm">Smile Aesthetics</h4>
+                            <p class="text-xs text-slate-400 mt-1">Custom cosmetic enhancements tailored to facial harmony.</p>
+                        </div>
+                        <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-4 rounded-xl hover:border-indigo-500/50 transition-all duration-300">
+                            <i class="fa-solid fa-shield-halved text-emerald-400 text-xl mb-2"></i>
+                            <h4 class="text-white font-semibold text-sm">Hospital Safety Standards</h4>
+                            <p class="text-xs text-slate-400 mt-1">Rigorous sterilization protocols at Eternal Hospital.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid Section -->
+    <section id="services" class="py-24 relative bg-slate-900/30 border-y border-slate-800/50">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-semibold">
+                    <i class="fa-solid fa-notes-medical"></i> Specialized Treatments
+                </div>
+                <h2 class="text-3xl md:text-5xl font-extrabold text-white tracking-tight">
+                    Comprehensive Dental Solutions
+                </h2>
+                <p class="text-slate-400 text-base md:text-lg">
+                    Providing personalized, top-tier clinical dentistry using the latest technologies available at Eternal Hospital.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-8 rounded-2xl hover:translate-y-[-4px] transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-indigo-500/20 to-purple-500/20 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">General & Preventive Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Routine checkups, professional scaling, deep cleaning, fluorides, and sealant applications to maintain optimal oral hygiene.
+                    </p>
+                    <a href="#contact" class="text-xs font-semibold text-indigo-400 group-hover:text-indigo-300 flex items-center gap-2">
+                        Learn More <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 p-8 rounded-2xl hover:translate-y-[-4px] transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-purple-500/20 to-pink-500/20 border border-purple-500/30 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Cosmetic Smile Makeovers</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Teeth whitening, porcelain veneers, composite bonding, and alignment corrections designed for a glowing smile.
+                    </p>
+                    <a href="#contact" class="text-xs font-semibold text-purple-400 group-hover:text-purple-300 flex items-center gap-2">
+                        Learn More <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-pink-500/50 p-8 rounded-2xl hover:translate-y-[-4px] transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-pink-500/20 to-rose-500/20 border border-pink-500/30 flex items-center justify-center text-pink-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-shield-virus"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Root Canal & Restorative Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Painless endodontic root canal treatments, tooth-colored restorative fillings, and natural-looking crowns.
+                    </p>
+                    <a href="#contact" class="text-xs font-semibold text-pink-400 group-hover:text-pink-300 flex items-center gap-2">
+                        Learn More <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-emerald-500/50 p-8 rounded-2xl hover:translate-y-[-4px] transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-emerald-500/20 to-teal-500/20 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-teeth-open"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Orthodontics & Clear Aligners</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Modern clear aligners and traditional braces for corrected bite issues, overcrowding, and seamless alignment.
+                    </p>
+                    <a href="#contact" class="text-xs font-semibold text-emerald-400 group-hover:text-emerald-300 flex items-center gap-2">
+                        Learn More <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 p-8 rounded-2xl hover:translate-y-[-4px] transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-cyan-500/20 to-blue-500/20 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-child text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Pediatric Dental Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Gentle, friendly oral health routines for children to build early dental health confidence in a safe hospital environment.
+                    </p>
+                    <a href="#contact" class="text-xs font-semibold text-cyan-400 group-hover:text-cyan-300 flex items-center gap-2">
+                        Learn More <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-8 rounded-2xl hover:translate-y-[-4px] transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-indigo-500/20 to-cyan-500/20 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-hospital-user"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Emergency Dental Services</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Immediate care for acute toothaches, traumatic dental injuries, and urgent restorative procedures at Eternal Hospital.
+                    </p>
+                    <a href="#contact" class="text-xs font-semibold text-indigo-400 group-hover:text-indigo-300 flex items-center gap-2">
+                        Learn More <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Endorsements Section -->
+    <section id="testimonials" class="py-24 relative bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-pink-500/10 border border-pink-500/20 text-pink-400 text-xs font-semibold">
+                    <i class="fa-solid fa-star"></i> Patient Reviews
+                </div>
+                <h2 class="text-3xl md:text-5xl font-extrabold text-white tracking-tight">
+                    Endorsed by Patients
+                </h2>
+                <p class="text-slate-400">
+                    Real experiences from individuals treated at Eternal Hospital by Dr. Bhavya Sharma.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-8 rounded-2xl transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Dr. Bhavya Sharma made my root canal procedure completely painless! Her calm demeanor and explaining every step put me completely at ease."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 border-t border-slate-800/80 pt-4">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 border border-indigo-500/30 flex items-center justify-center font-bold text-indigo-400 text-sm">
+                            AP
+                        </div>
+                        <div>
+                            <h4 class="text-white text-sm font-semibold">Ananya Patel</h4>
+                            <p class="text-xs text-slate-500">Patient at Eternal Hospital</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 p-8 rounded-2xl transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "The cosmetic alignment work done by Dr. Bhavya transformed my confidence completely. Highly recommended for anyone seeking top quality care."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 border-t border-slate-800/80 pt-4">
+                        <div class="w-10 h-10 rounded-full bg-purple-500/20 border border-purple-500/30 flex items-center justify-center font-bold text-purple-400 text-sm">
+                            RK
+                        </div>
+                        <div>
+                            <h4 class="text-white text-sm font-semibold">Rohan Kapoor</h4>
+                            <p class="text-xs text-slate-500">Aesthetic Dentistry Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-pink-500/50 p-8 rounded-2xl transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Extremely professional, gentle, and thorough. Eternal Hospital has a fantastic dental practitioner in Dr. Sharma. My whole family visits her now!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 border-t border-slate-800/80 pt-4">
+                        <div class="w-10 h-10 rounded-full bg-pink-500/20 border border-pink-500/30 flex items-center justify-center font-bold text-pink-400 text-sm">
+                            SM
+                        </div>
+                        <div>
+                            <h4 class="text-white text-sm font-semibold">Sunita Mehta</h4>
+                            <p class="text-xs text-slate-500">Preventive Care Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Consultation Section -->
+    <section id="contact" class="py-24 relative bg-slate-900/40 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <!-- Left Details -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold mb-4">
+                            <i class="fa-solid fa-calendar-check"></i> Schedule an Appointment
+                        </div>
+                        <h2 class="text-3xl md:text-4xl font-extrabold text-white tracking-tight">
+                            Get in Touch with Dr. Bhavya Sharma
+                        </h2>
+                        <p class="text-slate-400 mt-3 text-sm leading-relaxed">
+                            Book your consultation at Eternal Hospital today for personalized dental solutions and compassionate care.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <!-- Practice Location -->
+                        <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-4 rounded-xl flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-indigo-500/20 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-xl">
+                                <i class="fa-solid fa-hospital"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 font-medium">Practice Location</div>
+                                <div class="text-white font-semibold text-sm">Eternal Hospital &bull; Dental Wing</div>
+                            </div>
+                        </div>
+
+                        <!-- Direct Contact -->
+                        <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-4 rounded-xl flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/20 border border-purple-500/30 flex items-center justify-center text-purple-400 text-xl">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 font-medium">Direct Inquiries</div>
+                                <div class="text-white font-semibold text-sm">dr.bhavyasharma@eternalhospital.com</div>
+                            </div>
+                        </div>
+
+                        <!-- Connection Badge -->
+                        <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-4 rounded-xl flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-pink-500/20 border border-pink-500/30 flex items-center justify-center text-pink-400 text-xl">
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 font-medium">Professional Network</div>
+                                <div class="text-white font-semibold text-sm">Connected: September 08, 2026</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Contact Form -->
+                <div class="lg:col-span-7">
+                    <div class="bg-slate-900/80 backdrop-blur-xl border border-slate-800 p-8 rounded-3xl shadow-2xl">
+                        <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
+                            <i class="fa-solid fa-paper-plane text-indigo-400 text-base"></i> Send a Direct Message
+                        </h3>
+
+                        <form onsubmit="event.preventDefault(); alert('Thank you! Your appointment request has been submitted.');" class="space-y-5">
+                            <div class="grid md:grid-cols-2 gap-5">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">Full Name</label>
+                                    <input type="text" placeholder="John Doe" required 
+                                           class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-600 focus:outline-none focus:border-indigo-500 transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">Phone Number</label>
+                                    <input type="tel" placeholder="+1 (555) 000-0000" required 
+                                           class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-600 focus:outline-none focus:border-indigo-500 transition-colors">
+                                </div>
+                            </div>
+
+                            <div class="grid md:grid-cols-2 gap-5">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">Email Address</label>
+                                    <input type="email" placeholder="patient@example.com" required 
+                                           class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-600 focus:outline-none focus:border-indigo-500 transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">Service Needed</label>
+                                    <select class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-300 focus:outline-none focus:border-indigo-500 transition-colors">
+                                        <option>General Consultation</option>
+                                        <option>Teeth Whitening / Cosmetic</option>
+                                        <option>Root Canal Treatment</option>
+                                        <option>Orthodontics & Aligners</option>
+                                        <option>Emergency Dentistry</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Message or Symptoms</label>
+                                <textarea rows="4" placeholder="Please describe your consultation request or dental concerns..." required
+                                          class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-600 focus:outline-none focus:border-indigo-500 transition-colors resize-none"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.01] transition-all duration-300">
+                                Request Consultation Appointment
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-slate-950 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-indigo-500 to-pink-500 flex items-center justify-center text-white font-bold text-sm">
+                    <i class="fa-solid fa-tooth"></i>
+                </div>
+                <span class="text-sm font-semibold text-slate-300">Dr. Bhavya Sharma &bull; Associate Dentist at Eternal Hospital</span>
+            </div>
+
+            <div class="flex items-center gap-6 text-slate-400 text-sm">
+                <a href="#about" class="hover:text-white transition-colors">About</a>
+                <a href="#services" class="hover:text-white transition-colors">Services</a>
+                <a href="#contact" class="hover:text-white transition-colors">Book Consultation</a>
+            </div>
+
+            <div class="text-xs text-slate-500">
+                &copy; 2026 Dr. Bhavya Sharma. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
