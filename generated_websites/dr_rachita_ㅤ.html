@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Rachita ㅤ | AI Associate Product Manager</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-bg {
+            background: radial-gradient(circle at 50% 20%, rgba(99, 102, 241, 0.15) 0%, rgba(168, 85, 247, 0.1) 35%, rgba(15, 23, 42, 0) 70%);
+        }
+        .glow-avatar::before {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            border-radius: 9999px;
+            background: linear-gradient(45deg, #6366f1, #ec4899, #8b5cf6, #06b6d4);
+            z-index: -1;
+            filter: blur(12px);
+            opacity: 0.8;
+            animation: pulse-glow 4s ease-in-out infinite alternate;
+        }
+        @keyframes pulse-glow {
+            0% { opacity: 0.6; transform: scale(0.98); }
+            100% { opacity: 1; transform: scale(1.02); }
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white glow-bg min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center font-bold text-white shadow-lg shadow-indigo-500/20 group-hover:scale-105 transition-transform duration-300">
+                    DR
+                </div>
+                <span class="font-bold text-lg tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-200 to-slate-400">
+                    Dr. Rachita ㅤ
+                </span>
+            </a>
+            
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-400">
+                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-indigo-400 transition-colors">Pillars</a>
+                <a href="#impact" class="hover:text-indigo-400 transition-colors">Impact</a>
+                <a href="#endorsements" class="hover:text-indigo-400 transition-colors">Endorsements</a>
+            </div>
+
+            <a href="#contact" class="relative group overflow-hidden rounded-full p-[1px] font-semibold text-xs uppercase tracking-wider">
+                <span class="absolute inset-0 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full"></span>
+                <span class="relative block px-5 py-2.5 rounded-full bg-slate-950 group-hover:bg-opacity-0 transition-all duration-300 text-white">
+                    Get in Touch
+                </span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-36 pb-20 px-6 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                <!-- Status Badge -->
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 backdrop-blur-md shadow-inner">
+                    <span class="flex h-2 w-2 rounded-full bg-emerald-400 animate-ping"></span>
+                    <span class="text-xs font-semibold uppercase tracking-wider text-slate-300">
+                        AI Associate Product Manager @ <span class="text-indigo-400 font-bold">Live Gracious</span>
+                    </span>
+                </div>
+
+                <!-- Headline -->
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
+                    Architecting <span class="bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-500">Intelligent Products</span> with Purpose.
+                </h1>
+
+                <!-- Subtitle -->
+                <p class="text-lg text-slate-400 max-w-2xl font-light leading-relaxed">
+                    Bridging cutting-edge Artificial Intelligence with human-centered product design. Pioneering intuitive, scale-ready AI solutions that elevate user experiences at Live Gracious.
+                </p>
+
+                <!-- Action Buttons -->
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                    <a href="#expertise" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white font-semibold shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.02] transition-all duration-300 text-center">
+                        Explore Expertise <i class="fa-solid font-normal fa-arrow-right ml-2 text-xs"></i>
+                    </a>
+                    <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900/80 border border-slate-800 text-slate-300 font-semibold hover:border-slate-700 hover:text-white transition-all duration-300 text-center backdrop-blur-md">
+                        Initiate Contact
+                    </a>
+                </div>
+
+                <!-- Tech Badges -->
+                <div class="pt-6 border-t border-slate-900 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-slate-500 text-sm">
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-brain text-indigo-400"></i> Generative AI</div>
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-layer-group text-purple-400"></i> AI Strategy</div>
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-chart-line text-pink-400"></i> Product Lifecycle</div>
+                    <div class="flex items-center gap-2"><i class="fa-solid fa-user-check text-emerald-400"></i> UX Optimization</div>
+                </div>
+            </div>
+
+            <!-- Avatar Column -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative group">
+                    <div class="glow-avatar relative w-64 h-64 sm:w-80 sm:h-80 rounded-full p-2 bg-slate-950">
+                        <img src="https://ui-avatars.com/api/?name=Dr.+Rachita+ㅤ&size=200&background=0D8ABC&color=fff&bold=true" 
+                             alt="Dr. Rachita ㅤ" 
+                             class="w-full h-full rounded-full object-cover border-2 border-slate-800 shadow-2xl group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <!-- Floating Card Badge -->
+                    <div class="absolute -bottom-4 -left-4 bg-slate-900/90 border border-slate-800 backdrop-blur-xl p-4 rounded-2xl shadow-2xl flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold">
+                            <i class="fa-solid fa-sparkles"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400 font-medium">Domain Expertise</p>
+                            <p class="text-sm font-bold text-slate-100">AI Product Management</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-6 order-2 lg:order-1">
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 group shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" 
+                             alt="AI Strategy Teamwork" 
+                             class="w-full h-96 object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <p class="text-xs uppercase tracking-widest text-indigo-400 font-bold mb-1">Collaborative Innovation</p>
+                            <h3 class="text-xl font-bold text-white">Driving Value through AI Architecture</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6 space-y-6 order-1 lg:order-2">
+                    <div class="inline-block px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold uppercase tracking-wider">
+                        About Me
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+                        Pioneering human-centric AI strategies at Live Gracious
+                    </h2>
+                    <p class="text-slate-400 leading-relaxed font-light">
+                        As an AI Associate Product Manager at Live Gracious, <span class="text-slate-200 font-semibold">Dr. Rachita ㅤ</span> specializes in bridging complex artificial intelligence models with operational elegance. With a background rooted in high-level analytical methodologies and user-focused digital transformation, Dr. Rachita converts complex machine learning concepts into seamless, intuitive product features.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-4 pt-4">
+                        <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-4 rounded-xl hover:border-indigo-500/50 transition-all duration-300">
+                            <h4 class="text-2xl font-bold text-indigo-400">99%+</h4>
+                            <p class="text-xs text-slate-400 mt-1">Data-Driven Precision</p>
+                        </div>
+                        <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-4 rounded-xl hover:border-purple-500/50 transition-all duration-300">
+                            <h4 class="text-2xl font-bold text-purple-400">AI-Native</h4>
+                            <p class="text-xs text-slate-400 mt-1">Product Frameworks</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / Pillars Section -->
+    <section id="expertise" class="py-20 px-6 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="inline-block px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-semibold uppercase tracking-wider">
+                    Core Pillars
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">
+                    Specialized Capabilities in <span class="bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-400">AI & Product</span>
+                </h2>
+                <p class="text-slate-400 font-light">
+                    Transforming raw artificial intelligence capabilities into market-leading user experiences.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Card 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 p-6 rounded-2xl group flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center text-xl mb-6 group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300">
+                            <i class="fa-solid fa-microchip"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">AI Vision & Strategy</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed font-light">
+                            Crafting end-to-end artificial intelligence roadmaps aligned with business goals and user necessities.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-800/80 text-xs font-semibold text-indigo-400 flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                        Read details <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 transition-all duration-300 p-6 rounded-2xl group flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center text-xl mb-6 group-hover:bg-purple-500 group-hover:text-white transition-all duration-300">
+                            <i class="fa-solid fa-diagram-project"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Product Lifecycle</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed font-light">
+                            Managing agile sprints, user stories, feature prioritization, and AI validation metrics.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-800/80 text-xs font-semibold text-purple-400 flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                        Read details <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-pink-500/50 transition-all duration-300 p-6 rounded-2xl group flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-pink-500/10 border border-pink-500/20 text-pink-400 flex items-center justify-center text-xl mb-6 group-hover:bg-pink-500 group-hover:text-white transition-all duration-300">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Generative AI UX</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed font-light">
+                            Designing intuitive natural language interfaces and human-in-the-loop AI workflows.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-800/80 text-xs font-semibold text-pink-400 flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                        Read details <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-emerald-500/50 transition-all duration-300 p-6 rounded-2xl group flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl mb-6 group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300">
+                            <i class="fa-solid fa-chart-pie"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Data & Analytics</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed font-light">
+                            Leveraging telemetry and user feedback loops to refine AI model accuracy and engagement.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-800/80 text-xs font-semibold text-emerald-400 flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                        Read details <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Endorsements -->
+    <section id="endorsements" class="py-20 px-6 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="inline-block px-3 py-1 rounded-full bg-pink-500/10 border border-pink-500/20 text-pink-400 text-xs font-semibold uppercase tracking-wider">
+                    Endorsements
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">
+                    What Industry Leaders Say
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 p-8 rounded-2xl relative flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 text-sm gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Dr. Rachita has an extraordinary ability to translate high-level AI capabilities into seamlessly functional product experiences. A visionary leader at Live Gracious."
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-6 border-t border-slate-800/80 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 font-bold flex items-center justify-center text-xs">VP</div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">VP of Engineering</h4>
+                            <p class="text-xs text-slate-500">Live Gracious Collaborator</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 transition-all duration-300 p-8 rounded-2xl relative flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 text-sm gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Working alongside Dr. Rachita ensures that products are not only technically cutting-edge, but genuinely empathetic to user needs."
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-6 border-t border-slate-800/80 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 font-bold flex items-center justify-center text-xs">SD</div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Senior Director of Product</h4>
+                            <p class="text-xs text-slate-500">Tech Leadership Network</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-pink-500/50 transition-all duration-300 p-8 rounded-2xl relative flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 text-sm gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Analytical rigor combined with outstanding communication skills. Dr. Rachita sets the standard for modern AI Product Management."
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-6 border-t border-slate-800/80 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-pink-500/20 text-pink-400 font-bold flex items-center justify-center text-xs">AL</div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">AI Lead Researcher</h4>
+                            <p class="text-xs text-slate-500">Enterprise AI Initiative</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center bg-slate-900/40 border border-slate-800/80 rounded-3xl p-8 sm:p-12 backdrop-blur-2xl">
+                
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="inline-block px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold uppercase tracking-wider">
+                        Get In Touch
+                    </div>
+                    <h2 class="text-3xl font-bold tracking-tight text-white"> Let's Build the Future of AI Products </h2>
+                    <p class="text-slate-400 font-light text-sm leading-relaxed">
+                        Interested in discussing AI product architecture, speaking opportunities, or strategic collaborations? Reach out directly using the form.
+                    </p>
+
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-indigo-400">
+                                <i class="fa-solid fa-building"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-500">Current Role</p>
+                                <p class="text-sm font-semibold text-slate-200">AI Associate Product Manager @ Live Gracious</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-emerald-400">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-500">Connection Established</p>
+                                <p class="text-sm font-semibold text-slate-200">08 Sep 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7">
+                    <form class="space-y-4" onsubmit="event.preventDefault(); alert('Thank you for reaching out to Dr. Rachita!');">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-medium text-slate-400 mb-1">Your Name</label>
+                                <input type="text" required placeholder="Jane Doe" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 focus:outline-none focus:border-indigo-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-medium text-slate-400 mb-1">Your Email</label>
+                                <input type="email" required placeholder="jane@example.com" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 focus:outline-none focus:border-indigo-500 transition-colors">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-medium text-slate-400 mb-1">Subject</label>
+                            <input type="text" required placeholder="AI Collaboration Opportunity" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 focus:outline-none focus:border-indigo-500 transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-medium text-slate-400 mb-1">Message</label>
+                            <textarea rows="4" required placeholder="Write your message here..." class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 focus:outline-none focus:border-indigo-500 transition-colors"></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold text-sm hover:opacity-95 transition-opacity shadow-lg shadow-indigo-500/20">
+                            Send Message <i class="fa-solid fa-paper-plane ml-2 text-xs"></i>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-6 border-t border-slate-900 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© 2026 Dr. Rachita ㅤ. All rights reserved. Crafted for AI Leadership.</p>
+            <div class="flex items-center gap-6">
+                <a href="#" class="hover:text-slate-300 transition-colors"><i class="fa-brands fa-linkedin text-base"></i></a>
+                <a href="#" class="hover:text-slate-300 transition-colors"><i class="fa-brands fa-github text-base"></i></a>
+                <a href="#" class="hover:text-slate-300 transition-colors"><i class="fa-brands fa-x-twitter text-base"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
