@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Samakshi Sharma | Associate Dentist Showcase</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+
+        .glow-bg {
+            background: radial-gradient(circle at 50% 0%, rgba(14, 165, 233, 0.15) 0%, rgba(168, 85, 247, 0.1) 35%, rgba(2, 6, 23, 0) 70%);
+        }
+
+        .glass-card {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(56, 189, 248, 0.4);
+            box-shadow: 0 10px 30px -10px rgba(14, 165, 233, 0.2);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .avatar-glow {
+            box-shadow: 0 0 50px -10px rgba(14, 165, 233, 0.5);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #020617;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #38bdf8;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-sky-500 selection:text-white">
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-500 via-indigo-500 to-purple-500 p-0.5 flex items-center justify-center shadow-lg group-hover:rotate-6 transition-transform">
+                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+                        <i class="fa-solid font-bold fa-tooth text-sky-400 text-lg"></i>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-lg text-white tracking-tight leading-none group-hover:text-sky-400 transition-colors">Dr. Samakshi Sharma</span>
+                    <span class="text-xs text-slate-400 mt-1 font-medium">ITS Dental College & Hospital</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-sky-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-sky-400 transition-colors">Specialties</a>
+                <a href="#services" class="hover:text-sky-400 transition-colors">Services</a>
+                <a href="#testimonials" class="hover:text-sky-400 transition-colors">Testimonials</a>
+                <a href="#contact" class="hover:text-sky-400 transition-colors">Contact</a>
+            </div>
+
+            <!-- CTA Button -->
+            <a href="#contact" class="relative group hidden sm:inline-flex items-center justify-center px-6 py-2.5 text-sm font-semibold text-white transition-all duration-300">
+                <span class="absolute inset-0 rounded-full bg-gradient-to-r from-sky-500 via-indigo-500 to-purple-500 p-[1px]">
+                    <span class="flex h-full w-full items-center justify-center rounded-full bg-slate-950 group-hover:bg-opacity-0 transition-all duration-300"></span>
+                </span>
+                <span class="relative flex items-center gap-2">
+                    Book Consultation
+                    <i class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
+                </span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Ambient Glow -->
+    <div class="fixed inset-0 glow-bg pointer-events-none z-0"></div>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-20 md:pt-48 md:pb-32 overflow-hidden z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Hero Content -->
+                <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full glass-card border border-sky-500/30 text-sky-300 text-xs sm:text-sm font-medium animate-pulse">
+                        <span class="flex h-2 w-2 rounded-full bg-sky-400"></span>
+                        Associate Dentist @ ITS Dental College & Hospital
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl xl:text-7xl font-extrabold tracking-tight text-white leading-[1.1]">
+                        Architecting <br class="hidden sm:inline"/>
+                        <span class="gradient-text">Radiant & Healthy</span> <br/>
+                        Smiles Everyday.
+                    </h1>
+
+                    <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Dedicated to advanced clinical precision, patient-centered comfort, and modern dental aesthetics. Delivering compassionate high-tier oral healthcare at ITS Dental College & Hospital.
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-sky-500 via-indigo-500 to-purple-600 text-white font-semibold text-sm shadow-xl shadow-sky-500/20 hover:shadow-sky-500/40 hover:scale-[1.02] transition-all flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-calendar-check"></i>
+                            Schedule Appointment
+                        </a>
+                        <a href="#about" class="w-full sm:w-auto px-8 py-4 rounded-xl glass-card text-slate-200 font-semibold text-sm hover:text-white hover:bg-slate-800/80 transition-all flex items-center justify-center gap-2">
+                            Explore Clinical Background
+                        </a>
+                    </div>
+
+                    <!-- Quick Stats -->
+                    <div class="grid grid-cols-3 gap-4 pt-8 border-t border-slate-800/80 max-w-lg mx-auto lg:mx-0">
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-white">100%</div>
+                            <div class="text-xs text-slate-400 mt-1">Patient Comfort</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-sky-400">ITS</div>
+                            <div class="text-xs text-slate-400 mt-1">Dental College</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-purple-400">5.0 ★</div>
+                            <div class="text-xs text-slate-400 mt-1">Clinical Rating</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Avatar Frame -->
+                <div class="lg:col-span-5 flex justify-center items-center">
+                    <div class="relative group">
+                        <!-- Dual Outer Glowing Gradient Rings -->
+                        <div class="absolute -inset-1.5 rounded-full bg-gradient-to-r from-sky-500 via-purple-500 to-pink-500 blur-lg opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+                        <div class="absolute -inset-1 rounded-full bg-gradient-to-tr from-cyan-400 to-indigo-600"></div>
+                        
+                        <!-- Avatar Container -->
+                        <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full p-2 bg-slate-950 flex items-center justify-center overflow-hidden avatar-glow">
+                            <img src="https://ui-avatars.com/api/?name=Dr.+Samakshi+Sharma&size=200&background=0D8ABC&color=fff&bold=true" 
+                                 alt="Dr. Samakshi Sharma" 
+                                 class="w-full h-full object-cover rounded-full hover:scale-105 transition-transform duration-500">
+                        </div>
+
+                        <!-- Floating Badges -->
+                        <div class="absolute -bottom-2 -left-4 glass-card px-4 py-2.5 rounded-xl border border-slate-700/80 shadow-2xl flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-sky-500/20 text-sky-400 flex items-center justify-center">
+                                <i class="fa-solid fa-award text-sm"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs font-bold text-white">Verified Specialist</div>
+                                <div class="text-[10px] text-slate-400">Dental Practitioner</div>
+                            </div>
+                        </div>
+
+                        <div class="absolute -top-2 -right-4 glass-card px-4 py-2.5 rounded-xl border border-slate-700/80 shadow-2xl flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-purple-500/20 text-purple-400 flex items-center justify-center">
+                                <i class="fa-solid fa-hospital-user text-sm"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs font-bold text-white">ITS Hospital</div>
+                                <div class="text-[10px] text-slate-400">Associate Dentist</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-24 relative z-10 bg-slate-950/50 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Clinical Image -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative rounded-2xl overflow-hidden glass-card p-2 group">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Modern Dentistry Environment" 
+                             class="w-full h-[400px] object-cover rounded-xl group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-sky-400">Clinical Focus</span>
+                            <h3 class="text-lg font-bold text-white mt-1">State-of-the-Art Care</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-sky-400 text-xs font-semibold uppercase tracking-wider">
+                        Professional Profile
+                    </div>
+                    
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+                        Combining Modern Dentistry with <span class="gradient-text">Gentle Patient Care</span>
+                    </h2>
+
+                    <p class="text-slate-400 leading-relaxed text-sm sm:text-base">
+                        As an Associate Dentist at <span class="text-slate-200 font-semibold">ITS Dental College & Hospital</span>, Dr. Samakshi Sharma provides personalized, evidence-based oral care. With a focus on accuracy, preventive solutions, and restorative procedures, she aims to give every patient a confident, pain-free smile.
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                        <div class="glass-card p-4 rounded-xl flex items-start gap-3">
+                            <div class="p-2.5 bg-sky-500/10 rounded-lg text-sky-400">
+                                <i class="fa-solid fa-notes-medical text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-white text-sm">Comprehensive Diagnosis</h4>
+                                <p class="text-xs text-slate-400 mt-1">Detailed oral health assessments tailored to each patient's needs.</p>
+                            </div>
+                        </div>
+
+                        <div class="glass-card p-4 rounded-xl flex items-start gap-3">
+                            <div class="p-2.5 bg-indigo-500/10 rounded-lg text-indigo-400">
+                                <i class="fa-solid fa-wand-magic-sparkles text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-white text-sm">Aesthetic Dentistry</h4>
+                                <p class="text-xs text-slate-400 mt-1">Creating natural, beautiful smiles using modern techniques.</p>
+                            </div>
+                        </div>
+
+                        <div class="glass-card p-4 rounded-xl flex items-start gap-3">
+                            <div class="p-2.5 bg-purple-500/10 rounded-lg text-purple-400">
+                                <i class="fa-solid fa-shield-halved text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-white text-sm">Preventive Health</h4>
+                                <p class="text-xs text-slate-400 mt-1">Focusing on early intervention and long-term oral hygiene.</p>
+                            </div>
+                        </div>
+
+                        <div class="glass-card p-4 rounded-xl flex items-start gap-3">
+                            <div class="p-2.5 bg-pink-500/10 rounded-lg text-pink-400">
+                                <i class="fa-solid fa-heart-pulse text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-white text-sm">Patient-First Comfort</h4>
+                                <p class="text-xs text-slate-400 mt-1">Ensuring a calm, reassuring atmosphere for anxiety-free visits.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 relative z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-sky-400 text-xs font-semibold uppercase tracking-wider mb-4">
+                    Specialized Treatments
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+                    Comprehensive Dental Services
+                </h2>
+                <p class="text-slate-400 text-sm sm:text-base mt-3">
+                    Providing high-quality clinical care, from routine checkups to complex dental restorations.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Service 1 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-12 h-12 rounded-xl bg-sky-500/10 text-sky-400 flex items-center justify-center text-xl mb-6 group-hover:scale-110 group-hover:bg-sky-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-teeth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">General Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Routine checkups, professional cleanings, scaling, and preventative treatments to maintain optimal oral hygiene.
+                    </p>
+                    <span class="text-xs font-semibold text-sky-400 flex items-center gap-2">
+                        Learn More <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </span>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-xl mb-6 group-hover:scale-110 group-hover:bg-indigo-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Cosmetic Smile Design</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Teeth whitening, composite bonding, and aesthetic enhancements tailored to boost your confidence.
+                    </p>
+                    <span class="text-xs font-semibold text-indigo-400 flex items-center gap-2">
+                        Learn More <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </span>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl mb-6 group-hover:scale-110 group-hover:bg-purple-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-teeth-open"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Restorative Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Tooth-colored fillings, crowns, and root canal consultations focused on preserving natural dental structures.
+                    </p>
+                    <span class="text-xs font-semibold text-purple-400 flex items-center gap-2">
+                        Learn More <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </span>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-12 h-12 rounded-xl bg-pink-500/10 text-pink-400 flex items-center justify-center text-xl mb-6 group-hover:scale-110 group-hover:bg-pink-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-kit-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Periodontal Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Gum disease prevention, deep scaling, and soft-tissue treatments to safeguard foundational oral health.
+                    </p>
+                    <span class="text-xs font-semibold text-pink-400 flex items-center gap-2">
+                        Learn More <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </span>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl mb-6 group-hover:scale-110 group-hover:bg-cyan-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-child"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Pediatric Dental Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Gentle and warm dental evaluations designed specifically for children to cultivate healthy habits early on.
+                    </p>
+                    <span class="text-xs font-semibold text-cyan-400 flex items-center gap-2">
+                        Learn More <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </span>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl mb-6 group-hover:scale-110 group-hover:bg-emerald-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-user-doctor"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Oral Health Counseling</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Personalized dietary, hygiene, and lifestyle advice to protect long-term dental and overall physical health.
+                    </p>
+                    <span class="text-xs font-semibold text-emerald-400 flex items-center gap-2">
+                        Learn More <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Endorsements Section -->
+    <section id="testimonials" class="py-24 relative z-10 bg-slate-950/60 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-sky-400 text-xs font-semibold uppercase tracking-wider mb-4">
+                    Patient & Peer Feedback
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+                    Trusted Clinical Excellence
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "Dr. Samakshi Sharma made my procedure seamless and entirely painless. Her attention to detail and calm demeanour put me at ease instantly."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-sky-500/20 text-sky-400 flex items-center justify-center font-bold text-sm">
+                            AN
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-white">Ananya N.</div>
+                            <div class="text-xs text-slate-400">Patient @ ITS Hospital</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "An exceptionally talented dental practitioner. Dr. Samakshi combines modern clinical methods with true care for patient comfort."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 flex items-center justify-center font-bold text-sm">
+                            RK
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-white">Dr. R. Kapoor</div>
+                            <div class="text-xs text-slate-400">Clinical Colleague</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "Her expertise in restorative work is impressive. She clearly explains every step, which really builds trust and confidence."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-sm">
+                            VS
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-white">Vikram S.</div>
+                            <div class="text-xs text-slate-400">Patient</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 relative z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Direct Details -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-sky-400 text-xs font-semibold uppercase tracking-wider mb-4">
+                            Get In Touch
+                        </div>
+                        <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+                            Book an Appointment or Inquiry
+                        </h2>
+                        <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                            Have questions regarding treatments or want to schedule a clinical consultation? Send a message directly below.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="glass-card p-5 rounded-xl flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-sky-500/10 text-sky-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-hospital"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 uppercase font-semibold">Affiliation</div>
+                                <div class="text-slate-200 font-medium text-sm mt-0.5">ITS Dental College & Hospital</div>
+                            </div>
+                        </div>
+
+                        <div class="glass-card p-5 rounded-xl flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 uppercase font-semibold">Direct Email</div>
+                                <div class="text-slate-200 font-medium text-sm mt-0.5">contact@drsamakshi.com</div>
+                            </div>
+                        </div>
+
+                        <div class="glass-card p-5 rounded-xl flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-user-check"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 uppercase font-semibold">Professional Status</div>
+                                <div class="text-slate-200 font-medium text-sm mt-0.5">Associate Dentist (Active)</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-2">
+                        <div class="flex items-center gap-4">
+                            <a href="#" class="w-10 h-10 rounded-lg glass-card flex items-center justify-center text-slate-400 hover:text-sky-400 hover:border-sky-500/50 transition-all">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-lg glass-card flex items-center justify-center text-slate-400 hover:text-sky-400 hover:border-sky-500/50 transition-all">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-lg glass-card flex items-center justify-center text-slate-400 hover:text-sky-400 hover:border-sky-500/50 transition-all">
+                                <i class="fa-solid fa-globe"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="lg:col-span-7">
+                    <div class="glass-card p-8 rounded-2xl border border-slate-800">
+                        <form onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent successfully.');" class="space-y-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Full Name</label>
+                                    <input type="text" required placeholder="John Doe" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-slate-200 focus:outline-none focus:border-sky-500 transition-colors text-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Phone Number</label>
+                                    <input type="tel" placeholder="+91 98765 43210" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-slate-200 focus:outline-none focus:border-sky-500 transition-colors text-sm">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Email Address</label>
+                                <input type="email" required placeholder="john@example.com" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-slate-200 focus:outline-none focus:border-sky-500 transition-colors text-sm">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Service Required</label>
+                                <select class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-slate-300 focus:outline-none focus:border-sky-500 transition-colors text-sm">
+                                    <option>General Consultation</option>
+                                    <option>Cosmetic Dentistry</option>
+                                    <option>Restorative Dentistry</option>
+                                    <option>Teeth Whitening</option>
+                                    <option>Other / Inquiry</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Message</label>
+                                <textarea rows="4" required placeholder="Describe your inquiry or preferred timing..." class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-slate-200 focus:outline-none focus:border-sky-500 transition-colors text-sm resize-none"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-sky-500 via-indigo-500 to-purple-600 text-white font-semibold text-sm shadow-xl hover:shadow-sky-500/25 transition-all">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-900 bg-slate-950 py-12 relative z-10">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-sky-500/20 text-sky-400 flex items-center justify-center font-bold text-sm">
+                    <i class="fa-solid fa-tooth"></i>
+                </div>
+                <span class="text-sm font-semibold text-slate-300">Dr. Samakshi Sharma &copy; 2026. All rights reserved.</span>
+            </div>
+            <div class="text-xs text-slate-500">
+                Associate Dentist at ITS Dental College & Hospital
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
