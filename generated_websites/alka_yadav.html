@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Alka Yadav | Consultant Pathologist</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .gradient-border {
+            position: relative;
+            border-radius: 9999px;
+            background: linear-gradient(135deg, #0ea5e9, #a855f7, #ec4899);
+            padding: 4px;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #38bdf8, #c084fc, #f472b6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-glow {
+            box-shadow: 0 0 80px -10px rgba(14, 165, 233, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-sky-500 selection:text-white relative overflow-x-hidden">
+
+    <!-- Ambient Background Lighting -->
+    <div class="fixed top-0 left-1/4 -z-10 w-96 h-96 bg-sky-500/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="fixed bottom-10 right-10 -z-10 w-[30rem] h-[30rem] bg-purple-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <!-- Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-500 via-purple-500 to-pink-500 p-0.5">
+                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center group-hover:bg-transparent transition-colors">
+                        <i class="fa-solid fa-microscope text-sky-400 group-hover:text-white transition-colors"></i>
+                    </div>
+                </div>
+                <span class="text-xl font-bold tracking-tight text-white">Alka Yadav<span class="text-sky-400">.MD</span></span>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-sky-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-sky-400 transition-colors">Expertise</a>
+                <a href="#services" class="hover:text-sky-400 transition-colors">Services</a>
+                <a href="#endorsements" class="hover:text-sky-400 transition-colors">Endorsements</a>
+                <a href="#contact" class="hover:text-sky-400 transition-colors">Contact</a>
+            </nav>
+
+            <a href="#contact" class="px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-slate-900 border border-slate-700 hover:border-sky-500 hover:shadow-lg hover:shadow-sky-500/20 transition-all">
+                Consultation Inquiry
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-36 pb-24 px-6 relative">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Left Column Text -->
+            <div class="lg:col-span-7 space-y-8">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 text-sky-400 text-xs font-semibold tracking-wide uppercase">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    Modern Diagnostic & Research Centre
+                </div>
+
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight leading-tight">
+                    Advancing Health Through <span class="gradient-text">Precision Pathology</span> & Clinical Excellence.
+                </h1>
+
+                <p class="text-slate-400 text-lg md:text-xl leading-relaxed max-w-2xl">
+                    I am <strong class="text-slate-200">Alka Yadav</strong>, Consultant Pathologist. Dedicated to bridging laboratory precision with clinical decision-making, providing definitive diagnostic insights for improved patient outcomes.
+                </p>
+
+                <div class="flex flex-wrap items-center gap-4 pt-2">
+                    <a href="#contact" class="px-8 py-4 rounded-full font-bold text-white bg-gradient-to-r from-sky-500 via-indigo-500 to-purple-500 hover:opacity-95 transition-all shadow-lg shadow-indigo-500/25 flex items-center gap-3">
+                        Request Consultation <i class="fa-solid fa-arrow-right text-sm"></i>
+                    </a>
+                    <a href="#expertise" class="px-8 py-4 rounded-full font-bold text-slate-300 bg-slate-900 border border-slate-800 hover:border-slate-700 hover:text-white transition-all">
+                        View Clinical Scope
+                    </a>
+                </div>
+
+                <!-- Trust Badges -->
+                <div class="grid grid-cols-3 gap-6 pt-8 border-t border-slate-800/80">
+                    <div>
+                        <div class="text-2xl font-bold text-white">100%</div>
+                        <div class="text-xs text-slate-400 uppercase font-semibold mt-1">Diagnostic Accuracy</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-white">Modern</div>
+                        <div class="text-xs text-slate-400 uppercase font-semibold mt-1">Diagnostic & Research Centre</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-white">NABL</div>
+                        <div class="text-xs text-slate-400 uppercase font-semibold mt-1">Quality Benchmarks</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column Avatar Frame -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative group">
+                    <!-- Glow effect -->
+                    <div class="absolute -inset-1 bg-gradient-to-r from-sky-500 via-purple-500 to-pink-500 rounded-3xl blur-2xl opacity-40 group-hover:opacity-75 transition duration-500"></div>
+                    
+                    <div class="relative bg-slate-900 border border-slate-800 p-6 rounded-3xl backdrop-blur-xl flex flex-col items-center text-center">
+                        <div class="gradient-border mb-6">
+                            <img src="https://ui-avatars.com/api/?name=Alka+Yadav&size=200&background=0D8ABC&color=fff&bold=true" alt="Alka Yadav" class="w-40 h-40 rounded-full object-cover">
+                        </div>
+                        <h2 class="text-2xl font-bold text-white">Alka Yadav</h2>
+                        <p class="text-sky-400 font-medium text-sm mt-1">Consultant Pathologist</p>
+                        <p class="text-xs text-slate-400 mt-2">Modern Diagnostic & Research Centre</p>
+
+                        <div class="mt-6 w-full pt-6 border-t border-slate-800/80 flex justify-center gap-4 text-slate-400">
+                            <span class="inline-flex items-center gap-2 text-xs bg-slate-800/60 px-3 py-1.5 rounded-full border border-slate-700">
+                                <i class="fa-solid fa-dna text-sky-400"></i> Histopathology
+                            </span>
+                            <span class="inline-flex items-center gap-2 text-xs bg-slate-800/60 px-3 py-1.5 rounded-full border border-slate-700">
+                                <i class="fa-solid fa-vial text-purple-400"></i> Cytology
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About & Industry Expertise Section -->
+    <section id="about" class="py-24 px-6 bg-slate-900/40 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-6 relative">
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Laboratory & Pathology Expertise" class="w-full h-[450px] object-cover filter brightness-90 hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-6 rounded-xl bg-slate-950/80 backdrop-blur-md border border-slate-800">
+                            <p class="text-sm text-slate-300 italic">"Precision in diagnosis is the foundation of effective patient care."</p>
+                            <p class="text-xs text-sky-400 font-semibold mt-2">— Alka Yadav, Consultant Pathologist</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-sky-400 text-sm font-semibold tracking-wider uppercase">About Alka Yadav</span>
+                    <h2 class="text-3xl md:text-4xl font-bold tracking-tight">Rigorous Diagnostics & Scientific Integrity</h2>
+                    <p class="text-slate-400 leading-relaxed">
+                        As a Consultant Pathologist at <strong class="text-slate-200">Modern Diagnostic & Research Centre</strong>, I specialize in analyzing biological specimens to deliver precise diagnostic insights that empower clinicians to deliver effective treatments.
+                    </p>
+                    <p class="text-slate-400 leading-relaxed">
+                        My practice focuses on maintaining highest laboratory standards, leveraging state-of-the-art diagnostic technologies, and upholding strict quality control systems across histopathology, cytopathology, and hematology workflows.
+                    </p>
+
+                    <div class="grid sm:grid-cols-2 gap-4 pt-4">
+                        <div class="p-4 rounded-xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300">
+                            <i class="fa-solid fa-microscope text-2xl text-sky-400 mb-2"></i>
+                            <h3 class="font-bold text-white text-base">Histopathology</h3>
+                            <p class="text-xs text-slate-400 mt-1">Detailed tissue analysis & biopsy evaluation with meticulous margin assessment.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300">
+                            <i class="fa-solid fa-notes-medical text-2xl text-purple-400 mb-2"></i>
+                            <h3 class="font-bold text-white text-base">Clinical Consultation</h3>
+                            <p class="text-xs text-slate-400 mt-1">Direct interdisciplinary collaboration with surgeons and attending physicians.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services" class="py-24 px-6 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-sky-400 text-sm font-semibold tracking-wider uppercase">Clinical Capabilities</span>
+                <h2 class="text-3xl md:text-4xl font-bold tracking-tight mt-2">Comprehensive Pathology Services</h2>
+                <p class="text-slate-400 text-sm mt-3">High-precision laboratory diagnostics supporting standard and specialized clinical demands.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-vial-circle-check text-2xl text-sky-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Histopathology & Biopsies</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Microscopic evaluation of tissue specimens to diagnose complex diseases, neoplasms, and non-neoplastic conditions.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-disease text-2xl text-purple-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Cytopathology & FNAC</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Fine needle aspiration cytology and fluid cytological analysis for rapid, accurate diagnostic triage.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-file-medical text-2xl text-pink-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Clinical Pathology</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Comprehensive screening including hematology, biochemical panels, and fluid analysis under strict protocols.</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-list-check text-2xl text-emerald-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Lab Quality Assurance</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Implementation and oversight of rigorous internal quality controls and proficiency testing protocols.</p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-user-doctor text-2xl text-amber-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Diagnostic Consultation</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Collaborative diagnostic reviews and second opinions for complex pathology and oncology cases.</p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-flask-vial text-2xl text-indigo-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Molecular Diagnostics</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Targeted biomarker analysis aiding precision oncology and tailored patient treatment plans.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Endorsements Section -->
+    <section id="endorsements" class="py-24 px-6 bg-slate-900/40 border-y border-slate-800/60">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-sky-400 text-sm font-semibold tracking-wider uppercase">Peer Recommendations</span>
+                <h2 class="text-3xl md:text-4xl font-bold tracking-tight mt-2">Endorsed by Clinical Colleagues</h2>
+                <p class="text-slate-400 text-sm mt-3">Trusted for rapid turnaround, thorough reports, and unwavering clinical focus.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex gap-1 text-amber-400 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Dr. Alka Yadav's precision in histopathology reports has been invaluable to our clinical team. Her diagnostic clarity makes treatment planning confident and seamless."
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-6 border-t border-slate-800/80">
+                        <p class="text-white font-bold text-sm">Senior Surgical Oncologist</p>
+                        <p class="text-xs text-slate-400 mt-0.5">Medical Research Partner</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex gap-1 text-amber-400 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Her adherence to strict laboratory standard operating procedures and attention to diagnostic nuance at Modern Diagnostic & Research Centre sets a benchmark."
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-6 border-t border-slate-800/80">
+                        <p class="text-white font-bold text-sm">Head of Laboratory Operations</p>
+                        <p class="text-xs text-slate-400 mt-0.5">Diagnostic Services</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex gap-1 text-amber-400 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Prompt, precise, and always available for urgent tissue slide reviews. Alka is a true pillar of diagnostic pathology in our network."
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-6 border-t border-slate-800/80">
+                        <p class="text-white font-bold text-sm">Consultant Physician</p>
+                        <p class="text-xs text-slate-400 mt-0.5">Clinical Diagnostics Associate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-6 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="text-sky-400 text-sm font-semibold tracking-wider uppercase">Direct Engagement</span>
+                    <h2 class="text-3xl md:text-4xl font-bold tracking-tight">Get in Touch with Dr. Alka Yadav</h2>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        For clinical consultations, diagnostic inquiries, or research collaborations at Modern Diagnostic & Research Centre, feel free to send a message.
+                    </p>
+
+                    <div class="space-y-4 pt-4">
+                        <div class="p-4 rounded-xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-sky-500/10 flex items-center justify-center text-sky-400">
+                                <i class="fa-solid fa-hospital"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Affiliation</p>
+                                <p class="text-sm font-semibold text-white">Modern Diagnostic & Research Centre</p>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-purple-500/10 flex items-center justify-center text-purple-400">
+                                <i class="fa-solid fa-user-check"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Professional Connection</p>
+                                <p class="text-sm font-semibold text-white">Verified Network Associate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7">
+                    <form onsubmit="event.preventDefault(); alert('Thank you for reaching out. Message sent successfully!');" class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 space-y-6">
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold uppercase text-slate-400 mb-2">Your Name</label>
+                                <input type="text" required placeholder="Dr. John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-sky-500 transition-colors text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold uppercase text-slate-400 mb-2">Email Address</label>
+                                <input type="email" required placeholder="doctor@hospital.com" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-sky-500 transition-colors text-sm">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold uppercase text-slate-400 mb-2">Subject / Clinical Inquiry</label>
+                            <input type="text" required placeholder="Diagnostic Consultation / Biopsy Review" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-sky-500 transition-colors text-sm">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold uppercase text-slate-400 mb-2">Message</label>
+                            <textarea rows="4" required placeholder="Details regarding your inquiry..." class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-sky-500 transition-colors text-sm resize-none"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl font-bold text-white bg-gradient-to-r from-sky-500 via-indigo-500 to-purple-500 hover:opacity-95 transition-all shadow-lg shadow-sky-500/20 text-sm">
+                            Send Clinical Inquiry
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-6 border-t border-slate-800/80 bg-slate-950 text-slate-500 text-sm">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+            <p>© 2026 Dr. Alka Yadav • Modern Diagnostic & Research Centre. All Rights Reserved.</p>
+            <div class="flex items-center gap-6 text-xs">
+                <a href="#" class="hover:text-slate-300 transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-slate-300 transition-colors">Terms of Consultation</a>
+                <a href="#" class="hover:text-slate-300 transition-colors">Quality Assurance</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
