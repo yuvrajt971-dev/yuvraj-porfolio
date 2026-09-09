@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Suhailath MDS | General Dentist & Cosmetic Specialist</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        tealAccent: '#0D8ABC',
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(13, 138, 188, 0.3);
+        }
+        .glow-card {
+            box-shadow: 0 0 25px -5px rgba(14, 165, 233, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-white">
+
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-600 to-indigo-600 flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform duration-300">
+                    S
+                </div>
+                <div>
+                    <span class="text-lg font-bold tracking-tight text-white block">Dr. Suhailath <span class="text-cyan-400 font-medium text-sm">MDS</span></span>
+                    <span class="text-xs text-slate-400 block -mt-1">Dr Ismail Healthcare Group</span>
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Specialties</a>
+                <a href="#stats" class="hover:text-cyan-400 transition-colors">Excellence</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Reviews</a>
+            </div>
+
+            <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 hover:opacity-95 shadow-md shadow-cyan-500/20 transition-all duration-300 hover:shadow-cyan-500/40">
+                Book Consultation
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-20 md:pt-48 md:pb-32 overflow-hidden">
+        <!-- Background Ambient Glows -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-cyan-600/20 to-indigo-600/20 rounded-full blur-[120px] pointer-events-none -z-10 animate-pulse-slow"></div>
+        <div class="absolute bottom-10 right-10 w-[300px] h-[300px] bg-purple-600/10 rounded-full blur-[100px] pointer-events-none -z-10"></div>
+
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <!-- Left Info Column -->
+            <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 text-xs font-semibold text-cyan-400 backdrop-blur-md">
+                    <span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping"></span>
+                    Accepting New Patients & Special Appointments
+                </div>
+
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight text-white">
+                    Crafting Healthy Smiles with <span class="bg-gradient-to-r from-cyan-400 via-indigo-400 to-purple-400 bg-clip-text text-transparent">Precision & Compassion</span>
+                </h1>
+
+                <p class="text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+                    Welcome to the specialized clinical practice of <strong class="text-white">Dr. Suhailath MDS</strong>, General Dentist at <span class="text-cyan-300 font-medium">Dr Ismail Healthcare Group</span>. Delivering world-class restorative, preventive, and cosmetic dental treatments with advanced care techniques.
+                </p>
+
+                <!-- Hero CTAs -->
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                    <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white font-semibold text-sm shadow-xl shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:-translate-y-0.5 transition-all duration-300 text-center">
+                        Schedule an Appointment <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                    </a>
+                    <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900/80 hover:bg-slate-800 text-slate-200 font-semibold text-sm border border-slate-800 hover:border-slate-700 transition-all duration-300 text-center">
+                        Explore Dental Services
+                    </a>
+                </div>
+
+                <!-- Trust Badges -->
+                <div class="pt-6 border-t border-slate-800/80 grid grid-cols-3 gap-4 text-center lg:text-left">
+                    <div>
+                        <div class="text-2xl font-bold text-white">MDS</div>
+                        <div class="text-xs text-slate-400">Master Degree Qualified</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-white">Top-Tier</div>
+                        <div class="text-xs text-slate-400">Dr Ismail Healthcare</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-white">100%</div>
+                        <div class="text-xs text-slate-400">Patient-Centric Focus</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Profile Avatar Frame -->
+            <div class="lg:col-span-5 flex justify-center relative">
+                <div class="relative group">
+                    <!-- Glowing Outer Ring -->
+                    <div class="absolute -inset-1.5 bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 rounded-3xl blur-xl opacity-70 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse-slow"></div>
+                    
+                    <!-- Avatar Card Container -->
+                    <div class="relative bg-slate-900/90 border border-slate-800 rounded-3xl p-6 backdrop-blur-xl flex flex-col items-center text-center shadow-2xl">
+                        <div class="relative mb-6">
+                            <div class="w-48 h-48 sm:w-56 sm:h-56 rounded-2xl overflow-hidden p-1 bg-gradient-to-tr from-cyan-400 to-indigo-500 shadow-xl">
+                                <img src="https://ui-avatars.com/api/?name=Dr+Suhailath++MDS&size=200&background=0D8ABC&color=fff&bold=true" alt="Dr Suhailath MDS" class="w-full h-full object-cover rounded-xl bg-slate-950">
+                            </div>
+                            <div class="absolute -bottom-3 -right-3 bg-slate-950 border border-slate-700 rounded-xl px-3 py-1.5 flex items-center gap-2 shadow-lg">
+                                <i class="fa-solid fa-tooth text-cyan-400 text-sm"></i>
+                                <span class="text-xs font-semibold text-white">MDS Specialist</span>
+                            </div>
+                        </div>
+
+                        <h2 class="text-xl font-bold text-white">Dr. Suhailath MDS</h2>
+                        <p class="text-sm text-cyan-400 font-medium mb-4">General Dentist</p>
+                        
+                        <div class="w-full bg-slate-950/60 rounded-xl p-3 border border-slate-800 text-xs text-slate-300 flex items-center justify-between">
+                            <span class="flex items-center gap-2">
+                                <i class="fa-solid fa-hospital text-indigo-400"></i>
+                                Dr Ismail Healthcare Group
+                            </span>
+                            <span class="inline-block w-2 h-2 rounded-full bg-emerald-400"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-20 relative bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Image Side -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 shadow-2xl group">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" alt="Dental Practice" class="w-full h-[420px] object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-slate-900/80 backdrop-blur-md border border-slate-800">
+                            <p class="text-xs text-slate-300 italic">"Delivering painless, highly effective dental care with state-of-the-art diagnostic standards."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Side -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-cyan-950/60 border border-cyan-800/50 text-xs font-semibold text-cyan-400">
+                        About Clinical Excellence
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white">Comprehensive Dental Care Grounded in Advanced Diagnostics</h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        As a highly trained Master of Dental Surgery (MDS) professional practicing at <strong class="text-white">Dr Ismail Healthcare Group</strong>, Dr. Suhailath combines clinical precision with a gentle patient-first approach. 
+                    </p>
+                    <p class="text-slate-400 leading-relaxed">
+                        Whether performing routine preventive care, complex restorative procedure, or transformative cosmetic dental solutions, every treatment plan is tailored to preserve oral health and restore confident, vibrant smiles.
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-cyan-500/10 flex items-center justify-center text-cyan-400 flex-shrink-0">
+                                <i class="fa-solid fa-microscope text-sm"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-sm font-semibold text-white">Advanced Equipment</h3>
+                                <p class="text-xs text-slate-400 mt-1">Modern digital dental imaging & minimal discomfort methods.</p>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-indigo-500/10 flex items-center justify-center text-indigo-400 flex-shrink-0">
+                                <i class="fa-solid fa-heart-pulse text-sm"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-sm font-semibold text-white">Holistic Oral Health</h3>
+                                <p class="text-xs text-slate-400 mt-1">Preventive protocols designed for long-term overall health.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Stats Section -->
+    <section id="stats" class="py-12 border-y border-slate-800/80 bg-slate-900/40 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="p-4">
+                    <div class="text-3xl sm:text-4xl font-extrabold text-cyan-400">MDS</div>
+                    <div class="text-xs sm:text-sm text-slate-400 mt-1">Specialized Master Degree</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-3xl sm:text-4xl font-extrabold text-indigo-400">100%</div>
+                    <div class="text-xs sm:text-sm text-slate-400 mt-1">Sterilization & Safety Standards</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-3xl sm:text-4xl font-extrabold text-purple-400">5.0 ★</div>
+                    <div class="text-xs sm:text-sm text-slate-400 mt-1">Patient Satisfaction Rating</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-3xl sm:text-4xl font-extrabold text-pink-400">Premier</div>
+                    <div class="text-xs sm:text-sm text-slate-400 mt-1">Dr Ismail Healthcare Center</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid Section -->
+    <section id="services" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-purple-950/60 border border-purple-800/50 text-xs font-semibold text-purple-400">
+                    Clinical Specialties
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white">Comprehensive Dental Treatments</h2>
+                <p class="text-slate-400 text-sm sm:text-base">Customized, evidence-based treatments designed to restore functionality, health, and aesthetics.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1.5 glow-card group">
+                    <div class="w-14 h-14 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-teeth-open"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">General & Preventive Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Routine oral examinations, deep cleaning, scaling, fluoride treatments, and early cavity detection.</p>
+                    <span class="text-xs font-semibold text-cyan-400 flex items-center gap-1 group-hover:translate-x-1 transition-transform">Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1.5 glow-card group">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Cosmetic Smile Enhancements</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Professional teeth whitening, aesthetic veneers, tooth reshaping, and total smile makeover plans.</p>
+                    <span class="text-xs font-semibold text-indigo-400 flex items-center gap-1 group-hover:translate-x-1 transition-transform">Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1.5 glow-card group">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Restorative & Endodontics</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Tooth-colored composite fillings, root canal therapy, crowns, and bridges to preserve your natural tooth structure.</p>
+                    <span class="text-xs font-semibold text-purple-400 flex items-center gap-1 group-hover:translate-x-1 transition-transform">Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-pink-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1.5 glow-card group">
+                    <div class="w-14 h-14 rounded-xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Periodontal & Gum Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Comprehensive management of gingivitis, periodontitis, root planing, and gum tissue maintenance.</p>
+                    <span class="text-xs font-semibold text-pink-400 flex items-center gap-1 group-hover:translate-x-1 transition-transform">Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1.5 glow-card group">
+                    <div class="w-14 h-14 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-child font-normal"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Pediatric & Family Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Gentle, comfortable dental treatments tailored specifically for children and family oral wellness.</p>
+                    <span class="text-xs font-semibold text-cyan-400 flex items-center gap-1 group-hover:translate-x-1 transition-transform">Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1.5 glow-card group">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-kit-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Emergency Dental Services</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Prompt clinical response for severe tooth pain, accidental trauma, chipped teeth, and urgent dental issues.</p>
+                    <span class="text-xs font-semibold text-indigo-400 flex items-center gap-1 group-hover:translate-x-1 transition-transform">Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-slate-950 relative border-t border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-emerald-950/60 border border-emerald-800/50 text-xs font-semibold text-emerald-400">
+                    Patient Endorsements
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white">What Patients Say</h2>
+                <p class="text-slate-400 text-sm">Real feedback from patients treated at Dr Ismail Healthcare Group.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-6 rounded-2xl relative">
+                    <div class="flex text-amber-400 text-xs mb-4 gap-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed italic mb-6">"Dr. Suhailath is incredibly gentle and attentive. I used to be terrified of dental procedures, but her calm expertise made my root canal completely painless!"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-cyan-600/30 text-cyan-300 flex items-center justify-center font-bold text-sm border border-cyan-500/30">
+                            AH
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-semibold text-white">Aisha H.</h4>
+                            <p class="text-xs text-slate-500">Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-6 rounded-2xl relative">
+                    <div class="flex text-amber-400 text-xs mb-4 gap-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed italic mb-6">"Hands down the best dental experience I've had. Her MDS specialized knowledge shows in how meticulously she explained my treatment plan."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-indigo-600/30 text-indigo-300 flex items-center justify-center font-bold text-sm border border-indigo-500/30">
+                            RK
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-semibold text-white">Rohan K.</h4>
+                            <p class="text-xs text-slate-500">Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-6 rounded-2xl relative">
+                    <div class="flex text-amber-400 text-xs mb-4 gap-1">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed italic mb-6">"The entire team at Dr Ismail Healthcare Group was wonderful, and Dr. Suhailath gave me the confidence to smile bright again!"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-purple-600/30 text-purple-300 flex items-center justify-center font-bold text-sm border border-purple-500/30">
+                            MM
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-semibold text-white">Mariam M.</h4>
+                            <p class="text-xs text-slate-500">Patient</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Consultation Form Section -->
+    <section id="contact" class="py-24 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 bg-slate-900/50 border border-slate-800 rounded-3xl p-8 sm:p-12 backdrop-blur-2xl">
+                
+                <!-- Contact Info Column -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-xs font-bold text-cyan-400 uppercase tracking-widest block mb-2">Book Your Visit</span>
+                        <h2 class="text-3xl font-extrabold text-white">Get in Touch with Dr. Suhailath MDS</h2>
+                        <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                            Ready for your dental checkup or consultation? Reach out directly or fill out the appointment inquiry form.
+                        </p>
+                    </div>
+
+                    <div class="space-y-5">
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-950/80 border border-slate-800/80">
+                            <div class="w-10 h-10 rounded-lg bg-cyan-500/10 flex items-center justify-center text-cyan-400 text-lg">
+                                <i class="fa-solid fa-hospital"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400">Clinical Affiliation</div>
+                                <div class="text-sm font-semibold text-white">Dr Ismail Healthcare Group</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-950/80 border border-slate-800/80">
+                            <div class="w-10 h-10 rounded-lg bg-indigo-500/10 flex items-center justify-center text-indigo-400 text-lg">
+                                <i class="fa-solid fa-user-doctor"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400">Specialization</div>
+                                <div class="text-sm font-semibold text-white">General Dentistry & Oral Surgery (MDS)</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-950/80 border border-slate-800/80">
+                            <div class="w-10 h-10 rounded-lg bg-purple-500/10 flex items-center justify-center text-purple-400 text-lg">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400">Connected Since</div>
+                                <div class="text-sm font-semibold text-white">07 Sep 2026</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 flex items-center gap-4">
+                        <a href="#" class="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-slate-300 hover:text-white hover:bg-cyan-600 transition-colors">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-slate-300 hover:text-white hover:bg-cyan-600 transition-colors">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-slate-300 hover:text-white hover:bg-cyan-600 transition-colors">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Consultation Form Column -->
+                <div class="lg:col-span-7">
+                    <form onsubmit="event.preventDefault(); alert('Appointment Inquiry Sent Successfully!');" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Full Name</label>
+                                <input type="text" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Phone Number</label>
+                                <input type="tel" required placeholder="+1 (555) 000-0000" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">Preferred Service</label>
+                            <select class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-300 text-sm focus:outline-none focus:border-cyan-500 transition-colors">
+                                <option>General Consultation / Routine Checkup</option>
+                                <option>Cosmetic Whitening / Veneers</option>
+                                <option>Root Canal / Restorative Therapy</option>
+                                <option>Gum Care & Scaling</option>
+                                <option>Pediatric / Family Care</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">Message or Symptoms (Optional)</label>
+                            <textarea rows="4" placeholder="Describe any specific concerns or questions..." class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-cyan-500 transition-colors"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white font-bold text-sm shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 transition-all duration-300">
+                            Request Appointment
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-800/80 bg-slate-950 text-slate-500 text-xs">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+                <p>&copy; 2026 Dr. Suhailath MDS. All rights reserved. Associated with Dr Ismail Healthcare Group.</p>
+            </div>
+            <div class="flex gap-6 text-slate-400">
+                <a href="#" class="hover:text-cyan-400 transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-cyan-400 transition-colors">Terms of Service</a>
+                <a href="#" class="hover:text-cyan-400 transition-colors">Patient Portal</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
