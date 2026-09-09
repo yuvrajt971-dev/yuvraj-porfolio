@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Athira KR | Associate Dentist | Amrita Dental Clinic</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        dental: {
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -12px rgba(14, 165, 233, 0.35);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 selection:bg-cyan-500 selection:text-slate-950">
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform duration-300">
+                    <i class="fa-solid fa-tooth"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-lg leading-tight tracking-tight text-white group-hover:text-cyan-400 transition-colors">Dr. Athira KR</span>
+                    <span class="text-xs text-slate-400">Amrita Dental Clinic</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <div class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Specializations</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Testimonials</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact & Visit</a>
+            </div>
+
+            <div class="hidden md:flex items-center gap-4">
+                <a href="#contact" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white font-semibold text-sm shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:scale-[1.02] transition-all duration-300">
+                    Book Appointment
+                </a>
+            </div>
+
+            <!-- Mobile Hamburger -->
+            <button class="md:hidden text-slate-300 hover:text-white focus:outline-none text-2xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900/95 border-b border-slate-800 px-6 py-4 space-y-3">
+            <a href="#about" class="block text-slate-300 hover:text-cyan-400">About</a>
+            <a href="#services" class="block text-slate-300 hover:text-cyan-400">Specializations</a>
+            <a href="#testimonials" class="block text-slate-300 hover:text-cyan-400">Testimonials</a>
+            <a href="#contact" class="block text-slate-300 hover:text-cyan-400">Contact & Visit</a>
+            <a href="#contact" class="inline-block w-full text-center px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 to-indigo-600 text-white font-semibold text-sm">
+                Book Appointment
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center pt-28 pb-16 px-6 overflow-hidden">
+        <!-- Background Ambient Glows -->
+        <div class="absolute top-1/4 left-10 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-10 right-10 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+            <!-- Left Column: Copy -->
+            <div class="lg:col-span-7 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 text-cyan-400 text-xs font-semibold mb-6 shadow-inner">
+                    <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                    Associate Dentist at Amrita Dental Clinic
+                </div>
+
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-none mb-6">
+                    Transforming Dentistry into an Art of <span class="text-gradient">Radiant Smiles</span>
+                </h1>
+
+                <p class="text-slate-400 text-lg sm:text-xl leading-relaxed mb-8 max-w-2xl mx-auto lg:mx-0">
+                    Dedicated to providing gentle, precision-focused, and modern clinical dental care. Enhancing oral health and confidence with cutting-edge techniques and patient-first care.
+                </p>
+
+                <div class="flex flex-wrap gap-4 justify-center lg:justify-start mb-12">
+                    <a href="#contact" class="px-8 py-4 rounded-full bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white font-bold text-base shadow-xl shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:scale-[1.02] transition-all duration-300 flex items-center gap-2">
+                        <span>Schedule Your Visit</span>
+                        <i class="fa-solid fa-arrow-right text-sm"></i>
+                    </a>
+                    <a href="#services" class="px-8 py-4 rounded-full bg-slate-900/80 hover:bg-slate-800 text-slate-200 border border-slate-800 font-semibold text-base transition-all duration-300 flex items-center gap-2">
+                        <span>View Specializations</span>
+                    </a>
+                </div>
+
+                <!-- Trust Badges -->
+                <div class="grid grid-cols-3 gap-4 pt-8 border-t border-slate-800/80">
+                    <div>
+                        <p class="text-2xl sm:text-3xl font-extrabold text-white">100%</p>
+                        <p class="text-xs sm:text-sm text-slate-400">Patient-Centric Care</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl sm:text-3xl font-extrabold text-cyan-400">Precision</p>
+                        <p class="text-xs sm:text-sm text-slate-400">Modern Treatments</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl sm:text-3xl font-extrabold text-white">Amrita</p>
+                        <p class="text-xs sm:text-sm text-slate-400">Dental Practice</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Avatar Frame -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative">
+                    <!-- Glowing Outer Rings -->
+                    <div class="absolute -inset-1.5 rounded-full bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 opacity-75 blur-lg animate-pulse"></div>
+                    <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full p-2 bg-slate-950 border border-slate-800 shadow-2xl">
+                        <img 
+                            src="https://ui-avatars.com/api/?name=Dr.+Athira+KR&size=200&background=0D8ABC&color=fff&bold=true" 
+                            alt="Dr. Athira KR" 
+                            class="w-full h-full object-cover rounded-full shadow-inner"
+                        />
+                    </div>
+
+                    <!-- Floating Badge 1 -->
+                    <div class="absolute -bottom-4 -left-4 bg-slate-900/90 backdrop-blur-xl border border-slate-800 rounded-2xl p-4 shadow-xl flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-tooth"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400">Current Role</p>
+                            <p class="text-sm font-bold text-white">Associate Dentist</p>
+                        </div>
+                    </div>
+
+                    <!-- Floating Badge 2 -->
+                    <div class="absolute -top-4 -right-4 bg-slate-900/90 backdrop-blur-xl border border-slate-800 rounded-2xl p-4 shadow-xl flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-purple-500/20 text-purple-400 flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-hospital-user"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400">Clinic</p>
+                            <p class="text-sm font-bold text-white">Amrita Dental</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-20 px-6 bg-slate-900/40 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Image Column -->
+                <div class="lg:col-span-6">
+                    <div class="relative rounded-3xl overflow-hidden border border-slate-800 shadow-2xl group">
+                        <img 
+                            src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                            alt="Modern Dental Operatory" 
+                            class="w-full h-[420px] object-cover group-hover:scale-105 transition-transform duration-700"
+                        />
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-6 rounded-2xl bg-slate-900/80 backdrop-blur-md border border-slate-800">
+                            <p class="text-cyan-400 font-semibold text-sm">Clinical Care Excellence</p>
+                            <p class="text-slate-300 text-xs mt-1">State-of-the-art dental solutions delivered with compassion and precise expertise.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Column -->
+                <div class="lg:col-span-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold mb-4">
+                        <i class="fa-solid fa-user-doctor"></i> About Dr. Athira KR
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-6 leading-tight">
+                        Dedicated to Elevating Oral Health & Patient Comfort
+                    </h2>
+                    <p class="text-slate-300 leading-relaxed mb-6">
+                        As an Associate Dentist at <strong>Amrita Dental Clinic</strong>, Dr. Athira KR blends advanced clinical skills with an empathetic approach to dental health. She is committed to delivering comprehensive dental treatments ranging from preventative oral health care to transformative cosmetic enhancements.
+                    </p>
+                    <p class="text-slate-400 leading-relaxed mb-8">
+                        Every patient receives individualized treatment plans crafted to ensure painless procedures, long-term oral hygiene, and restored confidence in every smile.
+                    </p>
+
+                    <!-- Core Competencies Grid -->
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80">
+                            <i class="fa-solid fa-check-circle text-cyan-400 mb-2 text-lg"></i>
+                            <h4 class="font-bold text-white text-sm">Comprehensive Diagnosis</h4>
+                            <p class="text-xs text-slate-400 mt-1">Thorough clinical exams and clear patient education.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80">
+                            <i class="fa-solid fa-check-circle text-purple-400 mb-2 text-lg"></i>
+                            <h4 class="font-bold text-white text-sm">Pain-Free Treatments</h4>
+                            <p class="text-xs text-slate-400 mt-1">Gentle techniques designed for patient ease.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid Section -->
+    <section id="services" class="py-20 px-6 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-cyan-400 text-xs font-bold tracking-widest uppercase">Clinical Services</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2 mb-4">Specialized Dental Care Solutions</h2>
+                <p class="text-slate-400 text-sm sm:text-base">Customized, high-end dental treatments delivered with precision and modern equipment.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 p-8 rounded-3xl transition-all duration-300 hover:-translate-y-2 group shadow-xl">
+                    <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-cyan-500 group-hover:text-slate-950 transition-all duration-300">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Cosmetic Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Enhancing smile aesthetics through teeth whitening, veneers, and precise smile design.</p>
+                    <span class="text-xs text-cyan-400 font-semibold inline-flex items-center gap-1">Read More <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 p-8 rounded-3xl transition-all duration-300 hover:-translate-y-2 group shadow-xl">
+                    <div class="w-14 h-14 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-indigo-500 group-hover:text-slate-950 transition-all duration-300">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Preventive & Operative</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Routine checkups, tooth restorations, fillings, and long-term oral hygiene care.</p>
+                    <span class="text-xs text-cyan-400 font-semibold inline-flex items-center gap-1">Read More <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 p-8 rounded-3xl transition-all duration-300 hover:-translate-y-2 group shadow-xl">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-purple-500 group-hover:text-slate-950 transition-all duration-300">
+                        <i class="fa-solid fa-microscope"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Endodontic Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Precision root canal therapies to eliminate discomfort and preserve natural teeth.</p>
+                    <span class="text-xs text-cyan-400 font-semibold inline-flex items-center gap-1">Read More <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 p-8 rounded-3xl transition-all duration-300 hover:-translate-y-2 group shadow-xl">
+                    <div class="w-14 h-14 rounded-2xl bg-pink-500/10 border border-pink-500/20 text-pink-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-pink-500 group-hover:text-slate-950 transition-all duration-300">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Family & Pediatric Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Gentle, comfortable treatment environments tailored for patients of all age groups.</p>
+                    <span class="text-xs text-cyan-400 font-semibold inline-flex items-center gap-1">Read More <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 p-8 rounded-3xl transition-all duration-300 hover:-translate-y-2 group shadow-xl">
+                    <div class="w-14 h-14 rounded-2xl bg-teal-500/10 border border-teal-500/20 text-teal-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-teal-500 group-hover:text-slate-950 transition-all duration-300">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Prosthodontics</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">High-quality crowns, bridges, and tooth replacement solutions restoring function and beauty.</p>
+                    <span class="text-xs text-cyan-400 font-semibold inline-flex items-center gap-1">Read More <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 p-8 rounded-3xl transition-all duration-300 hover:-translate-y-2 group shadow-xl">
+                    <div class="w-14 h-14 rounded-2xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-amber-500 group-hover:text-slate-950 transition-all duration-300">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Orthodontic Guidance</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Consultation and aligner planning for alignment correction and optimal bite health.</p>
+                    <span class="text-xs text-cyan-400 font-semibold inline-flex items-center gap-1">Read More <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 px-6 bg-slate-900/40 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-cyan-400 text-xs font-bold tracking-widest uppercase">Patient Experiences</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2 mb-4">Trusted by Happy Patients</h2>
+                <p class="text-slate-400 text-sm sm:text-base">Real words from patients who experienced compassionate, pain-free dental care.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-3xl relative">
+                    <div class="text-amber-400 flex gap-1 mb-4 text-sm">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-6 italic">"Dr. Athira KR made my root canal procedure completely painless. Her calm demeanor and attention to detail at Amrita Dental Clinic put all my anxieties at ease!"</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 font-bold flex items-center justify-center text-sm">
+                            AP
+                        </div>
+                        <div>
+                            <p class="text-white font-bold text-sm">Ananya P.</p>
+                            <p class="text-slate-400 text-xs">Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-3xl relative">
+                    <div class="text-amber-400 flex gap-1 mb-4 text-sm">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-6 italic">"Extremely professional and thorough! She explained every step of my teeth cleaning and restorative procedure clearly. Highly recommend her consultation."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 font-bold flex items-center justify-center text-sm">
+                            RM
+                        </div>
+                        <div>
+                            <p class="text-white font-bold text-sm">Rahul Menon</p>
+                            <p class="text-slate-400 text-xs">Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-3xl relative">
+                    <div class="text-amber-400 flex gap-1 mb-4 text-sm">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-6 italic">"The smile whitening treatment delivered astonishing results! Dr. Athira is truly an expert in cosmetic dentistry."</p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 font-bold flex items-center justify-center text-sm">
+                            SK
+                        </div>
+                        <div>
+                            <p class="text-white font-bold text-sm">Sujith Kumar</p>
+                            <p class="text-slate-400 text-xs">Patient</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Appointment Form -->
+    <section id="contact" class="py-20 px-6 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="bg-slate-900/80 border border-slate-800 rounded-3xl p-8 sm:p-12 backdrop-blur-2xl relative overflow-hidden">
+                <!-- Decorative background elements -->
+                <div class="absolute -top-24 -right-24 w-72 h-72 bg-cyan-500/10 rounded-full blur-3xl"></div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 relative z-10">
+                    <!-- Contact Info -->
+                    <div class="lg:col-span-5">
+                        <span class="text-cyan-400 text-xs font-bold tracking-widest uppercase">Get In Touch</span>
+                        <h2 class="text-3xl font-extrabold text-white mt-2 mb-6">Book Your Dental Consultation Today</h2>
+                        <p class="text-slate-400 text-sm mb-8 leading-relaxed">
+                            Have questions or want to schedule your next visit with Dr. Athira KR? Fill out the form or reach out directly to Amrita Dental Clinic.
+                        </p>
+
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center text-xl shrink-0">
+                                    <i class="fa-solid fa-hospital"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-bold text-base">Practice Location</h4>
+                                    <p class="text-slate-400 text-sm">Amrita Dental Clinic</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-2xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center text-xl shrink-0">
+                                    <i class="fa-solid fa-calendar-check"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-bold text-base">Working Hours</h4>
+                                    <p class="text-slate-400 text-sm">Monday – Saturday: 9:00 AM – 7:00 PM</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center text-xl shrink-0">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-bold text-base">Direct Enquiries</h4>
+                                    <p class="text-slate-400 text-sm">dr.athira@amritadental.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Appointment Form -->
+                    <div class="lg:col-span-7">
+                        <form onsubmit="event.preventDefault(); alert('Appointment Request Submitted! Dr. Athira\'s team will reach out shortly.');" class="space-y-4">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs text-slate-400 mb-2">Full Name</label>
+                                    <input type="text" placeholder="John Doe" required class="w-full bg-slate-950/80 border border-slate-800 focus:border-cyan-500 rounded-xl px-4 py-3 text-white text-sm focus:outline-none transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-xs text-slate-400 mb-2">Phone Number</label>
+                                    <input type="tel" placeholder="+91 98765 43210" required class="w-full bg-slate-950/80 border border-slate-800 focus:border-cyan-500 rounded-xl px-4 py-3 text-white text-sm focus:outline-none transition-colors">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs text-slate-400 mb-2">Service Needed</label>
+                                    <select class="w-full bg-slate-950/80 border border-slate-800 focus:border-cyan-500 rounded-xl px-4 py-3 text-slate-300 text-sm focus:outline-none transition-colors">
+                                        <option>General Dental Checkup</option>
+                                        <option>Cosmetic Teeth Whitening</option>
+                                        <option>Root Canal Treatment</option>
+                                        <option>Restorative / Crown Treatment</option>
+                                        <option>Pediatric Consultation</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs text-slate-400 mb-2">Preferred Date</label>
+                                    <input type="date" class="w-full bg-slate-950/80 border border-slate-800 focus:border-cyan-500 rounded-xl px-4 py-3 text-slate-300 text-sm focus:outline-none transition-colors">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs text-slate-400 mb-2">Message or Symptoms (Optional)</label>
+                                <textarea rows="4" placeholder="Describe any specific dental concerns or preferred time..." class="w-full bg-slate-950/80 border border-slate-800 focus:border-cyan-500 rounded-xl px-4 py-3 text-white text-sm focus:outline-none transition-colors"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white font-bold text-sm shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:scale-[1.01] transition-all duration-300">
+                                Confirm Appointment Request
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-6 border-t border-slate-800/80 bg-slate-950">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-tooth text-cyan-400"></i>
+                <span class="text-sm font-semibold text-slate-300">Dr. Athira KR — Amrita Dental Clinic</span>
+            </div>
+            <p class="text-xs text-slate-500">© 2026 Dr. Athira KR. All Rights Reserved.</p>
+            <div class="flex gap-4 text-slate-400">
+                <a href="#" class="hover:text-cyan-400 text-sm transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="hover:text-cyan-400 text-sm transition-colors"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
