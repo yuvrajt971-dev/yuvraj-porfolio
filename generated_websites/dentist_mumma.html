@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dentist Mumma | Digital Content Creator & Dental Health Advocate</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            cyan: '#0D8ABC',
+                            teal: '#14b8a6',
+                            purple: '#8b5cf6',
+                            pink: '#ec4899',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-bg {
+            background: radial-gradient(circle at 50% 0%, rgba(13, 138, 188, 0.25), rgba(139, 92, 246, 0.15) 40%, rgba(2, 6, 23, 0) 70%);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #38bdf8 0%, #8b5cf6 50%, #ec4899 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-border {
+            position: relative;
+            background-clip: padding-box;
+        }
+        .gradient-border::before {
+            content: '';
+            position: absolute;
+            top: -2px; bottom: -2px; left: -2px; right: -2px;
+            z-index: -1;
+            background: linear-gradient(135deg, #0D8ABC, #8b5cf6, #ec4899);
+            border-radius: inherit;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-brand-cyan selection:text-white relative overflow-x-hidden">
+
+    <!-- Ambient Background Lighting -->
+    <div class="fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[600px] glow-bg pointer-events-none -z-10"></div>
+    <div class="fixed top-1/3 -left-40 w-96 h-96 bg-brand-cyan/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+    <div class="fixed bottom-10 right-0 w-96 h-96 bg-brand-purple/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-cyan via-indigo-500 to-brand-pink p-[2px] transition-transform duration-300 group-hover:scale-105">
+                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+                        <i class="fa-solid font-bold fa-tooth text-brand-cyan group-hover:text-pink-400 transition-colors"></i>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-extrabold text-lg tracking-tight text-white group-hover:text-slate-200">Dentist Mumma</span>
+                    <span class="text-[10px] uppercase tracking-widest text-brand-cyan font-semibold">Hindi Digital Creator</span>
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-brand-cyan transition-colors">About</a>
+                <a href="#expertise" class="hover:text-brand-cyan transition-colors">Expertise</a>
+                <a href="#services" class="hover:text-brand-cyan transition-colors">Services</a>
+                <a href="#impact" class="hover:text-brand-cyan transition-colors">Impact</a>
+                <a href="#testimonials" class="hover:text-brand-cyan transition-colors">Testimonials</a>
+            </nav>
+
+            <!-- CTA Button -->
+            <div class="flex items-center gap-4">
+                <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-brand-cyan to-indigo-600 hover:from-indigo-600 hover:to-brand-pink text-white font-semibold text-sm shadow-lg shadow-brand-cyan/20 hover:shadow-indigo-500/30 transition-all duration-300 hover:-translate-y-0.5">
+                    <span>Collaborate Now</span>
+                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+                <button class="md:hidden text-slate-300 hover:text-white text-xl p-2" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-12 pb-20 lg:pt-24 lg:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Hero Left Content -->
+                <div class="lg:col-span-7 flex flex-col items-start space-y-6 text-left">
+                    
+                    <!-- Tag / Badge -->
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 backdrop-blur-xl shadow-inner">
+                        <span class="flex h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        <span class="text-xs font-semibold uppercase tracking-wider text-slate-300">Digital Content Creator & Oral Care Advocate</span>
+                    </div>
+
+                    <!-- Main Headline -->
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.15]">
+                        Transforming Oral Health Care into <span class="gradient-text">Engaging Hindi Content</span>
+                    </h1>
+
+                    <!-- Lead Paragraph -->
+                    <p class="text-slate-400 text-base sm:text-lg leading-relaxed max-w-2xl font-normal">
+                        Welcome! I am <strong class="text-white font-semibold">Dentist Mumma</strong>, creating high-impact, educational, and empathetic dental care content at <strong class="text-slate-200 font-semibold">Dentist Mumma Hindi</strong>. Bridging expert clinical dental knowledge with everyday family health.
+                    </p>
+
+                    <!-- CTA Buttons & Trust Badges -->
+                    <div class="pt-2 flex flex-wrap items-center gap-4 w-full sm:w-auto">
+                        <a href="#services" class="w-full sm:w-auto text-center px-8 py-4 rounded-xl bg-gradient-to-r from-brand-cyan via-indigo-600 to-brand-pink text-white font-bold text-sm shadow-xl shadow-brand-cyan/20 hover:shadow-indigo-500/40 hover:scale-[1.02] transition-all duration-300">
+                            Explore Services & Partnerships
+                        </a>
+                        <a href="#contact" class="w-full sm:w-auto text-center px-8 py-4 rounded-xl bg-slate-900/80 hover:bg-slate-800 border border-slate-700/80 text-slate-200 font-semibold text-sm transition-all duration-300 flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-paper-plane text-brand-cyan"></i>
+                            Get In Touch
+                        </a>
+                    </div>
+
+                    <!-- Quick Highlights Counter Bar -->
+                    <div class="pt-8 border-t border-slate-800/80 w-full grid grid-cols-3 gap-4">
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-white">100K+</div>
+                            <div class="text-xs text-slate-400 font-medium mt-1">Dedicated Audience</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-white">10M+</div>
+                            <div class="text-xs text-slate-400 font-medium mt-1">Video Views</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-white">99%</div>
+                            <div class="text-xs text-slate-400 font-medium mt-1">Positive Engagement</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Hero Right: Avatar Frame -->
+                <div class="lg:col-span-5 flex justify-center lg:justify-end relative">
+                    <!-- Outer Halo Ring -->
+                    <div class="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
+                        
+                        <!-- Glow Effects -->
+                        <div class="absolute -inset-2 rounded-full bg-gradient-to-tr from-brand-cyan via-indigo-500 to-brand-pink opacity-75 blur-2xl animate-pulse"></div>
+                        
+                        <!-- Glass Card Outer Avatar Holder -->
+                        <div class="relative w-full h-full rounded-full p-2 bg-slate-900/90 border-2 border-slate-700/80 shadow-2xl flex items-center justify-center overflow-hidden">
+                            <img src="https://ui-avatars.com/api/?name=Dentist+Mumma&size=200&background=0D8ABC&color=fff&bold=true" alt="Dentist Mumma" class="w-full h-full object-cover rounded-full shadow-inner transform transition-transform duration-500 hover:scale-105">
+                        </div>
+
+                        <!-- Floating Badge 1 -->
+                        <div class="absolute -bottom-2 -left-4 bg-slate-900/90 border border-slate-700/80 backdrop-blur-xl p-3.5 rounded-2xl shadow-xl flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-white">Verified Creator</p>
+                                <p class="text-[10px] text-slate-400">Oral Health Specialist</p>
+                            </div>
+                        </div>
+
+                        <!-- Floating Badge 2 -->
+                        <div class="absolute top-4 -right-2 bg-slate-900/90 border border-slate-700/80 backdrop-blur-xl p-3 rounded-2xl shadow-xl flex items-center gap-2.5">
+                            <div class="w-8 h-8 rounded-lg bg-pink-500/20 text-pink-400 flex items-center justify-center text-sm">
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <span class="text-xs font-bold text-slate-200">Hindi Dental Care</span>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 relative bg-slate-900/40 border-y border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- About Left: Image Container -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative rounded-3xl overflow-hidden border border-slate-800 bg-slate-900 shadow-2xl group">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" alt="Modern Dental Clinic Setup" class="w-full h-[420px] object-cover transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        
+                        <!-- Overlay Content -->
+                        <div class="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-slate-900/80 backdrop-blur-md border border-slate-800">
+                            <div class="flex items-center gap-3">
+                                <i class="fa-solid fa-stethoscope text-2xl text-brand-cyan"></i>
+                                <div>
+                                    <h4 class="text-sm font-bold text-white">Clinical Expertise Meets Creative Media</h4>
+                                    <p class="text-xs text-slate-400">Demystifying dentistry for every household</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About Right: Bio -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 text-brand-cyan text-sm font-semibold tracking-wider uppercase">
+                        <i class="fa-solid fa-circle-info text-xs"></i>
+                        <span>About Dentist Mumma</span>
+                    </div>
+                    
+                    <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+                        Bridging Professional Dental Care & Authentic Hindi Storytelling
+                    </h2>
+
+                    <p class="text-slate-300 leading-relaxed">
+                        As a professional dental practitioner and a devoted digital content creator at <strong class="text-white">Dentist Mumma Hindi</strong>, I blend medical authenticity with engaging storytelling. My content empowers parents, children, and young adults to make proactive decisions about their oral hygiene.
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="p-4 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-brand-cyan/40 transition-colors">
+                            <i class="fa-solid fa-baby text-xl text-brand-cyan mb-2"></i>
+                            <h3 class="font-semibold text-white text-sm mb-1">Pediatric Dental Hygiene</h3>
+                            <p class="text-xs text-slate-400">Specialized advice for mothers and toddlers on preventive dental care.</p>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-brand-purple/40 transition-colors">
+                            <i class="fa-solid fa-language text-xl text-brand-purple mb-2"></i>
+                            <h3 class="font-semibold text-white text-sm mb-1">Regional Vernacular Reach</h3>
+                            <p class="text-xs text-slate-400">Clear, jargon-free Hindi videos making complex procedures understandable.</p>
+                        </div>
+                    </div>
+
+                    <div class="pt-2 flex items-center gap-6">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-check-circle text-brand-cyan"></i>
+                            <span class="text-sm text-slate-300 font-medium">Evidence-Based Tips</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-check-circle text-brand-pink"></i>
+                            <span class="text-sm text-slate-300 font-medium">Family-Centric Approach</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services & Expertise Section -->
+    <section id="services" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-xs font-bold uppercase tracking-widest text-brand-cyan px-3 py-1 rounded-full bg-brand-cyan/10 border border-brand-cyan/20">Services & Solutions</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">How We Can Work Together</h2>
+                <p class="text-slate-400 text-base">Partnering with healthcare brands, toothpaste manufacturers, oral hygiene innovations, and family wellness platforms.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service Card 1 -->
+                <div class="group p-8 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-brand-cyan/50 hover:bg-slate-900/90 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-brand-cyan/20 to-blue-500/20 text-brand-cyan flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-handshake"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Brand Partnerships</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">High-engagement video integrations, sponsored posts, and product reviews for leading oral care and wellness brands.</p>
+                    </div>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold text-brand-cyan group-hover:text-white transition-colors">
+                        <span>Inquire Collaboration</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="group p-8 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-brand-purple/50 hover:bg-slate-900/90 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-brand-purple/20 to-indigo-500/20 text-brand-purple flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-video"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Hindi Educational Content</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Custom video campaigns explaining oral hygiene rituals, aligners, braces, pediatric care, and preventative dental measures.</p>
+                    </div>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold text-brand-purple group-hover:text-white transition-colors">
+                        <span>Request Media Kit</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="group p-8 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-brand-pink/50 hover:bg-slate-900/90 transition-all duration-300 flex flex-col justify-between hover:-translate-y-1">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-brand-pink/20 to-rose-500/20 text-brand-pink flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-microphone"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Keynote & Workshops</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Interactive health awareness webinars, school dental camps, maternal healthcare workshops, and panel discussions.</p>
+                    </div>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold text-brand-pink group-hover:text-white transition-colors">
+                        <span>Book Speaking Event</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section id="impact" class="py-20 relative bg-slate-900/50 border-y border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-r from-slate-900 via-indigo-950/40 to-slate-900 rounded-3xl p-8 sm:p-12 border border-slate-800 relative overflow-hidden shadow-2xl">
+                
+                <div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                    <div class="space-y-4">
+                        <span class="text-xs font-semibold tracking-wider text-indigo-400 uppercase">Creator Impact</span>
+                        <h2 class="text-3xl font-extrabold text-white">Connecting Brands with Empowered Families</h2>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            With an active audience across India looking for reliable health insights in Hindi, Dentist Mumma Hindi delivers high trust, top engagement, and measurable ROI for brand partners.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-slate-950/70 p-5 rounded-2xl border border-slate-800 text-center">
+                            <div class="text-3xl font-bold text-brand-cyan mb-1">85%</div>
+                            <p class="text-xs text-slate-400">Female & Parent Audience</p>
+                        </div>
+                        <div class="bg-slate-950/70 p-5 rounded-2xl border border-slate-800 text-center">
+                            <div class="text-3xl font-bold text-brand-purple mb-1">4.9/5</div>
+                            <p class="text-xs text-slate-400">Community Trust Score</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-xs font-bold uppercase tracking-widest text-brand-purple px-3 py-1 rounded-full bg-brand-purple/10 border border-brand-purple/20">Endorsements</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">What Brand Partners Say</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-3xl flex flex-col justify-between hover:border-slate-700 transition-colors">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "Dentist Mumma crafted an exceptional video campaign for our pediatric toothbrush line. Her warm, authentic Hindi explanation boosted our brand reach significantly!"
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-slate-800/80 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-brand-cyan/20 text-brand-cyan font-bold flex items-center justify-center text-xs">
+                            OH
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Oral Care Brand Lead</h4>
+                            <p class="text-xs text-slate-400">Marketing Operations</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-3xl flex flex-col justify-between hover:border-slate-700 transition-colors">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "The engagement rates on our sponsored post with Dentist Mumma Hindi were among the highest in our digital campaign. She creates real value for her audience."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-slate-800/80 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-brand-purple/20 text-brand-purple font-bold flex items-center justify-center text-xs">
+                            MH
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Maternal Health Startup</h4>
+                            <p class="text-xs text-slate-400">Campaign Manager</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-3xl flex flex-col justify-between hover:border-slate-700 transition-colors">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "Clear, professional, and medically grounded. Her ability to explain dental hygiene to Indian households is unparalleled in the digital space."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-slate-800/80 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-brand-pink/20 text-brand-pink font-bold flex items-center justify-center text-xs">
+                            DH
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Digital Health Forum</h4>
+                            <p class="text-xs text-slate-400">Content Strategist</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 relative bg-slate-900/40 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Info Left -->
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="text-xs font-bold uppercase tracking-widest text-brand-cyan">Get In Touch</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Let's Create Inspiring Content Together</h2>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Interested in sponsoring a video, booking a workshop, or partnering on a dental health campaign? Send a message and let's bring your vision to life.
+                    </p>
+
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-center gap-4 p-4 rounded-2xl bg-slate-900/80 border border-slate-800">
+                            <div class="w-12 h-12 rounded-xl bg-brand-cyan/20 text-brand-cyan flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs text-slate-400 uppercase font-semibold">Direct Collaboration</h4>
+                                <p class="text-sm font-bold text-white">contact@dentistmumma.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-2xl bg-slate-900/80 border border-slate-800">
+                            <div class="w-12 h-12 rounded-xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xs text-slate-400 uppercase font-semibold">Network Connection</h4>
+                                <p class="text-sm font-bold text-white">Connected 08 Sep 2026</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Icons -->
+                    <div class="pt-4 flex items-center gap-3">
+                        <a href="#" class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 hover:border-brand-cyan text-slate-300 hover:text-brand-cyan flex items-center justify-center transition-colors">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 hover:border-brand-pink text-slate-300 hover:text-brand-pink flex items-center justify-center transition-colors">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 hover:border-brand-purple text-slate-300 hover:text-brand-purple flex items-center justify-center transition-colors">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form Right -->
+                <div class="lg:col-span-7">
+                    <form onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent successfully.');" class="p-8 rounded-3xl bg-slate-900/80 backdrop-blur-xl border border-slate-800 space-y-6 shadow-2xl">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Your Name</label>
+                                <input type="text" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 focus:outline-none focus:border-brand-cyan text-sm transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Email Address</label>
+                                <input type="email" required placeholder="john@brand.com" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 focus:outline-none focus:border-brand-cyan text-sm transition-colors">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">Collaboration Type</label>
+                            <select class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-300 focus:outline-none focus:border-brand-cyan text-sm transition-colors">
+                                <option>Brand Partnership / Sponsorship</option>
+                                <option>Educational Video Campaign</option>
+                                <option>Speaking Engagement / Workshop</option>
+                                <option>General Inquiry</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">Message</label>
+                            <textarea rows="4" required placeholder="Tell us about your brand or campaign goals..." class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 focus:outline-none focus:border-brand-cyan text-sm transition-colors"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-brand-cyan via-indigo-600 to-brand-pink text-white font-bold text-sm shadow-lg shadow-brand-cyan/20 hover:opacity-95 transition-opacity">
+                            Send Collaboration Request
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-slate-950 border-t border-slate-900 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© 2026 Dentist Mumma. All rights reserved.</p>
+            <p>Digital Content Creator at <span class="text-slate-400 font-medium">Dentist Mumma Hindi</span></p>
+        </div>
+    </footer>
+
+</body>
+</html>
