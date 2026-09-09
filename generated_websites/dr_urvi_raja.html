@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Urvi Raja | Premier Dentist & Dental Surgeon</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            cyan: '#0D8ABC',
+                            teal: '#14b8a6',
+                            indigo: '#6366f1',
+                            purple: '#a855f7'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -12px rgba(13, 138, 188, 0.35);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card:hover {
+            border-color: rgba(56, 189, 248, 0.4);
+            box-shadow: 0 10px 30px -10px rgba(13, 138, 188, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-slate-950">
+
+    <!-- NAVIGATION BAR -->
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform duration-300">
+                    <i class="fa-solid font-normal fa-tooth"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-extrabold text-lg tracking-tight text-white group-hover:text-cyan-400 transition-colors">Dr urvi raja</span>
+                    <span class="text-xs text-slate-400 font-medium">Dr urvi's dental hub</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About Practice</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Specialties</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Patient Reviews</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+            </nav>
+
+            <!-- Action Button -->
+            <div class="hidden md:flex items-center gap-4">
+                <a href="#contact" class="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-semibold rounded-xl group bg-gradient-to-br from-cyan-500 via-indigo-500 to-purple-500 group-hover:from-cyan-500 group-hover:to-purple-500 hover:text-white text-white shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 transition-all duration-300">
+                    <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-slate-950 rounded-[10px] group-hover:bg-opacity-0">
+                        Book Appointment
+                    </span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-btn" class="md:hidden text-slate-300 hover:text-white focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900/95 border-b border-slate-800 px-6 py-6 space-y-4">
+            <a href="#about" class="block text-slate-300 hover:text-cyan-400 font-medium py-2">About Practice</a>
+            <a href="#services" class="block text-slate-300 hover:text-cyan-400 font-medium py-2">Specialties</a>
+            <a href="#testimonials" class="block text-slate-300 hover:text-cyan-400 font-medium py-2">Patient Reviews</a>
+            <a href="#contact" class="block text-slate-300 hover:text-cyan-400 font-medium py-2">Contact</a>
+            <a href="#contact" class="block text-center py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 font-semibold text-white">Book Appointment</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative min-h-screen pt-32 pb-20 flex items-center justify-center overflow-hidden">
+        <!-- Background Ambient Glows -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-cyan-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute bottom-10 right-10 w-[400px] h-[400px] bg-purple-500/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Column: Content -->
+                <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border-cyan-500/30 text-cyan-300 text-xs sm:text-sm font-semibold tracking-wide uppercase shadow-inner">
+                        <span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping"></span>
+                        Leading Dental Surgeon at Dr urvi's dental hub
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-[1.15]">
+                        Crafting Healthy, <br class="hidden sm:inline"/>
+                        <span class="text-gradient">Radiant Smiles</span> With Artistry & Precision.
+                    </h1>
+
+                    <p class="text-slate-400 text-lg sm:text-xl max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        Welcome to <span class="text-slate-200 font-semibold">Dr urvi's dental hub</span>. Dr. Urvi Raja combines state-of-the-art dental clinical innovation with personal compassionate care to deliver world-class oral health solutions.
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white font-bold text-center hover:opacity-90 transition-all duration-300 shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:-translate-y-0.5">
+                            <i class="fa-solid fa-calendar-check mr-2"></i> Schedule Consultation
+                        </a>
+                        <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-xl glass-card text-slate-200 font-semibold text-center hover:bg-slate-800/80 transition-all duration-300 hover:text-white border-slate-700">
+                            Explore Services
+                        </a>
+                    </div>
+
+                    <!-- Trust Stats Badge Bar -->
+                    <div class="pt-8 grid grid-cols-3 gap-4 border-t border-slate-800/80 max-w-lg mx-auto lg:mx-0">
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-white">100%</p>
+                            <p class="text-xs sm:text-sm text-slate-400 font-medium">Patient Focus</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-cyan-400">5.0 <i class="fa-solid fa-star text-amber-400 text-lg"></i></p>
+                            <p class="text-xs sm:text-sm text-slate-400 font-medium">Top Rated</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-white">1000+</p>
+                            <p class="text-xs sm:text-sm text-slate-400 font-medium">Smiles Restored</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Glowing Avatar Frame -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative group">
+                        <!-- Double Gradient Animated Glow Ring -->
+                        <div class="absolute -inset-1.5 bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 rounded-3xl blur-xl opacity-70 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+                        
+                        <!-- Main Card Frame -->
+                        <div class="relative p-3 bg-slate-900 rounded-3xl border border-slate-800/80 glass-card">
+                            <img src="https://ui-avatars.com/api/?name=Dr+urvi+raja&size=200&background=0D8ABC&color=fff&bold=true" 
+                                 alt="Dr urvi raja" 
+                                 class="w-64 h-64 sm:w-80 sm:h-80 object-cover rounded-2xl mx-auto shadow-2xl">
+                            
+                            <!-- Floating Badge -->
+                            <div class="absolute -bottom-5 left-1/2 -translate-x-1/2 px-6 py-3 bg-slate-900/90 backdrop-blur-md rounded-2xl border border-cyan-500/40 shadow-xl flex items-center gap-3 w-max">
+                                <div class="w-3 h-3 rounded-full bg-emerald-400 animate-ping"></div>
+                                <div class="text-left">
+                                    <p class="text-xs text-slate-400 uppercase font-bold tracking-wider">Practice</p>
+                                    <p class="text-sm font-bold text-slate-100">Dr urvi's dental hub</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT & EXPERTISE SECTION -->
+    <section id="about" class="py-24 relative bg-slate-900/40 border-y border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Clinical Image Card -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative rounded-2xl overflow-hidden glass-card border border-slate-700/60 group">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Modern Dental Technology - Dr urvi raja" 
+                             class="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <p class="text-cyan-400 font-semibold text-sm uppercase tracking-wider">Advanced Care Standards</p>
+                            <h3 class="text-xl font-bold text-white mt-1">State-of-the-Art Clinical Suite</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 text-cyan-400 text-sm font-bold uppercase tracking-wider">
+                        <i class="fa-solid fa-stethoscope"></i> About The Lead Specialist
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
+                        Redefining Modern Oral Healthcare at <span class="text-gradient">Dr urvi's dental hub</span>
+                    </h2>
+                    <p class="text-slate-300 leading-relaxed text-base sm:text-lg font-normal">
+                        Dr urvi raja is a passionate Dentist dedicated to delivering exceptional dental standard care through modern techniques, precision equipment, and empathetic patient engagement.
+                    </p>
+                    <p class="text-slate-400 leading-relaxed text-sm sm:text-base">
+                        At <strong class="text-slate-200">Dr urvi's dental hub</strong>, every patient receives a comprehensive personalized treatment plan designed to eliminate discomfort, restore aesthetics, and preserve lifelong oral hygiene.
+                    </p>
+
+                    <!-- Feature Highlights List -->
+                    <div class="grid sm:grid-cols-2 gap-4 pt-4">
+                        <div class="flex items-start gap-3 p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <i class="fa-solid fa-shield-halved text-cyan-400 text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-white text-sm">Painless Procedures</h4>
+                                <p class="text-slate-400 text-xs">Gentle care tailored for maximum comfort.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <i class="fa-solid fa-microscope text-indigo-400 text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-white text-sm">Precision Technology</h4>
+                                <p class="text-slate-400 text-xs">High-accuracy diagnostics & digital imaging.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <i class="fa-solid fa-wand-magic-sparkles text-purple-400 text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-white text-sm">Smile Design</h4>
+                                <p class="text-slate-400 text-xs">Aesthetic cosmetic enhancements crafted with precision.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <i class="fa-solid fa-user-doctor text-emerald-400 text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-white text-sm">Holistic Wellness</h4>
+                                <p class="text-slate-400 text-xs">Focused on preventative dental longevity.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES GRID SECTION -->
+    <section id="services" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <p class="text-cyan-400 text-sm font-bold uppercase tracking-wider">Comprehensive Dental Solutions</p>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white">Clinical Specialties & Care</h2>
+                <p class="text-slate-400 text-base sm:text-lg">Tailored treatments provided by Dr urvi raja with precision and care.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service Card 1 -->
+                <div class="glass-card p-8 rounded-2xl relative group transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-cyan-500 group-hover:text-slate-950 transition-colors duration-300">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Cosmetic Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Teeth whitening, veneers, and full smile makeovers engineered to enhance natural brilliance.</p>
+                    <a href="#contact" class="text-cyan-400 font-semibold text-sm inline-flex items-center gap-2 group-hover:translate-x-2 transition-transform duration-300">Book Service <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="glass-card p-8 rounded-2xl relative group transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-indigo-500 group-hover:text-slate-950 transition-colors duration-300">
+                        <i class="fa-solid fa-teeth-open"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Orthodontics & Aligners</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Discreet clear aligner treatments and traditional braces for perfect bite alignment and spacing.</p>
+                    <a href="#contact" class="text-indigo-400 font-semibold text-sm inline-flex items-center gap-2 group-hover:translate-x-2 transition-transform duration-300">Book Service <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="glass-card p-8 rounded-2xl relative group transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-purple-500 group-hover:text-slate-950 transition-colors duration-300">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Restorative & Implants</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Durable tooth replacements, crowns, and bridges that function seamlessly like natural teeth.</p>
+                    <a href="#contact" class="text-purple-400 font-semibold text-sm inline-flex items-center gap-2 group-hover:translate-x-2 transition-transform duration-300">Book Service <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="glass-card p-8 rounded-2xl relative group transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-emerald-500 group-hover:text-slate-950 transition-colors duration-300">
+                        <i class="fa-solid fa-shield-virus"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Preventive Dental Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Routine checkups, deep scaling, fluoride treatments, and early cavity detection protocols.</p>
+                    <a href="#contact" class="text-emerald-400 font-semibold text-sm inline-flex items-center gap-2 group-hover:translate-x-2 transition-transform duration-300">Book Service <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="glass-card p-8 rounded-2xl relative group transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-pink-500/10 border border-pink-500/20 text-pink-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-pink-500 group-hover:text-slate-950 transition-colors duration-300">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Endodontics (Root Canal)</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Painless root canal therapy designed to save natural teeth and relieve acute tooth pain fast.</p>
+                    <a href="#contact" class="text-pink-400 font-semibold text-sm inline-flex items-center gap-2 group-hover:translate-x-2 transition-transform duration-300">Book Service <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="glass-card p-8 rounded-2xl relative group transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-amber-500 group-hover:text-slate-950 transition-colors duration-300">
+                        <i class="fa-solid fa-children"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Pediatric & Family Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Gentle, welcoming dental care specifically created to put children and families at complete ease.</p>
+                    <a href="#contact" class="text-amber-400 font-semibold text-sm inline-flex items-center gap-2 group-hover:translate-x-2 transition-transform duration-300">Book Service <i class="fa-solid fa-arrow-right text-xs"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials" class="py-24 relative bg-slate-900/40 border-t border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <p class="text-cyan-400 text-sm font-bold uppercase tracking-wider">Patient Trust & Endorsements</p>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white">What Patients Say</h2>
+                <p class="text-slate-400 text-base sm:text-lg">Real feedback from individuals treated by Dr urvi raja at Dr urvi's dental hub.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Review 1 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">"Dr. Urvi Raja is truly fantastic! She made my root canal completely pain-free and explained every step. Dr urvi's dental hub is modern and welcoming."</p>
+                    </div>
+                    <div class="flex items-center gap-3 border-t border-slate-800 pt-4">
+                        <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold">AP</div>
+                        <div>
+                            <p class="text-sm font-bold text-white">Ananya Patel</p>
+                            <p class="text-xs text-slate-500">Verified Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">"I had a smile designing treatment done here and the outcome surpassed all my expectations! Highly recommend Dr. Urvi for anyone seeking top cosmetic dental work."</p>
+                    </div>
+                    <div class="flex items-center gap-3 border-t border-slate-800 pt-4">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold">RM</div>
+                        <div>
+                            <p class="text-sm font-bold text-white">Rahul Mehta</p>
+                            <p class="text-xs text-slate-500">Verified Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">"Clean clinic, hygienic equipment, and extremely courteous treatment. Dr urvi raja takes genuine care of her patients."</p>
+                    </div>
+                    <div class="flex items-center gap-3 border-t border-slate-800 pt-4">
+                        <div class="w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 flex items-center justify-center font-bold">SN</div>
+                        <div>
+                            <p class="text-sm font-bold text-white">Sneha Nair</p>
+                            <p class="text-xs text-slate-500">Verified Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT & BOOKING SECTION -->
+    <section id="contact" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Contact Info Sidebar -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <p class="text-cyan-400 text-sm font-bold uppercase tracking-wider mb-2">Get In Touch</p>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Schedule Your Visit</h2>
+                        <p class="text-slate-400 text-base mt-2">Book an appointment or send an inquiry directly to Dr urvi's dental hub.</p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-cyan-400 text-xl flex-shrink-0">
+                                <i class="fa-solid fa-hospital"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-bold uppercase tracking-wider">Practice Name</p>
+                                <p class="text-slate-100 font-semibold text-lg">Dr urvi's dental hub</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-indigo-400 text-xl flex-shrink-0">
+                                <i class="fa-solid fa-user-doctor"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-bold uppercase tracking-wider">Lead Specialist</p>
+                                <p class="text-slate-100 font-semibold text-lg">Dr urvi raja (Dentist)</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-purple-400 text-xl flex-shrink-0">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-bold uppercase tracking-wider">Consultation Hours</p>
+                                <p class="text-slate-100 font-semibold">Mon - Sat: 09:00 AM - 08:00 PM</p>
+                                <p class="text-slate-400 text-xs">Sunday: By Special Appointment</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-emerald-400 text-xl flex-shrink-0">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-bold uppercase tracking-wider">Verified Professional</p>
+                                <p class="text-slate-100 font-semibold">Connected on 08 Sep 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Booking Form -->
+                <div class="lg:col-span-7">
+                    <div class="glass-card p-8 sm:p-10 rounded-3xl border border-slate-800 relative">
+                        <h3 class="text-2xl font-bold text-white mb-6">Book an Appointment</h3>
+                        
+                        <form id="appointment-form" class="space-y-6" onsubmit="event.preventDefault(); alert('Thank you! Your appointment request has been submitted successfully to Dr urvi\'s dental hub.');">
+                            <div class="grid sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Patient Full Name</label>
+                                    <input type="text" required placeholder="e.g. John Doe" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-white placeholder-slate-600 focus:outline-none focus:border-cyan-500 transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Phone Number</label>
+                                    <input type="tel" required placeholder="+1 (555) 000-0000" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-white placeholder-slate-600 focus:outline-none focus:border-cyan-500 transition-colors">
+                                </div>
+                            </div>
+
+                            <div class="grid sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Preferred Service</label>
+                                    <select class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition-colors">
+                                        <option>Cosmetic Dentistry</option>
+                                        <option>Orthodontics & Aligners</option>
+                                        <option>Dental Implants</option>
+                                        <option>General Checkup & Hygiene</option>
+                                        <option>Root Canal Treatment</option>
+                                        <option>Other Consultation</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Preferred Date</label>
+                                    <input type="date" required class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition-colors">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-2">Notes / Symptoms (Optional)</label>
+                                <textarea rows="3" placeholder="Describe any dental concerns or questions..." class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-white placeholder-slate-600 focus:outline-none focus:border-cyan-500 transition-colors"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white font-bold text-center hover:opacity-95 transition-all duration-300 shadow-lg shadow-cyan-500/25">
+                                Confirm Appointment Request
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 border-t border-slate-900 py-12 text-slate-400 text-sm">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-cyan-500 flex items-center justify-center text-slate-950 font-bold">
+                    <i class="fa-solid fa-tooth"></i>
+                </div>
+                <span class="font-bold text-white text-base">Dr urvi raja</span>
+                <span class="text-slate-600">|</span>
+                <span class="text-slate-400">Dr urvi's dental hub</span>
+            </div>
+
+            <p class="text-xs text-slate-500">
+                &copy; 2026 Dr urvi raja. All rights reserved. Designed for excellence in healthcare.
+            </p>
+
+            <div class="flex items-center gap-4 text-slate-400">
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-linkedin text-lg"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-instagram text-lg"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-solid fa-globe text-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
