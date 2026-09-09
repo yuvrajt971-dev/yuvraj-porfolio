@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Jay. Badmaliya | Dental Surgeon</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+        }
+        .glow-bg {
+            background: radial-gradient(circle at 50% 0%, rgba(14, 165, 233, 0.15) 0%, rgba(168, 85, 247, 0.1) 35%, transparent 70%);
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(51, 65, 85, 0.5);
+        }
+        .glass-card:hover {
+            border-color: rgba(56, 189, 248, 0.4);
+            box-shadow: 0 0 25px -5px rgba(14, 165, 233, 0.2);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-border {
+            position: relative;
+            background: linear-gradient(135deg, #0ea5e9, #a855f7, #ec4899);
+            padding: 3px;
+            border-radius: 9999px;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-sky-500 selection:text-white">
+
+    <!-- Background Glow Elements -->
+    <div class="fixed inset-0 glow-bg pointer-events-none z-0"></div>
+    <div class="fixed top-1/4 -left-48 w-96 h-96 bg-sky-500/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="fixed bottom-1/4 -right-48 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-500 to-indigo-600 flex items-center justify-center shadow-lg shadow-sky-500/20 group-hover:scale-105 transition-transform">
+                    <i class="fa-solid font-bold text-white text-lg">J</i>
+                </div>
+                <div>
+                    <span class="text-lg font-bold tracking-tight text-white block leading-none">Dr. Jay. Badmaliya</span>
+                    <span class="text-xs text-sky-400 font-medium">Dental Surgeon</span>
+                </div>
+            </a>
+
+            <div class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-300">
+                <a href="#about" class="hover:text-sky-400 transition-colors">About Practice</a>
+                <a href="#services" class="hover:text-sky-400 transition-colors">Specializations</a>
+                <a href="#hospital" class="hover:text-sky-400 transition-colors">Sindhu Hospital</a>
+                <a href="#testimonials" class="hover:text-sky-400 transition-colors">Patient Stories</a>
+            </div>
+
+            <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-400 hover:to-indigo-500 text-white font-semibold text-sm shadow-md shadow-sky-500/20 hover:shadow-sky-500/40 transition-all duration-300 hover:-translate-y-0.5">
+                <i class="fa-solid font-bold text-sm">Book Consultation</i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-20 md:pt-44 md:pb-32 px-6 z-10">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
+            
+            <div class="flex-1 text-center md:text-left">
+                <!-- Trust Badge -->
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 text-xs text-sky-400 mb-6 font-medium shadow-inner">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    Accepting New Patients at Sindhu Hospital
+                </div>
+                
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight mb-6">
+                    Redefining Oral Health with <span class="gradient-text">Precision & Excellence</span>
+                </h1>
+                
+                <p class="text-lg text-slate-400 max-w-2xl mb-8 leading-relaxed font-normal">
+                    Welcome to the digital practice of <strong class="text-slate-200">Dr. Jay. Badmaliya</strong>. Combining advanced surgical techniques with compassionate care to deliver world-class dental solutions at Sindhu Hospital.
+                </p>
+
+                <!-- Hero Action Buttons -->
+                <div class="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start mb-12">
+                    <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-sky-500 via-indigo-500 to-purple-600 hover:opacity-95 text-white font-semibold text-base shadow-lg shadow-sky-500/25 transition-all text-center">
+                        Schedule Consultation <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                    </a>
+                    <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-xl glass-card text-slate-200 hover:text-white font-medium text-base transition-all text-center hover:bg-slate-800/80">
+                        View Treatments
+                    </a>
+                </div>
+
+                <!-- Stats Badges -->
+                <div class="grid grid-cols-3 gap-4 pt-8 border-t border-slate-800/80">
+                    <div>
+                        <div class="text-2xl lg:text-3xl font-bold text-white">10+</div>
+                        <div class="text-xs text-slate-400 mt-1">Years Experience</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl lg:text-3xl font-bold text-white">5,000+</div>
+                        <div class="text-xs text-slate-400 mt-1">Happy Smiles</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl lg:text-3xl font-bold text-white">100%</div>
+                        <div class="text-xs text-slate-400 mt-1">Patient Focus</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Avatar / Photo Frame -->
+            <div class="flex-1 flex justify-center relative">
+                <div class="relative">
+                    <!-- Glowing frame ring -->
+                    <div class="absolute -inset-1.5 rounded-full bg-gradient-to-r from-sky-500 via-indigo-500 to-purple-500 blur-xl opacity-75 animate-pulse"></div>
+                    
+                    <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full p-2 bg-slate-900 border border-slate-800 shadow-2xl flex items-center justify-center overflow-hidden">
+                        <img src="https://ui-avatars.com/api/?name=Dr.+Jay.+Badmaliya&size=200&background=0D8ABC&color=fff&bold=true" 
+                             alt="Dr. Jay. Badmaliya" 
+                             class="w-full h-full object-cover rounded-full transform hover:scale-105 transition-transform duration-500">
+                    </div>
+
+                    <!-- Floating Badge -->
+                    <div class="absolute -bottom-2 -left-2 glass-card px-4 py-3 rounded-2xl flex items-center gap-3 shadow-xl border border-slate-700/50">
+                        <div class="w-10 h-10 rounded-xl bg-sky-500/20 text-sky-400 flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-hospital-user"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs text-slate-400">Chief Surgeon</div>
+                            <div class="text-sm font-bold text-white">Sindhu Hospital</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-20 px-6 relative z-10 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- Clinical Image -->
+                <div class="relative rounded-3xl overflow-hidden glass-card p-3 group">
+                    <div class="relative rounded-2xl overflow-hidden h-[400px]">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Modern Dental Surgery" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-sky-400">Clinical Precision</span>
+                            <h3 class="text-xl font-bold text-white mt-1">State-of-the-Art Surgical Infrastructure</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div>
+                    <div class="inline-flex items-center gap-2 text-sky-400 text-sm font-semibold tracking-wider uppercase mb-3">
+                        <i class="fa-solid fa-user-doctor"></i> About Dr. Badmaliya
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6 leading-tight">
+                        Dedicated to Delivering Superior Surgical & Aesthetic Dental Solutions
+                    </h2>
+                    <p class="text-slate-400 mb-6 leading-relaxed">
+                        As a lead Dental Surgeon at <strong class="text-slate-200">Sindhu Hospital</strong>, Dr. Jay. Badmaliya specializes in advanced oral surgery, restorative treatments, and cosmetic dentistry. With an unyielding commitment to patient comfort and painless procedures, he integrates cutting-edge technology with personalized treatment plans.
+                    </p>
+                    <p class="text-slate-400 mb-8 leading-relaxed">
+                        Every smile crafted under his care reflects a harmonious balance of medical science, functional health, and natural aesthetic beauty.
+                    </p>
+
+                    <!-- Key Pillars -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="flex items-start gap-3 p-3 rounded-xl bg-slate-900/40 border border-slate-800">
+                            <i class="fa-solid fa-circle-check text-sky-400 text-lg mt-0.5"></i>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Advanced Diagnostics</h4>
+                                <p class="text-xs text-slate-400">High-resolution 3D imaging & planning</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 p-3 rounded-xl bg-slate-900/40 border border-slate-800">
+                            <i class="fa-solid fa-circle-check text-sky-400 text-lg mt-0.5"></i>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Painless Procedures</h4>
+                                <p class="text-xs text-slate-400">Gentle techniques & local anesthesia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / Specializations -->
+    <section id="services" class="py-20 px-6 relative z-10 bg-slate-950/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-sky-400 text-sm font-semibold tracking-wider uppercase">Clinical Services</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2 mb-4">Comprehensive Dental Care</h2>
+                <p class="text-slate-400 text-sm sm:text-base">Tailored surgical and non-surgical procedures designed to restore oral health and amplify confidence.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="glass-card p-8 rounded-3xl transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-sky-500/10 text-sky-400 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Cosmetic Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Transform your smile with custom veneers, teeth whitening, aesthetic alignment, and complete smile design.</p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-semibold text-sky-400 hover:text-sky-300">Inquire Service <i class="fa-solid fa-chevron-right ml-1"></i></a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="glass-card p-8 rounded-3xl transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-user-md"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Oral & Maxillofacial Surgery</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Specialized surgical intervention for complex wisdom teeth extractions, jaw corrections, and facial trauma repair.</p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-semibold text-indigo-400 hover:text-indigo-300">Inquire Service <i class="fa-solid fa-chevron-right ml-1"></i></a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="glass-card p-8 rounded-3xl transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-teeth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Dental Implants</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Permanent, natural-looking replacement roots and crowns crafted to restore full bite functionality and aesthetics.</p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-semibold text-purple-400 hover:text-purple-300">Inquire Service <i class="fa-solid fa-chevron-right ml-1"></i></a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="glass-card p-8 rounded-3xl transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-microscope"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Root Canal Treatment</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Microscopic endodontic therapy designed to eliminate pulp infection and save natural tooth structures painlessly.</p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-semibold text-emerald-400 hover:text-emerald-300">Inquire Service <i class="fa-solid fa-chevron-right ml-1"></i></a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="glass-card p-8 rounded-3xl transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-pink-500/10 text-pink-400 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-smile"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Orthodontic Corrections</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Clear aligners and modern braces to correct misalignments, bite issues, and enhance overall facial symmetry.</p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-semibold text-pink-400 hover:text-pink-300">Inquire Service <i class="fa-solid fa-chevron-right ml-1"></i></a>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="glass-card p-8 rounded-3xl transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Preventive Care & Hygiene</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Routine dental screenings, professional scaling, gum maintenance, and personalized oral health preservation programs.</p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-semibold text-amber-400 hover:text-amber-300">Inquire Service <i class="fa-solid fa-chevron-right ml-1"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Patient Endorsements -->
+    <section id="testimonials" class="py-20 px-6 relative z-10">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-sky-400 text-sm font-semibold tracking-wider uppercase">Endorsements</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2 mb-4">Patient Experiences</h2>
+                <p class="text-slate-400 text-sm sm:text-base">Read feedback from patients who received specialized care under Dr. Badmaliya at Sindhu Hospital.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="glass-card p-8 rounded-3xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                            "Dr. Jay. Badmaliya's surgical skill is exceptional. I was extremely nervous about my wisdom tooth surgery at Sindhu Hospital, but his gentle approach made it completely smooth and painless."
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-800/80 pt-4 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-sky-400 font-bold">R</div>
+                        <div>
+                            <div class="text-sm font-semibold text-white">Rajesh Patel</div>
+                            <div class="text-xs text-slate-500">Surgical Patient</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="glass-card p-8 rounded-3xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                            "The implant procedure was flawless. Dr. Badmaliya explained every step with incredible patience. Today I can smile and eat with complete confidence!"
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-800/80 pt-4 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-indigo-400 font-bold">P</div>
+                        <div>
+                            <div class="text-sm font-semibold text-white">Priya Sharma</div>
+                            <div class="text-xs text-slate-500">Implant Patient</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="glass-card p-8 rounded-3xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                            "Highly professional and state-of-the-art facilities at Sindhu Hospital. Dr. Jay is genuinely caring and one of the finest dental surgeons I have encountered."
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-800/80 pt-4 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-purple-400 font-bold">A</div>
+                        <div>
+                            <div class="text-sm font-semibold text-white">Amit Mehta</div>
+                            <div class="text-xs text-slate-500">Aesthetic Patient</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Consultation Booking -->
+    <section id="contact" class="py-20 px-6 relative z-10 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                
+                <!-- Info Column -->
+                <div>
+                    <span class="text-sky-400 text-sm font-semibold tracking-wider uppercase">Book Appointments</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2 mb-6">Get In Touch With Dr. Badmaliya</h2>
+                    <p class="text-slate-400 mb-8 leading-relaxed">
+                        For consultations, surgical inquiries, or specialized dental advice, schedule an appointment at Sindhu Hospital.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4 glass-card p-4 rounded-2xl">
+                            <div class="w-12 h-12 rounded-xl bg-sky-500/20 text-sky-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-hospital"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold text-base">Hospital Affiliation</h4>
+                                <p class="text-slate-400 text-sm mt-0.5">Sindhu Hospital - Dental Department</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 glass-card p-4 rounded-2xl">
+                            <div class="w-12 h-12 rounded-xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold text-base">Direct Consultation Inquiry</h4>
+                                <p class="text-slate-400 text-sm mt-0.5">dr.jay.badmaliya@sindhuhospital.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 glass-card p-4 rounded-2xl">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/20 text-purple-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold text-base">OPD Timings</h4>
+                                <p class="text-slate-400 text-sm mt-0.5">Mon - Sat: 10:00 AM - 07:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Column -->
+                <div class="glass-card p-8 rounded-3xl border border-slate-800">
+                    <h3 class="text-xl font-bold text-white mb-6">Schedule Consultation</h3>
+                    <form onsubmit="event.preventDefault(); alert('Thank you for requesting an appointment! Dr. Badmaliya\'s desk will confirm your schedule.');" class="space-y-5">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Patient Full Name</label>
+                            <input type="text" placeholder="e.g. John Doe" required class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white focus:outline-none focus:border-sky-500 transition-colors text-sm">
+                        </div>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Phone Number</label>
+                                <input type="tel" placeholder="+91 98765 43210" required class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white focus:outline-none focus:border-sky-500 transition-colors text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Preferred Date</label>
+                                <input type="date" required class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 focus:outline-none focus:border-sky-500 transition-colors text-sm">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Required Service</label>
+                            <select class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 focus:outline-none focus:border-sky-500 transition-colors text-sm">
+                                <option>General Consultation</option>
+                                <option>Oral Surgery</option>
+                                <option>Dental Implants</option>
+                                <option>Cosmetic Treatment</option>
+                                <option>Root Canal Therapy</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Brief Dental Concern</label>
+                            <textarea rows="3" placeholder="Describe your symptoms or treatment interest..." class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white focus:outline-none focus:border-sky-500 transition-colors text-sm"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-400 hover:to-indigo-500 text-white font-semibold text-sm shadow-lg shadow-sky-500/25 transition-all">
+                            Submit Appointment Request
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-6 border-t border-slate-900 bg-slate-950 text-slate-500 text-xs z-10 relative">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+                © 2026 Dr. Jay. Badmaliya — Dental Surgeon at Sindhu Hospital. All rights reserved.
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="#" class="hover:text-sky-400 transition-colors"><i class="fa-brands fa-linkedin text-base"></i></a>
+                <a href="#" class="hover:text-sky-400 transition-colors"><i class="fa-brands fa-twitter text-base"></i></a>
+                <a href="#" class="hover:text-sky-400 transition-colors"><i class="fa-solid fa-hospital text-base"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
