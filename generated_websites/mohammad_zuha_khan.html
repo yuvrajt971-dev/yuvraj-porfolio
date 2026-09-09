@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammad Zuha Khan | Technology Architect & Digital Strategist</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+        .glow-bg {
+            background: radial-gradient(circle at 50% 20%, rgba(99, 102, 241, 0.15) 0%, rgba(168, 85, 247, 0.08) 35%, transparent 70%);
+        }
+    </style>
+</head>
+<body class="relative min-h-screen bg-slate-950 text-slate-100 selection:bg-indigo-500 selection:text-white">
+
+    <!-- Ambient Glow Background -->
+    <div class="fixed inset-0 glow-bg pointer-events-none z-0"></div>
+
+    <!-- Navigation Header -->
+    <nav class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 hover:opacity-90 transition-opacity">
+                MZK<span class="text-indigo-500">.</span>
+            </a>
+            
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+                <a href="#services" class="hover:text-indigo-400 transition-colors">Services</a>
+                <a href="#projects" class="hover:text-indigo-400 transition-colors">Featured Work</a>
+                <a href="#testimonials" class="hover:text-indigo-400 transition-colors">Endorsements</a>
+            </div>
+
+            <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider text-white bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 hover:shadow-[0_0_25px_rgba(99,102,241,0.5)] transition-all duration-300 transform hover:-translate-y-0.5">
+                <span>Connect Now</span>
+                <i class="fa-solid font-xs fa-arrow-right"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-20 md:pt-48 md:pb-32 overflow-hidden z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Left Column -->
+                <div class="lg:col-span-7 text-center lg:text-left space-y-8">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 text-xs font-semibold tracking-wide uppercase">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        Available for Strategic Advisory & Architecture
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight">
+                        Architecting <br class="hidden sm:block"/>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400">
+                            Digital Excellence
+                        </span>
+                    </h1>
+                    
+                    <p class="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        Hi, I'm <strong class="text-slate-100 font-semibold">Mohammad Zuha Khan</strong>. I specialize in designing scalable software architectures, driving digital transformation, and crafting high-performance enterprise web experiences.
+                    </p>
+
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#contact" class="px-8 py-4 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 hover:shadow-[0_0_30px_rgba(168,85,247,0.4)] transition-all duration-300 transform hover:-translate-y-0.5">
+                            Initiate Collaboration
+                        </a>
+                        <a href="#projects" class="px-8 py-4 rounded-xl text-sm font-semibold text-slate-300 bg-slate-900/80 border border-slate-800 hover:border-slate-700 hover:text-white transition-all duration-300">
+                            View Work Showcase
+                        </a>
+                    </div>
+
+                    <!-- Trust / Metrics Badges -->
+                    <div class="pt-8 grid grid-cols-3 gap-6 border-t border-slate-800/80 max-w-lg mx-auto lg:mx-0">
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-indigo-400">99.9%</p>
+                            <p class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Reliability Rate</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-purple-400">10+</p>
+                            <p class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Years Exp.</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-pink-400">50+</p>
+                            <p class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Projects Delivered</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Right Column (Avatar & Card Frame) -->
+                <div class="lg:col-span-5 flex justify-center lg:justify-end">
+                    <div class="relative group">
+                        <!-- Glowing Backlight Frame -->
+                        <div class="absolute -inset-1.5 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-3xl blur-xl opacity-70 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse-slow"></div>
+                        
+                        <div class="relative bg-slate-900/90 border border-slate-800 rounded-3xl p-8 backdrop-blur-xl flex flex-col items-center text-center max-w-sm">
+                            <!-- Avatar Frame with Double Gradient Rings -->
+                            <div class="relative p-1.5 rounded-full bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 mb-6 shadow-2xl">
+                                <img src="https://ui-avatars.com/api/?name=mohammad+zuha+Khan&size=200&background=0D8ABC&color=fff&bold=true" 
+                                     alt="Mohammad Zuha Khan" 
+                                     class="w-32 h-32 rounded-full object-cover border-4 border-slate-950">
+                            </div>
+                            
+                            <h3 class="text-xl font-bold text-white">Mohammad Zuha Khan</h3>
+                            <p class="text-sm text-indigo-400 font-medium mb-4">Technology Strategist & Architect</p>
+
+                            <div class="w-full bg-slate-950/60 rounded-xl p-4 border border-slate-800/80 mb-6 text-left space-y-2 text-xs text-slate-300">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-slate-500"><i class="fa-solid fa-signal text-indigo-400 mr-2"></i>Status:</span>
+                                    <span class="text-emerald-400 font-medium">Active Specialist</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-slate-500"><i class="fa-solid fa-location-dot text-indigo-400 mr-2"></i>Focus:</span>
+                                    <span class="text-slate-200">Global Tech Leadership</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-slate-500"><i class="fa-solid fa-shield-halved text-indigo-400 mr-2"></i>Verification:</span>
+                                    <span class="text-indigo-300">Top-Tier Partner</span>
+                                </div>
+                            </div>
+
+                            <div class="flex gap-3 w-full">
+                                <a href="#contact" class="flex-1 py-2.5 rounded-lg text-xs font-semibold bg-slate-800 hover:bg-slate-700 text-slate-200 transition-colors border border-slate-700">
+                                    Send Brief
+                                </a>
+                                <a href="https://linkedin.com" target="_blank" class="p-2.5 rounded-lg bg-indigo-600/20 text-indigo-400 border border-indigo-500/30 hover:bg-indigo-600/30 transition-colors">
+                                    <i class="fa-brands fa-linkedin-in text-base"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Industry Expertise Section -->
+    <section id="about" class="py-24 relative z-10 bg-slate-950/50 border-y border-slate-800/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Image Showcase -->
+                <div class="lg:col-span-6">
+                    <div class="relative group rounded-2xl overflow-hidden border border-slate-800 bg-slate-900/60 backdrop-blur-xl">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" 
+                             alt="Team Collaboration & Technical Innovation" 
+                             class="w-full h-[400px] object-cover object-center group-hover:scale-105 transition duration-700 opacity-80 group-hover:opacity-100">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-6 bg-slate-900/80 backdrop-blur-md rounded-xl border border-slate-800">
+                            <p class="text-sm font-semibold text-indigo-400 uppercase tracking-wider mb-1">Methodology</p>
+                            <p class="text-white font-medium text-base">Delivering scalable software architectures with human-centric UX precision.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Text Content -->
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-xs font-bold tracking-widest uppercase text-indigo-400 bg-indigo-500/10 px-3 py-1 rounded-full border border-indigo-500/20">
+                        About & Mission
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+                        Transforming Complex Challenges into Seamless Systems
+                    </h2>
+                    <p class="text-slate-400 leading-relaxed">
+                        With extensive experience across high-growth digital environments, Mohammad Zuha Khan bridging the gap between technical execution and strategic business vision. Focused on engineered stability, modern cloud native solutions, and elegant UI design systems.
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <i class="fa-solid fa-microchip text-indigo-400 text-xl mb-2"></i>
+                            <h4 class="font-semibold text-white text-sm mb-1">Architecture Strategy</h4>
+                            <p class="text-xs text-slate-400">Designing modern cloud-native systems for longevity & scale.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <i class="fa-solid fa-wand-magic-sparkles text-purple-400 text-xl mb-2"></i>
+                            <h4 class="font-semibold text-white text-sm mb-1">Product UI/UX</h4>
+                            <p class="text-xs text-slate-400">Building intuitive interfaces designed for high engagement.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services" class="py-24 relative z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-xs font-bold tracking-widest uppercase text-pink-400 bg-pink-500/10 px-3 py-1 rounded-full border border-pink-500/20">
+                    Core Capabilities
+                </span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
+                    Services & Specialized Leadership
+                </h2>
+                <p class="text-slate-400">
+                    Comprehensive technical solutions engineered to elevate brands and accelerate modern enterprise workflows.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-indigo-600 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Full-Stack Development</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        End-to-end web engineering leveraging scalable frameworks, microservices architecture, and optimized databases.
+                    </p>
+                    <span class="text-xs font-semibold text-indigo-400 group-hover:text-indigo-300 inline-flex items-center gap-1">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </span>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-purple-600 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-cubes"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">System Architecture</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Designing secure, fault-tolerant infrastructure systems crafted for performance, security, and exponential scale.
+                    </p>
+                    <span class="text-xs font-semibold text-purple-400 group-hover:text-purple-300 inline-flex items-center gap-1">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </span>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-pink-500/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-pink-600 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">UI/UX Strategy</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Creating human-centric user journeys, high-fidelity interactive prototypes, and design systems.
+                    </p>
+                    <span class="text-xs font-semibold text-pink-400 group-hover:text-pink-300 inline-flex items-center gap-1">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Endorsements Section -->
+    <section id="testimonials" class="py-24 relative z-10 bg-slate-950/60 border-t border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-xs font-bold tracking-widest uppercase text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">
+                    Recommendations
+                </span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
+                    Peer & Industry Endorsements
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="p-8 rounded-2xl bg-slate-900/80 border border-slate-800 flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 space-x-1 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "Mohammad Zuha Khan consistently delivers top-caliber engineering solutions. His ability to breakdown architectural complexity into clean code is exceptional."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4 pt-4 border-t border-slate-800/60">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 flex items-center justify-center font-bold text-white text-xs">
+                            VP
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-semibold text-white">VP of Engineering</h4>
+                            <p class="text-xs text-slate-400">Enterprise Technology Partner</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="p-8 rounded-2xl bg-slate-900/80 border border-slate-800 flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 space-x-1 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "An invaluable technical partner. Mohammad’s strategic recommendations revolutionized our web application platform performance and reliability."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4 pt-4 border-t border-slate-800/60">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center font-bold text-white text-xs">
+                            CT
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-semibold text-white">Chief Technology Officer</h4>
+                            <p class="text-xs text-slate-400">Digital Solutions Global</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="p-8 rounded-2xl bg-slate-900/80 border border-slate-800 flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 space-x-1 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "Rare combination of deep back-end software discipline paired with modern design sensibilities. Highly recommend working with him."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4 pt-4 border-t border-slate-800/60">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-pink-500 to-indigo-500 flex items-center justify-center font-bold text-white text-xs">
+                            PM
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-semibold text-white">Lead Product Director</h4>
+                            <p class="text-xs text-slate-400">Innovation Labs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Direct Engagement Section -->
+    <section id="contact" class="py-24 relative z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-3xl p-8 sm:p-12">
+                
+                <!-- Contact Info -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-xs font-bold tracking-widest uppercase text-indigo-400 bg-indigo-500/10 px-3 py-1 rounded-full border border-indigo-500/20">
+                            Get In Touch
+                        </span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-4">
+                            Let's Build Something Exceptional
+                        </h2>
+                        <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                            Have a strategic project or initiative in mind? Send a direct message or get in touch via modern enterprise channels.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4 text-sm">
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-950/60 border border-slate-800">
+                            <div class="w-10 h-10 rounded-lg bg-indigo-500/10 flex items-center justify-center text-indigo-400">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-500">Direct Contact</p>
+                                <p class="text-slate-200 font-medium">contact@mohammadzuha.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-950/60 border border-slate-800">
+                            <div class="w-10 h-10 rounded-lg bg-purple-500/10 flex items-center justify-center text-purple-400">
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-500">Network Connection</p>
+                                <p class="text-slate-200 font-medium">Connected September 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="lg:col-span-7">
+                    <form onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent to Mohammad Zuha Khan.');" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Name</label>
+                                <input type="text" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-100 placeholder-slate-600 focus:outline-none focus:border-indigo-500 transition-colors text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Email</label>
+                                <input type="email" required placeholder="john@company.com" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-100 placeholder-slate-600 focus:outline-none focus:border-indigo-500 transition-colors text-sm">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Subject</label>
+                            <input type="text" required placeholder="Project Collaboration / Advisory" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-100 placeholder-slate-600 focus:outline-none focus:border-indigo-500 transition-colors text-sm">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Message</label>
+                            <textarea rows="4" required placeholder="Details about your initiative or inquiry..." class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-100 placeholder-slate-600 focus:outline-none focus:border-indigo-500 transition-colors text-sm resize-none"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 hover:shadow-[0_0_25px_rgba(99,102,241,0.5)] transition-all duration-300">
+                            Send Direct Message
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-800/80 text-center text-xs text-slate-500 relative z-10">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© 2026 Mohammad Zuha Khan. All Rights Reserved.</p>
+            <div class="flex space-x-6 text-slate-400 text-sm">
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
