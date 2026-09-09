@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek A. S. | Medical Documentation Specialist</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-border {
+            position: relative;
+            background: linear-gradient(135deg, #6366f1, #a855f7, #ec4899);
+            padding: 2px;
+            border-radius: 9999px;
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(51, 65, 85, 0.6);
+        }
+        .glass-card:hover {
+            border-color: rgba(99, 102, 241, 0.5);
+            box-shadow: 0 10px 30px -10px rgba(99, 102, 241, 0.2);
+        }
+        .glow-blob {
+            position: absolute;
+            width: 350px;
+            height: 350px;
+            background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, rgba(168, 85, 247, 0.05) 50%, transparent 70%);
+            filter: blur(40px);
+            pointer-events: none;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white relative overflow-x-hidden">
+
+    <!-- Ambient Lighting Background -->
+    <div class="glow-blob top-10 left-1/4"></div>
+    <div class="glow-blob top-1/3 right-10"></div>
+    <div class="glow-blob bottom-10 left-10"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-tight flex items-center gap-2">
+                <span class="p-2 rounded-lg bg-indigo-600/20 text-indigo-400 border border-indigo-500/30">
+                    <i class="fa-solid fa-file-waveform"></i>
+                </span>
+                <span>Abhishek <span class="text-indigo-400">A. S.</span></span>
+            </a>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+                <a href="#services" class="hover:text-indigo-400 transition-colors">Services</a>
+                <a href="#expertise" class="hover:text-indigo-400 transition-colors">Expertise</a>
+                <a href="#testimonials" class="hover:text-indigo-400 transition-colors">Endorsements</a>
+            </div>
+
+            <a href="#contact" class="px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:opacity-90 transition-all duration-300 shadow-lg shadow-indigo-500/20">
+                Get in Touch
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-20 md:pt-48 md:pb-32 px-6 overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
+                
+                <!-- Hero Content -->
+                <div class="flex-1 text-center lg:text-left z-10">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-indigo-500/30 text-indigo-300 text-sm font-medium mb-6">
+                        <span class="flex h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        IDS Infotech Limited Specialist
+                    </div>
+                    
+                    <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white leading-tight mb-6">
+                        Precision Medical Documentation & <span class="gradient-text">Clinical Workflow Specialist</span>
+                    </h1>
+                    
+                    <p class="text-lg md:text-xl text-slate-400 font-normal leading-relaxed mb-8 max-w-2xl">
+                        Ensuring flawless electronic health records, regulatory compliance, and streamlined clinical data processing to empower healthcare providers.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl font-semibold bg-indigo-600 hover:bg-indigo-500 text-white transition-all shadow-lg shadow-indigo-600/30 flex items-center justify-center gap-2">
+                            <span>Contact Me</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                        <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-xl font-semibold glass-card text-slate-200 hover:text-white transition-all flex items-center justify-center gap-2">
+                            <span>Explore Services</span>
+                        </a>
+                    </div>
+
+                    <!-- Trust Badges / Stats -->
+                    <div class="grid grid-cols-3 gap-4 pt-12 mt-12 border-t border-slate-800/80">
+                        <div>
+                            <p class="text-2xl md:text-3xl font-extrabold text-white">99.8%</p>
+                            <p class="text-xs md:text-sm text-slate-400 mt-1">Accuracy Rate</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl md:text-3xl font-extrabold text-white">100%</p>
+                            <p class="text-xs md:text-sm text-slate-400 mt-1">HIPAA Compliant</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl md:text-3xl font-extrabold text-white">10k+</p>
+                            <p class="text-xs md:text-sm text-slate-400 mt-1">Records Processed</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Glowing Double-Gradient Avatar Frame -->
+                <div class="relative z-10 flex-shrink-0">
+                    <div class="relative w-64 h-64 md:w-80 md:h-80 flex items-center justify-center">
+                        <!-- Outer Ambient Glow -->
+                        <div class="absolute inset-0 rounded-full bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 blur-2xl opacity-50 animate-pulse"></div>
+                        
+                        <!-- Gradient Outer Frame -->
+                        <div class="gradient-border p-1.5 shadow-2xl">
+                            <!-- Inner Container -->
+                            <div class="w-full h-full rounded-full overflow-hidden bg-slate-900 border-4 border-slate-950">
+                                <img src="https://ui-avatars.com/api/?name=Abhishek+A.+S.&size=200&background=0D8ABC&color=fff&bold=true" 
+                                     alt="Abhishek A. S." 
+                                     class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500">
+                            </div>
+                        </div>
+
+                        <!-- Floating Shield Badge -->
+                        <div class="absolute -bottom-2 -right-2 glass-card p-3 rounded-2xl flex items-center gap-3 border border-indigo-500/40 shadow-xl">
+                            <div class="w-10 h-10 rounded-xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-lg">
+                                <i class="fa-solid fa-user-check"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-semibold text-slate-200">Verified Specialist</p>
+                                <p class="text-[10px] text-slate-400">Medical Data Assurance</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-20 px-6 relative z-10 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- Industry Image with Glass Overlay -->
+                <div class="relative rounded-2xl overflow-hidden group">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent z-10 opacity-80"></div>
+                    <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                         alt="Medical Documentation Setup" 
+                         class="w-full h-[450px] object-cover rounded-2xl group-hover:scale-105 transition-transform duration-700">
+                    
+                    <div class="absolute bottom-6 left-6 right-6 z-20">
+                        <div class="glass-card p-5 rounded-xl">
+                            <p class="text-xs font-semibold uppercase tracking-wider text-indigo-400 mb-1">Current Role</p>
+                            <p class="text-lg font-bold text-white">Medical Documentation Specialist</p>
+                            <p class="text-sm text-slate-300">IDS Infotech Limited</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div>
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 text-xs font-semibold uppercase tracking-wider mb-4 border border-indigo-500/20">
+                        About My Expertise
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+                        Bridging Healthcare & Precision Documentation
+                    </h2>
+                    <p class="text-slate-400 leading-relaxed mb-6">
+                        As a dedicated Medical Documentation Specialist at IDS Infotech Limited, I specialize in translating complex physician consultations and clinical findings into clear, accurate, and compliant medical records.
+                    </p>
+                    <p class="text-slate-400 leading-relaxed mb-8">
+                        My deep familiarity with medical terminology, EHR software systems, and stringent HIPAA regulations ensures that healthcare providers can focus on patient care while leaving data integrity to expert hands.
+                    </p>
+
+                    <!-- Key Pillars -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="p-4 rounded-xl bg-slate-900/50 border border-slate-800 flex items-start gap-3">
+                            <div class="p-2 rounded-lg bg-indigo-500/10 text-indigo-400 mt-1">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-white text-sm">Strict HIPAA Compliance</h3>
+                                <p class="text-xs text-slate-400 mt-1">Maintaining 100% patient data confidentiality and security standards.</p>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-slate-900/50 border border-slate-800 flex items-start gap-3">
+                            <div class="p-2 rounded-lg bg-purple-500/10 text-purple-400 mt-1">
+                                <i class="fa-solid fa-bolt"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-white text-sm">High Turnaround Efficiency</h3>
+                                <p class="text-xs text-slate-400 mt-1">Rapid processing of dictations and notes without sacrificing accuracy.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services" class="py-20 px-6 relative z-10 bg-slate-950/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 text-xs font-semibold uppercase tracking-wider mb-4 border border-indigo-500/20">
+                    Core Solutions
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Specialized Documentation Services</h2>
+                <p class="text-slate-400">Delivering end-to-end clinical record management tailored for modern medical organizations.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-indigo-500 to-indigo-700 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-indigo-500/20">
+                        <i class="fa-solid fa-notes-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Clinical Scribing & Summaries</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Comprehensive summary creation of patient encounters, diagnostic reviews, and treatment plans with high clinical accuracy.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-purple-500 to-purple-700 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-purple-500/20">
+                        <i class="fa-solid fa-laptop-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">EHR/EMR System Management</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Seamless integration and updating of records across major Electronic Health Record platforms with flawless data structuring.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-pink-500 to-pink-700 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-pink-500/20">
+                        <i class="fa-solid fa-user-shield"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Compliance & Quality Auditing</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Rigorous record review procedures to guarantee full compliance with healthcare regulations, guidelines, and HIPAA standards.
+                    </p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-emerald-500 to-teal-700 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-emerald-500/20">
+                        <i class="fa-solid fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Medical Coding Support</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Precise translation of diagnostic findings into accurate medical terminology and coding structures for billing readiness.
+                    </p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-amber-500 to-orange-700 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-amber-500/20">
+                        <i class="fa-solid fa-microscope"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Lab & Diagnostic Reporting</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Efficient transcription and categorization of lab results, pathology reports, and radiology summaries.
+                    </p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-cyan-500 to-blue-700 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-cyan-500/20">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Workflow Optimization</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Assisting clinical teams in refining documentation processes to reduce physician burnout and administrative burden.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Endorsements -->
+    <section id="testimonials" class="py-20 px-6 relative z-10">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 text-xs font-semibold uppercase tracking-wider mb-4 border border-indigo-500/20">
+                    Endorsements
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Client & Colleague Recognition</h2>
+                <p class="text-slate-400">Trusted by healthcare professionals and operational leaders.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic mb-6">
+                            "Abhishek's attention to detail in medical scribing is extraordinary. His documentation is consistently error-free, saving our clinical staff hours each week."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center font-bold text-white text-sm">
+                            DR
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-white">Dr. R. Sharma</p>
+                            <p class="text-xs text-slate-400">Lead Physician Consultant</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic mb-6">
+                            "Abhishek consistently maintains standard-setting HIPAA compliance and turnaround times. An indispensable asset to any clinical documentation team."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center font-bold text-white text-sm">
+                            AK
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-white">A. Kulkarni</p>
+                            <p class="text-xs text-slate-400">Clinical Operations Manager</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic mb-6">
+                            "His mastery of EHR workflows and complex medical terms ensures seamless administrative continuity. Highly recommended specialist!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-pink-500 to-rose-500 flex items-center justify-center font-bold text-white text-sm">
+                            VS
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-white">V. Singh</p>
+                            <p class="text-xs text-slate-400">Healthcare Quality Lead</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 relative z-10 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                
+                <!-- Contact Info -->
+                <div>
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 text-xs font-semibold uppercase tracking-wider mb-4 border border-indigo-500/20">
+                        Connect
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Let's Discuss Professional Opportunities</h2>
+                    <p class="text-slate-400 leading-relaxed mb-8">
+                        Interested in collaborating or hiring for specialized medical documentation services? Feel free to reach out via the form or connection channels.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-indigo-400">
+                                <i class="fa-solid fa-building"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Current Organization</p>
+                                <p class="text-slate-200 font-semibold">IDS Infotech Limited</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-indigo-400">
+                                <i class="fa-solid fa-user-doctor"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Specialization</p>
+                                <p class="text-slate-200 font-semibold">Medical Documentation Specialist</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-indigo-400">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Network Connected</p>
+                                <p class="text-slate-200 font-semibold">08 Sep 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="glass-card p-8 rounded-2xl">
+                    <form onsubmit="event.preventDefault(); alert('Message sent successfully!');" class="space-y-6">
+                        <div>
+                            <label class="block text-xs font-medium text-slate-300 uppercase tracking-wider mb-2">Your Name</label>
+                            <input type="text" required placeholder="Dr. John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white focus:outline-none focus:border-indigo-500 transition-colors">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-medium text-slate-300 uppercase tracking-wider mb-2">Email Address</label>
+                            <input type="email" required placeholder="john@healthcare.com" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white focus:outline-none focus:border-indigo-500 transition-colors">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-medium text-slate-300 uppercase tracking-wider mb-2">Message</label>
+                            <textarea rows="4" required placeholder="Hello Abhishek, I would like to discuss..." class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white focus:outline-none focus:border-indigo-500 transition-colors resize-none"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:opacity-95 transition-all shadow-lg shadow-indigo-500/25">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-6 border-t border-slate-900 text-center text-slate-500 text-sm">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p>© 2026 Abhishek A. S. - All rights reserved.</p>
+            <p class="text-xs">Medical Documentation Specialist | IDS Infotech Limited</p>
+        </div>
+    </footer>
+
+</body>
+</html>
