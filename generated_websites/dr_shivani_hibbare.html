@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Shivani Hibbare | Virtual Medical Assistant & Digital Healthcare Specialist</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        medical: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            400: '#2dd4bf',
+                            500: '#14b8a6',
+                            600: '#0d9488',
+                            900: '#134e4a',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-teal {
+            box-shadow: 0 0 50px -10px rgba(20, 184, 166, 0.3);
+        }
+        .glow-indigo {
+            box-shadow: 0 0 50px -10px rgba(99, 102, 241, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-teal-500 selection:text-white">
+
+    <!-- NAVIGATION BAR -->
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Brand Logo / Name -->
+                <a href="#" class="flex items-center space-x-3 group">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-teal-500 to-indigo-600 flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-teal-500/20 group-hover:scale-105 transition-transform duration-300">
+                        SH
+                    </div>
+                    <div>
+                        <span class="text-lg font-bold tracking-tight text-white block leading-none">Dr. Shivani Hibbare</span>
+                        <span class="text-xs text-teal-400 font-medium tracking-wide">Virtual Medical Assistant</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-sm font-medium text-slate-300 hover:text-teal-400 transition-colors">About</a>
+                    <a href="#expertise" class="text-sm font-medium text-slate-300 hover:text-teal-400 transition-colors">Expertise</a>
+                    <a href="#services" class="text-sm font-medium text-slate-300 hover:text-teal-400 transition-colors">Services</a>
+                    <a href="#testimonials" class="text-sm font-medium text-slate-300 hover:text-teal-400 transition-colors">Endorsements</a>
+                    <a href="#contact" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-teal-500 to-indigo-600 text-white font-semibold text-sm hover:shadow-lg hover:shadow-teal-500/25 hover:opacity-95 transition-all duration-300 transform hover:-translate-y-0.5">
+                        Get In Touch
+                    </a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" type="button" class="text-slate-300 hover:text-white focus:outline-none focus:text-white p-2">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900/95 border-b border-slate-800 px-4 pt-2 pb-6 space-y-3">
+            <a href="#about" class="block py-2 text-base font-medium text-slate-300 hover:text-teal-400">About</a>
+            <a href="#expertise" class="block py-2 text-base font-medium text-slate-300 hover:text-teal-400">Expertise</a>
+            <a href="#services" class="block py-2 text-base font-medium text-slate-300 hover:text-teal-400">Services</a>
+            <a href="#testimonials" class="block py-2 text-base font-medium text-slate-300 hover:text-teal-400">Endorsements</a>
+            <a href="#contact" class="block py-2.5 px-4 text-center rounded-full bg-gradient-to-r from-teal-500 to-indigo-600 text-white font-medium">Get In Touch</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden">
+        <!-- Glowing background orbs -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-96 h-96 bg-teal-500/15 rounded-full blur-3xl pointer-events-none animate-pulse-slow"></div>
+        <div class="absolute top-1/3 right-10 w-80 h-80 bg-indigo-500/15 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
+                
+                <!-- Left Column: Content -->
+                <div class="flex-1 text-center lg:text-left">
+                    <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-slate-900/80 border border-teal-500/30 text-teal-400 text-xs font-semibold uppercase tracking-wider mb-6 backdrop-blur-md">
+                        <span class="w-2 h-2 rounded-full bg-teal-400 animate-ping"></span>
+                        <span>Lenity Health Professional</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6">
+                        Bridging Clinical Care with <span class="bg-clip-text text-transparent bg-gradient-to-r from-teal-400 via-indigo-400 to-purple-400">Virtual Precision</span>
+                    </h1>
+
+                    <p class="text-lg sm:text-xl text-slate-400 mb-8 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        Dedicated Virtual Medical Assistant optimizing provider workflows, enhancing EHR accuracy, and streamlining patient communication for modern healthcare systems.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-10">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-teal-500 via-indigo-600 to-purple-600 text-white font-semibold text-base shadow-lg shadow-teal-500/20 hover:shadow-teal-500/40 hover:scale-[1.02] transition-all duration-300 flex items-center justify-center gap-2">
+                            <span>Schedule Consultation</span>
+                            <i class="fa-solid fa-arrow-right text-sm"></i>
+                        </a>
+                        <a href="#expertise" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900/80 hover:bg-slate-800 text-slate-200 border border-slate-700 font-semibold text-base transition-all duration-300 flex items-center justify-center gap-2">
+                            <span>View Clinical Scope</span>
+                        </a>
+                    </div>
+
+                    <!-- Trust Badges -->
+                    <div class="pt-6 border-t border-slate-800/80 flex flex-wrap justify-center lg:justify-start gap-6 text-slate-400 text-xs font-medium">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-shield-halved text-teal-400 text-base"></i>
+                            <span>HIPAA Compliant Workflows</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-laptop-medical text-indigo-400 text-base"></i>
+                            <span>EHR / EMR Proficient</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-clock text-purple-400 text-base"></i>
+                            <span>Telehealth Support Specialist</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Glowing Avatar Frame -->
+                <div class="relative flex-shrink-0">
+                    <!-- Outer Decorative Rings -->
+                    <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-teal-500 via-indigo-500 to-pink-500 opacity-75 blur-lg group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse-slow"></div>
+                    
+                    <div class="relative p-3 rounded-full bg-slate-950 border border-slate-800">
+                        <div class="p-2 rounded-full bg-gradient-to-tr from-teal-500/20 to-indigo-500/20">
+                            <img src="https://ui-avatars.com/api/?name=Dr.+Shivani+Hibbare&size=200&background=0D8ABC&color=fff&bold=true" 
+                                 alt="Dr. Shivani Hibbare" 
+                                 class="w-56 h-56 sm:w-64 sm:h-64 rounded-full object-cover shadow-2xl relative z-10 border-2 border-slate-700">
+                        </div>
+                    </div>
+
+                    <!-- Floating Card Badge -->
+                    <div class="absolute -bottom-4 -left-4 bg-slate-900/90 backdrop-blur-xl border border-slate-800 p-3.5 rounded-2xl shadow-xl flex items-center gap-3 animate-float z-20">
+                        <div class="w-10 h-10 rounded-xl bg-teal-500/20 text-teal-400 flex items-center justify-center font-bold">
+                            <i class="fa-solid fa-stethoscope"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400">Current Role</p>
+                            <p class="text-xs font-bold text-white">Lenity Health</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS BAR -->
+    <section class="py-8 bg-slate-900/50 border-y border-slate-800/60 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-4">
+                    <p class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-indigo-400">99.8%</p>
+                    <p class="text-xs sm:text-sm text-slate-400 mt-1 font-medium">Chart Accuracy Rate</p>
+                </div>
+                <div class="p-4">
+                    <p class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">15+ hrs</p>
+                    <p class="text-xs sm:text-sm text-slate-400 mt-1 font-medium">Weekly Provider Time Saved</p>
+                </div>
+                <div class="p-4">
+                    <p class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">100%</p>
+                    <p class="text-xs sm:text-sm text-slate-400 mt-1 font-medium">HIPAA Regulatory Compliance</p>
+                </div>
+                <div class="p-4">
+                    <p class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-cyan-400">24/7</p>
+                    <p class="text-xs sm:text-sm text-slate-400 mt-1 font-medium">Virtual Operations Readiness</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT & EXPERTISE SECTION -->
+    <section id="about" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                
+                <!-- Left: Clinical Image Container -->
+                <div class="relative group">
+                    <div class="absolute -inset-2 rounded-3xl bg-gradient-to-r from-teal-500 to-indigo-600 opacity-20 blur-xl group-hover:opacity-40 transition duration-500"></div>
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900 shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Digital Healthcare Operations" 
+                             class="w-full h-[420px] object-cover object-center transform group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        
+                        <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-slate-900/90 border border-slate-700/80 backdrop-blur-md">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-3 h-3 rounded-full bg-teal-400 animate-ping"></div>
+                                <span class="text-xs font-semibold text-teal-300 uppercase tracking-wider">Lenity Health Operations</span>
+                            </div>
+                            <p class="text-sm font-medium text-slate-200 mt-1">Transforming Telehealth Efficiency & Patient Care Quality</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: About Text Content -->
+                <div id="expertise">
+                    <div class="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-teal-500/10 border border-teal-500/20 text-teal-400 text-xs font-semibold uppercase tracking-wider mb-4">
+                        <i class="fa-solid fa-user-doctor"></i>
+                        <span>About Dr. Shivani Hibbare</span>
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-6 leading-tight">
+                        Empowering Healthcare Providers with Advanced <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-indigo-400">Virtual Assistance</span>
+                    </h2>
+
+                    <p class="text-slate-300 text-base leading-relaxed mb-6">
+                        As a Virtual Medical Assistant at <strong class="text-white">Lenity Health</strong>, Dr. Shivani Hibbare integrates clinical understanding with modern virtual workflow management. By handling critical administrative operations, real-time documentation support, and seamless patient communications, she enables physicians to focus on what matters most: patient care.
+                    </p>
+
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start space-x-3">
+                            <div class="mt-1 w-5 h-5 rounded-md bg-teal-500/20 text-teal-400 flex items-center justify-center text-xs flex-shrink-0">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <p class="text-sm text-slate-300"><strong class="text-white">Clinical Scribing & Charting:</strong> Precision EHR/EMR entries captured live during patient consults.</p>
+                        </div>
+
+                        <div class="flex items-start space-x-3">
+                            <div class="mt-1 w-5 h-5 rounded-md bg-indigo-500/20 text-indigo-400 flex items-center justify-center text-xs flex-shrink-0">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <p class="text-sm text-slate-300"><strong class="text-white">Patient Intake & Pre-Triage:</strong> Efficient gathering of medical histories, vitals, and chief complaints.</p>
+                        </div>
+
+                        <div class="flex items-start space-x-3">
+                            <div class="mt-1 w-5 h-5 rounded-md bg-purple-500/20 text-purple-400 flex items-center justify-center text-xs flex-shrink-0">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <p class="text-sm text-slate-300"><strong class="text-white">Prescription & Referral Management:</strong> Timely order entries, refill verification, and specialist coordination.</p>
+                        </div>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 flex items-center justify-between">
+                        <div>
+                            <p class="text-xs text-slate-400 font-medium">Professional Network Status</p>
+                            <p class="text-sm font-semibold text-white">Connected since 07 Sep 2026</p>
+                        </div>
+                        <span class="px-3 py-1 rounded-full bg-teal-500/10 text-teal-400 text-xs font-semibold border border-teal-500/30">Verified Colleague</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES GRID -->
+    <section id="services" class="py-24 bg-slate-900/30 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold uppercase tracking-wider mb-4">
+                    <i class="fa-solid fa-sliders"></i>
+                    <span>Specialized Solutions</span>
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-4">
+                    Virtual Healthcare Services & Capabilities
+                </h2>
+                <p class="text-slate-400 text-base">
+                    Tailored virtual assistance designed to increase clinical throughput while reducing administrative burden for doctors and clinic staff.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-teal-500/50 hover:shadow-xl hover:shadow-teal-500/10 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-teal-500/10 border border-teal-500/20 text-teal-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-notes-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">EHR / EMR Documentation</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Real-time clinical scribing, medical transcriptions, update of patient charts, ICD-10 coding support, and note completion.
+                    </p>
+                    <span class="text-xs font-semibold text-teal-400 flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                        Learn More <i class="fa-solid fa-angle-right"></i>
+                    </span>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-indigo-500/50 hover:shadow-xl hover:shadow-indigo-500/10 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Telehealth Patient Triage</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Conducting structured intake assessments, logging primary complaints, verifying vitals, and preparing patients prior to consultations.
+                    </p>
+                    <span class="text-xs font-semibold text-indigo-400 flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                        Learn More <i class="fa-solid fa-angle-right"></i>
+                    </span>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-purple-500/50 hover:shadow-xl hover:shadow-purple-500/10 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-pills"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Prescription Coordination</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Processing pharmacy requests, routing medication refills to attending providers, and facilitating lab order requisitions.
+                    </p>
+                    <span class="text-xs font-semibold text-purple-400 flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                        Learn More <i class="fa-solid fa-angle-right"></i>
+                    </span>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-pink-500/50 hover:shadow-xl hover:shadow-pink-500/10 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-pink-500/10 border border-pink-500/20 text-pink-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-calendar-check"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Appointment Management</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Optimizing clinic schedules, tracking follow-ups, minimizing no-shows, and managing multi-provider calendar queues.
+                    </p>
+                    <span class="text-xs font-semibold text-pink-400 flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                        Learn More <i class="fa-solid fa-angle-right"></i>
+                    </span>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-cyan-500/50 hover:shadow-xl hover:shadow-cyan-500/10 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Pre-Authorization Support</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Assist in verifying insurance benefits, preparing prior authorization forms, and reducing billing queue delays.
+                    </p>
+                    <span class="text-xs font-semibold text-cyan-400 flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                        Learn More <i class="fa-solid fa-angle-right"></i>
+                    </span>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-teal-500/50 hover:shadow-xl hover:shadow-teal-500/10 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-teal-500/10 border border-teal-500/20 text-teal-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-user-shield"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">HIPAA Compliance & Security</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Strict adherence to patient privacy standards, encrypted communication protocols, and secure data handling procedures.
+                    </p>
+                    <span class="text-xs font-semibold text-teal-400 flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                        Learn More <i class="fa-solid fa-angle-right"></i>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS / ENDORSEMENTS -->
+    <section id="testimonials" class="py-24 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <div class="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-semibold uppercase tracking-wider mb-4">
+                    <i class="fa-solid fa-star"></i>
+                    <span>Provider Feedback</span>
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-4">
+                    Endorsed by Clinical Leaders
+                </h2>
+                <p class="text-slate-400 text-base">
+                    What physicians and practice directors say about collaborating with Dr. Shivani Hibbare.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Endorsement 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl flex flex-col justify-between relative hover:border-slate-700 transition-all">
+                    <div>
+                        <div class="flex text-amber-400 space-x-1 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Dr. Shivani has completely transformed our clinical documentation workflow. Her medical understanding and precision allow me to spend 100% of my time directly focused on patient care."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 border-t border-slate-800/80 pt-4">
+                        <div class="w-10 h-10 rounded-full bg-teal-500/20 text-teal-300 flex items-center justify-center font-bold text-sm">
+                            DR
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-white">Dr. Robert Chen, MD</p>
+                            <p class="text-xs text-slate-400">Chief Medical Director</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Endorsement 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl flex flex-col justify-between relative hover:border-slate-700 transition-all">
+                    <div>
+                        <div class="flex text-amber-400 space-x-1 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Outstanding attention to detail and impeccable patient communication skills. Having Dr. Shivani support our telehealth clinic at Lenity Health has significantly raised our daily consultation efficiency."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 border-t border-slate-800/80 pt-4">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-300 flex items-center justify-center font-bold text-sm">
+                            MS
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-white">Maria Sanchez, NP</p>
+                            <p class="text-xs text-slate-400">Telehealth Clinical Lead</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Endorsement 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl flex flex-col justify-between relative hover:border-slate-700 transition-all">
+                    <div>
+                        <div class="flex text-amber-400 space-x-1 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Extremely reliable, HIPAA-proficient, and highly knowledgeable in digital chart management. Dr. Shivani is an absolute asset to any modern healthcare team."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 border-t border-slate-800/80 pt-4">
+                        <div class="w-10 h-10 rounded-full bg-purple-500/20 text-purple-300 flex items-center justify-center font-bold text-sm">
+                            AK
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-white">Dr. Arvind Kumar, DO</p>
+                            <p class="text-xs text-slate-400">Primary Care Specialist</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-24 bg-slate-900/40 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
+                
+                <!-- Contact Details -->
+                <div>
+                    <div class="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-teal-500/10 border border-teal-500/20 text-teal-400 text-xs font-semibold uppercase tracking-wider mb-4">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span>Direct Communication</span>
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight mb-6">
+                        Let's Optimize Your Virtual Healthcare Practice
+                    </h2>
+
+                    <p class="text-slate-300 text-base leading-relaxed mb-8">
+                        Interested in expanding your clinical bandwidth or integrating dedicated virtual medical assistance into your healthcare operations? Send a message to initiate collaboration.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 text-teal-400 flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-building-user"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Organization</p>
+                                <p class="text-base font-semibold text-white">Lenity Health</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 text-indigo-400 flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-user-tie"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Primary Specialization</p>
+                                <p class="text-base font-semibold text-white">Virtual Medical Assistance & Telehealth Support</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 text-purple-400 flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Inquiry Channel</p>
+                                <p class="text-base font-semibold text-white">Direct Consultation Request</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-slate-900/80 border border-slate-800 rounded-3xl p-8 shadow-2xl backdrop-blur-xl">
+                    <form onsubmit="event.preventDefault(); alert('Thank you for reaching out! Dr. Shivani Hibbare will contact you shortly.');" class="space-y-5">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Name</label>
+                            <input type="text" required placeholder="Dr. John Doe" class="w-full px-4 py-3.5 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-teal-500 transition-colors">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Email Address</label>
+                            <input type="email" required placeholder="doctor@clinic.com" class="w-full px-4 py-3.5 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-teal-500 transition-colors">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Subject / Practice Specialty</label>
+                            <input type="text" placeholder="Virtual Medical Scribing Inquiry" class="w-full px-4 py-3.5 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-teal-500 transition-colors">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Message Details</label>
+                            <textarea rows="4" required placeholder="Describe your workflow needs or consultation request..." class="w-full px-4 py-3.5 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-teal-500 transition-colors resize-none"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-teal-500 via-indigo-600 to-purple-600 text-white font-bold text-base shadow-lg shadow-teal-500/20 hover:opacity-95 transition duration-300">
+                            Send Direct Message
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 border-t border-slate-800/80 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                
+                <div class="flex items-center space-x-3">
+                    <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-teal-500 to-indigo-600 flex items-center justify-center text-white font-bold text-sm">
+                        SH
+                    </div>
+                    <div>
+                        <p class="text-sm font-bold text-white">Dr. Shivani Hibbare</p>
+                        <p class="text-xs text-slate-500">Virtual Medical Assistant • Lenity Health</p>
+                    </div>
+                </div>
+
+                <div class="text-xs text-slate-500 text-center md:text-right">
+                    <p>&copy; 2026 Dr. Shivani Hibbare. All rights reserved.</p>
+                    <p class="mt-1">Designed for Ultra-Premium Clinical Support Excellence.</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+        const btn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on click link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
