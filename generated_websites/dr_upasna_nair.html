@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Upasna Nair | Clinic Head & Senior Dental Specialist</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        accent: {
+                            cyan: '#06b6d4',
+                            teal: '#14b8a6',
+                            indigo: '#6366f1',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card:hover {
+            border-color: rgba(99, 102, 241, 0.4);
+            box-shadow: 0 10px 30px -10px rgba(99, 102, 241, 0.2);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-border {
+            position: relative;
+            background: linear-gradient(135deg, #06b6d4, #6366f1, #ec4899);
+            padding: 3px;
+            border-radius: 9999px;
+        }
+        .bg-glow {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, rgba(6, 182, 212, 0.05) 50%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- Ambient Background Glows -->
+    <div class="bg-glow top-0 left-1/4 -translate-x-1/2"></div>
+    <div class="bg-glow top-1/3 right-0"></div>
+    <div class="bg-glow bottom-10 left-10"></div>
+
+    <!-- Header Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Brand / Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-indigo-500 to-purple-500 flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-indigo-500/20 group-hover:scale-105 transition-transform duration-300">
+                        <i class="fa-solid font-bold fa-tooth"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-bold text-lg tracking-tight text-white group-hover:text-cyan-400 transition-colors">Dr. Upasna Nair</span>
+                        <span class="text-xs text-slate-400 font-medium">Clinic Head | Clove Dental</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                    <a href="#about" class="text-slate-300 hover:text-cyan-400 transition-colors">About</a>
+                    <a href="#services" class="text-slate-300 hover:text-cyan-400 transition-colors">Clinical Expertise</a>
+                    <a href="#testimonials" class="text-slate-300 hover:text-cyan-400 transition-colors">Patient Stories</a>
+                    <a href="#contact" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white font-semibold hover:shadow-lg hover:shadow-indigo-500/25 hover:scale-105 transition-all duration-300">
+                        Book Consultation
+                    </a>
+                </nav>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="text-slate-400 hover:text-white focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900/95 border-b border-slate-800 px-4 pt-2 pb-6 space-y-3">
+            <a href="#about" class="block py-2 text-slate-300 hover:text-cyan-400">About</a>
+            <a href="#services" class="block py-2 text-slate-300 hover:text-cyan-400">Clinical Expertise</a>
+            <a href="#testimonials" class="block py-2 text-slate-300 hover:text-cyan-400">Patient Stories</a>
+            <a href="#contact" class="block w-full text-center mt-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 to-indigo-600 text-white font-semibold">
+                Book Consultation
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-20 md:pt-48 md:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
+                
+                <!-- Hero Left Content -->
+                <div class="flex-1 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 border border-slate-800 text-cyan-400 text-xs font-semibold uppercase tracking-wider mb-6 shadow-inner">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        Clinic Head • Clove Dental
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight tracking-tight mb-6">
+                        Pioneering Modern <br class="hidden sm:inline"/>
+                        <span class="gradient-text">Dental Excellence</span> & Care.
+                    </h1>
+                    
+                    <p class="text-lg text-slate-400 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed mb-8">
+                        Delivering world-class clinical leadership, advanced restorative treatments, and precision aesthetic dentistry at Clove Dental. Dedicated to transforming smiles with cutting-edge technology and empathetic patient care.
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-12">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white font-bold text-base shadow-xl shadow-indigo-500/20 hover:shadow-indigo-500/40 hover:scale-105 transition-all duration-300 flex items-center justify-center gap-3">
+                            <span>Schedule Appointment</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900/80 hover:bg-slate-800 text-slate-200 border border-slate-800 font-semibold text-base transition-all duration-300 flex items-center justify-center gap-2">
+                            <span>Explore Treatments</span>
+                        </a>
+                    </div>
+
+                    <!-- Trust Badges -->
+                    <div class="pt-8 border-t border-slate-900 grid grid-cols-3 gap-4 text-center lg:text-left">
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-white">10+</div>
+                            <div class="text-xs sm:text-sm text-slate-400 font-medium">Years Experience</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-cyan-400">15,000+</div>
+                            <div class="text-xs sm:text-sm text-slate-400 font-medium">Happy Smiles</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-purple-400">99.8%</div>
+                            <div class="text-xs sm:text-sm text-slate-400 font-medium">Satisfaction Rate</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Right: Avatar Frame -->
+                <div class="flex-1 flex justify-center relative">
+                    <div class="relative">
+                        <!-- Glowing Outer Ring -->
+                        <div class="absolute -inset-4 bg-gradient-to-r from-cyan-500 via-indigo-500 to-pink-500 rounded-full blur-2xl opacity-40 animate-pulse"></div>
+                        
+                        <!-- Gradient Border Wrapper -->
+                        <div class="gradient-border relative z-10 shadow-2xl">
+                            <img src="https://ui-avatars.com/api/?name=Dr.+Upasna+Nair&size=200&background=0D8ABC&color=fff&bold=true" 
+                                 alt="Dr. Upasna Nair" 
+                                 class="w-64 h-64 sm:w-80 sm:h-80 rounded-full object-cover border-4 border-slate-950 shadow-inner">
+                        </div>
+
+                        <!-- Floating Badge 1 -->
+                        <div class="absolute -bottom-4 -left-6 z-20 glass-card p-4 rounded-2xl shadow-xl flex items-center gap-3 border border-slate-700/50">
+                            <div class="w-10 h-10 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-award"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 font-medium">Award Winning</div>
+                                <div class="text-sm font-bold text-white">Clinic Head</div>
+                            </div>
+                        </div>
+
+                        <!-- Floating Badge 2 -->
+                        <div class="absolute -top-4 -right-6 z-20 glass-card p-4 rounded-2xl shadow-xl flex items-center gap-3 border border-slate-700/50">
+                            <div class="w-10 h-10 rounded-lg bg-indigo-500/20 text-indigo-400 flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-user-doctor"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 font-medium">Specialist</div>
+                                <div class="text-sm font-bold text-white">Clove Dental</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-24 bg-slate-900/40 border-y border-slate-800/50 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                
+                <!-- Clinical Image Showcase -->
+                <div class="relative group">
+                    <div class="absolute -inset-2 bg-gradient-to-r from-cyan-500 to-indigo-600 rounded-3xl blur-xl opacity-20 group-hover:opacity-40 transition duration-500"></div>
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Modern Dental Clinic" 
+                             class="w-full h-[420px] object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl glass-card">
+                            <div class="text-sm font-semibold text-white">State-of-the-Art Clinical Suite</div>
+                            <div class="text-xs text-slate-400">Equipped with painless dentistry tools & 3D digital imaging.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bio & Pillars -->
+                <div>
+                    <span class="text-cyan-400 text-sm font-semibold uppercase tracking-wider">About Dr. Upasna Nair</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2 mb-6 leading-tight">
+                        Transforming Oral Healthcare Through Innovation & Compassion
+                    </h2>
+                    <p class="text-slate-400 text-base leading-relaxed mb-6">
+                        As the Clinic Head at <strong class="text-slate-200">Clove Dental</strong>, Dr. Upasna Nair brings clinical leadership, precision techniques, and a patient-first ethos. With extensive expertise in comprehensive dental care, smile restorations, and preventative solutions, she ensures every clinical workflow adheres to global standards of sterilization and comfort.
+                    </p>
+                    <p class="text-slate-400 text-base leading-relaxed mb-8">
+                        Dr. Nair specializes in creating tailored treatment plans using modern technology, ensuring that complex dental procedures remain comfortable, effective, and long-lasting.
+                    </p>
+
+                    <!-- Key Pillars -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center shrink-0 mt-1">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold text-sm">Painless Procedures</h4>
+                                <p class="text-xs text-slate-400">Advanced micro-dentistry & gentle protocols.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center shrink-0 mt-1">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold text-sm">Complete Sterilization</h4>
+                                <p class="text-xs text-slate-400">4-step strict hygiene and safety protocols.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center shrink-0 mt-1">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold text-sm">Aesthetic Precision</h4>
+                                <p class="text-xs text-slate-400">Natural smile makeovers tailored to face shape.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center shrink-0 mt-1">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold text-sm">Clinical Leadership</h4>
+                                <p class="text-xs text-slate-400">Mentoring high-performance dental teams.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-cyan-400 text-sm font-semibold uppercase tracking-wider">Clinical Services</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2 mb-4">Comprehensive Dental Solutions</h2>
+                <p class="text-slate-400 text-base">From routine preventive checkups to complex smile reconstructions, Dr. Upasna Nair provides end-to-end expertise.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service Card 1 -->
+                <div class="glass-card rounded-2xl p-8 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-cyan-500/20 to-indigo-500/20 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Cosmetic & Aesthetic Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Smile designing, porcelain veneers, teeth whitening, and aesthetic bonding for a brilliant, natural smile boost.</p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-cyan-400 hover:text-cyan-300">
+                        Learn More <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="glass-card rounded-2xl p-8 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-indigo-500/20 to-purple-500/20 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-indigo-400 transition-colors">Endodontics & Root Canals</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Single-sitting painless root canal treatments using advanced rotary endodontic instrumentation.</p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-indigo-400 hover:text-indigo-300">
+                        Learn More <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="glass-card rounded-2xl p-8 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-purple-500/20 to-pink-500/20 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">Implantology & Crowns</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Permanent tooth replacement solutions with high-grade dental implants, Zirconia crowns, and bridges.</p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-purple-400 hover:text-purple-300">
+                        Learn More <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="glass-card rounded-2xl p-8 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-emerald-500/20 to-cyan-500/20 text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-teeth-open"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-emerald-400 transition-colors">Orthodontic Aligners</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Invisible clear aligner solutions for adult and pediatric tooth alignment without traditional metal braces.</p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-emerald-400 hover:text-emerald-300">
+                        Learn More <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="glass-card rounded-2xl p-8 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-amber-500/20 to-orange-500/20 text-amber-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-amber-400 transition-colors">Preventive & Gum Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Deep scaling, periodontal health management, fluoride therapies, and oral screening for preventative care.</p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-amber-400 hover:text-amber-300">
+                        Learn More <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="glass-card rounded-2xl p-8 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-rose-500/20 to-pink-500/20 text-rose-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-hospital-user"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-rose-400 transition-colors">Clinic Governance</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Directing Clove Dental clinic protocols, maintaining high clinical safety, hygiene, and patient care management.</p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-rose-400 hover:text-rose-300">
+                        Learn More <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-slate-900/40 border-y border-slate-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-cyan-400 text-sm font-semibold uppercase tracking-wider">Patient & Peer Feedback</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2 mb-4">Trusted By Thousands</h2>
+                <p class="text-slate-400 text-base">Read what patients and colleagues say about Dr. Upasna Nair's care and leadership at Clove Dental.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-400 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Dr. Upasna Nair made my root canal procedure entirely painless! Her calm composure and expertise as Clinic Head are reflected across the entire staff at Clove Dental."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold text-sm">
+                            AR
+                        </div>
+                        <div>
+                            <div class="text-sm font-semibold text-white">Ananya R.</div>
+                            <div class="text-xs text-slate-400">Verified Patient</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-400 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "The smile makeover I received exceeded all expectations. Dr. Upasna explained every detail of the treatment plan carefully. Truly world-class dentistry."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-sm">
+                            VK
+                        </div>
+                        <div>
+                            <div class="text-sm font-semibold text-white">Vikram K.</div>
+                            <div class="text-xs text-slate-400">Smile Design Client</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-400 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "An extraordinary clinician and clinic leader. Dr. Nair sets standard benchmark in clinical hygiene, patient empathy, and modern dental technology."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 flex items-center justify-center font-bold text-sm">
+                            SP
+                        </div>
+                        <div>
+                            <div class="text-sm font-semibold text-white">Siddharth P.</div>
+                            <div class="text-xs text-slate-400">Healthcare Executive</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Consultation Section -->
+    <section id="contact" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                
+                <!-- Contact Info -->
+                <div>
+                    <span class="text-cyan-400 text-sm font-semibold uppercase tracking-wider">Get In Touch</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2 mb-6">Schedule Your Personal Consultation</h2>
+                    <p class="text-slate-400 text-base leading-relaxed mb-8">
+                        Whether you are seeking a routine checkup, aesthetic transformation, or consultation regarding complex dental procedures, book an appointment at Clove Dental.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 text-cyan-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-hospital"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 uppercase font-semibold">Location</div>
+                                <div class="text-white font-medium">Clove Dental Clinic Headquarter Branch</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 text-indigo-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 uppercase font-semibold">Email Enquiries</div>
+                                <div class="text-white font-medium">dr.upasna.nair@clovedental.in</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 text-purple-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 uppercase font-semibold">Network Connection</div>
+                                <div class="text-white font-medium">Established 08 Sep 2026</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="glass-card p-8 rounded-3xl border border-slate-800">
+                    <form onsubmit="event.preventDefault(); alert('Thank you, Dr. Upasna Nair\'s team will contact you shortly!');" class="space-y-5">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Full Name</label>
+                                <input type="text" placeholder="John Doe" required class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Phone Number</label>
+                                <input type="tel" placeholder="+91 98765 43210" required class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Service Required</label>
+                            <select class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white focus:outline-none focus:border-cyan-500 transition-colors">
+                                <option>General Dental Checkup</option>
+                                <option>Cosmetic Smile Design</option>
+                                <option>Root Canal Treatment</option>
+                                <option>Dental Implants</option>
+                                <option>Invisible Aligners</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Message / Consultation Notes</label>
+                            <textarea rows="4" placeholder="Briefly describe your requirements or query..." class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-cyan-500 transition-colors"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white font-bold text-base shadow-lg shadow-indigo-500/20 hover:shadow-indigo-500/40 hover:scale-[1.02] transition-all duration-300">
+                            Request Appointment
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-slate-950 border-t border-slate-900 text-slate-500 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-indigo-600/20 text-indigo-400 flex items-center justify-center font-bold">
+                    <i class="fa-solid fa-tooth text-xs"></i>
+                </div>
+                <span class="font-semibold text-slate-300">Dr. Upasna Nair • Clove Dental</span>
+            </div>
+            
+            <div>
+                © 2026 Dr. Upasna Nair. All Rights Reserved. Crafted for Clinical Excellence.
+            </div>
+
+            <div class="flex items-center space-x-4 text-slate-400">
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-linkedin text-lg"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-twitter text-lg"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-solid fa-globe text-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
