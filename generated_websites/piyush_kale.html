@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Piyush Kale | Dental Surgeon & Smile Specialist</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts (Plus Jakarta Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        teal: {
+                            400: '#2dd4bf',
+                            500: '#14b8a6',
+                            600: '#0d9488',
+                        }
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #020617;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #0d9488;
+        }
+
+        .bg-grid-pattern {
+            background-image: radial-gradient(rgba(20, 184, 166, 0.12) 1px, transparent 1px);
+            background-size: 32px 32px;
+        }
+
+        .glass-card {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(20, 184, 166, 0.4);
+            box-shadow: 0 10px 30px -10px rgba(20, 184, 166, 0.2);
+        }
+
+        .text-gradient {
+            background: linear-gradient(135deg, #38bdf8 0%, #2dd4bf 50%, #818cf8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .glow-effect {
+            position: relative;
+        }
+        .glow-effect::before {
+            content: '';
+            position: absolute;
+            top: -2px; left: -2px; right: -2px; bottom: -2px;
+            background: linear-gradient(45deg, #0d9488, #3b82f6, #8b5cf6, #0d9488);
+            border-radius: inherit;
+            z-index: -1;
+            filter: blur(12px);
+            opacity: 0.5;
+            transition: opacity 0.3s ease;
+        }
+        .glow-effect:hover::before {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 selection:bg-teal-500 selection:text-white">
+
+    <!-- Ambient Grid Background -->
+    <div class="fixed inset-0 bg-grid-pattern pointer-events-none z-0 opacity-60"></div>
+    
+    <!-- Background Glow Blobs -->
+    <div class="fixed top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-teal-500/10 rounded-full blur-[140px] pointer-events-none z-0"></div>
+    <div class="fixed bottom-10 right-10 w-[400px] h-[400px] bg-indigo-500/10 rounded-full blur-[120px] pointer-events-none z-0"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-teal-500 to-indigo-600 flex items-center justify-center text-white shadow-lg shadow-teal-500/20 group-hover:scale-105 transition-transform duration-300">
+                    <i class="fa-solid fa-tooth text-lg"></i>
+                </div>
+                <div>
+                    <span class="text-lg font-bold tracking-tight text-white block leading-none">Dr. Piyush Kale</span>
+                    <span class="text-xs text-teal-400 font-medium tracking-wide">Smile Dental Clinic</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-teal-400 transition-colors">About Practice</a>
+                <a href="#services" class="hover:text-teal-400 transition-colors">Specializations</a>
+                <a href="#testimonials" class="hover:text-teal-400 transition-colors">Patient Stories</a>
+                <a href="#contact" class="hover:text-teal-400 transition-colors">Contact & Clinic Info</a>
+            </div>
+
+            <!-- Header Action -->
+            <div class="hidden sm:flex items-center space-x-4">
+                <a href="#contact" class="px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-teal-500 to-indigo-600 hover:from-teal-400 hover:to-indigo-500 transition-all duration-300 shadow-md shadow-teal-500/20 hover:shadow-teal-500/40 hover:-translate-y-0.5">
+                    <i class="fa-regular fa-calendar-check mr-2"></i>Book Consultation
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="mobileMenuBtn" class="md:hidden text-slate-300 hover:text-white focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Nav Menu Dropdown -->
+        <div id="mobileMenu" class="hidden md:hidden bg-slate-900/95 border-b border-slate-800 px-6 py-4 space-y-3">
+            <a href="#about" class="block text-slate-300 hover:text-teal-400 py-1">About Practice</a>
+            <a href="#services" class="block text-slate-300 hover:text-teal-400 py-1">Specializations</a>
+            <a href="#testimonials" class="block text-slate-300 hover:text-teal-400 py-1">Patient Stories</a>
+            <a href="#contact" class="block text-slate-300 hover:text-teal-400 py-1">Contact & Clinic Info</a>
+            <a href="#contact" class="block text-center mt-3 px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-teal-500 to-indigo-600">
+                Book Consultation
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-20 md:pt-44 md:pb-32 px-6 z-10 overflow-hidden">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Hero Left: Content -->
+            <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card text-teal-400 text-xs sm:text-sm font-medium">
+                    <span class="w-2 h-2 rounded-full bg-teal-400 animate-ping"></span>
+                    <span>Accepting New Patients at Smile Dental Clinic</span>
+                </div>
+
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
+                    Crafting Confident <br class="hidden sm:inline"/>
+                    <span class="text-gradient">& Healthy Smiles</span> with Precision.
+                </h1>
+
+                <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                    Welcome to the specialized dental practice of <strong class="text-slate-200">Dr. Piyush Kale</strong>. Combining state-of-the-art clinical expertise with a gentle touch to deliver transformative, painless oral healthcare and cosmetic restorations.
+                </p>
+
+                <!-- Action Buttons -->
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                    <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full font-semibold text-white bg-gradient-to-r from-teal-500 via-cyan-500 to-indigo-600 hover:opacity-95 transition-all duration-300 shadow-lg shadow-teal-500/25 flex items-center justify-center gap-3">
+                        <span>Schedule Appointment</span>
+                        <i class="fa-solid fa-arrow-right text-sm"></i>
+                    </a>
+                    <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-full font-semibold text-slate-300 glass-card hover:text-white transition-all duration-300 flex items-center justify-center gap-2">
+                        <span>View Treatments</span>
+                    </a>
+                </div>
+
+                <!-- Trust Badges -->
+                <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0">
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-white">10+</div>
+                        <div class="text-xs text-slate-400 mt-1">Years Clinical Experience</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-teal-400">5k+</div>
+                        <div class="text-xs text-slate-400 mt-1">Successful Procedures</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-indigo-400">4.9★</div>
+                        <div class="text-xs text-slate-400 mt-1">Patient Satisfaction Rating</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Right: Avatar & Frame -->
+            <div class="lg:col-span-5 flex justify-center relative">
+                <div class="relative group">
+                    
+                    <!-- Double Gradient Glowing Ring -->
+                    <div class="absolute -inset-1.5 bg-gradient-to-r from-teal-500 via-indigo-500 to-pink-500 rounded-full blur-xl opacity-70 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse-slow"></div>
+                    
+                    <!-- Avatar Image Container -->
+                    <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full p-2 bg-slate-900 border border-slate-700/80 overflow-hidden shadow-2xl flex items-center justify-center">
+                        <img 
+                            src="https://ui-avatars.com/api/?name=Piyush+Kale&size=200&background=0D8ABC&color=fff&bold=true" 
+                            alt="Dr. Piyush Kale - Dental Surgeon" 
+                            class="w-full h-full object-cover rounded-full transform group-hover:scale-105 transition-transform duration-500"
+                        >
+                    </div>
+
+                    <!-- Floating Badge 1 -->
+                    <div class="absolute -bottom-4 -left-4 glass-card px-4 py-3 rounded-2xl flex items-center space-x-3 shadow-xl animate-float">
+                        <div class="w-10 h-10 rounded-lg bg-teal-500/20 text-teal-400 flex items-center justify-center font-bold">
+                            <i class="fa-solid fa-certificate"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400 font-medium">Board Certified</p>
+                            <p class="text-sm font-bold text-white">Dental Surgeon</p>
+                        </div>
+                    </div>
+
+                    <!-- Floating Badge 2 -->
+                    <div class="absolute top-4 -right-4 glass-card px-4 py-2.5 rounded-2xl flex items-center space-x-2 shadow-xl hidden sm:flex">
+                        <i class="fa-solid fa-hospital text-indigo-400 text-lg"></i>
+                        <span class="text-xs font-semibold text-slate-200">Smile Dental Clinic</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-20 px-6 relative z-10 border-t border-slate-900 bg-slate-950/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Clinical Image -->
+                <div class="lg:col-span-5">
+                    <div class="relative rounded-3xl overflow-hidden glass-card p-2 group">
+                        <img 
+                            src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                            alt="Modern Dental Operatory" 
+                            class="rounded-2xl w-full h-[420px] object-cover filter brightness-90 group-hover:brightness-100 transition-all duration-500 group-hover:scale-105"
+                        >
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-4 glass-card rounded-xl">
+                            <p class="text-xs text-teal-400 font-semibold uppercase tracking-wider">Modern Technology</p>
+                            <p class="text-sm text-slate-200 font-medium mt-1">State-of-the-Art Dental Care Equipment & Digital Diagnostics</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div>
+                        <span class="text-teal-400 font-semibold text-sm tracking-wider uppercase">About Clinical Practice</span>
+                        <h2 class="text-3xl sm:text-4xl font-bold mt-2 text-white">Dedicated to Excellence in Dental Surgery & Oral Health</h2>
+                    </div>
+
+                    <p class="text-slate-300 leading-relaxed">
+                        At <strong class="text-white">Smile Dental Clinic</strong>, Dr. Piyush Kale brings advanced surgical expertise and a patient-centric philosophy to oral care. Whether you require restorative procedures, root canal therapy, or a full aesthetic smile design, every treatment is tailored with extreme care and modern digital diagnostics.
+                    </p>
+
+                    <p class="text-slate-400 leading-relaxed text-sm">
+                        Our priority is providing anxiety-free, gentle dental treatments in a sterile, comfortable, and welcoming environment. We continuously upgrade our techniques to integrate the newest breakthroughs in dental science.
+                    </p>
+
+                    <!-- Expertise Pills -->
+                    <div class="pt-4">
+                        <h4 class="text-xs font-semibold uppercase text-slate-400 tracking-wider mb-3">Key Surgical Capabilities</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3.5 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-teal-300 text-xs font-medium"><i class="fa-solid fa-check text-teal-500 mr-2"></i>Cosmetic Dentistry</span>
+                            <span class="px-3.5 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-teal-300 text-xs font-medium"><i class="fa-solid fa-check text-teal-500 mr-2"></i>Dental Implantology</span>
+                            <span class="px-3.5 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-teal-300 text-xs font-medium"><i class="fa-solid fa-check text-teal-500 mr-2"></i>Painless Root Canals</span>
+                            <span class="px-3.5 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-teal-300 text-xs font-medium"><i class="fa-solid fa-check text-teal-500 mr-2"></i>Smile Makeovers</span>
+                            <span class="px-3.5 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-teal-300 text-xs font-medium"><i class="fa-solid fa-check text-teal-500 mr-2"></i>Surgical Extractions</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Clinical Services Grid -->
+    <section id="services" class="py-20 px-6 relative z-10">
+        <div class="max-w-7xl mx-auto">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-teal-400 font-semibold text-sm tracking-wider uppercase">Comprehensive Care</span>
+                <h2 class="text-3xl sm:text-4xl font-bold mt-2 text-white">Specialized Dental Treatments</h2>
+                <p class="text-slate-400 text-sm sm:text-base mt-3">From routine prevention to intricate surgical procedures, receive world-class dental care.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="glass-card p-8 rounded-2xl relative group hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-teal-500/10 border border-teal-500/20 text-teal-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Cosmetic Smile Design</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Custom veneers, digital smile design, and tooth contouring to sculpt your perfect, natural smile.</p>
+                    <a href="#contact" class="text-teal-400 text-sm font-semibold inline-flex items-center gap-2 group-hover:gap-3 transition-all">
+                        Learn More <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="glass-card p-8 rounded-2xl relative group hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Dental Implants & Restorations</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Permanent, natural-looking replacement for missing teeth with premium biomechanical stability.</p>
+                    <a href="#contact" class="text-indigo-400 text-sm font-semibold inline-flex items-center gap-2 group-hover:gap-3 transition-all">
+                        Learn More <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="glass-card p-8 rounded-2xl relative group hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-microscope"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Painless Root Canal Therapy</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Microscopic endodontic treatment designed to save natural teeth comfortably without pain.</p>
+                    <a href="#contact" class="text-cyan-400 text-sm font-semibold inline-flex items-center gap-2 group-hover:gap-3 transition-all">
+                        Learn More <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="glass-card p-8 rounded-2xl relative group hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-sun"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Laser Teeth Whitening</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Safe, quick in-office whitening procedures delivering up to 8 shades brighter results in one visit.</p>
+                    <a href="#contact" class="text-purple-400 text-sm font-semibold inline-flex items-center gap-2 group-hover:gap-3 transition-all">
+                        Learn More <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="glass-card p-8 rounded-2xl relative group hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-rose-500/10 border border-rose-500/20 text-rose-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Preventive & Oral Surgery</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Wisdom tooth extractions, gum care, and preventative deep cleanings for lifelong health.</p>
+                    <a href="#contact" class="text-rose-400 text-sm font-semibold inline-flex items-center gap-2 group-hover:gap-3 transition-all">
+                        Learn More <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </a>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="glass-card p-8 rounded-2xl relative group hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Clear Orthodontic Aligners</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Discreet, custom clear aligners to align misaligned teeth without traditional metal braces.</p>
+                    <a href="#contact" class="text-emerald-400 text-sm font-semibold inline-flex items-center gap-2 group-hover:gap-3 transition-all">
+                        Learn More <i class="fa-solid fa-chevron-right text-xs"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Patient Endorsements -->
+    <section id="testimonials" class="py-20 px-6 relative z-10 bg-slate-950/60 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-teal-400 font-semibold text-sm tracking-wider uppercase">Testimonials</span>
+                <h2 class="text-3xl sm:text-4xl font-bold mt-2 text-white">Words from Our Valued Patients</h2>
+                <p class="text-slate-400 text-sm sm:text-base mt-3">Read how Dr. Piyush Kale transformed smiles and restored confidence.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Review 1 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm space-x-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "Dr. Piyush Kale is extremely skilled and compassionate. I was terrified of getting a root canal, but his gentle explanation and procedure were completely painless!"
+                        </p>
+                    </div>
+                    <div class="mt-6 flex items-center space-x-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-teal-500/20 text-teal-300 font-bold flex items-center justify-center text-sm">
+                            AR
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-white">Ananya Rao</p>
+                            <p class="text-xs text-slate-400">Root Canal Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm space-x-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "The cosmetic smile redesign at Smile Dental Clinic changed my confidence completely. Dr. Kale is truly an artist when it comes to dental aesthetics!"
+                        </p>
+                    </div>
+                    <div class="mt-6 flex items-center space-x-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-300 font-bold flex items-center justify-center text-sm">
+                            SK
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-white">Siddharth K.</p>
+                            <p class="text-xs text-slate-400">Smile Makeover Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm space-x-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "State of the art clinic, utmost hygiene, and super friendly staff. Dr. Piyush makes you feel comfortable right from the first consultation."
+                        </p>
+                    </div>
+                    <div class="mt-6 flex items-center space-x-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-300 font-bold flex items-center justify-center text-sm">
+                            VP
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-white">Vikram Patel</p>
+                            <p class="text-xs text-slate-400">Dental Implant Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment & Contact Section -->
+    <section id="contact" class="py-20 px-6 relative z-10">
+        <div class="max-w-7xl mx-auto">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 glass-card rounded-3xl p-8 sm:p-12 overflow-hidden relative">
+                
+                <!-- Background Accent Glow -->
+                <div class="absolute -right-20 -top-20 w-80 h-80 bg-teal-500/20 rounded-full blur-3xl pointer-events-none"></div>
+
+                <!-- Left Column: Contact Details & Clinic Info -->
+                <div class="lg:col-span-5 space-y-8 relative z-10">
+                    <div>
+                        <span class="text-teal-400 font-semibold text-sm tracking-wider uppercase">Book Your Visit</span>
+                        <h2 class="text-3xl font-extrabold text-white mt-2">Smile Dental Clinic</h2>
+                        <p class="text-slate-400 text-sm mt-3 leading-relaxed">Schedule a consultation with Dr. Piyush Kale today and take the first step towards exceptional oral wellness.</p>
+                    </div>
+
+                    <div class="space-y-5">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-xl bg-teal-500/10 border border-teal-500/20 text-teal-400 flex items-center justify-center shrink-0 mt-1">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Clinic Address</h4>
+                                <p class="text-sm text-slate-400 mt-0.5">Smile Dental Clinic, Healthcare Plaza, Main Blvd</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-xl bg-teal-500/10 border border-teal-500/20 text-teal-400 flex items-center justify-center shrink-0 mt-1">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Working Hours</h4>
+                                <p class="text-sm text-slate-400 mt-0.5">Mon - Sat: 9:30 AM – 8:00 PM</p>
+                                <p class="text-xs text-teal-400 font-medium">Sunday: By Emergency Appointment</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-xl bg-teal-500/10 border border-teal-500/20 text-teal-400 flex items-center justify-center shrink-0 mt-1">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Direct Line</h4>
+                                <p class="text-sm text-slate-400 mt-0.5">+1 (800) 555-SMILE</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800 text-xs text-slate-400 flex items-center space-x-3">
+                        <i class="fa-solid fa-circle-check text-emerald-400 text-base"></i>
+                        <span>Connected Practitioner Network (Verified: 07 Sep 2026)</span>
+                    </div>
+                </div>
+
+                <!-- Right Column: Interactive Booking Form -->
+                <div class="lg:col-span-7 relative z-10 bg-slate-950/80 p-6 sm:p-8 rounded-2xl border border-slate-800">
+                    <h3 class="text-xl font-bold text-white mb-6">Schedule an Appointment</h3>
+                    
+                    <form onsubmit="event.preventDefault(); alert('Appointment request received! Dr. Piyush Kale\'s team will reach out shortly.');" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-1">Full Name</label>
+                                <input type="text" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-teal-500 text-sm transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-1">Phone Number</label>
+                                <input type="tel" required placeholder="+1 (555) 000-0000" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-teal-500 text-sm transition-colors">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-1">Preferred Date</label>
+                                <input type="date" required class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white focus:outline-none focus:border-teal-500 text-sm transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-1">Treatment Service</label>
+                                <select class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white focus:outline-none focus:border-teal-500 text-sm transition-colors">
+                                    <option>General Dental Checkup</option>
+                                    <option>Cosmetic Dentistry</option>
+                                    <option>Root Canal Treatment</option>
+                                    <option>Dental Implants</option>
+                                    <option>Teeth Whitening</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-1">Patient Notes / Consultation Details</label>
+                            <textarea rows="3" placeholder="Briefly describe your dental concerns..." class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-teal-500 text-sm transition-colors"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl text-sm font-bold text-white bg-gradient-to-r from-teal-500 to-indigo-600 hover:from-teal-400 hover:to-indigo-500 shadow-lg shadow-teal-500/20 transition-all duration-300">
+                            Confirm Consultation Request
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 border-t border-slate-900 text-slate-500 text-sm relative z-10">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-lg bg-teal-500/20 text-teal-400 flex items-center justify-center font-bold">
+                    <i class="fa-solid fa-tooth"></i>
+                </div>
+                <span class="text-slate-200 font-bold">Dr. Piyush Kale</span>
+                <span class="text-slate-600">|</span>
+                <span>Smile Dental Clinic</span>
+            </div>
+
+            <p class="text-center md:text-left text-xs text-slate-500">
+                &copy; <script>document.write(new Date().getFullYear())</script> Dr. Piyush Kale. All rights reserved. Precision Dental Healthcare.
+            </p>
+
+            <div class="flex items-center space-x-4 text-slate-400">
+                <a href="#" class="hover:text-teal-400 transition-colors"><i class="fa-brands fa-linkedin text-lg"></i></a>
+                <a href="#" class="hover:text-teal-400 transition-colors"><i class="fa-brands fa-instagram text-lg"></i></a>
+                <a href="#" class="hover:text-teal-400 transition-colors"><i class="fa-solid fa-envelope text-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
