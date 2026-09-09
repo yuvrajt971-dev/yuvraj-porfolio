@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Sanskar Singhal | Associate Dentist Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -12px rgba(99, 102, 241, 0.25);
+        }
+        .glow-cyan {
+            box-shadow: 0 0 50px -12px rgba(6, 182, 212, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-slate-950">
+
+    <!-- NAVIGATION BAR -->
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-indigo-500 to-pink-500 p-[2px] transition-transform duration-300 group-hover:scale-105">
+                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+                        <i class="fa-solid font-bold text-cyan-400 fa-tooth"></i>
+                    </div>
+                </div>
+                <div>
+                    <span class="text-lg font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-200 to-slate-400">Dr. Sanskar Singhal</span>
+                    <span class="block text-xs text-slate-400">Associate Dentist</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About & Expertise</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Clinical Services</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Endorsements</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+            </nav>
+
+            <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold bg-gradient-to-r from-cyan-500 via-indigo-500 to-pink-500 text-white shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 hover:scale-[1.02] transition-all duration-300">
+                <span>Book Appointment</span>
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative min-h-screen flex items-center justify-center pt-32 pb-20 overflow-hidden">
+        <!-- Ambient Glowing Background Elements -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-cyan-500/20 via-indigo-500/20 to-pink-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute bottom-10 left-10 w-80 h-80 bg-cyan-600/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Hero Text Content -->
+            <div class="lg:col-span-7 text-center lg:text-left">
+                <!-- Badge -->
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 backdrop-blur-xl mb-6">
+                    <span class="flex h-2 w-2 rounded-full bg-emerald-400 animate-ping"></span>
+                    <span class="text-xs font-semibold text-slate-300 tracking-wide uppercase">Associate Dentist • District Combined Hospital, Sanjay Nagar</span>
+                </div>
+
+                <!-- Main Heading -->
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.15] mb-6">
+                    Crafting Healthy Smiles with 
+                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-indigo-400 to-pink-500"> Advanced Precision & Care</span>
+                </h1>
+
+                <!-- Subtitle -->
+                <p class="text-lg text-slate-400 leading-relaxed max-w-2xl mx-auto lg:mx-0 mb-8">
+                    Delivering world-class dental solutions, preventive healthcare, and restorative procedures. Dedicated to clinical excellence and patient comfort at District Combined Hospital, Sanjay Nagar.
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-12">
+                    <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl text-base font-bold bg-gradient-to-r from-cyan-500 via-indigo-500 to-pink-500 text-white shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.02] transition-all duration-300 text-center">
+                        Schedule Consultation
+                    </a>
+                    <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-xl text-base font-semibold bg-slate-900/80 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-700 hover:bg-slate-900 transition-all duration-300 text-center">
+                        Explore Treatments
+                    </a>
+                </div>
+
+                <!-- Quick Stats / Trust Badges -->
+                <div class="grid grid-cols-3 gap-4 pt-8 border-t border-slate-800/80">
+                    <div>
+                        <div class="text-2xl lg:text-3xl font-extrabold text-white">5,000+</div>
+                        <div class="text-xs text-slate-400 mt-1">Patients Served</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl lg:text-3xl font-extrabold text-cyan-400">99.8%</div>
+                        <div class="text-xs text-slate-400 mt-1">Satisfaction Rate</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl lg:text-3xl font-extrabold text-indigo-400">100%</div>
+                        <div class="text-xs text-slate-400 mt-1">Sterilization Protocol</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Image / Visual Frame -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative group">
+                    <!-- Outer Glow Ring -->
+                    <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-cyan-500 via-indigo-500 to-pink-500 blur-xl opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse-slow"></div>
+                    
+                    <!-- Avatar Frame -->
+                    <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full p-2 bg-slate-950 border border-slate-800 flex items-center justify-center overflow-hidden">
+                        <img 
+                            src="https://ui-avatars.com/api/?name=Dr.+Sanskar+Singhal&size=200&background=0D8ABC&color=fff&bold=true" 
+                            alt="Dr. Sanskar Singhal" 
+                            class="w-full h-full object-cover rounded-full transition-transform duration-500 group-hover:scale-105"
+                        />
+                    </div>
+
+                    <!-- Floating Badge 1 -->
+                    <div class="absolute -bottom-4 -left-4 bg-slate-900/90 backdrop-blur-xl border border-slate-800 p-4 rounded-2xl shadow-xl flex items-center gap-3 animate-float">
+                        <div class="w-10 h-10 rounded-xl bg-cyan-500/20 border border-cyan-500/40 flex items-center justify-center text-cyan-400">
+                            <i class="fa-solid fa-hospital text-lg"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs font-semibold text-white">District Combined Hospital</p>
+                            <p class="text-[10px] text-slate-400">Sanjay Nagar</p>
+                        </div>
+                    </div>
+
+                    <!-- Floating Badge 2 -->
+                    <div class="absolute -top-2 -right-2 bg-slate-900/90 backdrop-blur-xl border border-slate-800 p-3 rounded-2xl shadow-xl flex items-center gap-2">
+                        <i class="fa-solid fa-award text-amber-400 text-lg"></i>
+                        <span class="text-xs font-bold text-white">Certified Dental Practitioner</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-24 relative border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Medical Facility / Practice Image Container -->
+                <div class="lg:col-span-5">
+                    <div class="relative rounded-3xl overflow-hidden border border-slate-800 group">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60 z-10"></div>
+                        <img 
+                            src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                            alt="Dental Clinic Precision Equipment" 
+                            class="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105"
+                        />
+                        <div class="absolute bottom-6 left-6 right-6 z-20">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-cyan-400 mb-1 block">Clinical Excellence</span>
+                            <h3 class="text-xl font-bold text-white">Modern Equipment & Compassionate Care</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div class="lg:col-span-7">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold uppercase tracking-wider mb-4">
+                        <i class="fa-solid fa-user-doctor"></i> About Dr. Sanskar Singhal
+                    </div>
+                    
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-6">
+                        Dedicated to Elevating Oral Healthcare at Sanjay Nagar
+                    </h2>
+
+                    <p class="text-slate-300 leading-relaxed mb-6">
+                        As an Associate Dentist at District Combined Hospital, Sanjay Nagar, <strong class="text-white">Dr. Sanskar Singhal</strong> combines advanced dental clinical techniques with a empathetic, patient-centered approach. With extensive experience in diagnosis, preventive care, and restorative therapies, Dr. Singhal ensures every patient receives personalized care tailored to their unique oral health needs.
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                        <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 p-4 rounded-xl flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-cyan-400 text-lg mt-0.5"></i>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Comprehensive Diagnostics</h4>
+                                <p class="text-xs text-slate-400 mt-1">In-depth assessment for accurate dental treatments.</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 p-4 rounded-xl flex items-start gap-3">
+                            <i class="fa-solid fa-shield-halved text-cyan-400 text-lg mt-0.5"></i>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Painless Procedures</h4>
+                                <p class="text-xs text-slate-400 mt-1">Prioritizing patient comfort with modern techniques.</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 p-4 rounded-xl flex items-start gap-3">
+                            <i class="fa-solid fa-heart-pulse text-cyan-400 text-lg mt-0.5"></i>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Preventive Dentistry</h4>
+                                <p class="text-xs text-slate-400 mt-1">Long-term oral health education and proactive care.</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 p-4 rounded-xl flex items-start gap-3">
+                            <i class="fa-solid fa-hospital-user text-cyan-400 text-lg mt-0.5"></i>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Public Health Impact</h4>
+                                <p class="text-xs text-slate-400 mt-1">Committed to hospital community health standards.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-6">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 rounded-full bg-slate-900 border border-slate-700 flex items-center justify-center text-cyan-400">
+                                <i class="fa-solid fa-graduation-cap text-lg"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-slate-400 block">Specialization</span>
+                                <span class="text-sm font-bold text-white">General & Operative Dentistry</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="py-24 relative bg-slate-950/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-semibold text-cyan-400 uppercase tracking-widest block mb-2">Comprehensive Dental Care</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Clinical Services & Specialties</h2>
+                <p class="text-slate-400 mt-4 text-sm sm:text-base">Providing modern, state-of-the-art dental services engineered for optimum oral hygiene and long-lasting confidence.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 p-8 rounded-2xl group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Restorative Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Tooth-colored composite fillings, crown placement, and structural restoration designed to preserve natural teeth.
+                    </p>
+                    <span class="text-xs font-semibold text-cyan-400 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">Learn more <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 p-8 rounded-2xl group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Scaling & Polishing</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Ultrasonic plaque removal, prophylaxis, and deep cleaning to prevent gingivitis and maintain overall oral health.
+                    </p>
+                    <span class="text-xs font-semibold text-indigo-400 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">Learn more <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 p-8 rounded-2xl group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-pink-500/10 border border-pink-500/30 flex items-center justify-center text-pink-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-syringe"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Root Canal Therapy</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Precision endodontic treatment to alleviate severe dental pain and save infected teeth from extraction.
+                    </p>
+                    <span class="text-xs font-semibold text-pink-400 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">Learn more <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 p-8 rounded-2xl group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-scissors"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Surgical Extractions</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Safe, atraumatic tooth extractions including impacted wisdom teeth removal with minimal discomfort.
+                    </p>
+                    <span class="text-xs font-semibold text-emerald-400 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">Learn more <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 p-8 rounded-2xl group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-child"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Pediatric Dental Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Gentle, friendly dental interventions for young patients, focusing on preventative treatments and cavity prevention.
+                    </p>
+                    <span class="text-xs font-semibold text-amber-400 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">Learn more <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 p-8 rounded-2xl group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-[#fa-kit-briefcase-medical] fa-kit-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Emergency Oral Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Rapid evaluation and immediate treatment for acute dental trauma, severe toothache, and oral swelling.
+                    </p>
+                    <span class="text-xs font-semibold text-purple-400 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">Learn more <i class="fa-solid fa-chevron-right text-[10px]"></i></span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials" class="py-24 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-semibold text-pink-400 uppercase tracking-widest block mb-2">Patient Feedback</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Trusted By Patients & Colleagues</h2>
+                <p class="text-slate-400 mt-4 text-sm sm:text-base">Real experiences from individuals treated at District Combined Hospital, Sanjay Nagar.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 p-8 rounded-2xl relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                            "Dr. Sanskar Singhal is incredibly patient and thorough. I was terrified of getting my root canal, but he made the process virtually painless and explained every step clearly."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800/60">
+                        <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 font-bold flex items-center justify-center text-sm">
+                            RK
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-semibold text-white">Rajesh Kumar</h4>
+                            <span class="text-xs text-slate-400">Hospital Patient</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 p-8 rounded-2xl relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                            "His dedication to patient care at District Combined Hospital is truly commendable. Outstanding clinical acumen coupled with a reassuring demeanor."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800/60">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 font-bold flex items-center justify-center text-sm">
+                            PS
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-semibold text-white">Pooja Sharma</h4>
+                            <span class="text-xs text-slate-400">Sanjay Nagar Resident</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 p-8 rounded-2xl relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                            "Highly skilled professional. Took great care of my dental scaling and gave insightful preventive advice. Recommended to all my family members."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800/60">
+                        <div class="w-10 h-10 rounded-full bg-pink-500/20 text-pink-400 font-bold flex items-center justify-center text-sm">
+                            AM
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-semibold text-white">Amit Verma</h4>
+                            <span class="text-xs text-slate-400">Preventive Care Patient</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-24 relative bg-slate-950/80 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Info -->
+                <div class="lg:col-span-5">
+                    <span class="text-xs font-semibold text-cyan-400 uppercase tracking-widest block mb-2">Get In Touch</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mb-6">Connect for Appointments & Queries</h2>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-8">
+                        Whether you need a routine check-up, emergency dental consultation, or specialized dental procedure at District Combined Hospital, feel free to reach out.
+                    </p>
+
+                    <div class="space-y-6 mb-8">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-cyan-400 shrink-0">
+                                <i class="fa-solid fa-location-dot text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Clinical Location</h4>
+                                <p class="text-sm text-slate-400 mt-1">District Combined Hospital, Sanjay Nagar, Ghaziabad, UP</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-indigo-400 shrink-0">
+                                <i class="fa-solid fa-envelope text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Direct Email</h4>
+                                <p class="text-sm text-slate-400 mt-1">dr.sanskarsinghal@hospital.org</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-pink-400 shrink-0">
+                                <i class="fa-solid fa-clock text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Hospital Working Hours</h4>
+                                <p class="text-sm text-slate-400 mt-1">Mon - Sat: 9:00 AM - 4:00 PM<br>Emergency: 24/7 Hospital Desk</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Connection Tag -->
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-900 border border-slate-800 text-xs text-slate-400">
+                        <i class="fa-solid fa-link text-cyan-400"></i> Connected on: <span class="text-slate-200 font-medium">09 Sep 2026</span>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="lg:col-span-7">
+                    <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 p-8 sm:p-10 rounded-3xl">
+                        <h3 class="text-xl font-bold text-white mb-6">Send a Direct Message</h3>
+                        <form onsubmit="event.preventDefault(); alert('Message sent successfully to Dr. Sanskar Singhal!');" class="space-y-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Full Name</label>
+                                    <input type="text" required placeholder="John Doe" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Phone / Email</label>
+                                    <input type="text" required placeholder="+91 98765 43210" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Service Required</label>
+                                <select class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-300 focus:outline-none focus:border-cyan-500 transition-colors">
+                                    <option>General Dental Check-up</option>
+                                    <option>Root Canal Treatment</option>
+                                    <option>Scaling & Polishing</option>
+                                    <option>Tooth Extraction</option>
+                                    <option>Pediatric Consultation</option>
+                                    <option>Other Enquiry</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Message or Notes</label>
+                                <textarea rows="4" required placeholder="Briefly describe your dental concern..." class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl text-base font-bold bg-gradient-to-r from-cyan-500 via-indigo-500 to-pink-500 text-white shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:scale-[1.01] transition-all duration-300">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-12 border-t border-slate-900 bg-slate-950 text-slate-500 text-sm">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-500 to-indigo-500 p-[1px]">
+                    <div class="w-full h-full bg-slate-950 rounded-[7px] flex items-center justify-center">
+                        <i class="fa-solid fa-tooth text-cyan-400 text-xs"></i>
+                    </div>
+                </div>
+                <span class="font-semibold text-slate-300">Dr. Sanskar Singhal</span>
+            </div>
+
+            <p class="text-xs text-center">
+                © 2026 Dr. Sanskar Singhal • Associate Dentist at District Combined Hospital, Sanjay Nagar.
+            </p>
+
+            <div class="flex items-center gap-4 text-slate-400 text-base">
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-solid fa-hospital"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
