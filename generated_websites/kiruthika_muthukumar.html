@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiruthika Muthukumar | Innovation & Technology Leader</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(99, 102, 241, 0.3);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card:hover {
+            border-color: rgba(99, 102, 241, 0.4);
+            box-shadow: 0 10px 30px -10px rgba(99, 102, 241, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- Background Glow Blobs -->
+    <div class="fixed top-0 left-1/4 w-96 h-96 bg-indigo-600/20 rounded-full blur-3xl pointer-events-none animate-pulse-slow"></div>
+    <div class="fixed bottom-1/3 right-1/4 w-96 h-96 bg-purple-600/15 rounded-full blur-3xl pointer-events-none animate-pulse-slow" style="animation-delay: 2s;"></div>
+
+    <!-- Navigation Bar -->
+    <header class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-tight text-white flex items-center gap-2">
+                <span class="w-9 h-9 rounded-xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center font-extrabold text-white text-lg shadow-lg shadow-indigo-500/30">KM</span>
+                <span class="gradient-text font-extrabold">Kiruthika</span>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+                <a href="#services" class="hover:text-indigo-400 transition-colors">Expertise</a>
+                <a href="#testimonials" class="hover:text-indigo-400 transition-colors">Testimonials</a>
+                <a href="#contact" class="hover:text-indigo-400 transition-colors">Contact</a>
+            </nav>
+            <a href="#contact" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold text-sm shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.02] transition-all duration-300">
+                Let's Connect
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen pt-32 pb-20 flex items-center relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Left Text Content -->
+            <div class="lg:col-span-7 space-y-8">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-300 text-xs font-semibold tracking-wide uppercase backdrop-blur-md">
+                    <span class="w-2 h-2 rounded-full bg-indigo-400 animate-ping"></span>
+                    Available for Strategic Partnerships & Leadership Roles
+                </div>
+                
+                <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-none text-white">
+                    Hi, I'm <br>
+                    <span class="gradient-text">Kiruthika Muthukumar</span>
+                </h1>
+                
+                <p class="text-lg sm:text-xl text-slate-400 max-w-2xl font-normal leading-relaxed">
+                    Technology Strategist & Innovation Pioneer. Delivering scalable enterprise solutions, digital transformation, and high-impact technology architectures for global initiatives.
+                </p>
+
+                <div class="flex flex-wrap items-center gap-4 pt-4">
+                    <a href="#contact" class="px-8 py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold shadow-xl shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.02] transition-all duration-300 flex items-center gap-3">
+                        <span>Get In Touch</span>
+                        <i class="fa-solid fa-arrow-right text-sm"></i>
+                    </a>
+                    <a href="#services" class="px-8 py-4 rounded-xl border border-slate-700 bg-slate-900/50 hover:bg-slate-800/80 text-slate-200 font-semibold transition-all duration-300 backdrop-blur-md">
+                        Explore Expertise
+                    </a>
+                </div>
+
+                <!-- Trust Badges -->
+                <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-6 max-w-lg">
+                    <div>
+                        <p class="text-3xl font-extrabold text-white">10+</p>
+                        <p class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Years Experience</p>
+                    </div>
+                    <div>
+                        <p class="text-3xl font-extrabold text-white">50+</p>
+                        <p class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Projects Led</p>
+                    </div>
+                    <div>
+                        <p class="text-3xl font-extrabold text-white">99%</p>
+                        <p class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Success Rate</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Avatar & Dynamic Frame -->
+            <div class="lg:col-span-5 flex justify-center lg:justify-end relative">
+                <div class="relative w-72 sm:w-80 lg:w-96 aspect-square">
+                    <!-- Glowing Outer Rings -->
+                    <div class="absolute -inset-4 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 opacity-70 blur-xl animate-pulse-slow"></div>
+                    <div class="absolute inset-0 rounded-full bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 p-1.5 shadow-2xl">
+                        <div class="w-full h-full rounded-full bg-slate-950 p-2 overflow-hidden">
+                            <img src="https://ui-avatars.com/api/?name=Kiruthika+Muthukumar&size=200&background=0D8ABC&color=fff&bold=true" 
+                                 alt="Kiruthika Muthukumar" 
+                                 class="w-full h-full object-cover rounded-full transform hover:scale-105 transition-transform duration-500">
+                        </div>
+                    </div>
+                    <!-- Floating Badge -->
+                    <div class="absolute -bottom-2 -left-4 glass-card px-5 py-3 rounded-2xl flex items-center gap-3 shadow-xl animate-float">
+                        <div class="w-10 h-10 rounded-xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center">
+                            <i class="fa-solid fa-award text-lg"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400">Industry Leader</p>
+                            <p class="text-sm font-bold text-white">Top Tech Talent</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 relative z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Industry Image Frame -->
+                <div class="lg:col-span-6 relative">
+                    <div class="relative rounded-3xl overflow-hidden glass-card p-2 group">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" 
+                             alt="Professional Collaboration" 
+                             class="rounded-2xl w-full object-cover h-96 group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <p class="text-sm text-indigo-300 font-semibold uppercase tracking-wider">Transformative Tech Solutions</p>
+                            <p class="text-xl font-bold text-white mt-1">Building Future-Ready Platforms</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-purple-500/30 bg-purple-500/10 text-purple-300 text-xs font-semibold uppercase">
+                        About Kiruthika
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
+                        Driving Impact Through <span class="gradient-text">Visionary Leadership</span> & Technical Excellence
+                    </h2>
+                    <p class="text-slate-400 leading-relaxed">
+                        With a passionate commitment to digital excellence, Kiruthika Muthukumar combines strategic vision with deep technical acumen. Helping organizations scale, streamline complex workflows, and innovate with confidence.
+                    </p>
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold">Strategic Technology Consulting</h4>
+                                <p class="text-sm text-slate-400">Aligning tech initiatives with modern business growth objectives.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold">Scalable Infrastructure & Architecture</h4>
+                                <p class="text-sm text-slate-400">Designing high-performance, resilient modern system architectures.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-lg bg-pink-500/10 text-pink-400 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold">Cross-Functional Team Leadership</h4>
+                                <p class="text-sm text-slate-400">Fostering innovative cultures and delivering products on schedule.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services" class="py-24 bg-slate-900/40 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-300 text-xs font-semibold uppercase">
+                    Core Capabilities
+                </div>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white">
+                    Specialized Competencies & <span class="gradient-text">Services</span>
+                </h2>
+                <p class="text-slate-400 text-base sm:text-lg">
+                    Tailored solutions designed to solve critical technology challenges and drive modern operations forward.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-indigo-500 to-purple-500 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-indigo-500/30 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Custom Software Architecture</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        End-to-end design and realization of robust software platforms tailored to complex business demands.
+                    </p>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-purple-500 to-pink-500 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-purple-500/30 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-cloud font-bold"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Cloud Strategy & DevOps</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Optimizing cloud deployments for seamless scaling, maximum efficiency, and rock-solid reliability.
+                    </p>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-pink-500 to-rose-500 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-pink-500/30 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Digital Leadership & Innovation</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Guiding cross-functional engineering teams to implement high-converting tech strategies.
+                    </p>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-indigo-500 to-teal-500 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-teal-500/30 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Security & Quality Assurance</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Implementing best-in-class security standards and continuous testing protocols.
+                    </p>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-purple-500 to-indigo-500 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-indigo-500/30 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-diagram-project"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Product Roadmap & Management</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Translating business vision into actionable, phased technical roadmaps that deliver value early.
+                    </p>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-pink-500 to-indigo-500 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-pink-500/30 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-rocket"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Enterprise Optimization</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Refactoring legacy frameworks and introducing state-of-the-art tools for peak operation speed.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Endorsements Section -->
+    <section id="testimonials" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-pink-500/30 bg-pink-500/10 text-pink-300 text-xs font-semibold uppercase">
+                    Endorsements
+                </div>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white">
+                    What Executive Partners <span class="gradient-text">Say</span>
+                </h2>
+                <p class="text-slate-400">
+                    Trusted by stakeholders and engineering teams for delivering exceptional results.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                            "Kiruthika's technical vision and ability to execute complex projects seamlessly transformed our operational infrastructure. Exceptional professionalism!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4 pt-4 border-t border-slate-800">
+                        <img src="https://ui-avatars.com/api/?name=Sarah+Jenkins&background=6366f1&color=fff" alt="Sarah Jenkins" class="w-12 h-12 rounded-full">
+                        <div>
+                            <h4 class="text-white font-bold text-sm">Sarah Jenkins</h4>
+                            <p class="text-xs text-slate-400">VP of Technology</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                            "Working with Kiruthika Muthukumar was an absolute highlight. Deep strategic expertise paired with outstanding problem-solving capability."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4 pt-4 border-t border-slate-800">
+                        <img src="https://ui-avatars.com/api/?name=David+Chen&background=a855f7&color=fff" alt="David Chen" class="w-12 h-12 rounded-full">
+                        <div>
+                            <h4 class="text-white font-bold text-sm">David Chen</h4>
+                            <p class="text-xs text-slate-400">Director of Digital Strategy</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                            "Kiruthika consistently delivers software excellence ahead of deadlines. Her leadership brought clarity and momentum to our technical teams."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4 pt-4 border-t border-slate-800">
+                        <img src="https://ui-avatars.com/api/?name=Elena+Rostova&background=ec4899&color=fff" alt="Elena Rostova" class="w-12 h-12 rounded-full">
+                        <div>
+                            <h4 class="text-white font-bold text-sm">Elena Rostova</h4>
+                            <p class="text-xs text-slate-400">Head of Operations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Direct Details Section -->
+    <section id="contact" class="py-24 relative z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="glass-card rounded-3xl p-8 sm:p-12 lg:p-16 relative overflow-hidden">
+                <!-- Inner glow background -->
+                <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-indigo-500/20 rounded-full blur-3xl"></div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 relative z-10">
+                    
+                    <!-- Left Contact Info -->
+                    <div class="lg:col-span-5 space-y-8">
+                        <div>
+                            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-300 text-xs font-semibold uppercase mb-4">
+                                Get In Touch
+                            </div>
+                            <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
+                                Let's Build Something <span class="gradient-text">Extraordinary</span>
+                            </h2>
+                            <p class="text-slate-400 mt-4 text-sm leading-relaxed">
+                                Ready to take your next technology initiative to new heights? Reach out directly or complete the form to initiate a consultation.
+                            </p>
+                        </div>
+
+                        <div class="space-y-6">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center text-lg">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400 uppercase font-medium">Direct Email</p>
+                                    <p class="text-white font-semibold">contact@kiruthikamuthukumar.com</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center text-lg">
+                                    <i class="fa-solid fa-calendar-check"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400 uppercase font-medium">Network Connection</p>
+                                    <p class="text-white font-semibold">Connected 08 Sep 2026</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-pink-500/10 border border-pink-500/20 text-pink-400 flex items-center justify-center text-lg">
+                                    <i class="fa-solid fa-globe"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400 uppercase font-medium">Location</p>
+                                    <p class="text-white font-semibold">Global / Remote Available</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Links -->
+                        <div class="pt-6 border-t border-slate-800 flex items-center gap-4">
+                            <a href="#" class="w-10 h-10 rounded-lg bg-slate-900 border border-slate-800 text-slate-400 hover:text-white hover:border-indigo-500/50 flex items-center justify-center transition-all">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-lg bg-slate-900 border border-slate-800 text-slate-400 hover:text-white hover:border-indigo-500/50 flex items-center justify-center transition-all">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-lg bg-slate-900 border border-slate-800 text-slate-400 hover:text-white hover:border-indigo-500/50 flex items-center justify-center transition-all">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right Form -->
+                    <div class="lg:col-span-7 bg-slate-950/60 p-8 rounded-2xl border border-slate-800">
+                        <form onsubmit="event.preventDefault(); alert('Thank you for your message! Kiruthika will get back to you shortly.');" class="space-y-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Name</label>
+                                    <input type="text" placeholder="John Doe" required class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Email</label>
+                                    <input type="email" placeholder="john@company.com" required class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Subject</label>
+                                <input type="text" placeholder="Strategic Collaboration" required class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Message</label>
+                                <textarea rows="4" placeholder="Share project details or potential alignment opportunities..." required class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.01] transition-all duration-300">
+                                Send Message <i class="fa-solid fa-paper-plane ml-2 text-sm"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-900 bg-slate-950 text-slate-500 text-sm text-center">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© 2026 Kiruthika Muthukumar. All rights reserved.</p>
+            <p class="text-xs">Designed with precision & innovation.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
