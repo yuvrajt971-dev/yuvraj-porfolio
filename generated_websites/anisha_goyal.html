@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anisha Goyal | Analyst & Strategic Advisor</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            cyan: '#0D8ABC',
+                            indigo: '#6366f1',
+                            purple: '#a855f7',
+                        }
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-mesh {
+            background-image: 
+                radial-gradient(at 20% 20%, rgba(13, 138, 188, 0.15) 0px, transparent 50%),
+                radial-gradient(at 80% 0%, rgba(168, 85, 247, 0.15) 0px, transparent 50%),
+                radial-gradient(at 50% 80%, rgba(99, 102, 241, 0.15) 0px, transparent 50%);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white glow-mesh min-h-screen flex flex-col justify-between">
+
+    <!-- NAVIGATION BAR -->
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
+                    AG
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-lg tracking-tight group-hover:text-cyan-400 transition-colors">Anisha Goyal</span>
+                    <span class="text-xs text-slate-400">Analyst @ Vedam Advisors</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-cyan-400 transition-colors">Expertise</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Endorsements</a>
+            </nav>
+
+            <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-white bg-gradient-to-r from-cyan-500 via-indigo-600 to-purple-600 rounded-full hover:shadow-lg hover:shadow-cyan-500/25 hover:scale-[1.02] transition-all duration-300">
+                Get in Touch
+            </a>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="flex-grow pt-20">
+        
+        <!-- HERO SECTION -->
+        <section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden py-20 px-6">
+            <!-- Background Glow Orbs -->
+            <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute bottom-10 right-10 w-[400px] h-[400px] bg-purple-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+                
+                <!-- Left Column Text -->
+                <div class="lg:col-span-7 text-center lg:text-left space-y-8">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 text-xs font-semibold text-cyan-400 shadow-inner">
+                        <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                        Vedam Advisors • Financial & Strategic Analyst
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
+                        Transforming Complex <br class="hidden sm:inline">
+                        <span class="bg-gradient-to-r from-cyan-400 via-indigo-400 to-purple-400 bg-clip-text text-transparent">
+                            Data into High-Impact
+                        </span> Strategic Growth
+                    </h1>
+
+                    <p class="text-slate-400 text-lg sm:text-xl max-w-2xl font-light leading-relaxed mx-auto lg:mx-0">
+                        Specializing in quantitative valuation, market intelligence, structured deal analysis, and strategic financial advisory for high-stakes corporate growth.
+                    </p>
+
+                    <!-- Trust Badges & Metrics -->
+                    <div class="grid grid-cols-3 gap-4 pt-4 border-t border-slate-800/80 max-w-xl mx-auto lg:mx-0">
+                        <div>
+                            <p class="text-2xl font-bold text-white">Advisory</p>
+                            <p class="text-xs text-slate-400 mt-1">Vedam Advisors</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-bold text-white">Precision</p>
+                            <p class="text-xs text-slate-400 mt-1">Quantitative Rigor</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-bold text-white">Strategic</p>
+                            <p class="text-xs text-slate-400 mt-1">Growth & Insights</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 text-center font-semibold text-white bg-gradient-to-r from-cyan-500 via-indigo-600 to-purple-600 rounded-xl shadow-lg shadow-cyan-500/20 hover:scale-105 hover:shadow-cyan-500/40 transition-all duration-300">
+                            Connect With Me
+                        </a>
+                        <a href="#expertise" class="w-full sm:w-auto px-8 py-4 text-center font-semibold text-slate-300 bg-slate-900/80 border border-slate-800 rounded-xl hover:bg-slate-800 hover:text-white transition-all duration-300">
+                            View Expertise
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column Avatar Frame -->
+                <div class="lg:col-span-5 flex justify-center relative">
+                    <div class="relative group">
+                        <!-- Outer Glow Ring -->
+                        <div class="absolute -inset-1.5 bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 rounded-full blur-xl opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse-slow"></div>
+                        
+                        <!-- Glowing Double-Gradient Frame -->
+                        <div class="relative p-2.5 rounded-full bg-gradient-to-tr from-cyan-500 via-purple-500 to-indigo-500">
+                            <div class="p-2 rounded-full bg-slate-950">
+                                <img src="https://ui-avatars.com/api/?name=Anisha+Goyal&size=200&background=0D8ABC&color=fff&bold=true" 
+                                     alt="Anisha Goyal" 
+                                     class="w-56 h-56 sm:w-64 sm:h-64 rounded-full object-cover shadow-2xl">
+                            </div>
+                        </div>
+
+                        <!-- Floating Stat Badges -->
+                        <div class="absolute -bottom-4 -left-6 bg-slate-900/90 backdrop-blur-xl border border-slate-800 p-3.5 rounded-2xl shadow-xl flex items-center gap-3 animate-float">
+                            <div class="w-10 h-10 rounded-xl bg-cyan-500/20 flex items-center justify-center text-cyan-400">
+                                <i class="fa-solid fa-chart-line text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Core Focus</p>
+                                <p class="text-sm font-bold text-slate-100">Financial Analysis</p>
+                            </div>
+                        </div>
+
+                        <div class="absolute -top-4 -right-4 bg-slate-900/90 backdrop-blur-xl border border-slate-800 p-3.5 rounded-2xl shadow-xl flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-purple-500/20 flex items-center justify-center text-purple-400">
+                                <i class="fa-solid fa-building-columns text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Organization</p>
+                                <p class="text-sm font-bold text-slate-100">Vedam Advisors</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ABOUT & EXPERTISE SECTION -->
+        <section id="about" class="py-24 px-6 border-t border-slate-800/50 bg-slate-950/50">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- Industry Image with Glass Overlay -->
+                    <div class="lg:col-span-5 relative">
+                        <div class="relative rounded-3xl overflow-hidden border border-slate-800 group">
+                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Financial Advisory Team" 
+                                 class="w-full h-[420px] object-cover group-hover:scale-105 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+                            
+                            <div class="absolute bottom-6 left-6 right-6 p-6 bg-slate-900/80 backdrop-blur-xl border border-slate-800 rounded-2xl">
+                                <p class="text-xs text-cyan-400 font-semibold tracking-wider uppercase">Strategic Advisory</p>
+                                <p class="text-lg font-bold text-white mt-1">Precision Analytics for Growth</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- About Text Content -->
+                    <div class="lg:col-span-7 space-y-6">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 text-xs font-semibold">
+                            About Anisha Goyal
+                        </div>
+
+                        <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">
+                            Elevating Financial Advisory at <span class="bg-gradient-to-r from-cyan-400 to-indigo-400 bg-clip-text text-transparent">Vedam Advisors</span>
+                        </h2>
+
+                        <p class="text-slate-400 leading-relaxed text-base sm:text-lg">
+                            As an Analyst at Vedam Advisors, Anisha combines deep market intelligence with robust financial modeling to help corporate clients navigate pivotal investment strategies, valuations, and strategic positioning.
+                        </p>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-5 rounded-2xl hover:border-cyan-500/50 transition-all duration-300">
+                                <div class="w-10 h-10 rounded-lg bg-cyan-500/10 flex items-center justify-center text-cyan-400 mb-3">
+                                    <i class="fa-solid fa-calculator"></i>
+                                </div>
+                                <h3 class="font-bold text-white text-base">Valuation & Modeling</h3>
+                                <p class="text-xs text-slate-400 mt-1">Developing robust financial models to forecast growth and evaluate market opportunities.</p>
+                            </div>
+
+                            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-5 rounded-2xl hover:border-purple-500/50 transition-all duration-300">
+                                <div class="w-10 h-10 rounded-lg bg-purple-500/10 flex items-center justify-center text-purple-400 mb-3">
+                                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                                </div>
+                                <h3 class="font-bold text-white text-base">Market Research</h3>
+                                <p class="text-xs text-slate-400 mt-1">Extracting actionable trends from industry datasets to drive client recommendations.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES GRID -->
+        <section id="services" class="py-24 px-6 border-t border-slate-800/50">
+            <div class="max-w-7xl mx-auto space-y-16">
+                
+                <div class="text-center max-w-2xl mx-auto space-y-4">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-400 text-xs font-semibold">
+                        Core Competencies
+                    </div>
+                    <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight">
+                        Advisory Services & Analytical Expertise
+                    </h2>
+                    <p class="text-slate-400 text-base sm:text-lg">
+                        Delivering end-to-end analytical solutions tailored for institutional decision-making.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Service Card 1 -->
+                    <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 p-8 rounded-2xl group hover:-translate-y-1">
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center text-white text-xl mb-6 shadow-lg shadow-cyan-500/20 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-chart-pie"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Financial Modeling</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Crafting dynamic cash flow analyses, scenario modeling, and predictive financial projections for strategic planning.
+                        </p>
+                    </div>
+
+                    <!-- Service Card 2 -->
+                    <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 p-8 rounded-2xl group hover:-translate-y-1">
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-indigo-500 to-purple-600 flex items-center justify-center text-white text-xl mb-6 shadow-lg shadow-indigo-500/20 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-handshake"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">M&A Advisory Support</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Providing quantitative due diligence, target company profiling, and valuation synergies for transactions.
+                        </p>
+                    </div>
+
+                    <!-- Service Card 3 -->
+                    <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 transition-all duration-300 p-8 rounded-2xl group hover:-translate-y-1">
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-purple-500 to-pink-600 flex items-center justify-center text-white text-xl mb-6 shadow-lg shadow-purple-500/20 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Market Intelligence</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Conducting deep sector research, competitor benchmarking, and macroeconomic landscape assessments.
+                        </p>
+                    </div>
+
+                    <!-- Service Card 4 -->
+                    <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 p-8 rounded-2xl group hover:-translate-y-1">
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-cyan-600 to-teal-500 flex items-center justify-center text-white text-xl mb-6 shadow-lg shadow-teal-500/20 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Risk Assessment</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Identifying systemic and operational risk factors to safeguard investment decisions and optimize capital allocation.
+                        </p>
+                    </div>
+
+                    <!-- Service Card 5 -->
+                    <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 p-8 rounded-2xl group hover:-translate-y-1">
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-indigo-600 to-cyan-500 flex items-center justify-center text-white text-xl mb-6 shadow-lg shadow-indigo-500/20 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Portfolio Performance</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Evaluating portfolio health, key KPIs, and growth metrics to deliver actionable executive reporting.
+                        </p>
+                    </div>
+
+                    <!-- Service Card 6 -->
+                    <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 transition-all duration-300 p-8 rounded-2xl group hover:-translate-y-1">
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-purple-600 to-indigo-500 flex items-center justify-center text-white text-xl mb-6 shadow-lg shadow-purple-500/20 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-arrows-to-dot"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Strategic Valuation</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Utilizing DCF, precedent transactions, and comparable company analysis to deliver precise company valuations.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS SECTION -->
+        <section id="testimonials" class="py-24 px-6 border-t border-slate-800/50 bg-slate-950/50">
+            <div class="max-w-7xl mx-auto space-y-16">
+                
+                <div class="text-center max-w-2xl mx-auto space-y-4">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs font-semibold">
+                        Peer & Client Feedback
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">
+                        Endorsed for Excellence & Precision
+                    </h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <!-- Quote 1 -->
+                    <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl flex flex-col justify-between hover:border-cyan-500/40 transition-all">
+                        <div class="space-y-4">
+                            <div class="flex text-amber-400 gap-1 text-sm">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-300 text-sm leading-relaxed italic">
+                                "Anisha’s analytical rigor and attention to detail during financial valuation assessments have been instrumental to our decision-making process at Vedam Advisors."
+                            </p>
+                        </div>
+                        <div class="pt-6 mt-6 border-t border-slate-800/60 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 font-bold flex items-center justify-center text-xs">
+                                VP
+                            </div>
+                            <div>
+                                <p class="text-sm font-bold text-white">Senior Partner</p>
+                                <p class="text-xs text-slate-400">Vedam Advisors</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quote 2 -->
+                    <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl flex flex-col justify-between hover:border-indigo-500/40 transition-all">
+                        <div class="space-y-4">
+                            <div class="flex text-amber-400 gap-1 text-sm">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-300 text-sm leading-relaxed italic">
+                                "Her market intelligence reports are consistently clear, deeply researched, and directly actionable. A standout analytical talent!"
+                            </p>
+                        </div>
+                        <div class="pt-6 mt-6 border-t border-slate-800/60 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 font-bold flex items-center justify-center text-xs">
+                                CM
+                            </div>
+                            <div>
+                                <p class="text-sm font-bold text-white">Corporate Client</p>
+                                <p class="text-xs text-slate-400">Strategic Advisory</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quote 3 -->
+                    <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl flex flex-col justify-between hover:border-purple-500/40 transition-all">
+                        <div class="space-y-4">
+                            <div class="flex text-amber-400 gap-1 text-sm">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-300 text-sm leading-relaxed italic">
+                                "Anisha combines speed with quantitative precision. Her financial models set the standard for quality across our advisory engagements."
+                            </p>
+                        </div>
+                        <div class="pt-6 mt-6 border-t border-slate-800/60 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 font-bold flex items-center justify-center text-xs">
+                                Lead
+                            </div>
+                            <div>
+                                <p class="text-sm font-bold text-white">Advisory Team Lead</p>
+                                <p class="text-xs text-slate-400">Financial Advisory Practice</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="py-24 px-6 border-t border-slate-800/50 relative">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Info Column -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-400 text-xs font-semibold mb-4">
+                            Direct Outreach
+                        </div>
+                        <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight">
+                            Let's Connect & Collaborate
+                        </h2>
+                        <p class="text-slate-400 mt-4 leading-relaxed">
+                            Interested in strategic financial analysis, market advisory, or consulting collaboration? Send a message directly.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-4 rounded-xl flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center">
+                                <i class="fa-solid fa-building text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Current Firm</p>
+                                <p class="text-sm font-semibold text-white">Vedam Advisors</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-4 rounded-xl flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center">
+                                <i class="fa-solid fa-user-tie text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Position</p>
+                                <p class="text-sm font-semibold text-white">Analyst</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-4 rounded-xl flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center">
+                                <i class="fa-solid fa-calendar-check text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Professional Network Since</p>
+                                <p class="text-sm font-semibold text-white">07 Sep 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Column -->
+                <div class="lg:col-span-7">
+                    <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 sm:p-10 rounded-3xl shadow-2xl relative">
+                        <form onsubmit="event.preventDefault(); alert('Thank you, Anisha Goyal! Your message has been routed successfully.');" class="space-y-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2 uppercase tracking-wider">Your Name</label>
+                                    <input type="text" required placeholder="John Doe" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3.5 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2 uppercase tracking-wider">Email Address</label>
+                                    <input type="email" required placeholder="john@example.com" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3.5 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2 uppercase tracking-wider">Subject</label>
+                                <input type="text" required placeholder="Financial Advisory Inquiry / Growth Consultation" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3.5 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2 uppercase tracking-wider">Message</label>
+                                <textarea rows="4" required placeholder="Describe your inquiry or potential strategic collaboration..." class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3.5 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm resize-none"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 text-center font-bold text-white bg-gradient-to-r from-cyan-500 via-indigo-600 to-purple-600 rounded-xl shadow-lg shadow-cyan-500/20 hover:scale-[1.01] hover:shadow-cyan-500/40 transition-all duration-300">
+                                Send Advisory Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-slate-800/60 bg-slate-950 py-12 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6 text-sm text-slate-400">
+            <div class="flex items-center gap-3">
+                <div class="w-7 h-7 rounded-lg bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center text-white font-bold text-xs">
+                    AG
+                </div>
+                <span>© 2026 Anisha Goyal. Analyst at Vedam Advisors. All rights reserved.</span>
+            </div>
+
+            <div class="flex items-center gap-6">
+                <a href="https://linkedin.com" target="_blank" class="hover:text-cyan-400 transition-colors text-base"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://twitter.com" target="_blank" class="hover:text-cyan-400 transition-colors text-base"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors text-base"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
