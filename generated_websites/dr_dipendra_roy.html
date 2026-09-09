@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Dipendra Roy | Subject Matter Expert - PhysicsWallah</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f5ff',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            700: '#4338ca',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(99, 102, 241, 0.3);
+        }
+        .glow-card:hover {
+            box-shadow: 0 0 30px -5px rgba(168, 85, 247, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 selection:bg-indigo-500 selection:text-white antialiased overflow-x-hidden">
+
+    <!-- Ambient Background Glows -->
+    <div class="fixed top-0 left-1/4 w-96 h-96 bg-indigo-600/20 rounded-full blur-3xl pointer-events-none -z-10 animate-pulse"></div>
+    <div class="fixed bottom-1/3 right-10 w-96 h-96 bg-purple-600/15 rounded-full blur-3xl pointer-events-none -z-10"></div>
+    <div class="fixed top-2/3 left-10 w-80 h-80 bg-pink-600/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 p-[2px]">
+                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center font-bold text-indigo-400 group-hover:bg-transparent group-hover:text-white transition-all duration-300">
+                        DR
+                    </div>
+                </div>
+                <span class="font-bold text-lg tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-200 to-slate-400">
+                    Dr. Dipendra Roy
+                </span>
+            </a>
+
+            <!-- Desktop Links -->
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-indigo-400 transition-colors">Expertise</a>
+                <a href="#services" class="hover:text-indigo-400 transition-colors">Services</a>
+                <a href="#testimonials" class="hover:text-indigo-400 transition-colors">Endorsements</a>
+                <a href="#contact" class="hover:text-indigo-400 transition-colors">Contact</a>
+            </div>
+
+            <!-- Header CTA Button -->
+            <div class="hidden md:block">
+                <a href="#contact" class="relative group inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-[1px] overflow-hidden transition-all duration-300 shadow-lg shadow-indigo-500/20 hover:shadow-indigo-500/40">
+                    <span class="px-4 py-1.5 rounded-full bg-slate-950 w-full h-full flex items-center gap-2 group-hover:bg-opacity-0 transition-all duration-300">
+                        Connect Now <i class="fa-solid fa-arrow-right text-xs transition-transform group-hover:translate-x-1"></i>
+                    </span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden text-slate-300 hover:text-white focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900/95 border-b border-slate-800 px-6 py-4 space-y-3">
+            <a href="#about" class="block text-slate-300 hover:text-indigo-400 py-1">About</a>
+            <a href="#expertise" class="block text-slate-300 hover:text-indigo-400 py-1">Expertise</a>
+            <a href="#services" class="block text-slate-300 hover:text-indigo-400 py-1">Services</a>
+            <a href="#testimonials" class="block text-slate-300 hover:text-indigo-400 py-1">Endorsements</a>
+            <a href="#contact" class="block text-slate-300 hover:text-indigo-400 py-1">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-24 px-6 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
+        <div class="flex-1 space-y-6 text-center md:text-left">
+            <!-- Badge -->
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 text-xs font-semibold tracking-wide">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                PW (PhysicsWallah) • Subject Matter Expert
+            </div>
+
+            <!-- Main Heading -->
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
+                Architecting <span class="bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400">Academic Excellence</span> & Educational Innovation
+            </h1>
+
+            <p class="text-slate-400 text-lg sm:text-xl max-w-2xl font-light leading-relaxed">
+                Empowering millions of aspiring learners with deep subject mastery, rigorous pedagogical strategies, and world-class educational content at PhysicsWallah.
+            </p>
+
+            <!-- CTA Group -->
+            <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 pt-4">
+                <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.02] transition-all duration-300 text-center">
+                    Initiate Collaboration <i class="fa-solid fa-paper-plane ml-2"></i>
+                </a>
+                <a href="#expertise" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900/80 hover:bg-slate-800 text-slate-200 border border-slate-700/80 font-semibold transition-all duration-300 text-center">
+                    View Academic Domain
+                </a>
+            </div>
+
+            <!-- Quick Stats Badges -->
+            <div class="pt-8 grid grid-cols-3 gap-4 border-t border-slate-800/80">
+                <div class="text-center md:text-left">
+                    <div class="text-2xl sm:text-3xl font-bold text-white">100K+</div>
+                    <div class="text-xs text-slate-400 uppercase tracking-wider mt-1">Students Impacted</div>
+                </div>
+                <div class="text-center md:text-left">
+                    <div class="text-2xl sm:text-3xl font-bold text-white">SME</div>
+                    <div class="text-xs text-slate-400 uppercase tracking-wider mt-1">Pedagogical Lead</div>
+                </div>
+                <div class="text-center md:text-left">
+                    <div class="text-2xl sm:text-3xl font-bold text-white">PW</div>
+                    <div class="text-xs text-slate-400 uppercase tracking-wider mt-1">Academic Quality</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Glowing Double-Gradient Avatar Frame -->
+        <div class="relative flex justify-center items-center">
+            <div class="absolute -inset-4 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 opacity-70 blur-xl animate-pulse"></div>
+            <div class="relative p-2 rounded-full bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500">
+                <div class="p-2 rounded-full bg-slate-950">
+                    <img src="https://ui-avatars.com/api/?name=Dr.+Dipendra+Roy&size=200&background=0D8ABC&color=fff&bold=true" 
+                         alt="Dr. Dipendra Roy" 
+                         class="w-48 h-48 sm:w-64 sm:h-64 rounded-full object-cover shadow-2xl">
+                </div>
+            </div>
+            <!-- Floating Badge Overlay -->
+            <div class="absolute -bottom-2 -right-2 bg-slate-900/90 backdrop-blur-md border border-slate-700 text-slate-100 px-4 py-2 rounded-2xl flex items-center gap-3 shadow-xl">
+                <div class="p-2 bg-indigo-500/20 text-indigo-400 rounded-lg">
+                    <i class="fa-solid fa-graduation-cap text-lg"></i>
+                </div>
+                <div class="text-left">
+                    <p class="text-xs text-slate-400">Designation</p>
+                    <p class="text-xs font-bold text-white">Subject Matter Expert</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-24 px-6 max-w-7xl mx-auto border-t border-slate-800/50">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <!-- Image Showcase -->
+            <div class="relative group">
+                <div class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-indigo-500 to-purple-600 opacity-30 group-hover:opacity-60 transition duration-500 blur"></div>
+                <div class="relative overflow-hidden rounded-2xl border border-slate-800 bg-slate-900">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" 
+                         alt="Collaboration and Excellence" 
+                         class="w-full h-96 object-cover object-center group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                    <div class="absolute bottom-6 left-6 right-6">
+                        <span class="text-indigo-400 text-xs font-semibold tracking-widest uppercase">Academic Leadership</span>
+                        <h3 class="text-xl font-bold text-white mt-1">Fostering Deep Conceptual Clarity</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Column -->
+            <div class="space-y-6">
+                <div class="inline-flex items-center gap-2 text-indigo-400 text-sm font-semibold tracking-wider uppercase">
+                    <i class="fa-solid fa-user-check"></i> About Dr. Dipendra Roy
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold leading-tight">
+                    Transforming Complex Science & Pedagogy into Scalable Educational Models
+                </h2>
+                <p class="text-slate-300 leading-relaxed font-light">
+                    As a dedicated <strong class="text-white font-semibold">Subject Matter Expert at PhysicsWallah (PW)</strong>, Dr. Dipendra Roy bridges the gap between high-level academic theory and intuitive student comprehension. Driven by precision, empirical rigor, and dynamic teaching strategies, Dr. Roy crafts educational experiences that resonate with competitive exam aspirants nationwide.
+                </p>
+
+                <!-- Skill Pills -->
+                <div id="expertise" class="pt-2">
+                    <h4 class="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-3">Core Expertise & Capabilities</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3.5 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 text-xs font-medium hover:border-indigo-500/50 transition-colors">Curriculum Architecture</span>
+                        <span class="px-3.5 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 text-xs font-medium hover:border-indigo-500/50 transition-colors">Advanced Subject Assessment</span>
+                        <span class="px-3.5 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 text-xs font-medium hover:border-indigo-500/50 transition-colors">Pedagogical Frameworks</span>
+                        <span class="px-3.5 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 text-xs font-medium hover:border-indigo-500/50 transition-colors">Interactive Content Strategy</span>
+                        <span class="px-3.5 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-slate-300 text-xs font-medium hover:border-indigo-500/50 transition-colors">Academic Mentorship</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid Section -->
+    <section id="services" class="py-24 px-6 max-w-7xl mx-auto border-t border-slate-800/50">
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+            <span class="text-indigo-400 text-sm font-semibold tracking-wider uppercase">Strategic Impact</span>
+            <h2 class="text-3xl sm:text-5xl font-bold tracking-tight">Key Educational Pillars</h2>
+            <p class="text-slate-400 text-lg">Delivering academic rigor and innovative solutions designed for modern learning ecosystems.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Service Card 1 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-indigo-500/50 transition-all duration-300 group glow-card">
+                <div class="w-14 h-14 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300">
+                    <i class="fa-solid fa-book-open-reader"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Curriculum Engineering</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Designing structured, high-yield syllabus modules aligned with nationwide competitive standards to maximize student retention and scoring potential.
+                </p>
+            </div>
+
+            <!-- Service Card 2 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-purple-500/50 transition-all duration-300 group glow-card">
+                <div class="w-14 h-14 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-purple-500 group-hover:text-white transition-all duration-300">
+                    <i class="fa-solid fa-atom"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">SME Pedagogy & Research</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Deconstructing complex physical and scientific principles into accessible, step-by-step methodologies engineered for competitive entrance exams.
+                </p>
+            </div>
+
+            <!-- Service Card 3 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-pink-500/50 transition-all duration-300 group glow-card">
+                <div class="w-14 h-14 rounded-xl bg-pink-500/10 border border-pink-500/20 text-pink-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-pink-500 group-hover:text-white transition-all duration-300">
+                    <i class="fa-solid fa-vial-circle-check"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Assessment Design</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Developing comprehensive evaluation systems, diagnostic tests, and mock examination papers that mirror real testing environments.
+                </p>
+            </div>
+
+            <!-- Service Card 4 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-indigo-500/50 transition-all duration-300 group glow-card">
+                <div class="w-14 h-14 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300">
+                    <i class="fa-solid fa-laptop-code"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">EdTech Content Integration</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Optimizing educational materials for dynamic digital platforms, ensuring seamless mobile and desktop learner engagement.
+                </p>
+            </div>
+
+            <!-- Service Card 5 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-purple-500/50 transition-all duration-300 group glow-card">
+                <div class="w-14 h-14 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-purple-500 group-hover:text-white transition-all duration-300">
+                    <i class="fa-solid fa-users-gear"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Educator Training</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Mentoring junior subject experts and educators in delivery techniques, active learning strategies, and content review standards.
+                </p>
+            </div>
+
+            <!-- Service Card 6 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-pink-500/50 transition-all duration-300 group glow-card">
+                <div class="w-14 h-14 rounded-xl bg-pink-500/10 border border-pink-500/20 text-pink-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-pink-500 group-hover:text-white transition-all duration-300">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Academic Growth Analytics</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Utilizing student performance feedback loops to continuously refine content quality and pedagogical approach.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Endorsements Section -->
+    <section id="testimonials" class="py-24 px-6 max-w-7xl mx-auto border-t border-slate-800/50">
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+            <span class="text-purple-400 text-sm font-semibold tracking-wider uppercase">Endorsements</span>
+            <h2 class="text-3xl sm:text-5xl font-bold tracking-tight">Academic & Professional Feedback</h2>
+            <p class="text-slate-400 text-lg">Recognized for subject mastery and commitment to learner success.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Testimonial 1 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl flex flex-col justify-between">
+                <div class="space-y-4">
+                    <div class="flex text-amber-400 text-sm gap-1">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed italic">
+                        "Dr. Dipendra Roy's ability to simplify complex conceptual problems is unmatched. His curriculum designs at PW have significantly raised our academic standards."
+                    </p>
+                </div>
+                <div class="mt-8 pt-6 border-t border-slate-800/80 flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-indigo-600/30 border border-indigo-500/50 flex items-center justify-center font-bold text-indigo-300">
+                        AK
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-bold text-white">Academic Lead</h4>
+                        <p class="text-xs text-slate-400">EdTech Ecosystem</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl flex flex-col justify-between">
+                <div class="space-y-4">
+                    <div class="flex text-amber-400 text-sm gap-1">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed italic">
+                        "Extremely thorough, systematic, and dedicated to academic integrity. Working alongside Dr. Roy guarantees top-tier learning material."
+                    </p>
+                </div>
+                <div class="mt-8 pt-6 border-t border-slate-800/80 flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-purple-600/30 border border-purple-500/50 flex items-center justify-center font-bold text-purple-300">
+                        RS
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-bold text-white">Senior Content Strategist</h4>
+                        <p class="text-xs text-slate-400">PW Academic Team</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl flex flex-col justify-between">
+                <div class="space-y-4">
+                    <div class="flex text-amber-400 text-sm gap-1">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed italic">
+                        "Dr. Roy's subject matter insights helped thousands of students clear fundamental bottlenecks in physics and STEM topics easily."
+                    </p>
+                </div>
+                <div class="mt-8 pt-6 border-t border-slate-800/80 flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-pink-600/30 border border-pink-500/50 flex items-center justify-center font-bold text-pink-300">
+                        PG
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-bold text-white">Pedagogy Reviewer</h4>
+                        <p class="text-xs text-slate-400">National Testing Preparation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-6 max-w-7xl mx-auto border-t border-slate-800/50">
+        <div class="grid lg:grid-cols-2 gap-12">
+            <!-- Direct Info -->
+            <div class="space-y-8">
+                <div>
+                    <span class="text-indigo-400 text-sm font-semibold tracking-wider uppercase">Direct Connection</span>
+                    <h2 class="text-3xl sm:text-5xl font-bold tracking-tight mt-2">Let's Build Something Exceptional</h2>
+                    <p class="text-slate-400 text-lg mt-4 font-light">
+                        Interested in academic collaborations, keynote sessions, or curriculum development advisory? Reach out directly.
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="flex items-start gap-4">
+                        <div class="p-3 bg-slate-900 border border-slate-800 rounded-xl text-indigo-400">
+                            <i class="fa-solid fa-building-columns text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-sm text-slate-400">Organization</h4>
+                            <p class="text-white font-semibold">PW (PhysicsWallah)</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="p-3 bg-slate-900 border border-slate-800 rounded-xl text-purple-400">
+                            <i class="fa-solid fa-briefcase text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-sm text-slate-400">Role</h4>
+                            <p class="text-white font-semibold">Subject Matter Expert (SME)</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="p-3 bg-slate-900 border border-slate-800 rounded-xl text-pink-400">
+                            <i class="fa-solid fa-calendar-check text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-sm text-slate-400">Network Connected Since</h4>
+                            <p class="text-white font-semibold">07 Sep 2026</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form -->
+            <div class="bg-slate-900/80 border border-slate-800 rounded-3xl p-8 shadow-2xl relative">
+                <form onsubmit="event.preventDefault(); alert('Thank you, Dr. Dipendra Roy. Your message has been sent successfully!');" class="space-y-6">
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-slate-400 font-semibold mb-2">Your Full Name</label>
+                        <input type="text" placeholder="e.g. Prof. Alan Smith" required 
+                               class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-slate-200 placeholder-slate-600 focus:outline-none focus:border-indigo-500 transition-colors">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-slate-400 font-semibold mb-2">Email Address</label>
+                        <input type="email" placeholder="name@domain.com" required 
+                               class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-slate-200 placeholder-slate-600 focus:outline-none focus:border-indigo-500 transition-colors">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-slate-400 font-semibold mb-2">Subject / Collaboration Area</label>
+                        <input type="text" placeholder="Curriculum Design / Academic Advisory" required 
+                               class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-slate-200 placeholder-slate-600 focus:outline-none focus:border-indigo-500 transition-colors">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-slate-400 font-semibold mb-2">Message</label>
+                        <textarea rows="4" placeholder="Share details about your inquiry..." required 
+                                  class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-slate-200 placeholder-slate-600 focus:outline-none focus:border-indigo-500 transition-colors"></textarea>
+                    </div>
+
+                    <button type="submit" 
+                            class="w-full py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-bold tracking-wide shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.01] transition-all duration-300">
+                        Send Direct Message <i class="fa-solid fa-paper-plane ml-2"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800/80 bg-slate-950 py-12">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-indigo-500 to-pink-500 flex items-center justify-center font-bold text-xs text-white">
+                    DR
+                </div>
+                <span class="text-sm font-semibold text-slate-400">
+                    Dr. Dipendra Roy &copy; 2026. All Rights Reserved.
+                </span>
+            </div>
+
+            <div class="flex items-center space-x-6 text-slate-400">
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-brands fa-linkedin text-lg"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-solid fa-globe text-lg"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-solid fa-envelope text-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
