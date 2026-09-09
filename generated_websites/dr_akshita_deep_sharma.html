@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Akshita Deep Sharma | Associate Dentist</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(99, 102, 241, 0.3);
+        }
+        .glow-avatar {
+            box-shadow: 0 0 35px 5px rgba(168, 85, 247, 0.4);
+        }
+        .custom-gradient-text {
+            background: linear-gradient(135deg, #818cf8 0%, #c084fc 50%, #f472b6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .custom-gradient-bg {
+            background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- Background Glow Elements -->
+    <div class="fixed top-0 left-1/4 w-96 h-96 bg-indigo-600/20 rounded-full blur-[128px] pointer-events-none z-0"></div>
+    <div class="fixed bottom-1/3 right-1/4 w-96 h-96 bg-purple-600/20 rounded-full blur-[128px] pointer-events-none z-0"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 rounded-xl custom-gradient-bg flex items-center justify-center font-bold text-white text-xl shadow-lg group-hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-[# tooth] fa-tooth"></i>
+                </div>
+                <span class="text-xl font-bold tracking-tight text-white group-hover:text-indigo-400 transition-colors">
+                    Dr. Akshita <span class="custom-gradient-text">Sharma</span>
+                </span>
+            </a>
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-indigo-400 transition-colors">About & Expertise</a>
+                <a href="#services" class="hover:text-indigo-400 transition-colors">Specialties</a>
+                <a href="#clinic" class="hover:text-indigo-400 transition-colors">Clinic Showcase</a>
+                <a href="#testimonials" class="hover:text-indigo-400 transition-colors">Endorsements</a>
+            </div>
+            <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-white rounded-full custom-gradient-bg hover:opacity-95 shadow-md hover:shadow-indigo-500/20 transition-all">
+                Book Consultation
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-20 md:pt-48 md:pb-32 overflow-hidden z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Text Content -->
+                <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-950/60 border border-indigo-800/50 text-indigo-300 text-xs font-semibold tracking-wide uppercase backdrop-blur-md">
+                        <span class="w-2 h-2 rounded-full bg-indigo-400 animate-pulse"></span>
+                        Associate Dentist • Oro Dental Clinic
+                    </div>
+                    <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight">
+                        Crafting Healthy, <br class="hidden sm:inline" />
+                        <span class="custom-gradient-text">Radiant Smiles</span> with Precision Care.
+                    </h1>
+                    <p class="text-lg text-slate-400 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        Dedicated to excellence in general, aesthetic, and implant dentistry. Combining advanced clinical protocols with a comforting patient experience at Oro Dental Clinic and Implant Centre.
+                    </p>
+                    
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full custom-gradient-bg font-semibold text-white shadow-lg hover:shadow-indigo-500/30 hover:scale-[1.02] transition-all duration-300 text-center">
+                            Schedule Appointment <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                        </a>
+                        <a href="#about" class="w-full sm:w-auto px-8 py-4 rounded-full bg-slate-900 border border-slate-800 hover:border-slate-700 text-slate-300 font-semibold hover:bg-slate-850 transition-all duration-300 text-center">
+                            Explore Profile
+                        </a>
+                    </div>
+
+                    <!-- Trust Badges -->
+                    <div class="pt-6 border-t border-slate-900 grid grid-cols-3 gap-4 text-center lg:text-left">
+                        <div>
+                            <p class="text-2xl font-bold text-white">100%</p>
+                            <p class="text-xs text-slate-400 mt-1">Patient Focus</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-bold text-white">Modern</p>
+                            <p class="text-xs text-slate-400 mt-1">Implant Tech</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-bold text-white">Comprehensive</p>
+                            <p class="text-xs text-slate-400 mt-1">Oral Health</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Avatar Frame Section -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative group">
+                        <!-- Dual Glowing Rings -->
+                        <div class="absolute -inset-1 rounded-full custom-gradient-bg opacity-70 blur-xl group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+                        <div class="relative w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full p-2 bg-slate-900/90 border border-slate-800 backdrop-blur-xl flex items-center justify-center">
+                            <img src="https://ui-avatars.com/api/?name=Dr.+Akshita+Deep+Sharma&size=200&background=0D8ABC&color=fff&bold=true" 
+                                 alt="Dr. Akshita Deep Sharma" 
+                                 class="w-full h-full rounded-full object-cover shadow-2xl filter brightness-105">
+                        </div>
+                        
+                        <!-- Floating Badge -->
+                        <div class="absolute bottom-4 right-2 sm:right-6 bg-slate-900/90 border border-slate-800 backdrop-blur-xl p-4 rounded-2xl shadow-xl flex items-center space-x-3">
+                            <div class="w-10 h-10 rounded-full bg-teal-500/20 border border-teal-500/40 flex items-center justify-center text-teal-400">
+                                <i class="fa-solid fa-award text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Clinical Practice</p>
+                                <p class="text-sm font-bold text-white">Oro Dental Clinic</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-24 relative z-10 bg-slate-900/40">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Industry Image -->
+                <div class="lg:col-span-6 relative">
+                    <div class="relative rounded-3xl overflow-hidden border border-slate-800 bg-slate-900 group shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Modern Dental Operatory" 
+                             class="w-full h-[450px] object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <h4 class="text-lg font-bold text-white mb-1">State-of-the-Art Technology</h4>
+                            <p class="text-sm text-slate-300">Providing painless treatments and innovative dental solutions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Detail Content -->
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-indigo-400 font-semibold text-sm tracking-wider uppercase">Clinical Philosophy</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white">Committed to Transformative Dental Health & Aesthetics</h2>
+                    <p class="text-slate-400 leading-relaxed">
+                        As an Associate Dentist at <strong>Oro Dental Clinic and Implant Centre</strong>, Dr. Akshita Deep Sharma combines gentle patient care with state-of-the-art restorative and preventative techniques. 
+                    </p>
+                    <p class="text-slate-400 leading-relaxed">
+                        Whether addressing complex endodontic treatments, performing smile enhancements, or assisting in implant procedures, her mission is to deliver durable, aesthetically flawless results tailored to each unique smile.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-4 pt-4">
+                        <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-4">
+                            <i class="fa-solid fa-[# smile] fa-smile-beam text-indigo-400 text-xl mb-2"></i>
+                            <h3 class="text-white font-semibold text-sm">Patient Comfort</h3>
+                            <p class="text-xs text-slate-400 mt-1">Relaxing, gentle procedure protocols.</p>
+                        </div>
+                        <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-4">
+                            <i class="fa-solid fa-[# microchip] fa-microchip text-purple-400 text-xl mb-2"></i>
+                            <h3 class="text-white font-semibold text-sm">Advanced Implants</h3>
+                            <p class="text-xs text-slate-400 mt-1">High-precision dental replacement.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services" class="py-24 relative z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-indigo-400 font-semibold text-sm tracking-wider uppercase">Services & Expertise</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2">Comprehensive Dental Care Solutions</h2>
+                <p class="text-slate-400 mt-4">Delivering precision treatment plans leveraging modern clinical practices.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-indigo-400 transition-colors">Dental Implants</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Permanent, high-durability solutions for missing teeth restoring function and natural smile aesthetics.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">Cosmetic Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Teeth whitening, porcelain veneers, and complete smile makeovers tailored to enhance your confidence.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-pink-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-xl bg-pink-500/10 border border-pink-500/30 flex items-center justify-center text-pink-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-syringe"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-pink-400 transition-colors">Root Canal Therapy</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Gentle endodontic treatment aimed at relieving pain and preserving infected natural teeth.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-[# shield-halved] fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-indigo-400 transition-colors">Preventative Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Comprehensive oral examinations, deep cleanings, and proactive gum healthcare for long-term protection.
+                    </p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">Crowns & Bridges</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Precision-crafted restorative crowns and bridges engineered to match your natural tooth structure perfectly.
+                    </p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-pink-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-xl bg-pink-500/10 border border-pink-500/30 flex items-center justify-center text-pink-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-user-doctor"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-pink-400 transition-colors">Oral Surgery</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Safe, efficient tooth extractions and minor surgical interventions prioritizing comfort and quick healing.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Endorsements Section -->
+    <section id="testimonials" class="py-24 relative z-10 bg-slate-900/40">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-indigo-400 font-semibold text-sm tracking-wider uppercase">Patient Testimonials</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2">Endorsed by Patients & Peers</h2>
+                <p class="text-slate-400 mt-4">Real feedback from satisfied smiles treated at Oro Dental Clinic.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center space-x-1 text-amber-400 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "Dr. Akshita made my root canal treatment completely painless. She explained every step clearly and made me feel so comfortable!"
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-slate-800 flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-sm">
+                            PS
+                        </div>
+                        <div>
+                            <h4 class="text-white text-sm font-semibold">Priya Sharma</h4>
+                            <p class="text-xs text-slate-500">Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center space-x-1 text-amber-400 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "The team at Oro Dental Clinic is top notch. Dr. Akshita's attention to detail during my cosmetic whitening procedure was outstanding."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-slate-800 flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 flex items-center justify-center font-bold text-sm">
+                            RK
+                        </div>
+                        <div>
+                            <h4 class="text-white text-sm font-semibold">Rahul Verma</h4>
+                            <p class="text-xs text-slate-500">Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center space-x-1 text-amber-400 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "Extremely professional dentist with exceptional clinical skill. Highly recommend her for any implant or restorative dental consultation."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-slate-800 flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-pink-500/20 text-pink-400 flex items-center justify-center font-bold text-sm">
+                            AM
+                        </div>
+                        <div>
+                            <h4 class="text-white text-sm font-semibold">Ananya Mehta</h4>
+                            <p class="text-xs text-slate-500">Patient</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Consultation Section -->
+    <section id="contact" class="py-24 relative z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="bg-slate-900/80 border border-slate-800 rounded-3xl p-8 md:p-12 backdrop-blur-2xl shadow-2xl relative overflow-hidden">
+                <div class="absolute -right-20 -top-20 w-80 h-80 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    <!-- Left: Contact Info -->
+                    <div class="lg:col-span-5 space-y-6">
+                        <span class="text-indigo-400 font-semibold text-sm tracking-wider uppercase">Get In Touch</span>
+                        <h2 class="text-3xl font-bold text-white">Book Your Dental Consultation</h2>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Ready to transform your dental health? Reach out to schedule an appointment with Dr. Akshita Deep Sharma at Oro Dental Clinic and Implant Centre.
+                        </p>
+
+                        <div class="space-y-4 pt-4">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-indigo-400 shrink-0">
+                                    <i class="fa-solid fa-hospital"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-semibold text-sm">Practice Location</h4>
+                                    <p class="text-slate-400 text-xs mt-0.5">Oro Dental Clinic and Implant Centre</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-4">
+                                <div class="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-purple-400 shrink-0">
+                                    <i class="fa-solid fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-semibold text-sm">Working Hours</h4>
+                                    <p class="text-slate-400 text-xs mt-0.5">Mon - Sat: 10:00 AM - 7:30 PM</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-4">
+                                <div class="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-pink-400 shrink-0">
+                                    <i class="fa-solid fa-[# envelope] fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-semibold text-sm">Direct Contact</h4>
+                                    <p class="text-slate-400 text-xs mt-0.5">Available via Clinic Desk</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Form -->
+                    <div class="lg:col-span-7">
+                        <form onsubmit="event.preventDefault(); alert('Appointment request sent successfully!');" class="space-y-4">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">Full Name</label>
+                                    <input type="text" required placeholder="John Doe" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-600 focus:outline-none focus:border-indigo-500 transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">Phone Number</label>
+                                    <input type="tel" required placeholder="+1 (555) 000-0000" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-600 focus:outline-none focus:border-indigo-500 transition-colors">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Requested Treatment / Concern</label>
+                                <select class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-300 focus:outline-none focus:border-indigo-500 transition-colors">
+                                    <option>General Dental Checkup</option>
+                                    <option>Dental Implants Consultation</option>
+                                    <option>Teeth Whitening / Aesthetic</option>
+                                    <option>Root Canal Therapy</option>
+                                    <option>Other Speciality Service</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Message or Notes</label>
+                                <textarea rows="4" placeholder="Briefly describe your dental concerns or preferred date/time..." class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-600 focus:outline-none focus:border-indigo-500 transition-colors"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl custom-gradient-bg font-semibold text-white shadow-lg hover:shadow-indigo-500/30 hover:opacity-95 transition-all duration-300">
+                                Submit Consultation Request
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-slate-900 relative z-10 text-slate-500 text-sm">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© 2026 Dr. Akshita Deep Sharma. All rights reserved.</p>
+            <p class="text-xs text-slate-600">Associate Dentist at Oro Dental Clinic and Implant Centre</p>
+            <div class="flex space-x-6">
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-brands fa-linkedin text-lg"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-brands fa-twitter text-lg"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-solid fa-envelope text-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
