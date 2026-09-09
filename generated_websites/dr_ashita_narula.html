@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Ashita Narula | Dental Surgeon & Specialist</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        teal: {
+                            400: '#2dd4bf',
+                            500: '#14b8a6',
+                            600: '#0d9488',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-text-teal {
+            background: linear-gradient(135deg, #2dd4bf 0%, #38bdf8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(51, 65, 85, 0.5);
+        }
+        .glass-card:hover {
+            border-color: rgba(99, 102, 241, 0.5);
+            box-shadow: 0 0 25px -5px rgba(99, 102, 241, 0.2);
+        }
+        .glow-blob {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(90px);
+            opacity: 0.25;
+            pointer-events: none;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-slate-950">
+
+    <!-- Ambient Glowing Background Blobs -->
+    <div class="glow-blob w-96 h-96 bg-cyan-500 top-10 left-10"></div>
+    <div class="glow-blob w-[30rem] h-[30rem] bg-indigo-600 top-1/3 right-10"></div>
+    <div class="glow-blob w-96 h-96 bg-purple-600 bottom-20 left-1/4"></div>
+
+    <!-- Sticky Navigation -->
+    <nav class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-500 p-[2px] transition-transform duration-300 group-hover:scale-105">
+                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+                        <i class="fa-solid font-bold fa-tooth text-cyan-400"></i>
+                    </div>
+                </div>
+                <span class="text-xl font-bold tracking-tight text-white group-hover:text-cyan-400 transition-colors">
+                    Dr. Ashita Narula
+                </span>
+            </a>
+
+            <!-- Nav Links -->
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About Expertise</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Specialties</a>
+                <a href="#hospital" class="hover:text-cyan-400 transition-colors">Hospital Affiliation</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Testimonials</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+            </div>
+
+            <!-- CTA Button -->
+            <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-slate-950 bg-gradient-to-r from-cyan-400 to-indigo-400 rounded-full hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] transition-all duration-300 transform hover:-translate-y-0.5">
+                <i class="fa-regular fa-calendar-check mr-2"></i> Book Consultation
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-20 pb-28 overflow-hidden z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Hero Content -->
+                <div class="lg:col-span-7 space-y-8">
+                    <div class="inline-flex items-center space-x-2 px-4 py-2 rounded-full glass-card border-cyan-500/30 text-cyan-300 text-xs font-semibold uppercase tracking-wider">
+                        <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                        <span>Dental Surgeon & Oral Health Specialist</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
+                        Crafting Healthy, <br>
+                        <span class="gradient-text">Radiant Smiles</span> with Precision Surgical Care.
+                    </h1>
+
+                    <p class="text-lg text-slate-400 max-w-2xl leading-relaxed">
+                        Leading expert in advanced dental surgery, restorative dentistry, and comprehensive oral rehabilitation at <strong class="text-slate-200">Saroj Hospital & Heart Institute</strong>. Combining modern technology with compassionate, patient-centered care.
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-wrap gap-4 pt-2">
+                        <a href="#contact" class="px-7 py-3.5 rounded-full bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 text-white font-semibold shadow-lg shadow-indigo-500/25 hover:shadow-cyan-500/40 hover:scale-105 transition-all duration-300 flex items-center gap-2">
+                            <span>Request Appointment</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                        <a href="#about" class="px-7 py-3.5 rounded-full glass-card text-slate-200 hover:text-white hover:bg-slate-800/80 transition-all duration-300 font-semibold flex items-center gap-2">
+                            <span>Explore Profile</span>
+                        </a>
+                    </div>
+
+                    <!-- Quick Highlights Badges -->
+                    <div class="pt-8 grid grid-cols-3 gap-4 border-t border-slate-800/80">
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-white">100%</p>
+                            <p class="text-xs sm:text-sm text-slate-400 mt-1">Patient Focus</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-cyan-400">Saroj</p>
+                            <p class="text-xs sm:text-sm text-slate-400 mt-1">Hospital & Heart Inst.</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-indigo-400">Advanced</p>
+                            <p class="text-xs sm:text-sm text-slate-400 mt-1">Surgical Tech</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Hero Image Frame -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative group">
+                        <!-- Glowing Double Frame Blur Effect -->
+                        <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-pink-500 opacity-70 blur-xl group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+                        <div class="absolute -inset-0.5 rounded-3xl bg-gradient-to-r from-cyan-400 to-indigo-500 opacity-50"></div>
+                        
+                        <div class="relative rounded-3xl bg-slate-950 p-4 ring-1 ring-slate-800">
+                            <img src="https://ui-avatars.com/api/?name=Dr.+Ashita+Narula&size=200&background=0D8ABC&color=fff&bold=true" 
+                                 alt="Dr. Ashita Narula" 
+                                 class="w-64 h-64 sm:w-80 sm:h-80 object-cover rounded-2xl mx-auto shadow-2xl">
+                            
+                            <!-- Floating Info Badge -->
+                            <div class="absolute -bottom-6 -right-6 glass-card p-4 rounded-2xl shadow-xl flex items-center space-x-3 border border-indigo-500/30">
+                                <div class="w-10 h-10 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center">
+                                    <i class="fa-solid fa-user-doctor text-lg"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400 font-medium">Position</p>
+                                    <p class="text-sm font-bold text-white">Dental Surgeon</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-24 relative z-10 bg-slate-900/30">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Clinical Image -->
+                <div class="lg:col-span-5 order-2 lg:order-1">
+                    <div class="relative rounded-2xl overflow-hidden glass-card p-2">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Dental Surgery Excellence" 
+                             class="rounded-xl w-full h-96 object-cover hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <p class="text-xs uppercase font-semibold text-cyan-400 tracking-wider">State-of-the-Art Practice</p>
+                            <p class="text-lg font-bold text-white mt-1">Precision Dental Care & Surgery</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About Content -->
+                <div class="lg:col-span-7 order-1 lg:order-2 space-y-6">
+                    <div class="inline-flex items-center space-x-2 text-indigo-400 text-sm font-bold tracking-wider uppercase">
+                        <i class="fa-solid fa-stethoscope"></i>
+                        <span>Clinical Profile & Vision</span>
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
+                        Dedicated to Clinical Excellence at <span class="gradient-text-teal">Saroj Hospital</span>
+                    </h2>
+
+                    <p class="text-slate-300 leading-relaxed">
+                        As a specialized Dental Surgeon at <strong>Saroj Hospital & Heart Institute</strong>, Dr. Ashita Narula brings extensive clinical competence, surgical skill, and a deep empathetic commitment to comprehensive oral health care.
+                    </p>
+
+                    <p class="text-slate-400 leading-relaxed">
+                        Dr. Narula combines evidence-based dental practices with cutting-edge surgical techniques to ensure gentle, pain-free treatments and optimal functional aesthetics for every patient.
+                    </p>
+
+                    <!-- Key Skills Checklist -->
+                    <div class="grid sm:grid-cols-2 gap-4 pt-4">
+                        <div class="flex items-start space-x-3">
+                            <i class="fa-solid fa-circle-check text-cyan-400 mt-1"></i>
+                            <span class="text-slate-200 text-sm font-medium">Advanced Oral & Maxillofacial Surgeries</span>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fa-solid fa-circle-check text-cyan-400 mt-1"></i>
+                            <span class="text-slate-200 text-sm font-medium">Cosmetic & Smile Aesthetics Design</span>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fa-solid fa-circle-check text-cyan-400 mt-1"></i>
+                            <span class="text-slate-200 text-sm font-medium">Pain-Free Endodontic Procedures</span>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fa-solid fa-circle-check text-cyan-400 mt-1"></i>
+                            <span class="text-slate-200 text-sm font-medium">Specialized Cardiac-Integrated Dental Safety</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services" class="py-24 relative z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-cyan-400 text-sm font-bold tracking-wider uppercase">Clinical Specialties</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white">Comprehensive Dental Solutions</h2>
+                <p class="text-slate-400">Delivering advanced surgical procedures and restorative dental care designed for comfort, longevity, and natural aesthetic beauty.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="glass-card p-8 rounded-2xl group transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-cyan-500 group-hover:text-slate-950 transition-all duration-300">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Dental Surgery</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Precision surgical extractions, wisdom tooth evaluations, and reconstructive jaw procedures with minimal downtime.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="glass-card p-8 rounded-2xl group transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-indigo-500 group-hover:text-slate-950 transition-all duration-300">
+                        <i class="fa-solid fa-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-indigo-400 transition-colors">Cosmetic Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Complete smile makeovers, porcelain veneers, professional teeth whitening, and alignment aesthetics.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="glass-card p-8 rounded-2xl group transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-purple-500 group-hover:text-slate-950 transition-all duration-300">
+                        <i class="fa-solid fa-notes-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">Root Canal Therapy</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Pain-free endodontic treatments utilizing micro-precision instruments to preserve natural tooth structure.
+                    </p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="glass-card p-8 rounded-2xl group transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-pink-500/10 text-pink-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-pink-500 group-hover:text-slate-950 transition-all duration-300">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-pink-400 transition-colors">Preventive Care & Hygiene</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Comprehensive oral health checkups, deep scaling, fluoride treatments, and individualized preventative regimens.
+                    </p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="glass-card p-8 rounded-2xl group transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-emerald-500 group-hover:text-slate-950 transition-all duration-300">
+                        <i class="fa-solid fa-hospital-user"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-emerald-400 transition-colors">Hospital-Grade Safety</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Integrated medical-grade safety protocols tailored for high-risk, cardiac, and immunocompromised hospital patients.
+                    </p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="glass-card p-8 rounded-2xl group transition-all duration-300">
+                    <div class="w-14 h-14 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-amber-500 group-hover:text-slate-950 transition-all duration-300">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-amber-400 transition-colors">Restorative Implantology</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Long-lasting dental restorations, crowns, bridges, and implant-supported prosthetics for optimal oral function.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Hospital Affiliation Banner -->
+    <section id="hospital" class="py-16 relative z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="glass-card rounded-3xl p-8 sm:p-12 relative overflow-hidden border-indigo-500/30">
+                <div class="grid lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-8 space-y-4">
+                        <div class="inline-flex items-center space-x-2 text-cyan-400 text-xs font-bold uppercase tracking-wider">
+                            <i class="fa-solid fa-building-hospital"></i>
+                            <span>Hospital Connection</span>
+                        </div>
+                        <h2 class="text-2xl sm:text-4xl font-extrabold text-white">
+                            Saroj Hospital & Heart Institute
+                        </h2>
+                        <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                            Serving at one of the region's premiere healthcare institutions, ensuring multi-disciplinary medical support and world-class diagnostic infrastructure for all dental surgical treatments.
+                        </p>
+                    </div>
+                    <div class="lg:col-span-4 flex justify-lg-end">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 text-center rounded-2xl bg-white text-slate-950 font-bold hover:bg-cyan-400 transition-all duration-300 shadow-xl">
+                            Schedule at Hospital
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Endorsements -->
+    <section id="testimonials" class="py-24 relative z-10 bg-slate-900/30">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <span class="text-indigo-400 text-sm font-bold tracking-wider uppercase">Patient Feedback & Trust</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">What Patients & Colleagues Say</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Dr. Ashita Narula is incredibly skilled and reassuring. She performed my surgical tooth extraction smoothly without any discomfort. Highly recommended!"
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-3 border-t border-slate-800 pt-4">
+                        <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold text-sm">
+                            RK
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-white">Rajesh K.</p>
+                            <p class="text-xs text-slate-400">Patient at Saroj Hospital</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Her attention to detail and gentle clinical touch during my complex root canal therapy was remarkable. The best dental surgeon experience I have had."
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-3 border-t border-slate-800 pt-4">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-sm">
+                            PS
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-white">Pooja Sharma</p>
+                            <p class="text-xs text-slate-400">Restorative Care Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "A dedicated colleague whose surgical expertise and care standards in hospital dentistry set a very high benchmark for patient safety."
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-3 border-t border-slate-800 pt-4">
+                        <div class="w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 flex items-center justify-center font-bold text-sm">
+                            DM
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-white">Dr. M. Mehta</p>
+                            <p class="text-xs text-slate-400">Senior Medical Specialist</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Consultation Section -->
+    <section id="contact" class="py-24 relative z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Details -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-cyan-400 text-sm font-bold tracking-wider uppercase">Direct Engagement</span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Get in Touch with Dr. Ashita Narula</h2>
+                        <p class="text-slate-400 text-sm mt-4 leading-relaxed">
+                            Have questions regarding dental procedures or need a professional surgical consultation? Fill out the form or reach out directly at Saroj Hospital.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 rounded-xl glass-card text-cyan-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-hospital"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 uppercase font-semibold">Hospital Location</p>
+                                <p class="text-sm font-bold text-white mt-1">Saroj Hospital & Heart Institute</p>
+                                <p class="text-xs text-slate-400">Sector 14, Rohini, New Delhi, India</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 rounded-xl glass-card text-indigo-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-user-doctor"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 uppercase font-semibold">Specialty Dept.</p>
+                                <p class="text-sm font-bold text-white mt-1">Department of Dental Surgery</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 rounded-xl glass-card text-purple-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-calendar-day"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 uppercase font-semibold">Network Connected Date</p>
+                                <p class="text-sm font-bold text-white mt-1">08 Sep 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="lg:col-span-7">
+                    <form onsubmit="event.preventDefault(); alert('Thank you! Your appointment consultation inquiry has been submitted.');" 
+                          class="glass-card p-8 sm:p-10 rounded-3xl space-y-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Book a Consultation Inquiry</h3>
+                        
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Your Full Name</label>
+                                <input type="text" required placeholder="John Doe" 
+                                       class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-slate-100 placeholder-slate-600 focus:outline-none focus:border-cyan-500 text-sm transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Phone / Mobile</label>
+                                <input type="tel" required placeholder="+91 98765 43210" 
+                                       class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-slate-100 placeholder-slate-600 focus:outline-none focus:border-cyan-500 text-sm transition-colors">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Service Required</label>
+                            <select class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-slate-100 focus:outline-none focus:border-cyan-500 text-sm transition-colors">
+                                <option>Dental Surgical Consultation</option>
+                                <option>Cosmetic Dentistry & Smile Enhancement</option>
+                                <option>Root Canal / Pain Management</option>
+                                <option>General Dental Checkup</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Message or Medical Notes</label>
+                            <textarea rows="4" placeholder="Please describe your consultation requirement..." 
+                                      class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-slate-100 placeholder-slate-600 focus:outline-none focus:border-cyan-500 text-sm transition-colors"></textarea>
+                        </div>
+
+                        <button type="submit" 
+                                class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 text-white font-bold text-sm tracking-wide shadow-lg shadow-indigo-500/20 hover:shadow-cyan-500/40 hover:scale-[1.01] transition-all duration-300">
+                            Submit Consultation Request
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800/80 py-10 bg-slate-950 relative z-10">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center space-x-2">
+                <i class="fa-solid fa-tooth text-cyan-400"></i>
+                <span class="text-sm font-semibold text-slate-300">Dr. Ashita Narula — Dental Surgeon</span>
+            </div>
+            <p class="text-xs text-slate-500">
+                © 2026 Dr. Ashita Narula. Associated with Saroj Hospital & Heart Institute. All rights reserved.
+            </p>
+            <div class="flex space-x-4 text-slate-400">
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-linkedin text-lg"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-solid fa-envelope text-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
