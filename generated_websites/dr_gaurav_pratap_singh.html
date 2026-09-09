@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Gaurav Pratap Singh | Head of Department - Santosh University</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gradient-border {
+            position: relative;
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(16px);
+        }
+
+        .gradient-border::before {
+            content: '';
+            position: absolute;
+            inset: -1px;
+            border-radius: inherit;
+            padding: 1px;
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.3), rgba(168, 85, 247, 0.3), rgba(236, 72, 153, 0.1));
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            pointer-events: none;
+        }
+
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(99, 102, 241, 0.25);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #020617;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #334155;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- Ambient Background Glows -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
+        <div class="absolute -top-40 -left-40 w-96 h-96 bg-indigo-600/15 rounded-full blur-[128px]"></div>
+        <div class="absolute top-1/3 -right-40 w-96 h-96 bg-purple-600/15 rounded-full blur-[128px]"></div>
+        <div class="absolute -bottom-40 left-1/3 w-96 h-96 bg-pink-600/10 rounded-full blur-[128px]"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 p-[1px]">
+                    <div class="w-full h-full bg-slate-950 rounded-[11px] flex items-center justify-center group-hover:bg-transparent transition-all duration-300">
+                        <span class="font-extrabold text-indigo-400 group-hover:text-white transition-colors">GS</span>
+                    </div>
+                </div>
+                <div>
+                    <span class="font-bold text-lg tracking-tight block">Dr. Gaurav P. Singh</span>
+                    <span class="text-xs text-slate-400 block -mt-1">Santosh University</span>
+                </div>
+            </a>
+
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-indigo-400 transition-colors">Leadership & Expertise</a>
+                <a href="#initiatives" class="hover:text-indigo-400 transition-colors">Academic Initiatives</a>
+                <a href="#endorsements" class="hover:text-indigo-400 transition-colors">Endorsements</a>
+            </div>
+
+            <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-xl hover:opacity-95 transition-all shadow-lg shadow-indigo-500/20 hover:shadow-indigo-500/30">
+                Connect Directly
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-20 md:pt-48 md:pb-32 z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Column Text -->
+                <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 text-xs sm:text-sm font-medium">
+                        <span class="w-2 h-2 rounded-full bg-indigo-400 animate-pulse"></span>
+                        Head of Department | Santosh University, Ghaziabad
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-[1.1]">
+                        Pioneering <span class="gradient-text">Academic Excellence</span> & Strategic Leadership
+                    </h1>
+
+                    <p class="text-lg text-slate-400 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        Transforming higher education and clinical research at Santosh University through visionary departmental leadership, innovative curriculum architecture, and impactful interdisciplinary research.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold shadow-xl shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:-translate-y-0.5 transition-all text-center">
+                            Initiate Collaboration
+                        </a>
+                        <a href="#about" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 font-semibold hover:bg-slate-800 hover:text-white transition-all text-center">
+                            Explore Portfolio
+                        </a>
+                    </div>
+
+                    <!-- Key Statistics Badges -->
+                    <div class="pt-8 grid grid-cols-3 gap-4 border-t border-slate-800/80">
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-bold text-white">15+</p>
+                            <p class="text-xs sm:text-sm text-slate-400 mt-1">Years Experience</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-bold text-white">50+</p>
+                            <p class="text-xs sm:text-sm text-slate-400 mt-1">Publications & Papers</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-bold font-semibold text-white">1000+</p>
+                            <p class="text-xs sm:text-sm text-slate-400 mt-1">Scholars Mentored</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column Avatar Frame -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative">
+                        <!-- Glow behind picture -->
+                        <div class="absolute -inset-4 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full blur-2xl opacity-40 animate-pulse"></div>
+                        
+                        <!-- Outer Frame -->
+                        <div class="relative p-2 rounded-full bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 shadow-2xl">
+                            <!-- Inner Container -->
+                            <div class="p-2 bg-slate-950 rounded-full">
+                                <img 
+                                    src="https://ui-avatars.com/api/?name=Dr.+Gaurav+Pratap+Singh&size=200&background=0D8ABC&color=fff&bold=true" 
+                                    alt="Dr. Gaurav Pratap Singh" 
+                                    class="w-64 h-64 sm:w-80 sm:h-80 rounded-full object-cover transform hover:scale-105 transition-transform duration-500"
+                                >
+                            </div>
+                        </div>
+
+                        <!-- Floating Badge -->
+                        <div class="absolute -bottom-4 right-2 sm:bottom-2 sm:right-0 bg-slate-900/90 backdrop-blur-xl border border-slate-700/60 p-4 rounded-2xl shadow-xl flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold">
+                                <i class="fa-solid me-0 fa-award text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Affiliation</p>
+                                <p class="text-sm font-bold text-white">Santosh University</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Industry Spotlight Section -->
+    <section id="about" class="py-24 relative z-10 bg-slate-900/30">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Image Showcase -->
+                <div class="lg:col-span-6">
+                    <div class="relative group rounded-3xl overflow-hidden border border-slate-800 shadow-2xl">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent z-10 opacity-70"></div>
+                        <img 
+                            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" 
+                            alt="Academic Collaboration and Innovation" 
+                            class="w-full h-[450px] object-cover group-hover:scale-105 transition-transform duration-700"
+                        >
+                        <div class="absolute bottom-6 left-6 right-6 z-20">
+                            <span class="text-xs font-semibold uppercase tracking-widest text-indigo-400">Institutional Excellence</span>
+                            <h3 class="text-xl font-bold text-white mt-1">Driving Educational Innovation at Santosh University</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Bio & Narrative -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-purple-500/10 border border-purple-500/20 text-purple-300 text-xs font-semibold">
+                        BACKGROUND & VISION
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">
+                        Fostering Academic Distinction and Research Leadership
+                    </h2>
+
+                    <p class="text-slate-300 leading-relaxed">
+                        As Head of Department at <strong class="text-white">Santosh University, Ghaziabad</strong>, Dr. Gaurav Pratap Singh oversees strategic academic directives, research methodologies, and multidisciplinary programs designed to cultivate world-class scholars and healthcare professionals.
+                    </p>
+
+                    <p class="text-slate-400 leading-relaxed text-sm">
+                        With a deep commitment to academic rigor and clinical integration, Dr. Singh leads continuous updates to pedagogy, international accreditation standards, and institutional research frameworks that position the university as a leading center of learning.
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <i class="fa-solid fa-graduation-cap text-indigo-400 text-xl mb-2"></i>
+                            <h4 class="font-semibold text-white text-sm">Pedagogical Innovation</h4>
+                            <p class="text-xs text-slate-400 mt-1">Modern outcomes-based curriculum architecture.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <i class="fa-solid fa-microscope text-purple-400 text-xl mb-2"></i>
+                            <h4 class="font-semibold text-white text-sm">Research Advancement</h4>
+                            <p class="text-xs text-slate-400 mt-1">Driving high-impact journal publications & grants.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / Leadership Grid -->
+    <section id="expertise" class="py-24 relative z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-xs font-bold uppercase tracking-widest text-indigo-400">Core Pillars</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight">Departmental & Academic Leadership</h2>
+                <p class="text-slate-400 text-base">Key strategic areas of focus and domain expertise under Dr. Singh's guidance.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Card 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1.5 group">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center text-xl mb-6 group-hover:bg-gradient-to-r group-hover:from-indigo-500 group-hover:to-purple-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-sitemap"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Departmental Governance</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Directing administrative vision, resource allocation, and faculty growth to maintain top-tier operational and academic excellence.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1.5 group">
+                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center text-xl mb-6 group-hover:bg-gradient-to-r group-hover:from-purple-500 group-hover:to-pink-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Curriculum Development</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Structuring modern, competency-based educational frameworks designed to meet contemporary global healthcare and scientific demands.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1.5 group">
+                    <div class="w-12 h-12 rounded-xl bg-pink-500/10 border border-pink-500/20 text-pink-400 flex items-center justify-center text-xl mb-6 group-hover:bg-gradient-to-r group-hover:from-pink-500 group-hover:to-indigo-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-vials"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Clinical Research & Innovation</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Spearheading evidence-based clinical research initiatives, publishing scientific findings, and securing institutional research partnerships.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1.5 group">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center text-xl mb-6 group-hover:bg-gradient-to-r group-hover:from-indigo-500 group-hover:to-purple-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-user-doctor"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Postgraduate Supervision</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Guiding postgraduate scholars through doctoral theses, advanced clinical research projects, and career path development.
+                    </p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1.5 group">
+                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center text-xl mb-6 group-hover:bg-gradient-to-r group-hover:from-purple-500 group-hover:to-pink-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Accreditation & Standards</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Ensuring university programs align with national and international regulatory standards, quality assurances, and accreditation benchmarks.
+                    </p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1.5 group">
+                    <div class="w-12 h-12 rounded-xl bg-pink-500/10 border border-pink-500/20 text-pink-400 flex items-center justify-center text-xl mb-6 group-hover:bg-gradient-to-r group-hover:from-pink-500 group-hover:to-indigo-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-handshake font-bold"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Inter-Institutional Synergies</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Fostering joint ventures, symposiums, and collaborative medical programs with leading global universities and institutes.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Endorsements Section -->
+    <section id="endorsements" class="py-24 relative z-10 bg-slate-900/30 border-t border-b border-slate-800/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-xs font-bold uppercase tracking-widest text-indigo-400">Peer Recognition</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight">Endorsements & Testimonials</h2>
+                <p class="text-slate-400 text-base">Reflections from academic colleagues, research collaborators, and institutional leaders.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-400 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Dr. Gaurav Pratap Singh's leadership at Santosh University has elevated departmental research standards significantly. His vision for integration between academic theory and practical application is inspiring."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 flex items-center justify-center font-bold text-white text-xs">
+                            AK
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Senior Academic Dean</h4>
+                            <p class="text-xs text-slate-400">Santosh University</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-400 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Collaborating on research projects with Dr. Singh has been an enriching experience. His depth of domain knowledge and methodical approach to clinical studies is exceptional."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center font-bold text-white text-xs">
+                            RM
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Director of Research</h4>
+                            <p class="text-xs text-slate-400">Partner Healthcare Institute</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-400 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Under Dr. Singh's guidance, postgraduate programs have witnessed unprecedented growth in both student achievements and publication output. A true leader in medical education."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-pink-500 to-indigo-500 flex items-center justify-center font-bold text-white text-xs">
+                            VS
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Senior Research Fellow</h4>
+                            <p class="text-xs text-slate-400">Department Scholar</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 relative z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Info Left Column -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-widest text-indigo-400">Get in Touch</span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight mt-2">Connect with Dr. Gaurav Pratap Singh</h2>
+                        <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                            For academic inquiries, departmental collaborations, conference keynotes, or research partnerships at Santosh University, Ghaziabad.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="p-5 rounded-xl bg-slate-900/60 border border-slate-800 flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-building-columns"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-semibold">Institutional Office</p>
+                                <p class="text-sm font-bold text-white">Department Head Office, Santosh University</p>
+                                <p class="text-xs text-slate-400">Ghaziabad, Uttar Pradesh, India</p>
+                            </div>
+                        </div>
+
+                        <div class="p-5 rounded-xl bg-slate-900/60 border border-slate-800 flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-semibold">Direct Communication</p>
+                                <p class="text-sm font-bold text-white">dr.gauravpsingh@santosh.ac.in</p>
+                            </div>
+                        </div>
+
+                        <div class="p-5 rounded-xl bg-slate-900/60 border border-slate-800 flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-pink-500/10 text-pink-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-semibold">Network Connection</p>
+                                <p class="text-sm font-bold text-white">Connected Date: 08 Sep 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Right Column -->
+                <div class="lg:col-span-7">
+                    <form class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-3xl space-y-6">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Name</label>
+                                <input type="text" placeholder="Prof. / Dr. / Mr. Name" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Email Address</label>
+                                <input type="email" placeholder="name@institution.edu" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors text-sm">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Subject / Inquiry Type</label>
+                            <input type="text" placeholder="Academic Collaboration / Keynote / Research" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors text-sm">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Message</label>
+                            <textarea rows="4" placeholder="Write your message or proposal details here..." class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors text-sm"></textarea>
+                        </div>
+
+                        <button type="submit" onclick="event.preventDefault(); alert('Thank you! Your message has been routed to Dr. Gaurav Pratap Singh.');" class="w-full py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-bold shadow-lg shadow-indigo-500/25 hover:opacity-95 transition-all text-center">
+                            Send Professional Inquiry
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800/80 py-12 relative z-10 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div>
+                <p class="text-sm font-bold text-white">Dr. Gaurav Pratap Singh</p>
+                <p class="text-xs text-slate-400 mt-0.5">Head of Department | Santosh University, Ghaziabad</p>
+            </div>
+            
+            <p class="text-xs text-slate-500">
+                &copy; 2026 Dr. Gaurav Pratap Singh. All rights reserved.
+            </p>
+            
+            <div class="flex gap-4 text-slate-400">
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-brands fa-linkedin text-lg"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-solid fa-graduation-cap text-lg"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-regular fa-envelope text-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
