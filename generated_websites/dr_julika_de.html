@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr Julika De | Chief Radiologist - Scanwise Kolkata</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        cyanAccent: '#0D8ABC',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(13, 138, 188, 0.35);
+        }
+        .glow-card:hover {
+            box-shadow: 0 0 30px -5px rgba(14, 165, 233, 0.3);
+        }
+        .bg-grid-pattern {
+            background-image: radial-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+            background-size: 32px 32px;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-white relative">
+
+    <!-- Ambient Glow Background Gradients -->
+    <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+        <div class="absolute -top-40 -left-40 w-96 h-96 bg-cyan-600/20 rounded-full blur-[120px]"></div>
+        <div class="absolute top-1/3 -right-40 w-96 h-96 bg-indigo-600/20 rounded-full blur-[120px]"></div>
+        <div class="absolute -bottom-40 left-1/3 w-96 h-96 bg-blue-600/20 rounded-full blur-[120px]"></div>
+    </div>
+
+    <!-- Background Grid overlay -->
+    <div class="fixed inset-0 bg-grid-pattern pointer-events-none z-0 opacity-40"></div>
+
+    <!-- Navigation Bar -->
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-teal-400 to-indigo-500 flex items-center justify-center font-bold text-slate-950 text-xl shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform duration-300">
+                    <i class="fa-solid font-bold fa-notes-medical"></i>
+                </div>
+                <div>
+                    <span class="text-lg font-bold tracking-tight block text-white group-hover:text-cyan-400 transition-colors">Dr Julika De</span>
+                    <span class="text-xs text-slate-400 block font-medium">Scanwise Kolkata</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About & Expertise</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Clinical Services</a>
+                <a href="#impact" class="hover:text-cyan-400 transition-colors">Impact & Quality</a>
+                <a href="#endorsements" class="hover:text-cyan-400 transition-colors">Endorsements</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+            </nav>
+
+            <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-semibold text-sm transition-all duration-300 shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:-translate-y-0.5">
+                <span>Book Consultation</span>
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="relative z-10 pt-28">
+
+        <!-- HERO SECTION -->
+        <section class="min-h-[88vh] flex items-center justify-center py-16 px-6">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Content Column -->
+                <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 backdrop-blur-md shadow-inner">
+                        <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                        <span class="text-xs font-semibold uppercase tracking-wider text-cyan-300">Chief Radiologist • Scanwise Kolkata</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.1]">
+                        Precision Diagnostics.<br/>
+                        <span class="bg-gradient-to-r from-cyan-400 via-teal-300 to-indigo-400 bg-clip-text text-transparent">
+                            Transforming Clinical Outcomes.
+                        </span>
+                    </h1>
+
+                    <p class="text-slate-400 text-lg sm:text-xl max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        Leading diagnostic excellence at Scanwise Kolkata with advanced neuroimaging, cross-sectional radiology, and high-precision diagnostic insights that empower life-saving medical decisions.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-teal-500 to-indigo-500 text-slate-950 font-bold text-base hover:opacity-95 transition-all duration-300 shadow-lg shadow-cyan-500/25 text-center">
+                            Request Diagnostic Review
+                        </a>
+                        <a href="#about" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-slate-700 text-slate-200 font-semibold text-base transition-all duration-300 backdrop-blur-md text-center">
+                            Explore Profile
+                        </a>
+                    </div>
+
+                    <!-- Trust Stats Badges -->
+                    <div class="grid grid-cols-3 gap-4 pt-8 border-t border-slate-800/80 max-w-lg mx-auto lg:mx-0">
+                        <div class="p-3">
+                            <p class="text-2xl sm:text-3xl font-extrabold text-cyan-400">15+</p>
+                            <p class="text-xs text-slate-400 font-medium mt-1">Years Experience</p>
+                        </div>
+                        <div class="p-3 border-x border-slate-800/80">
+                            <p class="text-2xl sm:text-3xl font-extrabold text-teal-400">50K+</p>
+                            <p class="text-xs text-slate-400 font-medium mt-1">Scans Interpreted</p>
+                        </div>
+                        <div class="p-3">
+                            <p class="text-2xl sm:text-3xl font-extrabold text-indigo-400">99.8%</p>
+                            <p class="text-xs text-slate-400 font-medium mt-1">Diagnostic Accuracy</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Avatar & Dynamic Visual Column -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative group">
+                        <!-- Glowing Animated Rings -->
+                        <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-cyan-500 via-indigo-500 to-teal-400 opacity-70 blur-2xl group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+                        
+                        <!-- Avatar Frame Container -->
+                        <div class="relative w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full p-2 bg-slate-950 border border-slate-800 shadow-2xl flex items-center justify-center">
+                            <img src="https://ui-avatars.com/api/?name=Dr+Julika+De&size=200&background=0D8ABC&color=fff&bold=true" 
+                                 alt="Dr Julika De" 
+                                 class="w-full h-full rounded-full object-cover shadow-inner transform group-hover:scale-[1.02] transition-transform duration-500">
+                        </div>
+
+                        <!-- Floating Micro Badge 1 -->
+                        <div class="absolute -bottom-4 -left-4 bg-slate-900/90 border border-slate-800 backdrop-blur-xl p-4 rounded-2xl shadow-xl flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-microscope"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Specialization</p>
+                                <p class="text-sm font-bold text-white">Neuro & Body Imaging</p>
+                            </div>
+                        </div>
+
+                        <!-- Floating Micro Badge 2 -->
+                        <div class="absolute top-6 -right-4 bg-slate-900/90 border border-slate-800 backdrop-blur-xl p-3.5 rounded-2xl shadow-xl flex items-center gap-3">
+                            <div class="w-9 h-9 rounded-lg bg-teal-500/10 text-teal-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-certificate"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Scanwise Kolkata</p>
+                                <p class="text-xs font-bold text-white">Chief Radiologist</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ABOUT & EXPERTISE SECTION -->
+        <section id="about" class="py-24 px-6 relative">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-cyan-400 font-semibold text-sm uppercase tracking-wider">Clinical Leadership</span>
+                    <h2 class="text-3xl sm:text-5xl font-extrabold text-white mt-2 tracking-tight">
+                        Excellence in Advanced Radiologic Care
+                    </h2>
+                    <p class="text-slate-400 mt-4 text-base sm:text-lg">
+                        Combining decades of clinical insight with modern imaging technology to serve patients and healthcare providers across Kolkata.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    <!-- Image Box -->
+                    <div class="lg:col-span-6">
+                        <div class="relative rounded-3xl overflow-hidden border border-slate-800 bg-slate-900/60 backdrop-blur-xl group">
+                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Medical Diagnostics & Collaboration" 
+                                 class="w-full h-[420px] object-cover group-hover:scale-105 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent"></div>
+                            
+                            <div class="absolute bottom-6 left-6 right-6 p-6 rounded-2xl bg-slate-950/80 border border-slate-800/80 backdrop-blur-md">
+                                <p class="text-sm text-cyan-300 font-semibold">Scanwise Kolkata Center of Diagnostic Excellence</p>
+                                <p class="text-xs text-slate-400 mt-1">Integrating AI-assisted diagnostic protocols with multi-slice imaging systems for clinical accuracy.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Text Details -->
+                    <div class="lg:col-span-6 space-y-6">
+                        <h3 class="text-2xl sm:text-3xl font-bold text-white">
+                            Dedicated to Uncompromising Diagnostic Precision
+                        </h3>
+                        <p class="text-slate-300 leading-relaxed text-base">
+                            As Chief Radiologist at <strong>Scanwise Kolkata</strong>, Dr Julika De leads a state-of-the-art radiology division specialized in cross-sectional imaging, MRI, multi-detector CT, and advanced ultrasound modalities.
+                        </p>
+                        <p class="text-slate-400 leading-relaxed text-sm">
+                            Dr De works in close collaboration with oncologists, neurosurgeons, and clinical physicians to deliver accurate, timely diagnostic interpretations. Her work bridges complex image analysis with actionable clinical treatment plans.
+                        </p>
+
+                        <!-- Key Skills Pills -->
+                        <div class="pt-4 space-y-3">
+                            <p class="text-xs uppercase tracking-wider text-slate-400 font-semibold">Core Expertise</p>
+                            <div class="flex flex-wrap gap-2.5">
+                                <span class="px-4 py-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-200 text-xs font-medium hover:border-cyan-500/50 transition-colors">Neuroradiology & Brain MRI</span>
+                                <span class="px-4 py-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-200 text-xs font-medium hover:border-cyan-500/50 transition-colors">High-Resolution Body CT</span>
+                                <span class="px-4 py-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-200 text-xs font-medium hover:border-cyan-500/50 transition-colors">Musculoskeletal Ultrasound</span>
+                                <span class="px-4 py-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-200 text-xs font-medium hover:border-cyan-500/50 transition-colors">Color Doppler Imaging</span>
+                                <span class="px-4 py-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-200 text-xs font-medium hover:border-cyan-500/50 transition-colors">Teleradiology Consultations</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section id="services" class="py-24 px-6 bg-slate-950/50">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-teal-400 font-semibold text-sm uppercase tracking-wider">Comprehensive Radiology</span>
+                    <h2 class="text-3xl sm:text-5xl font-extrabold text-white mt-2 tracking-tight">
+                        Specialized Clinical Services
+                    </h2>
+                    <p class="text-slate-400 mt-4 text-base">
+                        Delivering world-class radiological reporting and second-opinion consultations for patients and clinicians.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Service Card 1 -->
+                    <div class="p-8 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 glow-card group">
+                        <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-cyan-500 group-hover:text-slate-950 transition-all duration-300">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Neuro & Spine MRI</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Sub-specialized MRI interpretation for brain pathologies, stroke evaluation, spine degenerations, and neuro-oncology diagnostics.
+                        </p>
+                    </div>
+
+                    <!-- Service Card 2 -->
+                    <div class="p-8 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-teal-500/50 transition-all duration-300 glow-card group">
+                        <div class="w-14 h-14 rounded-2xl bg-teal-500/10 text-teal-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-teal-500 group-hover:text-slate-950 transition-all duration-300">
+                            <i class="fa-solid fa-x-ray"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Multi-Slice Body CT</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Comprehensive CT scan diagnostics for chest, abdomen, pelvis, angiographies, and emergency trauma assessment.
+                        </p>
+                    </div>
+
+                    <!-- Service Card 3 -->
+                    <div class="p-8 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 glow-card group">
+                        <div class="w-14 h-14 rounded-2xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-indigo-500 group-hover:text-slate-950 transition-all duration-300">
+                            <i class="fa-solid fa-wave-square"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Ultrasound & Color Doppler</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            High-precision non-invasive Doppler vascular studies, abdominal imaging, and specialized musculoskeletal sonography.
+                        </p>
+                    </div>
+
+                    <!-- Service Card 4 -->
+                    <div class="p-8 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 glow-card group">
+                        <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-cyan-500 group-hover:text-slate-950 transition-all duration-300">
+                            <i class="fa-solid fa-stethoscope"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Second Opinion Consults</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Expert second-opinion review on complex imaging cases to confirm diagnoses before major surgeries or oncology treatments.
+                        </p>
+                    </div>
+
+                    <!-- Service Card 5 -->
+                    <div class="p-8 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-teal-500/50 transition-all duration-300 glow-card group">
+                        <div class="w-14 h-14 rounded-2xl bg-teal-500/10 text-teal-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-teal-500 group-hover:text-slate-950 transition-all duration-300">
+                            <i class="fa-solid fa-network-wired"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Teleradiology Reporting</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Rapid remote diagnostic reporting solutions with standard turn-around times for regional clinics and hospitals.
+                        </p>
+                    </div>
+
+                    <!-- Service Card 6 -->
+                    <div class="p-8 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 glow-card group">
+                        <div class="w-14 h-14 rounded-2xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-indigo-500 group-hover:text-slate-950 transition-all duration-300">
+                            <i class="fa-solid fa-laptop-medical"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">AI Diagnostic Integration</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Leveraging advanced AI-driven triage software for enhanced detection of subtle pulmonary and radiological anomalies.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- IMPACT & STATS SECTION -->
+        <section id="impact" class="py-20 px-6 border-y border-slate-800/60 bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div class="p-6">
+                        <p class="text-4xl sm:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-teal-300">50,000+</p>
+                        <p class="text-slate-400 text-sm font-medium mt-2">Diagnostic Reports Issued</p>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-4xl sm:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-indigo-400">100%</p>
+                        <p class="text-slate-400 text-sm font-medium mt-2">NABL & Quality Protocols</p>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-4xl sm:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">120+</p>
+                        <p class="text-slate-400 text-sm font-medium mt-2">Partnering Hospitals</p>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-4xl sm:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-teal-400">24/7</p>
+                        <p class="text-slate-400 text-sm font-medium mt-2">Emergency Scan Reviews</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ENDORSEMENTS & TESTIMONIALS SECTION -->
+        <section id="endorsements" class="py-24 px-6">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-cyan-400 font-semibold text-sm uppercase tracking-wider">Clinical Peer Endorsements</span>
+                    <h2 class="text-3xl sm:text-5xl font-extrabold text-white mt-2 tracking-tight">
+                        Trusted by Healthcare Professionals
+                    </h2>
+                    <p class="text-slate-400 mt-4 text-base">
+                        What surgeons, physicians, and medical leaders say about working with Dr Julika De.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <!-- Testimonial 1 -->
+                    <div class="p-8 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex flex-col justify-between">
+                        <div>
+                            <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-300 text-sm italic leading-relaxed">
+                                "Dr Julika De's precise MRI interpretations in complex neurosurgical cases have been crucial for our surgical planning. Her expertise at Scanwise Kolkata sets a benchmark."
+                            </p>
+                        </div>
+                        <div class="mt-8 pt-6 border-t border-slate-800/80 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-300 flex items-center justify-center font-bold text-sm">
+                                NS
+                            </div>
+                            <div>
+                                <p class="text-sm font-bold text-white">Senior Neurosurgeon</p>
+                                <p class="text-xs text-slate-400">Super Speciality Hospital, Kolkata</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="p-8 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex flex-col justify-between">
+                        <div>
+                            <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-300 text-sm italic leading-relaxed">
+                                "Her second-opinion report detected a subtle abdominal anomaly that completely shifted our patient treatment path for the better. Truly exceptional diagnostic eyes."
+                            </p>
+                        </div>
+                        <div class="mt-8 pt-6 border-t border-slate-800/80 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-teal-500/20 text-teal-300 flex items-center justify-center font-bold text-sm">
+                                MO
+                            </div>
+                            <div>
+                                <p class="text-sm font-bold text-white">Consultant Medical Oncologist</p>
+                                <p class="text-xs text-slate-400">Kolkata Medical Center</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="p-8 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex flex-col justify-between">
+                        <div>
+                            <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-300 text-sm italic leading-relaxed">
+                                "Prompt turnarounds, meticulous attention to detail, and seamless collaboration. Scanwise Kolkata is fortunate to have Dr Julika De directing clinical radiology."
+                            </p>
+                        </div>
+                        <div class="mt-8 pt-6 border-t border-slate-800/80 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-300 flex items-center justify-center font-bold text-sm">
+                                HA
+                            </div>
+                            <div>
+                                <p class="text-sm font-bold text-white">Hospital Administrator</p>
+                                <p class="text-xs text-slate-400">Regional Healthcare Network</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT & INQUIRY SECTION -->
+        <section id="contact" class="py-24 px-6 relative">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    
+                    <!-- Contact Info -->
+                    <div class="lg:col-span-5 space-y-8">
+                        <div>
+                            <span class="text-cyan-400 font-semibold text-sm uppercase tracking-wider">Get in Touch</span>
+                            <h2 class="text-3xl sm:text-5xl font-extrabold text-white mt-2 tracking-tight">
+                                Connect with Dr Julika De
+                            </h2>
+                            <p class="text-slate-400 mt-4 text-base">
+                                For clinical consultations, scan reviews, institutional collaborations, or diagnostic inquiries at Scanwise Kolkata.
+                            </p>
+                        </div>
+
+                        <div class="space-y-6 pt-4">
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-2xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl shrink-0">
+                                    <i class="fa-solid fa-hospital"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-white">Clinical Facility</h4>
+                                    <p class="text-sm text-slate-400">Scanwise Radiology Center, Kolkata, West Bengal, India</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-2xl bg-teal-500/10 text-teal-400 flex items-center justify-center text-xl shrink-0">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-white">Direct Medical Inquiry</h4>
+                                    <p class="text-sm text-slate-400">contact@scanwisekolkata.com</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-2xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-xl shrink-0">
+                                    <i class="fa-solid fa-user-check"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-bold text-white">Verified Professional Connection</h4>
+                                    <p class="text-sm text-slate-400">Connected: 08 Sep 2026</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="lg:col-span-7">
+                        <div class="p-8 sm:p-10 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 shadow-2xl relative">
+                            <h3 class="text-xl font-bold text-white mb-6">Send a Message or Consultation Request</h3>
+                            
+                            <form onsubmit="event.preventDefault(); alert('Thank you for your message. Dr Julika De\'s office will contact you shortly.');" class="space-y-5">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                    <div>
+                                        <label class="block text-xs font-medium text-slate-300 mb-2">Your Name</label>
+                                        <input type="text" placeholder="Dr. / Mr. / Ms." required class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs font-medium text-slate-300 mb-2">Your Email</label>
+                                        <input type="email" placeholder="name@domain.com" required class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label class="block text-xs font-medium text-slate-300 mb-2">Subject / Medical Modality</label>
+                                    <select class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                                        <option>Diagnostic Scan Interpretation</option>
+                                        <option>Second Opinion Review</option>
+                                        <option>Institutional / Hospital Partnership</option>
+                                        <option>Teleradiology Query</option>
+                                        <option>General Professional Inquiry</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <label class="block text-xs font-medium text-slate-300 mb-2">Message</label>
+                                    <textarea rows="4" placeholder="Please provide details regarding your clinical query or scan review..." required class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm resize-none"></textarea>
+                                </div>
+
+                                <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-teal-500 to-indigo-500 text-slate-950 font-bold text-base hover:opacity-95 transition-all duration-300 shadow-lg shadow-cyan-500/25">
+                                    Submit Consultation Request
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-slate-800/80 bg-slate-950/90 relative z-10 py-12 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold text-sm">
+                    <i class="fa-solid fa-notes-medical"></i>
+                </div>
+                <span class="text-sm font-bold text-white">Dr Julika De • Chief Radiologist, Scanwise Kolkata</span>
+            </div>
+
+            <p class="text-xs text-slate-500">
+                &copy; 2026 Dr Julika De. All rights reserved. Diagnostic Radiology Showcase.
+            </p>
+
+            <div class="flex gap-4 text-slate-400 text-sm">
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-solid fa-user-doctor"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-solid fa-globe"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
