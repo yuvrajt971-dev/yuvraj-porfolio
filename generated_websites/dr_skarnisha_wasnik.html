@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Skarnisha Wasnik | Clinical Resident & Dental Surgeon</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            teal: '#0D8ABC',
+                            cyan: '#06b6d4',
+                            emerald: '#10b981',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -12px rgba(13, 138, 188, 0.35);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #38bdf8 0%, #0D8ABC 50%, #818cf8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-border {
+            position: relative;
+            background-clip: padding-box;
+        }
+        .gradient-border::before {
+            content: '';
+            position: absolute;
+            top: -2px; right: -2px; bottom: -2px; left: -2px;
+            z-index: -1;
+            border-radius: inherit;
+            background: linear-gradient(135deg, #06b6d4, #0D8ABC, #6366f1);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-slate-950">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center font-bold text-slate-950 text-lg shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform duration-300">
+                    SW
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-slate-100 tracking-wide text-base leading-tight">Dr. Skarnisha Wasnik</span>
+                    <span class="text-xs text-cyan-400 font-medium">GDCH Mumbai</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Items -->
+            <div class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-cyan-400 transition-colors">Clinical Expertise</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
+                <a href="#endorsements" class="hover:text-cyan-400 transition-colors">Endorsements</a>
+                <a href="#contact" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 to-indigo-600 text-slate-950 font-bold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 hover:scale-[1.02]">
+                    Get in Touch
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button class="md:hidden text-slate-300 hover:text-white text-2xl focus:outline-none" id="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Nav Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-6 py-4 space-y-3">
+            <a href="#about" class="block text-slate-300 hover:text-cyan-400 py-1">About</a>
+            <a href="#expertise" class="block text-slate-300 hover:text-cyan-400 py-1">Clinical Expertise</a>
+            <a href="#services" class="block text-slate-300 hover:text-cyan-400 py-1">Services</a>
+            <a href="#endorsements" class="block text-slate-300 hover:text-cyan-400 py-1">Endorsements</a>
+            <a href="#contact" class="block text-center py-2.5 rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 text-slate-950 font-bold">
+                Get in Touch
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="relative min-h-screen pt-32 pb-20 flex items-center justify-center overflow-hidden">
+        <!-- Background Glows -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-cyan-500/15 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute bottom-10 right-10 w-[350px] h-[350px] bg-indigo-500/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10 w-full">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Left Column Text -->
+                <div class="lg:col-span-7 text-center lg:text-left space-y-6">
+                    <div class="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 text-cyan-400 text-xs font-semibold tracking-wider uppercase">
+                        <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                        <span>Clinical Resident Specialist</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-slate-100 leading-tight">
+                        Advancing Clinical Dentistry with <span class="gradient-text">Precision & Compassion</span>
+                    </h1>
+
+                    <p class="text-slate-400 text-lg sm:text-xl max-w-2xl font-light leading-relaxed mx-auto lg:mx-0">
+                        Dedicated Clinical Resident at <strong class="text-slate-200">Government Dental College and Hospital Mumbai</strong>. Committed to excellence in modern oral healthcare, patient outcomes, and innovative surgical methodologies.
+                    </p>
+
+                    <!-- Trust Badges / Stats Banner -->
+                    <div class="pt-2 grid grid-cols-3 gap-4 border-y border-slate-800/80 py-6 max-w-xl mx-auto lg:mx-0">
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-cyan-400">1000+</div>
+                            <div class="text-xs text-slate-400 uppercase tracking-wider font-medium mt-1">Patients Treated</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-indigo-400">GDCH</div>
+                            <div class="text-xs text-slate-400 uppercase tracking-wider font-medium mt-1">Mumbai Residency</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-purple-400">100%</div>
+                            <div class="text-xs text-slate-400 uppercase tracking-wider font-medium mt-1">Dedicated Care</div>
+                        </div>
+                    </div>
+
+                    <!-- Call to Actions -->
+                    <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-teal-500 to-indigo-600 text-slate-950 font-bold shadow-lg shadow-cyan-500/20 hover:scale-[1.02] transition-all duration-300 text-center">
+                            Schedule Consultation <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                        </a>
+                        <a href="#expertise" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 font-semibold hover:border-slate-700 hover:text-white transition-all duration-300 text-center">
+                            View Clinical Profile
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Right Column Profile Avatar Frame -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative group">
+                        <!-- Glowing Double-Gradient Ring Background -->
+                        <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-cyan-500 via-teal-500 to-indigo-500 opacity-75 blur-lg group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+                        
+                        <!-- Profile Card Container -->
+                        <div class="relative p-3 bg-slate-900/90 border border-slate-800 rounded-full glow-effect">
+                            <img src="https://ui-avatars.com/api/?name=Dr.+Skarnisha+Wasnik&size=200&background=0D8ABC&color=fff&bold=true" 
+                                 alt="Dr. Skarnisha Wasnik" 
+                                 class="w-64 h-64 sm:w-80 sm:h-80 rounded-full object-cover shadow-2xl transition-transform duration-500 group-hover:scale-105">
+                            
+                            <!-- Floating Badge -->
+                            <div class="absolute bottom-4 right-4 bg-slate-900/95 border border-slate-700 px-4 py-2 rounded-2xl shadow-xl flex items-center space-x-2 backdrop-blur-md">
+                                <i class="fa-solid fa-user-doctor text-cyan-400 text-lg"></i>
+                                <div class="text-left">
+                                    <p class="text-xs font-bold text-slate-200 leading-none">Resident Surgeon</p>
+                                    <p class="text-[10px] text-slate-400 mt-0.5">GDCH Mumbai</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT & CLINICAL EXPERIENCE SECTION -->
+    <section id="about" class="py-24 bg-slate-950/60 relative border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Section Left: Image -->
+                <div class="lg:col-span-6">
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 shadow-2xl group">
+                        <div class="absolute inset-0 bg-slate-950/20 z-10 group-hover:bg-transparent transition-all duration-300"></div>
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Clinical Dental Facility" 
+                             class="w-full h-[450px] object-cover object-center transform group-hover:scale-105 transition-transform duration-700">
+                        
+                        <!-- Overlay Card -->
+                        <div class="absolute bottom-6 left-6 right-6 z-20 p-6 bg-slate-900/80 backdrop-blur-md rounded-xl border border-slate-800">
+                            <p class="text-cyan-400 font-semibold text-xs uppercase tracking-wider">Institution Focus</p>
+                            <h3 class="text-lg font-bold text-slate-100 mt-1">Government Dental College & Hospital Mumbai</h3>
+                            <p class="text-slate-400 text-xs mt-1">Leading tertiary center for advanced oral healthcare research and complex clinical procedures.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section Right: About Details -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center space-x-2 text-cyan-400 font-semibold text-sm">
+                        <i class="fa-solid fa-hospital text-xs"></i>
+                        <span class="uppercase tracking-widest">Clinical Background</span>
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-bold text-slate-100 leading-snug">
+                        Bridging Academic Rigor with Patient-Centered Care
+                    </h2>
+
+                    <p class="text-slate-400 leading-relaxed font-light">
+                        Dr. Skarnisha Wasnik is a dedicated Clinical Resident serving at the prestigious <span class="text-slate-200 font-semibold">Government Dental College and Hospital (GDCH), Mumbai</span>. With a passion for precision diagnostics, operative technique, and preventive oral health, Dr. Wasnik combines cutting-edge dental science with a compassionate patient touch.
+                    </p>
+
+                    <!-- Feature List Cards -->
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start space-x-4 p-4 rounded-xl bg-slate-900/60 backdrop-blur-xl border border-slate-800/80 hover:border-cyan-500/50 transition-all duration-300">
+                            <div class="w-10 h-10 rounded-lg bg-cyan-500/10 flex items-center justify-center text-cyan-400 flex-shrink-0">
+                                <i class="fa-solid fa-tooth text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-200">Advanced Surgical Precision</h4>
+                                <p class="text-sm text-slate-400 mt-0.5">Handling comprehensive restorative, endodontic, and oral surgical procedures with high standards of clinical excellence.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4 p-4 rounded-xl bg-slate-900/60 backdrop-blur-xl border border-slate-800/80 hover:border-cyan-500/50 transition-all duration-300">
+                            <div class="w-10 h-10 rounded-lg bg-indigo-500/10 flex items-center justify-center text-indigo-400 flex-shrink-0">
+                                <i class="fa-solid fa-notes-medical text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-200">Patient Diagnostic Excellence</h4>
+                                <p class="text-sm text-slate-400 mt-0.5">Utilizing modern imaging and diagnostic protocols to personalize treatment regimens for diverse patient demographics.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4 p-4 rounded-xl bg-slate-900/60 backdrop-blur-xl border border-slate-800/80 hover:border-cyan-500/50 transition-all duration-300">
+                            <div class="w-10 h-10 rounded-lg bg-emerald-500/10 flex items-center justify-center text-emerald-400 flex-shrink-0">
+                                <i class="fa-solid fa-graduation-cap text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-200">Continuous Clinical Research</h4>
+                                <p class="text-sm text-slate-400 mt-0.5">Active participation in academic clinical trials, seminars, and evidence-based clinical practices at GDCH Mumbai.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES / SPECIALIZATIONS GRID -->
+    <section id="services" class="py-24 bg-slate-950 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <div class="inline-flex items-center space-x-2 text-cyan-400 font-semibold text-sm">
+                    <i class="fa-solid fa-stethoscope"></i>
+                    <span class="uppercase tracking-widest">Clinical Services</span>
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-100">
+                    Comprehensive Oral Healthcare Solutions
+                </h2>
+                <p class="text-slate-400 font-light">
+                    Delivering clinical expertise across a wide spectrum of dental sub-specialties with state-of-the-art methodology.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Card 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 p-8 rounded-2xl group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-cyan-500 group-hover:text-slate-950 transition-all duration-300">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-100 mb-3">Operative Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Restoration of structural defects, aesthetic tooth conservation, and complex resin composites designed to restore natural smile aesthetics.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 p-8 rounded-2xl group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-indigo-500 group-hover:text-slate-950 transition-all duration-300">
+                        <i class="fa-solid fa-[#0D8ABC] fa-hospital-user text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-100 mb-3">Endodontics & Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Painless root canal therapies, pulpal disease diagnosis, and micro-endodontic preservation techniques prioritizing long-term tooth health.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-emerald-500/50 transition-all duration-300 p-8 rounded-2xl group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-emerald-500 group-hover:text-slate-950 transition-all duration-300">
+                        <i class="fa-solid fa-notes-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-100 mb-3">Oral Diagnostics & Pathology</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Early detection of oral lesions, comprehensive radiography interpretation, and personalized preventative maintenance programs.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 transition-all duration-300 p-8 rounded-2xl group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-purple-500 group-hover:text-slate-950 transition-all duration-300">
+                        <i class="fa-solid fa-syringe"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-100 mb-3">Periodontal Therapy</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Soft tissue rehabilitation, deep scaling, root planing, and comprehensive gum healthcare for systemic and oral wellness.
+                    </p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-amber-500/50 transition-all duration-300 p-8 rounded-2xl group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-amber-500 group-hover:text-slate-950 transition-all duration-300">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-100 mb-3">Preventive Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Prophylaxis, fluoride treatments, pit and fissure sealants, and community health counseling tailored for long-term protection.
+                    </p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-pink-500/50 transition-all duration-300 p-8 rounded-2xl group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-pink-500 group-hover:text-slate-950 transition-all duration-300">
+                        <i class="fa-solid fa-hand-holding-hand"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-100 mb-3">Patient Education</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Empowering patients with oral hygiene strategies, post-operative guidance, and evidence-based wellness regimens.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS / ENDORSEMENTS -->
+    <section id="endorsements" class="py-24 bg-slate-950/60 relative border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <div class="inline-flex items-center space-x-2 text-cyan-400 font-semibold text-sm">
+                    <i class="fa-solid fa-star"></i>
+                    <span class="uppercase tracking-widest">Endorsements</span>
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-100">
+                    Trusted by Patients & Colleagues
+                </h2>
+                <p class="text-slate-400 font-light">
+                    Testimonials reflecting Dr. Wasnik’s clinical thoroughness, clinical bedside manner, and clinical precision.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm space-x-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                            "Dr. Skarnisha Wasnik was extraordinarily attentive during my procedure at GDCH Mumbai. Her clinical precision and gentle approach completely eased my anxiety."
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-3 pt-4 border-t border-slate-800/60">
+                        <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold text-sm">
+                            AR
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-slate-200">Aarav Sharma</h4>
+                            <p class="text-xs text-slate-400">Patient • Mumbai</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm space-x-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                            "An exceptionally dedicated clinical resident. Dr. Wasnik brings outstanding analytical skills and surgical execution to complex clinical cases."
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-3 pt-4 border-t border-slate-800/60">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-sm">
+                            PK
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-slate-200">Senior Faculty</h4>
+                            <p class="text-xs text-slate-400">GDCH Mumbai Department</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm space-x-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                            "Her dedication to modern diagnostic techniques and patient welfare sets a high standard for clinical residency practice."
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-3 pt-4 border-t border-slate-800/60">
+                        <div class="w-10 h-10 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-sm">
+                            MN
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-slate-200">Meera Nair</h4>
+                            <p class="text-xs text-slate-400">Clinical Associate</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-24 bg-slate-950 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Info Left -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <div class="inline-flex items-center space-x-2 text-cyan-400 font-semibold text-sm">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span class="uppercase tracking-widest">Connect</span>
+                        </div>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-100 mt-2">
+                            Get In Touch With Dr. Wasnik
+                        </h2>
+                        <p class="text-slate-400 font-light mt-3">
+                            Available for professional inquiries, academic collaborations, and clinical consultations at GDCH Mumbai.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-cyan-400">
+                                <i class="fa-solid fa-hospital text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium uppercase">Clinical Location</p>
+                                <p class="text-slate-200 font-semibold">Government Dental College & Hospital, Fort, Mumbai</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-indigo-400">
+                                <i class="fa-solid fa-briefcase text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium uppercase">Role</p>
+                                <p class="text-slate-200 font-semibold">Clinical Resident Specialist</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-emerald-400">
+                                <i class="fa-solid fa-link text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium uppercase">Professional Connection</p>
+                                <p class="text-slate-200 font-semibold">Connected Network Member</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Right -->
+                <div class="lg:col-span-7 bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 sm:p-10 rounded-3xl">
+                    <form onsubmit="event.preventDefault(); alert('Thank you! Your message has been routed to Dr. Skarnisha Wasnik.');" class="space-y-6">
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Your Name</label>
+                                <input type="text" required placeholder="John Doe" 
+                                       class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-slate-200 placeholder-slate-600 focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Email Address</label>
+                                <input type="email" required placeholder="john@example.com" 
+                                       class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-slate-200 placeholder-slate-600 focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Subject</label>
+                            <input type="text" required placeholder="Clinical Consultation / Academic Inquiry" 
+                                   class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-slate-200 placeholder-slate-600 focus:outline-none focus:border-cyan-500 transition-colors">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Message</label>
+                            <textarea rows="4" required placeholder="Write your message here..." 
+                                      class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-slate-200 placeholder-slate-600 focus:outline-none focus:border-cyan-500 transition-colors"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-teal-500 to-indigo-600 text-slate-950 font-extrabold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300">
+                            Send Message <i class="fa-solid fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-12 border-t border-slate-900 bg-slate-950 text-slate-500 text-sm">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center space-x-2">
+                <span class="font-bold text-slate-300">Dr. Skarnisha Wasnik</span>
+                <span>• Clinical Resident, GDCH Mumbai</span>
+            </div>
+            <p class="text-xs text-slate-500">
+                © 2026 Dr. Skarnisha Wasnik. All rights reserved. Designed for Ultra-Premium Showcase.
+            </p>
+        </div>
+    </footer>
+
+    <!-- JS For Mobile Navigation -->
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
