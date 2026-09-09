@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Lipsa Lalwani | Founder, PracticeOne</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-mesh {
+            background-image: radial-gradient(at 0% 0%, rgba(14, 165, 233, 0.15) 0px, transparent 50%),
+                              radial-gradient(at 100% 100%, rgba(99, 102, 241, 0.15) 0px, transparent 50%),
+                              radial-gradient(at 50% 50%, rgba(168, 85, 247, 0.1) 0px, transparent 50%);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-white glow-mesh min-h-screen">
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-indigo-500 to-purple-500 flex items-center justify-center font-bold text-white shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform duration-300">
+                    P1
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-lg leading-tight tracking-tight text-white group-hover:text-cyan-400 transition-colors">Dr. Lipsa Lalwani</span>
+                    <span class="text-xs text-slate-400 font-medium">Founder @ PracticeOne</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#platform" class="hover:text-cyan-400 transition-colors">Platform</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Solutions</a>
+                <a href="#endorsements" class="hover:text-cyan-400 transition-colors">Endorsements</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+            </div>
+
+            <!-- Header Action Button -->
+            <div class="hidden sm:block">
+                <a href="#contact" class="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-xs font-bold rounded-xl group bg-gradient-to-br from-cyan-500 via-indigo-500 to-purple-500 text-white group-hover:from-cyan-500 group-hover:to-purple-500 hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300">
+                    <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-slate-950 rounded-[10px] group-hover:bg-opacity-0">
+                        Connect Directly <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-20 md:pt-48 md:pb-32 overflow-hidden">
+        <!-- Ambient Light Gradients -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-cyan-500/20 via-indigo-500/20 to-purple-500/20 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Hero Content -->
+                <div class="lg:col-span-7 text-center lg:text-left space-y-8">
+                    <!-- Badge -->
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 backdrop-blur-xl">
+                        <span class="flex h-2 w-2 rounded-full bg-cyan-400 animate-ping"></span>
+                        <span class="text-xs font-semibold text-cyan-300 uppercase tracking-wider">Next-Gen Practice Management</span>
+                    </div>
+
+                    <!-- Main Headline -->
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.15]">
+                        Empowering Healthcare with <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-indigo-400 to-purple-400">Intelligent Operations.</span>
+                    </h1>
+
+                    <!-- Lead Paragraph -->
+                    <p class="text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+                        I’m <strong class="text-white font-semibold">Dr. Lipsa Lalwani</strong>, Founder of <strong class="text-cyan-400 font-semibold">PracticeOne</strong>. We deliver an all-in-one management platform designed to streamline clinical workflows, enhance patient engagement, and accelerate growth for modern medical practices.
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 text-white font-bold text-center shadow-lg shadow-indigo-500/25 hover:shadow-cyan-500/40 hover:scale-[1.02] transition-all duration-300">
+                            Explore Platform Features
+                        </a>
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900/80 border border-slate-800 text-slate-200 font-semibold text-center hover:bg-slate-800 hover:border-slate-700 transition-all duration-300">
+                            Schedule Founder Demo
+                        </a>
+                    </div>
+
+                    <!-- Trust Metrics / Badges -->
+                    <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-6 text-center lg:text-left">
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-indigo-400">100%</div>
+                            <div class="text-xs text-slate-400 font-medium mt-1">Integrated Suite</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">10x</div>
+                            <div class="text-xs text-slate-400 font-medium mt-1">Operational Speed</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">HIPAA</div>
+                            <div class="text-xs text-slate-400 font-medium mt-1">Compliant & Secure</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Avatar Frame -->
+                <div class="lg:col-span-5 flex justify-center items-center">
+                    <div class="relative group">
+                        <!-- Glowing Double-Gradient Backing Ring -->
+                        <div class="absolute -inset-1.5 bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 rounded-full blur-xl opacity-70 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+                        
+                        <div class="relative p-2 rounded-full bg-slate-950 border border-slate-800">
+                            <div class="p-2.5 rounded-full bg-gradient-to-tr from-cyan-500 via-purple-500 to-pink-500">
+                                <img src="https://ui-avatars.com/api/?name=Dr.+Lipsa+Lalwani&size=200&background=0D8ABC&color=fff&bold=true" 
+                                     alt="Dr. Lipsa Lalwani" 
+                                     class="w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-full object-cover shadow-2xl bg-slate-900 border-4 border-slate-950">
+                            </div>
+                        </div>
+
+                        <!-- Floating Glass Pill Badge -->
+                        <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-slate-900/90 border border-slate-700/80 backdrop-blur-xl px-5 py-2.5 rounded-full shadow-2xl flex items-center gap-3 whitespace-nowrap">
+                            <i class="fa-solid fa-shield-halved text-cyan-400"></i>
+                            <span class="text-xs font-semibold text-slate-200">Visionary SaaS Founder</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-slate-900/40 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Image Side -->
+                <div class="lg:col-span-5 order-2 lg:order-1">
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900 shadow-2xl group">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" 
+                             alt="Team Collaboration at PracticeOne" 
+                             class="w-full h-[420px] object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-slate-900/80 border border-slate-800/80 backdrop-blur-md">
+                            <p class="text-xs text-slate-300 font-medium">
+                                "Our mission at PracticeOne is to eliminate administrative overhead so practitioners can focus on patient care."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Side -->
+                <div class="lg:col-span-7 order-1 lg:order-2 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-bold uppercase tracking-wider">
+                        Leadership & Vision
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+                        Transforming Complex Practice Workflows into Seamless Digital Experiences
+                    </h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        As the Founder of <strong class="text-white">PracticeOne</strong>, Dr. Lipsa Lalwani combines deep clinical understanding with cutting-edge healthtech leadership. Modern healthcare practices face unprecedented administrative burdens—from scheduling and billing to clinical note automation and patient follow-ups.
+                    </p>
+                    <p class="text-slate-400 leading-relaxed text-sm">
+                        PracticeOne was engineered from the ground up to solve these exact friction points. By uniting clinical record management, automated scheduling, billing, and intelligent analytics under a single, user-centric dashboard, Dr. Lalwani empowers practitioners worldwide to operate at maximum efficiency.
+                    </p>
+
+                    <!-- Feature Pillars -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 flex items-start gap-3">
+                            <i class="fa-solid fa-stethoscope text-cyan-400 text-xl mt-1"></i>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Practitioner-Centric</h4>
+                                <p class="text-xs text-slate-400 mt-1">Built with direct input from healthcare professionals.</p>
+                            </div>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 flex items-start gap-3">
+                            <i class="fa-solid fa-chart-line text-purple-400 text-xl mt-1"></i>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Data-Driven Growth</h4>
+                                <p class="text-xs text-slate-400 mt-1">Real-time financial and operational intelligence.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Platform / Services Section -->
+    <section id="services" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-bold uppercase tracking-wider">
+                    All-in-One Capabilities
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+                    The PracticeOne Executive Suite
+                </h2>
+                <p class="text-slate-400 text-sm sm:text-base">
+                    Discover how our integrated solutions elevate clinical productivity, protect patient data, and drive recurring revenue.
+                </p>
+            </div>
+
+            <!-- Grid of Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Card 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 rounded-2xl p-8 hover:-translate-y-1.5 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-calendar-check"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Smart Appointment Engine</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Automated online booking, intelligent waitlists, and SMS/Email reminders that reduce no-shows by up to 65%.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 rounded-2xl p-8 hover:-translate-y-1.5 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-file-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-indigo-400 transition-colors">EHR & Digital Charts</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Customizable SOAP notes, template-driven documentation, and fast digital prescribing designed for speed.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 rounded-2xl p-8 hover:-translate-y-1.5 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-credit-card"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">Automated Billing & Claims</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Integrated payment processing, automated insurance verification, and clear patient invoicing in a click.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-pink-500/50 rounded-2xl p-8 hover:-translate-y-1.5 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-user-gear"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-pink-400 transition-colors">Patient Portal & CRM</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        A secure, intuitive portal where patients can view records, request prescription refills, and message clinicians securely.
+                    </p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-teal-500/50 rounded-2xl p-8 hover:-translate-y-1.5 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-teal-500/10 border border-teal-500/20 flex items-center justify-center text-teal-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-teal-400 transition-colors">Practice Analytics</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Comprehensive dashboards offering deep insight into revenue trends, practitioner utilization, and patient retention.
+                    </p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-blue-500/50 rounded-2xl p-8 hover:-translate-y-1.5 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-shield-virus"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">Enterprise Security</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Bank-level encryption, regular security audits, and complete HIPAA compliance to protect your practice and reputation.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Endorsements Section -->
+    <section id="endorsements" class="py-24 bg-slate-900/30 relative border-t border-b border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-bold text-purple-400 uppercase tracking-widest">Endorsements</span>
+                <h2 class="text-3xl font-bold text-white mt-2">Trusted by Leading Practitioners</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl backdrop-blur-xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic mb-6 leading-relaxed">
+                            "PracticeOne simplified our entire clinical operation within two weeks of deployment. Dr. Lipsa Lalwani’s team understands exactly what modern clinics need."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 border-t border-slate-800/80 pt-4">
+                        <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 font-bold flex items-center justify-center text-xs">
+                            DR
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Dr. Rajesh K.</h4>
+                            <p class="text-xs text-slate-400">Medical Director, Apex Health</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl backdrop-blur-xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic mb-6 leading-relaxed">
+                            "The billing and charting integrations are flawless. We cut down staff administrative hours by 40% in our multi-specialty center."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 border-t border-slate-800/80 pt-4">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 font-bold flex items-center justify-center text-xs">
+                            SM
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Sarah M., MHA</h4>
+                            <p class="text-xs text-slate-400">Practice Administrator</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl backdrop-blur-xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic mb-6 leading-relaxed">
+                            "Finding an all-in-one platform that is truly user-friendly for both staff and patients was impossible until we discovered Dr. Lalwani’s PracticeOne."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 border-t border-slate-800/80 pt-4">
+                        <div class="w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 font-bold flex items-center justify-center text-xs">
+                            AP
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Dr. Ananya P.</h4>
+                            <p class="text-xs text-slate-400">Founder, Renewal Wellness</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Connect Section -->
+    <section id="contact" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Info Column -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-bold uppercase tracking-wider mb-4">
+                            Get in Touch
+                        </div>
+                        <h2 class="text-3xl font-bold text-white tracking-tight">Let's Transform Your Practice</h2>
+                        <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                            Interested in exploring PracticeOne for your clinic or discussing partnership opportunities with Dr. Lipsa Lalwani? Reach out directly below.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-10 h-10 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center">
+                                <i class="fa-solid fa-building text-lg"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-slate-400 block font-medium">Company</span>
+                                <span class="text-sm font-bold text-white">PracticeOne Platform</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-10 h-10 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center">
+                                <i class="fa-solid fa-user text-lg"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-slate-400 block font-medium">Executive Role</span>
+                                <span class="text-sm font-bold text-white">Founder & Chief Visionary</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-10 h-10 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center">
+                                <i class="fa-solid fa-link text-lg"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-slate-400 block font-medium">Professional Network</span>
+                                <span class="text-sm font-bold text-white">Connected via LinkedIn</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Column -->
+                <div class="lg:col-span-7">
+                    <form onsubmit="event.preventDefault(); alert('Thank you for reaching out! Your message has been sent to Dr. Lipsa Lalwani.');" class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl space-y-6 shadow-2xl">
+                        <h3 class="text-xl font-bold text-white">Send a Message</h3>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Name</label>
+                                <input type="text" required placeholder="Dr. John Doe" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Work Email</label>
+                                <input type="email" required placeholder="john@practice.com" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Practice Type / Specialty</label>
+                            <input type="text" placeholder="e.g. Multi-Specialty Clinic, Dental, Mental Health" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Message</label>
+                            <textarea rows="4" required placeholder="How can PracticeOne support your healthcare team?" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm resize-none"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 text-white font-bold text-sm shadow-lg shadow-indigo-500/25 hover:shadow-cyan-500/40 hover:scale-[1.01] transition-all duration-300">
+                            Submit Inquiry <i class="fa-solid fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800/80 bg-slate-950 py-12 text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-7 h-7 rounded-lg bg-gradient-to-tr from-cyan-500 to-indigo-500 flex items-center justify-center font-bold text-white text-xs">
+                    P1
+                </div>
+                <span class="text-slate-300 font-semibold">Dr. Lipsa Lalwani &bull; PracticeOne</span>
+            </div>
+            
+            <p>&copy; 2026 PracticeOne. All rights reserved. Precision Software for Modern Healthcare.</p>
+            
+            <div class="flex items-center gap-4 text-slate-400">
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-linkedin text-base"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-twitter text-base"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-solid fa-globe text-base"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
