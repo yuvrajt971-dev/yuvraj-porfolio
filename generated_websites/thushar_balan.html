@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Thushar Balan | Specialist Orthodontist | Rabee Dental</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        cyanAccent: '#0D8ABC',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-bg {
+            background: radial-gradient(circle at 50% 20%, rgba(13, 138, 188, 0.15) 0%, rgba(99, 102, 241, 0.1) 35%, rgba(2, 6, 23, 0) 70%);
+        }
+        .glow-accent {
+            box-shadow: 0 0 50px -10px rgba(13, 138, 188, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 selection:bg-cyan-500 selection:text-white relative overflow-x-hidden">
+
+    <!-- Background Glow Effects -->
+    <div class="fixed inset-0 pointer-events-none z-0 glow-bg"></div>
+    <div class="fixed -top-40 -left-40 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="fixed top-1/2 -right-40 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-500 flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform duration-300">
+                    <i class="fa-solid fa-[#0D8ABC] fa-tooth text-white"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-bold tracking-tight text-white block">Dr. Thushar Balan</span>
+                    <span class="text-xs text-cyan-400 font-medium tracking-wide uppercase">Specialist Orthodontist</span>
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors duration-200">About</a>
+                <a href="#expertise" class="hover:text-cyan-400 transition-colors duration-200">Expertise</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors duration-200">Services</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors duration-200">Testimonials</a>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="hidden md:flex items-center gap-4">
+                <a href="#contact" class="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-sm font-semibold rounded-full group bg-gradient-to-br from-cyan-500 via-indigo-500 to-pink-500 group-hover:from-cyan-500 group-hover:to-pink-500 hover:text-white text-white shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 transition-all duration-300">
+                    <span class="relative px-6 py-2.5 transition-all ease-in duration-75 bg-slate-950 rounded-full group-hover:bg-opacity-0">
+                        Book Consultation
+                    </span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="md:hidden text-slate-300 hover:text-white text-2xl focus:outline-none" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900/95 border-b border-slate-800 px-6 py-6 space-y-4 text-center">
+            <a href="#about" class="block text-slate-300 hover:text-cyan-400 font-medium">About</a>
+            <a href="#expertise" class="block text-slate-300 hover:text-cyan-400 font-medium">Expertise</a>
+            <a href="#services" class="block text-slate-300 hover:text-cyan-400 font-medium">Services</a>
+            <a href="#testimonials" class="block text-slate-300 hover:text-cyan-400 font-medium">Testimonials</a>
+            <a href="#contact" class="inline-block px-6 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 to-indigo-500 text-white font-semibold text-sm">Book Consultation</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-20 md:pt-48 md:pb-32 px-6 lg:px-12 max-w-7xl mx-auto z-10">
+        <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+            
+            <!-- Hero Content -->
+            <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 text-xs sm:text-sm font-semibold tracking-wide">
+                    <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                    Specialist Orthodontist at Rabee Dental
+                </div>
+                
+                <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-none">
+                    Crafting <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-indigo-400 to-pink-400">Perfect Smiles</span> With Precision.
+                </h1>
+
+                <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                    Welcome to advanced orthodontic excellence. Transforming aesthetic confidence and dental function through state-of-the-art aligners, precision braces, and modern facial orthopedics.
+                </p>
+
+                <!-- Hero CTAs -->
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                    <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 text-white font-bold text-center shadow-xl shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:scale-[1.02] transition-all duration-300">
+                        Schedule Appointment
+                    </a>
+                    <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-full bg-slate-900/80 hover:bg-slate-800 text-slate-200 border border-slate-800 hover:border-slate-700 font-semibold text-center transition-all duration-300">
+                        Explore Treatments
+                    </a>
+                </div>
+
+                <!-- Trust Badges -->
+                <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-4 text-center lg:text-left">
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-bold text-white">100%</div>
+                        <div class="text-xs sm:text-sm text-slate-400">Customized Care</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-bold text-white">Rabee Dental</div>
+                        <div class="text-xs sm:text-sm text-slate-400">Premier Dental Clinic</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-bold text-cyan-400">5.0 ★★★★★</div>
+                        <div class="text-xs sm:text-sm text-slate-400">Patient Rating</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Glowing Double-Gradient Avatar Frame -->
+            <div class="lg:col-span-5 flex justify-center relative">
+                <div class="relative group">
+                    <!-- Outer Glowing Ring -->
+                    <div class="absolute -inset-1.5 bg-gradient-to-r from-cyan-500 via-indigo-500 to-pink-500 rounded-full blur-xl opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+                    
+                    <!-- Avatar Container -->
+                    <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full p-2 bg-slate-950 border border-slate-800 shadow-2xl flex items-center justify-center overflow-hidden">
+                        <img src="https://ui-avatars.com/api/?name=Thushar+Balan&size=200&background=0D8ABC&color=fff&bold=true" 
+                             alt="Thushar Balan" 
+                             class="w-full h-full object-cover rounded-full transform group-hover:scale-105 transition duration-500">
+                    </div>
+
+                    <!-- Floating Badge -->
+                    <div class="absolute -bottom-4 -right-2 bg-slate-900/90 backdrop-blur-xl border border-cyan-500/40 px-5 py-3 rounded-2xl shadow-xl flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold">
+                            <i class="fa-solid fa-award text-lg"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs text-slate-400 font-medium">Orthodontic Specialist</div>
+                            <div class="text-sm font-bold text-white">Rabee Dental</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-20 px-6 lg:px-12 max-w-7xl mx-auto relative z-10">
+        <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-3xl p-8 lg:p-12 shadow-2xl">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Industry Image -->
+                <div class="lg:col-span-5 relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-indigo-500 rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-500"></div>
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Modern Orthodontic Practice" 
+                             class="w-full h-80 lg:h-96 object-cover transform group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60"></div>
+                        <div class="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-slate-950/80 backdrop-blur-md border border-slate-800/80">
+                            <p class="text-xs text-cyan-400 font-semibold tracking-wider uppercase">Clinical Excellence</p>
+                            <p class="text-sm text-slate-200">State-of-the-Art Orthodontic Care at Rabee Dental</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-800/80 border border-slate-700 text-cyan-400 text-xs font-semibold">
+                        <i class="fa-solid fa-user-doctor"></i> About Dr. Thushar Balan
+                    </div>
+                    
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+                        Dedicated to Creating Beautiful, Healthy, and Confident Smiles
+                    </h2>
+
+                    <p class="text-slate-300 leading-relaxed font-normal">
+                        As a Specialist Orthodontist at Rabee Dental, Dr. Thushar Balan combines clinical expertise with artistic precision. Dedicated to diagnosing, preventing, and treating dental and facial irregularities, Dr. Thushar delivers personalized orthodontic solutions tailored to patient needs.
+                    </p>
+
+                    <p class="text-slate-400 leading-relaxed font-normal text-sm">
+                        Whether utilizing clear aligners for discrete alignment or complex dentofacial orthopedics, every treatment plan is digitally planned for optimal outcomes, long-term stability, and maximum patient comfort.
+                    </p>
+
+                    <!-- Feature Highlights Grid -->
+                    <div class="grid grid-cols-2 gap-4 pt-2">
+                        <div class="p-4 rounded-2xl bg-slate-950/50 border border-slate-800/80 flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-cyan-400 text-lg mt-0.5"></i>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Digital Orthodontics</h4>
+                                <p class="text-xs text-slate-400">3D Scanning & Computerized Planning</p>
+                            </div>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-slate-950/50 border border-slate-800/80 flex items-start gap-3">
+                            <i class="fa-solid fa-circle-check text-indigo-400 text-lg mt-0.5"></i>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Patient-Centric Care</h4>
+                                <p class="text-xs text-slate-400">Gentle & Efficient Treatments</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid Section -->
+    <section id="services" class="py-20 px-6 lg:px-12 max-w-7xl mx-auto relative z-10">
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-cyan-400 text-xs font-semibold">
+                <i class="fa-solid fa-stethoscope"></i> Specialized Treatments
+            </div>
+            <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
+                Comprehensive Orthodontic Solutions
+            </h2>
+            <p class="text-slate-400 text-sm sm:text-base">
+                Advanced, tailored orthodontic options designed to give you alignment perfection and modern aesthetic comfort.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Service Card 1 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 rounded-2xl p-8 hover:-translate-y-1.5 transition-all duration-300 group shadow-xl hover:shadow-cyan-500/10">
+                <div class="w-14 h-14 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <i class="fa-solid fa-teeth-open"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Clear Aligners</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                    Virtually invisible, removable aligners engineered for discrete, comfortable, and efficient smile correction.
+                </p>
+                <span class="inline-flex items-center text-xs font-semibold text-cyan-400 gap-2 group-hover:translate-x-1 transition-transform">
+                    Learn More <i class="fa-solid fa-arrow-right"></i>
+                </span>
+            </div>
+
+            <!-- Service Card 2 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 rounded-2xl p-8 hover:-translate-y-1.5 transition-all duration-300 group shadow-xl hover:shadow-indigo-500/10">
+                <div class="w-14 h-14 rounded-xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <i class="fa-solid fa-teeth"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3 group-hover:text-indigo-400 transition-colors">Traditional & Ceramic Braces</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                    High-precision metallic and tooth-colored ceramic brackets providing reliable alignment for all complexity levels.
+                </p>
+                <span class="inline-flex items-center text-xs font-semibold text-indigo-400 gap-2 group-hover:translate-x-1 transition-transform">
+                    Learn More <i class="fa-solid fa-arrow-right"></i>
+                </span>
+            </div>
+
+            <!-- Service Card 3 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-pink-500/50 rounded-2xl p-8 hover:-translate-y-1.5 transition-all duration-300 group shadow-xl hover:shadow-pink-500/10">
+                <div class="w-14 h-14 rounded-xl bg-pink-500/10 border border-pink-500/30 flex items-center justify-center text-pink-400 text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <i class="fa-solid fa-face-smile-beam"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3 group-hover:text-pink-400 transition-colors">Dentofacial Orthopedics</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                    Specialized jaw alignment and facial structure guidance tailored for growing children and teenagers.
+                </p>
+                <span class="inline-flex items-center text-xs font-semibold text-pink-400 gap-2 group-hover:translate-x-1 transition-transform">
+                    Learn More <i class="fa-solid fa-arrow-right"></i>
+                </span>
+            </div>
+
+            <!-- Service Card 4 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 rounded-2xl p-8 hover:-translate-y-1.5 transition-all duration-300 group shadow-xl hover:shadow-cyan-500/10">
+                <div class="w-14 h-14 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <i class="fa-solid fa-child"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Interceptive Orthodontics</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                    Early phase treatments designed to correct developing bite issues before they require complex correction.
+                </p>
+                <span class="inline-flex items-center text-xs font-semibold text-cyan-400 gap-2 group-hover:translate-x-1 transition-transform">
+                    Learn More <i class="fa-solid fa-arrow-right"></i>
+                </span>
+            </div>
+
+            <!-- Service Card 5 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 rounded-2xl p-8 hover:-translate-y-1.5 transition-all duration-300 group shadow-xl hover:shadow-indigo-500/10">
+                <div class="w-14 h-14 rounded-xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3 group-hover:text-indigo-400 transition-colors">Smile Architecture</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                    Comprehensive aesthetic alignment designed to enhance facial symmetry, smile arch, and dental proportion.
+                </p>
+                <span class="inline-flex items-center text-xs font-semibold text-indigo-400 gap-2 group-hover:translate-x-1 transition-transform">
+                    Learn More <i class="fa-solid fa-arrow-right"></i>
+                </span>
+            </div>
+
+            <!-- Service Card 6 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-pink-500/50 rounded-2xl p-8 hover:-translate-y-1.5 transition-all duration-300 group shadow-xl hover:shadow-pink-500/10">
+                <div class="w-14 h-14 rounded-xl bg-pink-500/10 border border-pink-500/30 flex items-center justify-center text-pink-400 text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3 group-hover:text-pink-400 transition-colors">Retention & Relapse Care</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                    Custom fixed and removable retainer systems ensuring your post-orthodontic results last a lifetime.
+                </p>
+                <span class="inline-flex items-center text-xs font-semibold text-pink-400 gap-2 group-hover:translate-x-1 transition-transform">
+                    Learn More <i class="fa-solid fa-arrow-right"></i>
+                </span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 px-6 lg:px-12 max-w-7xl mx-auto relative z-10">
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-cyan-400 text-xs font-semibold">
+                <i class="fa-solid fa-star"></i> Patient Endorsements
+            </div>
+            <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
+                Trusted by Patients Across Rabee Dental
+            </h2>
+            <p class="text-slate-400 text-sm sm:text-base">
+                Real feedback from individuals whose smiles and confidence were transformed by Dr. Thushar.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            
+            <!-- Testimonial 1 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 shadow-xl relative flex flex-col justify-between">
+                <div class="space-y-4">
+                    <div class="flex text-amber-400 text-sm gap-1">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm italic leading-relaxed">
+                        "Dr. Thushar Balan completely transformed my smile with aligners! He was attentive, thorough, and explained every step of the process clearly. Rabee Dental is exceptional!"
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-slate-800 flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold text-sm">
+                        AH
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-semibold text-white">Ahmed H.</h4>
+                        <p class="text-xs text-slate-400">Clear Aligner Patient</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 shadow-xl relative flex flex-col justify-between">
+                <div class="space-y-4">
+                    <div class="flex text-amber-400 text-sm gap-1">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm italic leading-relaxed">
+                        "Extremely professional orthodontic specialist. My daughter got her braces here and the gentle, careful approach made her comfortable throughout treatment."
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-slate-800 flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-sm">
+                        SK
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-semibold text-white">Sarah K.</h4>
+                        <p class="text-xs text-slate-400">Pediatric Parent</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 shadow-xl relative flex flex-col justify-between">
+                <div class="space-y-4">
+                    <div class="flex text-amber-400 text-sm gap-1">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm italic leading-relaxed">
+                        "The level of precision in Dr. Thushar’s treatment planning is top-tier. I finished my treatment ahead of schedule with remarkable results. Highly recommend!"
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-slate-800 flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-pink-500/20 text-pink-400 flex items-center justify-center font-bold text-sm">
+                        MR
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-semibold text-white">Mohammed R.</h4>
+                        <p class="text-xs text-slate-400">Orthodontic Patient</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact & Booking Section -->
+    <section id="contact" class="py-20 px-6 lg:px-12 max-w-7xl mx-auto relative z-10">
+        <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-3xl p-8 lg:p-12 shadow-2xl">
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <!-- Direct Details -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 text-xs font-semibold mb-4">
+                            <i class="fa-solid fa-calendar-check"></i> Book Consultation
+                        </div>
+                        <h2 class="text-3xl font-extrabold text-white">Let’s Transform Your Smile</h2>
+                        <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                            Reach out to schedule an orthodontic consultation or inquire about personalized treatment options at Rabee Dental.
+                        </p>
+                    </div>
+
+                    <!-- Contact Card Details -->
+                    <div class="space-y-4 text-sm">
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-950/60 border border-slate-800/80">
+                            <div class="w-10 h-10 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-hospital"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400">Practice Location</div>
+                                <div class="font-semibold text-white">Rabee Dental Clinic</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-950/60 border border-slate-800/80">
+                            <div class="w-10 h-10 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-stethoscope"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400">Specialty</div>
+                                <div class="font-semibold text-white">Specialist Orthodontist</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-950/60 border border-slate-800/80">
+                            <div class="w-10 h-10 rounded-lg bg-pink-500/10 text-pink-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-user-check"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400">Network Connection</div>
+                                <div class="font-semibold text-white">Connected: 07 Sep 2026</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="lg:col-span-7">
+                    <form onsubmit="event.preventDefault(); alert('Thank you! Your appointment request has been submitted.');" class="space-y-5 bg-slate-950/50 p-6 sm:p-8 rounded-2xl border border-slate-800">
+                        <div class="grid sm:grid-cols-2 gap-5">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Full Name</label>
+                                <input type="text" placeholder="John Doe" required class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Phone Number</label>
+                                <input type="tel" placeholder="+1 (555) 000-0000" required class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">Interested Service</label>
+                            <select class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                                <option>Clear Aligners / Invisalign</option>
+                                <option>Traditional Braces</option>
+                                <option>Ceramic Braces</option>
+                                <option>Dentofacial Orthopedics</option>
+                                <option>General Orthodontic Consultation</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">Message or Special Notes</label>
+                            <textarea rows="4" placeholder="Briefly describe your consultation goals..." class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm resize-none"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-pink-500 text-white font-bold text-sm shadow-xl shadow-cyan-500/20 hover:shadow-cyan-500/40 hover:scale-[1.01] transition-all duration-300">
+                            Request Consultation <i class="fa-solid fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800/80 py-8 px-6 lg:px-12 relative z-10 text-center sm:text-left">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+            <div>
+                © 2026 Dr. Thushar Balan | Specialist Orthodontist at Rabee Dental. All rights reserved.
+            </div>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-cyan-400 transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-cyan-400 transition-colors">Terms of Service</a>
+                <a href="#about" class="hover:text-cyan-400 transition-colors">Back to Top ↑</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
