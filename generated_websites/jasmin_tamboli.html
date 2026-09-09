@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasmin Tamboli | Dental Happiness Clinic</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            cyan: '#0D8ABC',
+                            teal: '#14b8a6',
+                            purple: '#8b5cf6',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(13, 138, 188, 0.3);
+        }
+        .glow-card:hover {
+            box-shadow: 0 0 30px -5px rgba(20, 184, 166, 0.25);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-white">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-teal-500 to-indigo-600 p-[2px] transition-transform duration-300 group-hover:scale-105">
+                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+                        <i class="fa-solid font-bold fa-tooth text-cyan-400"></i>
+                    </div>
+                </div>
+                <div>
+                    <span class="text-lg font-bold tracking-tight text-white block leading-none">Dental Happiness</span>
+                    <span class="text-xs text-cyan-400 font-medium tracking-wider uppercase">Clinic</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Items -->
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About Us</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Treatments & Services</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Patient Stories</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors">Book Appointment</a>
+            </div>
+
+            <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 to-teal-500 text-slate-950 font-semibold text-sm hover:opacity-90 transition-all duration-300 shadow-lg shadow-cyan-500/20">
+                <i class="fa-regular fa-calendar-check"></i>
+                <span>Schedule Consultation</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="relative pt-36 pb-24 md:pt-48 md:pb-32 overflow-hidden">
+        <!-- Background Ambient Glows -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute top-1/3 right-10 w-[400px] h-[400px] bg-purple-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
+                
+                <!-- Left Content -->
+                <div class="flex-1 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 text-cyan-400 text-xs font-semibold uppercase tracking-wider mb-6">
+                        <span class="w-2 h-2 rounded-full bg-teal-400 animate-pulse"></span>
+                        Premier Dental Care & Smile Design
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight mb-6">
+                        Redefining Dentistry with <br class="hidden sm:block"/>
+                        <span class="bg-gradient-to-r from-cyan-400 via-teal-300 to-indigo-400 bg-clip-text text-transparent">
+                            Comfort & Precision.
+                        </span>
+                    </h1>
+
+                    <p class="text-slate-400 text-lg sm:text-xl max-w-2xl mx-auto lg:mx-0 mb-8 font-normal leading-relaxed">
+                        Welcome to <strong class="text-slate-200">Dental Happiness Clinic</strong>. Led by <strong class="text-slate-200">Jasmin Tamboli</strong>, we combine state-of-the-art technology with compassionate care to create radiant, healthy smiles for a lifetime.
+                    </p>
+
+                    <!-- Hero Actions -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-12">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-cyan-500 via-teal-500 to-indigo-500 text-white font-bold text-base hover:shadow-lg hover:shadow-cyan-500/30 transition-all duration-300 text-center">
+                            Book Your Visit
+                        </a>
+                        <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-full bg-slate-900 border border-slate-800 hover:border-slate-700 text-slate-200 font-semibold text-base transition-all duration-300 text-center flex items-center justify-center gap-2">
+                            <span>Explore Treatments</span>
+                            <i class="fa-solid fa-arrow-right text-xs text-cyan-400"></i>
+                        </a>
+                    </div>
+
+                    <!-- Trust Stats Badge Grid -->
+                    <div class="grid grid-cols-3 gap-4 border-t border-slate-800/80 pt-8 max-w-lg mx-auto lg:mx-0">
+                        <div>
+                            <p class="text-2xl lg:text-3xl font-bold text-white">15+</p>
+                            <p class="text-xs text-slate-400 font-medium">Years Experience</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl lg:text-3xl font-bold text-white">10,000+</p>
+                            <p class="text-xs text-slate-400 font-medium">Happy Smiles</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl lg:text-3xl font-bold text-white">99.8%</p>
+                            <p class="text-xs text-slate-400 font-medium">Satisfaction Rate</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Avatar / Visual -->
+                <div class="relative flex-1 flex justify-center">
+                    <!-- Glowing Avatar Container -->
+                    <div class="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
+                        <!-- Outer Ambient Gradient Ring -->
+                        <div class="absolute -inset-4 rounded-full bg-gradient-to-tr from-cyan-500 via-purple-500 to-pink-500 opacity-70 blur-xl animate-pulse"></div>
+                        
+                        <!-- Double Border Frame -->
+                        <div class="relative w-full h-full rounded-full p-2 bg-gradient-to-tr from-cyan-400 via-teal-500 to-indigo-600">
+                            <div class="w-full h-full rounded-full overflow-hidden bg-slate-950 p-2">
+                                <img src="https://ui-avatars.com/api/?name=jasmin+tamboli&size=200&background=0D8ABC&color=fff&bold=true" 
+                                     alt="Jasmin Tamboli - Owner" 
+                                     class="w-full h-full object-cover rounded-full">
+                            </div>
+                        </div>
+
+                        <!-- Floating Badge 1 -->
+                        <div class="absolute -bottom-2 -left-4 bg-slate-900/90 backdrop-blur-xl border border-slate-800 rounded-2xl p-4 shadow-2xl flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-award"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Practice Owner</p>
+                                <p class="text-sm font-bold text-white">Jasmin Tamboli</p>
+                            </div>
+                        </div>
+
+                        <!-- Floating Badge 2 -->
+                        <div class="absolute top-4 -right-4 bg-slate-900/90 backdrop-blur-xl border border-slate-800 rounded-2xl px-4 py-3 shadow-2xl flex items-center gap-2">
+                            <div class="flex text-amber-400 text-xs">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="text-xs font-bold text-slate-200">5.0 Star Rated</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-24 bg-slate-900/40 relative border-t border-slate-800/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- Image Visual -->
+                <div class="relative group">
+                    <div class="absolute -inset-2 bg-gradient-to-r from-cyan-500 to-indigo-500 rounded-3xl blur opacity-25 group-hover:opacity-50 transition duration-500"></div>
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Modern Dental Clinic" 
+                             class="w-full h-[420px] object-cover object-center transform group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-slate-950/80 backdrop-blur-md border border-slate-800">
+                            <p class="text-sm font-semibold text-cyan-400">Dental Happiness Clinic</p>
+                            <p class="text-xs text-slate-300">State-of-the-Art Aesthetic & Surgical Dentistry</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div>
+                    <span class="text-cyan-400 text-xs font-bold uppercase tracking-widest block mb-2">About Our Clinic</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-6">
+                        Excellence in Dental Care Under the Leadership of <span class="bg-gradient-to-r from-cyan-400 to-teal-300 bg-clip-text text-transparent">Jasmin Tamboli</span>
+                    </h2>
+                    <p class="text-slate-400 text-base leading-relaxed mb-6">
+                        At <strong class="text-slate-200">Dental Happiness Clinic</strong>, we believe every patient deserves a healthy, radiant smile without stress or discomfort. Guided by <strong class="text-slate-200">Jasmin Tamboli</strong>, our clinic has established a reputation for warmth, advanced clinical techniques, and personalized oral health plans.
+                    </p>
+                    <p class="text-slate-400 text-base leading-relaxed mb-8">
+                        From pain-free routine cleanings to complete cosmetic smile makeovers, we utilize cutting-edge digital diagnostics and gentle care techniques tailored to every family member.
+                    </p>
+
+                    <!-- Key Pillars -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="flex items-start gap-3 p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <i class="fa-solid fa-shield-halved text-cyan-400 text-lg mt-0.5"></i>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Pain-Free Protocol</h4>
+                                <p class="text-xs text-slate-400">Gentle treatment methods for complete patient ease.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <i class="fa-solid fa-microscope text-teal-400 text-lg mt-0.5"></i>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">3D Digital Imaging</h4>
+                                <p class="text-xs text-slate-400">Ultra-accurate diagnostic accuracy and planning.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-cyan-400 text-xs font-bold uppercase tracking-widest block mb-2">Our Specialized Care</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Comprehensive Dental Solutions</h2>
+                <p class="text-slate-400 text-base mt-4">Designed to maintain, restore, and transform your oral health with absolute precision.</p>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service Card 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-cyan-500/50 transition-all duration-300 glow-card group">
+                    <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Cosmetic Dentistry & Veneers</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Custom porcelain veneers, professional teeth whitening, and complete aesthetic smile design to boost your confidence.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-bold text-cyan-400 group-hover:text-cyan-300 gap-2">
+                        <span>Learn More</span>
+                        <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-teal-500/50 transition-all duration-300 glow-card group">
+                    <div class="w-14 h-14 rounded-2xl bg-teal-500/10 border border-teal-500/20 text-teal-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Dental Implants</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Permanent, natural-looking tooth replacements crafted with biocompatible materials to restore full function.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-bold text-teal-400 group-hover:text-teal-300 gap-2">
+                        <span>Learn More</span>
+                        <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-purple-500/50 transition-all duration-300 glow-card group">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-smile-beam"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Invisible Aligners</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Straighten teeth discreetly with modern clear aligner systems designed for comfortable, fast alignment.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-bold text-purple-400 group-hover:text-purple-300 gap-2">
+                        <span>Learn More</span>
+                        <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-cyan-500/50 transition-all duration-300 glow-card group">
+                    <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Laser Periodontal Therapy</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Minimally invasive gum care using modern laser technology for faster healing and zero discomfort.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-bold text-cyan-400 group-hover:text-cyan-300 gap-2">
+                        <span>Learn More</span>
+                        <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-teal-500/50 transition-all duration-300 glow-card group">
+                    <div class="w-14 h-14 rounded-2xl bg-teal-500/10 border border-teal-500/20 text-teal-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-children"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Pediatric Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Friendly, welcoming dental visits for children to foster lifelong habits and strong oral health early on.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-bold text-teal-400 group-hover:text-teal-300 gap-2">
+                        <span>Learn More</span>
+                        <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-purple-500/50 transition-all duration-300 glow-card group">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Preventive Maintenance</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Thorough dental check-ups, tartar removals, and digital screenings to protect your healthy smile.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-bold text-purple-400 group-hover:text-purple-300 gap-2">
+                        <span>Learn More</span>
+                        <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials" class="py-24 bg-slate-900/40 border-t border-slate-800/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-cyan-400 text-xs font-bold uppercase tracking-widest block mb-2">Patient Endorsements</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">What Our Patients Say</h2>
+                <p class="text-slate-400 text-sm mt-3">Real experiences from patients who entrusted their smiles to Dental Happiness Clinic.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 relative">
+                    <div class="flex text-amber-400 text-sm mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm italic mb-6">
+                        "Jasmin Tamboli and the team at Dental Happiness Clinic gave me back my smile! The procedure was completely pain-free and the clinical team was so reassuring."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-cyan-500/20 border border-cyan-500/30 flex items-center justify-center text-cyan-400 font-bold text-sm">
+                            AR
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-white">Ananya R.</p>
+                            <p class="text-xs text-slate-400">Cosmetic Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 relative">
+                    <div class="flex text-amber-400 text-sm mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm italic mb-6">
+                        "The atmosphere is warm, pristine, and modern. You can tell Dr. Tamboli cares deeply about patient wellbeing. I actually look forward to my dental visits now!"
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-teal-500/20 border border-teal-500/30 flex items-center justify-center text-teal-400 font-bold text-sm">
+                            MK
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-white">Michael K.</p>
+                            <p class="text-xs text-slate-400">Implant Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 relative">
+                    <div class="flex text-amber-400 text-sm mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm italic mb-6">
+                        "Extremely professional care and cutting-edge equipment. My clear aligner treatment yielded results faster than expected. Highly recommended!"
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-purple-500/20 border border-purple-500/30 flex items-center justify-center text-purple-400 font-bold text-sm">
+                            SP
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-white">Sneha P.</p>
+                            <p class="text-xs text-slate-400">Orthodontic Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT & APPOINTMENT SECTION -->
+    <section id="contact" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="bg-slate-900/90 border border-slate-800 rounded-3xl p-8 lg:p-12 overflow-hidden relative">
+                <!-- Ambient Glow inside card -->
+                <div class="absolute top-0 right-0 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 relative z-10">
+                    
+                    <!-- Left Contact Info -->
+                    <div>
+                        <span class="text-cyan-400 text-xs font-bold uppercase tracking-widest block mb-2">Get In Touch</span>
+                        <h2 class="text-3xl font-extrabold text-white mb-6">Request Your Appointment Today</h2>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-8">
+                            Ready for a happier, healthier smile? Reach out to Dental Happiness Clinic to book a personalized consultation with Jasmin Tamboli.
+                        </p>
+
+                        <div class="space-y-6">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-cyan-400">
+                                    <i class="fa-solid fa-building-user text-lg"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400 uppercase font-semibold">Clinic & Practice</p>
+                                    <p class="text-slate-200 font-bold">Dental Happiness Clinic</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-cyan-400">
+                                    <i class="fa-solid fa-user-gear text-lg"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400 uppercase font-semibold">Leadership</p>
+                                    <p class="text-slate-200 font-bold">Jasmin Tamboli (Owner)</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-cyan-400">
+                                    <i class="fa-solid fa-envelope text-lg"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400 uppercase font-semibold">Direct Email</p>
+                                    <p class="text-slate-200 font-medium">contact@dentalhappiness.com</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-cyan-400">
+                                    <i class="fa-solid fa-handshake text-lg"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400 uppercase font-semibold">Network Connection</p>
+                                    <p class="text-slate-200 font-medium">Member Since 08 Sep 2026</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Form -->
+                    <div class="bg-slate-950/70 border border-slate-800 rounded-2xl p-6 sm:p-8">
+                        <form onsubmit="event.preventDefault(); alert('Thank you for reaching out! We will contact you shortly.');" class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Full Name</label>
+                                <input type="text" placeholder="John Doe" required class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Phone Number</label>
+                                <input type="tel" placeholder="+1 (555) 000-0000" required class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Interested Treatment</label>
+                                <select class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 focus:outline-none focus:border-cyan-500 transition-colors">
+                                    <option>General Consultation</option>
+                                    <option>Cosmetic Dentistry & Veneers</option>
+                                    <option>Dental Implants</option>
+                                    <option>Invisible Aligners</option>
+                                    <option>Teeth Whitening</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Message or Notes</label>
+                                <textarea rows="3" placeholder="Tell us about your dental goals..." class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 focus:outline-none focus:border-cyan-500 transition-colors"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-teal-500 text-slate-950 font-bold text-sm hover:opacity-90 transition-opacity shadow-lg shadow-cyan-500/20">
+                                Send Booking Request
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-slate-800/80 bg-slate-950 py-12 text-slate-400 text-sm">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-500 to-teal-500 flex items-center justify-center text-slate-950 font-bold">
+                    <i class="fa-solid fa-tooth text-xs"></i>
+                </div>
+                <span class="text-slate-200 font-bold text-base">Dental Happiness Clinic</span>
+            </div>
+
+            <p class="text-xs text-slate-500">
+                &copy; 2026 Dental Happiness Clinic. All Rights Reserved. Practice Leadership: Jasmin Tamboli.
+            </p>
+
+            <div class="flex gap-4 text-slate-400">
+                <a href="#" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center hover:text-cyan-400 transition-colors"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center hover:text-cyan-400 transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center hover:text-cyan-400 transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
