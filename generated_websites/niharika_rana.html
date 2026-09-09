@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niharika Rana | Executive Portfolio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-border {
+            position: relative;
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(168, 85, 247, 0.1));
+        }
+        .gradient-border::before {
+            content: '';
+            position: absolute;
+            inset: -1px;
+            background: linear-gradient(135deg, #6366f1, #ec4899);
+            border-radius: inherit;
+            z-index: -1;
+            opacity: 0.4;
+            transition: opacity 0.3s ease;
+        }
+        .gradient-border:hover::before {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-indigo-500 selection:text-white relative overflow-x-hidden">
+
+    <!-- Background Glow Effects -->
+    <div class="fixed top-0 left-1/4 -z-10 w-96 h-96 bg-indigo-600/20 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="fixed bottom-1/3 right-1/4 -z-10 w-96 h-96 bg-pink-600/15 rounded-full blur-3xl pointer-events-none"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-tight text-white flex items-center gap-2">
+                <span class="w-8 h-8 rounded-lg bg-gradient-to-tr from-indigo-500 to-pink-500 flex items-center justify-center text-white text-sm font-black">NR</span>
+                <span>Niharika Rana</span>
+            </a>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-indigo-400 transition-colors">Expertise</a>
+                <a href="#services" class="hover:text-indigo-400 transition-colors">Services</a>
+                <a href="#endorsements" class="hover:text-indigo-400 transition-colors">Endorsements</a>
+            </div>
+
+            <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-slate-900 border border-slate-700 text-sm font-semibold hover:border-indigo-500 hover:text-indigo-300 transition-all duration-300 shadow-lg shadow-indigo-950/30">
+                <span>Connect</span>
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-36 pb-20 md:pt-48 md:pb-32 px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+            
+            <!-- Hero Content -->
+            <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 text-xs font-semibold tracking-wide uppercase">
+                    <span class="w-2 h-2 rounded-full bg-indigo-400 animate-pulse"></span>
+                    Digital Leadership & Strategy
+                </div>
+
+                <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight">
+                    Transforming ideas into <br class="hidden sm:block">
+                    <span class="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+                        scalable digital impact.
+                    </span>
+                </h1>
+
+                <p class="text-slate-400 text-lg sm:text-xl max-w-2xl font-light leading-relaxed mx-auto lg:mx-0">
+                    A visionary technology leader and strategy innovator dedicated to driving cross-functional excellence, high-growth initiatives, and future-ready digital solutions.
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                    <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.02] transition-all duration-300 text-center">
+                        Initiate Collaboration
+                    </a>
+                    <a href="#about" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 font-semibold hover:border-slate-700 hover:bg-slate-800/50 transition-all duration-300 text-center">
+                        Explore Insights
+                    </a>
+                </div>
+
+                <!-- Trust Badges -->
+                <div class="pt-8 border-t border-slate-900 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0 text-center lg:text-left">
+                    <div>
+                        <p class="text-2xl font-bold text-white">100%</p>
+                        <p class="text-xs text-slate-500 font-medium uppercase tracking-wider mt-1">Excellence</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl font-bold text-white">Global</p>
+                        <p class="text-xs text-slate-500 font-medium uppercase tracking-wider mt-1">Perspective</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl font-bold text-white">Strategic</p>
+                        <p class="text-xs text-slate-500 font-medium uppercase tracking-wider mt-1">Growth</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Avatar Frame -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative group">
+                    <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 blur-xl opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+                    <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full p-2 bg-slate-950 border border-slate-800">
+                        <img src="https://ui-avatars.com/api/?name=Niharika+Rana&size=200&background=0D8ABC&color=fff&bold=true" 
+                             alt="Niharika Rana" 
+                             class="w-full h-full rounded-full object-cover shadow-2xl">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-24 bg-slate-900/40 border-y border-slate-900 px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Industry Image Frame -->
+                <div class="lg:col-span-6 relative">
+                    <div class="absolute -inset-2 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-2xl blur-lg opacity-30"></div>
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" 
+                             alt="Professional Collaboration" 
+                             class="w-full h-[400px] object-cover hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <p class="text-xs font-semibold uppercase tracking-widest text-indigo-400">Core Focus</p>
+                            <p class="text-lg font-semibold text-white mt-1">Driving innovation through strategic collaboration & design execution.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-300 text-xs font-medium">
+                        Strategic Vision
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+                        Bridging execution with high-level business strategy.
+                    </h2>
+                    <p class="text-slate-400 leading-relaxed">
+                        With a robust background focused on high-impact technology delivery, Niharika Rana excels at converting complex challenges into sleek, human-centric solutions. By combining tactical foresight with seamless operational alignment, every initiative yields measurable success.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-4 pt-4">
+                        <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-4 rounded-xl">
+                            <i class="fa-solid fa-chart-line text-indigo-400 text-xl mb-2"></i>
+                            <h3 class="text-white font-semibold text-sm">Strategic Growth</h3>
+                            <p class="text-xs text-slate-400 mt-1">Accelerating core business capabilities.</p>
+                        </div>
+                        <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-4 rounded-xl">
+                            <i class="fa-solid fa-lightbulb text-pink-400 text-xl mb-2"></i>
+                            <h3 class="text-white font-semibold text-sm">Digital Innovation</h3>
+                            <p class="text-xs text-slate-400 mt-1">Pioneering forward-thinking systems.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services" class="py-24 px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+            <h2 class="text-xs uppercase tracking-widest font-bold text-indigo-400">Core Capabilities</h2>
+            <p class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Tailored Expertise for Digital Excellence</p>
+            <p class="text-slate-400 text-sm sm:text-base">Delivering transformative results across key strategy and technical pillars.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 p-8 rounded-2xl group relative overflow-hidden">
+                <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-xl mb-6 group-hover:scale-110 group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300">
+                    <i class="fa-solid fa-compass"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Strategic Advisory</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Guiding executive leadership to align digital roadmap initiatives with tangible organizational goals.</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 p-8 rounded-2xl group relative overflow-hidden">
+                <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 text-xl mb-6 group-hover:scale-110 group-hover:bg-purple-500 group-hover:text-white transition-all duration-300">
+                    <i class="fa-solid fa-cubes"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Product Leadership</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Synthesizing market demands into clear product architectures and end-to-end strategy roadmaps.</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 p-8 rounded-2xl group relative overflow-hidden">
+                <div class="w-12 h-12 rounded-xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400 text-xl mb-6 group-hover:scale-110 group-hover:bg-pink-500 group-hover:text-white transition-all duration-300">
+                    <i class="fa-solid fa-rocket"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Digital Transformation</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Modernizing business practices with seamless tech integrations designed for rapid scaling.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Endorsements -->
+    <section id="endorsements" class="py-24 bg-slate-900/30 border-y border-slate-900 px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <p class="text-xs font-bold uppercase tracking-widest text-indigo-400">Endorsements</p>
+                <h2 class="text-3xl font-bold text-white">Trusted by Strategic Partners</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl relative">
+                    <div class="flex text-amber-400 text-sm mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 italic text-sm mb-6 leading-relaxed">
+                        "Niharika brings rare alignment between vision and execution. Her clarity in business strategy elevates team outputs significantly."
+                    </p>
+                    <div>
+                        <p class="text-white font-semibold text-sm">Enterprise Strategist</p>
+                        <p class="text-slate-500 text-xs">Digital Advisory Network</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl relative">
+                    <div class="flex text-amber-400 text-sm mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 italic text-sm mb-6 leading-relaxed">
+                        "An exceptional partner who excels at breaking down complex initiatives into actionable, high-value outcomes."
+                    </p>
+                    <div>
+                        <p class="text-white font-semibold text-sm">Operations Lead</p>
+                        <p class="text-slate-500 text-xs">Innovation Practice</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="grid lg:grid-cols-12 gap-12">
+            
+            <div class="lg:col-span-5 space-y-6">
+                <span class="text-xs font-bold uppercase tracking-widest text-indigo-400">Get In Touch</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white">Let’s Start a Conversation.</h2>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Interested in starting a new venture or exploring strategic leadership opportunities? Reach out directly.
+                </p>
+
+                <div class="space-y-4 pt-4">
+                    <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                        <div class="w-10 h-10 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center">
+                            <i class="fa-solid fa-handshake"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-500 font-medium">Network Status</p>
+                            <p class="text-sm font-semibold text-white">Connected since 07 Sep 2026</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-7">
+                <form class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl space-y-6" onsubmit="event.preventDefault();">
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-medium text-slate-400 mb-2">Your Name</label>
+                            <input type="text" placeholder="John Doe" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-indigo-500 transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-medium text-slate-400 mb-2">Your Email</label>
+                            <input type="email" placeholder="john@example.com" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-indigo-500 transition-colors">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-medium text-slate-400 mb-2">Subject</label>
+                        <input type="text" placeholder="Strategic Collaboration" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-indigo-500 transition-colors">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-medium text-slate-400 mb-2">Message</label>
+                        <textarea rows="4" placeholder="How can we collaborate?" class="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-indigo-500 transition-colors"></textarea>
+                    </div>
+                    <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold hover:shadow-lg hover:shadow-indigo-500/25 transition-all duration-300">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-900 py-8 text-center text-slate-600 text-xs">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>&copy; 2026 Niharika Rana. All rights reserved.</p>
+            <p class="text-slate-500">Excellence & Strategic Innovation</p>
+        </div>
+    </footer>
+
+</body>
+</html>
