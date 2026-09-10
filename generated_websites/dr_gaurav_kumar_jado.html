@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Gaurav Kumar jado | Executive Portfolio & Visionary Advisory</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-border {
+            position: relative;
+            background-clip: padding-box;
+            border: 1px solid transparent;
+        }
+        .gradient-border::before {
+            content: '';
+            position: absolute;
+            top: 0; right: 0; bottom: 0; left: 0;
+            z-index: -1;
+            margin: -1px;
+            border-radius: inherit;
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.5), rgba(168, 85, 247, 0.5), rgba(236, 72, 153, 0.5));
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(99, 102, 241, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white relative overflow-x-hidden">
+
+    <!-- Ambient Glowing Background Spheres -->
+    <div class="fixed top-0 left-1/4 w-96 h-96 bg-indigo-600/20 rounded-full blur-[120px] pointer-events-none -z-10 animate-pulse-slow"></div>
+    <div class="fixed bottom-1/4 right-1/4 w-96 h-96 bg-purple-600/20 rounded-full blur-[120px] pointer-events-none -z-10 animate-pulse-slow"></div>
+    <div class="fixed top-1/2 right-10 w-80 h-80 bg-pink-600/15 rounded-full blur-[100px] pointer-events-none -z-10"></div>
+
+    <!-- Navigation Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center font-bold text-white shadow-lg group-hover:scale-105 transition-transform duration-300">
+                    GK
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-lg tracking-tight text-white group-hover:text-indigo-400 transition-colors">Dr. Gaurav Kumar</span>
+                    <span class="text-xs text-slate-400 font-medium tracking-wider uppercase">Strategic Visionary</span>
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-indigo-400 transition-colors">Expertise</a>
+                <a href="#services" class="hover:text-indigo-400 transition-colors">Services</a>
+                <a href="#endorsements" class="hover:text-indigo-400 transition-colors">Endorsements</a>
+            </nav>
+
+            <!-- Action Button -->
+            <div class="flex items-center gap-4">
+                <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:opacity-90 hover:shadow-lg hover:shadow-indigo-500/25 transition-all duration-300">
+                    <span>Initiate Dialogue</span>
+                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen pt-32 pb-20 flex items-center justify-center relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Left Column: Content -->
+                <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 backdrop-blur-xl text-xs font-semibold text-indigo-400">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                        <span>Available for Strategic Consultations & Executive Directorship</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.1]">
+                        Pioneering <span class="gradient-text">Innovation</span> & Strategic Leadership
+                    </h1>
+
+                    <p class="text-lg sm:text-xl text-slate-400 font-normal leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        Welcome to the official portfolio of <strong class="text-slate-200">Dr. Gaurav Kumar jado</strong>. Dedicated to advancing multi-disciplinary breakthroughs, driving digital evolution, and advising next-generation enterprises.
+                    </p>
+
+                    <!-- Trust Badges / Quick Stats -->
+                    <div class="grid grid-cols-3 gap-4 py-4 max-w-lg mx-auto lg:mx-0 border-y border-slate-800/80">
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-white">15+</div>
+                            <div class="text-xs text-slate-400 uppercase tracking-wider font-medium mt-1">Years Research</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-indigo-400">50+</div>
+                            <div class="text-xs text-slate-400 uppercase tracking-wider font-medium mt-1">Key Initiatives</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-pink-400">100%</div>
+                            <div class="text-xs text-slate-400 uppercase tracking-wider font-medium mt-1">Commitment</div>
+                        </div>
+                    </div>
+
+                    <!-- Call To Action -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:shadow-xl hover:shadow-indigo-500/20 transition-all duration-300 text-center">
+                            Explore Collaboration
+                        </a>
+                        <a href="#about" class="w-full sm:w-auto px-8 py-4 rounded-full font-semibold text-slate-300 bg-slate-900/60 hover:bg-slate-800 border border-slate-800 transition-all duration-300 text-center">
+                            Read Biography
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Glowing Avatar Frame -->
+                <div class="lg:col-span-5 flex justify-center items-center">
+                    <div class="relative group">
+                        <!-- Dual Outer Glow -->
+                        <div class="absolute -inset-1.5 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-3xl blur-xl opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse-slow"></div>
+                        
+                        <!-- Main Card -->
+                        <div class="relative bg-slate-900 border border-slate-800 rounded-3xl p-8 flex flex-col items-center text-center shadow-2xl backdrop-blur-xl">
+                            <div class="relative mb-6">
+                                <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-pink-500 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-500"></div>
+                                <img src="https://ui-avatars.com/api/?name=Dr.+Gaurav+Kumar+jado&size=200&background=0D8ABC&color=fff&bold=true" 
+                                     alt="Dr. Gaurav Kumar jado" 
+                                     class="relative w-44 h-44 rounded-full object-cover border-4 border-slate-950 shadow-2xl">
+                            </div>
+
+                            <h3 class="text-2xl font-bold text-white tracking-tight">Dr. Gaurav Kumar jado</h3>
+                            <p class="text-sm font-semibold text-indigo-400 mt-1">Senior Strategic Consultant & Researcher</p>
+
+                            <div class="flex gap-3 mt-6">
+                                <a href="mailto:gauravkumarjado@gmail.com" class="w-10 h-10 rounded-xl bg-slate-800/80 border border-slate-700 flex items-center justify-center text-slate-300 hover:text-white hover:border-indigo-500 hover:bg-indigo-500/20 transition-all">
+                                    <i class="fa-solid fa-envelope text-sm"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 rounded-xl bg-slate-800/80 border border-slate-700 flex items-center justify-center text-slate-300 hover:text-white hover:border-indigo-500 hover:bg-indigo-500/20 transition-all">
+                                    <i class="fa-brands fa-linkedin-in text-sm"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 rounded-xl bg-slate-800/80 border border-slate-700 flex items-center justify-center text-slate-300 hover:text-white hover:border-indigo-500 hover:bg-indigo-500/20 transition-all">
+                                    <i class="fa-solid fa-globe text-sm"></i>
+                                </a>
+                            </div>
+
+                            <!-- Verified Badge -->
+                            <div class="mt-6 w-full pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
+                                <span class="flex items-center gap-1.5"><i class="fa-solid fa-shield-halved text-emerald-400"></i> Verified Expert</span>
+                                <span>Global Advisory</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-24 relative bg-slate-950/50 border-t border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left: Visual Card -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 group">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" 
+                             alt="Strategic Collaboration" 
+                             class="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105 filter brightness-90 contrast-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-6 bg-slate-900/80 backdrop-blur-md rounded-xl border border-slate-800">
+                            <p class="text-xs font-semibold text-indigo-400 uppercase tracking-widest mb-1">Core Philosophy</p>
+                            <p class="text-sm font-medium text-slate-200">"Bridging empirical rigour with transformative innovation to solve modern global challenges."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Biography Details -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-block text-xs font-semibold text-indigo-400 uppercase tracking-widest bg-indigo-500/10 px-3 py-1 rounded-full border border-indigo-500/20">
+                        Executive Background
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+                        Transforming Visionary Concepts into High-Impact Outcomes
+                    </h2>
+                    <p class="text-slate-400 leading-relaxed">
+                        Dr. Gaurav Kumar jado stands at the forefront of strategic innovation, combining profound technical insight with executive foresight. With an unwavering commitment to excellence, Dr. Gaurav advises organizations, institutions, and emerging ventures on navigating complex operational landscapes.
+                    </p>
+                    <p class="text-slate-400 leading-relaxed">
+                        Leveraging deep expertise across multidisciplinary domains, he fosters sustainable growth, oversees high-stakes projects, and implements frameworks that drive long-term systemic impact.
+                    </p>
+
+                    <!-- Key Pillars -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 flex items-start gap-3">
+                            <i class="fa-solid fa-chart-line text-indigo-400 text-lg mt-1"></i>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Strategic Optimization</h4>
+                                <p class="text-xs text-slate-400 mt-1">Streamlining institutional frameworks for efficiency.</p>
+                            </div>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 flex items-start gap-3">
+                            <i class="fa-solid fa-lightbulb text-purple-400 text-lg mt-1"></i>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Innovation Leadership</h4>
+                                <p class="text-xs text-slate-400 mt-1">Nurturing novel paradigms from idea to scale.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-xs font-semibold text-indigo-400 uppercase tracking-widest bg-indigo-500/10 px-3 py-1 rounded-full border border-indigo-500/20">
+                    Capabilities & Offerings
+                </span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
+                    Key Areas of Practice
+                </h2>
+                <p class="text-slate-400 text-base">
+                    Tailored solutions and executive oversight designed for transformative growth and operational resilience.
+                </p>
+            </div>
+
+            <!-- Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service Card 1 -->
+                <div class="group bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-indigo-500/50 transition-all duration-300 hover:-translate-y-1 relative overflow-hidden">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-compass"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-indigo-400 transition-colors">Strategic Advisory</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Providing top-tier consultation for executive boards and leaders seeking clarity in high-velocity operating environments.
+                    </p>
+                    <span class="text-xs font-semibold text-indigo-400 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                        Learn More <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </span>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="group bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-purple-500/50 transition-all duration-300 hover:-translate-y-1 relative overflow-hidden">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-flask"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">Research & Development</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Spearheading rigorous scientific and technological research programs tailored to next-generation challenges.
+                    </p>
+                    <span class="text-xs font-semibold text-purple-400 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                        Learn More <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </span>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="group bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-pink-500/50 transition-all duration-300 hover:-translate-y-1 relative overflow-hidden">
+                    <div class="w-14 h-14 rounded-xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-diagram-project"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-pink-400 transition-colors">Digital Transformation</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Architecting modern digital frameworks and modernizing core processes for ultimate agility and scalability.
+                    </p>
+                    <span class="text-xs font-semibold text-pink-400 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                        Learn More <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </span>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="group bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-indigo-500/50 transition-all duration-300 hover:-translate-y-1 relative overflow-hidden">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-people-roof"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-indigo-400 transition-colors">Institutional Leadership</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Mentoring senior teams, establishing governance standards, and cultivating high-performance innovation cultures.
+                    </p>
+                    <span class="text-xs font-semibold text-indigo-400 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                        Learn More <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </span>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="group bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-purple-500/50 transition-all duration-300 hover:-translate-y-1 relative overflow-hidden">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">Risk Assessment & Mitigation</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Identifying vulnerabilities and designing proactive mitigation strategies for enterprise-grade continuity.
+                    </p>
+                    <span class="text-xs font-semibold text-purple-400 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                        Learn More <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </span>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="group bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 hover:border-pink-500/50 transition-all duration-300 hover:-translate-y-1 relative overflow-hidden">
+                    <div class="w-14 h-14 rounded-xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-pink-400 transition-colors">Global Partnership Building</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Connecting international stakeholders and establishing synergistic alliances across cross-border markets.
+                    </p>
+                    <span class="text-xs font-semibold text-pink-400 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                        Learn More <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Endorsements -->
+    <section id="endorsements" class="py-24 bg-slate-950/60 border-t border-slate-800/60 relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-xs font-semibold text-purple-400 uppercase tracking-widest bg-purple-500/10 px-3 py-1 rounded-full border border-purple-500/20">
+                    Peer Endorsements
+                </span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
+                    Words from Executive Peers
+                </h2>
+                <p class="text-slate-400 text-base">
+                    Recognized for strategic acumen, collaborative mindset, and transformative impact.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Endorsement 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Dr. Gaurav's ability to simplify complex multidimensional strategic challenges and map out actionable paths is truly unmatched."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800/80">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-500 flex items-center justify-center font-bold text-white text-xs">
+                            VP
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Vice President, Research</h4>
+                            <p class="text-xs text-slate-400">Global Innovation Council</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Endorsement 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Working with Dr. Gaurav brought absolute clarity and executive rigor to our long-term digital strategy."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800/80">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-purple-500 to-pink-500 flex items-center justify-center font-bold text-white text-xs">
+                            MD
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Managing Director</h4>
+                            <p class="text-xs text-slate-400">Enterprise Futures Advisory</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Endorsement 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "An exemplary thought leader whose insights have consistently yielded quantifiable outcomes for multi-stakeholder projects."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800/80">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-pink-500 to-indigo-500 flex items-center justify-center font-bold text-white text-xs">
+                            CD
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Chief Director</h4>
+                            <p class="text-xs text-slate-400">Strategic Technology Institute</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Inquiry Section -->
+    <section id="contact" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Direct Details -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-xs font-semibold text-pink-400 uppercase tracking-widest bg-pink-500/10 px-3 py-1 rounded-full border border-pink-500/20">
+                            Get In Touch
+                        </span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mt-4">
+                            Initiate a Confidential Strategic Conversation
+                        </h2>
+                        <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                            Whether for keynote engagements, advisory positions, or high-value partnerships, reach out directly.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="p-4 rounded-2xl bg-slate-900/60 border border-slate-800 flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-lg">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-slate-400 font-medium">Direct Email</span>
+                                <a href="mailto:gauravkumarjado@gmail.com" class="block text-slate-200 font-semibold hover:text-indigo-400 transition-colors">gauravkumarjado@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-2xl bg-slate-900/60 border border-slate-800 flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 text-lg">
+                                <i class="fa-solid fa-handshake"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-slate-400 font-medium">Network Connection Date</span>
+                                <p class="text-slate-200 font-semibold">07 Sep 2026</p>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-2xl bg-slate-900/60 border border-slate-800 flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400 text-lg">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-slate-400 font-medium">Location</span>
+                                <p class="text-slate-200 font-semibold">Global Executive Advisory</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="lg:col-span-7">
+                    <form onsubmit="event.preventDefault(); alert('Thank you for your message, Dr. Gaurav will respond shortly.');" class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-3xl space-y-6">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Full Name</label>
+                                <input type="text" placeholder="John Doe" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-200 text-sm focus:outline-none focus:border-indigo-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Email Address</label>
+                                <input type="email" placeholder="john@enterprise.com" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-200 text-sm focus:outline-none focus:border-indigo-500 transition-colors">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Subject / Strategic Topic</label>
+                            <input type="text" placeholder="Executive Partnership Inquiry" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-200 text-sm focus:outline-none focus:border-indigo-500 transition-colors">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Detailed Message</label>
+                            <textarea rows="4" placeholder="Briefly describe the initiative or advisory requirement..." required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-200 text-sm focus:outline-none focus:border-indigo-500 transition-colors"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl font-bold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:opacity-90 hover:shadow-lg hover:shadow-indigo-500/25 transition-all duration-300">
+                            Transmit Message
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-slate-800/80 bg-slate-950 text-slate-400 text-sm">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-indigo-500 to-purple-500 flex items-center justify-center font-bold text-white text-xs">
+                    GK
+                </div>
+                <span class="font-semibold text-slate-200">Dr. Gaurav Kumar jado</span>
+            </div>
+
+            <p class="text-xs text-slate-500">
+                &copy; <script>document.write(new Date().getFullYear())</script> Dr. Gaurav Kumar jado. All rights reserved. Bespoke Executive Digital Showcase.
+            </p>
+
+            <div class="flex gap-4 text-xs text-slate-400">
+                <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                <span>&bull;</span>
+                <a href="#" class="hover:text-white transition-colors">Terms of Engagement</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
