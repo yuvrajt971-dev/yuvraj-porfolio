@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Richa Sahai | Assistant Professor & Academic Researcher</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f3ff',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            900: '#1e1b4b',
+                        }
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #818cf8 0%, #c084fc 50%, #f472b6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gradient-border {
+            position: relative;
+            border-radius: 1rem;
+            background: linear-gradient(135deg, rgba(99,102,241,0.3), rgba(217,70,239,0.3));
+            padding: 1px;
+        }
+
+        .glass-card {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(99, 102, 241, 0.4);
+            box-shadow: 0 10px 30px -10px rgba(99, 102, 241, 0.2);
+        }
+
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(99, 102, 241, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- Ambient Background Lighting -->
+    <div class="fixed inset-0 pointer-events-none overflow-hidden z-0">
+        <div class="absolute -top-40 -left-40 w-96 h-96 bg-indigo-600/20 rounded-full blur-[120px]"></div>
+        <div class="absolute top-1/3 -right-40 w-96 h-96 bg-purple-600/20 rounded-full blur-[120px]"></div>
+        <div class="absolute -bottom-40 left-1/3 w-96 h-96 bg-pink-600/20 rounded-full blur-[120px]"></div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 to-pink-500 flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-indigo-500/20 group-hover:scale-105 transition-transform">
+                    RS
+                </div>
+                <div>
+                    <span class="font-bold text-lg tracking-tight block leading-none">Dr. Richa Sahai</span>
+                    <span class="text-xs text-indigo-400 font-medium">Assistant Professor</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-indigo-400 transition-colors">Expertise</a>
+                <a href="#academic-pillars" class="hover:text-indigo-400 transition-colors">Academic Pillars</a>
+                <a href="#testimonials" class="hover:text-indigo-400 transition-colors">Endorsements</a>
+                <a href="#contact" class="hover:text-indigo-400 transition-colors">Contact</a>
+            </nav>
+
+            <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:opacity-90 transition-all shadow-md shadow-indigo-500/20 hover:scale-105">
+                Connect Directly
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button id="menuBtn" class="md:hidden text-slate-300 hover:text-white focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Nav Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-slate-900/95 border-b border-slate-800 px-6 py-4 space-y-3">
+            <a href="#about" class="block text-slate-300 hover:text-indigo-400 py-1">About</a>
+            <a href="#expertise" class="block text-slate-300 hover:text-indigo-400 py-1">Expertise</a>
+            <a href="#academic-pillars" class="block text-slate-300 hover:text-indigo-400 py-1">Academic Pillars</a>
+            <a href="#testimonials" class="block text-slate-300 hover:text-indigo-400 py-1">Endorsements</a>
+            <a href="#contact" class="block text-slate-300 hover:text-indigo-400 py-1">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content Wrapper -->
+    <main class="relative z-10 pt-20">
+
+        <!-- HERO SECTION -->
+        <section class="min-h-[90vh] flex items-center justify-center px-6 py-20 relative">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Content -->
+                <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border border-indigo-500/30 text-indigo-300 text-xs sm:text-sm font-medium">
+                        <span class="flex h-2 w-2 rounded-full bg-indigo-400 animate-ping"></span>
+                        <span>Assistant Professor at VSPM AHE</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
+                        Advancing Knowledge Through <br>
+                        <span class="gradient-text">Pedagogy & Research Excellence</span>
+                    </h1>
+
+                    <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed font-light">
+                        Dedicated academic, researcher, and mentor committed to fostering intellectual growth, pioneering educational frameworks, and shaping the next generation of professional leaders at VSPM Academy of Higher Education.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold text-center shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.02] transition-all">
+                            Initiate Collaboration
+                        </a>
+                        <a href="#about" class="w-full sm:w-auto px-8 py-4 rounded-full glass-card hover:bg-slate-800 text-slate-200 font-semibold text-center transition-all flex items-center justify-center gap-2">
+                            <span>Explore Profile</span>
+                            <i class="fa-solid fa-arrow-down text-xs"></i>
+                        </a>
+                    </div>
+
+                    <!-- Trust Stats Badges -->
+                    <div class="pt-8 grid grid-cols-3 gap-4 border-t border-slate-800/80">
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-bold text-white">10+</div>
+                            <div class="text-xs sm:text-sm text-slate-400">Years Pedagogy</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-bold text-white">500+</div>
+                            <div class="text-xs sm:text-sm text-slate-400">Students Mentored</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-bold text-white">25+</div>
+                            <div class="text-xs sm:text-sm text-slate-400">Research & Papers</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Avatar / Visual Element -->
+                <div class="lg:col-span-5 flex justify-center relative">
+                    <div class="relative w-72 h-72 sm:w-96 sm:h-96">
+                        <!-- Glowing Double Gradient Frame -->
+                        <div class="absolute inset-0 rounded-3xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 blur-2xl opacity-60 animate-pulse-slow"></div>
+                        <div class="relative w-full h-full rounded-3xl p-1 bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 shadow-2xl">
+                            <div class="w-full h-full rounded-[22px] bg-slate-950 overflow-hidden flex items-center justify-center p-4">
+                                <img src="https://ui-avatars.com/api/?name=Dr.+Richa+Sahai&size=200&background=0D8ABC&color=fff&bold=true" 
+                                     alt="Dr. Richa Sahai" 
+                                     class="w-full h-full object-cover rounded-xl scale-100 hover:scale-105 transition-transform duration-500">
+                            </div>
+                        </div>
+
+                        <!-- Floating Glass Metric Badges -->
+                        <div class="absolute -bottom-6 -left-6 glass-card p-4 rounded-2xl flex items-center gap-3 animate-float shadow-xl">
+                            <div class="w-10 h-10 rounded-xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Affiliation</p>
+                                <p class="text-sm font-semibold text-white">VSPM AHE</p>
+                            </div>
+                        </div>
+
+                        <div class="absolute -top-6 -right-6 glass-card p-4 rounded-2xl flex items-center gap-3 animate-float shadow-xl" style="animation-delay: 1.5s;">
+                            <div class="w-10 h-10 rounded-xl bg-pink-500/20 text-pink-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-book-bookmark"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Academic Focus</p>
+                                <p class="text-sm font-semibold text-white">Higher Education</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ABOUT & EXPERTISE SECTION -->
+        <section id="about" class="py-24 px-6 relative">
+            <div class="max-w-7xl mx-auto space-y-16">
+                
+                <div class="text-center max-w-3xl mx-auto space-y-4">
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-indigo-400">About Dr. Richa Sahai</h2>
+                    <h3 class="text-3xl sm:text-4xl font-bold">Bridging Theoretical Rigor with Clinical & Academic Excellence</h3>
+                    <div class="w-20 h-1 bg-gradient-to-r from-indigo-500 to-pink-500 mx-auto rounded-full"></div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    <!-- Image Card -->
+                    <div class="lg:col-span-6">
+                        <div class="relative group rounded-3xl overflow-hidden glass-card p-2">
+                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Academic Collaboration" 
+                                 class="w-full h-[400px] object-cover rounded-2xl group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60"></div>
+                            <div class="absolute bottom-6 left-6 right-6 p-4 glass-card rounded-xl border border-white/10">
+                                <p class="text-sm text-slate-200 italic font-light">
+                                    "Education is not merely the transmission of knowledge, but the inspiration of critical inquiry and lifelong learning."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Text Details -->
+                    <div class="lg:col-span-6 space-y-6">
+                        <h4 class="text-2xl font-bold text-white">Empowering Future Leaders at VSPM Academy of Higher Education</h4>
+                        <p class="text-slate-300 leading-relaxed">
+                            As an Assistant Professor at VSPM AHE, Dr. Richa Sahai leads groundbreaking curriculum strategies and fosters an interactive, student-centered learning environment. With a passionate commitment to scholarly research and academic integrity, Dr. Sahai drives impactful discussions across disciplines.
+                        </p>
+                        <p class="text-slate-400 leading-relaxed">
+                            Through innovative pedagogical techniques, continuous curriculum evaluation, and dedicated mentorship, Dr. Sahai ensures that students not only excel in examinations but also develop the critical problem-solving skills required in modern professional practice.
+                        </p>
+
+                        <!-- Key Pillars Grid -->
+                        <div class="grid grid-cols-2 gap-4 pt-4">
+                            <div class="glass-card p-4 rounded-xl">
+                                <i class="fa-solid fa-chalkboard-user text-indigo-400 text-xl mb-2"></i>
+                                <h5 class="font-semibold text-white text-sm">Interactive Teaching</h5>
+                                <p class="text-xs text-slate-400">Fostering active participation & inquiry.</p>
+                            </div>
+                            <div class="glass-card p-4 rounded-xl">
+                                <i class="fa-solid fa-microscope text-purple-400 text-xl mb-2"></i>
+                                <h5 class="font-semibold text-white text-sm">Scholarly Research</h5>
+                                <p class="text-xs text-slate-400">Advancing cross-disciplinary literature.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SERVICES / ACADEMIC PILLARS SECTION -->
+        <section id="expertise" class="py-24 px-6 bg-slate-900/30 border-y border-slate-800/50">
+            <div class="max-w-7xl mx-auto space-y-16">
+                
+                <div class="text-center max-w-3xl mx-auto space-y-4">
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-pink-400">Core Competencies</h2>
+                    <h3 class="text-3xl sm:text-4xl font-bold">Academic Pillars & Capabilities</h3>
+                    <p class="text-slate-400 text-sm sm:text-base">Delivering excellence across teaching, academic research, and institutional leadership.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Pillar 1 -->
+                    <div class="glass-card p-8 rounded-2xl space-y-4 transition-all hover:-translate-y-2">
+                        <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white">Curriculum Architecture</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Designing comprehensive, modern course modules aligned with accreditation standards and institutional excellence.
+                        </p>
+                    </div>
+
+                    <!-- Pillar 2 -->
+                    <div class="glass-card p-8 rounded-2xl space-y-4 transition-all hover:-translate-y-2">
+                        <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-vial-circle-check"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white">Academic Research</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Conducting impactful empirical and theoretical research aimed at publication in peer-reviewed global journals.
+                        </p>
+                    </div>
+
+                    <!-- Pillar 3 -->
+                    <div class="glass-card p-8 rounded-2xl space-y-4 transition-all hover:-translate-y-2">
+                        <div class="w-12 h-12 rounded-xl bg-pink-500/10 border border-pink-500/20 text-pink-400 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-user-graduate"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white">Student Mentorship</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Guiding undergraduate and postgraduate scholars through career pathways, research projects, and academic growth.
+                        </p>
+                    </div>
+
+                    <!-- Pillar 4 -->
+                    <div class="glass-card p-8 rounded-2xl space-y-4 transition-all hover:-translate-y-2">
+                        <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white">Digital Pedagogy</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Integrating digital learning management systems and modern technology tools into traditional teaching paradigms.
+                        </p>
+                    </div>
+
+                    <!-- Pillar 5 -->
+                    <div class="glass-card p-8 rounded-2xl space-y-4 transition-all hover:-translate-y-2">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-building-columns"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white">Institutional Leadership</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Active involvement in academic committees, departmental administration, and institutional accreditation processes.
+                        </p>
+                    </div>
+
+                    <!-- Pillar 6 -->
+                    <div class="glass-card p-8 rounded-2xl space-y-4 transition-all hover:-translate-y-2">
+                        <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-comments"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-white">Symposia & Seminars</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Keynote speaking, organizing academic workshops, and leading panels at national educational conferences.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ENDORSEMENTS & TESTIMONIALS SECTION -->
+        <section id="testimonials" class="py-24 px-6 relative">
+            <div class="max-w-7xl mx-auto space-y-16">
+                
+                <div class="text-center max-w-3xl mx-auto space-y-4">
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-indigo-400">Peer & Student Recognition</h2>
+                    <h3 class="text-3xl sm:text-4xl font-bold">Endorsements & Testimonials</h3>
+                    <p class="text-slate-400 text-sm sm:text-base">Reflections from academic colleagues and mentored scholars.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <!-- Card 1 -->
+                    <div class="glass-card p-8 rounded-2xl flex flex-col justify-between space-y-6">
+                        <div class="space-y-4">
+                            <div class="flex text-amber-400 text-sm gap-1">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-300 text-sm italic leading-relaxed">
+                                "Dr. Richa Sahai’s approach to interactive lectures transformed my academic interest. Her mentorship during my final year research paper was invaluable."
+                            </p>
+                        </div>
+                        <div class="border-t border-slate-800 pt-4 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-indigo-500/20 flex items-center justify-center text-indigo-300 font-bold text-sm">
+                                AR
+                            </div>
+                            <div>
+                                <h5 class="text-white font-semibold text-sm">Ananya Rao</h5>
+                                <p class="text-xs text-slate-400">Former Student & Scholar</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="glass-card p-8 rounded-2xl flex flex-col justify-between space-y-6">
+                        <div class="space-y-4">
+                            <div class="flex text-amber-400 text-sm gap-1">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-300 text-sm italic leading-relaxed">
+                                "An exceptional faculty member at VSPM AHE. Dr. Sahai brings clarity, depth, and genuine enthusiasm to departmental research initiatives."
+                            </p>
+                        </div>
+                        <div class="border-t border-slate-800 pt-4 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center text-purple-300 font-bold text-sm">
+                                DM
+                            </div>
+                            <div>
+                                <h5 class="text-white font-semibold text-sm">Dr. M. K. Sharma</h5>
+                                <p class="text-xs text-slate-400">Senior Academic Colleague</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="glass-card p-8 rounded-2xl flex flex-col justify-between space-y-6">
+                        <div class="space-y-4">
+                            <div class="flex text-amber-400 text-sm gap-1">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-300 text-sm italic leading-relaxed">
+                                "The guidance provided by Dr. Sahai in modern pedagogy techniques has drastically elevated our curriculum standards."
+                            </p>
+                        </div>
+                        <div class="border-t border-slate-800 pt-4 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-pink-500/20 flex items-center justify-center text-pink-300 font-bold text-sm">
+                                VP
+                            </div>
+                            <div>
+                                <h5 class="text-white font-semibold text-sm">Vikram Patel</h5>
+                                <p class="text-xs text-slate-400">Academic Committee Lead</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="py-24 px-6 relative bg-slate-900/40 border-t border-slate-800">
+            <div class="max-w-7xl mx-auto space-y-16">
+                
+                <div class="text-center max-w-3xl mx-auto space-y-4">
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-indigo-400">Get In Touch</h2>
+                    <h3 class="text-3xl sm:text-4xl font-bold">Collaborate with Dr. Richa Sahai</h3>
+                    <p class="text-slate-400 text-sm sm:text-base">Interested in academic collaboration, guest lectures, or research partnerships?</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    
+                    <!-- Direct Info Left -->
+                    <div class="lg:col-span-5 space-y-8 glass-card p-8 rounded-3xl">
+                        <div>
+                            <h4 class="text-2xl font-bold text-white mb-2">Academic Office</h4>
+                            <p class="text-slate-400 text-sm">VSPM Academy of Higher Education (VSPM AHE)</p>
+                        </div>
+
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-lg flex-shrink-0">
+                                    <i class="fa-solid fa-building-columns"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400 uppercase font-semibold">Institution</p>
+                                    <p class="text-white font-medium">VSPM AHE Campus</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-lg flex-shrink-0">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400 uppercase font-semibold">Official Contact</p>
+                                    <p class="text-white font-medium">contact@drrichasahai.com</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-pink-500/10 text-pink-400 flex items-center justify-center text-lg flex-shrink-0">
+                                    <i class="fa-solid fa-link"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400 uppercase font-semibold">Network Connection</p>
+                                    <p class="text-white font-medium">Connected on 07 Sep 2026</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Badges -->
+                        <div class="pt-6 border-t border-slate-800 flex gap-4">
+                            <a href="#" class="w-10 h-10 rounded-full glass-card flex items-center justify-center text-slate-300 hover:text-indigo-400 hover:border-indigo-500 transition-all">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full glass-card flex items-center justify-center text-slate-300 hover:text-indigo-400 hover:border-indigo-500 transition-all">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full glass-card flex items-center justify-center text-slate-300 hover:text-indigo-400 hover:border-indigo-500 transition-all">
+                                <i class="fa-solid fa-book-open"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form Right -->
+                    <div class="lg:col-span-7 glass-card p-8 sm:p-10 rounded-3xl">
+                        <form onsubmit="event.preventDefault(); alert('Thank you! Your message has been received.');" class="space-y-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-medium text-slate-300 uppercase tracking-wider mb-2">Your Name</label>
+                                    <input type="text" required placeholder="Dr. John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-medium text-slate-300 uppercase tracking-wider mb-2">Your Email</label>
+                                    <input type="email" required placeholder="john@university.edu" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-medium text-slate-300 uppercase tracking-wider mb-2">Subject</label>
+                                <input type="text" required placeholder="Academic Collaboration / Inquiry" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-medium text-slate-300 uppercase tracking-wider mb-2">Message</label>
+                                <textarea rows="4" required placeholder="Share details about your request or inquiry..." class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold shadow-lg shadow-indigo-500/20 hover:opacity-95 transition-all">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-800 bg-slate-950 text-slate-400 text-center text-sm">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>&copy; 2026 Dr. Richa Sahai | VSPM AHE. All rights reserved.</p>
+            <p class="text-xs text-slate-500">Designed for Academic Excellence & Impact</p>
+        </div>
+    </footer>
+
+    <!-- Interactive Script -->
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
