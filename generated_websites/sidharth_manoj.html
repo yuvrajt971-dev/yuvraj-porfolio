@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Sidharth Manoj | Oral & Maxillofacial Surgeon</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            indigo: '#6366f1',
+                            purple: '#a855f7',
+                            pink: '#ec4899',
+                            dark: '#020617',
+                            card: 'rgba(15, 23, 42, 0.6)',
+                        }
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(51, 65, 85, 0.5);
+        }
+        .glass-card:hover {
+            border-color: rgba(99, 102, 241, 0.5);
+            box-shadow: 0 10px 30px -10px rgba(99, 102, 241, 0.2);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #818cf8 0%, #c084fc 50%, #f472b6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-border {
+            position: relative;
+            background: linear-gradient(135deg, #6366f1, #a855f7, #ec4899);
+            padding: 2px;
+            border-radius: 9999px;
+        }
+        .gradient-border-sq {
+            position: relative;
+            background: linear-gradient(135deg, #6366f1, #a855f7, #ec4899);
+            padding: 1px;
+            border-radius: 1rem;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 selection:bg-indigo-500 selection:text-white">
+
+    <!-- Background Ambient Glows -->
+    <div class="fixed top-0 left-1/4 w-96 h-96 bg-indigo-600/20 rounded-full blur-3xl pointer-events-none animate-pulse-slow"></div>
+    <div class="fixed bottom-0 right-1/4 w-96 h-96 bg-purple-600/20 rounded-full blur-3xl pointer-events-none animate-pulse-slow" style="animation-delay: 2s;"></div>
+
+    <!-- Navigation Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/60 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 p-0.5 flex items-center justify-center shadow-lg shadow-indigo-500/20">
+                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+                        <i class="fa-solid font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-pink-400 fa-user-doctor"></i>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-lg tracking-tight text-white group-hover:text-indigo-400 transition-colors">Dr. Sidharth Manoj</span>
+                    <span class="text-xs text-slate-400 font-medium">Maxillofacial Surgeon</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-300">
+                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-indigo-400 transition-colors">Expertise</a>
+                <a href="#services" class="hover:text-indigo-400 transition-colors">Specialties</a>
+                <a href="#testimonials" class="hover:text-indigo-400 transition-colors">Endorsements</a>
+            </nav>
+
+            <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold text-sm shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40 hover:scale-105 transition-all duration-300">
+                <span>Book Consultation</span>
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-20 md:pt-48 md:pb-32 px-6 max-w-7xl mx-auto overflow-hidden">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                <!-- Status Badge -->
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border border-indigo-500/30 text-indigo-300 text-xs font-semibold uppercase tracking-wider shadow-inner">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                    <span>Anjali Dental Clinic & Implant Centre</span>
+                </div>
+
+                <!-- Main Headline -->
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
+                    Transforming Smiles Through <span class="gradient-text">Precision Maxillofacial</span> Surgery.
+                </h1>
+
+                <!-- Subtitle -->
+                <p class="text-slate-400 text-lg sm:text-xl max-w-2xl font-light leading-relaxed">
+                    Specialized in advanced oral surgery, facial reconstruction, and cutting-edge implantology. Delivering world-class surgical care with aesthetic excellence.
+                </p>
+
+                <!-- Hero Buttons -->
+                <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+                    <a href="#contact" class="px-8 py-4 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-bold shadow-xl shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-105 transition-all duration-300 flex items-center gap-3">
+                        <i class="fa-regular fa-calendar-check text-lg"></i>
+                        <span>Schedule Appointment</span>
+                    </a>
+                    <a href="#services" class="px-8 py-4 rounded-full glass-card hover:bg-slate-800/80 text-slate-200 font-semibold border border-slate-700 hover:border-slate-500 transition-all duration-300 flex items-center gap-2">
+                        <span>Clinical Specialties</span>
+                        <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+                    </a>
+                </div>
+
+                <!-- Stats / Trust Badges -->
+                <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0">
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-bold gradient-text">100%</div>
+                        <div class="text-xs text-slate-400 mt-1">Surgical Precision</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-bold gradient-text">Advanced</div>
+                        <div class="text-xs text-slate-400 mt-1">Implant Procedures</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-bold gradient-text">Top Rated</div>
+                        <div class="text-xs text-slate-400 mt-1">Patient Satisfaction</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Avatar & Frame -->
+            <div class="lg:col-span-5 flex justify-center relative">
+                <div class="relative w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96">
+                    <!-- Glowing Backing -->
+                    <div class="absolute inset-0 rounded-full bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 blur-2xl opacity-50 animate-pulse-slow"></div>
+                    
+                    <!-- Double Gradient Frame Container -->
+                    <div class="gradient-border p-1.5 rounded-full shadow-2xl relative z-10 w-full h-full">
+                        <div class="w-full h-full rounded-full overflow-hidden bg-slate-900 border-4 border-slate-950">
+                            <img src="https://ui-avatars.com/api/?name=Sidharth+Manoj&size=200&background=0D8ABC&color=fff&bold=true" 
+                                 alt="Dr. Sidharth Manoj" 
+                                 class="w-full h-full object-cover scale-105 hover:scale-110 transition-transform duration-500">
+                        </div>
+                    </div>
+
+                    <!-- Floating Badge 1 -->
+                    <div class="absolute -bottom-4 -left-4 z-20 glass-card px-4 py-3 rounded-2xl border border-slate-700/80 flex items-center gap-3 shadow-xl animate-float">
+                        <div class="w-10 h-10 rounded-xl bg-indigo-500/20 border border-indigo-500/40 flex items-center justify-center text-indigo-400">
+                            <i class="fa-solid fa-tooth text-lg"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400 font-medium">Specialization</p>
+                            <p class="text-xs font-bold text-white">Oral & Maxillofacial</p>
+                        </div>
+                    </div>
+
+                    <!-- Floating Badge 2 -->
+                    <div class="absolute top-8 -right-4 z-20 glass-card px-4 py-3 rounded-2xl border border-slate-700/80 flex items-center gap-3 shadow-xl animate-float" style="animation-delay: 3s;">
+                        <div class="w-10 h-10 rounded-xl bg-pink-500/20 border border-pink-500/40 flex items-center justify-center text-pink-400">
+                            <i class="fa-solid fa-award text-lg"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400 font-medium">Implantology</p>
+                            <p class="text-xs font-bold text-white">Certified Expert</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 px-6 bg-slate-900/40 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Clinical Image -->
+                <div class="lg:col-span-5">
+                    <div class="gradient-border-sq p-1 shadow-2xl">
+                        <div class="relative rounded-[15px] overflow-hidden bg-slate-900">
+                            <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Dental Clinic Procedure" 
+                                 class="w-full h-[420px] object-cover hover:scale-105 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                            
+                            <div class="absolute bottom-6 left-6 right-6">
+                                <p class="text-xs font-semibold uppercase tracking-wider text-indigo-400 mb-1">State-of-the-Art Facility</p>
+                                <p class="text-lg font-bold text-white">ANJALI DENTAL CLINIC AND IMPLANT CENTRE</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bio Content -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 text-xs font-semibold uppercase tracking-wider">
+                        About Dr. Sidharth Manoj
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+                        Pioneering Advanced Oral & Jaw Reconstruction
+                    </h2>
+
+                    <p class="text-slate-300 leading-relaxed font-light text-base sm:text-lg">
+                        As an acclaimed <span class="text-white font-semibold">Oral and Maxillofacial Surgeon</span> at <span class="text-indigo-400 font-semibold">Anjali Dental Clinic and Implant Centre</span>, Dr. Sidharth Manoj integrates surgical precision with modern digital dentistry techniques.
+                    </p>
+
+                    <p class="text-slate-400 leading-relaxed text-sm sm:text-base">
+                        With extensive training in complex facial trauma, jaw corrective surgery, wisdom tooth impactions, and immediate dental implants, Dr. Sidharth delivers comprehensive clinical care designed around patient comfort and predictable visual aesthetics.
+                    </p>
+
+                    <!-- Key Pillars -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
+                        <div class="glass-card p-4 rounded-xl border border-slate-800 flex items-start gap-3">
+                            <i class="fa-solid fa-microscope text-indigo-400 text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-white text-sm">3D Guided Surgery</h4>
+                                <p class="text-xs text-slate-400 mt-1">Computer-assisted planning for absolute precision in implants.</p>
+                            </div>
+                        </div>
+
+                        <div class="glass-card p-4 rounded-xl border border-slate-800 flex items-start gap-3">
+                            <i class="fa-solid fa-heart-pulse text-purple-400 text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-white text-sm">Pain-Free Protocols</h4>
+                                <p class="text-xs text-slate-400 mt-1">Advanced sedation and gentle minimally invasive techniques.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-400 text-xs font-semibold uppercase tracking-wider">
+                Clinical Expertise
+            </div>
+            <h2 class="text-3xl sm:text-5xl font-bold tracking-tight">Specialized Surgical Services</h2>
+            <p class="text-slate-400 text-base">Delivering comprehensive treatments utilizing world-class technology and patient-first protocols.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Service 1 -->
+            <div class="glass-card p-8 rounded-2xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 group">
+                <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-indigo-500/20 to-purple-500/20 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-tooth"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3 group-hover:text-indigo-400 transition-colors">Dental Implantology</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">Single, multi-unit, and full-mouth All-on-4 implants using premium biocompatible titanium and zirconia materials.</p>
+                <ul class="text-xs text-slate-400 space-y-2">
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Immediate Loading Implants</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-indigo-400"></i> Bone Grafting & Sinus Lifts</li>
+                </ul>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="glass-card p-8 rounded-2xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 group">
+                <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-purple-500/20 to-pink-500/20 border border-purple-500/30 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-head-side-mask"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">Orthognathic Surgery</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">Corrective jaw surgery to restore proper function, address sleep apnea, and enhance facial structural balance.</p>
+                <ul class="text-xs text-slate-400 space-y-2">
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400"></i> Jaw Alignment Correction</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-purple-400"></i> Facial Asymmetry Treatment</li>
+                </ul>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="glass-card p-8 rounded-2xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 group">
+                <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-pink-500/20 to-rose-500/20 border border-pink-500/30 flex items-center justify-center text-pink-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-hospital-user"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3 group-hover:text-pink-400 transition-colors">Wisdom Tooth Impactions</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">Safe and painless surgical extraction of deeply impacted third molars with minimal post-operative recovery time.</p>
+                <ul class="text-xs text-slate-400 space-y-2">
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pink-400"></i> Pain-Free Nerve Preservation</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-pink-400"></i> Rapid Recovery Protocols</li>
+                </ul>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="glass-card p-8 rounded-2xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 group">
+                <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-blue-500/20 to-indigo-500/20 border border-blue-500/30 flex items-center justify-center text-blue-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-user-ninja"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">Facial Trauma & Fracture Care</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">Expert management of soft tissue facial injuries, mandible fractures, and complex facial skeleton reconstruction.</p>
+                <ul class="text-xs text-slate-400 space-y-2">
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-400"></i> Emergency Trauma Surgery</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-blue-400"></i> Aesthetic Soft Tissue Repair</li>
+                </ul>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="glass-card p-8 rounded-2xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 group">
+                <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-emerald-500/20 to-teal-500/20 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-notes-medical"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3 group-hover:text-emerald-400 transition-colors">TMJ & Orofacial Pain</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">Diagnosis and conservative-to-surgical therapy for temporomandibular joint pain, clicking, and jaw lock issues.</p>
+                <ul class="text-xs text-slate-400 space-y-2">
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Arthrocentesis & Splint Therapy</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Chronic Orofacial Pain Care</li>
+                </ul>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="glass-card p-8 rounded-2xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 group">
+                <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-amber-500/20 to-orange-500/20 border border-amber-500/30 flex items-center justify-center text-amber-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-sparkles"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3 group-hover:text-amber-400 transition-colors">Cosmetic Dental Surgery</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-4">Aesthetic crown lengthening, gum contouring, and reconstructive procedures for full mouth smile makeovers.</p>
+                <ul class="text-xs text-slate-400 space-y-2">
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Laser Soft Tissue Reshaping</li>
+                    <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400"></i> Smile Rehabilitation</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 px-6 bg-slate-900/40 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pink-500/10 border border-pink-500/30 text-pink-400 text-xs font-semibold uppercase tracking-wider">
+                    Patient Endorsements
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">Trusted Clinical Outcomes</h2>
+                <p class="text-slate-400 text-base">Hear from patients who have experienced exceptional surgical care and seamless recovery.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="glass-card p-8 rounded-2xl border border-slate-800 relative">
+                    <div class="flex text-amber-400 gap-1 text-sm mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-6 italic">
+                        "Dr. Sidharth Manoj made my dental implant process completely smooth and comfortable. His technical skill at Anjali Dental Clinic is unmatched. Highly recommended!"
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 flex items-center justify-center font-bold text-indigo-400">
+                            AK
+                        </div>
+                        <div>
+                            <p class="text-white font-semibold text-sm">Anand Kumar</p>
+                            <p class="text-slate-500 text-xs">Implant Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="glass-card p-8 rounded-2xl border border-slate-800 relative">
+                    <div class="flex text-amber-400 gap-1 text-sm mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-6 italic">
+                        "I was terrified about my complex wisdom tooth extraction, but Dr. Sidharth's soft approach and quick procedure meant zero pain afterward."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center font-bold text-purple-400">
+                            PS
+                        </div>
+                        <div>
+                            <p class="text-white font-semibold text-sm">Pooja Sharma</p>
+                            <p class="text-slate-500 text-xs">Wisdom Surgery Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="glass-card p-8 rounded-2xl border border-slate-800 relative">
+                    <div class="flex text-amber-400 gap-1 text-sm mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-6 italic">
+                        "Extremely professional surgeon. The facility is top quality and the guidance throughout my facial fracture recovery was extraordinary."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-pink-500/20 flex items-center justify-center font-bold text-pink-400">
+                            RM
+                        </div>
+                        <div>
+                            <p class="text-white font-semibold text-sm">Rahul Menon</p>
+                            <p class="text-slate-500 text-xs">Reconstructive Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+            
+            <!-- Contact Info -->
+            <div class="lg:col-span-5 space-y-8">
+                <div>
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 text-xs font-semibold uppercase tracking-wider mb-4">
+                        Book Your Visit
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">Schedule Your Consultation</h2>
+                    <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                        Reach out to discuss oral surgical procedures, dental implant inquiries, or clinical consultations with Dr. Sidharth Manoj.
+                    </p>
+                </div>
+
+                <!-- Clinic Details Card -->
+                <div class="glass-card p-6 rounded-2xl space-y-6 border border-slate-800">
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-indigo-500/20 flex items-center justify-center text-indigo-400 flex-shrink-0">
+                            <i class="fa-solid fa-hospital text-lg"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-white font-semibold text-sm">Clinic Location</h4>
+                            <p class="text-slate-400 text-xs mt-1">ANJALI DENTAL CLINIC AND IMPLANT CENTRE</p>
+                            <p class="text-slate-500 text-xs">State-of-the-Art Oral Surgery Facility</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-purple-500/20 flex items-center justify-center text-purple-400 flex-shrink-0">
+                            <i class="fa-solid fa-clock text-lg"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-white font-semibold text-sm">Consultation Hours</h4>
+                            <p class="text-slate-400 text-xs mt-1">Mon - Sat: 09:30 AM - 07:30 PM</p>
+                            <p class="text-slate-500 text-xs">Sunday by Appointment Only</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-xl bg-pink-500/20 flex items-center justify-center text-pink-400 flex-shrink-0">
+                            <i class="fa-solid fa-envelope text-lg"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-white font-semibold text-sm">Direct Contact</h4>
+                            <p class="text-slate-400 text-xs mt-1">contact@anjalidental.com</p>
+                            <p class="text-slate-500 text-xs">Professional Inquiries & Appointments</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Contact Form -->
+            <div class="lg:col-span-7">
+                <div class="glass-card p-8 sm:p-10 rounded-3xl border border-slate-800">
+                    <h3 class="text-2xl font-bold text-white mb-6">Send Appointment Request</h3>
+                    
+                    <form onsubmit="event.preventDefault(); alert('Thank you, Dr. Sidharth Manoj\'s office will contact you shortly.');" class="space-y-5">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <div>
+                                <label class="block text-xs font-medium text-slate-300 mb-2">Patient Full Name</label>
+                                <input type="text" required placeholder="John Doe" class="w-full bg-slate-950/60 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-200 placeholder-slate-600 focus:outline-none focus:border-indigo-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-medium text-slate-300 mb-2">Phone Number</label>
+                                <input type="tel" required placeholder="+91 98765 43210" class="w-full bg-slate-950/60 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-200 placeholder-slate-600 focus:outline-none focus:border-indigo-500 transition-colors">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-medium text-slate-300 mb-2">Required Specialty / Consultation Reason</label>
+                            <select class="w-full bg-slate-950/60 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-200 focus:outline-none focus:border-indigo-500 transition-colors">
+                                <option>Dental Implants Consultation</option>
+                                <option>Wisdom Teeth / Impaction</option>
+                                <option>Maxillofacial & Jaw Surgery</option>
+                                <option>Facial Reconstruction Care</option>
+                                <option>TMJ / Jaw Joint Pain</option>
+                                <option>General Consultation</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-medium text-slate-300 mb-2">Message or Surgical Symptoms</label>
+                            <textarea rows="4" placeholder="Briefly describe your requirements or query..." class="w-full bg-slate-950/60 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-200 placeholder-slate-600 focus:outline-none focus:border-indigo-500 transition-colors"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-bold text-sm shadow-xl shadow-indigo-500/20 hover:shadow-indigo-500/40 hover:scale-[1.01] transition-all duration-300">
+                            Submit Consultation Request
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800/80 bg-slate-950 py-12 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-indigo-500 to-pink-500 p-0.5 flex items-center justify-center">
+                    <div class="w-full h-full bg-slate-950 rounded-[6px] flex items-center justify-center text-xs font-bold text-white">
+                        SM
+                    </div>
+                </div>
+                <div>
+                    <p class="text-sm font-bold text-white">Dr. Sidharth Manoj</p>
+                    <p class="text-xs text-slate-500">ANJALI DENTAL CLINIC AND IMPLANT CENTRE</p>
+                </div>
+            </div>
+
+            <p class="text-xs text-slate-500 text-center">
+                &copy; 2026 Dr. Sidharth Manoj. All rights reserved. | Professional Showcase Platform
+            </p>
+
+            <div class="flex items-center gap-4 text-slate-400">
+                <a href="#" class="hover:text-indigo-400 text-sm transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="hover:text-indigo-400 text-sm transition-colors"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#" class="hover:text-indigo-400 text-sm transition-colors"><i class="fa-solid fa-hospital"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
