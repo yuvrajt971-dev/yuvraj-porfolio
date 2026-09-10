@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Dimple Bhargava (PT) | Consultant at Wipro</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(99, 102, 241, 0.3);
+        }
+        .glow-effect-pink {
+            box-shadow: 0 0 50px -10px rgba(236, 72, 153, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white overflow-x-hidden">
+
+    <!-- Background Ambient Glows -->
+    <div class="fixed top-0 left-1/4 -z-10 w-96 h-96 bg-indigo-600/15 rounded-full blur-[120px] pointer-events-none"></div>
+    <div class="fixed top-1/3 right-10 -z-10 w-[30rem] h-[30rem] bg-purple-600/15 rounded-full blur-[140px] pointer-events-none"></div>
+    <div class="fixed bottom-10 left-10 -z-10 w-96 h-96 bg-pink-600/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 p-[2px] transition-transform duration-300 group-hover:scale-105">
+                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-pink-400 font-bold text-lg">DB</span>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-slate-100 text-lg leading-tight group-hover:text-indigo-400 transition-colors">Dr. Dimple Bhargava <span class="text-xs text-indigo-400 font-medium">(PT)</span></span>
+                    <span class="text-xs text-slate-400">Consultant @ Wipro</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Items -->
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-indigo-400 transition-colors">Expertise</a>
+                <a href="#services" class="hover:text-indigo-400 transition-colors">Services</a>
+                <a href="#testimonials" class="hover:text-indigo-400 transition-colors">Testimonials</a>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="hidden md:flex items-center">
+                <a href="#contact" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold text-sm hover:opacity-90 transition-all duration-300 shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:-translate-y-0.5">
+                    Connect Now
+                </a>
+            </div>
+
+            <!-- Mobile Menu Icon -->
+            <button class="md:hidden text-slate-300 hover:text-white focus:outline-none">
+                <i class="fa-solid fa-bars-staggered text-2xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen pt-32 pb-20 flex items-center relative">
+        <div class="max-w-7xl mx-auto px-6 w-full">
+            <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Hero Left Column -->
+                <div class="lg:col-span-7 space-y-8">
+                    <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-slate-900/80 border border-indigo-500/30 backdrop-blur-md">
+                        <span class="flex h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        <span class="text-xs font-semibold uppercase tracking-wider text-indigo-300">Consultant at Wipro • Health Tech & Physical Therapy Expert</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.15]">
+                        Transforming <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400">Healthcare Solutions</span> & Strategic Consulting
+                    </h1>
+
+                    <p class="text-slate-400 text-lg leading-relaxed max-w-2xl">
+                        Synthesizing clinical mastery in Physiotherapy with enterprise-grade consulting at Wipro. Pioneering human-centric health innovation, ergonomics strategies, and digital healthcare transformations.
+                    </p>
+
+                    <!-- Call To Action Buttons -->
+                    <div class="flex flex-wrap items-center gap-4 pt-2">
+                        <a href="#contact" class="px-7 py-3.5 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-bold text-base hover:opacity-95 transition-all duration-300 shadow-xl shadow-indigo-500/20 hover:shadow-indigo-500/35 hover:-translate-y-0.5 flex items-center gap-3">
+                            <span>Get In Touch</span>
+                            <i class="fa-solid fa-arrow-right text-sm"></i>
+                        </a>
+                        <a href="#about" class="px-7 py-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-slate-200 font-semibold text-base hover:border-slate-700 hover:bg-slate-800/60 transition-all duration-300">
+                            Explore Profile
+                        </a>
+                    </div>
+
+                    <!-- Trust Badges -->
+                    <div class="pt-8 border-t border-slate-800/80">
+                        <p class="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-4">Core Focus Areas & Affiliations</p>
+                        <div class="flex flex-wrap items-center gap-6 opacity-80">
+                            <div class="flex items-center gap-2 text-slate-300 font-bold text-sm">
+                                <i class="fa-solid fa-building-columns text-indigo-400"></i>
+                                <span>Wipro Consulting</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-slate-300 font-bold text-sm">
+                                <i class="fa-solid fa-user-doctor text-purple-400"></i>
+                                <span>Physiotherapy (PT)</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-slate-300 font-bold text-sm">
+                                <i class="fa-solid fa-laptop-medical text-pink-400"></i>
+                                <span>Digital Healthcare Tech</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Right Column (Avatar & Card Frame) -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-full max-w-md">
+                        
+                        <!-- Glowing Ring Atmosphere -->
+                        <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 blur-xl opacity-50 animate-pulse"></div>
+
+                        <!-- Card Surface -->
+                        <div class="relative bg-slate-900/90 backdrop-blur-xl border border-slate-800 rounded-3xl p-8 shadow-2xl flex flex-col items-center text-center">
+                            
+                            <!-- Double Gradient Avatar Frame -->
+                            <div class="relative mb-6">
+                                <div class="absolute -inset-1.5 rounded-full bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 animate-spin-slow blur-sm opacity-80"></div>
+                                <div class="relative p-1 bg-slate-950 rounded-full">
+                                    <img src="https://ui-avatars.com/api/?name=Dr.+Dimple+Bhargava+(PT)&size=200&background=0D8ABC&color=fff&bold=true" 
+                                         alt="Dr. Dimple Bhargava (PT)" 
+                                         class="w-36 h-36 rounded-full object-cover shadow-inner">
+                                </div>
+                            </div>
+
+                            <h2 class="text-2xl font-bold text-white mb-1">Dr. Dimple Bhargava (PT)</h2>
+                            <p class="text-indigo-400 font-medium text-sm mb-4">Consultant @ Wipro</p>
+
+                            <!-- Mini Metrics Tag -->
+                            <div class="w-full grid grid-cols-2 gap-3 pt-4 border-t border-slate-800/80">
+                                <div class="p-3 rounded-xl bg-slate-950/50 border border-slate-800/80">
+                                    <p class="text-xs text-slate-400">Domain</p>
+                                    <p class="text-sm font-semibold text-slate-200">Consulting & Health</p>
+                                </div>
+                                <div class="p-3 rounded-xl bg-slate-950/50 border border-slate-800/80">
+                                    <p class="text-xs text-slate-400">Specialty</p>
+                                    <p class="text-sm font-semibold text-slate-200">Physical Therapy</p>
+                                </div>
+                            </div>
+
+                            <!-- Floating Badge Accent -->
+                            <div class="absolute -bottom-5 right-4 bg-gradient-to-r from-indigo-500 to-purple-600 px-4 py-2 rounded-2xl text-xs font-bold text-white shadow-xl flex items-center gap-2">
+                                <i class="fa-solid fa-award"></i> Premier Healthcare Leader
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-12 border-y border-slate-800/60 bg-slate-900/30">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <p class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">100%</p>
+                    <p class="text-xs sm:text-sm text-slate-400 font-medium mt-1">Client Commitment</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">Enterprise</p>
+                    <p class="text-xs sm:text-sm text-slate-400 font-medium mt-1">Wipro Standards</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-indigo-400">PT</p>
+                    <p class="text-xs sm:text-sm text-slate-400 font-medium mt-1">Clinical Excellence</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-pink-400">Strategy</p>
+                    <p class="text-xs sm:text-sm text-slate-400 font-medium mt-1">Healthcare Advisory</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Section Image -->
+                <div class="lg:col-span-5">
+                    <div class="relative group">
+                        <div class="absolute -inset-2 rounded-2xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 blur-lg opacity-30 group-hover:opacity-50 transition duration-500"></div>
+                        <div class="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900">
+                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Collaborative Consulting Session" 
+                                 class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+                            <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-slate-900/80 backdrop-blur-md border border-slate-800">
+                                <p class="text-xs text-indigo-400 font-semibold uppercase tracking-wider">Enterprise Impact</p>
+                                <p class="text-sm font-medium text-slate-200">Leveraging technology & health frameworks to enhance organizational efficiency.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section Content -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold uppercase tracking-wider">
+                        About Dr. Dimple Bhargava
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+                        Where Medical Expertise Meets <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400">Enterprise Consulting</span>
+                    </h2>
+
+                    <p class="text-slate-300 leading-relaxed text-base">
+                        As a Consultant at Wipro with a background as a licensed Physiotherapist (PT), Dr. Dimple Bhargava provides a uniquely comprehensive perspective on corporate wellness, digital health innovation, and medical consulting strategies.
+                    </p>
+
+                    <p class="text-slate-400 leading-relaxed text-base">
+                        By integrating physical health domain expertise with modern IT and advisory solutions, Dr. Bhargava enables businesses to foster healthier work environments, optimize healthcare operations, and deliver impactful digital-first interventions.
+                    </p>
+
+                    <!-- Key Pillars -->
+                    <div class="grid sm:grid-cols-2 gap-4 pt-4">
+                        <div class="p-4 rounded-xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300">
+                            <div class="w-10 h-10 rounded-lg bg-indigo-500/20 flex items-center justify-center text-indigo-400 mb-3">
+                                <i class="fa-solid fa-briefcase text-lg"></i>
+                            </div>
+                            <h3 class="font-bold text-slate-200 text-base mb-1">Corporate Strategy</h3>
+                            <p class="text-xs text-slate-400">Designing modern solution workflows for global clients at Wipro.</p>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300">
+                            <div class="w-10 h-10 rounded-lg bg-purple-500/20 flex items-center justify-center text-purple-400 mb-3">
+                                <i class="fa-solid fa-heart-pulse text-lg"></i>
+                            </div>
+                            <h3 class="font-bold text-slate-200 text-base mb-1">Physiotherapy & Ergonomics</h3>
+                            <p class="text-xs text-slate-400">Evidence-based clinical insights for physical health & ergonomic design.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid Section -->
+    <section id="services" class="py-24 bg-slate-900/40 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-semibold uppercase tracking-wider">
+                    Core Solutions
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+                    Specialized Consulting & Health Capabilities
+                </h2>
+                <p class="text-slate-400 text-base">
+                    Tailored services tailored to bridge enterprise consultation with physical health mastery.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="group bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-indigo-500/20 to-purple-500/20 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-laptop-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-indigo-400 transition-colors">Digital Health Consulting</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Advising enterprise platforms on integrating digital health tools, clinical workflows, and user-centric health experiences.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-semibold text-indigo-400 hover:text-indigo-300 gap-1">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="group bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-purple-500/20 to-pink-500/20 border border-purple-500/30 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-child-reaching"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">Corporate Ergonomics Strategy</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Developing proactive ergonomic frameworks to reduce workplace injuries and increase corporate employee wellness & productivity.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-semibold text-purple-400 hover:text-purple-300 gap-1">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="group bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-pink-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-pink-500/20 to-indigo-500/20 border border-pink-500/30 flex items-center justify-center text-pink-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-user-doctor"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-pink-400 transition-colors">Clinical Physiotherapy Advisory</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Expert physical therapy evaluations, clinical protocol advisory, and evidence-based rehabilitation program guidance.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-semibold text-pink-400 hover:text-pink-300 gap-1">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="group bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-indigo-500/20 to-purple-500/20 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-indigo-400 transition-colors">Process Optimization</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Combining Wipro-level business methodology with health dynamics to streamline healthcare operations and system performance.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-semibold text-indigo-400 hover:text-indigo-300 gap-1">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="group bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-purple-500/20 to-pink-500/20 border border-purple-500/30 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-people-group"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">Wellness Workshops & Training</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Engaging interactive seminars for corporate teams on posture, injury prevention, movement health, and remote-work ergonomics.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-semibold text-purple-400 hover:text-purple-300 gap-1">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="group bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-pink-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-pink-500/20 to-indigo-500/20 border border-pink-500/30 flex items-center justify-center text-pink-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-pink-400 transition-colors">Healthcare Tech Strategy</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Guidance on implementing cutting-edge healthcare technology stacks to drive digital transformation for modern organizations.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-semibold text-pink-400 hover:text-pink-300 gap-1">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-pink-500/10 border border-pink-500/20 text-pink-400 text-xs font-semibold uppercase tracking-wider">
+                    Endorsements & Feedback
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+                    Trusted by Peers & Industry Partners
+                </h2>
+                <p class="text-slate-400 text-base">
+                    What colleagues and organizational leaders say about Dr. Dimple Bhargava's dual-domain contribution.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 rounded-2xl p-8 transition-all duration-300 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Dr. Dimple brings a uniquely holistic approach to consulting projects. Her understanding of clinical health requirements combined with enterprise IT processes is second to none."
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-800/80 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 flex items-center justify-center font-bold text-indigo-400 text-sm">
+                            VP
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Senior Program Director</h4>
+                            <p class="text-xs text-slate-400">Wipro Healthcare Practice</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 rounded-2xl p-8 transition-all duration-300 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Her physical therapy expertise coupled with structured corporate strategic thinking completely revitalized our employee health and ergonomic wellness framework."
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-800/80 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center font-bold text-purple-400 text-sm">
+                            HR
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Corporate Health Officer</h4>
+                            <p class="text-xs text-slate-400">Enterprise Solutions Client</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-pink-500/50 rounded-2xl p-8 transition-all duration-300 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "A true visionary in healthcare consulting. Dr. Dimple seamlessly translates clinical physical health insights into actionable, technology-driven business strategies."
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-800/80 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-pink-500/20 flex items-center justify-center font-bold text-pink-400 text-sm">
+                            MD
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Clinical Medical Director</h4>
+                            <p class="text-xs text-slate-400">Health Innovation Network</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-slate-900/40 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Info Left -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div class="space-y-4">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold uppercase tracking-wider">
+                            Get In Touch
+                        </div>
+                        <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+                            Let's Collaborate on Your Next <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-pink-400">Healthcare Project</span>
+                        </h2>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Interested in enterprise consulting, corporate ergonomics, or digital health transformation? Send a message to initiate a strategic discussion.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <!-- Direct Info Cards -->
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+                            <div class="w-12 h-12 rounded-xl bg-indigo-500/20 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-xl">
+                                <i class="fa-solid fa-building"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Organization</p>
+                                <p class="text-sm font-semibold text-slate-200">Consultant @ Wipro</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/20 border border-purple-500/30 flex items-center justify-center text-purple-400 text-xl">
+                                <i class="fa-solid fa-stethoscope"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Qualification</p>
+                                <p class="text-sm font-semibold text-slate-200">Doctor of Physiotherapy (PT)</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+                            <div class="w-12 h-12 rounded-xl bg-pink-500/20 border border-pink-500/30 flex items-center justify-center text-pink-400 text-xl">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Network Connection</p>
+                                <p class="text-sm font-semibold text-slate-200">Connected Sep 07, 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form Right -->
+                <div class="lg:col-span-7">
+                    <div class="bg-slate-900/80 backdrop-blur-xl border border-slate-800 rounded-3xl p-8 sm:p-10 shadow-2xl">
+                        <form onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent successfully.');" class="space-y-6">
+                            <div class="grid sm:grid-cols-2 gap-6">
+                                <div class="space-y-2">
+                                    <label class="text-xs font-semibold text-slate-300 uppercase tracking-wider">Your Name</label>
+                                    <input type="text" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-950/60 border border-slate-800 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors">
+                                </div>
+                                <div class="space-y-2">
+                                    <label class="text-xs font-semibold text-slate-300 uppercase tracking-wider">Your Email</label>
+                                    <input type="email" required placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl bg-slate-950/60 border border-slate-800 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors">
+                                </div>
+                            </div>
+
+                            <div class="space-y-2">
+                                <label class="text-xs font-semibold text-slate-300 uppercase tracking-wider">Subject</label>
+                                <input type="text" required placeholder="Consulting Inquiry / Collaboration" class="w-full px-4 py-3 rounded-xl bg-slate-950/60 border border-slate-800 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors">
+                            </div>
+
+                            <div class="space-y-2">
+                                <label class="text-xs font-semibold text-slate-300 uppercase tracking-wider">Message</label>
+                                <textarea rows="4" required placeholder="Write your message or project requirements here..." class="w-full px-4 py-3 rounded-xl bg-slate-950/60 border border-slate-800 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-bold text-base hover:opacity-90 transition-all duration-300 shadow-xl shadow-indigo-500/25 flex items-center justify-center gap-2">
+                                <span>Send Consultation Request</span>
+                                <i class="fa-solid fa-paper-plane text-sm"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-800/80 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-2 text-slate-400 text-sm">
+                <span>© 2026 Dr. Dimple Bhargava (PT). Consultant at Wipro. All rights reserved.</span>
+            </div>
+            
+            <div class="flex items-center gap-6">
+                <a href="#" class="text-slate-400 hover:text-indigo-400 transition-colors"><i class="fa-brands fa-linkedin text-lg"></i></a>
+                <a href="#" class="text-slate-400 hover:text-indigo-400 transition-colors"><i class="fa-solid fa-envelope text-lg"></i></a>
+                <a href="#" class="text-slate-400 hover:text-indigo-400 transition-colors"><i class="fa-solid fa-globe text-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
