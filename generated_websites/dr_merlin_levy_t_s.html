@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Merlin Levy T S | Senior Project Manager & Healthcare Innovator</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            cyan: '#0D8ABC',
+                            teal: '#14b8a6',
+                            purple: '#8b5cf6',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(13, 138, 188, 0.3);
+        }
+        .glow-card:hover {
+            box-shadow: 0 0 30px -5px rgba(13, 138, 188, 0.4);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-border {
+            position: relative;
+            border-radius: 1rem;
+            background: linear-gradient(135deg, rgba(56, 189, 248, 0.2), rgba(192, 132, 252, 0.2));
+            padding: 1px;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-white">
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center font-bold text-white shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
+                    ML
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-lg tracking-tight text-slate-100 group-hover:text-cyan-400 transition-colors">Dr. Merlin Levy T S</span>
+                    <span class="text-xs text-slate-400 font-medium">Project Manager @ Upwards Med</span>
+                </div>
+            </a>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-cyan-400 transition-colors">Expertise</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
+                <a href="#impact" class="hover:text-cyan-400 transition-colors">Impact</a>
+                <a href="#contact" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:scale-105 transition-all">
+                    Get in Touch
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="md:hidden text-slate-300 hover:text-white focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen pt-32 pb-20 flex items-center justify-center overflow-hidden">
+        <!-- Ambient Background Glows -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-cyan-500/20 via-indigo-500/10 to-pink-500/10 rounded-full blur-3xl -z-10 pointer-events-none"></div>
+        <div class="absolute bottom-10 right-10 w-[300px] h-[300px] bg-blue-600/10 rounded-full blur-2xl -z-10 pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Hero Content -->
+            <div class="lg:col-span-7 flex flex-col items-start space-y-6">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 backdrop-blur-md">
+                    <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                    <span class="text-xs font-semibold text-cyan-300 tracking-wide uppercase">Project Manager & Medical Strategist</span>
+                </div>
+
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
+                    Orchestrating <span class="gradient-text">Healthcare Excellence</span> & Tech Innovation
+                </h1>
+
+                <p class="text-lg text-slate-400 max-w-2xl leading-relaxed">
+                    Bridging clinical precision with agile project management at <strong class="text-slate-200 font-semibold">Upwards Med</strong>. Streamlining complex healthcare workflows, driving cross-functional success, and delivering life-enhancing medical technologies.
+                </p>
+
+                <!-- CTAs -->
+                <div class="flex flex-wrap items-center gap-4 pt-4">
+                    <a href="#contact" class="px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white font-bold shadow-xl shadow-cyan-500/20 hover:shadow-cyan-500/35 hover:-translate-y-0.5 transition-all">
+                        Initiate Collaboration <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </a>
+                    <a href="#about" class="px-8 py-4 rounded-xl bg-slate-900/80 hover:bg-slate-800 text-slate-200 border border-slate-800 font-semibold transition-all">
+                        View Portfolio
+                    </a>
+                </div>
+
+                <!-- Trust Badges / Quick Stats -->
+                <div class="grid grid-cols-3 gap-6 pt-8 border-t border-slate-800/80 w-full max-w-xl">
+                    <div>
+                        <div class="text-2xl font-bold text-slate-100">100%</div>
+                        <div class="text-xs text-slate-400">On-Time Delivery</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-slate-100">Cross-Dev</div>
+                        <div class="text-xs text-slate-400">Clinical Leadership</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-slate-100">MedTech</div>
+                        <div class="text-xs text-slate-400">Agile Workflows</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Avatar & Profile Visual -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative group">
+                    <!-- Glowing Double Gradient Frame -->
+                    <div class="absolute -inset-1.5 bg-gradient-to-r from-cyan-500 via-indigo-500 to-pink-500 rounded-3xl blur-xl opacity-70 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+                    
+                    <div class="relative w-72 h-72 sm:w-80 sm:h-80 rounded-3xl bg-slate-900 border border-slate-800 overflow-hidden flex items-center justify-center p-4">
+                        <img src="https://ui-avatars.com/api/?name=Dr.+Merlin+Levy+T+S&size=200&background=0D8ABC&color=fff&bold=true" 
+                             alt="Dr. Merlin Levy T S" 
+                             class="w-full h-full object-cover rounded-2xl shadow-2xl group-hover:scale-105 transition duration-500">
+                        
+                        <!-- Floating Info Tag -->
+                        <div class="absolute bottom-6 left-6 right-6 bg-slate-950/90 backdrop-blur-md p-3.5 rounded-xl border border-slate-800 flex items-center gap-3">
+                            <div class="w-8 h-8 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold">
+                                <i class="fa-solid fa-briefcase text-sm"></i>
+                            </div>
+                            <div class="overflow-hidden">
+                                <p class="text-xs font-bold text-slate-200 truncate">Upwards Med</p>
+                                <p class="text-[10px] text-slate-400 truncate">Lead Project Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-24 relative bg-slate-900/40 border-y border-slate-800/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Image Visual -->
+                <div class="lg:col-span-5">
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 group">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" 
+                             alt="Collaboration and Team Leadership" 
+                             class="w-full h-[400px] object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <p class="text-xs font-semibold text-cyan-400 uppercase tracking-wider mb-1">Strategic Leadership</p>
+                            <h3 class="text-lg font-bold text-white">Empowering Teams to Achieve Extraordinary Medical Milestones</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Description -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-cyan-500/10 text-cyan-400 text-xs font-semibold uppercase">
+                        Executive Profile
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+                        Pioneering Modern Healthcare Management
+                    </h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        As a Project Manager at <strong class="text-white">Upwards Med</strong>, Dr. Merlin Levy T S integrates executive oversight, healthtech advancements, and cross-functional team coordination. With a deep commitment to excellence, Dr. Levy transforms high-level healthcare initiatives into structured, seamlessly executed clinical operations.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 flex items-start gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-list-check text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-200 text-sm">End-to-End Governance</h4>
+                                <p class="text-xs text-slate-400 mt-1">Managing project lifecycles from charter to deployment with total transparency.</p>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 flex items-start gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-people-group text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-200 text-sm">Stakeholder Synergy</h4>
+                                <p class="text-xs text-slate-400 mt-1">Aligning clinicians, developers, and executives toward unified strategic goals.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / Core Competencies Section -->
+    <section id="services" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <h2 class="text-xs font-semibold tracking-widest text-cyan-400 uppercase">Core Competencies</h2>
+                <h3 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">Targeted Expertise in MedTech & PM</h3>
+                <p class="text-slate-400">Delivering structured solutions designed to enhance operational efficiency, accelerate innovation, and ensure compliance.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Card 1 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 group hover:-translate-y-1 glow-card">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-cyan-500/20 to-blue-500/20 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-hospital-user"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Healthcare IT Management</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Leading the integration of complex digital systems, clinical software, and EHR workflows for optimized medical delivery.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 group hover:-translate-y-1 glow-card">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-indigo-500/20 to-purple-500/20 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-diagram-project"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Agile & Scrum Delivery</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Implementing modern agile practices, sprint planning, and risk management tailored for high-stakes healthcare solutions.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-pink-500/50 transition-all duration-300 group hover:-translate-y-1 glow-card">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-purple-500/20 to-pink-500/20 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Regulatory & Quality Assurance</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Navigating compliance frameworks, healthcare standards, and quality management protocol execution with rigor.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 group hover:-translate-y-1 glow-card">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-cyan-500/20 to-emerald-500/20 text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Strategic Operations</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Optimizing resource allocation, timeline projections, and budget strategies for sustainable long-term impact.
+                    </p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-blue-500/50 transition-all duration-300 group hover:-translate-y-1 glow-card">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-blue-500/20 to-cyan-500/20 text-blue-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-handshake"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Vendor & Partnership Lead</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Cultivating robust external vendor relationships, SLA oversight, and cross-organization strategic partnerships.
+                    </p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-amber-500/50 transition-all duration-300 group hover:-translate-y-1 glow-card">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-amber-500/20 to-orange-500/20 text-amber-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Innovation Enablement</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Fostering continuous process improvement, embracing cutting-edge digital health tools, and leading change management.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact & Endorsements Section -->
+    <section id="impact" class="py-24 bg-slate-900/30 border-t border-slate-800/80 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-semibold tracking-widest text-cyan-400 uppercase">Testimonials</h2>
+                <h3 class="text-3xl sm:text-4xl font-bold tracking-tight text-white mt-2">Professional Endorsements</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="p-8 rounded-2xl bg-slate-900/80 border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-400 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 italic text-base leading-relaxed">
+                            "Dr. Merlin Levy's exceptional leadership transformed our medical project timeline. The rare combination of healthcare insight and meticulous project management kept our teams synchronized and ahead of schedule."
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-6 border-t border-slate-800/80 flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold text-sm">
+                            VP
+                        </div>
+                        <div>
+                            <h5 class="text-sm font-bold text-white">Vice President of Operations</h5>
+                            <p class="text-xs text-slate-400">Healthcare Solutions Group</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="p-8 rounded-2xl bg-slate-900/80 border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-400 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 italic text-base leading-relaxed">
+                            "Navigating complex clinical requirements while maintaining high velocity is challenging. Dr. Levy brings clarity, structured communication, and decisive action to every sprint."
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-6 border-t border-slate-800/80 flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 flex items-center justify-center font-bold text-sm">
+                            CT
+                        </div>
+                        <div>
+                            <h5 class="text-sm font-bold text-white">Clinical Tech Lead</h5>
+                            <p class="text-xs text-slate-400">Upwards Med Collaborator</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Direct Engagement Section -->
+    <section id="contact" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Left Info Card -->
+                <div class="lg:col-span-5 flex flex-col justify-between">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-cyan-500/10 text-cyan-400 text-xs font-semibold uppercase mb-4">
+                            Connect Direct
+                        </div>
+                        <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white mb-6">
+                            Let's Build Strategic Healthcare Futures
+                        </h2>
+                        <p class="text-slate-400 leading-relaxed mb-8">
+                            Open to strategic partnerships, project consultations, and executive leadership inquiries. Reach out to discuss how we can drive meaningful innovation together.
+                        </p>
+
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                                <div class="w-10 h-10 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center shrink-0">
+                                    <i class="fa-solid fa-building text-lg"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-slate-400 uppercase tracking-wider">Current Organization</div>
+                                    <div class="text-sm font-semibold text-white">Upwards Med</div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                                <div class="w-10 h-10 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center shrink-0">
+                                    <i class="fa-solid fa-user-tie text-lg"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-slate-400 uppercase tracking-wider">Designation</div>
+                                    <div class="text-sm font-semibold text-white">Project Manager</div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                                <div class="w-10 h-10 rounded-lg bg-pink-500/10 text-pink-400 flex items-center justify-center shrink-0">
+                                    <i class="fa-solid fa-calendar-check text-lg"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-slate-400 uppercase tracking-wider">Network Connection</div>
+                                    <div class="text-sm font-semibold text-white">07 Sep 2026</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Contact Form -->
+                <div class="lg:col-span-7">
+                    <form onsubmit="event.preventDefault();" class="p-8 rounded-2xl bg-slate-900/80 border border-slate-800 backdrop-blur-xl space-y-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Send a Message</h3>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Name</label>
+                                <input type="text" placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Email</label>
+                                <input type="email" placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Subject</label>
+                            <input type="text" placeholder="Project Consultation / Strategic Collaboration" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-cyan-500 transition-colors">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Message</label>
+                            <textarea rows="4" placeholder="Dear Dr. Merlin Levy, I would like to discuss..." class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 focus:outline-none focus:border-cyan-500 transition-colors resize-none"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white font-bold shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 hover:-translate-y-0.5 transition-all">
+                            Send Direct Message <i class="fa-solid fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-800/80 bg-slate-950 text-slate-400 text-xs">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+                &copy; 2026 Dr. Merlin Levy T S. All rights reserved. Professional Portfolio Showcase.
+            </div>
+            <div class="flex items-center gap-6 text-sm">
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-solid fa-globe"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
