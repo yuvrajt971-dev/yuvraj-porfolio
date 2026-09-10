@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Urmy Singh | Executive & Thought Leader Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-border {
+            position: relative;
+            background-clip: padding-box;
+        }
+        .gradient-border::before {
+            content: '';
+            position: absolute;
+            top: -2px; right: -2px; bottom: -2px; left: -2px;
+            z-index: -1;
+            border-radius: inherit;
+            background: linear-gradient(135deg, #6366f1, #a855f7, #ec4899);
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(99, 102, 241, 0.25);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-xl font-extrabold tracking-tight flex items-center gap-3 group">
+                <span class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-indigo-500/20 group-hover:scale-105 transition-transform duration-300">
+                    DS
+                </span>
+                <span class="gradient-text font-extrabold text-2xl">Dr. Urmy Singh</span>
+            </a>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-indigo-400 transition-colors">Expertise</a>
+                <a href="#services" class="hover:text-indigo-400 transition-colors">Services</a>
+                <a href="#testimonials" class="hover:text-indigo-400 transition-colors">Endorsements</a>
+            </div>
+
+            <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold text-sm hover:opacity-90 transition-all duration-300 shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:-translate-y-0.5">
+                <span>Connect Now</span>
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="relative min-h-screen pt-32 pb-20 flex items-center justify-center overflow-hidden">
+        <!-- Background Glows -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-indigo-600/15 rounded-full blur-[140px] pointer-events-none"></div>
+        <div class="absolute bottom-10 right-10 w-[400px] h-[400px] bg-pink-600/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
+            <!-- Avatar Frame -->
+            <div class="relative inline-block mb-8">
+                <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 blur-md opacity-75 animate-pulse"></div>
+                <div class="relative p-1.5 rounded-full bg-slate-950">
+                    <img src="https://ui-avatars.com/api/?name=Dr.Urmy+Singh&size=200&background=0D8ABC&color=fff&bold=true" 
+                         alt="Dr. Urmy Singh" 
+                         class="w-36 h-36 md:w-44 md:h-44 rounded-full object-cover shadow-2xl">
+                </div>
+                <span class="absolute bottom-2 right-2 bg-slate-900 border border-slate-700 text-indigo-400 text-xs px-3 py-1 rounded-full font-semibold shadow-lg flex items-center gap-1.5">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                    Verified Profile
+                </span>
+            </div>
+
+            <!-- Main Heading -->
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 text-slate-300 text-xs font-semibold uppercase tracking-wider mb-6 backdrop-blur-xl">
+                <i class="fa-solid fa-award text-indigo-400"></i> Executive & Thought Leader
+            </div>
+            
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 max-w-4xl mx-auto leading-tight">
+                Pioneering Strategic Excellence & <span class="gradient-text">Visionary Leadership</span>
+            </h1>
+            
+            <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-10 font-normal leading-relaxed">
+                Transforming industries through high-impact research, strategic innovation, and executive mentorship. Empowering organizations to achieve scalable, future-ready success.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-bold text-base hover:opacity-95 transition-all shadow-xl shadow-indigo-500/25 flex items-center justify-center gap-3 hover:-translate-y-0.5">
+                    <span>Initiate Collaboration</span>
+                    <i class="fa-solid fa-paper-plane text-sm"></i>
+                </a>
+                <a href="#about" class="w-full sm:w-auto px-8 py-4 rounded-full bg-slate-900/80 border border-slate-800 text-slate-300 font-semibold text-base hover:bg-slate-800 hover:text-white transition-all backdrop-blur-xl flex items-center justify-center gap-2">
+                    <span>Explore Profile</span>
+                    <i class="fa-solid fa-arrow-down text-sm text-slate-500"></i>
+                </a>
+            </div>
+
+            <!-- Trust Badges / Stats -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto mt-20 pt-10 border-t border-slate-800/60">
+                <div class="p-4 rounded-2xl bg-slate-900/40 border border-slate-800/50 backdrop-blur-sm">
+                    <div class="text-3xl font-extrabold text-indigo-400 mb-1">15+</div>
+                    <div class="text-xs text-slate-400 font-medium uppercase tracking-wider">Years Experience</div>
+                </div>
+                <div class="p-4 rounded-2xl bg-slate-900/40 border border-slate-800/50 backdrop-blur-sm">
+                    <div class="text-3xl font-extrabold text-purple-400 mb-1">50+</div>
+                    <div class="text-xs text-slate-400 font-medium uppercase tracking-wider">Global Keynotes</div>
+                </div>
+                <div class="p-4 rounded-2xl bg-slate-900/40 border border-slate-800/50 backdrop-blur-sm">
+                    <div class="text-3xl font-extrabold text-pink-400 mb-1">100+</div>
+                    <div class="text-xs text-slate-400 font-medium uppercase tracking-wider">Strategic Initiatives</div>
+                </div>
+                <div class="p-4 rounded-2xl bg-slate-900/40 border border-slate-800/50 backdrop-blur-sm">
+                    <div class="text-3xl font-extrabold text-emerald-400 mb-1">99%</div>
+                    <div class="text-xs text-slate-400 font-medium uppercase tracking-wider">Client Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-24 relative bg-slate-950/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Image Side -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative rounded-3xl overflow-hidden border border-slate-800 shadow-2xl group">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" 
+                             alt="Professional Workspace" 
+                             class="w-full h-[450px] object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-6 rounded-2xl bg-slate-900/80 backdrop-blur-xl border border-slate-800">
+                            <p class="text-sm font-semibold text-indigo-400 mb-1">Leadership Philosophy</p>
+                            <p class="text-xs text-slate-300 italic">"Innovation thrives at the intersection of rigorous research, strategic foresight, and relentless empathy."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Side -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold">
+                        <i class="fa-solid fa-user-tie"></i> Biography & Background
+                    </div>
+                    
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-white tracking-tight">
+                        Driving Sustainable Growth & Innovation with <span class="gradient-text">Dr. Urmy Singh</span>
+                    </h2>
+                    
+                    <p class="text-slate-300 leading-relaxed font-normal">
+                        Dr. Urmy Singh is a recognized authority in strategic advisory and transformative institutional leadership. With a career dedicated to bridging complex domain expertise with scalable execution, Dr. Singh has guided organizations through pivotal paradigm shifts.
+                    </p>
+                    
+                    <p class="text-slate-400 leading-relaxed text-sm">
+                        Combining academic precision with real-world business acumen, Dr. Singh specializes in crafting cross-functional frameworks that foster resilience, accelerate innovation, and elevate team outcomes on a global scale.
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80 flex items-start gap-3">
+                            <div class="p-2.5 rounded-lg bg-indigo-500/10 text-indigo-400 mt-1">
+                                <i class="fa-solid fa-lightbulb"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-100">Strategic Foresight</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">Anticipating trends & mitigating complex risks.</p>
+                            </div>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80 flex items-start gap-3">
+                            <div class="p-2.5 rounded-lg bg-purple-500/10 text-purple-400 mt-1">
+                                <i class="fa-solid fa-chart-line"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-100">Performance Metrics</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">Optimizing operational outputs & efficiency.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES / EXPERTISE SECTION -->
+    <section id="services" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-semibold mb-4">
+                    <i class="fa-solid fa-cubes"></i> Executive Offerings
+                </div>
+                <h2 class="text-3xl md:text-5xl font-extrabold text-white tracking-tight mb-4">
+                    Core Capabilities & <span class="gradient-text">Services</span>
+                </h2>
+                <p class="text-slate-400 text-base">
+                    Tailored leadership solutions designed for executive teams, academic institutions, and enterprise initiatives.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="p-8 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-chess"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-100 mb-3 group-hover:text-indigo-400 transition-colors">Strategic Advisory</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Providing top-tier advisory for leadership teams looking to reshape organizational direction and align long-term strategic goals.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold text-indigo-400 hover:text-indigo-300 uppercase tracking-wider">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="p-8 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-microscope"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-100 mb-3 group-hover:text-purple-400 transition-colors">Research & Innovation</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Leading comprehensive research methodologies and domain synthesis to unlock breakthrough innovations and publications.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold text-purple-400 hover:text-purple-300 uppercase tracking-wider">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="p-8 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-pink-500/50 transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-2xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-users-gear"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-100 mb-3 group-hover:text-pink-400 transition-colors">Executive Coaching</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Empowering rising leaders with mentorship programs built on effective communication, decision-making, and organizational empathy.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold text-pink-400 hover:text-pink-300 uppercase tracking-wider">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials" class="py-24 relative bg-slate-950/40">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-pink-500/10 border border-pink-500/20 text-pink-400 text-xs font-semibold mb-4">
+                    <i class="fa-solid fa-quote-left"></i> Endorsements
+                </div>
+                <h2 class="text-3xl md:text-5xl font-extrabold text-white tracking-tight mb-4">
+                    Trusted by <span class="gradient-text">Global Leaders</span>
+                </h2>
+                <p class="text-slate-400 text-base">
+                    What peers, institutional partners, and executive clients say about working with Dr. Urmy Singh.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="p-8 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-400 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Dr. Singh’s strategic clarity and research depth transformed our organizational framework. The insights provided were both actionable and deeply impactful."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 flex items-center justify-center font-bold text-indigo-400 text-sm">
+                            EB
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-slate-100">Executive Board Member</p>
+                            <p class="text-xs text-slate-500">Global Tech Enterprise</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="p-8 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-400 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Working alongside Dr. Urmy Singh was an absolute privilege. The standard of executive guidance and structural innovation delivered is unmatched."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center font-bold text-purple-400 text-sm">
+                            VP
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-slate-100">Vice President of Strategy</p>
+                            <p class="text-xs text-slate-500">Research Consortium</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="p-8 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-400 mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Dr. Singh brings a unique combination of visionary leadership and practical execution. Highly recommended for any complex strategic challenge."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-pink-500/20 flex items-center justify-center font-bold text-pink-400 text-sm">
+                            MD
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-slate-100">Managing Director</p>
+                            <p class="text-xs text-slate-500">Innovation Network</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Info Column -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold mb-4">
+                            <i class="fa-solid fa-envelope"></i> Get In Touch
+                        </div>
+                        <h2 class="text-3xl md:text-4xl font-extrabold text-white tracking-tight">
+                            Let's Build Something <span class="gradient-text">Extraordinary</span>
+                        </h2>
+                        <p class="text-slate-400 text-sm mt-4 leading-relaxed">
+                            Interested in advisory engagements, keynote presentations, or institutional partnerships? Reach out directly using the form or network link.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="p-5 rounded-2xl bg-slate-900/60 border border-slate-800 flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 text-lg">
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium uppercase tracking-wider">Network Connection</p>
+                                <p class="text-sm font-semibold text-slate-200">Connected Sep 07, 2026</p>
+                            </div>
+                        </div>
+
+                        <div class="p-5 rounded-2xl bg-slate-900/60 border border-slate-800 flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400 text-lg">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium uppercase tracking-wider">Direct Message</p>
+                                <p class="text-sm font-semibold text-slate-200">Inquiries welcomed below</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Column -->
+                <div class="lg:col-span-7">
+                    <form onsubmit="event.preventDefault(); alert('Thank you for your message! Dr. Urmy Singh will be in touch shortly.');" class="p-8 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 space-y-6">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Your Name</label>
+                                <input type="text" required placeholder="Jane Doe" class="w-full px-4 py-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-100 placeholder-slate-600 focus:outline-none focus:border-indigo-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Your Email</label>
+                                <input type="email" required placeholder="jane@example.com" class="w-full px-4 py-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-100 placeholder-slate-600 focus:outline-none focus:border-indigo-500 transition-colors">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Subject</label>
+                            <input type="text" required placeholder="Executive Collaboration / Consultation" class="w-full px-4 py-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-100 placeholder-slate-600 focus:outline-none focus:border-indigo-500 transition-colors">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Message</label>
+                            <textarea rows="4" required placeholder="Outline your inquiry or proposal..." class="w-full px-4 py-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-100 placeholder-slate-600 focus:outline-none focus:border-indigo-500 transition-colors resize-none"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-bold text-sm hover:opacity-95 transition-all shadow-lg shadow-indigo-500/25">
+                            Send Strategic Inquiry
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-8 border-t border-slate-800/80 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>&copy; 2026 Dr. Urmy Singh. All rights reserved.</p>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-slate-400 transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-slate-400 transition-colors">Terms of Engagement</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
