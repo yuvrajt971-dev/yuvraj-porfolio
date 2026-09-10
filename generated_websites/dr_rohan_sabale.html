@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr Rohan Sabale | Product Manager & HealthTech Innovator</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            cyan: '#0D8ABC',
+                            purple: '#8B5CF6',
+                            pink: '#EC4899',
+                        }
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(13, 138, 188, 0.3);
+        }
+        .glow-card:hover {
+            box-shadow: 0 0 30px -5px rgba(139, 92, 246, 0.25);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-white">
+
+    <!-- Background Glow Elements -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
+        <div class="absolute -top-40 -right-40 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl"></div>
+        <div class="absolute top-1/3 -left-40 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-40 right-1/3 w-96 h-96 bg-pink-500/10 rounded-full blur-3xl"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-indigo-500 to-pink-500 p-0.5 shadow-lg group-hover:scale-105 transition-transform duration-300">
+                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+                        <i class="fa-solid fa-heart-pulse text-cyan-400"></i>
+                    </div>
+                </div>
+                <span class="font-bold text-lg tracking-tight bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent">
+                    Dr Rohan Sabale
+                </span>
+            </a>
+
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors duration-200">About</a>
+                <a href="#expertise" class="hover:text-cyan-400 transition-colors duration-200">Expertise</a>
+                <a href="#impact" class="hover:text-cyan-400 transition-colors duration-200">Impact</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors duration-200">Endorsements</a>
+            </div>
+
+            <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-white bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 rounded-full hover:shadow-lg hover:shadow-cyan-500/25 hover:scale-105 transition-all duration-300">
+                Get In Touch
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-20 md:pt-48 md:pb-32 overflow-hidden z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
+                
+                <div class="flex-1 text-center lg:text-left space-y-8">
+                    <!-- Status Badge -->
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 text-xs font-semibold text-slate-300 backdrop-blur-xl">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        Product Manager at <span class="text-cyan-400">Tulu Health</span>
+                    </div>
+
+                    <!-- Main Headline -->
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        Bridging <span class="bg-gradient-to-r from-cyan-400 via-indigo-400 to-pink-500 bg-clip-text text-transparent">Clinical Expertise</span> & Digital Health Innovation.
+                    </h1>
+
+                    <p class="text-slate-400 text-lg sm:text-xl max-w-2xl leading-relaxed font-light">
+                        Transforming complex healthcare challenges into seamless, patient-centric digital products. Architecting high-impact healthtech solutions at the intersection of medicine and technology.
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 text-center font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-xl hover:shadow-xl hover:shadow-purple-500/20 hover:-translate-y-0.5 transition-all duration-300">
+                            Connect Direct <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                        <a href="#about" class="w-full sm:w-auto px-8 py-4 text-center font-semibold text-slate-300 bg-slate-900/60 hover:bg-slate-800/80 border border-slate-800 rounded-xl transition-all duration-300 backdrop-blur-xl">
+                            Explore Profile
+                        </a>
+                    </div>
+
+                    <!-- Trust Stats / Highlights -->
+                    <div class="pt-8 border-t border-slate-900 grid grid-cols-3 gap-4 text-center lg:text-left">
+                        <div>
+                            <div class="text-2xl font-bold text-white">100%</div>
+                            <div class="text-xs text-slate-400">Clinical Precision</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-cyan-400">Scale</div>
+                            <div class="text-xs text-slate-400">Digital Health</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-purple-400">Zero→One</div>
+                            <div class="text-xs text-slate-400">Product Strategy</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Avatar Frame -->
+                <div class="relative flex-shrink-0">
+                    <div class="absolute -inset-1.5 bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 rounded-full blur-xl opacity-70 animate-pulse-slow"></div>
+                    <div class="relative p-2 bg-gradient-to-tr from-cyan-500 via-indigo-500 to-pink-500 rounded-full p-1.5 shadow-2xl">
+                        <div class="bg-slate-950 p-2 rounded-full">
+                            <img src="https://ui-avatars.com/api/?name=Dr+Rohan+Sabale&size=200&background=0D8ABC&color=fff&bold=true" 
+                                 alt="Dr Rohan Sabale" 
+                                 class="w-48 h-48 sm:w-64 sm:h-64 rounded-full object-cover shadow-inner hover:scale-105 transition-transform duration-500">
+                        </div>
+                    </div>
+
+                    <!-- Floating Badge -->
+                    <div class="absolute -bottom-4 right-4 bg-slate-900/90 border border-slate-800 p-3 rounded-2xl shadow-xl backdrop-blur-xl flex items-center gap-3 animate-float">
+                        <div class="w-10 h-10 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold">
+                            <i class="fa-solid fa-stethoscope"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs text-slate-400">Background</div>
+                            <div class="text-sm font-semibold text-white">MD + Product Leader</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-24 relative z-10 border-t border-slate-900 bg-slate-950/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- Industry Image with Glassmorphism Overlay -->
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-3xl blur opacity-25 group-hover:opacity-50 transition duration-500"></div>
+                    <div class="relative rounded-3xl overflow-hidden border border-slate-800 bg-slate-900/60 backdrop-blur-xl">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Healthcare Technology" 
+                             class="w-full h-[400px] object-cover opacity-80 group-hover:scale-105 transition duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+                        
+                        <div class="absolute bottom-6 left-6 right-6 p-6 rounded-2xl bg-slate-900/80 border border-slate-800/80 backdrop-blur-md">
+                            <div class="text-xs font-semibold text-cyan-400 uppercase tracking-wider mb-1">Mission Driven</div>
+                            <p class="text-sm text-slate-300">Empowering clinicians and patients through modern, accessible, and intuitive healthcare software solutions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div class="space-y-6">
+                    <div class="inline-flex items-center gap-2 text-cyan-400 font-semibold text-sm">
+                        <i class="fa-solid fa-user-doctor"></i> About Dr Rohan Sabale
+                    </div>
+                    
+                    <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+                        Translating Clinical Insight into Scalable Tech Innovation
+                    </h2>
+
+                    <p class="text-slate-400 leading-relaxed font-light">
+                        At <span class="text-slate-200 font-medium">Tulu Health</span>, I lead cross-functional product teams to build next-generation healthcare platforms. Combining a doctor's deep clinical understanding with strategic product management methodology, I bridge the gap between healthcare providers, patient needs, and cutting-edge digital platforms.
+                    </p>
+
+                    <!-- Key Pillars -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80 backdrop-blur-xl">
+                            <i class="fa-solid fa-hospital-user text-cyan-400 text-xl mb-2"></i>
+                            <h3 class="font-semibold text-white mb-1">Patient-Centric Strategy</h3>
+                            <p class="text-xs text-slate-400">Designing software aligned with patient outcomes and clinical compliance.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80 backdrop-blur-xl">
+                            <i class="fa-solid fa-diagram-project text-purple-400 text-xl mb-2"></i>
+                            <h3 class="font-semibold text-white mb-1">Agile Product Lifecycle</h3>
+                            <p class="text-xs text-slate-400">Guiding features from initial hypothesis through research, design, and release.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / Capabilities Grid -->
+    <section id="expertise" class="py-24 relative z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-cyan-400 uppercase tracking-widest mb-3">Core Expertise</h2>
+                <p class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Product Leadership in Digital Health</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service Card 1 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 group glow-card">
+                    <div class="w-14 h-14 rounded-xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-cyan-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-notes-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">HealthTech Strategy</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Synthesizing medical protocols into clear digital product roadmaps, features, and workflow optimizations.
+                    </p>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 group glow-card">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-purple-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Product Lifecycle Management</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        End-to-end oversight from patient research to development, testing, clinical validation, and launch.
+                    </p>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 group glow-card">
+                    <div class="w-14 h-14 rounded-xl bg-pink-500/10 border border-pink-500/20 text-pink-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-pink-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-user-check"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Clinical UX & Usability</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Designing intuitive interfaces tailored specifically for high-stress medical environments and patient adoption.
+                    </p>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 group glow-card">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Data & Health Analytics</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Leveraging real-world evidence and analytics to iterate features and improve patient engagement metrics.
+                    </p>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 group glow-card">
+                    <div class="w-14 h-14 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Compliance & Governance</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Ensuring strict adherence to health data security standards, clinical guidelines, and regulatory frameworks.
+                    </p>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 group glow-card">
+                    <div class="w-14 h-14 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-amber-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Cross-Functional Leadership</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Aligning engineering teams, healthcare providers, UX designers, and commercial leaders toward a single vision.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Endorsements Section -->
+    <section id="testimonials" class="py-24 relative z-10 border-t border-slate-900 bg-slate-950/50">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-purple-400 uppercase tracking-widest mb-3">Endorsements</h2>
+                <p class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Recognized by Industry Peers</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 space-x-1 mb-4 text-xs">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Dr. Rohan's ability to bridge complex medical workflows with modern product architecture is rare. He elevates every healthtech initiative he leads."
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-3 pt-4 border-t border-slate-800/80">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-cyan-500 to-indigo-500 flex items-center justify-center text-xs font-bold text-white">
+                            VP
+                        </div>
+                        <div>
+                            <div class="text-sm font-semibold text-white">VP of Product</div>
+                            <div class="text-xs text-slate-400">HealthTech Platform</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 space-x-1 mb-4 text-xs">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Working alongside Rohan at Tulu Health has been inspiring. His clinical foundation gives our technical products unprecedented clarity and empathy."
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-3 pt-4 border-t border-slate-800/80">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-purple-500 to-pink-500 flex items-center justify-center text-xs font-bold text-white">
+                            EL
+                        </div>
+                        <div>
+                            <div class="text-sm font-semibold text-white">Engineering Lead</div>
+                            <div class="text-xs text-slate-400">Tulu Health Partner</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 space-x-1 mb-4 text-xs">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "A visionary product leader who thoroughly understands patient journeys and translates them into intuitive, compliant software solutions."
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-3 pt-4 border-t border-slate-800/80">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-emerald-500 to-cyan-500 flex items-center justify-center text-xs font-bold text-white">
+                            CD
+                        </div>
+                        <div>
+                            <div class="text-sm font-semibold text-white">Clinical Director</div>
+                            <div class="text-xs text-slate-400">Digital Health Network</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 relative z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="p-8 sm:p-12 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 relative overflow-hidden">
+                <div class="absolute -top-24 -right-24 w-72 h-72 bg-gradient-to-br from-cyan-500/20 to-purple-500/20 rounded-full blur-2xl pointer-events-none"></div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    
+                    <!-- Left Column -->
+                    <div class="space-y-6">
+                        <div class="inline-flex items-center gap-2 text-cyan-400 font-semibold text-sm">
+                            <i class="fa-solid fa-envelope"></i> Direct Contact
+                        </div>
+                        
+                        <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+                            Let's Collaborate on Next-Gen Healthcare
+                        </h2>
+
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Interested in digital health strategy, product partnerships, or innovation consulting? Reach out directly.
+                        </p>
+
+                        <div class="space-y-4 pt-4">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 rounded-xl bg-slate-800/80 border border-slate-700/80 flex items-center justify-center text-cyan-400">
+                                    <i class="fa-solid fa-briefcase"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-slate-400">Current Role</div>
+                                    <div class="text-sm font-medium text-white">Product Manager @ Tulu Health</div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 rounded-xl bg-slate-800/80 border border-slate-700/80 flex items-center justify-center text-purple-400">
+                                    <i class="fa-solid fa-calendar-check"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-slate-400">Network Connected</div>
+                                    <div class="text-sm font-medium text-white">07 Sep 2026</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Form -->
+                    <form onsubmit="event.preventDefault();" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Name</label>
+                            <input type="text" placeholder="Dr. / Mr. / Ms. Full Name" class="w-full px-4 py-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Email Address</label>
+                            <input type="email" placeholder="name@organization.com" class="w-full px-4 py-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Message</label>
+                            <textarea rows="4" placeholder="How can we collaborate on healthtech innovation?" class="w-full px-4 py-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl font-semibold text-white bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300">
+                            Send Message
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-slate-900 z-10 relative bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center space-x-3">
+                <span class="font-bold text-white">Dr Rohan Sabale</span>
+                <span class="text-slate-600">•</span>
+                <span class="text-slate-400 text-sm">Product Manager at Tulu Health</span>
+            </div>
+
+            <div class="flex items-center space-x-6 text-slate-400">
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-linkedin text-lg"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-twitter text-lg"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-solid fa-envelope text-lg"></i></a>
+            </div>
+
+            <div class="text-xs text-slate-500">
+                © 2026 Dr Rohan Sabale. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
