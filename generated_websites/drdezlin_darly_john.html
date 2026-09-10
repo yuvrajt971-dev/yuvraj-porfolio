@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Dezlin Darly John | General Dentist</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        dental: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(14, 165, 233, 0.3);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-border {
+            position: relative;
+            border-radius: 9999px;
+            background: linear-gradient(135deg, #0ea5e9, #a855f7, #ec4899);
+            padding: 4px;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-slate-950">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center text-slate-950 font-bold text-xl shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-tooth text-slate-950 text-lg"></i>
+                </div>
+                <div>
+                    <span class="text-lg font-bold tracking-tight text-white block leading-none">Dr. Dezlin Darly John</span>
+                    <span class="text-xs text-cyan-400 font-medium tracking-wider uppercase">General Dentist</span>
+                </div>
+            </a>
+            
+            <div class="hidden md:flex items-center space-x-8 font-medium text-sm text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Patient Stories</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+            </div>
+
+            <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 to-indigo-600 text-white text-sm font-semibold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 hover:scale-[1.02]">
+                <span>Book Appointment</span>
+                <i class="fa-solid fa-calendar-check text-xs"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden">
+        <!-- Background Orbs -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-cyan-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute top-1/3 right-10 w-[400px] h-[400px] bg-indigo-500/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
+                
+                <!-- Left Content -->
+                <div class="flex-1 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 text-cyan-400 text-xs font-semibold tracking-wide uppercase mb-6 shadow-inner">
+                        <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                        Svasti Heart and Dental Care Clinic
+                    </div>
+                    
+                    <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+                        Crafting Healthy, <br>
+                        <span class="gradient-text">Radiant Smiles</span> With Precision.
+                    </h1>
+                    
+                    <p class="text-slate-400 text-lg md:text-xl max-w-2xl mb-8 font-light leading-relaxed">
+                        Welcome! I'm <strong class="text-slate-200">Dr. Dezlin Darly John</strong>, dedicated to delivering comprehensive, patient-centered dental care with modern techniques, gentle precision, and modern dental technology.
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-12">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-cyan-500 via-teal-500 to-indigo-600 text-white font-bold text-center hover:shadow-xl hover:shadow-cyan-500/25 transition-all duration-300 hover:-translate-y-0.5">
+                            Schedule Consultation
+                        </a>
+                        <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-full bg-slate-900/80 border border-slate-800 text-slate-200 font-semibold text-center hover:bg-slate-800 hover:text-white transition-all duration-300">
+                            Explore Treatments
+                        </a>
+                    </div>
+
+                    <!-- Trust Badges -->
+                    <div class="pt-8 border-t border-slate-800/80 grid grid-cols-2 sm:grid-cols-3 gap-6 text-left">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-cyan-500/10 flex items-center justify-center text-cyan-400 text-lg">
+                                <i class="fa-solid fa-tooth"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-sm">Gentle Care</h4>
+                                <p class="text-xs text-slate-400">Painless Dentistry</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-indigo-500/10 flex items-center justify-center text-indigo-400 text-lg">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-sm">100% Hygiene</h4>
+                                <p class="text-xs text-slate-400">Strict Safety Protocols</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 col-span-2 sm:col-span-1">
+                            <div class="w-10 h-10 rounded-lg bg-purple-500/10 flex items-center justify-center text-purple-400 text-lg">
+                                <i class="fa-solid fa-heart-pulse"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-sm">Holistic Health</h4>
+                                <p class="text-xs text-slate-400">Heart & Dental Care</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Avatar / Visual -->
+                <div class="relative flex-shrink-0">
+                    <div class="gradient-border glow-effect">
+                        <div class="bg-slate-950 p-3 rounded-full">
+                            <img src="https://ui-avatars.com/api/?name=Dr.Dezlin+Darly+John&size=200&background=0D8ABC&color=fff&bold=true" 
+                                 alt="Dr. Dezlin Darly John" 
+                                 class="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover shadow-2xl">
+                        </div>
+                    </div>
+
+                    <!-- Floating Badge 1 -->
+                    <div class="absolute -bottom-4 -left-6 bg-slate-900/90 backdrop-blur-xl border border-slate-800 p-4 rounded-2xl shadow-2xl flex items-center gap-3 animate-bounce" style="animation-duration: 4s;">
+                        <div class="w-10 h-10 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400">Verified Specialist</p>
+                            <p class="text-sm font-bold text-white">General Dentist</p>
+                        </div>
+                    </div>
+
+                    <!-- Floating Badge 2 -->
+                    <div class="absolute -top-2 -right-4 bg-slate-900/90 backdrop-blur-xl border border-slate-800 px-4 py-3 rounded-2xl shadow-2xl flex items-center gap-2">
+                        <div class="flex text-amber-400 text-xs">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="text-xs font-bold text-white">5.0 Patient Rating</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-slate-900/40 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                
+                <!-- About Image Block -->
+                <div class="relative">
+                    <div class="relative rounded-3xl overflow-hidden border border-slate-800 shadow-2xl group">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Modern Dental Practice" 
+                             class="w-full h-[450px] object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-6 rounded-2xl bg-slate-900/80 backdrop-blur-md border border-slate-800">
+                            <p class="text-cyan-400 text-sm font-semibold mb-1">Clinical Philosophy</p>
+                            <p class="text-slate-300 text-sm italic">"A healthy smile starts with personalized, preventive, and empathetic dental care."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About Text -->
+                <div>
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold uppercase tracking-wider mb-4">
+                        About Dr. Dezlin
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+                        Dedicated to Excellence in Dental Health at <span class="gradient-text">Svasti Clinic</span>
+                    </h2>
+                    <p class="text-slate-400 leading-relaxed mb-6">
+                        As a General Dentist at <strong class="text-slate-200">Svasti Heart and Dental Care Clinic</strong>, Dr. Dezlin Darly John blends modern clinical expertise with a compassionate touch. Dedicated to providing state-of-the-art diagnostic and therapeutic procedures, Dr. Dezlin ensures every patient experiences stress-free, effective dental visits.
+                    </p>
+                    <p class="text-slate-400 leading-relaxed mb-8">
+                        Whether it’s routine preventive maintenance, restorative treatments, or cosmetic smile enhancements, our focus is on long-term oral wellness integrated with overall health care.
+                    </p>
+
+                    <!-- Feature List -->
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-lg bg-cyan-500/20 text-cyan-400 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-check text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold">Comprehensive Oral Examinations</h4>
+                                <p class="text-slate-400 text-sm">Thorough evaluations using modern diagnostic tools for early issue detection.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-lg bg-indigo-500/20 text-indigo-400 flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fa-solid fa-check text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold">Tailored Dental Treatment Plans</h4>
+                                <p class="text-slate-400 text-sm">Customized care suited to your unique dental goals and comfort level.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold uppercase tracking-wider mb-4">
+                    Clinical Services
+                </div>
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">Comprehensive Dental Care</h2>
+                <p class="text-slate-400">From routine maintenance to advanced cosmetic and restorative procedures, delivered with precision and comfort.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-3xl p-8 hover:border-cyan-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-cyan-500/10 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-cyan-500/20 to-indigo-500/20 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">General Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Routine check-ups, teeth cleaning, digital X-rays, and cavity restorations designed to keep your natural teeth healthy for life.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-cyan-400 hover:text-cyan-300">
+                        <span>Book Check-up</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-3xl p-8 hover:border-cyan-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-cyan-500/10 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-indigo-500/20 to-purple-500/20 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-indigo-400 transition-colors">Cosmetic Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Transform your smile with professional teeth whitening, composite bonding, and aesthetic restorations tailored to your look.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-indigo-400 hover:text-indigo-300">
+                        <span>Learn More</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-3xl p-8 hover:border-cyan-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-cyan-500/10 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-teal-500/20 to-emerald-500/20 border border-teal-500/30 flex items-center justify-center text-teal-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-kit-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-teal-400 transition-colors">Restorative Procedures</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        High-quality crowns, bridges, and durable tooth fillings that restore function, strength, and aesthetic natural beauty.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-teal-400 hover:text-teal-300">
+                        <span>Learn More</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-3xl p-8 hover:border-cyan-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-cyan-500/10 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-purple-500/20 to-pink-500/20 border border-purple-500/30 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-face-smile"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">Preventive Care & Hygiene</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Professional scale & polish, fluoride treatments, and patient education programs to safeguard against gum disease and decay.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-purple-400 hover:text-purple-300">
+                        <span>Learn More</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-3xl p-8 hover:border-cyan-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-cyan-500/10 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-sky-500/20 to-blue-500/20 border border-sky-500/30 flex items-center justify-center text-sky-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-sky-400 transition-colors">Cardio-Dental Wellness</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Integrated care considering systemic cardiovascular health for cardiac patients requiring dental procedures.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-sky-400 hover:text-sky-300">
+                        <span>Learn More</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-3xl p-8 hover:border-cyan-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-cyan-500/10 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-rose-500/20 to-red-500/20 border border-rose-500/30 flex items-center justify-center text-rose-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-house-medical font-bold"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-rose-400 transition-colors">Emergency Dental Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Prompt relief for toothaches, chipped or broken teeth, and urgent dental emergencies with minimal wait times.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-rose-400 hover:text-rose-300">
+                        <span>Immediate Care</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-slate-900/40 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold uppercase tracking-wider mb-4">
+                    Patient Testimonials
+                </div>
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">Loved by Patients</h2>
+                <p class="text-slate-400">Read what patients say about their experience at Svasti Heart and Dental Care Clinic.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Review 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-3xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Dr. Dezlin made my entire cleaning and filling process so smooth and painless! The clinic atmosphere is calm and incredibly hygienic. Truly the best dental experience I've had."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-cyan-500/20 flex items-center justify-center font-bold text-cyan-400 text-sm">
+                            AN
+                        </div>
+                        <div>
+                            <h4 class="text-white text-sm font-bold">Ananya N.</h4>
+                            <p class="text-xs text-slate-500">General Dental Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-3xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "I visited Svasti Clinic for cosmetic teeth whitening. Dr. Dezlin listened carefully to my goals and explained every step. The results exceeded my expectations!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 flex items-center justify-center font-bold text-indigo-400 text-sm">
+                            RK
+                        </div>
+                        <div>
+                            <h4 class="text-white text-sm font-bold">Rajesh K.</h4>
+                            <p class="text-xs text-slate-500">Cosmetic Dental Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-3xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Extremely gentle and professional dentist. Dr. Dezlin was exceptionally mindful of my medical background while treating my teeth. Highly recommended!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center font-bold text-purple-400 text-sm">
+                            SM
+                        </div>
+                        <div>
+                            <h4 class="text-white text-sm font-bold">Sneha M.</h4>
+                            <p class="text-xs text-slate-500">Preventive Care Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="bg-slate-900/80 border border-slate-800 rounded-3xl p-8 md:p-12 backdrop-blur-xl shadow-2xl relative overflow-hidden">
+                
+                <!-- Glow decor -->
+                <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    
+                    <!-- Contact Info -->
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold uppercase tracking-wider mb-4">
+                            Appointment & Inquiries
+                        </div>
+                        <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Ready to Elevate Your Smile?</h2>
+                        <p class="text-slate-400 leading-relaxed mb-8">
+                            Schedule your consultation with Dr. Dezlin Darly John at Svasti Heart and Dental Care Clinic today. We welcome new patients and returning smiles!
+                        </p>
+
+                        <div class="space-y-6">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-2xl bg-slate-800 border border-slate-700 flex items-center justify-center text-cyan-400 text-xl">
+                                    <i class="fa-solid fa-hospital"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400 uppercase tracking-wider font-medium">Practice Location</p>
+                                    <p class="text-white font-semibold">Svasti Heart and Dental Care Clinic</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-2xl bg-slate-800 border border-slate-700 flex items-center justify-center text-indigo-400 text-xl">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400 uppercase tracking-wider font-medium">Direct Email</p>
+                                    <p class="text-white font-semibold">contact@svastiheartanddental.com</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-2xl bg-slate-800 border border-slate-700 flex items-center justify-center text-teal-400 text-xl">
+                                    <i class="fa-solid fa-clock"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400 uppercase tracking-wider font-medium">Working Hours</p>
+                                    <p class="text-white font-semibold">Mon - Sat: 09:00 AM - 08:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="bg-slate-950/60 border border-slate-800 p-6 md:p-8 rounded-2xl">
+                        <form onsubmit="event.preventDefault(); alert('Thank you for reaching out! Your appointment request has been submitted.');" class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Full Name</label>
+                                <input type="text" required placeholder="e.g. John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Phone / Email</label>
+                                <input type="text" required placeholder="your.email@example.com" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Required Service</label>
+                                <select class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 focus:outline-none focus:border-cyan-500 transition-colors">
+                                    <option>General Checkup & Consultation</option>
+                                    <option>Teeth Cleaning & Scaling</option>
+                                    <option>Cosmetic Smile Enhancement</option>
+                                    <option>Tooth Restoration / Filling</option>
+                                    <option>Emergency Care</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Message or Preferred Time</label>
+                                <textarea rows="3" placeholder="Tell us briefly about your dental query..." class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 text-white font-bold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300">
+                                Send Appointment Request
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800/80 py-8 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+            <p class="text-xs text-slate-500">
+                &copy; <script>document.write(new Date().getFullYear())</script> Dr. Dezlin Darly John — General Dentist at Svasti Heart and Dental Care Clinic. All Rights Reserved.
+            </p>
+            <div class="flex items-center space-x-6 text-slate-400">
+                <a href="#" class="hover:text-cyan-400 transition-colors text-sm"><i class="fa-brands fa-linkedin text-lg"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors text-sm"><i class="fa-brands fa-instagram text-lg"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors text-sm"><i class="fa-solid fa-globe text-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
