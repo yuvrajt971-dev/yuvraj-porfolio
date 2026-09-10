@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Prity Das | Expert Medical Writer & Communications Specialist</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            cyan: '#0D8ABC',
+                            teal: '#14b8a6',
+                            purple: '#a855f7',
+                            pink: '#ec4899',
+                        }
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(51, 65, 85, 0.5);
+        }
+        .glass-card:hover {
+            border-color: rgba(13, 138, 188, 0.5);
+            box-shadow: 0 10px 30px -10px rgba(13, 138, 188, 0.2);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #38bdf8 0%, #0D8ABC 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .text-gradient-pink {
+            background: linear-gradient(135deg, #0D8ABC 0%, #a855f7 50%, #f43f5e 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bg-gradient-glow {
+            background: radial-gradient(circle at 50% 50%, rgba(13, 138, 188, 0.15) 0%, rgba(15, 23, 42, 0) 70%);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-white">
+
+    <!-- Ambient Background Glows -->
+    <div class="fixed top-0 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full filter blur-[120px] pointer-events-none -z-10 animate-pulse-slow"></div>
+    <div class="fixed bottom-0 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full filter blur-[120px] pointer-events-none -z-10 animate-pulse-slow"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-600 to-indigo-600 flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
+                    P
+                </div>
+                <div>
+                    <span class="text-lg font-bold tracking-tight text-white block">Dr. Prity Das</span>
+                    <span class="text-xs text-cyan-400 font-medium tracking-wider uppercase block -mt-1">Medical Writer</span>
+                </div>
+            </a>
+
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-cyan-400 transition-colors">Expertise</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Endorsements</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <a href="#contact" class="px-5 py-2.5 rounded-full text-sm font-semibold bg-gradient-to-r from-cyan-600 to-indigo-600 hover:from-cyan-500 hover:to-indigo-500 text-white shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 transition-all duration-300 hover:-translate-y-0.5">
+                    Contact Doctor
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-20 md:pt-44 md:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Content -->
+                <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 text-xs font-semibold text-cyan-400 backdrop-blur-md shadow-inner">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                        Available for Consulting & Medical Communication
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.15]">
+                        Translating Complex Medicine into <span class="text-gradient">Impactful Narratives</span>
+                    </h1>
+
+                    <p class="text-lg sm:text-xl text-slate-400 font-normal max-w-2xl leading-relaxed mx-auto lg:mx-0">
+                        Independent Medical Writer specializing in high-precision clinical documentation, regulatory manuscripts, CME modules, and evidence-based health communications.
+                    </p>
+
+                    <!-- Trust Badges / Quick Stats -->
+                    <div class="pt-2 grid grid-cols-3 gap-4 border-y border-slate-800/80 py-6 max-w-xl mx-auto lg:mx-0">
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-white">100%</div>
+                            <div class="text-xs text-slate-400 font-medium uppercase tracking-wider mt-1">Scientific Rigor</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-cyan-400">100+</div>
+                            <div class="text-xs text-slate-400 font-medium uppercase tracking-wider mt-1">Projects Delivered</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-purple-400">Global</div>
+                            <div class="text-xs text-slate-400 font-medium uppercase tracking-wider mt-1">Healthcare Standards</div>
+                        </div>
+                    </div>
+
+                    <!-- Call To Action Buttons -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl font-semibold bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white shadow-xl shadow-cyan-500/25 hover:shadow-cyan-500/40 transition-all duration-300 hover:-translate-y-1 text-center">
+                            Start a Collaboration <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                        <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-xl font-semibold bg-slate-900 border border-slate-800 hover:border-slate-700 text-slate-300 hover:text-white transition-all duration-300 text-center">
+                            Explore Services
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Avatar & Interactive Card -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative group">
+                        <!-- Glowing Ring Ambient -->
+                        <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 blur-xl opacity-70 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse-slow"></div>
+                        
+                        <!-- Main Frame -->
+                        <div class="relative rounded-3xl bg-slate-900/90 border border-slate-800 p-8 backdrop-blur-2xl text-center space-y-6">
+                            <!-- Double Gradient Avatar Outer Ring -->
+                            <div class="relative w-44 h-44 mx-auto rounded-full p-1.5 bg-gradient-to-tr from-cyan-400 via-indigo-500 to-pink-500 shadow-2xl">
+                                <img src="https://ui-avatars.com/api/?name=Dr.+Prity+Das&size=200&background=0D8ABC&color=fff&bold=true" 
+                                     alt="Dr. Prity Das" 
+                                     class="w-full h-full rounded-full object-cover border-4 border-slate-950 shadow-inner">
+                            </div>
+
+                            <div>
+                                <h2 class="text-2xl font-bold text-white">Dr. Prity Das</h2>
+                                <p class="text-cyan-400 font-medium text-sm mt-1">Medical Writer & Healthcare Specialist</p>
+                                <span class="inline-block mt-2 px-3 py-1 rounded-full text-xs font-semibold bg-slate-800 text-slate-300 border border-slate-700/50">
+                                    <i class="fa-solid fa-briefcase text-cyan-400 mr-1.5"></i> Self-employed Independent Practitioner
+                                </span>
+                            </div>
+
+                            <div class="pt-4 border-t border-slate-800 text-left space-y-3 text-xs text-slate-400">
+                                <div class="flex items-center justify-between">
+                                    <span>Specialization:</span>
+                                    <span class="text-slate-200 font-semibold">Clinical & Medical Writing</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span>Network Status:</span>
+                                    <span class="text-emerald-400 font-semibold flex items-center gap-1">
+                                        <i class="fa-solid fa-check-circle text-xs"></i> Connected Sep 2026
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Industry Expertise Section -->
+    <section id="about" class="py-24 relative bg-slate-950/50 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Medical Image Showcase -->
+                <div class="lg:col-span-5">
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 shadow-2xl group">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Medical Writing & Research" 
+                             class="w-full h-[450px] object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-6 rounded-xl glass-card">
+                            <i class="fa-solid fa-microscope text-3xl text-cyan-400 mb-2"></i>
+                            <h3 class="text-lg font-bold text-white">Precision & Integrity</h3>
+                            <p class="text-xs text-slate-300 mt-1">Bridging complex clinical data and accessible, rigorous healthcare literature.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text & Core Pillars -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-cyan-950/50 border border-cyan-800/50 text-xs font-semibold text-cyan-400">
+                        ABOUT THE SPECIALIST
+                    </div>
+                    
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+                        Empowering Healthcare Organizations through Scientific Excellence
+                    </h2>
+
+                    <p class="text-slate-400 leading-relaxed text-base">
+                        With extensive experience in medical communications and clinical writing, Dr. Prity Das delivers precision-crafted documents that meet regulatory standards, inform clinical practice, and engage healthcare audiences worldwide.
+                    </p>
+
+                    <!-- Feature Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                        <div class="p-4 rounded-xl glass-card">
+                            <div class="w-10 h-10 rounded-lg bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 mb-3">
+                                <i class="fa-solid fa-file-signature text-lg"></i>
+                            </div>
+                            <h4 class="font-bold text-white text-base">Regulatory Documentation</h4>
+                            <p class="text-xs text-slate-400 mt-1">Compliant protocols, clinical study reports (CSRs), and regulatory dossiers.</p>
+                        </div>
+
+                        <div class="p-4 rounded-xl glass-card">
+                            <div class="w-10 h-10 rounded-lg bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 mb-3">
+                                <i class="fa-solid fa-book-journal-whills text-lg"></i>
+                            </div>
+                            <h4 class="font-bold text-white text-base">Peer-Reviewed Manuscripts</h4>
+                            <p class="text-xs text-slate-400 mt-1">High-impact scientific literature tailored for indexed medical journals.</p>
+                        </div>
+
+                        <div class="p-4 rounded-xl glass-card">
+                            <div class="w-10 h-10 rounded-lg bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 mb-3">
+                                <i class="fa-solid fa-graduation-cap text-lg"></i>
+                            </div>
+                            <h4 class="font-bold text-white text-base">CME & Educational Content</h4>
+                            <p class="text-xs text-slate-400 mt-1">Accredited educational modules for healthcare professionals and clinicians.</p>
+                        </div>
+
+                        <div class="p-4 rounded-xl glass-card">
+                            <div class="w-10 h-10 rounded-lg bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400 mb-3">
+                                <i class="fa-solid fa-heart-pulse text-lg"></i>
+                            </div>
+                            <h4 class="font-bold text-white text-base">Patient Education</h4>
+                            <p class="text-xs text-slate-400 mt-1">Clear, plain-language summaries and patient-centric healthcare collateral.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid Section -->
+    <section id="services" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-purple-950/50 border border-purple-800/50 text-xs font-semibold text-purple-400">
+                    SPECIALIZED SERVICES
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Comprehensive Medical Communication Services</h2>
+                <p class="text-slate-400">Tailored solutions for pharmaceutical leaders, CROs, medical communications agencies, and healthcare providers.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="p-8 rounded-2xl glass-card relative group hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-cyan-600 to-blue-600 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-cyan-500/20">
+                        <i class="fa-solid fa-notes-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Clinical Manuscripts & Review Papers</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-6">
+                        End-to-end development of original research papers, systematic reviews, case studies, and meta-analyses target-formatted for top journals.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-bold text-cyan-400 hover:text-cyan-300 tracking-wider uppercase">
+                        Request Portfolio Sample <i class="fa-solid fa-chevron-right ml-1 text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="p-8 rounded-2xl glass-card relative group hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-purple-600 to-indigo-600 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-purple-500/20">
+                        <i class="fa-solid fa-file-shield"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Regulatory Writing & Documents</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-6">
+                        Drafting ICH-GCP compliant documents including Clinical Study Protocols, Investigator Brochures (IBs), and Clinical Evaluation Reports (CERs).
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-bold text-purple-400 hover:text-purple-300 tracking-wider uppercase">
+                        Inquire Details <i class="fa-solid fa-chevron-right ml-1 text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="p-8 rounded-2xl glass-card relative group hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-pink-600 to-rose-600 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-pink-500/20">
+                        <i class="fa-solid fa-sliders"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Medical Strategy & Advisory Support</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-6">
+                        Preparing executive slide decks, advisory board summaries, congress presentations, and key opinion leader (KOL) engagement materials.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-bold text-pink-400 hover:text-pink-300 tracking-wider uppercase">
+                        Book Strategy Call <i class="fa-solid fa-chevron-right ml-1 text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="p-8 rounded-2xl glass-card relative group hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-emerald-600 to-teal-600 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-emerald-500/20">
+                        <i class="fa-solid fa-user-doctor"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">CME & Medical Education</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-6">
+                        Developing interactive, evidence-backed continuing medical education curricula and post-assessment modules for healthcare providers.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-bold text-emerald-400 hover:text-emerald-300 tracking-wider uppercase">
+                        Learn More <i class="fa-solid fa-chevron-right ml-1 text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="p-8 rounded-2xl glass-card relative group hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-amber-500 to-orange-600 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-amber-500/20">
+                        <i class="fa-solid fa-newspaper"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Plain Language Summaries (PLS)</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-6">
+                        Transforming dense clinical findings into clear, empathetic, and easily digestible health content for patients and non-specialists.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-bold text-amber-400 hover:text-amber-300 tracking-wider uppercase">
+                        Explore PLS Services <i class="fa-solid fa-chevron-right ml-1 text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="p-8 rounded-2xl glass-card relative group hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-sky-600 to-indigo-600 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-sky-500/20">
+                        <i class="fa-solid fa-pen-ruler"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Medical Editing & Fact-Checking</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-6">
+                        Rigorous scientific peer review, AMA style compliance check, data verification, and reference accuracy auditing for drafts.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-bold text-sky-400 hover:text-sky-300 tracking-wider uppercase">
+                        Submit Draft for Review <i class="fa-solid fa-chevron-right ml-1 text-[10px]"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Endorsements Section -->
+    <section id="testimonials" class="py-24 relative bg-slate-950/60 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-emerald-950/50 border border-emerald-800/50 text-xs font-semibold text-emerald-400">
+                    CLIENT ENDORSEMENTS
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white">Trusted by Healthcare Leaders</h2>
+                <p class="text-slate-400">Feedback from clinical researchers, medical directors, and publishing partners.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="p-8 rounded-2xl glass-card flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Dr. Prity Das turned a complex multi-center trial dataset into a seamless, high-impact clinical manuscript. Her understanding of medical nuances and AMA formatting saved our team weeks of revisions."
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-cyan-900/50 border border-cyan-500/30 flex items-center justify-center text-cyan-300 font-bold text-sm">
+                            DR
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-white">Dr. Robert Vance</div>
+                            <div class="text-xs text-slate-400">Director of Clinical Research, Global Pharma</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="p-8 rounded-2xl glass-card flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Extremely reliable, highly thorough, and deeply knowledgeable. Dr. Das delivered exceptional CME modules for our oncology division on a tight timeline. Couldn't ask for a better writing partner."
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-purple-900/50 border border-purple-500/30 flex items-center justify-center text-purple-300 font-bold text-sm">
+                            SL
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-white">Sarah Lindqvist</div>
+                            <div class="text-xs text-slate-400">VP of Medical Communications</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="p-8 rounded-2xl glass-card flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Her ability to translate scientific jargon into accessible, engaging plain-language summaries for patients is unmatched. A absolute asset to any healthcare communications initiative."
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-pink-900/50 border border-pink-500/30 flex items-center justify-center text-pink-300 font-bold text-sm">
+                            MA
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-white">Marcus Atherton</div>
+                            <div class="text-xs text-slate-400">Senior Publisher, Health Media</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Booking Section -->
+    <section id="contact" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Info -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-cyan-950/50 border border-cyan-800/50 text-xs font-semibold text-cyan-400 mb-3">
+                            GET IN TOUCH
+                        </div>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Let’s Discuss Your Project</h2>
+                        <p class="text-slate-400 mt-3 text-base">
+                            Whether you need regulatory documentation, peer-reviewed manuscript support, or medical content strategy, I'm here to assist.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="p-5 rounded-xl glass-card flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-xl shrink-0">
+                                <i class="fa-solid fa-user-check"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 font-medium">Practice Profile</div>
+                                <div class="text-white font-semibold text-sm">Self-employed Independent Consultant</div>
+                            </div>
+                        </div>
+
+                        <div class="p-5 rounded-xl glass-card flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 text-xl shrink-0">
+                                <i class="fa-solid fa-handshake"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 font-medium">Professional Network</div>
+                                <div class="text-white font-semibold text-sm">Connected since September 2026</div>
+                            </div>
+                        </div>
+
+                        <div class="p-5 rounded-xl glass-card flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 text-xl shrink-0">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 font-medium">Turnaround Time</div>
+                                <div class="text-white font-semibold text-sm">Fast, Punctual & Guideline-Compliant</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Form -->
+                <div class="lg:col-span-7">
+                    <div class="p-8 sm:p-10 rounded-3xl glass-card border border-slate-800 relative">
+                        <form onsubmit="event.preventDefault(); alert('Thank you for reaching out to Dr. Prity Das. Your message has been received!');" class="space-y-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Name</label>
+                                    <input type="text" placeholder="Dr. Jane Doe" required class="w-full px-4 py-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-all text-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Email Address</label>
+                                    <input type="email" placeholder="jane@organization.com" required class="w-full px-4 py-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-all text-sm">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Service Required</label>
+                                <select class="w-full px-4 py-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-slate-300 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-all text-sm">
+                                    <option>Clinical Manuscript Writing</option>
+                                    <option>Regulatory Documentation</option>
+                                    <option>CME / Medical Education Materials</option>
+                                    <option>Plain Language Summaries</option>
+                                    <option>Scientific Editing & Fact-Checking</option>
+                                    <option>Other Medical Communication</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Project Brief / Message</label>
+                                <textarea rows="4" placeholder="Briefly describe your scope, timeline, and document type..." required class="w-full px-4 py-3.5 rounded-xl bg-slate-900/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-all text-sm"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl font-bold bg-gradient-to-r from-cyan-500 via-indigo-600 to-purple-600 text-white shadow-xl shadow-cyan-500/20 hover:shadow-cyan-500/40 transition-all duration-300 hover:-translate-y-0.5 text-center">
+                                Send Inquiry <i class="fa-solid fa-paper-plane ml-2 text-xs"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-900 bg-slate-950/90 py-12 text-slate-400 text-sm">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-cyan-600 flex items-center justify-center text-white font-bold text-sm">
+                    P
+                </div>
+                <span class="text-white font-bold">Dr. Prity Das</span>
+                <span class="text-slate-600">|</span>
+                <span class="text-xs text-slate-400">Medical Writer & Consultant</span>
+            </div>
+
+            <div class="text-xs text-slate-500">
+                © 2026 Dr. Prity Das. All rights reserved. Professional Showcase Portfolio.
+            </div>
+
+            <div class="flex items-center gap-4 text-slate-400">
+                <a href="#" class="hover:text-cyan-400 transition-colors text-base"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors text-base"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors text-base"><i class="fa-solid fa-globe"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
