@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Mohammed Maaz Ahmed | General Dentist</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        medical: {
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(14, 165, 233, 0.3);
+        }
+        .glow-text {
+            text-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-slate-950">
+
+    <!-- Navigation Bar -->
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-sky-500 to-indigo-500 flex items-center justify-center font-bold text-slate-950 text-lg shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform duration-300">
+                    <i class="fa-solid font-bold fa-tooth text-slate-950"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-lg text-slate-100 tracking-tight group-hover:text-cyan-400 transition-colors">Dr. Mohammed Maaz Ahmed</span>
+                    <span class="text-xs text-cyan-400/80 font-medium">Amrutha Super Speciality Hospital</span>
+                </div>
+            </a>
+            
+            <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors duration-200">About</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors duration-200">Services</a>
+                <a href="#expertise" class="hover:text-cyan-400 transition-colors duration-200">Specialities</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors duration-200">Testimonials</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors duration-200">Contact</a>
+            </nav>
+
+            <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 font-semibold text-xs uppercase tracking-wider text-white shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:scale-105 transition-all duration-300">
+                <i class="fa-solid fa-calendar-check"></i>
+                <span>Book Appointment</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center pt-32 pb-20 overflow-hidden">
+        <!-- Background Decorative Glows -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-cyan-600/20 via-sky-500/10 to-indigo-600/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-20 -right-20 w-[400px] h-[400px] bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Content Left -->
+                <div class="lg:col-span-7 text-center lg:text-left space-y-8">
+                    <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 text-xs font-semibold tracking-wide text-cyan-400 backdrop-blur-md">
+                        <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                        General Dentist • Amrutha Super Speciality Hospital
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-slate-100 leading-[1.1]">
+                        Transforming Smiles with <span class="bg-gradient-to-r from-cyan-400 via-sky-400 to-indigo-400 bg-clip-text text-transparent">Precision Care</span>
+                    </h1>
+
+                    <p class="text-slate-400 text-lg sm:text-xl max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        Welcome to world-class oral healthcare led by <strong class="text-slate-200">Dr. Mohammed Maaz Ahmed</strong>. Combining advanced clinical dentistry with modern technology to ensure a healthy, brilliant smile for every patient.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-sky-500 to-indigo-500 text-slate-950 font-bold text-sm hover:shadow-lg hover:shadow-cyan-500/30 hover:scale-105 transition-all duration-300 flex items-center justify-center gap-3">
+                            <span>Request Consultation</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900/80 border border-slate-800 text-slate-200 font-semibold text-sm hover:border-cyan-500/50 hover:bg-slate-900 transition-all duration-300 flex items-center justify-center gap-2 backdrop-blur-xl">
+                            <span>Explore Treatments</span>
+                        </a>
+                    </div>
+
+                    <!-- Trust Stats -->
+                    <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-6 max-w-lg mx-auto lg:mx-0">
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-cyan-400">100%</div>
+                            <div class="text-xs text-slate-400 font-medium mt-1">Patient Focus</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-sky-400">5.0★</div>
+                            <div class="text-xs text-slate-400 font-medium mt-1">Care Rating</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-indigo-400">Advanced</div>
+                            <div class="text-xs text-slate-400 font-medium mt-1">Clinical Care</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Profile Image Right -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative">
+                        <!-- Double Gradient Halo Frame -->
+                        <div class="absolute -inset-2 rounded-full bg-gradient-to-tr from-cyan-500 via-indigo-500 to-pink-500 blur-xl opacity-75 animate-pulse"></div>
+                        <div class="absolute -inset-1 rounded-full bg-gradient-to-tr from-cyan-400 to-indigo-600 opacity-90"></div>
+                        
+                        <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full p-2 bg-slate-950 flex items-center justify-center overflow-hidden shadow-2xl">
+                            <img src="https://ui-avatars.com/api/?name=Dr.+Mohammed+Maaz+Ahmed&size=200&background=0D8ABC&color=fff&bold=true" 
+                                 alt="Dr. Mohammed Maaz Ahmed" 
+                                 class="w-full h-full object-cover rounded-full hover:scale-105 transition-transform duration-500">
+                        </div>
+
+                        <!-- Floating Badge 1 -->
+                        <div class="absolute -bottom-4 -left-4 bg-slate-900/90 backdrop-blur-xl border border-slate-800 rounded-2xl p-4 shadow-2xl flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold">
+                                <i class="fa-solid fa-hospital font-bold"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Hospital</p>
+                                <p class="text-xs font-bold text-slate-100">Amrutha Super Speciality</p>
+                            </div>
+                        </div>
+
+                        <!-- Floating Badge 2 -->
+                        <div class="absolute top-4 -right-4 bg-slate-900/90 backdrop-blur-xl border border-slate-800 rounded-2xl p-3 shadow-2xl flex items-center gap-2">
+                            <i class="fa-solid fa-shield-halved text-emerald-400 text-lg"></i>
+                            <span class="text-xs font-semibold text-slate-200">Certified Specialist</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 relative bg-slate-900/30 border-y border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Image Side -->
+                <div class="lg:col-span-5">
+                    <div class="relative group">
+                        <div class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-cyan-500 to-indigo-500 opacity-30 group-hover:opacity-60 transition duration-500 blur"></div>
+                        <div class="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900">
+                            <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Modern Dental Equipment" 
+                                 class="w-full h-[420px] object-cover group-hover:scale-105 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+                            <div class="absolute bottom-6 left-6 right-6">
+                                <p class="text-xs uppercase tracking-widest text-cyan-400 font-semibold mb-1">State-of-the-Art Care</p>
+                                <p class="text-lg font-bold text-white">Modern Clinical Excellence</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Side -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-xs font-semibold text-cyan-400">
+                        <i class="fa-solid fa-user-doctor"></i> About Dr. Mohammed Maaz Ahmed
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-100 tracking-tight">
+                        Dedicated to Gentle, High-Precision Dental Healthcare
+                    </h2>
+
+                    <p class="text-slate-400 leading-relaxed text-base">
+                        As a General Dentist at <strong class="text-slate-200">Amrutha Super Speciality Hospital</strong>, Dr. Mohammed Maaz Ahmed brings comprehensive clinical knowledge, painless dental care techniques, and an empathetic patient-first approach to everyday practice.
+                    </p>
+
+                    <p class="text-slate-400 leading-relaxed text-base">
+                        From routine hygiene examinations to restorative dental techniques, Dr. Maaz Ahmed utilizes modern diagnostic tools to personalize treatment plans tailored to every unique smile.
+                    </p>
+
+                    <!-- Key Pillars Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                        <div class="p-4 rounded-xl bg-slate-900/60 backdrop-blur-xl border border-slate-800">
+                            <div class="text-cyan-400 text-lg mb-2"><i class="fa-solid fa-microscope"></i></div>
+                            <h3 class="font-bold text-slate-200 text-sm">Advanced Diagnosis</h3>
+                            <p class="text-slate-400 text-xs mt-1">Precision imaging and accurate clinical assessment for predictable outcomes.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-900/60 backdrop-blur-xl border border-slate-800">
+                            <div class="text-sky-400 text-lg mb-2"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                            <h3 class="font-bold text-slate-200 text-sm">Painless Comfort</h3>
+                            <p class="text-slate-400 text-xs mt-1">Gentle techniques designed to make every dental visit anxiety-free.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-xs font-semibold text-cyan-400">
+                    <i class="fa-solid fa-briefcase-medical"></i> Clinical Expertise
+                </div>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-slate-100 tracking-tight">
+                    Comprehensive Dental Services
+                </h2>
+                <p class="text-slate-400 text-base">
+                    Delivering a wide spectrum of dental procedures at Amrutha Super Speciality Hospital with maximum safety and comfort.
+                </p>
+            </div>
+
+            <!-- Services Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 hover:-translate-y-2 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-cyan-500 group-hover:text-slate-950 transition-colors duration-300">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-100 mb-3 group-hover:text-cyan-400 transition-colors">General & Preventive Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Comprehensive dental cleanings, thorough oral evaluations, digital X-rays, and preventive care strategies to maintain optimal oral health.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 hover:-translate-y-2 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-sky-500/10 text-sky-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-sky-500 group-hover:text-slate-950 transition-colors duration-300">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-100 mb-3 group-hover:text-sky-400 transition-colors">Cosmetic Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Veneers, teeth whitening, smile design, and cosmetic bonding designed to enhance your smile's natural aesthetics confidence.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 hover:-translate-y-2 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-indigo-500 group-hover:text-slate-950 transition-colors duration-300">
+                        <i class="fa-solid fa-shield-virus"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-100 mb-3 group-hover:text-indigo-400 transition-colors">Restorative Procedures</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Precision crowns, bridges, and durable teeth fillings that restore natural tooth functionality and structural strength.
+                    </p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 hover:-translate-y-2 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-teal-500/10 text-teal-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-teal-500 group-hover:text-slate-950 transition-colors duration-300">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-100 mb-3 group-hover:text-teal-400 transition-colors">Root Canal Therapy</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Advanced painless endodontic therapy designed to save damaged or infected natural teeth and eliminate tooth discomfort.
+                    </p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 hover:-translate-y-2 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-blue-500 group-hover:text-slate-950 transition-colors duration-300">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-100 mb-3 group-hover:text-blue-400 transition-colors">Teeth Whitening</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Professional safe bleaching protocols that eliminate stubborn stains and brighten your smile in quick, comfortable sessions.
+                    </p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 hover:-translate-y-2 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-violet-500/10 text-violet-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-violet-500 group-hover:text-slate-950 transition-colors duration-300">
+                        <i class="fa-solid fa-notes-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-100 mb-3 group-hover:text-violet-400 transition-colors">Emergency Dental Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Prompt clinical interventions for sudden toothaches, trauma, broken restorations, or acute oral discomfort.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Patient Feedback Section -->
+    <section id="testimonials" class="py-24 relative bg-slate-900/30 border-t border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-xs font-semibold text-cyan-400">
+                    <i class="fa-solid fa-star"></i> Patient Endorsements
+                </div>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-slate-100 tracking-tight">
+                    Trusted Patient Experiences
+                </h2>
+                <p class="text-slate-400 text-base">
+                    Real stories from patients treated by Dr. Mohammed Maaz Ahmed at Amrutha Super Speciality Hospital.
+                </p>
+            </div>
+
+            <!-- Testimonial Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 relative">
+                    <div class="flex text-amber-400 gap-1 text-sm mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                        "Dr. Maaz Ahmed made my dental treatment completely painless. His calm demeanor and detailed explanation of every step put me completely at ease."
+                    </p>
+                    <div class="flex items-center gap-3 border-t border-slate-800/80 pt-4">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-cyan-500 to-indigo-500 flex items-center justify-center font-bold text-slate-950 text-xs">
+                            RK
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-slate-200">Rahul K.</p>
+                            <p class="text-xs text-slate-400">Dental Care Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 relative">
+                    <div class="flex text-amber-400 gap-1 text-sm mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                        "Extremely professional care at Amrutha Super Speciality Hospital. Dr. Maaz solved my long-standing tooth pain with incredible efficiency."
+                    </p>
+                    <div class="flex items-center gap-3 border-t border-slate-800/80 pt-4">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-sky-500 to-teal-500 flex items-center justify-center font-bold text-slate-950 text-xs">
+                            PS
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-slate-200">Priya S.</p>
+                            <p class="text-xs text-slate-400">Restorative Care Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 relative">
+                    <div class="flex text-amber-400 gap-1 text-sm mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                        "Best dental experience I've had. The standard of hygiene and precision Dr. Maaz delivers is top notch. Highly recommended!"
+                    </p>
+                    <div class="flex items-center gap-3 border-t border-slate-800/80 pt-4">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-500 flex items-center justify-center font-bold text-slate-950 text-xs">
+                            AM
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-slate-200">Anil M.</p>
+                            <p class="text-xs text-slate-400">Smile Design Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Info Column -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div class="space-y-4">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-xs font-semibold text-cyan-400">
+                            <i class="fa-solid fa-envelope"></i> Get In Touch
+                        </div>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-100 tracking-tight">
+                            Schedule Your Visit
+                        </h2>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Book a consultation with Dr. Mohammed Maaz Ahmed at Amrutha Super Speciality Hospital and take the first step toward a healthier, brighter smile.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <!-- Location Detail -->
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-10 h-10 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-200">Practice Location</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">Amrutha Super Speciality Hospital</p>
+                            </div>
+                        </div>
+
+                        <!-- Department Detail -->
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-10 h-10 rounded-lg bg-sky-500/10 text-sky-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-user-doctor"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-200">Department</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">Dental Science & Oral Health</p>
+                            </div>
+                        </div>
+
+                        <!-- Direct Connection Info -->
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-10 h-10 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-circle-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-200">Professional Network</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">Verified Professional Member</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Column -->
+                <div class="lg:col-span-7">
+                    <form class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 space-y-6" onsubmit="event.preventDefault(); alert('Appointment request submitted successfully!');">
+                        <h3 class="text-xl font-bold text-slate-100">Appointment Request</h3>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Full Name</label>
+                                <input type="text" placeholder="John Doe" required class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 text-sm focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Phone Number</label>
+                                <input type="tel" placeholder="+91 98765 43210" required class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 text-sm focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Preferred Date</label>
+                                <input type="date" required class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-400 text-sm focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Service Required</label>
+                                <select class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-300 text-sm focus:outline-none focus:border-cyan-500 transition-colors">
+                                    <option>General Dental Checkup</option>
+                                    <option>Cosmetic Dentistry</option>
+                                    <option>Root Canal Consultation</option>
+                                    <option>Teeth Whitening</option>
+                                    <option>Tooth Cleaning & Scaling</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">Message or Symptoms (Optional)</label>
+                            <textarea rows="4" placeholder="Describe your dental concern or appointment query..." class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 text-sm focus:outline-none focus:border-cyan-500 transition-colors"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-sky-500 to-indigo-500 text-slate-950 font-bold text-sm hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span>Submit Appointment Request</span>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-800/80 bg-slate-950 text-slate-500 text-xs">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-2">
+                <span class="font-bold text-slate-300">Dr. Mohammed Maaz Ahmed</span>
+                <span>• General Dentist</span>
+            </div>
+            <p>© 2026 Dr. Mohammed Maaz Ahmed. All rights reserved. Amrutha Super Speciality Hospital.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
