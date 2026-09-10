@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Vaibhav Sundriyal | Healthcare Managing Consultant</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            cyan: '#0D8ABC',
+                            teal: '#14b8a6',
+                            indigo: '#6366f1',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(13, 138, 188, 0.3);
+        }
+        .glow-card:hover {
+            box-shadow: 0 0 30px -5px rgba(99, 102, 241, 0.25);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-white">
+
+    <!-- Background Glow Elements -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
+        <div class="absolute -top-40 -left-40 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl"></div>
+        <div class="absolute top-1/3 -right-40 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-40 left-1/3 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-indigo-500 to-purple-500 p-0.5 flex items-center justify-center">
+                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-indigo-400 group-hover:scale-105 transition-transform">
+                        VS
+                    </div>
+                </div>
+                <div>
+                    <span class="font-bold text-lg text-slate-100 tracking-tight block">Dr. Vaibhav Sundriyal</span>
+                    <span class="text-xs text-slate-400 block -mt-1">Healthcare Managing Consultant</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-cyan-400 transition-colors">Expertise</a>
+                <a href="#impact" class="hover:text-cyan-400 transition-colors">Impact & Services</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Endorsements</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+            </div>
+
+            <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-full text-sm font-semibold bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 text-white shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 hover:scale-[1.02] active:scale-95 transition-all">
+                Schedule Advisory
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-20 md:pt-48 md:pb-32 z-10 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12">
+            
+            <!-- Left Hero Content -->
+            <div class="flex-1 text-center lg:text-left space-y-6">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 text-cyan-400 text-xs font-semibold uppercase tracking-wider">
+                    <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                    Kloudrac Group Leadership
+                </div>
+
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight">
+                    Bridging Clinical Excellence & <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-indigo-400 to-purple-400">Digital Health Transformation</span>
+                </h1>
+
+                <p class="text-lg text-slate-400 max-w-2xl font-normal leading-relaxed">
+                    Healthcare Managing Consultant driving scalable innovation, enterprise cloud architecture, and strategic healthtech implementation across global healthcare systems.
+                </p>
+
+                <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-4">
+                    <a href="#contact" class="px-8 py-4 rounded-xl font-semibold bg-gradient-to-r from-cyan-500 to-indigo-600 text-white shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:-translate-y-0.5 transition-all">
+                        Initiate Collaboration <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </a>
+                    <a href="#expertise" class="px-8 py-4 rounded-xl font-semibold bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-700 hover:bg-slate-800/50 transition-all">
+                        View Core Capabilities
+                    </a>
+                </div>
+
+                <!-- Trust Badges / Stats -->
+                <div class="pt-8 grid grid-cols-3 gap-6 border-t border-slate-800/80 max-w-lg mx-auto lg:mx-0">
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-bold text-white">10+</div>
+                        <div class="text-xs text-slate-400">Years Experience</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-bold text-cyan-400">50+</div>
+                        <div class="text-xs text-slate-400">HealthTech Projects</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-bold text-indigo-400">100%</div>
+                        <div class="text-xs text-slate-400">Compliance Standard</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Avatar Showcase -->
+            <div class="relative flex-shrink-0">
+                <div class="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96">
+                    <!-- Glowing Gradient Outer Frame -->
+                    <div class="absolute inset-0 rounded-full bg-gradient-to-tr from-cyan-500 via-indigo-500 to-purple-500 blur-2xl opacity-50 animate-pulse"></div>
+                    <div class="absolute inset-2 rounded-full bg-gradient-to-tr from-cyan-400 via-indigo-500 to-purple-600 p-1">
+                        <div class="w-full h-full bg-slate-950 rounded-full p-3">
+                            <img src="https://ui-avatars.com/api/?name=Dr.+Vaibhav+Sundriyal&size=200&background=0D8ABC&color=fff&bold=true" 
+                                 alt="Dr. Vaibhav Sundriyal" 
+                                 class="w-full h-full object-cover rounded-full shadow-2xl">
+                        </div>
+                    </div>
+
+                    <!-- Floating Badge 1 -->
+                    <div class="absolute -bottom-2 -left-2 bg-slate-900/90 backdrop-blur-xl border border-slate-800 p-4 rounded-2xl shadow-xl flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold">
+                            <i class="fa-solid fa-hospital-user text-lg"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400">Domain Focus</p>
+                            <p class="text-sm font-semibold text-white">Healthcare Advisory</p>
+                        </div>
+                    </div>
+
+                    <!-- Floating Badge 2 -->
+                    <div class="absolute top-4 -right-2 bg-slate-900/90 backdrop-blur-xl border border-slate-800 p-3 rounded-2xl shadow-xl flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-lg bg-indigo-500/20 text-indigo-400 flex items-center justify-center">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400">Kloudrac Group</p>
+                            <p class="text-xs font-semibold text-white">Managing Consultant</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 relative z-10 bg-slate-900/30">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- Section Image -->
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-indigo-500 rounded-3xl blur opacity-30 group-hover:opacity-50 transition duration-300"></div>
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Healthcare Digital Transformation" 
+                             class="w-full h-[420px] object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-6 bg-slate-900/80 backdrop-blur-md rounded-xl border border-slate-800">
+                            <p class="text-cyan-400 text-sm font-semibold mb-1">Strategic HealthTech Integration</p>
+                            <p class="text-xs text-slate-300">Empowering care providers through enterprise cloud solutions, interoperability standards, and optimized clinical workflows.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div class="space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-medium">
+                        Leadership & Vision
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+                        Transforming Complex Care Operations into Digital Success Stories
+                    </h2>
+                    <p class="text-slate-400 text-base leading-relaxed">
+                        As a Healthcare Managing Consultant at <strong class="text-slate-200">Kloudrac Group</strong>, Dr. Vaibhav Sundriyal blends deep healthcare domain intelligence with enterprise technological expertise. He guides healthcare organizations, hospital networks, and healthtech providers through critical digital shifts.
+                    </p>
+                    <p class="text-slate-400 text-base leading-relaxed">
+                        From EHR integration and HIPAA-compliant cloud architectures to AI-powered clinical decision support systems, Dr. Sundriyal architects solutions that elevate patient outcomes, reduce operational overhead, and drive sustainable organizational growth.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-4 pt-2">
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <i class="fa-solid fa-notes-medical text-cyan-400 text-xl mb-2"></i>
+                            <h4 class="font-semibold text-white text-sm">Clinical Systems</h4>
+                            <p class="text-xs text-slate-400 mt-1">EHR, EMR & PACS enterprise alignment.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <i class="fa-solid fa-cloud-arrow-up text-indigo-400 text-xl mb-2"></i>
+                            <h4 class="font-semibold text-white text-sm">Cloud Strategy</h4>
+                            <p class="text-xs text-slate-400 mt-1">Scalable, compliant cloud architecture.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / Core Capabilities -->
+    <section id="expertise" class="py-24 relative z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-cyan-400 text-xs font-bold uppercase tracking-widest">Areas of Expertise</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Comprehensive Healthcare Consulting</h2>
+                <p class="text-slate-400">Tailored advisory services designed for modern healthcare enterprises navigating tech modernization.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Card 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-8 rounded-2xl transition-all duration-300 glow-card group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-cyan-500/20 to-indigo-500/20 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-laptop-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Healthcare Digital Strategy</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        End-to-end digital roadmaps aligning clinical goals with technological capabilities for maximum engagement and ROI.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-8 rounded-2xl transition-all duration-300 glow-card group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-indigo-500/20 to-purple-500/20 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-network-wired"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Interoperability & Integration</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Seamless integration of HL7, FHIR, and legacy EMR/EHR systems to eliminate data silos and improve care continuity.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-8 rounded-2xl transition-all duration-300 glow-card group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-purple-500/20 to-pink-500/20 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-shield-virus"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Regulatory Compliance & Governance</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Ensuring absolute adherence to HIPAA, GDPR, and global health data governance standards while innovating rapidly.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-8 rounded-2xl transition-all duration-300 glow-card group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-cyan-500/20 to-teal-500/20 text-teal-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Workflow & Operational Efficiency</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Analyzing clinical workflows to remove friction, minimize burnout, and enhance practitioner and patient experiences.
+                    </p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-8 rounded-2xl transition-all duration-300 glow-card group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-indigo-500/20 to-cyan-500/20 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">HealthTech & AI Solutions</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Leveraging machine learning models and predictive analytics for early diagnostic insights and risk stratification.
+                    </p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-8 rounded-2xl transition-all duration-300 glow-card group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-purple-500/20 to-indigo-500/20 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-handshake-angle"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Kloudrac Enterprise Advisory</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Strategic management leadership empowering healthcare organizations to maximize cloud platforms and CRM solutions.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact & Metrics Section -->
+    <section id="impact" class="py-20 relative z-10 bg-slate-900/40 border-y border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+                <div class="p-6 rounded-2xl bg-slate-950/60 border border-slate-800 text-center">
+                    <div class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-indigo-400 mb-2">99.9%</div>
+                    <div class="text-sm font-semibold text-white">System Reliability</div>
+                    <p class="text-xs text-slate-400 mt-1">In mission-critical hospital digital deployment</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-950/60 border border-slate-800 text-center">
+                    <div class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400 mb-2">40%</div>
+                    <div class="text-sm font-semibold text-white">Admin Efficiency Gain</div>
+                    <p class="text-xs text-slate-400 mt-1">Through automated clinical workflow architecture</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-950/60 border border-slate-800 text-center">
+                    <div class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 mb-2">100+</div>
+                    <div class="text-sm font-semibold text-white">Integrations Managed</div>
+                    <p class="text-xs text-slate-400 mt-1">Across global health networks & cloud solutions</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-950/60 border border-slate-800 text-center">
+                    <div class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-cyan-400 mb-2">100%</div>
+                    <div class="text-sm font-semibold text-white">HIPAA / GDPR Compliance</div>
+                    <p class="text-xs text-slate-400 mt-1">Flawless security and privacy management</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Endorsements -->
+    <section id="testimonials" class="py-24 relative z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-indigo-400 text-xs font-bold uppercase tracking-widest">Client & Peer Endorsements</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Trusted by Leaders in Healthcare</h2>
+                <p class="text-slate-400">Feedback from executive leadership and digital transformation partners.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Endorsement 1 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Dr. Sundriyal's dual mastery of clinical pathways and enterprise technology enabled our health system to modernize without interrupting daily operations. Truly invaluable leadership."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800/60">
+                        <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold text-xs">
+                            VP
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">VP of Clinical Operations</h4>
+                            <p class="text-xs text-slate-400">Regional Health System</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Endorsement 2 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Working with Vaibhav at Kloudrac Group provided us with strategic clarity on our digital health roadmap. He bridges high-level vision with flawless technical execution."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800/60">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-xs">
+                            CTO
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Chief Technology Officer</h4>
+                            <p class="text-xs text-slate-400">HealthTech Enterprise</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Endorsement 3 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "His profound insight into regulatory compliance and EHR integrations saved us months of advisory overhead. A true authority in healthcare consulting."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800/60">
+                        <div class="w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 flex items-center justify-center font-bold text-xs">
+                            MD
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Medical Director</h4>
+                            <p class="text-xs text-slate-400">Digital Care Alliance</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Consultation Section -->
+    <section id="contact" class="py-24 relative z-10 bg-slate-900/50 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                
+                <!-- Direct Info -->
+                <div class="space-y-6">
+                    <span class="text-cyan-400 text-xs font-bold uppercase tracking-widest">Connect Directly</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Let’s Discuss Your Next Strategic Healthcare Initiative</h2>
+                    <p class="text-slate-400 leading-relaxed">
+                        Whether you are planning a large-scale EHR transformation, cloud adoption, or strategic healthcare consulting, Dr. Vaibhav Sundriyal is available for executive advisory.
+                    </p>
+
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-950/60 border border-slate-800">
+                            <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-building flex-shrink-0"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Organization</p>
+                                <p class="text-sm font-semibold text-white">Kloudrac Group</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-950/60 border border-slate-800">
+                            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-user-doctor"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Executive Title</p>
+                                <p class="text-sm font-semibold text-white">Healthcare Managing Consultant</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-950/60 border border-slate-800">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Network Connected</p>
+                                <p class="text-sm font-semibold text-white">07 Sep 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Contact Form -->
+                <div class="p-8 rounded-2xl bg-slate-950/80 border border-slate-800 backdrop-blur-xl shadow-2xl">
+                    <h3 class="text-xl font-bold text-white mb-6">Send an Advisory Request</h3>
+                    <form onsubmit="event.preventDefault(); alert('Thank you for your message. Dr. Sundriyal\'s team will get back to you shortly.');" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-1">Your Full Name</label>
+                            <input type="text" required placeholder="e.g. Dr. Sarah Jenkins" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-1">Email Address</label>
+                            <input type="email" required placeholder="name@organization.com" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-1">Inquiry Type</label>
+                            <select class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                                <option>Healthcare Advisory Consultation</option>
+                                <option>Kloudrac Group Enterprise Engagement</option>
+                                <option>Speaking & Keynote Panel</option>
+                                <option>Strategic Partnership</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-1">Project Brief / Message</label>
+                            <textarea rows="4" required placeholder="Describe your executive objectives..." class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm resize-none"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-3.5 rounded-xl font-semibold bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 text-white shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.01] active:scale-95 transition-all text-sm">
+                            Submit Advisory Request <i class="fa-solid fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-slate-950 border-t border-slate-800/80 relative z-10">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+            <div>
+                © 2026 Dr. Vaibhav Sundriyal | Healthcare Managing Consultant, Kloudrac Group.
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="#" class="hover:text-slate-300 transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-slate-300 transition-colors">Terms of Engagement</a>
+                <a href="#" class="hover:text-slate-300 transition-colors">Executive Advisory</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
