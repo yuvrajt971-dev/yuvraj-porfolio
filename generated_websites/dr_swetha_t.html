@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Swetha T | Specialist Dentist at Pavithra Dental</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        tealAccent: '#0D8ABC',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(135deg, #38BDF8 0%, #0D8ABC 50%, #818CF8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glow-bg {
+            box-shadow: 0 0 50px -10px rgba(13, 138, 188, 0.3);
+        }
+        .glow-card:hover {
+            box-shadow: 0 0 30px -5px rgba(56, 189, 248, 0.25);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-white relative overflow-x-hidden">
+
+    <!-- Background Glow Elements -->
+    <div class="fixed top-0 left-1/4 -translate-x-1/2 w-[500px] h-[500px] bg-cyan-500/10 rounded-full blur-[120px] pointer-events-none -z-10"></div>
+    <div class="fixed bottom-1/3 right-10 w-[400px] h-[400px] bg-indigo-500/10 rounded-full blur-[100px] pointer-events-none -z-10"></div>
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-500 flex items-center justify-center font-bold text-white shadow-lg group-hover:scale-105 transition-transform duration-300">
+                    <i class="fa-solid fa-tooth text-lg"></i>
+                </div>
+                <div>
+                    <span class="text-lg font-bold tracking-tight block text-white group-hover:text-cyan-400 transition-colors">Dr. Swetha T</span>
+                    <span class="text-xs text-slate-400 font-medium">Pavithra Dental</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-cyan-400 transition-colors">Expertise</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Testimonials</a>
+            </nav>
+
+            <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider text-white bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 shadow-md shadow-cyan-500/20 hover:shadow-cyan-500/40 transition-all duration-300 hover:-translate-y-0.5">
+                <i class="fa-solid fa-calendar-check"></i> Book Consultation
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-16 pb-24 lg:pt-28 lg:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Left Hero Content -->
+            <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 backdrop-blur-md">
+                    <span class="flex h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    <span class="text-xs font-medium text-slate-300">Accepting New Patients at Pavithra Dental</span>
+                </div>
+
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-none">
+                    Crafting Healthy, <br>
+                    <span class="gradient-text">Radiant & Confident</span> Smiles.
+                </h1>
+
+                <p class="text-lg text-slate-400 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                    Welcome to precision dental care redefined. Dr. Swetha T brings exceptional expertise, compassionate care, and advanced modern techniques to restore, enhance, and protect your dental health.
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                    <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl font-semibold text-white bg-gradient-to-r from-cyan-500 via-teal-500 to-indigo-600 hover:opacity-95 shadow-lg shadow-cyan-500/25 transition-all text-center">
+                        Schedule Appointment
+                    </a>
+                    <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-xl font-semibold text-slate-300 bg-slate-900/80 hover:bg-slate-800 border border-slate-800 transition-all text-center hover:text-white">
+                        Explore Treatments
+                    </a>
+                </div>
+
+                <!-- Trust Badges -->
+                <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0 text-center">
+                    <div>
+                        <p class="text-2xl sm:text-3xl font-bold text-white">100%</p>
+                        <p class="text-xs text-slate-400 mt-1">Patient Focused</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl sm:text-3xl font-bold text-cyan-400">Painless</p>
+                        <p class="text-xs text-slate-400 mt-1">Modern Procedures</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl sm:text-3xl font-bold text-white">5.0 ★</p>
+                        <p class="text-xs text-slate-400 mt-1">Patient Rating</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Hero Avatar Image -->
+            <div class="lg:col-span-5 flex justify-center relative">
+                <!-- Glowing Outer Frame -->
+                <div class="relative group">
+                    <div class="absolute -inset-1.5 bg-gradient-to-r from-cyan-500 via-indigo-500 to-teal-400 rounded-full blur-xl opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+                    
+                    <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full p-2 bg-slate-950 border border-slate-800 shadow-2xl flex items-center justify-center">
+                        <img 
+                            src="https://ui-avatars.com/api/?name=Dr.+Swetha++T&size=200&background=0D8ABC&color=fff&bold=true" 
+                            alt="Dr. Swetha T" 
+                            class="w-full h-full object-cover rounded-full shadow-inner"
+                        >
+                    </div>
+
+                    <!-- Floating Badge -->
+                    <div class="absolute -bottom-4 right-2 bg-slate-900/90 border border-slate-700/80 backdrop-blur-xl px-4 py-3 rounded-2xl shadow-xl flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center">
+                            <i class="fa-solid fa-award text-lg"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-white">Specialist Dentist</p>
+                            <p class="text-[10px] text-slate-400">Pavithra Dental Clinic</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-slate-900/40 border-y border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-6 relative">
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 shadow-2xl group">
+                        <img 
+                            src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                            alt="Dental Excellence" 
+                            class="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700"
+                        >
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-slate-950/80 backdrop-blur-md border border-slate-800">
+                            <p class="text-sm font-semibold text-white">State-of-the-Art Dental Facility</p>
+                            <p class="text-xs text-slate-400">Combining clinical precision with ultimate patient comfort.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-cyan-400 font-semibold text-xs tracking-widest uppercase">About Dr. Swetha T</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+                        Dedicated to Gentle, High-Precision Dental Care
+                    </h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        At <strong class="text-white">Pavithra Dental</strong>, Dr. Swetha T provides holistic and personalized dental care for patients of all ages. Focusing on modern minimally-invasive procedures, comprehensive oral hygiene, and aesthetic restorative treatments, every visit is designed to be seamless, stress-free, and highly effective.
+                    </p>
+                    
+                    <div class="space-y-3 pt-2">
+                        <div class="flex items-start gap-3">
+                            <div class="mt-1 text-cyan-400"><i class="fa-solid fa-circle-check"></i></div>
+                            <p class="text-sm text-slate-300"><strong class="text-white">Custom Treatment Plans:</strong> Tailored specifically to your aesthetic goals and oral health requirements.</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="mt-1 text-cyan-400"><i class="fa-solid fa-circle-check"></i></div>
+                            <p class="text-sm text-slate-300"><strong class="text-white">Comfort First Approach:</strong> Gentle care techniques guaranteeing maximum patient ease during every session.</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="mt-1 text-cyan-400"><i class="fa-solid fa-circle-check"></i></div>
+                            <p class="text-sm text-slate-300"><strong class="text-white">Cutting-Edge Technology:</strong> Utilizing modern diagnostic and restorative tools at Pavithra Dental.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid Section -->
+    <section id="services" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-cyan-400 font-semibold text-xs tracking-widest uppercase">Comprehensive Clinical Services</span>
+                <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white mt-2">Specialized Treatments</h2>
+                <p class="text-slate-400 mt-3 text-sm">From routine check-ups to complex aesthetic enhancements, experience premium dental care.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service Card 1 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 glow-card group">
+                    <div class="w-14 h-14 rounded-xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-cyan-500 group-hover:text-slate-950 transition-all duration-300">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Cosmetic Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Teeth whitening, smile design, veneers, and aesthetic makeovers to restore radiant confidence to your smile.</p>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 glow-card group">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-indigo-500 group-hover:text-slate-950 transition-all duration-300">
+                        <i class="fa-solid fa-teeth-open"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Orthodontic Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Precision aligners and correction treatments designed to straighten teeth and refine bite alignment gracefully.</p>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 glow-card group">
+                    <div class="w-14 h-14 rounded-xl bg-teal-500/10 border border-teal-500/20 text-teal-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-teal-500 group-hover:text-slate-950 transition-all duration-300">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Restorative Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">High-durability crowns, bridges, and tooth restorations that seamlessly blend function with natural beauty.</p>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 glow-card group">
+                    <div class="w-14 h-14 rounded-xl bg-blue-500/10 border border-blue-500/20 text-blue-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-blue-500 group-hover:text-slate-950 transition-all duration-300">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Preventive & Oral Hygiene</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Comprehensive cleanings, deep plaque removal, fluorides, and routine wellness checks to preserve long-term health.</p>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 glow-card group">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-purple-500 group-hover:text-slate-950 transition-all duration-300">
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Pediatric Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Warm, friendly, and extra gentle dental care designed to keep children comfortable and confident in the chair.</p>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 glow-card group">
+                    <div class="w-14 h-14 rounded-xl bg-rose-500/10 border border-rose-500/20 text-rose-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-rose-500 group-hover:text-slate-950 transition-all duration-300">
+                        <i class="fa-solid fa-kit-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Emergency Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Prompt and responsive emergency treatment for immediate toothache relief, trauma, or urgent dental issues.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-slate-900/40 border-t border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-cyan-400 font-semibold text-xs tracking-widest uppercase">Patient Stories</span>
+                <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white mt-2">Endorsed by Happy Patients</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 relative">
+                    <div class="flex text-amber-400 gap-1 text-sm mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-6 italic">
+                        "Dr. Swetha is remarkably gentle and detail-oriented! I had severe anxiety about dental visits, but her calm demeanor at Pavithra Dental made the experience smooth and completely painless."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-cyan-500/20 flex items-center justify-center font-bold text-cyan-400 text-sm">P.R.</div>
+                        <div>
+                            <p class="text-sm font-bold text-white">Priya R.</p>
+                            <p class="text-xs text-slate-400">Teeth Whitening Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 relative">
+                    <div class="flex text-amber-400 gap-1 text-sm mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-6 italic">
+                        "The standard of care at Pavithra Dental is outstanding. Dr. Swetha explained every step of my crown fitting clearly and delivered incredible results."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 flex items-center justify-center font-bold text-indigo-400 text-sm">K.M.</div>
+                        <div>
+                            <p class="text-sm font-bold text-white">Karthik M.</p>
+                            <p class="text-xs text-slate-400">Restorative Care Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 relative">
+                    <div class="flex text-amber-400 gap-1 text-sm mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-6 italic">
+                        "Highly professional clinic! Took my 7-year-old for routine cleaning, and Dr. Swetha handled everything with so much care and patience."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-teal-500/20 flex items-center justify-center font-bold text-teal-400 text-sm">S.N.</div>
+                        <div>
+                            <p class="text-sm font-bold text-white">Sneha N.</p>
+                            <p class="text-xs text-slate-400">Pediatric Care</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Consultation Section -->
+    <section id="contact" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12 bg-slate-900/80 rounded-3xl border border-slate-800 p-8 sm:p-12 backdrop-blur-xl">
+                
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="text-cyan-400 font-semibold text-xs tracking-widest uppercase">Get in Touch</span>
+                    <h2 class="text-3xl font-bold text-white">Book Your Visit at Pavithra Dental</h2>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Ready for a brighter, healthier smile? Fill out the inquiry form or reach out directly to schedule your appointment with Dr. Swetha T.
+                    </p>
+
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center">
+                                <i class="fa-solid fa-hospital"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Clinic Practice</p>
+                                <p class="text-sm font-semibold text-white">Pavithra Dental Clinic</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Working Hours</p>
+                                <p class="text-sm font-semibold text-white">Mon - Sat: 9:30 AM - 8:00 PM</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-teal-500/10 text-teal-400 flex items-center justify-center">
+                                <i class="fa-solid fa-user-check"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Network Connected</p>
+                                <p class="text-sm font-semibold text-white">07 Sep 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="lg:col-span-7">
+                    <form onsubmit="event.preventDefault(); alert('Thank you for reaching out! Your appointment inquiry has been submitted.');" class="space-y-4">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Full Name</label>
+                                <input type="text" required placeholder="John Doe" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Phone Number</label>
+                                <input type="tel" required placeholder="+91 98765 43210" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">Service Required</label>
+                            <select class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-300 focus:outline-none focus:border-cyan-500 transition-colors">
+                                <option>General Consultation / Checkup</option>
+                                <option>Cosmetic Dentistry / Teeth Whitening</option>
+                                <option>Orthodontics / Alignment</option>
+                                <option>Restorative Care / Crowns</option>
+                                <option>Pediatric Consultation</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">Message or Notes</label>
+                            <textarea rows="4" placeholder="Mention preferred appointment date or dental concern..." class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-500 transition-colors"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-3.5 rounded-xl text-sm font-semibold text-slate-950 bg-gradient-to-r from-cyan-400 via-teal-400 to-indigo-400 hover:opacity-90 transition-opacity font-bold">
+                            Submit Consultation Request
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-800/80 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© 2026 Dr. Swetha T | Pavithra Dental. All rights reserved.</p>
+            <div class="flex gap-4 text-slate-400 text-sm">
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
