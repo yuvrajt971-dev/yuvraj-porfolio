@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr Yashika Shivanna | Associate Consultant at Even</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -12px rgba(14, 165, 233, 0.35);
+        }
+        .glow-card {
+            box-shadow: 0 0 25px -5px rgba(99, 102, 241, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 selection:bg-indigo-500 selection:text-white relative overflow-x-hidden min-h-screen">
+
+    <!-- Ambient Glowing Background Elements -->
+    <div class="fixed top-0 left-1/4 w-96 h-96 bg-indigo-600/20 rounded-full blur-[120px] pointer-events-none z-0"></div>
+    <div class="fixed top-1/3 right-10 w-96 h-96 bg-sky-500/15 rounded-full blur-[140px] pointer-events-none z-0"></div>
+    <div class="fixed bottom-10 left-1/3 w-96 h-96 bg-purple-600/15 rounded-full blur-[130px] pointer-events-none z-0"></div>
+
+    <!-- Header / Navigation Bar -->
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 via-sky-400 to-emerald-400 flex items-center justify-center text-slate-950 font-bold text-lg shadow-lg group-hover:scale-105 transition-transform duration-300">
+                    YS
+                </div>
+                <div>
+                    <span class="text-lg font-bold bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent block">Dr Yashika Shivanna</span>
+                    <span class="text-xs text-indigo-400 font-medium tracking-wide">Associate Consultant at Even</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-indigo-400 transition-colors duration-200">About & Impact</a>
+                <a href="#services" class="hover:text-indigo-400 transition-colors duration-200">Expertise</a>
+                <a href="#endorsements" class="hover:text-indigo-400 transition-colors duration-200">Endorsements</a>
+                <a href="#contact" class="hover:text-indigo-400 transition-colors duration-200">Contact</a>
+            </nav>
+
+            <!-- Action CTA -->
+            <div class="hidden md:block">
+                <a href="#contact" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-400 text-slate-950 font-semibold text-sm hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] hover:scale-105 transition-all duration-300">
+                    Connect Direct <i class="fa-solid fa-arrow-right ml-1"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-24 md:pt-48 md:pb-32 px-6 z-10">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Left Hero Content -->
+            <div class="lg:col-span-7 space-y-8 text-left">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 text-xs font-semibold text-sky-400 tracking-wider uppercase backdrop-blur-xl">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    Associate Consultant @ Even Healthcare
+                </div>
+
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-[1.15]">
+                    Pioneering Healthcare <br>
+                    <span class="bg-gradient-to-r from-indigo-400 via-sky-400 to-emerald-300 bg-clip-text text-transparent">Strategy & Innovation</span>
+                </h1>
+
+                <p class="text-lg text-slate-400 max-w-2xl font-light leading-relaxed">
+                    Bridging clinical insights with strategic advisory at <strong class="text-slate-200 font-semibold">Even</strong>. Dedicated to transforming patient outcomes, optimizing healthcare operations, and delivering high-impact healthcare consultation.
+                </p>
+
+                <!-- Hero Buttons -->
+                <div class="flex flex-wrap items-center gap-4 pt-2">
+                    <a href="#contact" class="px-7 py-3.5 rounded-xl bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-400 text-slate-950 font-bold text-base hover:shadow-[0_0_25px_rgba(56,189,248,0.5)] transition-all duration-300 hover:-translate-y-0.5">
+                        Initiate Consultation
+                    </a>
+                    <a href="#about" class="px-7 py-3.5 rounded-xl bg-slate-900/90 border border-slate-800 hover:border-slate-700 text-slate-200 font-semibold text-base hover:bg-slate-800/80 transition-all duration-300">
+                        View Profile
+                    </a>
+                </div>
+
+                <!-- Trust Badges -->
+                <div class="pt-8 border-t border-slate-900 grid grid-cols-3 gap-4">
+                    <div class="space-y-1">
+                        <div class="text-2xl font-bold text-white flex items-center gap-1">
+                            <span>Strategic</span>
+                        </div>
+                        <div class="text-xs text-slate-500 font-medium">Consulting Excellence</div>
+                    </div>
+                    <div class="space-y-1">
+                        <div class="text-2xl font-bold text-white flex items-center gap-1">
+                            <span>Healthcare</span>
+                        </div>
+                        <div class="text-xs text-slate-500 font-medium">Domain Expertise</div>
+                    </div>
+                    <div class="space-y-1">
+                        <div class="text-2xl font-bold text-white flex items-center gap-1">
+                            <span>Client-First</span>
+                        </div>
+                        <div class="text-xs text-slate-500 font-medium">Patient Outcomes</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Hero Avatar Display -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative group">
+                    <!-- Glowing Background Rings -->
+                    <div class="absolute -inset-1.5 bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-400 rounded-full blur-xl opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+                    <div class="absolute -inset-4 bg-gradient-to-r from-purple-600 via-indigo-600 to-cyan-500 rounded-full blur-2xl opacity-30 group-hover:opacity-60 transition duration-500"></div>
+                    
+                    <!-- Main Avatar Container -->
+                    <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full bg-slate-950 p-2 ring-1 ring-slate-800 shadow-2xl overflow-hidden flex items-center justify-center">
+                        <img 
+                            src="https://ui-avatars.com/api/?name=Dr+Yashika+Shivanna&size=200&background=0D8ABC&color=fff&bold=true" 
+                            alt="Dr Yashika Shivanna" 
+                            class="w-full h-full object-cover rounded-full group-hover:scale-105 transition-transform duration-500"
+                        />
+                    </div>
+
+                    <!-- Floating Badge 1 -->
+                    <div class="absolute -bottom-2 -left-4 bg-slate-900/90 backdrop-blur-xl border border-slate-800 px-4 py-2.5 rounded-2xl shadow-xl flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs font-bold text-white">Verified Specialist</div>
+                            <div class="text-[10px] text-slate-400">Healthcare Advisory</div>
+                        </div>
+                    </div>
+
+                    <!-- Floating Badge 2 -->
+                    <div class="absolute -top-2 -right-4 bg-slate-900/90 backdrop-blur-xl border border-slate-800 px-4 py-2.5 rounded-2xl shadow-xl flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-lg bg-indigo-500/20 text-indigo-400 flex items-center justify-center">
+                            <i class="fa-solid fa-hospital-user"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs font-bold text-white">Even Healthcare</div>
+                            <div class="text-[10px] text-slate-400">Consultant</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About & Industry Showcase Section -->
+    <section id="about" class="py-24 relative z-10 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Section Image -->
+                <div class="lg:col-span-6">
+                    <div class="relative rounded-3xl overflow-hidden border border-slate-800 group shadow-2xl">
+                        <img 
+                            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" 
+                            alt="Professional Healthcare Collaboration" 
+                            class="w-full h-[420px] object-cover group-hover:scale-105 transition-transform duration-700"
+                        />
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-6 bg-slate-900/80 backdrop-blur-xl border border-slate-800 rounded-2xl">
+                            <p class="text-sm text-slate-300 font-medium">"Transforming traditional healthcare consulting into seamless, preventive, and patient-centric healthcare systems."</p>
+                            <span class="mt-2 block text-xs text-sky-400 font-semibold">— Dr Yashika Shivanna</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Section Bio -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold">
+                        <i class="fa-solid fa-user-doctor"></i> Profile Overview
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight leading-tight">
+                        Driving Innovation at the Intersection of Medicine & Strategy
+                    </h2>
+                    <p class="text-slate-400 text-base leading-relaxed">
+                        As an <strong class="text-slate-200">Associate Consultant at Even</strong>, Dr Yashika Shivanna specializes in high-value strategic execution, operational improvement, and structured clinical consultation. 
+                    </p>
+                    <p class="text-slate-400 text-base leading-relaxed">
+                        With deep expertise in modern healthcare models, Dr Yashika works closely with multidisciplinary teams to design efficient patient workflows, enhance preventive care systems, and deliver reliable solutions tailored to contemporary healthcare demands.
+                    </p>
+
+                    <!-- Feature List -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                        <div class="flex items-start gap-3 p-3.5 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <i class="fa-solid fa-stethoscope text-sky-400 text-lg mt-0.5"></i>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Clinical Insight</h4>
+                                <p class="text-xs text-slate-400">Evidence-based consultation & patient management.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 p-3.5 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <i class="fa-solid fa-chart-pie text-emerald-400 text-lg mt-0.5"></i>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Healthcare Operations</h4>
+                                <p class="text-xs text-slate-400">Optimized health insurance & care workflows.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / Expertise Section -->
+    <section id="services" class="py-24 relative z-10 bg-slate-950/50 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sky-500/10 border border-sky-500/20 text-sky-400 text-xs font-semibold">
+                    <i class="fa-solid fa-briefcase"></i> Key Capabilities
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Core Competencies & Services</h2>
+                <p class="text-slate-400 text-sm sm:text-base">Delivering comprehensive clinical and strategic value across modern healthcare ecosystem touchpoints.</p>
+            </div>
+
+            <!-- Grid Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Card 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1.5 group glow-card">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-indigo-500 to-sky-400 flex items-center justify-center text-slate-950 text-2xl mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-notes-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Clinical Advisory</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Providing expert healthcare advisory to streamline patient navigation, clinical protocols, and preventive health plans.</p>
+                    <span class="text-xs font-semibold text-indigo-400 group-hover:text-indigo-300 flex items-center gap-1">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </span>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-sky-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1.5 group glow-card">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-sky-400 to-emerald-400 flex items-center justify-center text-slate-950 text-2xl mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Health & Wellness Management</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Designing personalized wellness strategies that focus on long-term disease prevention and primary care efficiency.</p>
+                    <span class="text-xs font-semibold text-sky-400 group-hover:text-sky-300 flex items-center gap-1">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </span>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-emerald-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1.5 group glow-card">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-emerald-400 to-teal-400 flex items-center justify-center text-slate-950 text-2xl mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-diagram-project"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Healthcare Operations Strategy</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Collaborating on operational frameworks to optimize care pathways, insurance integration, and managed health initiatives.</p>
+                    <span class="text-xs font-semibold text-emerald-400 group-hover:text-emerald-300 flex items-center gap-1">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Endorsements Section -->
+    <section id="endorsements" class="py-24 relative z-10 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-semibold">
+                    <i class="fa-solid fa-star"></i> Recommendations & Feedback
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Professional Endorsements</h2>
+                <p class="text-slate-400 text-sm sm:text-base">What colleagues and healthcare leaders say about working with Dr Yashika Shivanna.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl relative space-y-4 hover:border-slate-700 transition-all duration-300">
+                    <div class="flex text-amber-400 text-sm gap-1">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed italic">
+                        "Dr Yashika Shivanna combines exceptional clinical knowledge with a keen operational mindset. Her strategic approach at Even has consistently elevated our consultation standards."
+                    </p>
+                    <div class="flex items-center gap-4 pt-4 border-t border-slate-800/80">
+                        <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-300 font-bold text-sm border border-slate-700">
+                            HC
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Healthcare Operations Lead</h4>
+                            <p class="text-xs text-slate-400">Even Healthcare</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl relative space-y-4 hover:border-slate-700 transition-all duration-300">
+                    <div class="flex text-amber-400 text-sm gap-1">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed italic">
+                        "Dr Yashika’s dedication to patient outcomes and efficient healthcare consulting is outstanding. She bridges complex medical requirements with practical patient solutions with total ease."
+                    </p>
+                    <div class="flex items-center gap-4 pt-4 border-t border-slate-800/80">
+                        <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-300 font-bold text-sm border border-slate-700">
+                            SA
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Senior Medical Advisory Board</h4>
+                            <p class="text-xs text-slate-400">Partner Organization</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 relative z-10 border-t border-slate-900 bg-slate-950/80">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Left Info -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold">
+                        <i class="fa-solid fa-paper-plane"></i> Get in Touch
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Let's Connect</h2>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Interested in healthcare consulting, strategic partnerships, or discussing innovative healthcare models? Send a direct message below.
+                    </p>
+
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-center gap-4 p-4 rounded-2xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-10 h-10 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center">
+                                <i class="fa-solid fa-building"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400">Current Role</div>
+                                <div class="text-sm font-semibold text-white">Associate Consultant at Even</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-2xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-10 h-10 rounded-xl bg-sky-500/10 text-sky-400 flex items-center justify-center">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400">Network Connected Date</div>
+                                <div class="text-sm font-semibold text-white">07 Sep 2026</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Form -->
+                <div class="lg:col-span-7">
+                    <form onsubmit="event.preventDefault(); alert('Thank you for reaching out! Your message has been sent to Dr Yashika Shivanna.');" class="bg-slate-900/80 backdrop-blur-xl border border-slate-800 p-8 rounded-3xl space-y-6 shadow-2xl">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-medium text-slate-300 mb-2">Your Name</label>
+                                <input type="text" required placeholder="John Doe" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 focus:outline-none focus:border-indigo-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-medium text-slate-300 mb-2">Your Email</label>
+                                <input type="email" required placeholder="john@example.com" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 focus:outline-none focus:border-indigo-500 transition-colors">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-medium text-slate-300 mb-2">Subject</label>
+                            <input type="text" required placeholder="Healthcare Consulting Inquiry" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 focus:outline-none focus:border-indigo-500 transition-colors">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-medium text-slate-300 mb-2">Message</label>
+                            <textarea rows="4" required placeholder="How can Dr Yashika assist you?" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 focus:outline-none focus:border-indigo-500 transition-colors"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-400 text-slate-950 font-bold text-sm hover:shadow-[0_0_20px_rgba(56,189,248,0.4)] transition-all duration-300">
+                            Send Direct Message
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-900 bg-slate-950 text-slate-500 text-xs">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+                © 2026 Dr Yashika Shivanna. All rights reserved.
+            </div>
+            <div class="flex items-center space-x-6">
+                <a href="#" class="hover:text-slate-300 transition-colors"><i class="fa-brands fa-linkedin text-base"></i></a>
+                <a href="#" class="hover:text-slate-300 transition-colors"><i class="fa-solid fa-envelope text-base"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
