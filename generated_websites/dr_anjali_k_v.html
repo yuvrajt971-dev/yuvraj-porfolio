@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr Anjali K V | Senior Executive - Content Writer</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            cyan: '#0D8ABC',
+                            teal: '#0d9488',
+                            indigo: '#6366f1',
+                            purple: '#a855f7',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-border {
+            position: relative;
+            border-radius: 1rem;
+            background: linear-gradient(135deg, rgba(13, 138, 188, 0.4), rgba(168, 85, 247, 0.4));
+            padding: 1px;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(13, 138, 188, 0.3);
+        }
+        .bg-grid-pattern {
+            background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+            background-size: 32px 32px;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen selection:bg-cyan-500 selection:text-white relative overflow-x-hidden">
+
+    <!-- Ambient Background Glows -->
+    <div class="fixed top-0 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+    <div class="fixed bottom-1/3 right-1/4 w-[30rem] h-[30rem] bg-indigo-500/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center font-bold text-lg text-white shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
+                    AK
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold tracking-tight text-slate-100 group-hover:text-cyan-400 transition-colors">Dr Anjali K V</span>
+                    <span class="text-xs text-slate-400 font-medium">Healthcare Writer</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-cyan-400 transition-colors">Expertise</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Endorsements</a>
+                <a href="#contact" class="px-5 py-2.5 rounded-full bg-slate-900 border border-slate-700 hover:border-cyan-500/50 text-slate-100 hover:text-cyan-400 hover:shadow-lg hover:shadow-cyan-500/10 transition-all duration-300">
+                    Get in Touch
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-slate-300 focus:outline-none text-xl" aria-label="Toggle menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900/95 border-b border-slate-800 px-6 py-6 space-y-4 text-center">
+            <a href="#about" class="block text-slate-300 hover:text-cyan-400 font-medium">About</a>
+            <a href="#expertise" class="block text-slate-300 hover:text-cyan-400 font-medium">Expertise</a>
+            <a href="#services" class="block text-slate-300 hover:text-cyan-400 font-medium">Services</a>
+            <a href="#testimonials" class="block text-slate-300 hover:text-cyan-400 font-medium">Endorsements</a>
+            <a href="#contact" class="inline-block px-6 py-2.5 rounded-full bg-cyan-600 text-white font-medium">Get in Touch</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 md:pt-40 md:pb-28 bg-grid-pattern">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Content -->
+                <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-950/60 border border-cyan-500/30 text-cyan-300 text-xs md:text-sm font-semibold tracking-wide">
+                        <span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping"></span>
+                        Senior Executive - Content Writer @ Narayana Health
+                    </div>
+
+                    <h1 class="text-4xl md:text-6xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        Bridging <span class="gradient-text">Clinical Science</span> & Human Understanding
+                    </h1>
+
+                    <p class="text-slate-400 text-base md:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+                        Elevating healthcare communication through medical accuracy, strategic storytelling, and evidence-based patient education designed to inspire trust and empower healthier decisions.
+                    </p>
+
+                    <!-- Trust Badges & Metrics -->
+                    <div class="pt-4 grid grid-cols-3 gap-4 border-t border-slate-800/80 max-w-xl mx-auto lg:mx-0">
+                        <div class="text-center lg:text-left">
+                            <p class="text-2xl md:text-3xl font-extrabold text-cyan-400">100%</p>
+                            <p class="text-xs text-slate-400 font-medium mt-1">Medical Precision</p>
+                        </div>
+                        <div class="text-center lg:text-left">
+                            <p class="text-2xl md:text-3xl font-extrabold text-purple-400">500+</p>
+                            <p class="text-xs text-slate-400 font-medium mt-1">Clinical Articles</p>
+                        </div>
+                        <div class="text-center lg:text-left">
+                            <p class="text-2xl md:text-3xl font-extrabold text-indigo-400">Top Tier</p>
+                            <p class="text-xs text-slate-400 font-medium mt-1">Healthcare Group</p>
+                        </div>
+                    </div>
+
+                    <!-- Call To Action -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-600 to-purple-600 text-white font-semibold hover:shadow-lg hover:shadow-cyan-500/25 hover:scale-[1.02] active:scale-95 transition-all duration-300 flex items-center justify-center gap-2">
+                            <span>Collaborate With Me</span>
+                            <i class="fa-solid fa-arrow-right text-sm"></i>
+                        </a>
+                        <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900 border border-slate-800 hover:border-slate-700 text-slate-200 font-medium hover:bg-slate-800/50 transition-all duration-300 text-center">
+                            Explore Capabilities
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Avatar / Card Frame -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-full max-w-md">
+                        <!-- Ambient backdrop glow -->
+                        <div class="absolute -inset-1.5 bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 rounded-3xl blur-xl opacity-50 group-hover:opacity-75 transition duration-1000"></div>
+                        
+                        <div class="relative bg-slate-900/80 backdrop-blur-xl border border-slate-800 rounded-3xl p-8 text-center glow-effect space-y-6">
+                            <div class="relative inline-block mx-auto">
+                                <div class="w-36 h-36 md:w-44 md:h-44 rounded-full p-1.5 bg-gradient-to-tr from-cyan-400 via-indigo-500 to-purple-500">
+                                    <img src="https://ui-avatars.com/api/?name=Dr+Anjali+K+V&size=200&background=0D8ABC&color=fff&bold=true" alt="Dr Anjali K V" class="w-full h-full object-cover rounded-full bg-slate-950">
+                                </div>
+                                <span class="absolute bottom-2 right-2 bg-emerald-500 border-4 border-slate-900 w-6 h-6 rounded-full" title="Active Professional"></span>
+                            </div>
+
+                            <div>
+                                <h2 class="text-2xl font-bold text-white">Dr Anjali K V</h2>
+                                <p class="text-cyan-400 font-medium text-sm mt-1">Senior Executive - Content Writer</p>
+                                <p class="text-slate-400 text-xs mt-0.5">Narayana Health</p>
+                            </div>
+
+                            <div class="flex justify-center gap-3 pt-2">
+                                <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-300 text-xs font-medium border border-slate-700">Health Communications</span>
+                                <span class="px-3 py-1 rounded-full bg-slate-800 text-slate-300 text-xs font-medium border border-slate-700">Medical Content</span>
+                            </div>
+
+                            <div class="pt-4 border-t border-slate-800/80 flex items-center justify-around text-slate-400 text-sm">
+                                <span class="flex items-center gap-1.5"><i class="fa-solid fa-hospital text-cyan-400"></i> Enterprise Health</span>
+                                <span class="flex items-center gap-1.5"><i class="fa-solid fa-shield-halved text-purple-400"></i> Evidence-Based</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 md:py-28 relative border-t border-slate-800/50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Image Side -->
+                <div class="lg:col-span-5 order-2 lg:order-1">
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 shadow-2xl group">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" alt="Healthcare Content & Medical Science" class="w-full h-[420px] object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-slate-900/80 backdrop-blur-md border border-slate-800">
+                            <p class="text-xs text-cyan-400 font-semibold tracking-wider uppercase">Institutional Leadership</p>
+                            <p class="text-sm font-medium text-slate-200 mt-1">Driving medical literacy at Narayana Health, one of India’s foremost healthcare conglomerates.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Side -->
+                <div class="lg:col-span-7 order-1 lg:order-2 space-y-6">
+                    <div class="inline-block px-3 py-1 rounded-full bg-indigo-950/60 border border-indigo-500/30 text-indigo-300 text-xs font-semibold tracking-wider uppercase">
+                        About Dr Anjali K V
+                    </div>
+
+                    <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-white">
+                        Translating Complex Medicine into <span class="gradient-text">Empowerment</span>
+                    </h2>
+
+                    <p class="text-slate-300 leading-relaxed text-base md:text-lg">
+                        As a Senior Executive - Content Writer at <strong class="text-cyan-400 font-semibold">Narayana Health</strong>, Dr. Anjali K V brings a rigorous clinical and scientific perspective to healthcare communications. She bridges the gap between intricate clinical procedures and patient-centric understanding.
+                    </p>
+
+                    <p class="text-slate-400 leading-relaxed text-sm md:text-base">
+                        Her work focuses on designing high-impact clinical content, patient education campaigns, hospital communications, and digital health strategies that strictly adhere to regulatory precision while cultivating digital engagement and trust.
+                    </p>
+
+                    <!-- Key Pillars Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                        <div class="p-4 rounded-xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/40 transition-all">
+                            <div class="w-10 h-10 rounded-lg bg-cyan-500/10 flex items-center justify-center text-cyan-400 mb-3">
+                                <i class="fa-solid fa-stethoscope text-lg"></i>
+                            </div>
+                            <h3 class="font-bold text-white text-sm">Clinical Precision</h3>
+                            <p class="text-xs text-slate-400 mt-1">Rigorous medical accuracy backed by deep clinical understanding.</p>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/40 transition-all">
+                            <div class="w-10 h-10 rounded-lg bg-purple-500/10 flex items-center justify-center text-purple-400 mb-3">
+                                <i class="fa-solid fa-heart-pulse text-lg"></i>
+                            </div>
+                            <h3 class="font-bold text-white text-sm">Patient Empathy</h3>
+                            <p class="text-xs text-slate-400 mt-1">Demystifying jargon to empower patients with actionable clarity.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / Core Competencies Section -->
+    <section id="services" class="py-20 md:py-28 bg-slate-950/50 border-t border-slate-800/50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="inline-block px-3 py-1 rounded-full bg-cyan-950/60 border border-cyan-500/30 text-cyan-300 text-xs font-semibold tracking-wider uppercase">
+                    Core Capabilities
+                </div>
+                <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-white">
+                    Specialized Medical Content & Communication Solutions
+                </h2>
+                <p class="text-slate-400 text-base">
+                    Delivering end-to-end editorial excellence tailored for tertiary care hospitals, digital health platforms, and medical research outreach.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service Card 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 p-8 rounded-2xl hover:-translate-y-1.5 transition-all duration-300 group">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 mb-6 group-hover:bg-cyan-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-notes-medical text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Clinical & Medical Writing</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        In-depth articles, clinical whitepapers, disease awareness guides, and physician-oriented summaries written with academic accuracy.
+                    </p>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-8 rounded-2xl hover:-translate-y-1.5 transition-all duration-300 group">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 mb-6 group-hover:bg-indigo-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-magnifying-glass-chart text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-indigo-400 transition-colors">Healthcare SEO Strategy</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Search-optimized medical copy aligned with Search Quality Evaluator Guidelines (E-E-A-T) to drive organic visibility and user intent engagement.
+                    </p>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 p-8 rounded-2xl hover:-translate-y-1.5 transition-all duration-300 group">
+                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 mb-6 group-hover:bg-purple-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-users-between-lines text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">Patient Literacy Campaigns</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Designing clear, compassionate, and easily digestible health education materials for diverse patient demographics and multi-channel dissemination.
+                    </p>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-pink-500/50 p-8 rounded-2xl hover:-translate-y-1.5 transition-all duration-300 group">
+                    <div class="w-12 h-12 rounded-xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400 mb-6 group-hover:bg-pink-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-bullhorn text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-pink-400 transition-colors">Enterprise Health Communications</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Internal and external strategic branding copy, hospital campaign copy, leadership messaging, and press release materials for Narayana Health.
+                    </p>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-teal-500/50 p-8 rounded-2xl hover:-translate-y-1.5 transition-all duration-300 group">
+                    <div class="w-12 h-12 rounded-xl bg-teal-500/10 border border-teal-500/20 flex items-center justify-center text-teal-400 mb-6 group-hover:bg-teal-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-shield-virus text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-teal-400 transition-colors">Medical Compliance & Accuracy</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Meticulous fact-checking, scientific protocol compliance, and peer-review level quality checks for technical content integrity.
+                    </p>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-amber-500/50 p-8 rounded-2xl hover:-translate-y-1.5 transition-all duration-300 group">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 mb-6 group-hover:bg-amber-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-laptop-medical text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-amber-400 transition-colors">Digital Health Storytelling</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Interactive narrative building for telehealth portals, medical app microcopy, wellness newsletters, and patient journey case studies.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials & Endorsements Section -->
+    <section id="testimonials" class="py-20 md:py-28 relative border-t border-slate-800/50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="inline-block px-3 py-1 rounded-full bg-purple-950/60 border border-purple-500/30 text-purple-300 text-xs font-semibold tracking-wider uppercase">
+                    Professional Endorsements
+                </div>
+                <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-white">
+                    Trusted by Healthcare Leaders & Medical Practitioners
+                </h2>
+                <p class="text-slate-400 text-base">
+                    Recognized for driving clarity, accuracy, and engagement in corporate healthcare communications.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl space-y-6 relative">
+                    <div class="flex text-amber-400 space-x-1">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-base italic leading-relaxed">
+                        "Dr Anjali has an exceptional talent for taking dense cardiothoracic and surgical literature and translating it into empowering, highly accessible content for our patient ecosystem. Her contributions at Narayana Health are invaluable."
+                    </p>
+                    <div class="flex items-center space-x-4 pt-4 border-t border-slate-800">
+                        <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-cyan-500 to-indigo-500 flex items-center justify-center text-white font-bold text-sm">
+                            CM
+                        </div>
+                        <div>
+                            <h4 class="text-white font-bold text-sm">Clinical Marketing Team</h4>
+                            <p class="text-xs text-slate-400">Narayana Health Group</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl space-y-6 relative">
+                    <div class="flex text-amber-400 space-x-1">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-base italic leading-relaxed">
+                        "Her deep commitment to evidence-based writing and strict regulatory adherence ensures that every piece of published content meets the highest standards of digital medical governance."
+                    </p>
+                    <div class="flex items-center space-x-4 pt-4 border-t border-slate-800">
+                        <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-purple-500 to-pink-500 flex items-center justify-center text-white font-bold text-sm">
+                            MD
+                        </div>
+                        <div>
+                            <h4 class="text-white font-bold text-sm">Head of Digital Strategy</h4>
+                            <p class="text-xs text-slate-400">Healthcare Communication Division</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 md:py-28 bg-slate-950/80 border-t border-slate-800/50 relative">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Contact info -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <div class="inline-block px-3 py-1 rounded-full bg-cyan-950/60 border border-cyan-500/30 text-cyan-300 text-xs font-semibold tracking-wider uppercase mb-4">
+                            Connect & Collaborate
+                        </div>
+                        <h2 class="text-3xl md:text-4xl font-extrabold text-white">Let’s Advance Healthcare Writing Together</h2>
+                        <p class="text-slate-400 text-sm md:text-base mt-4 leading-relaxed">
+                            Interested in collaborating on health communications, clinical writing, or institutional campaigns? Reach out directly.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-10 h-10 rounded-lg bg-cyan-500/10 flex items-center justify-center text-cyan-400">
+                                <i class="fa-solid fa-building text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Current Organization</p>
+                                <p class="text-sm font-semibold text-white">Narayana Health</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-10 h-10 rounded-lg bg-purple-500/10 flex items-center justify-center text-purple-400">
+                                <i class="fa-solid fa-user-check text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Network Connection</p>
+                                <p class="text-sm font-semibold text-white">Connected since 07 Sep 2026</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-10 h-10 rounded-lg bg-indigo-500/10 flex items-center justify-center text-indigo-400">
+                                <i class="fa-solid fa-envelope text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Direct Email</p>
+                                <p class="text-sm font-semibold text-white">Available via LinkedIn outreach</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Contact Form -->
+                <div class="lg:col-span-7">
+                    <form onsubmit="event.preventDefault(); alert('Thank you for reaching out to Dr Anjali K V!');" class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl space-y-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Send a Direct Message</h3>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Name</label>
+                                <input type="text" required placeholder="Dr. John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-all text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Email</label>
+                                <input type="email" required placeholder="john@hospital.org" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-all text-sm">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Subject</label>
+                            <input type="text" required placeholder="Healthcare Content Collaboration" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-all text-sm">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Message</label>
+                            <textarea rows="4" required placeholder="Share details about your upcoming health communications project..." class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-all text-sm resize-none"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-600 to-purple-600 text-white font-semibold hover:shadow-lg hover:shadow-cyan-500/20 active:scale-95 transition-all duration-300">
+                            Send Message <i class="fa-solid fa-paper-plane ml-2 text-xs"></i>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-slate-950 border-t border-slate-800/80 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© 2026 Dr Anjali K V. Senior Executive - Content Writer at Narayana Health.</p>
+            <div class="flex space-x-6">
+                <a href="#" class="hover:text-cyan-400 transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-cyan-400 transition-colors">Terms of Engagement</a>
+                <a href="https://linkedin.com" target="_blank" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-linkedin text-sm"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
