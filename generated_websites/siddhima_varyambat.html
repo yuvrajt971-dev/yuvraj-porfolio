@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siddhima Varyambat | Portfolio Showcase</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(99, 102, 241, 0.3);
+        }
+        .glow-card:hover {
+            box-shadow: 0 0 30px -5px rgba(168, 85, 247, 0.25);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white relative overflow-x-hidden">
+
+    <!-- Background Decorative Gradients -->
+    <div class="fixed top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-gradient-to-tr from-indigo-600/20 via-purple-600/20 to-pink-600/10 blur-[120px] pointer-events-none -z-10 rounded-full"></div>
+    <div class="fixed bottom-0 right-0 w-[600px] h-[600px] bg-gradient-to-tl from-indigo-900/20 via-purple-900/10 to-transparent blur-[140px] pointer-events-none -z-10 rounded-full"></div>
+
+    <!-- Navigation Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-tight bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent flex items-center gap-2">
+                <span class="w-8 h-8 rounded-lg bg-gradient-to-tr from-indigo-500 to-pink-500 flex items-center justify-center text-white text-sm font-extrabold shadow-lg shadow-indigo-500/30">SV</span>
+                Siddhima V.
+            </a>
+            
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-indigo-400 transition-colors">Expertise</a>
+                <a href="#services" class="hover:text-indigo-400 transition-colors">Services</a>
+                <a href="#testimonials" class="hover:text-indigo-400 transition-colors">Endorsements</a>
+            </nav>
+
+            <a href="#contact" class="px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:opacity-90 transition-all duration-300 shadow-lg shadow-indigo-500/25">
+                Connect Now
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen pt-32 pb-20 flex items-center justify-center relative">
+        <div class="max-w-7xl mx-auto px-6 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Left Column: Bio & CTA -->
+            <div class="lg:col-span-7 text-center lg:text-left space-y-8">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 text-xs font-medium text-indigo-400 backdrop-blur-md">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                    <span>Executive Leader & Digital Innovator</span>
+                </div>
+
+                <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-none">
+                    Hi, I'm <br/>
+                    <span class="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+                        Siddhima Varyambat
+                    </span>
+                </h1>
+
+                <p class="text-lg text-slate-400 max-w-2xl font-light leading-relaxed mx-auto lg:mx-0">
+                    Driving technology transformation, user-centric product strategies, and digital innovation to help organizations scale and thrive in modern competitive landscapes.
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="flex flex-wrap gap-4 justify-center lg:justify-start pt-2">
+                    <a href="#contact" class="px-8 py-4 rounded-xl text-sm font-semibold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white shadow-xl shadow-indigo-500/20 hover:scale-105 transition-all duration-300 flex items-center gap-2">
+                        <span>Get In Touch</span>
+                        <i class="fa-solid font-bold fa-arrow-right"></i>
+                    </a>
+                    <a href="#about" class="px-8 py-4 rounded-xl text-sm font-semibold bg-slate-900/80 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-700 hover:bg-slate-800/60 transition-all duration-300 backdrop-blur-xl">
+                        Explore Portfolio
+                    </a>
+                </div>
+
+                <!-- Trust Badges / Stats -->
+                <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-6 max-w-lg mx-auto lg:mx-0 text-center lg:text-left">
+                    <div>
+                        <p class="text-2xl sm:text-3xl font-extrabold text-white">10+</p>
+                        <p class="text-xs text-slate-400 font-medium mt-1">Years Experience</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl sm:text-3xl font-extrabold text-white">50+</p>
+                        <p class="text-xs text-slate-400 font-medium mt-1">Projects Led</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl sm:text-3xl font-extrabold text-white">99%</p>
+                        <p class="text-xs text-slate-400 font-medium mt-1">Client Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Avatar Frame -->
+            <div class="lg:col-span-5 flex justify-center items-center">
+                <div class="relative group">
+                    <!-- Glowing Outer Rings -->
+                    <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 blur-xl opacity-70 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+                    <div class="absolute -inset-4 rounded-full bg-gradient-to-tr from-indigo-600 via-purple-600 to-pink-600 blur-2xl opacity-40"></div>
+                    
+                    <!-- Avatar Card Frame -->
+                    <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full p-2 bg-slate-950 border border-slate-800 shadow-2xl flex items-center justify-center overflow-hidden">
+                        <img 
+                            src="https://ui-avatars.com/api/?name=Siddhima+Varyambat&size=200&background=0D8ABC&color=fff&bold=true" 
+                            alt="Siddhima Varyambat" 
+                            class="w-full h-full object-cover rounded-full transition-transform duration-500 group-hover:scale-105"
+                        />
+                    </div>
+
+                    <!-- Floating Badge -->
+                    <div class="absolute -bottom-2 -right-2 bg-slate-900/90 border border-slate-800 text-slate-200 px-4 py-2 rounded-2xl text-xs font-semibold shadow-xl backdrop-blur-xl flex items-center gap-2">
+                        <i class="fa-solid fa-award text-amber-400 text-sm"></i>
+                        <span>Strategic Visionary</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About & Industry Expertise Section -->
+    <section id="about" class="py-24 relative border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Section Image -->
+                <div class="lg:col-span-6">
+                    <div class="relative rounded-3xl overflow-hidden border border-slate-800 bg-slate-900/60 shadow-2xl group">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent z-10 opacity-80"></div>
+                        <img 
+                            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" 
+                            alt="Team Collaboration" 
+                            class="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105"
+                        />
+                        <div class="absolute bottom-6 left-6 right-6 z-20">
+                            <p class="text-xs font-bold uppercase tracking-widest text-indigo-400 mb-1">Collaboration & Innovation</p>
+                            <p class="text-lg font-semibold text-white">Empowering teams to create extraordinary outcomes</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section Text -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 text-indigo-400 font-semibold text-xs uppercase tracking-widest">
+                        <i class="fa-solid fa-layer-group"></i> About & Strategy
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-snug">
+                        Bridging high-level vision with impactful execution.
+                    </h2>
+                    <p class="text-slate-400 text-base leading-relaxed">
+                        With a passionate drive for operational excellence and innovative solutions, Siddhima Varyambat transforms complex business challenges into seamless, growth-oriented digital experiences.
+                    </p>
+                    <p class="text-slate-400 text-base leading-relaxed">
+                        Specializing in leadership, user experience architecture, and strategic digital transformation, every project is met with rigorous analysis, strategic alignment, and user-first principles.
+                    </p>
+
+                    <!-- Tech & Skill Tags -->
+                    <div class="pt-4 flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-xs font-medium text-slate-300">Strategic Leadership</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-xs font-medium text-slate-300">Digital Transformation</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-xs font-medium text-slate-300">Product Strategy</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-xs font-medium text-slate-300">User Experience</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-900 border border-slate-800 text-xs font-medium text-slate-300">Stakeholder Management</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 relative bg-slate-950/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-indigo-400 font-semibold text-xs uppercase tracking-widest">Core Capabilities</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Tailored Solutions for Scalable Growth</h2>
+                <p class="text-slate-400 text-sm sm:text-base">Delivering end-to-end expertise across leadership, enterprise strategy, and user experience design.</p>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 p-8 rounded-2xl glow-card group relative">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center text-xl mb-6 group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Strategic Advisory</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Aligning executive leadership and technical strategy to unlock operational efficiency and market capture.</p>
+                    <a href="#contact" class="text-xs font-semibold text-indigo-400 hover:text-indigo-300 inline-flex items-center gap-1">Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 p-8 rounded-2xl glow-card group relative">
+                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center text-xl mb-6 group-hover:bg-purple-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-pen-nib"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Product Architecture</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Designing modern, scalable digital architecture engineered for seamless user adoption and high engagement.</p>
+                    <a href="#contact" class="text-xs font-semibold text-purple-400 hover:text-purple-300 inline-flex items-center gap-1">Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 p-8 rounded-2xl glow-card group relative">
+                    <div class="w-12 h-12 rounded-xl bg-pink-500/10 border border-pink-500/20 text-pink-400 flex items-center justify-center text-xl mb-6 group-hover:bg-pink-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-rocket"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Digital Transformation</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Guiding enterprise organizations through technology modernizations and innovative digital workflows.</p>
+                    <a href="#contact" class="text-xs font-semibold text-pink-400 hover:text-pink-300 inline-flex items-center gap-1">Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Endorsements Section -->
+    <section id="testimonials" class="py-24 relative border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-indigo-400 font-semibold text-xs uppercase tracking-widest">Endorsements</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Trusted by Industry Leaders</h2>
+                <p class="text-slate-400 text-sm sm:text-base">Feedback from colleagues and stakeholders inspired by collaborative excellence.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 text-xs gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "Siddhima possesses a rare talent for cutting through strategic complexity and executing with surgical precision. A true asset to any forward-thinking team."
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-500 flex items-center justify-center font-bold text-xs text-white">
+                            EM
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-white">Elena Rostova</p>
+                            <p class="text-xs text-slate-400">VP of Innovation, TechCorp</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 text-xs gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "Working alongside Siddhima completely elevated our project trajectory. The dedication to user experience and leadership vision was remarkable."
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-purple-500 to-pink-500 flex items-center justify-center font-bold text-xs text-white">
+                            MA
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-white">Marcus Vance</p>
+                            <p class="text-xs text-slate-400">Managing Director, Global Edge</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 text-xs gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "Incredible foresight, executive-level communication, and an unwavering focus on quality. Siddhima consistently delivers above expectation."
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-indigo-500 to-pink-500 flex items-center justify-center font-bold text-xs text-white">
+                            SK
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-white">Sarah Jenkins</p>
+                            <p class="text-xs text-slate-400">Head of Product, Synergy Digital</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 relative bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Details -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-indigo-400 font-semibold text-xs uppercase tracking-widest">Get In Touch</span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mt-2">Let's Connect & Build</h2>
+                        <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                            Open to strategic advisory, consulting engagements, or leadership discussions. Reach out today to start a dialogue.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-10 h-10 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center">
+                                <i class="fa-solid fa-user-plus"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">LinkedIn Network Connection</p>
+                                <p class="text-sm font-semibold text-white">Connected 07 Sep 2026</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-10 h-10 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Direct Inquiries</p>
+                                <p class="text-sm font-semibold text-white">Available via Message Form</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="lg:col-span-7">
+                    <form onsubmit="event.preventDefault(); alert('Thank you! Your message has been received.');" class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl space-y-6">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Name</label>
+                                <input type="text" placeholder="John Doe" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Email Address</label>
+                                <input type="email" placeholder="john@example.com" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Subject</label>
+                            <input type="text" placeholder="Project Collaboration" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Message</label>
+                            <textarea rows="4" placeholder="How can we work together?" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl text-sm font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white shadow-lg shadow-indigo-500/25 hover:opacity-95 transition-all duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-900 bg-slate-950 text-slate-500 text-xs text-center">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© 2026 Siddhima Varyambat. All rights reserved.</p>
+            <div class="flex items-center gap-6">
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-brands fa-linkedin text-base"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-brands fa-github text-base"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-brands fa-twitter text-base"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
