@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Arun Tandon | Medical Consultant - Chiraayu Hospital</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(99, 102, 241, 0.25);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- Ambient Gradient Background -->
+    <div class="fixed inset-0 pointer-events-none z-0">
+        <div class="absolute -top-40 -left-40 w-96 h-96 bg-indigo-600/20 rounded-full blur-3xl"></div>
+        <div class="absolute top-1/3 -right-40 w-96 h-96 bg-purple-600/15 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-10 left-1/3 w-96 h-96 bg-cyan-600/15 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="relative z-10">
+
+        <!-- Navigation Bar -->
+        <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+            <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-indigo-500 to-purple-500 flex items-center justify-center font-bold text-lg text-white shadow-lg shadow-indigo-500/20 group-hover:scale-105 transition-transform duration-300">
+                        AT
+                    </div>
+                    <div>
+                        <span class="font-extrabold text-lg text-slate-100 tracking-tight block">Dr. Arun Tandon</span>
+                        <span class="text-xs text-slate-400 block font-medium">Chiraayu Hospital</span>
+                    </div>
+                </a>
+
+                <div class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-300">
+                    <a href="#about" class="hover:text-cyan-400 transition-colors">About & Profile</a>
+                    <a href="#services" class="hover:text-cyan-400 transition-colors">Expertise & Services</a>
+                    <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Endorsements</a>
+                    <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+                </div>
+
+                <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 text-white font-semibold text-sm hover:shadow-lg hover:shadow-indigo-500/25 hover:scale-[1.02] transition-all duration-300">
+                    <i class="fa-solid me-1 fa-calendar-check"></i> Schedule Consultation
+                </a>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="pt-36 pb-20 md:pt-44 md:pb-32 px-6 max-w-7xl mx-auto">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Content -->
+                <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-indigo-500/30 text-indigo-300 text-xs md:text-sm font-semibold tracking-wide uppercase shadow-inner">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        Medical Consultant • Chiraayu Hospital
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-[1.15]">
+                        Advancing Medicine with <span class="bg-gradient-to-r from-cyan-400 via-indigo-400 to-purple-400 bg-clip-text text-transparent">Precision & Compassion</span>
+                    </h1>
+
+                    <p class="text-slate-400 text-lg md:text-xl font-normal leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        Delivering world-class clinical expertise, advanced medical consulting, and holistic patient management at Chiraayu Hospital.
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#contact" class="px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 text-white font-bold hover:shadow-xl hover:shadow-indigo-500/25 hover:scale-[1.02] transition-all duration-300 flex items-center gap-3">
+                            <span>Book Medical Consultation</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                        <a href="#about" class="px-8 py-4 rounded-xl bg-slate-900/80 border border-slate-800 text-slate-200 font-semibold hover:border-slate-700 hover:bg-slate-800/80 transition-all duration-300">
+                            View Clinical Profile
+                        </a>
+                    </div>
+
+                    <!-- Trust Stats -->
+                    <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0">
+                        <div class="text-center lg:text-left">
+                            <div class="text-2xl sm:text-3xl font-extrabold text-white">15+</div>
+                            <div class="text-xs text-slate-400 font-medium">Years Experience</div>
+                        </div>
+                        <div class="text-center lg:text-left">
+                            <div class="text-2xl sm:text-3xl font-extrabold text-white">10k+</div>
+                            <div class="text-xs text-slate-400 font-medium">Patients Treated</div>
+                        </div>
+                        <div class="text-center lg:text-left">
+                            <div class="text-2xl sm:text-3xl font-extrabold text-white">99.4%</div>
+                            <div class="text-xs text-slate-400 font-medium">Satisfaction Rate</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Avatar Visual -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative group">
+                        <!-- Double Glowing Gradient Frame -->
+                        <div class="absolute -inset-1.5 bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 rounded-3xl blur-xl opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+                        <div class="relative w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-3xl overflow-hidden bg-slate-900 border-2 border-slate-800/80 p-3 shadow-2xl">
+                            <img src="https://ui-avatars.com/api/?name=Dr+Arun+Tandon&size=200&background=0D8ABC&color=fff&bold=true" 
+                                 alt="Dr Arun Tandon" 
+                                 class="w-full h-full object-cover rounded-2xl shadow-inner transform group-hover:scale-105 transition-transform duration-500">
+                            
+                            <!-- Floating Badge -->
+                            <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-slate-900/90 backdrop-blur-md border border-slate-700/80 flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-lg bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold">
+                                    <i class="fa-solid fa-hospital-user text-lg"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs font-bold text-slate-200">Senior Consultant</div>
+                                    <div class="text-[11px] text-slate-400">Chiraayu Hospital</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- About & Expertise Section -->
+        <section id="about" class="py-24 px-6 max-w-7xl mx-auto border-t border-slate-800/60">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Medical Image -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 shadow-2xl group">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Medical Practice" 
+                             class="w-full h-[450px] object-cover group-hover:scale-105 transition duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <span class="text-xs uppercase tracking-widest text-cyan-400 font-bold">Excellence in Healthcare</span>
+                            <h3 class="text-xl font-bold text-white mt-1">Chiraayu Hospital Clinical Practice</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-block text-cyan-400 text-sm font-semibold uppercase tracking-wider">About Dr. Arun Tandon</div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                        Dedicated to Senior Medical Consultation & Diagnostic Precision
+                    </h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        As a key Senior Medical Consultant at <strong class="text-white">Chiraayu Hospital</strong>, Dr. Arun Tandon specializes in comprehensive clinical diagnostics, second medical opinions, and systemic health management strategies. 
+                    </p>
+                    <p class="text-slate-400 leading-relaxed">
+                        With an uncompromising commitment to evidence-based medicine and patient-centric care, Dr. Tandon bridges modern clinical innovation with empathetic practitioner-patient dialogue to ensure optimal therapeutic outcomes.
+                    </p>
+
+                    <!-- Key Pillars Grid -->
+                    <div class="grid sm:grid-cols-2 gap-4 pt-4">
+                        <div class="p-4 rounded-xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 flex items-start gap-3">
+                            <i class="fa-solid fa-stethoscope text-cyan-400 text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-slate-100 text-sm">Diagnostic Mastery</h4>
+                                <p class="text-xs text-slate-400 mt-1">In-depth evaluations and individualized patient treatment pathways.</p>
+                            </div>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 flex items-start gap-3">
+                            <i class="fa-solid fa-notes-medical text-indigo-400 text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-slate-100 text-sm">Comprehensive Strategy</h4>
+                                <p class="text-xs text-slate-400 mt-1">Multidisciplinary alignment for complex medical conditions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Services Grid Section -->
+        <section id="services" class="py-24 px-6 max-w-7xl mx-auto border-t border-slate-800/60">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-cyan-400 text-sm font-semibold uppercase tracking-wider">Clinical Specializations</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Comprehensive Medical Consulting Services</h2>
+                <p class="text-slate-400 text-base">Tailored medical advisory, specialist diagnostic reviews, and full-spectrum inpatient care management at Chiraayu Hospital.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service Card 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 rounded-2xl p-8 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-user-doctor"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">General Medical Consultation</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Detailed clinical evaluations, systemic illness management, and evidence-based treatment planning tailored for each individual patient.</p>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 rounded-2xl p-8 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-file-medical font-bold"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Second Opinion Consulting</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Rigorous diagnostic review and specialized medical second opinions for complex surgical or clinical case assessments.</p>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 rounded-2xl p-8 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Preventative Health Management</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Proactive screening schedules, risk-factor management, and targeted wellness strategies for long-term clinical wellness.</p>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 rounded-2xl p-8 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-pink-500/10 text-pink-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-hospital-user"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Inpatient Care Oversight</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Comprehensive rounds, treatment coordination, and recovery monitoring within Chiraayu Hospital facilities.</p>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 rounded-2xl p-8 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Chronic Disease Strategy</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Structured longitudinal management programs for hypertension, diabetes, and metabolic health disorders.</p>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 rounded-2xl p-8 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-laptop-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Telemedicine Advisory</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Secure, high-touch remote digital medical consultations for follow-up care and international patient reviews.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-24 px-6 max-w-7xl mx-auto border-t border-slate-800/60">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-cyan-400 text-sm font-semibold uppercase tracking-wider">Patient & Peer Endorsements</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Trusted by Patients & Healthcare Professionals</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 rounded-2xl p-8 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="text-amber-400 text-sm flex gap-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "Dr. Arun Tandon's diagnostic insight saved my family critical time. His thoroughness and calm demeanor at Chiraayu Hospital provided immense comfort during a challenging time."
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-800/80 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-cyan-600/30 text-cyan-300 flex items-center justify-center font-bold text-sm">
+                            SK
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-white">Suresh Kumar</div>
+                            <div class="text-xs text-slate-400">Patient Care Recipient</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 rounded-2xl p-8 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="text-amber-400 text-sm flex gap-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "As a clinical peer, I frequently consult with Dr. Tandon on high-complexity cases. His dedication to modern, evidence-based practices at Chiraayu is second to none."
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-800/80 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-indigo-600/30 text-indigo-300 flex items-center justify-center font-bold text-sm">
+                            RM
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-white">Dr. R. Mehra</div>
+                            <div class="text-xs text-slate-400">Senior Specialist</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 rounded-2xl p-8 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="text-amber-400 text-sm flex gap-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "The second opinion consultation with Dr. Tandon gave us absolute clarity. He explained the diagnosis clearly and set up a streamlined treatment plan."
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-800/80 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-purple-600/30 text-purple-300 flex items-center justify-center font-bold text-sm">
+                            AP
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-white">Ananya Patel</div>
+                            <div class="text-xs text-slate-400">Consultation Patient</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-24 px-6 max-w-7xl mx-auto border-t border-slate-800/60">
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <!-- Direct Details -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-cyan-400 text-sm font-semibold uppercase tracking-wider">Get In Touch</span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight mt-2">Connect with Dr. Arun Tandon</h2>
+                        <p class="text-slate-400 mt-4 leading-relaxed">
+                            Schedule a professional consultation or coordinate clinical referrals directly at Chiraayu Hospital.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-hospital"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Location</div>
+                                <div class="text-white font-medium text-sm">Chiraayu Hospital, Medical Consultation Wing</div>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold">Direct Email</div>
+                                <div class="text-white font-medium text-sm">dr.aruntandon@chiraayuhospital.com</div>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 uppercase tracking-wider font-semibold">OPD Hours</div>
+                                <div class="text-white font-medium text-sm">Mon - Sat: 09:00 AM - 05:00 PM</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Form -->
+                <div class="lg:col-span-7">
+                    <form class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-2xl p-8 space-y-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Request an Appointment</h3>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Full Name</label>
+                                <input type="text" placeholder="e.g. John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Contact Number</label>
+                                <input type="tel" placeholder="+91 98765 43210" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Email Address</label>
+                                <input type="email" placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Consultation Type</label>
+                                <select class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 focus:outline-none focus:border-cyan-500 transition-colors">
+                                    <option>General Clinical Consultation</option>
+                                    <option>Second Opinion Review</option>
+                                    <option>Preventative Health Checkup</option>
+                                    <option>Specialist Case Inquiry</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Notes / Medical Summary</label>
+                            <textarea rows="4" placeholder="Brief description of your medical query or symptoms..." class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors"></textarea>
+                        </div>
+                        <button type="button" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 text-white font-bold hover:shadow-xl hover:shadow-indigo-500/25 transition-all duration-300">
+                            Submit Consultation Request
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="border-t border-slate-800/80 py-8 px-6 bg-slate-950/90">
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+                <p>&copy; 2026 Dr. Arun Tandon • Medical Consultant at Chiraayu Hospital. All rights reserved.</p>
+                <div class="flex items-center gap-6">
+                    <a href="#" class="hover:text-slate-300 transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-slate-300 transition-colors">Terms of Service</a>
+                    <a href="#" class="hover:text-slate-300 transition-colors">Hospital Portal</a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>
