@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Haripriya Chaudhari | Independent Medical Expert</title>
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        slate: {
+                            950: '#020617',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #020617;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #334155;
+        }
+
+        .glow-bg {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(100px);
+            opacity: 0.25;
+            pointer-events: none;
+        }
+
+        .glass-card {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(51, 65, 85, 0.5);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(99, 102, 241, 0.5);
+            box-shadow: 0 10px 30px -10px rgba(99, 102, 241, 0.2);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gradient-text-cyan {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gradient-border {
+            position: relative;
+            border-radius: 9999px;
+            padding: 4px;
+            background: linear-gradient(135deg, #6366f1, #a855f7, #ec4899);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- Ambient Background Glows -->
+    <div class="glow-bg w-[500px] h-[500px] bg-indigo-600 top-0 left-0 -translate-x-1/2 -translate-y-1/2"></div>
+    <div class="glow-bg w-[600px] h-[600px] bg-purple-600 top-[20%] right-0 translate-x-1/3"></div>
+    <div class="glow-bg w-[500px] h-[500px] bg-pink-600 bottom-[10%] left-10"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 to-purple-500 flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-indigo-500/20 group-hover:scale-105 transition-transform">
+                    HC
+                </div>
+                <div>
+                    <span class="font-bold text-lg tracking-tight block leading-none">Dr. Haripriya Chaudhari</span>
+                    <span class="text-xs text-indigo-400 font-medium">NextPUB Medical Expert</span>
+                </div>
+            </a>
+
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-indigo-400 transition-colors">Expertise</a>
+                <a href="#services" class="hover:text-indigo-400 transition-colors">Services</a>
+                <a href="#testimonials" class="hover:text-indigo-400 transition-colors">Endorsements</a>
+                <a href="#contact" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold text-xs tracking-wider uppercase hover:shadow-lg hover:shadow-indigo-500/25 transition-all duration-300 hover:scale-105">
+                    Consultation
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="md:hidden text-slate-300 hover:text-white text-xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-24 md:pt-48 md:pb-32 px-6 max-w-7xl mx-auto overflow-hidden">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Hero Content Left -->
+            <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 text-indigo-400 text-xs font-semibold uppercase tracking-widest shadow-inner">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    Available for Strategic Advisory & Publications
+                </div>
+
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.15]">
+                    Advancing Clinical Rigor & <span class="gradient-text">Medical Publishing</span> Excellence
+                </h1>
+
+                <p class="text-slate-400 text-lg sm:text-xl max-w-2xl font-light leading-relaxed">
+                    Independent Medical Expert at <span class="text-white font-semibold">NextPUB</span>. Synthesizing complex scientific clinical data into impactful, ethically aligned, and highly peer-reviewed global medical publishing strategies.
+                </p>
+
+                <!-- Action Buttons -->
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                    <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold shadow-xl shadow-indigo-500/20 hover:shadow-indigo-500/40 hover:scale-[1.02] transition-all duration-300 flex items-center justify-center gap-3">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        <span>Initiate Advisory Inquiry</span>
+                    </a>
+                    <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900 border border-slate-800 text-slate-200 font-semibold hover:border-slate-700 hover:bg-slate-800/50 transition-all duration-300 flex items-center justify-center gap-3">
+                        <i class="fa-solid fa-notes-medical text-indigo-400"></i>
+                        <span>Explore Capabilities</span>
+                    </a>
+                </div>
+
+                <!-- Trust Badges -->
+                <div class="pt-8 border-t border-slate-800/80">
+                    <p class="text-xs font-semibold text-slate-500 uppercase tracking-widest mb-4">Core Focus Areas</p>
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-6 text-slate-400 text-sm font-medium">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-shield-virus text-indigo-400"></i>
+                            <span>Clinical Governance</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-book-journal-whills text-purple-400"></i>
+                            <span>Peer-Review Advisory</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-dna text-pink-400"></i>
+                            <span>Medical Communications</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Avatar Right -->
+            <div class="lg:col-span-5 flex justify-center relative">
+                <div class="relative group">
+                    <!-- Glowing Background Behind Avatar -->
+                    <div class="absolute -inset-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full blur-xl opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+                    
+                    <!-- Avatar Frame -->
+                    <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full p-2 bg-slate-950 border border-slate-800 flex items-center justify-center shadow-2xl">
+                        <img src="https://ui-avatars.com/api/?name=Dr.+Haripriya+Chaudhari&size=200&background=0D8ABC&color=fff&bold=true" 
+                             alt="Dr. Haripriya Chaudhari" 
+                             class="w-full h-full object-cover rounded-full shadow-inner transform group-hover:scale-[1.02] transition duration-500">
+                    </div>
+
+                    <!-- Floating Badge 1 -->
+                    <div class="absolute -bottom-4 -left-4 glass-card px-4 py-3 rounded-2xl flex items-center gap-3 shadow-xl border border-slate-700">
+                        <div class="w-10 h-10 rounded-lg bg-indigo-500/20 text-indigo-400 flex items-center justify-center">
+                            <i class="fa-solid fa-award text-lg"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs text-slate-400">Role</div>
+                            <div class="text-sm font-bold text-white">Medical Expert</div>
+                        </div>
+                    </div>
+
+                    <!-- Floating Badge 2 -->
+                    <div class="absolute -top-4 -right-4 glass-card px-4 py-3 rounded-2xl flex items-center gap-3 shadow-xl border border-slate-700">
+                        <div class="w-10 h-10 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center">
+                            <i class="fa-solid fa-building-user text-lg"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs text-slate-400">Organization</div>
+                            <div class="text-sm font-bold text-white">NextPUB</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-24 px-6 max-w-7xl mx-auto border-t border-slate-800/60">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Image Side -->
+            <div class="lg:col-span-5 relative">
+                <div class="relative rounded-3xl overflow-hidden glass-card p-2 border border-slate-800">
+                    <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                         alt="Medical Research & Expert Analysis" 
+                         class="w-full h-[420px] object-cover rounded-2xl opacity-90 hover:scale-105 transition duration-700">
+                    
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+                    
+                    <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-slate-950/80 backdrop-blur-md border border-slate-800">
+                        <p class="text-xs text-indigo-400 font-semibold uppercase tracking-wider">Independent Governance</p>
+                        <p class="text-sm font-medium text-slate-200 mt-1">Ensuring integrity, accuracy, and scientific rigour across scientific publications.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Text Content Side -->
+            <div class="lg:col-span-7 space-y-6">
+                <div class="inline-flex items-center gap-2 text-indigo-400 text-xs font-semibold uppercase tracking-widest">
+                    <i class="fa-solid fa-microscope"></i>
+                    About Dr. Chaudhari
+                </div>
+
+                <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">
+                    Bridging Clinical Discovery with <span class="gradient-text-cyan">Global Publishing Impact</span>
+                </h2>
+
+                <p class="text-slate-400 leading-relaxed font-light">
+                    As an <strong class="text-slate-200 font-semibold">Independent Medical Expert at NextPUB</strong>, Dr. Haripriya Chaudhari provides authoritative medical evaluation, manuscript validation, and scientific advisory services. Operating at the intersection of bio-medicine, evidence synthesis, and modern digital publishing platforms, Dr. Chaudhari empowers healthcare organizations, research bodies, and pharmaceutical teams to communicate clinical insights with undeniable clarity.
+                </p>
+
+                <!-- Capability Pillars -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                    <div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800 flex items-start gap-3">
+                        <i class="fa-solid fa-circle-check text-indigo-400 mt-1"></i>
+                        <div>
+                            <h4 class="text-sm font-bold text-slate-200">Scientific Evaluation</h4>
+                            <p class="text-xs text-slate-400 mt-1">Rigorous methodology appraisal for complex medical datasets.</p>
+                        </div>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-slate-900/40 border border-slate-800 flex items-start gap-3">
+                        <i class="fa-solid fa-circle-check text-purple-400 mt-1"></i>
+                        <div>
+                            <h4 class="text-sm font-bold text-slate-200">Publication Ethics</h4>
+                            <p class="text-xs text-slate-400 mt-1">Strict adherence to ICMJE, GPP, and global regulatory standards.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stats Grid -->
+                <div class="grid grid-cols-3 gap-4 pt-6 border-t border-slate-800/80">
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-white">100%</div>
+                        <div class="text-xs text-slate-400 font-medium mt-1">Ethical Compliance</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-indigo-400">NextPUB</div>
+                        <div class="text-xs text-slate-400 font-medium mt-1">Independent Affiliation</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-pink-400">Global</div>
+                        <div class="text-xs text-slate-400 font-medium mt-1">Publishing Advisory</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Services Grid Section -->
+    <section id="services" class="py-24 px-6 max-w-7xl mx-auto border-t border-slate-800/60">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <div class="inline-flex items-center gap-2 text-indigo-400 text-xs font-semibold uppercase tracking-widest mb-3">
+                <i class="fa-solid fa-briefcase"></i>
+                Core Services & Specialties
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">
+                Tailored Medical Expert Services
+            </h2>
+            <p class="text-slate-400 text-sm sm:text-base mt-3">
+                Delivering high-precision scientific analysis, manuscript oversight, and healthcare advisory for life science leaders.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Card 1 -->
+            <div class="glass-card rounded-2xl p-8 transition-all duration-300 relative group">
+                <div class="w-14 h-14 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-user-md"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Independent Medical Review</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                    Comprehensive, unbiased medical accuracy checks for clinical trials, whitepapers, and high-impact medical journal submissions.
+                </p>
+                <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold text-indigo-400 hover:text-indigo-300">
+                    Learn More <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="glass-card rounded-2xl p-8 transition-all duration-300 relative group">
+                <div class="w-14 h-14 rounded-2xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-book-journal-whills"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Medical Publishing Strategy</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                    End-to-end guidance through NextPUB workflows, optimizing target journal selection, referee response, and impact positioning.
+                </p>
+                <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold text-purple-400 hover:text-purple-300">
+                    Learn More <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="glass-card rounded-2xl p-8 transition-all duration-300 relative group">
+                <div class="w-14 h-14 rounded-2xl bg-pink-500/10 border border-pink-500/20 text-pink-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-file-medical"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Clinical Content Advisory</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                    Transforming complex scientific literature into actionable, clear, and compliant content tailored for specialized medical audiences.
+                </p>
+                <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold text-pink-400 hover:text-pink-300">
+                    Learn More <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="glass-card rounded-2xl p-8 transition-all duration-300 relative group">
+                <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Regulatory & Bioethics</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                    Ensuring all published research adheres to stringent ethical guidelines, clinical data governance, and international healthcare protocols.
+                </p>
+                <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold text-cyan-400 hover:text-cyan-300">
+                    Learn More <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="glass-card rounded-2xl p-8 transition-all duration-300 relative group">
+                <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-comments"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Key Opinion Leader Oversight</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                    Collaborating with global clinical leaders to validate peer commentary, expert opinions, and healthcare panel position papers.
+                </p>
+                <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold text-emerald-400 hover:text-emerald-300">
+                    Learn More <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="glass-card rounded-2xl p-8 transition-all duration-300 relative group">
+                <div class="w-14 h-14 rounded-2xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-pen-nib"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Manuscript Peer-Consultation</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                    Pre-submission audit of academic manuscripts to increase acceptance probability in top-tier peer-reviewed medical publications.
+                </p>
+                <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold text-amber-400 hover:text-amber-300">
+                    Learn More <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Testimonials / Endorsements Section -->
+    <section id="testimonials" class="py-24 px-6 max-w-7xl mx-auto border-t border-slate-800/60">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <div class="inline-flex items-center gap-2 text-indigo-400 text-xs font-semibold uppercase tracking-widest mb-3">
+                <i class="fa-solid fa-star"></i>
+                Peer & Industry Endorsements
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">
+                Trusted by Medical Leaders
+            </h2>
+            <p class="text-slate-400 text-sm sm:text-base mt-3">
+                Recognized for clinical precision, analytical clarity, and unwavering publishing integrity.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <!-- Endorsement 1 -->
+            <div class="glass-card rounded-2xl p-8 flex flex-col justify-between">
+                <div>
+                    <!-- Stars -->
+                    <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                        "Dr. Chaudhari's independent medical evaluation transformed our manuscript pre-submission review. Her attention to methodology details and clinical rigor is unmatched."
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-slate-800 flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center font-bold text-indigo-400 text-xs">
+                        EM
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-bold text-white">Executive Editor</h4>
+                        <p class="text-xs text-slate-400">Global Clinical Journal</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Endorsement 2 -->
+            <div class="glass-card rounded-2xl p-8 flex flex-col justify-between">
+                <div>
+                    <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                        "Working with Dr. Haripriya Chaudhari at NextPUB ensured our regulatory synthesis was flawless. Her insights saved us months in editorial compliance."
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-slate-800 flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center font-bold text-purple-400 text-xs">
+                        VP
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-bold text-white">VP Medical Affairs</h4>
+                        <p class="text-xs text-slate-400">BioPharma Solutions</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Endorsement 3 -->
+            <div class="glass-card rounded-2xl p-8 flex flex-col justify-between">
+                <div>
+                    <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                        "Her scientific acuity and ability to simplify complex clinical trial data into publishable formats makes her an indispensable medical expert."
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-slate-800 flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center font-bold text-pink-400 text-xs">
+                        DR
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-bold text-white">Director of Research</h4>
+                        <p class="text-xs text-slate-400">Oncology Insights Group</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact & Touchpoint Section -->
+    <section id="contact" class="py-24 px-6 max-w-7xl mx-auto border-t border-slate-800/60">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+            
+            <!-- Direct Info Left -->
+            <div class="lg:col-span-5 space-y-8">
+                <div>
+                    <div class="inline-flex items-center gap-2 text-indigo-400 text-xs font-semibold uppercase tracking-widest mb-3">
+                        <i class="fa-solid fa-envelope"></i>
+                        Direct Engagement
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">
+                        Connect with Dr. Chaudhari
+                    </h2>
+                    <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                        Schedule a confidential medical advisory session or inquire about publishing governance with NextPUB.
+                    </p>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="glass-card p-5 rounded-xl flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-lg bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs text-slate-400">Current Role & Firm</div>
+                            <div class="text-sm font-bold text-white">Independent Medical Expert | NextPUB</div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card p-5 rounded-xl flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-lg bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-network-wired"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs text-slate-400">Professional Network</div>
+                            <div class="text-sm font-bold text-white">Verified Partner (Connected Sep 2026)</div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card p-5 rounded-xl flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-lg bg-pink-500/10 border border-pink-500/20 text-pink-400 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs text-slate-400">Availability</div>
+                            <div class="text-sm font-bold text-white">Global Remote Advisory & On-Site Panels</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Professional Social Links -->
+                <div class="pt-4">
+                    <p class="text-xs text-slate-500 uppercase tracking-widest font-semibold mb-3">Verified Profiles</p>
+                    <div class="flex items-center gap-3">
+                        <a href="#" class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:text-indigo-400 hover:border-indigo-500/50 transition-all">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:text-indigo-400 hover:border-indigo-500/50 transition-all">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:text-indigo-400 hover:border-indigo-500/50 transition-all">
+                            <i class="fa-solid fa-file-medical"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form Right -->
+            <div class="lg:col-span-7">
+                <div class="glass-card p-8 sm:p-10 rounded-3xl border border-slate-800 relative">
+                    <h3 class="text-xl font-bold text-white mb-6">Send an Advisory Message</h3>
+                    
+                    <form onsubmit="event.preventDefault(); alert('Thank you for reaching out to Dr. Haripriya Chaudhari. Your message has been sent successfully.');" class="space-y-5">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <div>
+                                <label class="block text-xs font-medium text-slate-400 mb-2 uppercase tracking-wider">Your Full Name</label>
+                                <input type="text" required placeholder="Dr. John Smith" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-100 text-sm focus:outline-none focus:border-indigo-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-medium text-slate-400 mb-2 uppercase tracking-wider">Your Email</label>
+                                <input type="email" required placeholder="john.smith@institution.org" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-100 text-sm focus:outline-none focus:border-indigo-500 transition-colors">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-medium text-slate-400 mb-2 uppercase tracking-wider">Inquiry Type</label>
+                            <select class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-100 text-sm focus:outline-none focus:border-indigo-500 transition-colors">
+                                <option>Manuscript Medical Review</option>
+                                <option>NextPUB Strategy & Publishing</option>
+                                <option>Clinical Advisory / Panel Consultation</option>
+                                <option>Other Inquiry</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-medium text-slate-400 mb-2 uppercase tracking-wider">Message Details</label>
+                            <textarea rows="4" required placeholder="Please provide details regarding your study, publication timeline, or advisory needs..." class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-100 text-sm focus:outline-none focus:border-indigo-500 transition-colors resize-none"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold text-sm shadow-xl shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.01] transition-all duration-300">
+                            Submit Consultation Request
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 border-t border-slate-800/80 bg-slate-950">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-xs text-slate-500">
+            <div class="flex items-center gap-3">
+                <div class="w-6 h-6 rounded-lg bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-xs">
+                    HC
+                </div>
+                <span>© 2026 Dr. Haripriya Chaudhari — Independent Medical Expert at NextPUB.</span>
+            </div>
+            
+            <div class="flex items-center space-x-6">
+                <a href="#" class="hover:text-slate-400 transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-slate-400 transition-colors">Terms of Governance</a>
+                <a href="#" class="hover:text-slate-400 transition-colors">Medical Disclaimer</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
