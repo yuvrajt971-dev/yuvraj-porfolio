@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Saloni Gohil | Bachelor of Dental Surgery</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            cyan: '#0D8ABC',
+                            teal: '#14b8a6',
+                            purple: '#8b5cf6',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gradient-border {
+            position: relative;
+            border-radius: 1rem;
+            background: linear-gradient(135deg, rgba(56, 189, 248, 0.2), rgba(192, 132, 252, 0.2));
+            padding: 1px;
+        }
+
+        .gradient-border > div {
+            border-radius: calc(1rem - 1px);
+        }
+
+        .glass-card {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(56, 189, 248, 0.3);
+            box-shadow: 0 20px 40px -15px rgba(13, 138, 188, 0.2);
+        }
+
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(13, 138, 188, 0.3);
+        }
+
+        .glow-effect-purple {
+            box-shadow: 0 0 50px -10px rgba(139, 92, 246, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-white">
+
+    <!-- Background Atmospheric Glows -->
+    <div class="fixed top-0 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+    <div class="fixed bottom-1/3 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+    <div class="fixed top-2/3 left-1/3 w-80 h-80 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+    <!-- Navigation -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-indigo-500 to-purple-500 p-0.5 transition-transform duration-300 group-hover:scale-105">
+                        <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+                            <i class="fa-solid fa-tooth text-cyan-400 group-hover:rotate-12 transition-transform duration-300"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="font-bold text-lg text-white tracking-tight">Dr. Saloni Gohil</span>
+                        <span class="block text-xs text-slate-400 font-medium">Dental Surgeon</span>
+                    </div>
+                </a>
+
+                <nav class="hidden md:flex items-center gap-8">
+                    <a href="#about" class="text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors">About Practice</a>
+                    <a href="#services" class="text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors">Treatments & Services</a>
+                    <a href="#expertise" class="text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors">Clinical Expertise</a>
+                    <a href="#testimonials" class="text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors">Patient Reviews</a>
+                    <a href="#contact" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 to-indigo-600 text-white text-sm font-semibold hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 hover:scale-[1.02]">Book Consultation</a>
+                </nav>
+
+                <!-- Mobile menu button -->
+                <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden text-slate-400 hover:text-white focus:outline-none">
+                    <i class="fa-solid fa-bars-staggered text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900/95 border-b border-slate-800 px-4 pt-2 pb-6 space-y-3">
+            <a href="#about" class="block py-2 text-slate-300 hover:text-cyan-400 font-medium">About Practice</a>
+            <a href="#services" class="block py-2 text-slate-300 hover:text-cyan-400 font-medium">Services</a>
+            <a href="#expertise" class="block py-2 text-slate-300 hover:text-cyan-400 font-medium">Clinical Expertise</a>
+            <a href="#testimonials" class="block py-2 text-slate-300 hover:text-cyan-400 font-medium">Testimonials</a>
+            <a href="#contact" class="inline-block mt-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 to-indigo-600 text-white text-sm font-semibold">Book Consultation</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-12 pb-24 lg:pt-20 lg:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Left Content -->
+                <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border border-slate-800">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        <span class="text-xs font-semibold text-slate-300 uppercase tracking-wider">Kiran Dental Clinic • Senior Surgeon</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl lg:text-6xl font-extrabold tracking-tight leading-none">
+                        Precision Healthcare for Your <span class="gradient-text">Perfect Smile</span>
+                    </h1>
+
+                    <p class="text-lg text-slate-400 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        Welcome to the official digital portal of <strong class="text-slate-200">Dr. Saloni Gohil</strong> (BDS). Dedicated to providing gentle, state-of-the-art dental care, smile aesthetics, and comprehensive oral surgeries tailored to your personal wellness.
+                    </p>
+
+                    <!-- Trust Badges CTA -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white font-bold shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 hover:scale-[1.02] flex items-center justify-center gap-3">
+                            <i class="fa-regular fa-calendar-check text-lg"></i>
+                            Schedule Appointment
+                        </a>
+                        <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-xl glass-card text-slate-200 hover:text-white font-semibold transition-all duration-300 hover:bg-slate-800/80 flex items-center justify-center gap-2">
+                            Explore Treatments <i class="fa-solid fa-arrow-right text-xs text-cyan-400"></i>
+                        </a>
+                    </div>
+
+                    <!-- Highlight Metrics -->
+                    <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-4">
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-white">BDS</p>
+                            <p class="text-xs text-slate-400 mt-1">Dental Surgeon</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-cyan-400">100%</p>
+                            <p class="text-xs text-slate-400 mt-1">Patient Dedicated</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-purple-400">5.0 ★</p>
+                            <p class="text-xs text-slate-400 mt-1">Patient Satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Avatar Frame -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-72 h-72 sm:w-80 sm:h-80 lg:w-96 lg:h-96">
+                        <!-- Double Glowing Background Ring -->
+                        <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 blur-xl opacity-75 animate-pulse"></div>
+                        <div class="absolute -inset-4 rounded-full bg-gradient-to-r from-indigo-500 to-cyan-400 blur-2xl opacity-30"></div>
+                        
+                        <!-- Avatar Glass Container -->
+                        <div class="relative w-full h-full rounded-full p-2 bg-slate-900 border border-slate-700/80 shadow-2xl flex items-center justify-center overflow-hidden">
+                            <img 
+                                src="https://ui-avatars.com/api/?name=Dr+Saloni+Gohil&size=200&background=0D8ABC&color=fff&bold=true" 
+                                alt="Dr Saloni Gohil" 
+                                class="w-full h-full object-cover rounded-full transition-transform duration-500 hover:scale-105"
+                            />
+                        </div>
+
+                        <!-- Floating Badges -->
+                        <div class="absolute -bottom-2 -left-4 glass-card px-4 py-3 rounded-2xl border border-slate-700/80 flex items-center gap-3 shadow-xl">
+                            <div class="w-10 h-10 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold">
+                                <i class="fa-solid fa-hospital-user text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Practice</p>
+                                <p class="text-sm font-bold text-white">Kiran Dental Clinic</p>
+                            </div>
+                        </div>
+
+                        <div class="absolute top-4 -right-4 glass-card px-4 py-2.5 rounded-2xl border border-slate-700/80 flex items-center gap-2 shadow-xl">
+                            <i class="fa-solid fa-shield-halved text-emerald-400 text-sm"></i>
+                            <span class="text-xs font-semibold text-slate-200">Certified Practitioner</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-20 relative bg-slate-900/40 border-y border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Image Showcase -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative rounded-3xl overflow-hidden border border-slate-800 shadow-2xl group">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60 z-10"></div>
+                        <img 
+                            src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                            alt="Modern Dental Operatory" 
+                            class="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105"
+                        >
+                        <div class="absolute bottom-6 left-6 right-6 z-20 glass-card p-4 rounded-2xl border border-slate-700/60">
+                            <p class="text-xs text-cyan-400 font-semibold uppercase tracking-wider">Clinical Standard</p>
+                            <p class="text-sm text-slate-200 mt-1 font-medium">State-of-the-Art Sterilization & Painless Dental Tech</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Content -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 text-cyan-400 text-xs font-bold uppercase tracking-widest">
+                        <i class="fa-solid fa-user-doctor"></i> About Dr. Saloni Gohil
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                        Compassionate Care Meets <br class="hidden sm:inline" />
+                        <span class="gradient-text">Modern Surgical Precision</span>
+                    </h2>
+
+                    <p class="text-slate-300 leading-relaxed">
+                        Dr. Saloni Gohil is a qualified <strong class="text-white">Bachelor of Dental Surgery (BDS)</strong> practicing at the renowned <strong class="text-white">Kiran Dental Clinic</strong>. With a patient-first methodology, she blends high clinical competence with a gentle bedside manner to ensure every dental visit is comfortable and effective.
+                    </p>
+
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Whether performing routine preventive checks, complex endodontic therapies, or aesthetic smile enhancements, Dr. Gohil is committed to keeping up with modern advancement in dentistry to offer non-invasive, durable, and aesthetically pleasing outcomes.
+                    </p>
+
+                    <!-- Core Capabilities Checklist -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                        <div class="flex items-center gap-3 glass-card p-3.5 rounded-xl">
+                            <div class="w-8 h-8 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-check text-sm"></i>
+                            </div>
+                            <span class="text-sm font-semibold text-slate-200">Cosmetic Smile Designing</span>
+                        </div>
+                        <div class="flex items-center gap-3 glass-card p-3.5 rounded-xl">
+                            <div class="w-8 h-8 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-check text-sm"></i>
+                            </div>
+                            <span class="text-sm font-semibold text-slate-200">Painless Root Canal Therapy</span>
+                        </div>
+                        <div class="flex items-center gap-3 glass-card p-3.5 rounded-xl">
+                            <div class="w-8 h-8 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-check text-sm"></i>
+                            </div>
+                            <span class="text-sm font-semibold text-slate-200">Preventive Dentistry & Hygiene</span>
+                        </div>
+                        <div class="flex items-center gap-3 glass-card p-3.5 rounded-xl">
+                            <div class="w-8 h-8 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-check text-sm"></i>
+                            </div>
+                            <span class="text-sm font-semibold text-slate-200">Surgical Extractions</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-cyan-400 text-xs font-bold uppercase tracking-widest block mb-3">Comprehensive Oral Care</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
+                    Specialized <span class="gradient-text">Dental Treatments</span>
+                </h2>
+                <p class="text-slate-400 mt-4 text-base">
+                    From preventative cleanings to surgical procedures, explore the comprehensive oral healthcare solutions available under Dr. Saloni Gohil's care.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-cyan-500 to-indigo-500 p-0.5 mb-6 group-hover:scale-110 transition-transform">
+                        <div class="w-full h-full bg-slate-950 rounded-[14px] flex items-center justify-center">
+                            <i class="fa-solid fa-sparkles text-2xl text-cyan-400"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Cosmetic & Aesthetic Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Teeth whitening, composite bonding, veneers, and complete smile makeover evaluations to give you a confident, radiant smile.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-bold text-cyan-400 hover:text-cyan-300 gap-2">
+                        BOOK CONSULTATION <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-purple-500 to-pink-500 p-0.5 mb-6 group-hover:scale-110 transition-transform">
+                        <div class="w-full h-full bg-slate-950 rounded-[14px] flex items-center justify-center">
+                            <i class="fa-solid fa-tooth text-2xl text-purple-400"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">Root Canal Therapy</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Gentle and effective endodontic treatment designed to save infected teeth, eliminate pain, and restore structural integrity.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-bold text-purple-400 hover:text-purple-300 gap-2">
+                        BOOK CONSULTATION <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-blue-500 to-teal-400 p-0.5 mb-6 group-hover:scale-110 transition-transform">
+                        <div class="w-full h-full bg-slate-950 rounded-[14px] flex items-center justify-center">
+                            <i class="fa-solid fa-shield-virus text-2xl text-teal-400"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-teal-400 transition-colors">Preventive Oral Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Professional cleanings, deep scaling, fluoride treatments, and routine exams to protect tooth enamel and maintain healthy gums.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-bold text-teal-400 hover:text-teal-300 gap-2">
+                        BOOK CONSULTATION <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-amber-500 to-rose-500 p-0.5 mb-6 group-hover:scale-110 transition-transform">
+                        <div class="w-full h-full bg-slate-950 rounded-[14px] flex items-center justify-center">
+                            <i class="fa-solid fa-screwdriver-wrench text-2xl text-amber-400"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-amber-400 transition-colors">Restorative Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        High-quality dental crowns, bridges, and tooth-colored composite restorations designed for long-term functional stability.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-bold text-amber-400 hover:text-amber-300 gap-2">
+                        BOOK CONSULTATION <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-emerald-500 to-cyan-500 p-0.5 mb-6 group-hover:scale-110 transition-transform">
+                        <div class="w-full h-full bg-slate-950 rounded-[14px] flex items-center justify-center">
+                            <i class="fa-solid fa-scissors text-2xl text-emerald-400"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-emerald-400 transition-colors">Surgical Extractions</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Safe, sterile extraction of damaged, impacted, or crowded teeth (including wisdom tooth consultations) with minimal discomfort.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-bold text-emerald-400 hover:text-emerald-300 gap-2">
+                        BOOK CONSULTATION <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-indigo-500 to-purple-600 p-0.5 mb-6 group-hover:scale-110 transition-transform">
+                        <div class="w-full h-full bg-slate-950 rounded-[14px] flex items-center justify-center">
+                            <i class="fa-solid fa-children text-2xl text-indigo-400"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-indigo-400 transition-colors">Pediatric & Family Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Gentle, patient pediatric care designed to make dental visits engaging, anxiety-free, and positive for children and families.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-bold text-indigo-400 hover:text-indigo-300 gap-2">
+                        BOOK CONSULTATION <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 relative bg-slate-900/30 border-y border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-purple-400 text-xs font-bold uppercase tracking-widest block mb-3">Patient Endorsements</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                    Trusted by <span class="gradient-text">Happy Patients</span>
+                </h2>
+                <p class="text-slate-400 mt-2 text-sm">Real feedback from individuals treated at Kiran Dental Clinic.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <div class="glass-card p-8 rounded-2xl relative">
+                    <div class="flex items-center gap-1 text-amber-400 text-sm mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                        "Dr. Saloni Gohil is extremely patient and thorough. I was terrified of getting a root canal, but her gentle approach completely alleviated my fear. Zero pain throughout!"
+                    </p>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold text-sm">
+                            PP
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-white">Pooja P.</p>
+                            <p class="text-xs text-slate-500">Root Canal Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl relative">
+                    <div class="flex items-center gap-1 text-amber-400 text-sm mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                        "The smile whitening and cosmetic touch-ups done by Dr. Gohil transformed my confidence before my wedding! Truly top-tier professional service at Kiran Dental Clinic."
+                    </p>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 flex items-center justify-center font-bold text-sm">
+                            RM
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-white">Rajesh M.</p>
+                            <p class="text-xs text-slate-500">Cosmetic Dentistry Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl relative">
+                    <div class="flex items-center gap-1 text-amber-400 text-sm mb-4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                        "Extremely hygienic clinic atmosphere and very punctual scheduling. Dr. Saloni explained every step of the procedure in detail. Highly recommended!"
+                    </p>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-sm">
+                            AS
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-white">Ananya S.</p>
+                            <p class="text-xs text-slate-500">Regular Checkup Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Appointment Section -->
+    <section id="contact" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Info Left -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-cyan-400 text-xs font-bold uppercase tracking-widest block mb-2">Get In Touch</span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                            Schedule Your <br /><span class="gradient-text">Dental Appointment</span>
+                        </h2>
+                        <p class="text-slate-400 mt-4 text-sm leading-relaxed">
+                            Ready for a healthier, brighter smile? Reach out to book a consultation with Dr. Saloni Gohil at Kiran Dental Clinic today.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="glass-card p-5 rounded-2xl flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-hospital"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Clinic Location</p>
+                                <p class="text-sm font-bold text-white mt-0.5">Kiran Dental Clinic</p>
+                            </div>
+                        </div>
+
+                        <div class="glass-card p-5 rounded-2xl flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-user-doctor"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Attending Surgeon</p>
+                                <p class="text-sm font-bold text-white mt-0.5">Dr. Saloni Gohil (BDS)</p>
+                            </div>
+                        </div>
+
+                        <div class="glass-card p-5 rounded-2xl flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-regular fa-clock"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Working Hours</p>
+                                <p class="text-sm font-bold text-white mt-0.5">Mon - Sat: 9:30 AM - 8:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Appointment Booking Form Right -->
+                <div class="lg:col-span-7">
+                    <div class="glass-card p-8 sm:p-10 rounded-3xl border border-slate-800 relative">
+                        <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-3">
+                            <i class="fa-regular fa-calendar-plus text-cyan-400"></i> Request Appointment
+                        </h3>
+
+                        <form onsubmit="event.preventDefault(); alert('Appointment Request Received! We will contact you shortly.');" class="space-y-5">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Patient Full Name</label>
+                                    <input type="text" required placeholder="e.g. John Doe" class="w-full px-4 py-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 text-sm transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Phone Number</label>
+                                    <input type="tel" required placeholder="+91 98765 43210" class="w-full px-4 py-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 text-sm transition-colors">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Preferred Service</label>
+                                    <select class="w-full px-4 py-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-300 focus:outline-none focus:border-cyan-500 text-sm transition-colors">
+                                        <option>General Checkup & Consultation</option>
+                                        <option>Root Canal Treatment</option>
+                                        <option>Teeth Whitening & Aesthetics</option>
+                                        <option>Dental Crowns / Fillings</option>
+                                        <option>Tooth Extraction</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Preferred Date</label>
+                                    <input type="date" class="w-full px-4 py-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-300 focus:outline-none focus:border-cyan-500 text-sm transition-colors">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Additional Notes / Symptoms</label>
+                                <textarea rows="3" placeholder="Describe your dental concern or any symptoms..." class="w-full px-4 py-3.5 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 text-sm transition-colors"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white font-bold shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 hover:scale-[1.01]">
+                                Confirm Appointment Request
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-slate-950 border-t border-slate-900 text-slate-500 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-tooth text-cyan-400"></i>
+                <span class="text-slate-300 font-semibold text-sm">Dr. Saloni Gohil</span>
+                <span class="text-slate-600">| BDS Dental Surgeon</span>
+            </div>
+            <p>© 2026 Dr. Saloni Gohil • Kiran Dental Clinic. All rights reserved.</p>
+            <div class="flex gap-4 text-slate-400 text-base">
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-solid fa-location-dot"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
