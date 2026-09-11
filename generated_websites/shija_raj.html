@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shija Raj | Local Scientific Officer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            cyan: '#0D8ABC',
+                            teal: '#14b8a6',
+                            indigo: '#6366f1',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card:hover {
+            border-color: rgba(13, 138, 188, 0.4);
+            box-shadow: 0 0 25px -5px rgba(13, 138, 188, 0.25);
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(13, 138, 188, 0.35);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-white">
+
+    <!-- Background Grid Effect -->
+    <div class="fixed inset-0 bg-[linear-gradient(to_right,#1e293b15_1px,transparent_1px),linear-gradient(to_bottom,#1e293b15_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none z-0"></div>
+
+    <!-- NAVBAR -->
+    <header class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-indigo-500 to-purple-500 p-0.5 transition-transform group-hover:scale-105">
+                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-indigo-400">
+                        SR
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-lg tracking-tight text-slate-100">Shija Raj</span>
+                    <span class="text-xs text-cyan-400 font-medium">Local Scientific Officer</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-cyan-400 transition-colors">Expertise</a>
+                <a href="#initiatives" class="hover:text-cyan-400 transition-colors">Initiatives</a>
+                <a href="#endorsements" class="hover:text-cyan-400 transition-colors">Endorsements</a>
+            </nav>
+
+            <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 hover:opacity-90 transition-all shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40">
+                Connect Directly
+            </a>
+        </div>
+    </header>
+
+    <main class="relative z-10">
+
+        <!-- HERO SECTION -->
+        <section class="relative min-h-screen pt-32 pb-20 flex items-center justify-center overflow-hidden">
+            <!-- Glow Spheres -->
+            <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute bottom-10 right-10 w-[300px] h-[300px] bg-purple-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="max-w-5xl mx-auto px-6 text-center">
+                <!-- Avatar Frame with glowing double gradient -->
+                <div class="relative inline-block mb-8">
+                    <div class="absolute -inset-1.5 rounded-full bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 blur-lg opacity-75 animate-pulse"></div>
+                    <div class="relative w-36 h-36 md:w-44 md:h-44 rounded-full p-1.5 bg-slate-950">
+                        <img src="https://ui-avatars.com/api/?name=Shija+Raj&size=200&background=0D8ABC&color=fff&bold=true" alt="Shija Raj" class="w-full h-full rounded-full object-cover">
+                    </div>
+                </div>
+
+                <!-- Role Badge -->
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card mb-6">
+                    <span class="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-ping"></span>
+                    <span class="text-xs md:text-sm font-semibold tracking-wide text-slate-300">
+                        Local Scientific Officer @ <span class="text-cyan-400">Indian Association of Dental Students</span>
+                    </span>
+                </div>
+
+                <!-- Main Heading -->
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
+                    Driving Scientific Excellence in <br class="hidden sm:inline">
+                    <span class="gradient-text">Dental Innovation & Research</span>
+                </h1>
+
+                <!-- Subtitle -->
+                <p class="text-lg md:text-xl text-slate-400 max-w-3xl mx-auto mb-10 leading-relaxed font-normal">
+                    Dedicated to bridging clinical research, academic symposia, and dental student mentorship across India. Fostering a future grounded in evidence-based dentistry and transformative scientific exchange.
+                </p>
+
+                <!-- Call to Actions -->
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+                    <a href="#initiatives" class="w-full sm:w-auto px-8 py-4 rounded-full font-bold text-slate-950 bg-gradient-to-r from-cyan-400 to-teal-300 hover:from-cyan-300 hover:to-teal-200 transition-all shadow-lg shadow-cyan-500/25 flex items-center justify-center gap-2">
+                        <span>Explore Research Initiatives</span>
+                        <i class="fa-solid fa-arrow-right text-sm"></i>
+                    </a>
+                    <a href="#about" class="w-full sm:w-auto px-8 py-4 rounded-full font-semibold text-slate-300 glass-card hover:bg-slate-800/80 transition-all flex items-center justify-center gap-2">
+                        <span>Academic Profile</span>
+                        <i class="fa-solid fa-graduation-cap text-cyan-400"></i>
+                    </a>
+                </div>
+
+                <!-- Stat Highlights -->
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-3xl mx-auto pt-8 border-t border-slate-800/80">
+                    <div class="p-4">
+                        <div class="text-2xl md:text-3xl font-extrabold text-cyan-400">IADS</div>
+                        <div class="text-xs md:text-sm text-slate-400 mt-1 font-medium">National Chapter Leadership</div>
+                    </div>
+                    <div class="p-4">
+                        <div class="text-2xl md:text-3xl font-extrabold text-indigo-400">Scientific</div>
+                        <div class="text-xs md:text-sm text-slate-400 mt-1 font-medium">Research & Symposia Direction</div>
+                    </div>
+                    <div class="p-4 col-span-2 md:col-span-1">
+                        <div class="text-2xl md:text-3xl font-extrabold text-purple-400">Mentorship</div>
+                        <div class="text-xs md:text-sm text-slate-400 mt-1 font-medium">Student Academic Development</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT & EXPERTISE SECTION -->
+        <section id="about" class="py-24 relative bg-slate-950/60 border-t border-slate-800/40">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- Left: Feature Image -->
+                    <div class="lg:col-span-5 relative">
+                        <div class="absolute -inset-2 rounded-2xl bg-gradient-to-tr from-cyan-500 to-purple-600 opacity-20 blur-xl"></div>
+                        <div class="relative rounded-2xl overflow-hidden border border-slate-800 glass-card group">
+                            <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" alt="Dental Research and Science" class="w-full h-[450px] object-cover transition-transform duration-700 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                            <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl glass-card backdrop-blur-lg">
+                                <p class="text-xs font-semibold text-cyan-400 uppercase tracking-wider">Academic Focus</p>
+                                <p class="text-sm font-medium text-slate-200 mt-1">Advancing Scientific Literacy & Clinical Excellence in Dental Education.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Text Content -->
+                    <div class="lg:col-span-7 space-y-6">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold uppercase tracking-wider">
+                            About Shija Raj
+                        </div>
+
+                        <h2 class="text-3xl md:text-4xl font-extrabold text-white leading-tight">
+                            Elevating Dental Research Standards Through Dedicated Scientific Officer Leadership
+                        </h2>
+
+                        <p class="text-slate-300 leading-relaxed font-normal">
+                            As the **Local Scientific Officer at the Indian Association of Dental Students (IADS)**, Shija Raj leads critical initiatives aimed at fostering scientific research, peer review, and academic exchange among aspiring dental surgeons and researchers across the region.
+                        </p>
+
+                        <p class="text-slate-400 leading-relaxed">
+                            With a strong commitment to evidence-based practice and academic inquiry, Shija spearheads paper presentations, scientific workshops, and clinical symposia that empower dental students to present groundbreaking research on global stages.
+                        </p>
+
+                        <!-- Key Highlights Grid -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                            <div class="flex items-start gap-3 p-3 rounded-xl glass-card">
+                                <div class="p-2 rounded-lg bg-cyan-500/10 text-cyan-400">
+                                    <i class="fa-solid fa-microscope text-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-sm text-slate-200">Scientific Symposia</h4>
+                                    <p class="text-xs text-slate-400 mt-0.5">Organizing national-level research forums and competitions.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3 p-3 rounded-xl glass-card">
+                                <div class="p-2 rounded-lg bg-indigo-500/10 text-indigo-400">
+                                    <i class="fa-solid fa-book-open-reader text-lg"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-sm text-slate-200">Research Peer Review</h4>
+                                    <p class="text-xs text-slate-400 mt-0.5">Guiding undergraduate research protocols and abstracts.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES / PILLARS SECTION -->
+        <section id="expertise" class="py-24 relative">
+            <div class="max-w-7xl mx-auto px-6">
+                
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-xs font-semibold text-cyan-400 uppercase tracking-widest px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20">
+                        Scientific Pillars
+                    </span>
+                    <h2 class="text-3xl md:text-5xl font-extrabold text-white mt-4 tracking-tight">
+                        Core Competencies & Leadership Scope
+                    </h2>
+                    <p class="text-slate-400 mt-4 text-base">
+                        Bridging institutional academic standards with student innovation through structured scientific programs.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <!-- Card 1 -->
+                    <div class="p-8 rounded-2xl glass-card transition-all duration-300 hover:-translate-y-1">
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-cyan-500/20 to-cyan-500/5 flex items-center justify-center text-cyan-400 text-2xl mb-6 border border-cyan-500/20">
+                            <i class="fa-solid fa-vial-virus"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Scientific Research Facilitation</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Formulating frameworks to encourage undergraduate dental research, methodology design, and manuscript preparation.
+                        </p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="p-8 rounded-2xl glass-card transition-all duration-300 hover:-translate-y-1">
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-indigo-500/20 to-indigo-500/5 flex items-center justify-center text-indigo-400 text-2xl mb-6 border border-indigo-500/20">
+                            <i class="fa-solid fa-teeth-open"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Clinical Workshop Curation</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Structuring hands-on pre-conference workshops and clinical skill labs for dental students and interns.
+                        </p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="p-8 rounded-2xl glass-card transition-all duration-300 hover:-translate-y-1">
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-purple-500/20 to-purple-500/5 flex items-center justify-center text-purple-400 text-2xl mb-6 border border-purple-500/20">
+                            <i class="fa-solid fa-users-rectangle"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">IADS Scientific Exchange</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Connecting local dental chapters with national and international scientific conventions and student exchanges.
+                        </p>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="p-8 rounded-2xl glass-card transition-all duration-300 hover:-translate-y-1">
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-teal-500/20 to-teal-500/5 flex items-center justify-center text-teal-400 text-2xl mb-6 border border-teal-500/20">
+                            <i class="fa-solid fa-file-signature"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Paper & Poster Competitions</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Evaluating scientific paper submissions, coordinating judge panels, and ensuring academic fairness in poster presentations.
+                        </p>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="p-8 rounded-2xl glass-card transition-all duration-300 hover:-translate-y-1">
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-pink-500/20 to-pink-500/5 flex items-center justify-center text-pink-400 text-2xl mb-6 border border-pink-500/20">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Academic Mentorship</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Guiding young clinicians in career advancement, academic publishing, and participating in global dental forums.
+                        </p>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="p-8 rounded-2xl glass-card transition-all duration-300 hover:-translate-y-1">
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-blue-500/20 to-blue-500/5 flex items-center justify-center text-blue-400 text-2xl mb-6 border border-blue-500/20">
+                            <i class="fa-solid fa-network-wired"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3">Inter-College Collaborations</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Fostering active communication among dental institutions to promote joint research endeavors and webinars.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- INITIATIVES / WORK SHOWCASE -->
+        <section id="initiatives" class="py-24 relative bg-slate-950/80 border-t border-slate-800/50">
+            <div class="max-w-7xl mx-auto px-6">
+                
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+                    <div>
+                        <span class="text-xs font-semibold text-cyan-400 uppercase tracking-widest px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20">
+                            Impact & Highlights
+                        </span>
+                        <h2 class="text-3xl md:text-5xl font-extrabold text-white mt-4 tracking-tight">
+                            Key Academic Initiatives
+                        </h2>
+                    </div>
+                    <p class="text-slate-400 max-w-md text-sm">
+                        Selected milestones and projects orchestrated under Shija Raj's role as Local Scientific Officer.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Project Card 1 -->
+                    <div class="rounded-2xl glass-card overflow-hidden p-6 border border-slate-800 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="px-3 py-1 rounded-full text-xs font-semibold bg-cyan-500/10 text-cyan-400 border border-cyan-500/30">
+                                    Annual Scientific Convention
+                                </span>
+                                <span class="text-xs text-slate-500"><i class="fa-regular fa-calendar mr-1"></i>IADS Regional</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-2">National Student Dental Research Summit</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                                Coordinated paper submission pipelines, scientific judging rubrics, and interactive poster sessions involving 300+ delegates across dental institutions.
+                            </p>
+                        </div>
+                        <div class="flex items-center justify-between pt-4 border-t border-slate-800/80 text-xs text-slate-300 font-medium">
+                            <span><i class="fa-solid fa-users text-cyan-400 mr-2"></i>300+ Participants</span>
+                            <span><i class="fa-solid fa-microscope text-indigo-400 mr-2"></i>45+ Research Papers</span>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2 -->
+                    <div class="rounded-2xl glass-card overflow-hidden p-6 border border-slate-800 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-400 border border-indigo-500/30">
+                                    Educational Workshop
+                                </span>
+                                <span class="text-xs text-slate-500"><i class="fa-regular fa-calendar mr-1"></i>Academic Series</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-2">Evidence-Based Dental Research Masterclass</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                                Designed and executed an online/offline workshop series empowering dental students with practical methodologies for Systematic Reviews and Clinical Trials.
+                            </p>
+                        </div>
+                        <div class="flex items-center justify-between pt-4 border-t border-slate-800/80 text-xs text-slate-300 font-medium">
+                            <span><i class="fa-solid fa-chalkboard-user text-cyan-400 mr-2"></i>Interactive Sessions</span>
+                            <span><i class="fa-solid fa-certificate text-purple-400 mr-2"></i>Certified Training</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ENDORSEMENTS SECTION -->
+        <section id="endorsements" class="py-24 relative">
+            <div class="max-w-7xl mx-auto px-6">
+                
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-xs font-semibold text-cyan-400 uppercase tracking-widest px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20">
+                        Testimonials & Praise
+                    </span>
+                    <h2 class="text-3xl md:text-5xl font-extrabold text-white mt-4 tracking-tight">
+                        Endorsements from Peers & Academics
+                    </h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <!-- Testimonial 1 -->
+                    <div class="p-6 rounded-2xl glass-card flex flex-col justify-between">
+                        <div>
+                            <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                                "Shija Raj's dedication as Local Scientific Officer has drastically raised the scientific caliber of our student conferences. Her organizational clarity and passion for dental research are exemplary."
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                            <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold text-sm">
+                                AD
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Dr. A. Deshmukh</h4>
+                                <p class="text-xs text-slate-400">Senior Faculty & Dental Mentor</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="p-6 rounded-2xl glass-card flex flex-col justify-between">
+                        <div>
+                            <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                                "Working alongside Shija on the IADS scientific committee has been inspiring. Her structured approach to evaluating student research paper abstracts made our summit a huge success."
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                            <div class="w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-sm">
+                                RK
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">R. Kapoor</h4>
+                                <p class="text-xs text-slate-400">IADS Executive Member</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="p-6 rounded-2xl glass-card flex flex-col justify-between">
+                        <div>
+                            <div class="flex text-amber-400 text-sm gap-1 mb-4">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                                "Shija provided invaluable feedback on my scientific poster presentation. Her mentorship empowered me to present confidently and secure top honors!"
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                            <div class="w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 flex items-center justify-center font-bold text-sm">
+                                VN
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">V. Nair</h4>
+                                <p class="text-xs text-slate-400">Dental Student Delegate</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="py-24 relative bg-slate-950 border-t border-slate-800/80">
+            <div class="max-w-7xl mx-auto px-6">
+                
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    
+                    <!-- Contact Info -->
+                    <div class="lg:col-span-5 space-y-8">
+                        <div>
+                            <span class="text-xs font-semibold text-cyan-400 uppercase tracking-widest px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20">
+                                Get In Touch
+                            </span>
+                            <h2 class="text-3xl md:text-5xl font-extrabold text-white mt-4 tracking-tight">
+                                Let's Collaborate on Dental Science
+                            </h2>
+                            <p class="text-slate-400 mt-4 text-sm leading-relaxed">
+                                Reach out for academic collaborations, scientific event speaking, research mentorship, or organizational enquiries within the Indian Association of Dental Students.
+                            </p>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="p-4 rounded-xl glass-card flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl">
+                                    <i class="fa-solid fa-building-columns"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400">Organization</p>
+                                    <p class="text-sm font-bold text-slate-100">Indian Association of Dental Students</p>
+                                </div>
+                            </div>
+
+                            <div class="p-4 rounded-xl glass-card flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-xl">
+                                    <i class="fa-solid fa-user-shield"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400">Designation</p>
+                                    <p class="text-sm font-bold text-slate-100">Local Scientific Officer</p>
+                                </div>
+                            </div>
+
+                            <div class="p-4 rounded-xl glass-card flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl">
+                                    <i class="fa-solid fa-globe"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400">Network Status</p>
+                                    <p class="text-sm font-bold text-slate-100">Connected Member • Sep 2026</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="lg:col-span-7">
+                        <div class="p-8 rounded-2xl glass-card relative">
+                            <h3 class="text-xl font-bold text-white mb-6">Send a Direct Message</h3>
+                            <form onsubmit="event.preventDefault(); alert('Thank you for reaching out to Shija Raj. Your message has been sent successfully!');" class="space-y-4">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <div>
+                                        <label class="block text-xs font-semibold text-slate-300 mb-1.5">Your Name</label>
+                                        <input type="text" required placeholder="Dr. Jane Doe" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-slate-100 text-sm focus:outline-none focus:border-cyan-500 transition-colors">
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs font-semibold text-slate-300 mb-1.5">Your Email</label>
+                                        <input type="email" required placeholder="jane@example.com" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-slate-100 text-sm focus:outline-none focus:border-cyan-500 transition-colors">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-1.5">Subject</label>
+                                    <input type="text" required placeholder="Scientific Collaboration / Conference Invitation" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-slate-100 text-sm focus:outline-none focus:border-cyan-500 transition-colors">
+                                </div>
+
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-1.5">Message</label>
+                                    <textarea rows="4" required placeholder="Write your query or message here..." class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-slate-100 text-sm focus:outline-none focus:border-cyan-500 transition-colors resize-none"></textarea>
+                                </div>
+
+                                <button type="submit" class="w-full py-4 rounded-xl font-bold text-slate-950 bg-gradient-to-r from-cyan-400 via-teal-400 to-indigo-400 hover:opacity-90 transition-all shadow-lg shadow-cyan-500/20">
+                                    Submit Message <i class="fa-solid fa-paper-plane ml-2"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="py-8 bg-slate-950 border-t border-slate-900 text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© 2026 Shija Raj. All rights reserved. Indian Association of Dental Students.</p>
+            <div class="flex items-center gap-6">
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-linkedin text-base"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-solid fa-envelope text-base"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-solid fa-arrow-up text-base"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
