@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Devika Yadav | Dental Surgeon & Clinical Intern</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            cyan: '#0D8ABC',
+                            teal: '#14b8a6',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(13, 138, 188, 0.3);
+        }
+        .glow-card:hover {
+            box-shadow: 0 0 30px -5px rgba(99, 102, 241, 0.25);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-white">
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-indigo-500 to-purple-500 p-[2px]">
+                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center font-bold text-cyan-400 group-hover:bg-transparent group-hover:text-white transition-all duration-300">
+                        DY
+                    </div>
+                </div>
+                <span class="font-bold text-lg tracking-tight text-white group-hover:text-cyan-400 transition-colors">
+                    Dr. Devika Yadav
+                </span>
+            </a>
+            
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-cyan-400 transition-colors">Clinical Focus</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
+                <a href="#endorsements" class="hover:text-cyan-400 transition-colors">Endorsements</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+            </div>
+
+            <a href="#contact" class="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-xs font-semibold rounded-full group bg-gradient-to-br from-cyan-500 to-indigo-600 group-hover:from-cyan-500 group-hover:to-indigo-500 hover:text-white text-white focus:ring-4 focus:outline-none focus:ring-cyan-800">
+                <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-slate-950 rounded-full group-hover:bg-opacity-0">
+                    Get In Touch
+                </span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center pt-32 pb-20 overflow-hidden">
+        <!-- Ambient Glow Background -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-cyan-500/20 via-indigo-500/20 to-purple-500/20 blur-[120px] rounded-full pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
+            
+            <!-- Glowing Double Gradient Avatar Frame -->
+            <div class="relative w-44 h-44 mx-auto mb-8">
+                <div class="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-500 via-indigo-500 to-pink-500 animate-spin-slow blur-md opacity-75"></div>
+                <div class="relative w-full h-full rounded-full p-1 bg-gradient-to-tr from-cyan-400 via-indigo-500 to-purple-600">
+                    <img src="https://ui-avatars.com/api/?name=Dr.Devika+Yadav&size=200&background=0D8ABC&color=fff&bold=true" 
+                         alt="Dr. Devika Yadav" 
+                         class="w-full h-full rounded-full object-cover border-4 border-slate-950 shadow-2xl">
+                </div>
+            </div>
+
+            <!-- Role Badge -->
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 text-xs font-semibold text-cyan-400 mb-6 backdrop-blur-md">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                Intern at ITS Centre for Dental Studies and Research
+            </div>
+
+            <!-- Hero Headline -->
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6">
+                Advancing Oral Health with <br class="hidden sm:inline" />
+                <span class="bg-gradient-to-r from-cyan-400 via-indigo-400 to-pink-500 text-transparent bg-clip-text">
+                    Precision, Care & Clinical Excellence
+                </span>
+            </h1>
+
+            <p class="max-w-2xl mx-auto text-slate-400 text-base md:text-lg mb-10 leading-relaxed font-normal">
+                Dedicated Dental Surgeon and Intern focused on modern restorative techniques, preventive care, and patient-centered treatment at one of the premier dental institutes.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+                <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 text-white font-semibold shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2">
+                    <i class="fa-solid me-1 fa-calendar-check"></i> Book Consultation
+                </a>
+                <a href="#expertise" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900/80 hover:bg-slate-800/80 border border-slate-800 text-slate-200 font-semibold hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2 backdrop-blur-md">
+                    Explore Expertise <i class="fa-solid fa-arrow-right text-xs text-cyan-400"></i>
+                </a>
+            </div>
+
+            <!-- Trust Badges -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto pt-8 border-t border-slate-800/60">
+                <div class="p-4 rounded-2xl bg-slate-900/40 border border-slate-800/50 backdrop-blur-sm">
+                    <div class="text-2xl font-bold text-cyan-400">ITS CDSR</div>
+                    <div class="text-xs text-slate-400 mt-1">Clinical Institute</div>
+                </div>
+                <div class="p-4 rounded-2xl bg-slate-900/40 border border-slate-800/50 backdrop-blur-sm">
+                    <div class="text-2xl font-bold text-indigo-400">100%</div>
+                    <div class="text-xs text-slate-400 mt-1">Patient Dedication</div>
+                </div>
+                <div class="p-4 rounded-2xl bg-slate-900/40 border border-slate-800/50 backdrop-blur-sm">
+                    <div class="text-2xl font-bold text-purple-400">Advanced</div>
+                    <div class="text-xs text-slate-400 mt-1">Diagnostics & Diagnostics</div>
+                </div>
+                <div class="p-4 rounded-2xl bg-slate-900/40 border border-slate-800/50 backdrop-blur-sm">
+                    <div class="text-2xl font-bold text-pink-400">Preventive</div>
+                    <div class="text-xs text-slate-400 mt-1">Oral Health Focus</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-24 relative bg-slate-950/50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Column: Image with Overlay -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative rounded-3xl overflow-hidden border border-slate-800 shadow-2xl group">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Modern Dental Operatory" 
+                             class="w-full h-[450px] object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-slate-900/80 backdrop-blur-md border border-slate-800">
+                            <p class="text-xs text-cyan-400 font-semibold tracking-wider uppercase mb-1">Affiliation</p>
+                            <p class="text-sm font-medium text-white">ITS Centre for Dental Studies and Research</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Content -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-xs font-semibold text-cyan-400">
+                        <i class="fa-solid fa-stethoscope"></i> About Dr. Devika Yadav
+                    </div>
+
+                    <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-white leading-tight">
+                        Combining Clinical Precision with Compassionate Dental Care
+                    </h2>
+
+                    <p class="text-slate-400 text-base leading-relaxed">
+                        As a motivated Dental Intern at the renowned <span class="text-slate-200 font-medium">ITS Centre for Dental Studies and Research</span>, Dr. Devika Yadav is committed to elevating standards in patient management, diagnostic precision, and surgical assistance.
+                    </p>
+
+                    <p class="text-slate-400 text-base leading-relaxed">
+                        Her clinical ethos revolves around meticulous attention to detail, evidence-based dentistry, and creating a comforting environment for patients undergoing complex dental procedures.
+                    </p>
+
+                    <!-- Key Pillars Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80 hover:border-cyan-500/40 transition-all">
+                            <i class="fa-solid fa-teeth text-cyan-400 text-xl mb-2"></i>
+                            <h3 class="text-white font-semibold text-sm mb-1">Restorative Dentistry</h3>
+                            <p class="text-xs text-slate-400">Endodontic preparations, aesthetic fillings, and crown fittings.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80 hover:border-indigo-500/40 transition-all">
+                            <i class="fa-solid fa-notes-medical text-indigo-400 text-xl mb-2"></i>
+                            <h3 class="text-white font-semibold text-sm mb-1">Comprehensive Diagnosis</h3>
+                            <p class="text-xs text-slate-400">Accurate intraoral examinations, radiographic interpretation, and treatment plans.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-semibold uppercase tracking-widest text-cyan-400 bg-cyan-500/10 px-4 py-1.5 rounded-full border border-cyan-500/20">Clinical Capabilities</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-white mt-4 tracking-tight">Specialized Dental Services & Care</h2>
+                <p class="text-slate-400 mt-3 text-base">Comprehensive clinical skills honed through rigorous academic and hands-on practice.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Card 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 rounded-2xl p-8 glow-card group relative">
+                    <div class="w-14 h-14 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Oral Diagnostics & X-Rays</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">In-depth intraoral examinations, diagnostic charting, digital radiographs, and custom tailored treatment plans.</p>
+                    <span class="text-xs text-indigo-400 font-semibold tracking-wide uppercase">Diagnostic Care</span>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 rounded-2xl p-8 glow-card group relative">
+                    <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Scaling & Prophylaxis</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Professional ultrasonic scaling, plaque removal, polishing, and preventive periodontal management.</p>
+                    <span class="text-xs text-cyan-400 font-semibold tracking-wide uppercase">Preventive Care</span>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 transition-all duration-300 rounded-2xl p-8 glow-card group relative">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Restorative Procedures</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Composite and amalgam cavity restorations, aesthetic tooth rebuilding, and caries risk assessment.</p>
+                    <span class="text-xs text-purple-400 font-semibold tracking-wide uppercase">Operative Dentistry</span>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-pink-500/50 transition-all duration-300 rounded-2xl p-8 glow-card group relative">
+                    <div class="w-14 h-14 rounded-2xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-syringe"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Surgical Assistance & Extractions</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Assisting in minor oral surgeries, simple tooth extractions, local anesthesia administration, and post-op care.</p>
+                    <span class="text-xs text-pink-400 font-semibold tracking-wide uppercase">Oral Surgery</span>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-emerald-500/50 transition-all duration-300 rounded-2xl p-8 glow-card group relative">
+                    <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Endodontic Support</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Root canal preparation support, canal obturation assistance, and emergency pain management routines.</p>
+                    <span class="text-xs text-emerald-400 font-semibold tracking-wide uppercase">Endodontics</span>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-amber-500/50 transition-all duration-300 rounded-2xl p-8 glow-card group relative">
+                    <div class="w-14 h-14 rounded-2xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-hands-holding-child"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Pediatric & Oral Hygiene</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Gentle pediatric patient management, fluoride therapy, fissure sealants, and patient oral health education.</p>
+                    <span class="text-xs text-amber-400 font-semibold tracking-wide uppercase">Patient Wellness</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Endorsements Section -->
+    <section id="endorsements" class="py-24 bg-slate-950/60 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-semibold uppercase tracking-widest text-indigo-400 bg-indigo-500/10 px-4 py-1.5 rounded-full border border-indigo-500/20">Endorsements</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-white mt-4">Clinical Peer & Mentor Reviews</h2>
+                <p class="text-slate-400 text-sm mt-2">Feedback from faculty members, clinical supervisors, and patients.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Endorsement 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center space-x-1 text-amber-400 mb-4">
+                            <i class="fa-solid fa-star text-sm"></i>
+                            <i class="fa-solid fa-star text-sm"></i>
+                            <i class="fa-solid fa-star text-sm"></i>
+                            <i class="fa-solid fa-star text-sm"></i>
+                            <i class="fa-solid fa-star text-sm"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Dr. Devika shows remarkable clinical aptitude and empathetic patient handling. Her efficiency during complex dental operatory routines is commendable."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800/60">
+                        <div class="w-10 h-10 rounded-full bg-cyan-500/20 flex items-center justify-center font-bold text-cyan-400 text-sm">
+                            SD
+                        </div>
+                        <div>
+                            <p class="text-white font-semibold text-sm">Senior Department Faculty</p>
+                            <p class="text-xs text-slate-500">ITS CDSR</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Endorsement 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center space-x-1 text-amber-400 mb-4">
+                            <i class="fa-solid fa-star text-sm"></i>
+                            <i class="fa-solid fa-star text-sm"></i>
+                            <i class="fa-solid fa-star text-sm"></i>
+                            <i class="fa-solid fa-star text-sm"></i>
+                            <i class="fa-solid fa-star text-sm"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Extremely thorough with diagnostic charting and patient communication. She ensured my procedure was completely comfortable and stress-free."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800/60">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 flex items-center justify-center font-bold text-indigo-400 text-sm">
+                            AP
+                        </div>
+                        <div>
+                            <p class="text-white font-semibold text-sm">Ananya P.</p>
+                            <p class="text-xs text-slate-500">Patient Review</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Endorsement 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center space-x-1 text-amber-400 mb-4">
+                            <i class="fa-solid fa-star text-sm"></i>
+                            <i class="fa-solid fa-star text-sm"></i>
+                            <i class="fa-solid fa-star text-sm"></i>
+                            <i class="fa-solid fa-star text-sm"></i>
+                            <i class="fa-solid fa-star text-sm"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "A hard-working colleague with impressive clinical ethics, precise technique in restorative dentistry, and high dedication to quality care."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800/60">
+                        <div class="w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center font-bold text-purple-400 text-sm">
+                            CR
+                        </div>
+                        <div>
+                            <p class="text-white font-semibold text-sm">Clinical Resident</p>
+                            <p class="text-xs text-slate-500">ITS Dental Hospital</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Info Column -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-xs font-semibold uppercase tracking-widest text-cyan-400 bg-cyan-500/10 px-4 py-1.5 rounded-full border border-cyan-500/20">Connect Direct</span>
+                        <h2 class="text-3xl md:text-4xl font-extrabold text-white mt-4 tracking-tight">Get in Touch</h2>
+                        <p class="text-slate-400 text-sm mt-3">Interested in clinical collaboration, professional networking, or patient care inquiries?</p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400">
+                                <i class="fa-solid fa-hospital text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Current Affiliation</p>
+                                <p class="text-sm font-semibold text-white">ITS Centre for Dental Studies and Research</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400">
+                                <i class="fa-solid fa-user-doctor text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Position</p>
+                                <p class="text-sm font-semibold text-white">Dental Intern / Surgeon</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400">
+                                <i class="fa-solid fa-calendar-check text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Connection Verified</p>
+                                <p class="text-sm font-semibold text-white">06 Sep 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Column -->
+                <div class="lg:col-span-7">
+                    <form onsubmit="event.preventDefault(); alert('Thank you for reaching out! Your message has been received.');" 
+                          class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-3xl space-y-6 glow-effect">
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Name</label>
+                                <input type="text" required placeholder="John Doe" 
+                                       class="w-full px-4 py-3.5 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Email Address</label>
+                                <input type="email" required placeholder="john@example.com" 
+                                       class="w-full px-4 py-3.5 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Subject</label>
+                            <input type="text" required placeholder="Clinical Inquiry / Consultation" 
+                                   class="w-full px-4 py-3.5 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Message</label>
+                            <textarea rows="4" required placeholder="Write your inquiry or message here..." 
+                                      class="w-full px-4 py-3.5 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm resize-none"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white font-bold text-sm shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 hover:scale-[1.01] transition-all duration-300 flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-800/80 bg-slate-950 text-slate-500 text-xs text-center">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© 2026 Dr. Devika Yadav | ITS Centre for Dental Studies and Research</p>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-linkedin text-base"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-solid fa-envelope text-base"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
