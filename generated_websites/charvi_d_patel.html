@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charvi D Patel | Clinic Head & Healthcare Leader</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            cyan: '#0D8ABC',
+                            teal: '#14b8a6',
+                            indigo: '#6366f1',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card:hover {
+            border-color: rgba(13, 138, 188, 0.4);
+            box-shadow: 0 10px 30px -10px rgba(13, 138, 188, 0.25);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #38bdf8 0%, #0D8ABC 50%, #818cf8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-border {
+            position: relative;
+            background: linear-gradient(135deg, #0D8ABC, #6366f1, #ec4899);
+            padding: 3px;
+            border-radius: 9999px;
+        }
+        .glow-bg {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            filter: blur(120px);
+            opacity: 0.15;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-white">
+
+    <!-- Ambient Lighting Backdrop -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
+        <div class="glow-bg bg-cyan-500 -top-40 -left-40"></div>
+        <div class="glow-bg bg-indigo-500 top-1/3 -right-40"></div>
+        <div class="glow-bg bg-teal-500 -bottom-40 left-1/3"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-tight text-white flex items-center gap-2">
+                <span class="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center text-white font-extrabold text-sm shadow-lg shadow-cyan-500/20">CP</span>
+                <span>Charvi D Patel<span class="text-cyan-400">.</span></span>
+            </a>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-cyan-400 transition-colors">Expertise</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Endorsements</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+            </nav>
+            <div class="hidden md:flex items-center gap-4">
+                <a href="#contact" class="px-5 py-2.5 rounded-full text-sm font-semibold bg-gradient-to-r from-cyan-500 to-indigo-600 hover:from-cyan-400 hover:to-indigo-500 text-white transition-all shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40">
+                    Schedule Consultation
+                </a>
+            </div>
+            <button class="md:hidden text-slate-300 text-2xl focus:outline-none" id="menuBtn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="fixed inset-x-0 top-20 bg-slate-950/95 backdrop-blur-xl border-b border-slate-800 p-6 hidden flex-col gap-4 z-40 md:hidden">
+        <a href="#about" class="text-slate-300 hover:text-cyan-400 py-2">About</a>
+        <a href="#expertise" class="text-slate-300 hover:text-cyan-400 py-2">Expertise</a>
+        <a href="#services" class="text-slate-300 hover:text-cyan-400 py-2">Services</a>
+        <a href="#testimonials" class="text-slate-300 hover:text-cyan-400 py-2">Endorsements</a>
+        <a href="#contact" class="text-slate-300 hover:text-cyan-400 py-2">Contact</a>
+        <a href="#contact" class="px-5 py-2.5 rounded-full text-sm font-semibold bg-gradient-to-r from-cyan-500 to-indigo-600 text-white text-center">Schedule Consultation</a>
+    </div>
+
+    <main class="relative z-10 pt-28">
+        <!-- Hero Section -->
+        <section class="min-h-[85vh] flex items-center justify-center py-16 px-6">
+            <div class="max-w-7xl mx-auto grid md:grid-cols-12 gap-12 items-center">
+                <div class="md:col-span-7 space-y-8 text-center md:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border border-cyan-500/30 text-cyan-300 text-xs font-semibold tracking-wide uppercase">
+                        <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                        Clinic Head @ Clove Dental
+                    </div>
+                    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
+                        Transforming Smiles & <br class="hidden sm:inline" />
+                        <span class="gradient-text">Elevating Clinical Leadership</span>
+                    </h1>
+                    <p class="text-slate-400 text-lg sm:text-xl max-w-2xl font-light leading-relaxed">
+                        Dedicated dental healthcare executive setting gold standards in patient care, clinical operations, and advanced aesthetic treatment at India’s premier dental network.
+                    </p>
+                    
+                    <div class="flex flex-wrap items-center justify-center md:justify-start gap-4 pt-2">
+                        <a href="#contact" class="px-8 py-4 rounded-full font-semibold bg-gradient-to-r from-cyan-500 to-indigo-600 hover:from-cyan-400 hover:to-indigo-500 text-white transition-all shadow-xl shadow-cyan-500/25 hover:scale-105">
+                            Get In Touch <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                        </a>
+                        <a href="#about" class="px-8 py-4 rounded-full font-semibold glass-card text-slate-200 hover:text-white hover:bg-slate-800/80 transition-all border border-slate-700">
+                            Executive Profile
+                        </a>
+                    </div>
+
+                    <!-- Hero Stats Badge Grid -->
+                    <div class="grid grid-cols-3 gap-4 pt-8 border-t border-slate-800/80">
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-bold text-white">10k+</div>
+                            <div class="text-xs text-slate-400 mt-1">Patients Treated</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-bold text-white">99.8%</div>
+                            <div class="text-xs text-slate-400 mt-1">Satisfaction Rate</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-bold text-white">100%</div>
+                            <div class="text-xs text-slate-400 mt-1">Safety Compliance</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Profile Avatar Frame -->
+                <div class="md:col-span-5 flex justify-center">
+                    <div class="relative group">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-cyan-500 via-teal-500 to-indigo-500 rounded-full blur-2xl opacity-50 group-hover:opacity-80 transition duration-1000"></div>
+                        <div class="gradient-border relative">
+                            <img src="https://ui-avatars.com/api/?name=Charvi+D+Patel&size=200&background=0D8ABC&color=fff&bold=true" 
+                                 alt="Charvi D Patel" 
+                                 class="w-64 h-64 sm:w-80 sm:h-80 rounded-full object-cover bg-slate-900 border-4 border-slate-950 shadow-2xl relative z-10">
+                        </div>
+                        <!-- Floating Badge -->
+                        <div class="absolute -bottom-4 right-4 z-20 glass-card px-4 py-2 rounded-2xl border border-slate-700/80 flex items-center gap-3 shadow-2xl">
+                            <i class="fa-solid fa-award text-amber-400 text-2xl"></i>
+                            <div class="text-left">
+                                <p class="text-xs font-semibold text-white">Excellence in Care</p>
+                                <p class="text-[10px] text-slate-400">Clove Dental Leadership</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Executive Profile & About Section -->
+        <section id="about" class="py-24 px-6 bg-slate-900/40 relative border-y border-slate-800/50">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid md:grid-cols-12 gap-12 items-center">
+                    <div class="md:col-span-6 relative">
+                        <div class="relative rounded-2xl overflow-hidden glass-card border border-slate-800 group">
+                            <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Modern Dental Clinic" 
+                                 class="w-full h-[420px] object-cover group-hover:scale-105 transition duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                            <div class="absolute bottom-6 left-6 right-6">
+                                <p class="text-xs font-semibold uppercase tracking-wider text-cyan-400">Clinical Leadership</p>
+                                <h3 class="text-xl font-bold text-white mt-1">State-of-the-Art Dental Excellence</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="md:col-span-6 space-y-6">
+                        <div class="inline-block px-3 py-1 rounded-md bg-cyan-500/10 text-cyan-400 text-xs font-semibold">
+                            ABOUT CHARVI D PATEL
+                        </div>
+                        <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white leading-tight">
+                            Leading Healthcare Teams to Deliver <span class="gradient-text">World-Class Oral Healthcare</span>
+                        </h2>
+                        <p class="text-slate-300 leading-relaxed font-light">
+                            As the Clinic Head at Clove Dental, Charvi D Patel combines clinical acumen with operational strategic mastery. Focused on patient comfort, safety, and evidence-based treatments, Charvi spearheads a multidisciplinary team committed to precision dentistry.
+                        </p>
+                        <p class="text-slate-400 leading-relaxed font-light text-sm">
+                            From advanced diagnostic protocols to complex smile design, the clinic under Charvi's direction adheres to strict international hygiene and quality standards—ensuring every patient experiences seamless, compassionate, and high-tech care.
+                        </p>
+
+                        <div class="grid grid-cols-2 gap-4 pt-4">
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-circle-check text-cyan-400 mt-1"></i>
+                                <div>
+                                    <h4 class="text-sm font-semibold text-white">Sterilization Protocols</h4>
+                                    <p class="text-xs text-slate-400">4-Step Strict Hygiene Standards</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="fa-solid fa-circle-check text-cyan-400 mt-1"></i>
+                                <div>
+                                    <h4 class="text-sm font-semibold text-white">Patient First Ethos</h4>
+                                    <p class="text-xs text-slate-400">Painless & Personalized Treatment</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Expertise / Strategic Pillars -->
+        <section id="expertise" class="py-24 px-6">
+            <div class="max-w-7xl mx-auto text-center space-y-4 mb-16">
+                <span class="px-3 py-1 rounded-md bg-indigo-500/10 text-indigo-400 text-xs font-semibold uppercase tracking-wider">
+                    Core Pillars
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white">Leadership & Clinical Capabilities</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto text-sm font-light">
+                    Bridging healthcare management with cutting-edge dental science to create unmatched patient outcomes.
+                </p>
+            </div>
+
+            <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
+                <!-- Pillar 1 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 relative group">
+                    <div class="w-14 h-14 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-cyan-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-user-doctor"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Clinical Operations</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed font-light">
+                        Overseeing seamless day-to-day clinical functions, maintaining strict compliance with medical regulations, and optimizing patient journey workflows.
+                    </p>
+                </div>
+
+                <!-- Pillar 2 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 relative group">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-indigo-600 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Aesthetic & Preventive Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed font-light">
+                        Championing preventive oral health and specialized smile restoration therapies utilizing modern biomaterials and digital imaging technologies.
+                    </p>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 relative group">
+                    <div class="w-14 h-14 rounded-xl bg-teal-500/10 text-teal-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-teal-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-hospital-user"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Team Mentorship</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed font-light">
+                        Nurturing high-performing medical and administrative teams through continuous training, empathetic guidance, and quality assurance programs.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Grid -->
+        <section id="services" class="py-24 px-6 bg-slate-900/30 border-t border-slate-800/60">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+                    <div>
+                        <span class="px-3 py-1 rounded-md bg-cyan-500/10 text-cyan-400 text-xs font-semibold uppercase tracking-wider">
+                            Comprehensive Care
+                        </span>
+                        <h2 class="text-3xl sm:text-4xl font-bold text-white mt-3">Clinical Specialties & Services</h2>
+                    </div>
+                    <p class="text-slate-400 max-w-md text-sm font-light">
+                        Delivering a full spectrum of advanced dental care backed by Clove Dental's state-of-the-art technological infrastructure.
+                    </p>
+                </div>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Service 1 -->
+                    <div class="glass-card p-6 rounded-xl space-y-4 hover:translate-y-[-4px] transition-all">
+                        <div class="text-cyan-400 text-2xl"><i class="fa-solid fa-teeth"></i></div>
+                        <h4 class="text-lg font-semibold text-white">Comprehensive Exams</h4>
+                        <p class="text-slate-400 text-xs leading-relaxed">Full-mouth digital evaluations, 3D imaging, and individualized preventive plans.</p>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="glass-card p-6 rounded-xl space-y-4 hover:translate-y-[-4px] transition-all">
+                        <div class="text-indigo-400 text-2xl"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                        <h4 class="text-lg font-semibold text-white">Smile Design & Aesthetics</h4>
+                        <p class="text-slate-400 text-xs leading-relaxed">Veneers, teeth whitening, and cosmetic alignment for radiant confidence.</p>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="glass-card p-6 rounded-xl space-y-4 hover:translate-y-[-4px] transition-all">
+                        <div class="text-teal-400 text-2xl"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h4 class="text-lg font-semibold text-white">Restorative Dentistry</h4>
+                        <p class="text-slate-400 text-xs leading-relaxed">Precision crowns, implants, and painless root canal treatments.</p>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="glass-card p-6 rounded-xl space-y-4 hover:translate-y-[-4px] transition-all">
+                        <div class="text-pink-400 text-2xl"><i class="fa-solid fa-heart-pulse"></i></div>
+                        <h4 class="text-lg font-semibold text-white">Preventive Care</h4>
+                        <p class="text-slate-400 text-xs leading-relaxed">Scaling, deep cleaning, and periodontal management for long-term health.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-24 px-6 relative">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center space-y-4 mb-16">
+                    <span class="px-3 py-1 rounded-md bg-amber-500/10 text-amber-400 text-xs font-semibold uppercase tracking-wider">
+                        Patient & Peer Reviews
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white">Words of Trust & Appreciation</h2>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <div class="flex text-amber-400 gap-1 text-sm">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-300 text-sm leading-relaxed italic">
+                                "The level of professionalism and gentle care at Clove Dental under Dr. Charvi Patel's leadership is unmatched. My complete smile makeover was virtually painless!"
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-6 border-t border-slate-800 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center font-bold text-cyan-400 text-sm">
+                                AR
+                            </div>
+                            <div>
+                                <h5 class="text-sm font-semibold text-white">Ananya Rao</h5>
+                                <p class="text-xs text-slate-500">Patient</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <div class="flex text-amber-400 gap-1 text-sm">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-300 text-sm leading-relaxed italic">
+                                "Charvi leads the clinic with remarkable efficiency and strict hygiene standards. As a colleague, I deeply respect her commitment to patient welfare."
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-6 border-t border-slate-800 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center font-bold text-indigo-400 text-sm">
+                                SM
+                            </div>
+                            <div>
+                                <h5 class="text-sm font-semibold text-white">Dr. S. Mehta</h5>
+                                <p class="text-xs text-slate-500">Senior Dental Specialist</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <div class="flex text-amber-400 gap-1 text-sm">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-300 text-sm leading-relaxed italic">
+                                "Extremely smooth appointment management and thorough treatment explanation. You know you're in trusted hands from the moment you step into the clinic."
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-6 border-t border-slate-800 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center font-bold text-teal-400 text-sm">
+                                VK
+                            </div>
+                            <div>
+                                <h5 class="text-sm font-semibold text-white">Vikram K.</h5>
+                                <p class="text-xs text-slate-500">Corporate Client</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-24 px-6 bg-slate-900/50 border-t border-slate-800/80 relative">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid md:grid-cols-12 gap-12">
+                    <!-- Direct Info -->
+                    <div class="md:col-span-5 space-y-8">
+                        <div>
+                            <span class="px-3 py-1 rounded-md bg-cyan-500/10 text-cyan-400 text-xs font-semibold uppercase tracking-wider">
+                                Reach Out
+                            </span>
+                            <h2 class="text-3xl sm:text-4xl font-bold text-white mt-3">Connect With Charvi</h2>
+                            <p class="text-slate-400 text-sm mt-2 font-light">
+                                Looking to schedule a consultation, explore clinical partnerships, or learn more about Clove Dental services? Get in touch today.
+                            </p>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="glass-card p-4 rounded-xl flex items-center gap-4">
+                                <div class="w-10 h-10 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-lg">
+                                    <i class="fa-solid fa-building-user"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400">Position & Organization</p>
+                                    <p class="text-sm font-semibold text-white">Clinic Head, Clove Dental Network</p>
+                                </div>
+                            </div>
+
+                            <div class="glass-card p-4 rounded-xl flex items-center gap-4">
+                                <div class="w-10 h-10 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-lg">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400">Professional Inquiries</p>
+                                    <p class="text-sm font-semibold text-white">charvi.patel@clovedental.in</p>
+                                </div>
+                            </div>
+
+                            <div class="glass-card p-4 rounded-xl flex items-center gap-4">
+                                <div class="w-10 h-10 rounded-lg bg-teal-500/10 text-teal-400 flex items-center justify-center text-lg">
+                                    <i class="fa-solid fa-calendar-check"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400">Professional Connection</p>
+                                    <p class="text-sm font-semibold text-white">Connected 06 Sep 2026</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="md:col-span-7">
+                        <form onsubmit="event.preventDefault(); alert('Thank you for reaching out! Your message has been sent successfully.');" class="glass-card p-8 rounded-2xl space-y-6">
+                            <h3 class="text-xl font-bold text-white">Send a Direct Message</h3>
+                            <div class="grid sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">FULL NAME</label>
+                                    <input type="text" placeholder="John Doe" required class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 focus:outline-none focus:border-cyan-500 transition">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">EMAIL ADDRESS</label>
+                                    <input type="email" placeholder="john@example.com" required class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 focus:outline-none focus:border-cyan-500 transition">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">SUBJECT</label>
+                                <input type="text" placeholder="Consultation Inquiry / Clinical Discussion" required class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 focus:outline-none focus:border-cyan-500 transition">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">MESSAGE</label>
+                                <textarea rows="4" placeholder="Share your inquiry or scheduling request..." required class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 focus:outline-none focus:border-cyan-500 transition"></textarea>
+                            </div>
+                            <button type="submit" class="w-full py-4 rounded-xl font-semibold bg-gradient-to-r from-cyan-500 via-teal-500 to-indigo-600 hover:from-cyan-400 hover:to-indigo-500 text-white transition-all shadow-lg shadow-cyan-500/20">
+                                Send Message <i class="fa-solid fa-paper-plane ml-2 text-xs"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 px-6 border-t border-slate-800/80 text-slate-500 text-xs">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© 2026 Charvi D Patel. Clinic Head at Clove Dental. All rights reserved.</p>
+            <div class="flex items-center gap-6 text-slate-400">
+                <a href="#" class="hover:text-cyan-400 transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-cyan-400 transition-colors">Terms of Service</a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-linkedin text-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+        });
+    </script>
+</body>
+</html>
