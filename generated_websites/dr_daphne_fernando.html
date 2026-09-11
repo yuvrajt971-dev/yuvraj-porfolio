@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Daphne Fernando | Zonal Head - toothsialigners</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            cyan: '#0D8ABC',
+                            teal: '#14b8a6',
+                            indigo: '#6366f1',
+                            purple: '#a855f7'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card:hover {
+            border-color: rgba(13, 138, 188, 0.4);
+            box-shadow: 0 10px 30px -10px rgba(13, 138, 188, 0.2);
+        }
+        .glow-bg {
+            background: radial-gradient(circle at 50% 0%, rgba(13, 138, 188, 0.18), rgba(168, 85, 247, 0.08) 50%, transparent 70%);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-white relative overflow-x-hidden">
+
+    <!-- Ambient Glowing Background Effects -->
+    <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+        <div class="absolute -top-40 -left-40 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl"></div>
+        <div class="absolute top-1/3 -right-40 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-40 left-1/3 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-indigo-500 to-purple-500 p-[2px] transition-transform duration-300 group-hover:scale-105">
+                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+                        <i class="fa-solid fa-tooth text-cyan-400 text-lg"></i>
+                    </div>
+                </div>
+                <div>
+                    <span class="font-extrabold text-lg tracking-tight bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent">Dr. Daphne Fernando</span>
+                    <span class="block text-[10px] font-semibold tracking-wider text-cyan-400 uppercase">toothsialigners</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-cyan-400 transition-colors">Expertise</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
+                <a href="#endorsements" class="hover:text-cyan-400 transition-colors">Endorsements</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+            </nav>
+
+            <a href="#contact" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-semibold tracking-wide bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 text-white shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 hover:scale-[1.02] transition-all duration-300">
+                <i class="fa-solid fa-calendar-check"></i>
+                <span>Get in Touch</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-12 pb-24 lg:pt-20 lg:pb-32 glow-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Content -->
+                <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-slate-900/80 border border-slate-700/80 text-cyan-400 shadow-inner">
+                        <span class="relative flex h-2 w-2">
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
+                        </span>
+                        <span>Zonal Head @ toothsialigners</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                        Revolutionizing Smiles with <span class="bg-gradient-to-r from-cyan-400 via-indigo-400 to-purple-400 bg-clip-text text-transparent">Digital Precision</span> & Leadership.
+                    </h1>
+
+                    <p class="text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+                        Leading strategic operations, orthodontic excellence, and clear aligner innovation across key zones to deliver seamless smile transformations at scale.
+                    </p>
+
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#contact" class="px-7 py-3.5 rounded-xl font-semibold text-sm bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 text-white shadow-xl shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:-translate-y-0.5 transition-all duration-300 flex items-center gap-2">
+                            <span>Connect Directly</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                        <a href="#about" class="px-7 py-3.5 rounded-xl font-semibold text-sm glass-card text-slate-200 hover:text-white hover:bg-slate-800/80 transition-all duration-300 flex items-center gap-2">
+                            <i class="fa-solid fa-circle-info text-cyan-400"></i>
+                            <span>View Executive Profile</span>
+                        </a>
+                    </div>
+
+                    <!-- Trust Stats -->
+                    <div class="pt-8 grid grid-cols-2 sm:grid-cols-3 gap-6 border-t border-slate-800/80">
+                        <div>
+                            <div class="text-2xl font-bold text-white">100%</div>
+                            <div class="text-xs text-slate-400 mt-1">Clinical Excellence</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-cyan-400">Zonal</div>
+                            <div class="text-xs text-slate-400 mt-1">Leadership Focus</div>
+                        </div>
+                        <div class="col-span-2 sm:col-span-1">
+                            <div class="text-2xl font-bold text-purple-400">Next-Gen</div>
+                            <div class="text-xs text-slate-400 mt-1">Clear Aligner Tech</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Avatar & Visual Frame -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative group">
+                        <!-- Outer Glowing Ring -->
+                        <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 blur-lg opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+                        
+                        <!-- Inner Container -->
+                        <div class="relative p-2 rounded-full bg-slate-950 border border-slate-800 shadow-2xl">
+                            <img src="https://ui-avatars.com/api/?name=Dr.+Daphne+Fernando&size=200&background=0D8ABC&color=fff&bold=true" 
+                                 alt="Dr. Daphne Fernando" 
+                                 class="w-64 h-64 sm:w-72 sm:h-72 rounded-full object-cover shadow-inner">
+                        </div>
+
+                        <!-- Floating Badge -->
+                        <div class="absolute -bottom-4 right-2 glass-card px-4 py-2.5 rounded-2xl flex items-center gap-3 shadow-2xl border border-slate-700">
+                            <div class="w-8 h-8 rounded-lg bg-cyan-500/20 flex items-center justify-center text-cyan-400">
+                                <i class="fa-solid fa-award text-sm"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-bold text-white">Healthcare Leader</p>
+                                <p class="text-[10px] text-slate-400">toothsialigners</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Industry Focus -->
+    <section id="about" class="py-20 relative bg-slate-900/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Industry Image Grid -->
+                <div class="lg:col-span-6">
+                    <div class="relative rounded-3xl overflow-hidden glass-card p-3 border border-slate-800">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" 
+                             alt="Professional Healthcare & Innovation" 
+                             class="w-full h-96 object-cover rounded-2xl">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        
+                        <div class="absolute bottom-8 left-8 right-8 p-6 glass-card rounded-2xl border border-slate-700/60">
+                            <p class="text-xs font-semibold text-cyan-400 uppercase tracking-widest mb-1">Corporate & Clinical Synergies</p>
+                            <h3 class="text-lg font-bold text-white">Bridging Modern Technology with Orthodontic Precision</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-cyan-400">
+                        <i class="fa-solid fa-user-doctor"></i>
+                        <span>About Dr. Daphne Fernando</span>
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
+                        Driving Operational & Clinical Excellence as <span class="text-cyan-400">Zonal Head</span>
+                    </h2>
+
+                    <p class="text-slate-300 leading-relaxed">
+                        At <strong class="text-white">toothsialigners</strong>, Dr. Daphne Fernando plays a pivotal leadership role in driving modern, tech-enabled orthodontic solutions. Operating at the intersection of clinical quality control, zonal operations, and doctor network growth, Dr. Fernando ensures that every clear aligner journey delivers life-changing results for patients.
+                    </p>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-4 p-4 rounded-xl glass-card">
+                            <div class="w-10 h-10 rounded-lg bg-cyan-500/10 flex items-center justify-center text-cyan-400 shrink-0">
+                                <i class="fa-solid fa-network-wired"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Zonal Expansion & Management</h4>
+                                <p class="text-xs text-slate-400 mt-1">Scaling clear aligner treatment delivery across regional hubs with high clinical consistency.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-xl glass-card">
+                            <div class="w-10 h-10 rounded-lg bg-purple-500/10 flex items-center justify-center text-purple-400 shrink-0">
+                                <i class="fa-solid fa-microscope"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Advanced Clear Aligner Protocols</h4>
+                                <p class="text-xs text-slate-400 mt-1">Overseeing customized digital smile planning for optimal patient outcomes and comfort.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Expertise / Pillars -->
+    <section id="expertise" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-cyan-400 mb-3">
+                <i class="fa-solid fa-star"></i>
+                <span>Strategic Leadership</span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">Core Areas of Impact</h2>
+            <p class="text-slate-400 max-w-2xl mx-auto text-sm mb-16">
+                Combining clinical expertise with strategic management to elevate toothsialigners' presence and patient satisfaction.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
+                <!-- Card 1 -->
+                <div class="glass-card p-6 rounded-2xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-cyan-500 to-teal-500 flex items-center justify-center text-white text-xl mb-5 shadow-lg shadow-cyan-500/20">
+                        <i class="fa-solid fa-briefcase-medical"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Clear Aligner Strategy</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">Implementing cutting-edge invisible aligner workflows designed for maximum accuracy and swift patient progress.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="glass-card p-6 rounded-2xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-indigo-500 to-purple-500 flex items-center justify-center text-white text-xl mb-5 shadow-lg shadow-indigo-500/20">
+                        <i class="fa-solid fa-sitemap"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Zonal Governance</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">Streamlining multi-clinic operational logistics, clinical quality audits, and team synchronization.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="glass-card p-6 rounded-2xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-purple-500 to-pink-500 flex items-center justify-center text-white text-xl mb-5 shadow-lg shadow-purple-500/20">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Digital Smile Design</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">Utilizing high-precision 3D intraoral scan planning to customize predictable alignment transformations.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="glass-card p-6 rounded-2xl transition-all duration-300 hover:-translate-y-1">
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-teal-500 to-emerald-500 flex items-center justify-center text-white text-xl mb-5 shadow-lg shadow-teal-500/20">
+                        <i class="fa-solid fa-user-group"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Clinical Mentorship</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">Empowering orthodontists and partner clinics through specialized continuous training and case consultations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 relative bg-slate-900/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-xs font-semibold text-cyan-400 uppercase tracking-widest">Solutions & Value</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Executive & Clinical Offerings</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass-card p-8 rounded-2xl relative overflow-hidden group">
+                    <div class="absolute -right-10 -bottom-10 w-32 h-32 bg-cyan-500/10 rounded-full blur-2xl group-hover:bg-cyan-500/20 transition-all duration-500"></div>
+                    <i class="fa-solid fa-hospital-user text-3xl text-cyan-400 mb-6 block"></i>
+                    <h3 class="text-xl font-bold text-white mb-3">Clear Aligner Consultation</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Expert case evaluations and modern aesthetic alignment pathways designed for modern lifestyles.</p>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl relative overflow-hidden group">
+                    <div class="absolute -right-10 -bottom-10 w-32 h-32 bg-indigo-500/10 rounded-full blur-2xl group-hover:bg-indigo-500/20 transition-all duration-500"></div>
+                    <i class="fa-solid fa-chart-line text-3xl text-indigo-400 mb-6 block"></i>
+                    <h3 class="text-xl font-bold text-white mb-3">Zonal Operational Strategy</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Scaling health-tech aligner solutions, streamlining clinical turnarounds, and fostering brand loyalty.</p>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl relative overflow-hidden group">
+                    <div class="absolute -right-10 -bottom-10 w-32 h-32 bg-purple-500/10 rounded-full blur-2xl group-hover:bg-purple-500/20 transition-all duration-500"></div>
+                    <i class="fa-solid fa-handshake text-3xl text-purple-400 mb-6 block"></i>
+                    <h3 class="text-xl font-bold text-white mb-3">Clinic Partnerships</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Building long-term alliances with dental professionals and specialists across the zone.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Endorsements / Testimonials -->
+    <section id="endorsements" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-xs font-semibold text-cyan-400 uppercase tracking-widest">Trust & Endorsements</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">What Partners & Colleagues Say</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="glass-card p-8 rounded-2xl relative">
+                    <div class="flex items-center gap-1 text-amber-400 mb-4 text-sm">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-6 italic">
+                        "Dr. Daphne’s zonal leadership at toothsialigners has significantly elevated the quality and efficiency of clear aligner deliveries. Her commitment to clinical perfection is outstanding."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center font-bold text-cyan-400">
+                            DR
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Senior Partner Orthodontist</h4>
+                            <p class="text-xs text-slate-400">Regional Dental Network</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl relative">
+                    <div class="flex items-center gap-1 text-amber-400 mb-4 text-sm">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-6 italic">
+                        "Working alongside Dr. Fernando has streamlined our operational workflows. She bridges high-level corporate strategy with real-world patient satisfaction masterfully."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-slate-800 border border-slate-700 flex items-center justify-center font-bold text-purple-400">
+                            OM
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Operations Manager</h4>
+                            <p class="text-xs text-slate-400">toothsialigners</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 relative bg-slate-900/60 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Info Column -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-xs font-semibold text-cyan-400 uppercase tracking-widest">Get In Touch</span>
+                        <h2 class="text-3xl font-extrabold text-white mt-2">Connect with Dr. Daphne Fernando</h2>
+                        <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                            Interested in strategic clinical partnerships, clear aligner consultations, or executive engagements? Reach out directly.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="glass-card p-4 rounded-xl flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-cyan-500/10 flex items-center justify-center text-cyan-400">
+                                <i class="fa-solid fa-building text-base"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Current Role</p>
+                                <p class="text-sm font-bold text-white">Zonal Head @ toothsialigners</p>
+                            </div>
+                        </div>
+
+                        <div class="glass-card p-4 rounded-xl flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-indigo-500/10 flex items-center justify-center text-indigo-400">
+                                <i class="fa-solid fa-user-check text-base"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Professional Connection</p>
+                                <p class="text-sm font-bold text-white">Connected: 07 Sep 2026</p>
+                            </div>
+                        </div>
+
+                        <div class="glass-card p-4 rounded-xl flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-purple-500/10 flex items-center justify-center text-purple-400">
+                                <i class="fa-solid fa-envelope text-base"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Direct Contact</p>
+                                <p class="text-sm font-bold text-white">Available via Direct Message</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Column -->
+                <div class="lg:col-span-7">
+                    <form onsubmit="event.preventDefault(); alert('Thank you for reaching out! Message received.');" class="glass-card p-8 rounded-3xl space-y-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Send a Message</h3>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Your Name</label>
+                                <input type="text" required placeholder="Dr. John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-100 text-sm focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Email Address</label>
+                                <input type="email" required placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-100 text-sm focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">Subject</label>
+                            <input type="text" required placeholder="Clinical Consultation / Strategic Partnership" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-100 text-sm focus:outline-none focus:border-cyan-500 transition-colors">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">Message</label>
+                            <textarea rows="4" required placeholder="Write your message here..." class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-100 text-sm focus:outline-none focus:border-cyan-500 transition-colors resize-none"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl font-semibold text-sm bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 text-white shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:scale-[1.01] transition-all duration-300">
+                            Send Inquiry <i class="fa-solid fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-slate-950 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p class="text-xs text-slate-500">
+                © 2026 Dr. Daphne Fernando. Zonal Head at toothsialigners. All rights reserved.
+            </p>
+            <div class="flex items-center gap-4 text-slate-400 text-sm">
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-solid fa-globe"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
