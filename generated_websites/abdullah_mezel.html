@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Abdullah Mezel | Specialist Orthodontist</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(99, 102, 241, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white relative overflow-x-hidden">
+
+    <!-- Ambient Background Glows -->
+    <div class="fixed top-0 left-1/4 w-96 h-96 bg-indigo-600/15 rounded-full filter blur-[128px] pointer-events-none -z-10"></div>
+    <div class="fixed bottom-1/3 right-1/4 w-[30rem] h-[30rem] bg-purple-600/15 rounded-full filter blur-[128px] pointer-events-none -z-10"></div>
+    <div class="fixed top-2/3 left-1/3 w-80 h-80 bg-pink-600/10 rounded-full filter blur-[128px] pointer-events-none -z-10"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 p-[1px]">
+                    <div class="w-full h-full bg-slate-950 rounded-[11px] flex items-center justify-center group-hover:bg-transparent transition-colors duration-300">
+                        <i class="fa-solid font-bold fa-tooth text-indigo-400 group-hover:text-white transition-colors"></i>
+                    </div>
+                </div>
+                <div>
+                    <span class="text-lg font-bold tracking-tight bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent block">Dr. Abdullah Mezel</span>
+                    <span class="text-xs text-indigo-400 font-medium block -mt-1">Sama Alsham Medical</span>
+                </div>
+            </a>
+
+            <div class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-300">
+                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-indigo-400 transition-colors">Expertise</a>
+                <a href="#services" class="hover:text-indigo-400 transition-colors">Treatments</a>
+                <a href="#testimonials" class="hover:text-indigo-400 transition-colors">Patient Stories</a>
+            </div>
+
+            <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold text-sm shadow-lg shadow-indigo-500/20 hover:shadow-indigo-500/40 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200">
+                <span>Book Consultation</span>
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-36 pb-20 md:pt-48 md:pb-32 px-6 relative">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+            
+            <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 text-xs font-semibold text-indigo-400 backdrop-blur-md">
+                    <span class="w-2 h-2 rounded-full bg-indigo-500 animate-pulse"></span>
+                    <span>Orthodontist at Sama alsham medical center</span>
+                </div>
+
+                <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.1]">
+                    Crafting <span class="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">Confident</span> & Radiant Smiles.
+                </h1>
+
+                <p class="text-lg text-slate-400 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                    Welcome to the specialized orthodontic practice of <strong class="text-slate-200 font-semibold">abdullah mezel</strong>. Delivering world-class orthodontic treatments, aesthetic jaw alignment, and invisible aligner therapy with modern precision.
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                    <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold text-base shadow-xl shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.02] transition-all duration-300 text-center">
+                        Schedule Your Visit
+                    </a>
+                    <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900/80 hover:bg-slate-800 border border-slate-800 text-slate-200 font-semibold text-base backdrop-blur-xl transition-all duration-300 text-center flex items-center justify-center gap-2">
+                        <span>Explore Solutions</span>
+                        <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+                    </a>
+                </div>
+
+                <!-- Trust Badges -->
+                <div class="pt-8 border-t border-slate-900 grid grid-cols-3 gap-4 text-center lg:text-left">
+                    <div>
+                        <p class="text-2xl sm:text-3xl font-extrabold text-white">100%</p>
+                        <p class="text-xs text-slate-400 font-medium mt-1">Tailored Care Plans</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl sm:text-3xl font-extrabold text-indigo-400">Advanced</p>
+                        <p class="text-xs text-slate-400 font-medium mt-1">3D Digital Imaging</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl sm:text-3xl font-extrabold text-purple-400">Elite</p>
+                        <p class="text-xs text-slate-400 font-medium mt-1">Sama Alsham Center</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Avatar & Frame -->
+            <div class="lg:col-span-5 flex justify-center relative">
+                <div class="relative w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96">
+                    <!-- Glowing Background Frame -->
+                    <div class="absolute -inset-1.5 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-3xl blur-xl opacity-75 animate-pulse-slow"></div>
+                    
+                    <!-- Avatar Card Container -->
+                    <div class="relative w-full h-full rounded-3xl bg-slate-900/90 border border-slate-800 overflow-hidden p-4 flex flex-col items-center justify-center backdrop-blur-xl glow-effect">
+                        <div class="w-44 h-44 sm:w-52 sm:h-52 rounded-2xl overflow-hidden p-1 bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 shadow-2xl mb-4">
+                            <img src="https://ui-avatars.com/api/?name=abdullah+mezel&size=200&background=0D8ABC&color=fff&bold=true" alt="abdullah mezel" class="w-full h-full object-cover rounded-xl">
+                        </div>
+                        <div class="text-center space-y-1">
+                            <h3 class="text-xl font-bold text-white">abdullah mezel</h3>
+                            <p class="text-xs text-indigo-400 font-semibold tracking-wide uppercase">Orthodontic Specialist</p>
+                            <span class="inline-block mt-1 px-3 py-1 rounded-full text-[11px] bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">
+                                Sama alsham medical center
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Floating Badge -->
+                    <div class="absolute -bottom-6 -left-6 bg-slate-900/90 backdrop-blur-xl border border-slate-800 p-4 rounded-2xl shadow-2xl flex items-center gap-3 animate-float">
+                        <div class="w-10 h-10 rounded-xl bg-indigo-500/20 flex items-center justify-center text-indigo-400">
+                            <i class="fa-solid fa-certificate text-lg"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400 font-medium">Certified Specialist</p>
+                            <p class="text-sm font-bold text-white">Orthodontics & Aesthetics</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-24 px-6 relative bg-slate-900/40">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Clinical Image -->
+                <div class="lg:col-span-5">
+                    <div class="relative group rounded-3xl overflow-hidden border border-slate-800 shadow-2xl">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-60 z-10"></div>
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" alt="Orthodontic Excellence" class="w-full h-[420px] object-cover transform group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute bottom-6 left-6 right-6 z-20">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-indigo-400">Clinical Focus</span>
+                            <p class="text-lg font-bold text-white">Precision Orthodontics & Modern Dentistry</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-xs font-semibold text-indigo-400">
+                        <i class="fa-solid fa-user-doctor"></i>
+                        <span>About Dr. Abdullah Mezel</span>
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                        Transforming Smiles at <span class="bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">Sama Alsham Medical Center</span>
+                    </h2>
+
+                    <p class="text-slate-400 leading-relaxed">
+                        As a dedicated Orthodontist at Sama alsham medical center, Dr. abdullah mezel combines cutting-edge dental technology with an artistic eye to deliver flawless alignment and functional perfection. Every patient journey is custom-tailored using non-invasive, comfortable, and modern techniques.
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                        <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-4 rounded-xl hover:border-indigo-500/50 transition-all duration-300">
+                            <i class="fa-solid fa-align-center text-indigo-400 text-xl mb-2"></i>
+                            <h4 class="text-white font-bold text-sm">Malocclusion Correction</h4>
+                            <p class="text-xs text-slate-400 mt-1">Resolving complex bite issues, crowding, and gaps smoothly.</p>
+                        </div>
+                        <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-4 rounded-xl hover:border-indigo-500/50 transition-all duration-300">
+                            <i class="fa-solid fa-sparkles text-purple-400 text-xl mb-2"></i>
+                            <h4 class="text-white font-bold text-sm">Invisible Aligners</h4>
+                            <p class="text-xs text-slate-400 mt-1">Discreet and comfortable clear aligner treatment plans.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid Section -->
+    <section id="services" class="py-24 px-6 relative">
+        <div class="max-w-7xl mx-auto space-y-16">
+            <div class="text-center max-w-3xl mx-auto space-y-4">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/20 text-xs font-semibold text-purple-400">
+                    <i class="fa-solid fa-briefcase-medical"></i>
+                    <span>Comprehensive Care</span>
+                </div>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">Specialized Treatments</h2>
+                <p class="text-slate-400 text-base">Innovative orthodontic solutions tailored for children, teens, and adults.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-8 rounded-3xl transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-indigo-500/20 to-purple-500/20 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Clear Aligners (Invisalign)</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Virtually invisible aligners designed to straighten your teeth discreetly without traditional brackets.</p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-indigo-400 hover:text-indigo-300">
+                        <span>Learn More</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-8 rounded-3xl transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-purple-500/20 to-pink-500/20 border border-purple-500/30 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Esthetic & Ceramic Braces</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">High-performance ceramic and metallic braces designed for precise alignment and minimum visibility.</p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-purple-400 hover:text-purple-300">
+                        <span>Learn More</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-8 rounded-3xl transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-pink-500/20 to-indigo-500/20 border border-pink-500/30 flex items-center justify-center text-pink-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-laptop-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Digital Smile Design</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Advanced 3D digital simulation to preview your new smile transformation before treatment begins.</p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-pink-400 hover:text-pink-300">
+                        <span>Learn More</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-8 rounded-3xl transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-indigo-500/20 to-pink-500/20 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-child-reaching"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Pediatric Orthodontics</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Early intervention for growing children to ensure optimal jaw placement and guide tooth alignment.</p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-indigo-400 hover:text-indigo-300">
+                        <span>Learn More</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-8 rounded-3xl transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-purple-500/20 to-indigo-500/20 border border-purple-500/30 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-bone"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Surgical Orthodontics</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Comprehensive orthodontic-orthognathic management for severe jaw alignment corrections.</p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-purple-400 hover:text-purple-300">
+                        <span>Learn More</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-8 rounded-3xl transition-all duration-300 group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-pink-500/20 to-purple-500/20 border border-pink-500/30 flex items-center justify-center text-pink-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Retainers & Relapse Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">Custom retention appliances to safeguard your post-treatment smile for a lifetime.</p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-semibold text-pink-400 hover:text-pink-300">
+                        <span>Learn More</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 px-6 relative bg-slate-900/30">
+        <div class="max-w-7xl mx-auto space-y-16">
+            <div class="text-center max-w-2xl mx-auto space-y-4">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-pink-500/10 border border-pink-500/20 text-xs font-semibold text-pink-400">
+                    <i class="fa-solid fa-star"></i>
+                    <span>Patient Feedback</span>
+                </div>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">Endorsements</h2>
+                <p class="text-slate-400 text-sm sm:text-base">Read experiences from patients treated by Dr. abdullah mezel.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-8 rounded-3xl transition-all duration-300 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Dr. Abdullah Mezel completely changed my confidence. The clear aligner treatment at Sama alsham medical center was smooth, comfortable, and fast!"
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-6 border-t border-slate-800/80 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 flex items-center justify-center font-bold text-white text-sm">
+                            SA
+                        </div>
+                        <div>
+                            <h4 class="text-white text-sm font-bold">Sarah A.</h4>
+                            <p class="text-xs text-slate-400">Clear Aligner Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-8 rounded-3xl transition-all duration-300 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Extremely professional orthodontic specialist. Dr. Abdullah listened carefully to my concerns and designed a perfect ceramic braces treatment."
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-6 border-t border-slate-800/80 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center font-bold text-white text-sm">
+                            KM
+                        </div>
+                        <div>
+                            <h4 class="text-white text-sm font-bold">Khaled M.</h4>
+                            <p class="text-xs text-slate-400">Adult Orthodontic Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-8 rounded-3xl transition-all duration-300 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "The state-of-the-art clinic at Sama alsham medical center combined with Dr. Mezel's expertise made my daughter's treatment stress-free."
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-6 border-t border-slate-800/80 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-pink-500 to-indigo-500 flex items-center justify-center font-bold text-white text-sm">
+                            RN
+                        </div>
+                        <div>
+                            <h4 class="text-white text-sm font-bold">Rania N.</h4>
+                            <p class="text-xs text-slate-400">Parent of Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Booking Section -->
+    <section id="contact" class="py-24 px-6 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Info Column -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-xs font-semibold text-indigo-400">
+                        <i class="fa-solid fa-calendar-check"></i>
+                        <span>Schedule Appointment</span>
+                    </div>
+
+                    <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">Ready for a New Smile?</h2>
+                    
+                    <p class="text-slate-400 leading-relaxed">
+                        Book your consultation with Dr. abdullah mezel at Sama alsham medical center. Let's design the healthy, perfectly aligned smile you deserve.
+                    </p>
+
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-10 h-10 rounded-xl bg-indigo-500/20 flex items-center justify-center text-indigo-400 shrink-0 mt-0.5">
+                                <i class="fa-solid fa-hospital"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold text-sm">Clinic Location</h4>
+                                <p class="text-xs text-slate-400 mt-1">Sama alsham medical center</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-10 h-10 rounded-xl bg-purple-500/20 flex items-center justify-center text-purple-400 shrink-0 mt-0.5">
+                                <i class="fa-solid fa-user-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold text-sm">Specialist</h4>
+                                <p class="text-xs text-slate-400 mt-1">abdullah mezel — Orthodontist</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Column -->
+                <div class="lg:col-span-7">
+                    <div class="bg-slate-900/80 backdrop-blur-xl border border-slate-800 p-8 sm:p-10 rounded-3xl shadow-2xl relative">
+                        <h3 class="text-2xl font-bold text-white mb-6">Request Your Consultation</h3>
+                        
+                        <form onsubmit="event.preventDefault(); alert('Thank you! Your appointment request has been submitted.');" class="space-y-5">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Full Name</label>
+                                    <input type="text" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors text-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Phone Number</label>
+                                    <input type="tel" required placeholder="+1 (555) 000-0000" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors text-sm">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Interested Treatment</label>
+                                <select class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-300 focus:outline-none focus:border-indigo-500 transition-colors text-sm">
+                                    <option>Clear Aligners (Invisalign)</option>
+                                    <option>Esthetic Ceramic Braces</option>
+                                    <option>Pediatric Orthodontics</option>
+                                    <option>General Orthodontic Consultation</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Message or Notes</label>
+                                <textarea rows="4" placeholder="Tell us about your dental goals..." class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-colors text-sm resize-none"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-bold text-sm shadow-xl shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.01] active:scale-[0.99] transition-all duration-200">
+                                Send Appointment Request
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-slate-900 bg-slate-950 text-slate-500 text-sm">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <i class="fa-solid fa-tooth text-indigo-400 text-xl"></i>
+                <span class="text-slate-300 font-bold">Dr. Abdullah Mezel</span>
+                <span class="text-xs text-slate-600">|</span>
+                <span class="text-xs text-slate-400">Sama alsham medical center</span>
+            </div>
+
+            <p class="text-xs text-slate-500">&copy; 2026 Dr. abdullah mezel. All rights reserved.</p>
+
+            <div class="flex items-center gap-4 text-slate-400">
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-brands fa-linkedin text-lg"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-brands fa-instagram text-lg"></i></a>
+                <a href="#" class="hover:text-indigo-400 transition-colors"><i class="fa-solid fa-envelope text-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
