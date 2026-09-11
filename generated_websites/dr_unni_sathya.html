@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Unni Sathya | MDS Junior Resident & Dental Specialist</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            cyan: '#0D8ABC',
+                            teal: '#14b8a6',
+                            purple: '#8b5cf6',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(13, 138, 188, 0.3);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-border {
+            position: relative;
+            background-clip: padding-box;
+            border: 1px solid transparent;
+        }
+        .gradient-border::before {
+            content: '';
+            position: absolute;
+            top: 0; right: 0; bottom: 0; left: 0;
+            z-index: -1;
+            margin: -1px;
+            border-radius: inherit;
+            background: linear-gradient(to bottom right, #0d8abc, #8b5cf6, #ec4899);
+            opacity: 0.4;
+            transition: opacity 0.3s ease;
+        }
+        .gradient-border:hover::before {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-white">
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-600 to-indigo-600 flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
+                    US
+                </div>
+                <div>
+                    <span class="text-lg font-bold tracking-tight text-white block">Dr. Unni Sathya</span>
+                    <span class="text-xs text-cyan-400 font-medium">MDS Resident</span>
+                </div>
+            </a>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#specialties" class="hover:text-cyan-400 transition-colors">Specialties</a>
+                <a href="#experience" class="hover:text-cyan-400 transition-colors">Residency & Academic</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Endorsements</a>
+            </div>
+
+            <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-white bg-gradient-to-r from-cyan-600 via-indigo-600 to-purple-600 rounded-full hover:shadow-lg hover:shadow-cyan-500/25 hover:scale-[1.02] transition-all">
+                Contact Office
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-24 md:pt-48 md:pb-32 overflow-hidden flex items-center min-h-screen">
+        <!-- Background Ambient Glows -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-cyan-600/15 rounded-full blur-[140px] pointer-events-none"></div>
+        <div class="absolute top-1/3 right-10 w-[400px] h-[400px] bg-purple-600/15 rounded-full blur-[140px] pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 relative z-10 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <div class="lg:col-span-7 text-center lg:text-left space-y-8">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 text-slate-300 text-xs sm:text-sm font-medium shadow-inner">
+                        <span class="flex h-2 w-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                        SRM Kattankulathur Dental College & Hospital
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.15]">
+                        Advancing Precision Dentistry & <span class="gradient-text">Clinical Innovation</span>
+                    </h1>
+
+                    <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Dedicated MDS Junior Resident committed to superior patient outcomes, advanced dental surgery protocols, and cutting-edge evidence-based oral healthcare practices.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-600 to-indigo-600 text-white font-semibold shadow-xl shadow-cyan-500/20 hover:shadow-cyan-500/35 hover:scale-[1.02] transition-all text-center">
+                            Get In Touch <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                        <a href="#specialties" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900/80 border border-slate-800 text-slate-300 font-semibold hover:border-slate-700 hover:text-white transition-all text-center">
+                            Clinical Focus Area
+                        </a>
+                    </div>
+
+                    <!-- Trust Stats Badges -->
+                    <div class="pt-8 grid grid-cols-3 gap-4 border-t border-slate-800/80 max-w-lg mx-auto lg:mx-0">
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-bold text-white">MDS</p>
+                            <p class="text-xs text-slate-400 mt-1">Junior Resident</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-bold text-cyan-400">100%</p>
+                            <p class="text-xs text-slate-400 mt-1">Patient Care Focus</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-bold text-indigo-400">SRM</p>
+                            <p class="text-xs text-slate-400 mt-1">Kattankulathur</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Avatar Card -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative group">
+                        <!-- Glowing double gradient frame background -->
+                        <div class="absolute -inset-1.5 bg-gradient-to-r from-cyan-500 via-indigo-500 to-pink-500 rounded-3xl blur-xl opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+                        
+                        <div class="relative bg-slate-900/90 border border-slate-800 p-8 rounded-3xl backdrop-blur-xl flex flex-col items-center text-center max-w-sm w-full">
+                            <div class="relative mb-6">
+                                <div class="w-36 h-36 rounded-full p-1 bg-gradient-to-tr from-cyan-400 via-indigo-500 to-purple-500">
+                                    <img src="https://ui-avatars.com/api/?name=Dr+Unni+Sathya&size=200&background=0D8ABC&color=fff&bold=true" alt="Dr Unni Sathya" class="w-full h-full object-cover rounded-full shadow-inner">
+                                </div>
+                                <span class="absolute bottom-1 right-1 bg-cyan-500 text-slate-950 p-2 rounded-full text-xs font-bold shadow-lg" title="Verified Practitioner">
+                                    <i class="fa-solid fa-user-doctor"></i>
+                                </span>
+                            </div>
+
+                            <h2 class="text-2xl font-bold text-white">Dr. Unni Sathya</h2>
+                            <p class="text-cyan-400 font-medium text-sm mt-1">MDS Junior Resident</p>
+                            <p class="text-slate-400 text-xs mt-2 leading-relaxed">
+                                SRM Kattankulathur Dental College & Hospital
+                            </p>
+
+                            <div class="mt-6 w-full pt-6 border-t border-slate-800 flex justify-center gap-4 text-slate-400">
+                                <a href="#" class="w-10 h-10 rounded-full bg-slate-800/80 flex items-center justify-center hover:bg-cyan-500 hover:text-slate-950 transition-all">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 rounded-full bg-slate-800/80 flex items-center justify-center hover:bg-cyan-500 hover:text-slate-950 transition-all">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                </a>
+                                <a href="#contact" class="w-10 h-10 rounded-full bg-slate-800/80 flex items-center justify-center hover:bg-cyan-500 hover:text-slate-950 transition-all">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-slate-900/40 relative border-t border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-6 relative">
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 shadow-2xl group">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" alt="Clinical Excellence" class="w-full h-[420px] object-cover group-hover:scale-105 transition duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        
+                        <div class="absolute bottom-6 left-6 right-6 p-6 bg-slate-900/80 backdrop-blur-md rounded-xl border border-slate-800">
+                            <p class="text-cyan-400 font-semibold text-sm">Commitment to Care</p>
+                            <p class="text-white text-base font-medium mt-1">Merging modern clinical techniques with compassionate patient care.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 text-cyan-400 font-semibold text-sm uppercase tracking-wider">
+                        <i class="fa-solid fa-stethoscope"></i> Professional Profile
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white leading-tight">
+                        Pioneering Modern Dental Science & Surgical Excellence
+                    </h2>
+
+                    <p class="text-slate-300 leading-relaxed">
+                        Dr. Unni Sathya is an active MDS Junior Resident at the prestigious <span class="text-white font-semibold">SRM Kattankulathur Dental College & Hospital</span>. Driven by clinical rigor, research, and meticulous surgical skills, Dr. Sathya focuses on delivering advanced diagnosis, treatment planning, and restorative oral procedures.
+                    </p>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800/80">
+                            <div class="p-3 bg-cyan-500/10 text-cyan-400 rounded-lg shrink-0">
+                                <i class="fa-solid fa-hospital-user text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold">Clinical Residency</h4>
+                                <p class="text-slate-400 text-sm mt-1">Active involvement in complex dental consultations, surgical interventions, and emergency care at SRM Hospital.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800/80">
+                            <div class="p-3 bg-purple-500/10 text-purple-400 rounded-lg shrink-0">
+                                <i class="fa-solid fa-book-medical text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold">Academic Research & Diagnostics</h4>
+                                <p class="text-slate-400 text-sm mt-1">Integrating contemporary diagnostic imaging, biomaterials, and evidence-based methodologies into clinical practice.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialties Section -->
+    <section id="specialties" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-cyan-400 font-semibold text-sm uppercase tracking-wider">Clinical Focus Areas</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2">Specialized Expertise & Services</h2>
+                <p class="text-slate-400 mt-4">Delivering comprehensive clinical solutions with high precision and patient comfort.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 bg-cyan-500/10 text-cyan-400 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-cyan-500 group-hover:text-slate-950 transition-all">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Restorative Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Comprehensive diagnosis and execution of aesthetic restorations, crown restorations, and durable direct/indirect restorative treatments.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 bg-indigo-500/10 text-indigo-400 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-indigo-500 group-hover:text-slate-950 transition-all">
+                        <i class="fa-solid fa-syringe"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Endodontic Therapy</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Precision root canal protocols utilizing modern rotary instrumentation, digital radiography, and bio-compatible obturation procedures.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 bg-purple-500/10 text-purple-400 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-purple-500 group-hover:text-slate-950 transition-all">
+                        <i class="fa-solid fa-scissors"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Minor Oral Surgery</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Surgical extractions, pre-prosthetic soft-tissue management, and minor surgical interventions executed with strict aseptic techniques.
+                    </p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-pink-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 bg-pink-500/10 text-pink-400 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-pink-500 group-hover:text-slate-950 transition-all">
+                        <i class="fa-solid fa-notes-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Periodontal Diagnostics</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Routine scaling, root planing, and comprehensive periodontal evaluation to ensure structural integrity and gingival health.
+                    </p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-teal-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 bg-teal-500/10 text-teal-400 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-teal-500 group-hover:text-slate-950 transition-all">
+                        <i class="fa-solid fa-head-side-virus"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Prosthodontic Rehabilitation</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Design and fitting of fixed and removable partial dentures, prioritizing occlusion stability and patient smile aesthetics.
+                    </p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 bg-cyan-500/10 text-cyan-400 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:bg-cyan-500 group-hover:text-slate-950 transition-all">
+                        <i class="fa-solid fa-laptop-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Clinical Case Seminars</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Active participation and presentation in interdisciplinary clinical case conferences and hospital research seminars.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic & Experience Timeline -->
+    <section id="experience" class="py-24 bg-slate-900/40 relative border-t border-slate-800/60">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-cyan-400 font-semibold text-sm uppercase tracking-wider">Career Pathway</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2">Residency & Academic Standing</h2>
+            </div>
+
+            <div class="space-y-8 relative before:absolute before:inset-0 before:left-8 md:before:left-1/2 before:-ml-px before:w-0.5 before:bg-gradient-to-b before:from-cyan-500 before:via-indigo-500 before:to-purple-500">
+                
+                <!-- Timeline Item 1 -->
+                <div class="relative flex items-center md:justify-between group">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full bg-cyan-500 text-slate-950 font-bold shadow-lg shadow-cyan-500/30 z-10 shrink-0 md:order-1 md:mx-auto">
+                        <i class="fa-solid fa-hospital"></i>
+                    </div>
+                    <div class="ml-6 md:ml-0 md:w-[45%] bg-slate-900/80 border border-slate-800 p-6 rounded-2xl backdrop-blur-xl">
+                        <span class="text-xs font-semibold text-cyan-400 bg-cyan-500/10 px-3 py-1 rounded-full border border-cyan-500/20">Present Role</span>
+                        <h3 class="text-lg font-bold text-white mt-3">MDS Junior Resident</h3>
+                        <p class="text-indigo-400 text-sm font-medium">SRM Kattankulathur Dental College & Hospital</p>
+                        <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+                            Undergoing specialized post-graduate residency, attending outdoor patient departments (OPD), managing complex clinical procedures, and engaging in advanced clinical research.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="relative flex items-center md:justify-between group">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full bg-indigo-500 text-slate-950 font-bold shadow-lg shadow-indigo-500/30 z-10 shrink-0 md:order-1 md:mx-auto">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div class="ml-6 md:ml-0 md:w-[45%] md:text-right bg-slate-900/80 border border-slate-800 p-6 rounded-2xl backdrop-blur-xl md:ml-auto">
+                        <span class="text-xs font-semibold text-indigo-400 bg-indigo-500/10 px-3 py-1 rounded-full border border-indigo-500/20">Dental Education</span>
+                        <h3 class="text-lg font-bold text-white mt-3">Bachelor of Dental Surgery (BDS)</h3>
+                        <p class="text-indigo-400 text-sm font-medium">Dental Council Recognized Institution</p>
+                        <p class="text-slate-400 text-sm mt-2 leading-relaxed">
+                            Completed comprehensive academic training and clinical rotations with distinction across various specialized dental departments.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Endorsements -->
+    <section id="testimonials" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-cyan-400 font-semibold text-sm uppercase tracking-wider">Peer & Senior Reviews</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2">Clinical Endorsements</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "Dr. Unni Sathya exhibits remarkable clinical composure and exceptional diagnostic skills during complex procedures. A dedicated resident with high standards of patient care."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-slate-800/80 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center font-bold text-cyan-400">
+                            SR
+                        </div>
+                        <div>
+                            <p class="text-white text-sm font-semibold">Senior Professor</p>
+                            <p class="text-slate-400 text-xs">SRM Dental College</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "Extremely thorough in patient history taking, treatment execution, and postoperative follow-up. Always eager to adopt modern technique guidelines."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-slate-800/80 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center font-bold text-indigo-400">
+                            CR
+                        </div>
+                        <div>
+                            <p class="text-white text-sm font-semibold">Clinical Co-Resident</p>
+                            <p class="text-slate-400 text-xs">Department of Dental Surgery</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "Gentle approach and thorough explanation of procedures made my treatment entirely stress-free. Truly appreciative of Dr. Sathya's care."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-slate-800/80 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center font-bold text-purple-400">
+                            PT
+                        </div>
+                        <div>
+                            <p class="text-white text-sm font-semibold">OPD Patient Review</p>
+                            <p class="text-slate-400 text-xs">SRM Hospital Clinic</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-slate-900/40 relative border-t border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-cyan-400 font-semibold text-sm uppercase tracking-wider">Get In Touch</span>
+                        <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2">Connect with Dr. Unni Sathya</h2>
+                        <p class="text-slate-400 mt-4 leading-relaxed">
+                            For clinical inquiries, academic collaboration, or professional consultations, feel free to reach out directly through the form or hospital contact channels.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-cyan-400 text-xl">
+                                <i class="fa-solid fa-hospital"></i>
+                            </div>
+                            <div>
+                                <p class="text-slate-400 text-xs">Institution</p>
+                                <p class="text-white font-medium">SRM Kattankulathur Dental College & Hospital</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-indigo-400 text-xl">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <p class="text-slate-400 text-xs">Location</p>
+                                <p class="text-white font-medium">Kattankulathur, Chengalpattu District, Tamil Nadu</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-purple-400 text-xl">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="text-slate-400 text-xs">Direct Email Contact</p>
+                                <p class="text-white font-medium">dr.unnisathya@srmdent.edu.in</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7">
+                    <div class="bg-slate-900/80 border border-slate-800 p-8 rounded-2xl backdrop-blur-xl shadow-xl relative">
+                        <form onsubmit="event.preventDefault(); alert('Thank you! Message transmitted successfully.');" class="space-y-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-medium text-slate-300 mb-2">Full Name</label>
+                                    <input type="text" required placeholder="Dr. / Mr. / Ms. Name" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-medium text-slate-300 mb-2">Email Address</label>
+                                    <input type="email" required placeholder="name@example.com" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-slate-300 mb-2">Subject</label>
+                                <input type="text" required placeholder="Consultation / Academic Inquiry" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-slate-300 mb-2">Message</label>
+                                <textarea rows="4" required placeholder="Write your message here..." class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-600 via-indigo-600 to-purple-600 text-white font-semibold shadow-lg hover:shadow-cyan-500/25 hover:scale-[1.01] transition-all">
+                                Send Message <i class="fa-solid fa-paper-plane ml-2 text-xs"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-800/80 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+            <p>© 2026 Dr. Unni Sathya. MDS Junior Resident — SRM Kattankulathur Dental College & Hospital.</p>
+            <div class="flex items-center gap-6">
+                <a href="#" class="hover:text-cyan-400 transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-cyan-400 transition-colors">Terms of Care</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
