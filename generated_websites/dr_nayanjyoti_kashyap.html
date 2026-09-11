@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Nayanjyoti Kashyap | Master of Dental Surgery</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .bg-grid-pattern {
+            background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-slate-950 bg-grid-pattern relative overflow-x-hidden">
+
+    <!-- Ambient Glow Background Blur Elements -->
+    <div class="fixed top-0 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-[120px] pointer-events-none -z-10"></div>
+    <div class="fixed bottom-0 right-1/4 w-[500px] h-[500px] bg-indigo-500/10 rounded-full blur-[150px] pointer-events-none -z-10"></div>
+    <div class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-purple-500/5 rounded-full blur-[180px] pointer-events-none -z-10"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-indigo-500 to-purple-500 p-[2px] transition-transform duration-300 group-hover:scale-105">
+                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+                        <i class="fa-solid fa-tooth text-cyan-400 text-lg"></i>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-lg tracking-tight text-white group-hover:text-cyan-400 transition-colors">Dr. N. Kashyap</span>
+                    <span class="text-[10px] text-slate-400 tracking-wider uppercase font-medium">MDS Specialist</span>
+                </div>
+            </a>
+
+            <!-- Nav Links -->
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-cyan-400 transition-colors">Clinical Expertise</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Specializations</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Endorsements</a>
+            </div>
+
+            <!-- Action CTA -->
+            <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 text-white shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 hover:scale-[1.02] transition-all duration-300">
+                <i class="fa-solid fa-calendar-check"></i> Consult Now
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen pt-32 pb-20 px-6 flex items-center relative">
+        <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Left Hero Content -->
+            <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 backdrop-blur-md">
+                    <span class="flex h-2 w-2 rounded-full bg-emerald-400 animate-ping"></span>
+                    <span class="text-xs font-semibold text-slate-300 tracking-wide uppercase">ITS Centre for Dental Studies & Research</span>
+                </div>
+
+                <div class="space-y-4">
+                    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.1]">
+                        Dr. Nayanjyoti <br>
+                        <span class="bg-gradient-to-r from-cyan-400 via-indigo-400 to-purple-400 bg-clip-text text-transparent">Kashyap</span>
+                    </h1>
+                    <p class="text-xl sm:text-2xl font-semibold text-cyan-300/90 tracking-wide">
+                        Master of Dental Surgery (MDS)
+                    </p>
+                    <p class="text-base sm:text-lg text-slate-400 max-w-2xl leading-relaxed font-normal">
+                        Elevating oral healthcare through precision surgery, advanced dental reconstruction, and innovative patient-centric care at India’s premier dental institute.
+                    </p>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+                    <a href="#contact" class="px-8 py-4 rounded-xl font-semibold text-sm bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 text-white shadow-xl shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:scale-[1.02] active:scale-95 transition-all duration-300 flex items-center gap-3">
+                        <span>Schedule Consultation</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="#services" class="px-8 py-4 rounded-xl font-semibold text-sm bg-slate-900/80 hover:bg-slate-800 text-slate-200 border border-slate-800 hover:border-slate-700 transition-all duration-300 flex items-center gap-3">
+                        <span>View Procedures</span>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                </div>
+
+                <!-- Trust Badges -->
+                <div class="pt-8 border-t border-slate-800/80 grid grid-cols-2 sm:grid-cols-3 gap-6 text-left">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-white">MDS Certified</div>
+                            <div class="text-xs text-slate-400">Advanced Surgical Care</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-lg bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-white">Clinical Rigor</div>
+                            <div class="text-xs text-slate-400">ITS Dental Research</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3 col-span-2 sm:col-span-1">
+                        <div class="w-10 h-10 rounded-lg bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400">
+                            <i class="fa-solid fa-microscope"></i>
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-white">Modern Tech</div>
+                            <div class="text-xs text-slate-400">Precision Dentistry</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Hero Visual / Glowing Avatar -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative group">
+                    <!-- Glowing Backdrops -->
+                    <div class="absolute -inset-1.5 bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 rounded-full blur-2xl opacity-50 group-hover:opacity-80 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+                    <div class="absolute -inset-1 bg-gradient-to-r from-purple-500 via-cyan-500 to-indigo-500 rounded-full blur-md opacity-75"></div>
+                    
+                    <!-- Main Avatar Container -->
+                    <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full p-2 bg-slate-950 flex items-center justify-center shadow-2xl">
+                        <img src="https://ui-avatars.com/api/?name=Dr+Nayanjyoti+Kashyap&size=200&background=0D8ABC&color=fff&bold=true" 
+                             alt="Dr. Nayanjyoti Kashyap" 
+                             class="w-full h-full rounded-full object-cover border-2 border-slate-800">
+                    </div>
+
+                    <!-- Floating Badge Card 1 -->
+                    <div class="absolute -bottom-4 -left-6 bg-slate-900/90 backdrop-blur-xl border border-slate-800 p-4 rounded-2xl shadow-xl flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-cyan-500/20 flex items-center justify-center text-cyan-400 font-bold">
+                            <i class="fa-solid fa-user-doctor"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs font-semibold text-white">Specialist Surgeon</p>
+                            <p class="text-[10px] text-slate-400">ITS Centre Specialist</p>
+                        </div>
+                    </div>
+
+                    <!-- Floating Badge Card 2 -->
+                    <div class="absolute -top-4 -right-4 bg-slate-900/90 backdrop-blur-xl border border-slate-800 p-3 rounded-2xl shadow-xl flex items-center gap-2">
+                        <i class="fa-solid fa-star text-amber-400 text-sm"></i>
+                        <span class="text-xs font-bold text-white">Top Rated MDS</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Metrics Bar -->
+    <section class="py-12 border-y border-slate-800/80 bg-slate-900/30 backdrop-blur-lg">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div class="space-y-1">
+                <div class="text-3xl sm:text-4xl font-extrabold bg-gradient-to-r from-cyan-400 to-indigo-400 bg-clip-text text-transparent">100%</div>
+                <div class="text-xs text-slate-400 uppercase tracking-widest font-semibold">Patient Dedicated</div>
+            </div>
+            <div class="space-y-1">
+                <div class="text-3xl sm:text-4xl font-extrabold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">MDS</div>
+                <div class="text-xs text-slate-400 uppercase tracking-widest font-semibold">Post-Graduate Degree</div>
+            </div>
+            <div class="space-y-1">
+                <div class="text-3xl sm:text-4xl font-extrabold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">Advanced</div>
+                <div class="text-xs text-slate-400 uppercase tracking-widest font-semibold">Surgical Protocol</div>
+            </div>
+            <div class="space-y-1">
+                <div class="text-3xl sm:text-4xl font-extrabold bg-gradient-to-r from-pink-400 to-cyan-400 bg-clip-text text-transparent">ITS CDSR</div>
+                <div class="text-xs text-slate-400 uppercase tracking-widest font-semibold">Centre of Excellence</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-24 px-6 relative">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Industry Image Frame -->
+            <div class="lg:col-span-5">
+                <div class="relative rounded-3xl overflow-hidden border border-slate-800 bg-slate-900/60 p-3 group">
+                    <div class="relative overflow-hidden rounded-2xl">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Dental Surgery Excellence" 
+                             class="w-full h-[450px] object-cover rounded-2xl transform transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                    </div>
+                    <div class="absolute bottom-8 left-8 right-8 p-6 rounded-2xl bg-slate-900/80 backdrop-blur-xl border border-slate-800">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-cyan-500/20 flex items-center justify-center text-cyan-400 text-xl font-bold">
+                                <i class="fa-solid fa-hospital-user"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-base font-bold text-white">Clinical Excellence</h4>
+                                <p class="text-xs text-slate-400">Leading research & surgical care</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Content -->
+            <div class="lg:col-span-7 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold tracking-wider uppercase">
+                    About Dr. Kashyap
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
+                    Mastering Precision Dental Surgery with Compassionate Care
+                </h2>
+                <p class="text-slate-400 text-base leading-relaxed">
+                    Dr. Nayanjyoti Kashyap is a highly accomplished Master of Dental Surgery (MDS) professional affiliated with the renowned **ITS Centre for Dental Studies and Research**. Combining state-of-the-art clinical methodologies with an unwavering commitment to patient safety, Dr. Kashyap delivers top-tier diagnostic, restorative, and surgical oral healthcare.
+                </p>
+                <p class="text-slate-400 text-base leading-relaxed">
+                    With an emphasis on minimally invasive techniques, complex dental rehabilitations, and aesthetic perfection, Dr. Kashyap remains at the forefront of contemporary dental advancements through continuous research and clinical practice.
+                </p>
+
+                <!-- Core Pillars -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                    <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-cyan-500/40 transition-colors">
+                        <div class="text-cyan-400 text-lg mb-2"><i class="fa-solid fa-microscope"></i></div>
+                        <h3 class="text-white font-semibold text-sm">Advanced Diagnostics</h3>
+                        <p class="text-slate-400 text-xs mt-1">Utilizing modern imaging & evidence-based treatment plans.</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-indigo-500/40 transition-colors">
+                        <div class="text-indigo-400 text-lg mb-2"><i class="fa-solid fa-hand-holding-medical"></i></div>
+                        <h3 class="text-white font-semibold text-sm">Painless Procedures</h3>
+                        <p class="text-slate-400 text-xs mt-1">Patient comfort and gentle surgical techniques as priority.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services" class="py-24 px-6 bg-slate-900/30 relative">
+        <div class="max-w-7xl mx-auto space-y-16">
+            
+            <div class="text-center space-y-4 max-w-3xl mx-auto">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold tracking-wider uppercase">
+                    Specialized Offerings
+                </div>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
+                    Comprehensive Dental & Surgical Services
+                </h2>
+                <p class="text-slate-400 text-base">
+                    Delivering world-class dental interventions tailored to restore functionality, aesthetics, and long-term oral health.
+                </p>
+            </div>
+
+            <!-- Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Card 1 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-cyan-500/20 to-indigo-500/20 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Maxillofacial & Oral Surgery</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Expert surgical management of wisdom tooth extractions, jaw alignment issues, facial trauma, and complex surgical interventions.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-indigo-500/20 to-purple-500/20 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-syringe"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-indigo-400 transition-colors">Dental Implantology</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Precision placement of biocompatible titanium implants for durable, natural-looking tooth replacement and full arch restoration.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-purple-500/20 to-pink-500/20 border border-purple-500/30 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">Cosmetic Smile Design</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Transformative aesthetic procedures including porcelain veneers, tooth whitening, laser gum contouring, and smile makeovers.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-pink-500/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-pink-500/20 to-cyan-500/20 border border-pink-500/30 flex items-center justify-center text-pink-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-notes-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-pink-400 transition-colors">Precision Endodontics</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Microscopic root canal therapies designed to preserve natural tooth structure with absolute comfort and speed.
+                    </p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-cyan-500/20 to-indigo-500/20 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-shield-virus"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Prosthodontic Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Custom crowns, bridges, and complete denture prosthetics engineered for perfect bite alignment and seamless functional harmony.
+                    </p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-indigo-500/20 to-purple-500/20 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-indigo-400 transition-colors">Periodontal Laser Therapy</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Advanced gum disease treatments, pocket reduction, and regenerative soft-tissue therapies utilizing precision laser technology.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 px-6 relative">
+        <div class="max-w-7xl mx-auto space-y-16">
+            
+            <div class="text-center space-y-4 max-w-3xl mx-auto">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-semibold tracking-wider uppercase">
+                    Endorsements & Testimonials
+                </div>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
+                    Trusted by Peers & Patients
+                </h2>
+                <p class="text-slate-400 text-base">
+                    Recognized for surgical competence, patient empathy, and academic dedication.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Endorsement 1 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Dr. Nayanjyoti Kashyap possesses rare clinical precision combined with outstanding patient handling skills. His work at ITS CDSR stands out for its high surgical standard."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800/80">
+                        <div class="w-10 h-10 rounded-full bg-cyan-500/20 flex items-center justify-center text-cyan-400 font-bold text-sm">
+                            <i class="fa-solid fa-user-shield"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Senior Consultant</h4>
+                            <p class="text-xs text-slate-400">Oral & Maxillofacial Dept.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Endorsement 2 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "I was extremely nervous about my complex wisdom tooth extraction, but Dr. Kashyap made the whole procedure completely seamless and painless."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800/80">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 flex items-center justify-center text-indigo-400 font-bold text-sm">
+                            <i class="fa-solid fa-user-check"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Verified Patient</h4>
+                            <p class="text-xs text-slate-400">Surgical Rehabilitation</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Endorsement 3 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "A deeply dedicated MDS specialist who stays updated with cutting-edge dental innovations. Highly recommended for complex restorative cases."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800/80">
+                        <div class="w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center text-purple-400 font-bold text-sm">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Academic Faculty</h4>
+                            <p class="text-xs text-slate-400">Dental Research Wing</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-6 bg-slate-900/40 relative border-t border-slate-800/80">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
+            
+            <!-- Direct Info -->
+            <div class="lg:col-span-5 space-y-8">
+                <div class="space-y-4">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold tracking-wider uppercase">
+                        Get In Touch
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
+                        Book a Surgical or Dental Consultation
+                    </h2>
+                    <p class="text-slate-400 text-base leading-relaxed">
+                        For patient inquiries, clinical consultations, or academic collaborations, reach out directly through the portal below.
+                    </p>
+                </div>
+
+                <div class="space-y-6">
+                    <!-- Institution Info -->
+                    <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+                        <div class="w-10 h-10 rounded-lg bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 shrink-0">
+                            <i class="fa-solid fa-hospital"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Primary Institution</h4>
+                            <p class="text-xs text-slate-400 mt-1">ITS Centre for Dental Studies and Research</p>
+                            <p class="text-[11px] text-slate-500">Delhi-NCR, India</p>
+                        </div>
+                    </div>
+
+                    <!-- Direct Contact -->
+                    <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+                        <div class="w-10 h-10 rounded-lg bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 shrink-0">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Direct Inquiry</h4>
+                            <p class="text-xs text-slate-400 mt-1">dr.nayanjyoti.kashyap@its.edu.in</p>
+                            <p class="text-[11px] text-slate-500">Response within 24 hours</p>
+                        </div>
+                    </div>
+
+                    <!-- Network Details -->
+                    <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+                        <div class="w-10 h-10 rounded-lg bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 shrink-0">
+                            <i class="fa-solid fa-link"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Professional Network</h4>
+                            <p class="text-xs text-slate-400 mt-1">Connected since: 05 Sep 2026</p>
+                            <p class="text-[11px] text-slate-500">Open for referrals & research</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Glassmorphism Form -->
+            <div class="lg:col-span-7">
+                <form onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent to Dr. Nayanjyoti Kashyap.');" 
+                      class="p-8 sm:p-10 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 space-y-6 shadow-2xl">
+                    
+                    <h3 class="text-xl font-bold text-white">Send Consultation Message</h3>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label class="text-xs font-semibold text-slate-300 uppercase tracking-wider">Full Name</label>
+                            <input type="text" required placeholder="John Doe" 
+                                   class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-xs font-semibold text-slate-300 uppercase tracking-wider">Email Address</label>
+                            <input type="email" required placeholder="john@example.com" 
+                                   class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                        </div>
+                    </div>
+
+                    <div class="space-y-2">
+                        <label class="text-xs font-semibold text-slate-300 uppercase tracking-wider">Procedure / Inquiry Type</label>
+                        <select class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-300 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                            <option>Oral & Maxillofacial Surgery Consultation</option>
+                            <option>Dental Implant Placement</option>
+                            <option>Cosmetic Smile Makeover</option>
+                            <option>Root Canal / Endodontics</option>
+                            <option>Academic Research Collaboration</option>
+                        </select>
+                    </div>
+
+                    <div class="space-y-2">
+                        <label class="text-xs font-semibold text-slate-300 uppercase tracking-wider">Message</label>
+                        <textarea rows="4" required placeholder="Please describe your clinical requirements or general inquiry..." 
+                                  class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm"></textarea>
+                    </div>
+
+                    <button type="submit" 
+                            class="w-full py-4 rounded-xl font-bold text-sm bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 text-white shadow-xl shadow-cyan-500/20 hover:shadow-cyan-500/40 hover:scale-[1.01] active:scale-95 transition-all duration-300 flex items-center justify-center gap-2">
+                        <span>Send Message</span>
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-800/80 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© 2026 Dr. Nayanjyoti Kashyap (MDS). All Rights Reserved.</p>
+            <p class="flex items-center gap-2">
+                <span>ITS Centre for Dental Studies and Research</span>
+                <span>•</span>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-linkedin text-sm"></i></a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
