@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Saumyajit Adhya | Executive Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#eef2ff',
+                            100: '#e0e7ff',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            900: '#312e81',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(99, 102, 241, 0.3);
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(51, 65, 85, 0.6);
+        }
+        .glass-card:hover {
+            border-color: rgba(99, 102, 241, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-tight text-white flex items-center gap-2">
+                <span class="w-8 h-8 rounded-lg bg-gradient-to-tr from-indigo-500 to-pink-500 flex items-center justify-center text-xs font-black text-white">SA</span>
+                <span>Dr. Saumyajit Adhya</span>
+            </a>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-indigo-400 transition-colors">Expertise</a>
+                <a href="#services" class="hover:text-indigo-400 transition-colors">Services</a>
+                <a href="#testimonials" class="hover:text-indigo-400 transition-colors">Endorsements</a>
+                <a href="#contact" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold hover:opacity-90 transition-all shadow-lg shadow-indigo-500/25">Get In Touch</a>
+            </div>
+            <button class="md:hidden text-slate-300 hover:text-white" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-6 py-4 space-y-3">
+            <a href="#about" class="block text-slate-300 hover:text-indigo-400">About</a>
+            <a href="#expertise" class="block text-slate-300 hover:text-indigo-400">Expertise</a>
+            <a href="#services" class="block text-slate-300 hover:text-indigo-400">Services</a>
+            <a href="#testimonials" class="block text-slate-300 hover:text-indigo-400">Endorsements</a>
+            <a href="#contact" class="block text-indigo-400 font-semibold">Get In Touch</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen pt-32 pb-20 flex items-center overflow-hidden">
+        <!-- Background Ambient Glows -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-indigo-600/20 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute top-1/3 right-10 w-[400px] h-[400px] bg-pink-600/15 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-12 items-center relative z-10">
+            <div class="lg:col-span-7 space-y-8">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card text-xs font-semibold text-indigo-300 border-indigo-500/30">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    Available for Keynote, Advisory & Leadership Roles
+                </div>
+                <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight">
+                    Innovating at the Intersection of <span class="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">Excellence & Vision</span>
+                </h1>
+                <p class="text-lg text-slate-400 max-w-2xl font-normal leading-relaxed">
+                    Dr. Saumyajit Adhya is an accomplished leader, strategist, and researcher dedicated to driving transformative impact, pioneering complex solutions, and mentoring the next generation of industry innovators.
+                </p>
+                <div class="flex flex-wrap items-center gap-4 pt-2">
+                    <a href="#contact" class="px-8 py-4 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-bold hover:opacity-95 transition-all shadow-xl shadow-indigo-500/25 flex items-center gap-3">
+                        <span>Initiate Collaboration</span>
+                        <i class="fa-solid fa-arrow-right text-sm"></i>
+                    </a>
+                    <a href="#about" class="px-8 py-4 rounded-full glass-card text-slate-200 font-semibold hover:bg-slate-800/80 transition-all">
+                        Explore Portfolio
+                    </a>
+                </div>
+
+                <!-- Trust Badges -->
+                <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-6">
+                    <div>
+                        <div class="text-2xl lg:text-3xl font-extrabold text-white">15+</div>
+                        <div class="text-xs text-slate-400 mt-1">Years Experience</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl lg:text-3xl font-extrabold text-white">50+</div>
+                        <div class="text-xs text-slate-400 mt-1">Publications & Projects</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl lg:text-3xl font-extrabold text-white">100%</div>
+                        <div class="text-xs text-slate-400 mt-1">Commitment to Quality</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Avatar Frame -->
+            <div class="lg:col-span-5 flex justify-center lg:justify-end">
+                <div class="relative group">
+                    <div class="absolute -inset-1.5 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-3xl blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+                    <div class="relative glass-card p-4 rounded-3xl overflow-hidden max-w-sm">
+                        <img src="https://ui-avatars.com/api/?name=Dr.+Saumyajit+Adhya&size=200&background=0D8ABC&color=fff&bold=true" alt="Dr. Saumyajit Adhya" class="w-full h-auto rounded-2xl object-cover shadow-2xl">
+                        <div class="mt-4 p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+                            <h3 class="font-bold text-white text-lg">Dr. Saumyajit Adhya</h3>
+                            <p class="text-xs text-indigo-400 font-medium">Thought Leader & Executive Strategist</p>
+                            <div class="mt-3 flex items-center justify-between text-xs text-slate-400 pt-2 border-t border-slate-800">
+                                <span><i class="fa-solid fa-location-dot text-indigo-400 mr-1"></i> Global Reach</span>
+                                <span class="text-emerald-400 font-semibold"><i class="fa-solid fa-circle text-[8px] mr-1"></i> Verified Network</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 relative bg-slate-900/30">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-6 relative">
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Collaboration & Innovation" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 glass-card p-6 rounded-2xl hidden sm:block border-indigo-500/30 max-w-xs">
+                        <i class="fa-solid fa-quote-left text-2xl text-indigo-400 mb-2"></i>
+                        <p class="text-xs text-slate-300 italic">"Driven by academic rigor and high-impact strategy to create lasting professional value."</p>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-block px-3 py-1 rounded-md bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold uppercase tracking-wider">
+                        Executive Profile
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
+                        Bridging Strategy, Research & Real-World Execution
+                    </h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        With a doctorate background and a passion for high-level execution, Dr. Saumyajit Adhya brings a unique multi-disciplinary perspective. Specializing in advanced technical frameworks, strategic leadership, and actionable innovation, Dr. Adhya delivers unmatched leadership across high-stakes initiatives.
+                    </p>
+                    
+                    <div class="grid sm:grid-cols-2 gap-4 pt-4">
+                        <div class="glass-card p-4 rounded-xl">
+                            <i class="fa-solid fa-microscope text-indigo-400 text-xl mb-2"></i>
+                            <h4 class="font-bold text-white text-sm">Rigorous Methodology</h4>
+                            <p class="text-xs text-slate-400 mt-1">Grounded in research-backed analytical frameworks.</p>
+                        </div>
+                        <div class="glass-card p-4 rounded-xl">
+                            <i class="fa-solid fa-chart-line text-pink-400 text-xl mb-2"></i>
+                            <h4 class="font-bold text-white text-sm">Strategic Growth</h4>
+                            <p class="text-xs text-slate-400 mt-1">Accelerating organization growth and modernization.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / Expertise Grid -->
+    <section id="services" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-block px-3 py-1 rounded-md bg-pink-500/10 border border-pink-500/20 text-pink-400 text-xs font-semibold uppercase tracking-wider mb-3">
+                    Capabilities
+                </div>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white">Core Expertise & Offerings</h2>
+                <p class="text-slate-400 mt-4 text-base">Tailored strategic advisory, technical leadership, and domain expertise.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-2xl group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300 mb-6">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Strategic Advisory</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        High-level strategic guidance for organizations looking to transform workflows, implement emerging technology, and scale sustainably.
+                    </p>
+                    <a href="#contact" class="text-xs font-bold text-indigo-400 group-hover:text-indigo-300 flex items-center gap-2">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 text-2xl group-hover:bg-purple-500 group-hover:text-white transition-all duration-300 mb-6">
+                        <i class="fa-solid fa-flask"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Research & Innovation</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        In-depth academic and clinical research methodologies applied to deliver actionable domain insights and next-generation frameworks.
+                    </p>
+                    <a href="#contact" class="text-xs font-bold text-purple-400 group-hover:text-purple-300 flex items-center gap-2">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400 text-2xl group-hover:bg-pink-500 group-hover:text-white transition-all duration-300 mb-6">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Keynote Speaking & Training</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Engaging keynote addresses, executive workshops, and masterclasses designed to inspire teams and educate decision-makers.
+                    </p>
+                    <a href="#contact" class="text-xs font-bold text-pink-400 group-hover:text-pink-300 flex items-center gap-2">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 relative bg-slate-900/40">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-block px-3 py-1 rounded-md bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold uppercase tracking-wider mb-3">
+                    Endorsements
+                </div>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white">Client & Peer Praise</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Dr. Adhya's analytical acuity and strategic leadership provided transformative directions for our initiative. A visionary collaborator."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-500 flex items-center justify-center font-bold text-white text-xs">
+                            VP
+                        </div>
+                        <div>
+                            <div class="font-bold text-white text-sm">Vice President of Research</div>
+                            <div class="text-xs text-slate-400">Global Innovation Lab</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Working alongside Dr. Saumyajit Adhya was standard-setting. The focus on quality and research integrity is second to none."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-purple-500 to-pink-500 flex items-center justify-center font-bold text-white text-xs">
+                            ED
+                        </div>
+                        <div>
+                            <div class="font-bold text-white text-sm">Executive Director</div>
+                            <div class="text-xs text-slate-400">Strategy & Consult Consortium</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Incredible capacity to simplify complex systemic challenges into clear, executable frameworks. Highly recommended!"
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-pink-500 to-indigo-500 flex items-center justify-center font-bold text-white text-xs">
+                            SL
+                        </div>
+                        <div>
+                            <div class="font-bold text-white text-sm">Senior Director</div>
+                            <div class="text-xs text-slate-400">Enterprise Technology Partners</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12">
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <div class="inline-block px-3 py-1 rounded-md bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold uppercase tracking-wider mb-3">
+                            Connect Direct
+                        </div>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Let's Build Something Exceptional</h2>
+                        <p class="text-slate-400 mt-4 text-sm leading-relaxed">
+                            Reach out to discuss advisory engagements, speaking opportunities, or research collaborations.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="glass-card p-4 rounded-xl flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400">Direct Email</div>
+                                <div class="text-sm font-semibold text-white">contact@saumyajitadhya.com</div>
+                            </div>
+                        </div>
+
+                        <div class="glass-card p-4 rounded-xl flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-lg bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400">
+                                <i class="fa-solid fa-user-check"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400">Professional Connection</div>
+                                <div class="text-sm font-semibold text-white">Established Member (2026)</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4 pt-4">
+                        <a href="#" class="w-10 h-10 rounded-full glass-card flex items-center justify-center text-slate-300 hover:text-indigo-400 hover:border-indigo-500/50 transition-all">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full glass-card flex items-center justify-center text-slate-300 hover:text-indigo-400 hover:border-indigo-500/50 transition-all">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full glass-card flex items-center justify-center text-slate-300 hover:text-indigo-400 hover:border-indigo-500/50 transition-all">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div class="lg:col-span-7">
+                    <form onsubmit="event.preventDefault(); alert('Thank you for your message, Dr. Saumyajit Adhya will be in touch shortly.');" class="glass-card p-8 rounded-2xl space-y-6">
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Your Name</label>
+                                <input type="text" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-800 text-slate-100 text-sm focus:outline-none focus:border-indigo-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Your Email</label>
+                                <input type="email" required placeholder="john@company.com" class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-800 text-slate-100 text-sm focus:outline-none focus:border-indigo-500 transition-colors">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">Subject</label>
+                            <input type="text" required placeholder="Strategic Engagement Proposal" class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-800 text-slate-100 text-sm focus:outline-none focus:border-indigo-500 transition-colors">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">Message</label>
+                            <textarea rows="4" required placeholder="How can Dr. Adhya assist with your mission?" class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-800 text-slate-100 text-sm focus:outline-none focus:border-indigo-500 transition-colors resize-none"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-bold hover:opacity-95 transition-all shadow-lg shadow-indigo-500/25">
+                            Send Transmission
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-900 bg-slate-950 text-slate-500 text-xs text-center">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+                © 2026 Dr. Saumyajit Adhya. All rights reserved.
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="#" class="hover:text-slate-400 transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-slate-400 transition-colors">Terms of Engagement</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
