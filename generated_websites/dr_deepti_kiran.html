@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Deepti Kiran | Senior Associate - Axtria</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            500: '#06b6d4',
+                            600: '#0284c7',
+                            900: '#0f172a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(99, 102, 241, 0.3);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card:hover {
+            border-color: rgba(99, 102, 241, 0.4);
+            box-shadow: 0 10px 30px -10px rgba(99, 102, 241, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- Ambient Gradient Background Elements -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none -z-10">
+        <div class="absolute -top-40 -right-40 w-96 h-96 bg-indigo-600/20 rounded-full blur-3xl"></div>
+        <div class="absolute top-1/3 -left-40 w-96 h-96 bg-purple-600/20 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-10 right-10 w-96 h-96 bg-pink-600/15 rounded-full blur-3xl"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-tight text-white flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-indigo-500 inline-block animate-pulse"></span>
+                <span>Dr. Deepti Kiran</span>
+            </a>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-white transition-colors">About</a>
+                <a href="#expertise" class="hover:text-white transition-colors">Expertise</a>
+                <a href="#solutions" class="hover:text-white transition-colors">Solutions</a>
+                <a href="#endorsements" class="hover:text-white transition-colors">Endorsements</a>
+            </div>
+
+            <a href="#contact" class="px-5 py-2.5 text-sm font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full hover:opacity-90 transition-all shadow-lg shadow-indigo-500/25">
+                Connect Now
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen pt-32 pb-20 flex items-center relative">
+        <div class="max-w-7xl mx-auto px-6 w-full">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Left Content -->
+                <div class="lg:col-span-7 space-y-8">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border border-indigo-500/30">
+                        <i class="fa-solid fa-chart-line text-indigo-400 text-sm"></i>
+                        <span class="text-xs font-semibold uppercase tracking-wider text-indigo-300">Axtria - Ingenious Insights</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
+                        Transforming Data into <br>
+                        <span class="gradient-text">Ingenious Insights</span>
+                    </h1>
+
+                    <p class="text-slate-400 text-lg sm:text-xl max-w-2xl leading-relaxed">
+                        Senior Associate specialising in commercial decision science, advanced analytics, and strategic operations for the life sciences sector.
+                    </p>
+
+                    <!-- Trust Badges & Metrics -->
+                    <div class="pt-2 grid grid-cols-3 gap-4 border-t border-slate-800/80">
+                        <div>
+                            <div class="text-2xl font-bold text-white">100%</div>
+                            <div class="text-xs text-slate-400 mt-1">Data Precision</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-white">Life Science</div>
+                            <div class="text-xs text-slate-400 mt-1">Domain Mastery</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-white">Strategic</div>
+                            <div class="text-xs text-slate-400 mt-1">Commercial Impact</div>
+                        </div>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <a href="#contact" class="px-8 py-4 text-sm font-semibold text-white bg-gradient-to-r from-indigo-500 to-purple-600 rounded-xl hover:shadow-lg hover:shadow-indigo-500/30 transition-all flex items-center gap-2">
+                            <span>Initiate Collaboration</span>
+                            <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                        <a href="#about" class="px-8 py-4 text-sm font-semibold text-slate-300 glass-card rounded-xl hover:bg-slate-800/60 transition-all">
+                            View Profile
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Avatar & Visual Frame -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative">
+                        <!-- Glowing Outer Ring -->
+                        <div class="absolute -inset-1.5 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full blur-lg opacity-75 animate-pulse"></div>
+                        <!-- Inner Double Frame -->
+                        <div class="relative p-2 bg-slate-950 rounded-full">
+                            <div class="p-1.5 bg-gradient-to-tr from-indigo-500 to-pink-500 rounded-full">
+                                <img src="https://ui-avatars.com/api/?name=Dr.+Deepti+Kiran&size=200&background=0D8ABC&color=fff&bold=true" 
+                                     alt="Dr. Deepti Kiran" 
+                                     class="w-64 h-64 sm:w-72 sm:h-72 rounded-full object-cover shadow-2xl">
+                            </div>
+                        </div>
+                        <!-- Overlay Badge -->
+                        <div class="absolute -bottom-4 right-4 glass-card px-4 py-2.5 rounded-2xl flex items-center gap-3 border border-indigo-500/30 shadow-xl">
+                            <div class="w-3 h-3 rounded-full bg-emerald-500 animate-ping"></div>
+                            <div>
+                                <p class="text-xs font-semibold text-slate-200">Current Role</p>
+                                <p class="text-xs text-slate-400">Senior Associate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 relative border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Image Container -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative rounded-2xl overflow-hidden glass-card p-2 border border-slate-800">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" 
+                             alt="Data Science Team Strategy" 
+                             class="rounded-xl w-full h-[400px] object-cover filter brightness-90 contrast-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <p class="text-sm font-semibold text-indigo-400">Driving Value in Healthcare & Tech</p>
+                            <p class="text-xs text-slate-300 mt-1">Transforming complex commercial challenges into structured data strategy.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div class="lg:col-span-7 space-y-6">
+                    <span class="text-indigo-400 text-sm font-semibold tracking-wider uppercase">About Dr. Deepti Kiran</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold leading-tight">
+                        Bridging Strategic Decision-Making & Advanced Analytics
+                    </h2>
+                    <p class="text-slate-400 leading-relaxed">
+                        At <strong class="text-slate-200">Axtria - Ingenious Insights</strong>, Dr. Deepti Kiran focuses on leveraging sophisticated analytics architectures to solve critical commercial challenges for pharmaceutical and life science organizations worldwide.
+                    </p>
+                    <p class="text-slate-400 leading-relaxed">
+                        With an emphasis on precision, scalable cloud methodologies, and domain-driven innovation, she enables decision-makers to accelerate market growth, optimize cloud ecosystems, and uncover hidden actionable opportunities.
+                    </p>
+                    
+                    <div class="grid sm:grid-cols-2 gap-4 pt-4">
+                        <div class="glass-card p-4 rounded-xl">
+                            <i class="fa-solid fa-microscope text-indigo-400 text-xl mb-2"></i>
+                            <h4 class="font-semibold text-white">Domain Excellence</h4>
+                            <p class="text-xs text-slate-400 mt-1">Deep alignment with life sciences commercial operations.</p>
+                        </div>
+                        <div class="glass-card p-4 rounded-xl">
+                            <i class="fa-solid fa-brain text-purple-400 text-xl mb-2"></i>
+                            <h4 class="font-semibold text-white">Analytics Innovation</h4>
+                            <p class="text-xs text-slate-400 mt-1">High-impact predictive models and decision frameworks.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / Capabilities Section -->
+    <section id="expertise" class="py-24 bg-slate-950/50 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-indigo-400 text-sm font-semibold tracking-wider uppercase">Core Competencies</span>
+                <h2 class="text-3xl sm:text-4xl font-bold">Solutions Built for Industry Leaders</h2>
+                <p class="text-slate-400">Delivering end-to-end analytical capability, continuous alignment, and modern data-driven intelligence.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Commercial Analytics</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Optimizing market access, commercial operations, and field-force efficiency with high-precision analytical modeling.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-dna"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Life Science Operations</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Tailored strategies designed specifically for modern pharmaceutical ecosystems and life science innovation.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-pink-500/10 flex items-center justify-center text-pink-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Ingenious Insights</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Translating complex data streams into executive-ready business insights for dynamic decision making.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Data Architecture</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Scalable cloud data frameworks structured for reliability, speed, and real-time business integration.
+                    </p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-users-gear"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Cross-Functional Leadership</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Connecting engineering, data science, and senior stakeholders to build aligned commercial agendas.
+                    </p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-cyan-500/10 flex items-center justify-center text-cyan-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Strategic Governance</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Ensuring statistical integrity, strict compliance, and rigorous methodology across enterprise assets.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Endorsements Section -->
+    <section id="endorsements" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-indigo-400 text-sm font-semibold tracking-wider uppercase">Endorsements</span>
+                <h2 class="text-3xl sm:text-4xl font-bold">Trusted Collaboration</h2>
+                <p class="text-slate-400">Feedback from peer leaders and commercial stakeholders in analytics.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 text-sm gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "Dr. Deepti Kiran brings a rare combination of rigor and strategic vision to analytics. Her contributions directly improved our commercial planning strategy."
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-500 flex items-center justify-center font-bold text-xs">
+                            VP
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-semibold text-white">VP of Commercial Analytics</h4>
+                            <p class="text-xs text-slate-400">Global Pharma Enterprise</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 text-sm gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "An exceptional leader who consistently transforms complex data structures into actionable and clear executive insights. Highly recommended."
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-purple-500 to-pink-500 flex items-center justify-center font-bold text-xs">
+                            SD
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-semibold text-white">Senior Director</h4>
+                            <p class="text-xs text-slate-400">Decision Science Practice</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 text-sm gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "Working with Dr. Deepti ensures both high precision and high accountability. Her commercial acumen in life sciences is outstanding."
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-slate-800 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-pink-500 to-indigo-500 flex items-center justify-center font-bold text-xs">
+                            PL
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-semibold text-white">Principal Lead</h4>
+                            <p class="text-xs text-slate-400">Axtria Network</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-slate-950/80 relative border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <!-- Direct Details -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-indigo-400 text-sm font-semibold tracking-wider uppercase">Contact</span>
+                        <h2 class="text-3xl font-bold mt-2">Let's Connect</h2>
+                        <p class="text-slate-400 mt-4 leading-relaxed">
+                            Interested in discussing analytics strategy, commercial operations, or joint initiatives? Reach out directly.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4 p-4 rounded-xl glass-card">
+                            <div class="w-12 h-12 rounded-lg bg-indigo-500/10 flex items-center justify-center text-indigo-400">
+                                <i class="fa-solid fa-building text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Organization</p>
+                                <p class="text-sm font-semibold text-white">Axtria - Ingenious Insights</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl glass-card">
+                            <div class="w-12 h-12 rounded-lg bg-purple-500/10 flex items-center justify-center text-purple-400">
+                                <i class="fa-solid fa-briefcase text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Designation</p>
+                                <p class="text-sm font-semibold text-white">Senior Associate</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl glass-card">
+                            <div class="w-12 h-12 rounded-lg bg-pink-500/10 flex items-center justify-center text-pink-400">
+                                <i class="fa-solid fa-user-check text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Network Connection</p>
+                                <p class="text-sm font-semibold text-white">07 Sep 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div class="lg:col-span-7">
+                    <form class="glass-card p-8 rounded-2xl space-y-6" onsubmit="event.preventDefault(); alert('Thank you for reaching out! Your message has been sent.');">
+                        <h3 class="text-xl font-bold text-white">Send Direct Message</h3>
+                        
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold uppercase text-slate-400 mb-2">Your Name</label>
+                                <input type="text" placeholder="John Doe" class="w-full bg-slate-900/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-200 focus:outline-none focus:border-indigo-500 transition-colors" required>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold uppercase text-slate-400 mb-2">Your Email</label>
+                                <input type="email" placeholder="john@example.com" class="w-full bg-slate-900/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-200 focus:outline-none focus:border-indigo-500 transition-colors" required>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold uppercase text-slate-400 mb-2">Subject</label>
+                            <input type="text" placeholder="Strategic Analytics Collaboration" class="w-full bg-slate-900/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-200 focus:outline-none focus:border-indigo-500 transition-colors" required>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold uppercase text-slate-400 mb-2">Message</label>
+                            <textarea rows="4" placeholder="Hello Dr. Deepti, I'd like to discuss..." class="w-full bg-slate-900/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-200 focus:outline-none focus:border-indigo-500 transition-colors" required></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-xl font-semibold text-white shadow-lg shadow-indigo-500/25 hover:opacity-95 transition-opacity">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-900 bg-slate-950 text-slate-500 text-xs text-center">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p>&copy; 2026 Dr. Deepti Kiran. All rights reserved.</p>
+            <p>Senior Associate | Axtria - Ingenious Insights</p>
+        </div>
+    </footer>
+
+</body>
+</html>
