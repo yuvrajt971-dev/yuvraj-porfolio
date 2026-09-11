@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Rashmi Punase | Clinical Head at Tathastu Dental</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-fontawesome/6.5.1/css/all.min.css">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            cyan: '#0D8ABC',
+                            teal: '#14b8a6',
+                            indigo: '#6366f1',
+                            purple: '#a855f7',
+                        }
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 3s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card:hover {
+            border-color: rgba(99, 102, 241, 0.4);
+            box-shadow: 0 10px 30px -10px rgba(99, 102, 241, 0.2);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .text-gradient-teal {
+            background: linear-gradient(135deg, #2dd4bf 0%, #38bdf8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .avatar-glow::before {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            background: linear-gradient(45deg, #0D8ABC, #6366f1, #ec4899);
+            border-radius: 9999px;
+            z-index: -1;
+            filter: blur(8px);
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+        .avatar-glow:hover::before {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- Ambient Background Glows -->
+    <div class="fixed top-0 left-1/4 w-96 h-96 bg-indigo-600/15 rounded-full blur-3xl pointer-events-none -z-10 animate-pulse-slow"></div>
+    <div class="fixed bottom-1/3 right-10 w-[500px] h-[500px] bg-cyan-600/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+    <div class="fixed top-2/3 left-10 w-[400px] h-[400px] bg-purple-600/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+    <!-- Navigation -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center font-bold text-white shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
+                    <i class="fa-solid font-bold fa-tooth text-lg"></i>
+                </div>
+                <div>
+                    <span class="font-bold text-lg tracking-tight text-white block leading-none">Dr. Rashmi Punase</span>
+                    <span class="text-xs text-slate-400 font-medium">Tathastu Dental</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#leadership" class="hover:text-cyan-400 transition-colors">Leadership</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Specializations</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Endorsements</a>
+            </nav>
+
+            <a href="#contact" class="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-xs font-semibold rounded-full group bg-gradient-to-br from-cyan-500 to-indigo-600 group-hover:from-cyan-500 group-hover:to-indigo-600 hover:text-white text-white focus:outline-none">
+                <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-slate-950 rounded-full group-hover:bg-opacity-0">
+                    <i class="fa-regular fa-calendar-check mr-2"></i>Book Consultation
+                </span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-16 pb-24 md:pt-28 md:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Text Content -->
+                <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/90 border border-slate-800 text-xs font-semibold text-cyan-400 shadow-inner">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                        Clinical Head @ Tathastu Dental
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
+                        Crafting Healthy Smiles Through <br class="hidden sm:inline">
+                        <span class="text-gradient">Clinical Excellence</span> & Innovation.
+                    </h1>
+
+                    <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed font-light">
+                        Leading modern dental care at <strong class="text-slate-200">Tathastu Dental</strong>. Specializing in comprehensive oral rehabilitation, advanced cosmetic transformations, and patient-centric clinical management.
+                    </p>
+
+                    <!-- CTAs & Actions -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-600 to-purple-600 text-white font-semibold shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.02] transition-all text-center">
+                            Get In Touch <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                        </a>
+                        <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-xl glass-card font-semibold text-slate-300 hover:text-white hover:bg-slate-900/80 transition-all text-center">
+                            Explore Expertise
+                        </a>
+                    </div>
+
+                    <!-- Trust Badges Grid -->
+                    <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-4 text-center lg:text-left">
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-white">100%</p>
+                            <p class="text-xs text-slate-400 mt-1">Patient Focus</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-gradient-teal">Elite</p>
+                            <p class="text-xs text-slate-400 mt-1">Clinical Standard</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-white">Advanced</p>
+                            <p class="text-xs text-slate-400 mt-1">Dental Care</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Visual Element / Avatar -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative">
+                        <!-- Decorative Shapes -->
+                        <div class="absolute -top-6 -left-6 w-24 h-24 bg-cyan-500/20 rounded-full blur-xl"></div>
+                        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-purple-500/20 rounded-full blur-xl"></div>
+                        
+                        <!-- Main Card Frame -->
+                        <div class="glass-card p-6 rounded-3xl relative z-10 max-w-sm text-center">
+                            <div class="relative w-48 h-48 mx-auto mb-6 avatar-glow rounded-full">
+                                <img src="https://ui-avatars.com/api/?name=Dr.Rashmi+Punase&size=200&background=0D8ABC&color=fff&bold=true" 
+                                     alt="Dr. Rashmi Punase" 
+                                     class="w-full h-full object-cover rounded-full border-4 border-slate-950 shadow-2xl">
+                            </div>
+                            
+                            <h3 class="text-xl font-bold text-white">Dr. Rashmi Punase</h3>
+                            <p class="text-sm text-cyan-400 font-medium mt-1">Clinical Head</p>
+                            <p class="text-xs text-slate-400 mt-2 flex items-center justify-center gap-1">
+                                <i class="fa-solid fa-hospital text-indigo-400"></i> Tathastu Dental
+                            </p>
+
+                            <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-around text-xs text-slate-400">
+                                <span class="flex items-center gap-1.5"><i class="fa-solid fa-shield-halved text-teal-400"></i> Certified Expert</span>
+                                <span class="flex items-center gap-1.5"><i class="fa-solid fa-award text-amber-400"></i> Top Rated</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Leadership Section -->
+    <section id="about" class="py-20 relative bg-slate-950/50 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- Clinical Image Showcase -->
+                <div class="relative order-2 lg:order-1">
+                    <div class="relative rounded-2xl overflow-hidden glass-card p-2">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Modern Dental Excellence" 
+                             class="rounded-xl w-full h-[400px] object-cover filter brightness-90 hover:brightness-100 transition-all duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-4 glass-card rounded-xl">
+                            <p class="text-xs font-semibold uppercase tracking-wider text-cyan-400">Tathastu Dental Practice</p>
+                            <p class="text-sm font-medium text-slate-200 mt-1">State-of-the-art technological infrastructure for modern dentistry.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bio Content -->
+                <div class="space-y-6 order-1 lg:order-2">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-xs font-semibold text-indigo-400">
+                        <i class="fa-solid fa-stethoscope"></i> Executive Leadership
+                    </div>
+                    
+                    <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">
+                        Transforming Oral Healthcare with <span class="text-gradient">Precision & Empathy</span>
+                    </h2>
+
+                    <p class="text-slate-300 leading-relaxed text-sm sm:text-base font-light">
+                        As the <strong class="text-white">Clinical Head at Tathastu Dental</strong>, Dr. Rashmi Punase combines modern clinical protocols with compassionate patient care. Her strategic vision ensures that every patient receives personalized, world-class dental treatments in a welcoming environment.
+                    </p>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-4 p-3 rounded-xl hover:bg-slate-900/50 transition-colors">
+                            <div class="w-10 h-10 rounded-lg bg-cyan-500/10 flex items-center justify-center text-cyan-400 shrink-0 mt-1">
+                                <i class="fa-solid fa-user-doctor text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white text-base">Clinical Governance</h4>
+                                <p class="text-xs text-slate-400 mt-1">Overseeing high treatment standards, sterilization, and cutting-edge clinical practices.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-3 rounded-xl hover:bg-slate-900/50 transition-colors">
+                            <div class="w-10 h-10 rounded-lg bg-indigo-500/10 flex items-center justify-center text-indigo-400 shrink-0 mt-1">
+                                <i class="fa-solid fa-wand-magic-sparkles text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white text-base">Smile Designing & Restorative Care</h4>
+                                <p class="text-xs text-slate-400 mt-1">Designing natural, long-lasting aesthetic enhancements customized to each unique smile.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Specializations Section -->
+    <section id="services" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold tracking-widest text-cyan-400 uppercase">Clinical Expertise</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold mt-3">Comprehensive Dental Services</h2>
+                <p class="text-slate-400 text-sm sm:text-base mt-3">From preventive oral healthcare to complex aesthetic reconstructions, delivered with perfection.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="glass-card p-8 rounded-2xl group relative overflow-hidden transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-cyan-500/20 to-indigo-500/20 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-teeth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Cosmetic Dentistry</h3>
+                    <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                        Veneers, teeth whitening, aesthetic bonding, and complete smile revamps designed to boost confidence and facial harmony.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="glass-card p-8 rounded-2xl group relative overflow-hidden transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-indigo-500/20 to-purple-500/20 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-tooth text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Restorative Dentistry</h3>
+                    <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                        Advanced crowns, bridges, and tooth preservation solutions restoring both functionality and structural integrity seamlessly.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="glass-card p-8 rounded-2xl group relative overflow-hidden transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-500/20 to-pink-500/20 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-notes-medical text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Clinical Operations</h3>
+                    <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                        Leading clinical standards, ensuring sterile practices, modern tech integration, and top-grade patient safety protocols.
+                    </p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="glass-card p-8 rounded-2xl group relative overflow-hidden transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-emerald-500/20 to-cyan-500/20 text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-heart-pulse text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Preventive Oral Care</h3>
+                    <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                        Proactive dental hygiene programs, early diagnosis, and comprehensive oral health maintenance for long-term wellness.
+                    </p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="glass-card p-8 rounded-2xl group relative overflow-hidden transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-amber-500/20 to-orange-500/20 text-amber-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-shield-virus text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Endodontics & Care</h3>
+                    <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                        Precision root canal treatments and pain-free restorative techniques designed for maximum natural tooth retention.
+                    </p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="glass-card p-8 rounded-2xl group relative overflow-hidden transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-pink-500/20 to-rose-500/20 text-rose-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-face-smile text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Patient Consultation</h3>
+                    <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                        Empathetic, clear consultations prioritizing patient comfort, transparent guidance, and customized treatment mapping.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Endorsements & Testimonials -->
+    <section id="testimonials" class="py-20 relative bg-slate-950/80 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-bold tracking-widest text-indigo-400 uppercase">Patient & Peer Feedback</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold mt-3">Trusted Clinical Excellence</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="glass-card p-6 rounded-2xl relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4 text-xs">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-xs sm:text-sm italic leading-relaxed">
+                            "Dr. Rashmi Punase's leadership at Tathastu Dental is evident from the moment you step in. Her attention to detail and calm demeanour made my dental transformation smooth and pain-free."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-full bg-slate-800 flex items-center justify-center font-bold text-cyan-400 text-xs">P.S.</div>
+                        <div>
+                            <p class="text-xs font-bold text-white">Patient Review</p>
+                            <p class="text-[10px] text-slate-400">Tathastu Dental Clinic</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="glass-card p-6 rounded-2xl relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4 text-xs">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-xs sm:text-sm italic leading-relaxed">
+                            "An exemplary clinical head who sets benchmark quality standards. Her diagnostic precision and team management elevate the entire standard of dental care."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-full bg-slate-800 flex items-center justify-center font-bold text-indigo-400 text-xs">M.K.</div>
+                        <div>
+                            <p class="text-xs font-bold text-white">Healthcare Professional</p>
+                            <p class="text-[10px] text-slate-400">Dental Specialist</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="glass-card p-6 rounded-2xl relative flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4 text-xs">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-xs sm:text-sm italic leading-relaxed">
+                            "Under Dr. Rashmi's supervision, Tathastu Dental delivers unparalleled comfort and hygiene. Highly recommend her for any advanced cosmetic procedures!"
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center gap-3">
+                        <div class="w-9 h-9 rounded-full bg-slate-800 flex items-center justify-center font-bold text-purple-400 text-xs">A.R.</div>
+                        <div>
+                            <p class="text-xs font-bold text-white">Verified Patient</p>
+                            <p class="text-[10px] text-slate-400">Smile Design Patient</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Appointment Section -->
+    <section id="contact" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12 glass-card p-8 sm:p-12 rounded-3xl relative overflow-hidden">
+                
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="text-xs font-bold tracking-widest text-cyan-400 uppercase">Connect Directly</span>
+                    <h2 class="text-3xl font-extrabold text-white">Schedule a Consultation</h2>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Have questions about a treatment or looking to book a clinical consultation at Tathastu Dental? Send a message directly.
+                    </p>
+
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-cyan-400">
+                                <i class="fa-solid fa-hospital"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Location</p>
+                                <p class="text-sm font-semibold text-white">Tathastu Dental Clinic</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-indigo-400">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Professional Inquiries</p>
+                                <p class="text-sm font-semibold text-white">contact@tathastudental.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-emerald-400">
+                                <i class="fa-solid fa-user-check"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Connection Status</p>
+                                <p class="text-sm font-semibold text-white">Connected: 06 Sep 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="lg:col-span-7">
+                    <form onsubmit="event.preventDefault(); alert('Thank you! Your message has been received.');" class="space-y-4">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Your Name</label>
+                                <input type="text" required placeholder="John Doe" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-600 focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Email Address</label>
+                                <input type="email" required placeholder="john@example.com" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-600 focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">Service Required</label>
+                            <select class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-300 focus:outline-none focus:border-cyan-500 transition-colors">
+                                <option>General Dental Consultation</option>
+                                <option>Cosmetic Dentistry & Smile Makeover</option>
+                                <option>Restorative Dentistry</option>
+                                <option>Clinical / Strategic Partnership</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2">Message</label>
+                            <textarea rows="4" required placeholder="Tell us how we can help you..." class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-600 focus:outline-none focus:border-cyan-500 transition-colors"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-600 to-purple-600 text-white font-semibold text-sm hover:opacity-95 transition-opacity shadow-lg shadow-indigo-500/25">
+                            Send Request <i class="fa-solid fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-900 bg-slate-950 text-slate-500 text-xs text-center">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p>&copy; 2026 Dr. Rashmi Punase. Clinical Head at Tathastu Dental. All rights reserved.</p>
+            <div class="flex items-center gap-4 text-slate-400">
+                <a href="#" class="hover:text-cyan-400"><i class="fa-brands fa-linkedin text-lg"></i></a>
+                <a href="#" class="hover:text-cyan-400"><i class="fa-solid fa-globe text-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
