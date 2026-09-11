@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Neha Agrawal | Healthcare Leadership & Fellowship Showcase</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+        }
+        .glow-bg {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(120px);
+            pointer-events: none;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-white relative overflow-x-hidden">
+
+    <!-- Ambient Glow Background Effects -->
+    <div class="glow-bg w-[500px] h-[500px] bg-cyan-500/15 -top-32 -left-32"></div>
+    <div class="glow-bg w-[600px] h-[600px] bg-indigo-600/15 top-[30%] -right-40"></div>
+    <div class="glow-bg w-[500px] h-[500px] bg-purple-600/15 bottom-[10%] -left-20"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center font-bold text-lg text-white shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
+                    NA
+                </div>
+                <span class="font-bold text-xl tracking-tight bg-gradient-to-r from-white via-slate-200 to-slate-400 bg-clip-text text-transparent">
+                    Dr. Neha Agrawal
+                </span>
+            </a>
+
+            <!-- Desktop Links -->
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-cyan-400 transition-colors">Expertise</a>
+                <a href="#pillars" class="hover:text-cyan-400 transition-colors">Key Pillars</a>
+                <a href="#endorsements" class="hover:text-cyan-400 transition-colors">Endorsements</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="hidden md:flex items-center">
+                <a href="#contact" class="relative inline-flex items-center justify-center px-6 py-2.5 text-sm font-semibold text-white transition-all duration-300 rounded-full bg-gradient-to-r from-cyan-500 to-indigo-600 hover:from-cyan-400 hover:to-indigo-500 shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:-translate-y-0.5">
+                    Connect Professionally
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-btn" class="md:hidden text-slate-300 hover:text-white focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900/95 border-b border-slate-800 px-6 py-6 space-y-4">
+            <a href="#about" class="block text-slate-300 hover:text-cyan-400 font-medium">About</a>
+            <a href="#expertise" class="block text-slate-300 hover:text-cyan-400 font-medium">Expertise</a>
+            <a href="#pillars" class="block text-slate-300 hover:text-cyan-400 font-medium">Key Pillars</a>
+            <a href="#endorsements" class="block text-slate-300 hover:text-cyan-400 font-medium">Endorsements</a>
+            <a href="#contact" class="block text-slate-300 hover:text-cyan-400 font-medium">Contact</a>
+            <a href="#contact" class="inline-block w-full text-center px-6 py-3 text-sm font-semibold text-white rounded-full bg-gradient-to-r from-cyan-500 to-indigo-600">Connect Professionally</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-24 md:pt-48 md:pb-32 px-6 lg:px-12 max-w-7xl mx-auto flex flex-col items-center text-center">
+        <!-- Avatar with Double Gradient Glow Frame -->
+        <div class="relative mb-8 group">
+            <div class="absolute -inset-1.5 bg-gradient-to-r from-cyan-500 via-indigo-500 to-pink-500 rounded-full blur-lg opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+            <div class="relative p-1.5 rounded-full bg-slate-950">
+                <img src="https://ui-avatars.com/api/?name=Dr.+Neha+Agrawal&size=200&background=0D8ABC&color=fff&bold=true" 
+                     alt="Dr. Neha Agrawal" 
+                     class="w-36 h-36 md:w-44 md:h-44 rounded-full object-cover shadow-2xl">
+            </div>
+            <div class="absolute bottom-2 right-2 bg-emerald-500 border-4 border-slate-950 w-6 h-6 rounded-full" title="Active Fellow"></div>
+        </div>
+
+        <!-- Role Badge -->
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-700/60 backdrop-blur-md mb-6 shadow-xl">
+            <span class="flex h-2 w-2 rounded-full bg-cyan-400 animate-ping"></span>
+            <span class="text-xs md:text-sm font-medium text-slate-300">Fellow at Non-Clinical Dental and Ayush Fellowship</span>
+        </div>
+
+        <!-- Headline -->
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight max-w-4xl mb-6">
+            Bridging Innovation in <br class="hidden sm:inline">
+            <span class="bg-gradient-to-r from-cyan-400 via-indigo-400 to-purple-400 bg-clip-text text-transparent">
+                Non-Clinical Healthcare & AYUSH Systems
+            </span>
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="text-slate-400 text-lg md:text-xl max-w-2xl font-light leading-relaxed mb-10">
+            Dedicated to pioneering health leadership, non-clinical dental strategies, integrative healthcare systems, and strategic management in modern wellness ecosystems.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+            <a href="#expertise" class="px-8 py-4 rounded-full bg-gradient-to-r from-cyan-500 to-indigo-600 text-white font-semibold shadow-xl shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:-translate-y-1 transition-all duration-300 text-center">
+                Explore Leadership Portfolio
+            </a>
+            <a href="#contact" class="px-8 py-4 rounded-full bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-200 font-semibold hover:-translate-y-1 transition-all duration-300 text-center backdrop-blur-xl">
+                Initiate Dialogue
+            </a>
+        </div>
+
+        <!-- Trust Badges / Quick Stats -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 w-full max-w-4xl pt-12 border-t border-slate-800/80">
+            <div class="p-4 rounded-2xl bg-slate-900/40 border border-slate-800/60 backdrop-blur-md">
+                <p class="text-3xl font-extrabold text-cyan-400">AYUSH & Dental</p>
+                <p class="text-xs text-slate-400 mt-1 uppercase tracking-wider font-semibold">Core Specialization</p>
+            </div>
+            <div class="p-4 rounded-2xl bg-slate-900/40 border border-slate-800/60 backdrop-blur-md">
+                <p class="text-3xl font-extrabold text-indigo-400">Non-Clinical</p>
+                <p class="text-xs text-slate-400 mt-1 uppercase tracking-wider font-semibold">Strategic Operations</p>
+            </div>
+            <div class="p-4 rounded-2xl bg-slate-900/40 border border-slate-800/60 backdrop-blur-md">
+                <p class="text-3xl font-extrabold text-purple-400">Fellowship</p>
+                <p class="text-xs text-slate-400 mt-1 uppercase tracking-wider font-semibold">Leader & Scholar</p>
+            </div>
+            <div class="p-4 rounded-2xl bg-slate-900/40 border border-slate-800/60 backdrop-blur-md">
+                <p class="text-3xl font-extrabold text-pink-400">Integrative</p>
+                <p class="text-xs text-slate-400 mt-1 uppercase tracking-wider font-semibold">Healthcare Vision</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-24 px-6 lg:px-12 max-w-7xl mx-auto border-t border-slate-900">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <!-- Image Column -->
+            <div class="lg:col-span-5 relative">
+                <div class="absolute -inset-2 bg-gradient-to-r from-cyan-500 to-indigo-600 rounded-3xl blur-xl opacity-30"></div>
+                <div class="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900 shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                         alt="Healthcare Excellence" 
+                         class="w-full h-[450px] object-cover hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-slate-950/80 backdrop-blur-md border border-slate-800">
+                        <p class="text-sm font-semibold text-cyan-400">Non-Clinical Leadership</p>
+                        <p class="text-xs text-slate-400">Transforming modern oral healthcare & traditional medicine ecosystems.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Column -->
+            <div class="lg:col-span-7 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold uppercase tracking-wider">
+                    Executive Profile
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-white">
+                    Pioneering Modern Healthcare Policy, Administration & Integrative Wellness
+                </h2>
+                <p class="text-slate-300 leading-relaxed font-light">
+                    As a distinguished Fellow at the <span class="text-cyan-400 font-medium">Non-Clinical Dental and Ayush Fellowship</span>, Dr. Neha Agrawal works at the vital intersection of oral health, traditional AYUSH methodologies, health administration, and healthcare delivery reform.
+                </p>
+                <p class="text-slate-400 leading-relaxed font-light">
+                    Through rigorous research, strategic healthcare management, and non-clinical innovation, Dr. Agrawal advocates for accessible, holistic, and evidence-guided healthcare infrastructure across diverse domains.
+                </p>
+
+                <!-- Feature Pillars -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
+                    <div class="p-4 rounded-xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all duration-300">
+                        <i class="fa-solid fa-notes-medical text-cyan-400 text-xl mb-2"></i>
+                        <h3 class="font-semibold text-slate-200">Health Systems Management</h3>
+                        <p class="text-xs text-slate-400 mt-1">Optimizing non-clinical healthcare workflows and institutional policies.</p>
+                    </div>
+                    <div class="p-4 rounded-xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300">
+                        <i class="fa-solid fa-leaf text-indigo-400 text-xl mb-2"></i>
+                        <h3 class="font-semibold text-slate-200">AYUSH & Integrative Medicine</h3>
+                        <p class="text-xs text-slate-400 mt-1">Harmonizing traditional Indian systems of medicine with modern science.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / Key Pillars Grid -->
+    <section id="pillars" class="py-24 px-6 lg:px-12 max-w-7xl mx-auto relative">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold uppercase tracking-wider mb-4">
+                Core Domains
+            </div>
+            <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight">
+                Areas of Expertise & Innovation
+            </h2>
+            <p class="text-slate-400 mt-4 text-base md:text-lg font-light">
+                Delivering high-impact strategies across non-clinical dentistry, healthcare research, and public health policies.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                <div class="w-14 h-14 rounded-xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-hospital-user"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Non-Clinical Health Operations</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Structuring non-clinical procedures, patient workflow optimization, regulatory compliance, and governance in dental and wellness institutions.
+                </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                <div class="w-14 h-14 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-[#00d2ff] fa-mortar-pestle"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">AYUSH Integration Strategy</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Bridging Ayurveda, Yoga, Unani, Siddha, and Homeopathy with contemporary oral care protocols for holistic community health.
+                </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                <div class="w-14 h-14 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-microscope"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Public Health Research</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Conducting transformative research to drive evidence-based health policies, epidemiological insights, and preventative dental programs.
+                </p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-pink-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                <div class="w-14 h-14 rounded-xl bg-pink-500/10 border border-pink-500/20 text-pink-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-hand-holding-medical"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Healthcare Advocacy</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Advocating for non-clinical dental careers, interdisciplinary fellowship models, and continuous professional advancement.
+                </p>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-amber-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                <div class="w-14 h-14 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Medical Communications</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Creating clear, impactful scientific documentation, strategic advisory publications, and public health educational outreach.
+                </p>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-emerald-500/50 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                <div class="w-14 h-14 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                    <i class="fa-solid fa-[#00d2ff] fa-user-shield"></i>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-3">Quality Assurance & Policy</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Establishing standard operating protocols (SOPs), clinical auditing frameworks, and quality management for health networks.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Endorsements Section -->
+    <section id="endorsements" class="py-24 px-6 lg:px-12 max-w-7xl mx-auto border-t border-slate-900">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pink-500/10 border border-pink-500/20 text-pink-400 text-xs font-semibold uppercase tracking-wider mb-4">
+                Professional Endorsements
+            </div>
+            <h2 class="text-3xl md:text-5xl font-extrabold tracking-tight">
+                Peer & Leader Recognition
+            </h2>
+            <p class="text-slate-400 mt-4 text-base md:text-lg font-light">
+                What colleagues and health leaders say about Dr. Neha Agrawal's fellowship contributions.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Review 1 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl relative flex flex-col justify-between">
+                <div>
+                    <div class="flex text-amber-400 gap-1 mb-4 text-sm">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 italic text-sm leading-relaxed mb-6">
+                        "Dr. Neha Agrawal's insights into non-clinical dental management and integrative AYUSH methodologies have brought remarkable clarity and innovation to our collaborative initiatives."
+                    </p>
+                </div>
+                <div class="flex items-center gap-4 pt-4 border-t border-slate-800/60">
+                    <div class="w-10 h-10 rounded-full bg-cyan-500/20 border border-cyan-500 flex items-center justify-center text-cyan-400 font-bold text-sm">
+                        RK
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white text-sm">Dr. R. K. Sharma</h4>
+                        <p class="text-xs text-slate-400">Senior Healthcare Policy Advisor</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl relative flex flex-col justify-between">
+                <div>
+                    <div class="flex text-amber-400 gap-1 mb-4 text-sm">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 italic text-sm leading-relaxed mb-6">
+                        "Her dedication to developing robust non-clinical frameworks for AYUSH and dental practitioners sets a new benchmark in holistic health governance."
+                    </p>
+                </div>
+                <div class="flex items-center gap-4 pt-4 border-t border-slate-800/60">
+                    <div class="w-10 h-10 rounded-full bg-indigo-500/20 border border-indigo-500 flex items-center justify-center text-indigo-400 font-bold text-sm">
+                        PM
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white text-sm">Dr. Priya Mehta</h4>
+                        <p class="text-xs text-slate-400">Fellowship Director & Mentor</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl relative flex flex-col justify-between">
+                <div>
+                    <div class="flex text-amber-400 gap-1 mb-4 text-sm">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 italic text-sm leading-relaxed mb-6">
+                        "An exceptional professional who bridges clinical understanding with strategic administrative excellence effortlessly."
+                    </p>
+                </div>
+                <div class="flex items-center gap-4 pt-4 border-t border-slate-800/60">
+                    <div class="w-10 h-10 rounded-full bg-purple-500/20 border border-purple-500 flex items-center justify-center text-purple-400 font-bold text-sm">
+                        AV
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white text-sm">Anil Verma</h4>
+                        <p class="text-xs text-slate-400">Public Health Strategist</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Outreach Section -->
+    <section id="contact" class="py-24 px-6 lg:px-12 max-w-7xl mx-auto border-t border-slate-900">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+            <!-- Left Info Column -->
+            <div class="lg:col-span-5 space-y-8">
+                <div>
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold uppercase tracking-wider mb-4">
+                        Get In Touch
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-white tracking-tight">
+                        Let’s Collaborate & Innovate
+                    </h2>
+                    <p class="text-slate-400 mt-4 text-sm leading-relaxed font-light">
+                        Open for strategic consultations, non-clinical research collaborations, policy dialogues, and fellowship opportunities.
+                    </p>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                        <div class="w-12 h-12 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl shrink-0">
+                            <i class="fa-solid fa-user-graduate"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400 uppercase tracking-wider">Current Affiliation</p>
+                            <p class="text-sm font-semibold text-slate-200">Non-Clinical Dental and Ayush Fellowship</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                        <div class="w-12 h-12 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-xl shrink-0">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400 uppercase tracking-wider">Professional Network</p>
+                            <p class="text-sm font-semibold text-slate-200">Available via Professional Outreach</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                        <div class="w-12 h-12 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl shrink-0">
+                            <i class="fa-solid fa-calendar-check"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400 uppercase tracking-wider">Network Connection Date</p>
+                            <p class="text-sm font-semibold text-slate-200">07 Sep 2026</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Form Column -->
+            <div class="lg:col-span-7">
+                <form onsubmit="event.preventDefault(); alert('Thank you for your message! Dr. Neha Agrawal will get back to you shortly.');" class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl space-y-6 shadow-2xl">
+                    <h3 class="text-xl font-bold text-white mb-2">Send a Direct Message</h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-medium text-slate-400 mb-2">Your Name</label>
+                            <input type="text" required placeholder="Dr. / Mr. / Ms. Full Name" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-100 focus:outline-none focus:border-cyan-500 text-sm transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-medium text-slate-400 mb-2">Email Address</label>
+                            <input type="email" required placeholder="name@institution.org" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-100 focus:outline-none focus:border-cyan-500 text-sm transition-colors">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-medium text-slate-400 mb-2">Subject</label>
+                        <input type="text" required placeholder="Healthcare Collaboration / Advisory Inquiry" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-100 focus:outline-none focus:border-cyan-500 text-sm transition-colors">
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-medium text-slate-400 mb-2">Message</label>
+                        <textarea rows="4" required placeholder="Write your proposal or query here..." class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-100 focus:outline-none focus:border-cyan-500 text-sm transition-colors"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-600 to-purple-600 text-white font-semibold shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:-translate-y-0.5 transition-all duration-300 text-center">
+                        Transmit Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-900 py-12 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center font-bold text-xs text-white">
+                    NA
+                </div>
+                <span class="text-sm font-semibold text-slate-300">Dr. Neha Agrawal</span>
+            </div>
+
+            <p class="text-xs text-slate-500">
+                &copy; 2026 Dr. Neha Agrawal | Non-Clinical Dental & AYUSH Fellowship Showcase. All rights reserved.
+            </p>
+
+            <div class="flex gap-4 text-slate-400">
+                <a href="#" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center hover:text-cyan-400 hover:border-cyan-500 transition-colors">
+                    <i class="fa-brands fa-linkedin-in text-sm"></i>
+                </a>
+                <a href="#" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center hover:text-cyan-400 hover:border-cyan-500 transition-colors">
+                    <i class="fa-solid fa-graduation-cap text-sm"></i>
+                </a>
+                <a href="#" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center hover:text-cyan-400 hover:border-cyan-500 transition-colors">
+                    <i class="fa-solid fa-envelope text-sm"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Simple JS for Mobile Menu Toggle -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
