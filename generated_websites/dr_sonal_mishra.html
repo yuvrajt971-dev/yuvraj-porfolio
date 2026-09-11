@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Sonal Mishra | Dental Surgeon & Oral Health Specialist</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        medical: {
+                            50: '#f0f9ff',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(14, 165, 233, 0.3);
+        }
+        .glow-card:hover {
+            box-shadow: 0 0 30px -5px rgba(99, 102, 241, 0.25);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-white">
+
+    <!-- Ambient Gradient Backdrops -->
+    <div class="fixed inset-0 pointer-events-none overflow-hidden -z-10">
+        <div class="absolute -top-40 -left-40 w-96 h-96 bg-indigo-600/20 rounded-full blur-3xl"></div>
+        <div class="absolute top-1/3 -right-40 w-96 h-96 bg-cyan-500/15 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-40 left-1/3 w-96 h-96 bg-purple-600/20 rounded-full blur-3xl"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center text-white font-bold text-lg shadow-lg group-hover:scale-105 transition-transform">
+                    <i class="fa-solid font-bold text-lg">SM</i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-lg tracking-tight text-white group-hover:text-cyan-400 transition-colors">Dr. Sonal Mishra</span>
+                    <span class="text-xs text-slate-400 font-medium">Dental Surgeon</span>
+                </div>
+            </a>
+
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-cyan-400 transition-colors">Expertise</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Testimonials</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+            </div>
+
+            <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white font-semibold text-sm shadow-lg hover:shadow-cyan-500/25 hover:scale-[1.02] active:scale-95 transition-all">
+                <i class="fa-regular fa-calendar-check text-xs"></i>
+                <span>Book Consultation</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-12 pb-24 lg:pt-20 lg:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Content -->
+                <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 text-cyan-400 text-xs font-semibold tracking-wide uppercase">
+                        <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                        Premier Dental Care & Oral Surgery
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                        Transforming Smiles with <span class="bg-gradient-to-r from-cyan-400 via-indigo-400 to-purple-400 bg-clip-text text-transparent">Precision & Artistry</span>
+                    </h1>
+
+                    <p class="text-slate-400 text-lg sm:text-xl leading-relaxed max-w-2xl mx-auto lg:mx-0 font-light">
+                        Welcome to the practice of <strong class="text-slate-200 font-semibold">Dr. Sonal Mishra</strong>. Delivering state-of-the-art dental surgery, cosmetic enhancements, and personalized oral care with absolute comfort.
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white font-bold text-center shadow-lg hover:shadow-cyan-500/20 hover:scale-[1.02] active:scale-95 transition-all">
+                            Schedule Appointment
+                        </a>
+                        <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900/80 border border-slate-800 hover:border-slate-700 text-slate-300 font-semibold text-center hover:bg-slate-800/50 transition-all">
+                            Explore Treatments
+                        </a>
+                    </div>
+
+                    <!-- Trust Badges Grid -->
+                    <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-4">
+                        <div class="p-3 rounded-lg bg-slate-900/40 border border-slate-800/50">
+                            <div class="text-2xl font-bold text-cyan-400">12+</div>
+                            <div class="text-xs text-slate-400">Years Experience</div>
+                        </div>
+                        <div class="p-3 rounded-lg bg-slate-900/40 border border-slate-800/50">
+                            <div class="text-2xl font-bold text-indigo-400">8,500+</div>
+                            <div class="text-xs text-slate-400">Happy Patients</div>
+                        </div>
+                        <div class="p-3 rounded-lg bg-slate-900/40 border border-slate-800/50">
+                            <div class="text-2xl font-bold text-purple-400">99.8%</div>
+                            <div class="text-xs text-slate-400">Success Rate</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Avatar & Double Gradient Card -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative group">
+                        <!-- Glowing Backlight -->
+                        <div class="absolute -inset-1.5 bg-gradient-to-r from-cyan-500 via-indigo-500 to-pink-500 rounded-3xl blur-xl opacity-70 group-hover:opacity-100 transition duration-1000"></div>
+                        
+                        <!-- Main Card -->
+                        <div class="relative bg-slate-900/90 border border-slate-800 rounded-3xl p-8 flex flex-col items-center text-center shadow-2xl backdrop-blur-xl">
+                            
+                            <!-- Avatar Frame with Double Gradient -->
+                            <div class="relative p-1 rounded-full bg-gradient-to-tr from-cyan-500 via-indigo-500 to-purple-500 shadow-xl mb-6">
+                                <div class="p-1 rounded-full bg-slate-950">
+                                    <img src="https://ui-avatars.com/api/?name=Dr.+Sonal+Mishra&size=200&background=0D8ABC&color=fff&bold=true" 
+                                         alt="Dr. Sonal Mishra" 
+                                         class="w-36 h-36 rounded-full object-cover">
+                                </div>
+                            </div>
+
+                            <h2 class="text-2xl font-bold text-white mb-1">Dr. Sonal Mishra</h2>
+                            <p class="text-cyan-400 font-medium text-sm mb-4">Dental Surgeon & Smile Designer</p>
+
+                            <div class="w-full space-y-3 pt-4 border-t border-slate-800 text-left text-xs text-slate-300">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center text-cyan-400">
+                                        <i class="fa-solid fa-hospital-user"></i>
+                                    </div>
+                                    <div>
+                                        <span class="block text-slate-500 text-[10px]">CURRENT CLINIC</span>
+                                        <span class="font-semibold text-slate-200">Dental Clinic</span>
+                                    </div>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <div class="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center text-indigo-400">
+                                        <i class="fa-solid fa-award"></i>
+                                    </div>
+                                    <div>
+                                        <span class="block text-slate-500 text-[10px]">SPECIALIZATION</span>
+                                        <span class="font-semibold text-slate-200">Maxillofacial & Cosmetic Dentistry</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-6 w-full pt-4">
+                                <span class="inline-flex items-center justify-center w-full px-4 py-2 rounded-lg bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-medium gap-2">
+                                    <i class="fa-solid fa-circle text-[8px] animate-pulse"></i> Accepting New Patients
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Industry Image Column -->
+                <div class="lg:col-span-5">
+                    <div class="relative group">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-indigo-600 rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-500"></div>
+                        <div class="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900 shadow-2xl">
+                            <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Modern Dental Operatory" 
+                                 class="w-full h-[420px] object-cover group-hover:scale-105 transition duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+                            <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-slate-900/80 backdrop-blur-md border border-slate-800">
+                                <p class="text-xs text-slate-300 italic">"Painless treatments, world-class hygiene, and aesthetic perfection standard in every procedure."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Info -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 text-cyan-400 font-semibold text-sm">
+                        <i class="fa-solid fa-tooth"></i> ABOUT DR. SONAL MISHRA
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+                        Dedicated to Clinical Excellence and Patient Comfort
+                    </h2>
+                    <p class="text-slate-400 leading-relaxed font-light">
+                        Dr. Sonal Mishra is a renowned Dental Surgeon at Dental Clinic, recognized for combining advanced surgical skill with a compassionate patient-first approach. With years of experience handling complex oral rehabilitation and aesthetic smile makeovers, Dr. Mishra utilizes cutting-edge technology to ensure efficient, painless treatments.
+                    </p>
+                    
+                    <div class="grid sm:grid-cols-2 gap-4 pt-4">
+                        <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 p-5 rounded-xl">
+                            <div class="w-10 h-10 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center mb-3">
+                                <i class="fa-solid fa-microscope text-lg"></i>
+                            </div>
+                            <h3 class="text-white font-semibold text-base mb-1">Advanced Technology</h3>
+                            <p class="text-slate-400 text-xs">Digital 3D intraoral scanning and laser dentistry for micro-precision results.</p>
+                        </div>
+                        <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 p-5 rounded-xl">
+                            <div class="w-10 h-10 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center mb-3">
+                                <i class="fa-solid fa-heart text-lg"></i>
+                            </div>
+                            <h3 class="text-white font-semibold text-base mb-1">Gentle Care</h3>
+                            <p class="text-slate-400 text-xs">Specialized anxiety-free sedation and gentle techniques for total patient comfort.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <span class="text-cyan-400 font-semibold text-sm tracking-widest uppercase">Comprehensive Care</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white">Specialized Dental Services</h2>
+                <p class="text-slate-400 text-sm">Tailored clinical treatments designed to restore health, functionality, and confidence to your smile.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service Card 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 p-8 rounded-2xl group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Dental Implants</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Permanent, natural-looking replacement roots and crowns engineered with biocompatible titanium post systems.</p>
+                    <a href="#contact" class="text-xs font-semibold text-cyan-400 group-hover:text-cyan-300 inline-flex items-center gap-1">Learn More <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 p-8 rounded-2xl group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Cosmetic Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Complete smile makeovers including porcelain veneers, composite bonding, and professional teeth whitening.</p>
+                    <a href="#contact" class="text-xs font-semibold text-indigo-400 group-hover:text-indigo-300 inline-flex items-center gap-1">Learn More <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 p-8 rounded-2xl group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-bolt-lightning"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Painless Root Canal</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Single-sitting rotary endodontics designed to save compromised teeth seamlessly without pain.</p>
+                    <a href="#contact" class="text-xs font-semibold text-purple-400 group-hover:text-purple-300 inline-flex items-center gap-1">Learn More <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 p-8 rounded-2xl group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-pink-500/10 text-pink-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-align-center"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Orthodontics & Aligners</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Clear invisible aligners and modern ceramic braces to correct misalignments discreetly and comfortably.</p>
+                    <a href="#contact" class="text-xs font-semibold text-pink-400 group-hover:text-pink-300 inline-flex items-center gap-1">Learn More <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 p-8 rounded-2xl group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Preventive Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Comprehensive oral screenings, deep scaling, fluoride therapy, and custom nightguards.</p>
+                    <a href="#contact" class="text-xs font-semibold text-emerald-400 group-hover:text-emerald-300 inline-flex items-center gap-1">Learn More <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 p-8 rounded-2xl group hover:-translate-y-1">
+                    <div class="w-14 h-14 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-kit-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Oral Rehabilitation</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Full mouth restorative procedures addressing complex dental issues with utmost surgical precision.</p>
+                    <a href="#contact" class="text-xs font-semibold text-amber-400 group-hover:text-amber-300 inline-flex items-center gap-1">Learn More <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Patient Endorsements Section -->
+    <section id="testimonials" class="py-20 relative bg-slate-900/30">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <span class="text-indigo-400 font-semibold text-sm tracking-widest uppercase">Patient Stories</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white">What Patients Say</h2>
+                <p class="text-slate-400 text-sm">Real experiences from individuals who trusted Dr. Mishra with their smile.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Review 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 p-6 rounded-2xl flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">"Dr. Sonal Mishra is exceptionally skilled! I had an urgent root canal treatment done and felt zero discomfort throughout. The clinic environment is top notch."</p>
+                    </div>
+                    <div class="mt-6 flex items-center gap-3 pt-4 border-t border-slate-800/80">
+                        <div class="w-10 h-10 rounded-full bg-indigo-600 flex items-center justify-center font-bold text-white text-sm">
+                            AN
+                        </div>
+                        <div>
+                            <p class="text-white text-sm font-semibold">Ananya Narang</p>
+                            <p class="text-xs text-slate-500">Root Canal Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 p-6 rounded-2xl flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">"The smile makeover transformed my confidence completely! Dr. Mishra explained every step of the veneer fitting clearly and delivered incredible results."</p>
+                    </div>
+                    <div class="mt-6 flex items-center gap-3 pt-4 border-t border-slate-800/80">
+                        <div class="w-10 h-10 rounded-full bg-cyan-600 flex items-center justify-center font-bold text-white text-sm">
+                            RK
+                        </div>
+                        <div>
+                            <p class="text-white text-sm font-semibold">Rajesh Kapoor</p>
+                            <p class="text-xs text-slate-500">Cosmetic Dentistry Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 p-6 rounded-2xl flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">"I was always terrified of dental procedures until I met Dr. Mishra. Super patient, professional, and very thorough. Highly recommended for family dental care!"</p>
+                    </div>
+                    <div class="mt-6 flex items-center gap-3 pt-4 border-t border-slate-800/80">
+                        <div class="w-10 h-10 rounded-full bg-purple-600 flex items-center justify-center font-bold text-white text-sm">
+                            PS
+                        </div>
+                        <div>
+                            <p class="text-white text-sm font-semibold">Pooja Sharma</p>
+                            <p class="text-xs text-slate-500">Implants Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Direct Details -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-cyan-400 font-semibold text-sm tracking-widest uppercase">Get in Touch</span>
+                        <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2">Book Your Appointment</h2>
+                        <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                            Ready to schedule a consultation or have a question about dental treatments? Reach out directly or fill out the appointment form.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-10 h-10 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold text-sm">Practice Location</h4>
+                                <p class="text-slate-400 text-xs mt-1">Dental Clinic, Main Healthcare Avenue</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-10 h-10 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold text-sm">Direct Email</h4>
+                                <p class="text-slate-400 text-xs mt-1">contact@drsonalmishra.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-10 h-10 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold text-sm">Working Hours</h4>
+                                <p class="text-slate-400 text-xs mt-1">Mon - Sat: 9:00 AM – 7:30 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Appointment Form -->
+                <div class="lg:col-span-7">
+                    <div class="bg-slate-900/80 backdrop-blur-xl border border-slate-800 p-8 rounded-3xl shadow-2xl">
+                        <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
+                            <i class="fa-regular fa-calendar-check text-cyan-400"></i> Request Consultation
+                        </h3>
+
+                        <form onsubmit="event.preventDefault(); alert('Appointment Request Submitted Successfully!');" class="space-y-4">
+                            <div class="grid sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-medium text-slate-400 mb-1">Full Name</label>
+                                    <input type="text" placeholder="John Doe" required class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-cyan-500 text-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-medium text-slate-400 mb-1">Phone Number</label>
+                                    <input type="tel" placeholder="+1 (555) 000-0000" required class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-cyan-500 text-sm">
+                                </div>
+                            </div>
+
+                            <div class="grid sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs font-medium text-slate-400 mb-1">Preferred Treatment</label>
+                                    <select class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white focus:outline-none focus:border-cyan-500 text-sm">
+                                        <option>General Consultation</option>
+                                        <option>Dental Implants</option>
+                                        <option>Cosmetic Dentistry</option>
+                                        <option>Root Canal Treatment</option>
+                                        <option>Teeth Whitening</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-medium text-slate-400 mb-1">Preferred Date</label>
+                                    <input type="date" required class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white focus:outline-none focus:border-cyan-500 text-sm">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-medium text-slate-400 mb-1">Message / Notes</label>
+                                <textarea rows="3" placeholder="Briefly describe your concern..." class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-cyan-500 text-sm"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white font-bold text-sm shadow-lg hover:shadow-cyan-500/25 hover:scale-[1.01] active:scale-95 transition-all">
+                                Confirm Appointment Request
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800/80 bg-slate-950 py-10">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+            <p>© 2026 Dr. Sonal Mishra | Dental Surgeon. All rights reserved.</p>
+            <div class="flex items-center gap-6">
+                <a href="#" class="hover:text-cyan-400 transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-cyan-400 transition-colors">Terms of Service</a>
+                <a href="#" class="hover:text-cyan-400 transition-colors">Patient Portal</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
