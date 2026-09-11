@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Nikita R. Duseja | Head Pediatric Dentist</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            cyan: '#0D8ABC',
+                            teal: '#14b8a6',
+                            purple: '#a855f7',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-cyan {
+            box-shadow: 0 0 50px -10px rgba(13, 138, 188, 0.4);
+        }
+        .glow-purple {
+            box-shadow: 0 0 50px -10px rgba(168, 85, 247, 0.3);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #38bdf8 0%, #14b8a6 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 selection:bg-cyan-500 selection:text-white antialiased overflow-x-hidden">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-500 flex items-center justify-center font-bold text-white shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform duration-300">
+                    ND
+                </div>
+                <div>
+                    <span class="font-bold text-lg tracking-tight block leading-tight text-white group-hover:text-cyan-400 transition-colors">Dr. Nikita R. Duseja</span>
+                    <span class="text-xs text-slate-400 block font-medium">Welcare Hospital</span>
+                </div>
+            </a>
+
+            <!-- Desktop Links -->
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-cyan-400 transition-colors">Leadership</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Endorsements</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+            </div>
+
+            <div class="hidden md:block">
+                <a href="#contact" class="px-5 py-2.5 rounded-full text-sm font-semibold bg-gradient-to-r from-cyan-500 via-teal-500 to-indigo-500 text-white shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:scale-105 transition-all duration-300">
+                    Book Consultation
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button class="md:hidden text-slate-300 hover:text-white focus:outline-none" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900/95 border-b border-slate-800 px-6 py-4 space-y-4">
+            <a href="#about" class="block text-slate-300 hover:text-cyan-400">About</a>
+            <a href="#expertise" class="block text-slate-300 hover:text-cyan-400">Leadership</a>
+            <a href="#services" class="block text-slate-300 hover:text-cyan-400">Services</a>
+            <a href="#testimonials" class="block text-slate-300 hover:text-cyan-400">Endorsements</a>
+            <a href="#contact" class="block text-slate-300 hover:text-cyan-400">Contact</a>
+            <a href="#contact" class="inline-block w-full text-center px-5 py-2.5 rounded-full text-sm font-semibold bg-gradient-to-r from-cyan-500 to-indigo-500 text-white">
+                Book Consultation
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="relative min-h-screen pt-32 pb-20 flex items-center overflow-hidden">
+        <!-- Background Ambient Glows -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-cyan-500/15 rounded-full blur-[140px] pointer-events-none"></div>
+        <div class="absolute top-1/3 right-10 w-[400px] h-[400px] bg-indigo-500/15 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-12 items-center relative z-10">
+            <!-- Left Column: Bio & Title -->
+            <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 backdrop-blur-md">
+                    <span class="w-2.5 h-2.5 rounded-full bg-teal-400 animate-pulse"></span>
+                    <span class="text-xs font-semibold text-slate-300 tracking-wide uppercase">Head Dentist • Welcare Hospital</span>
+                </div>
+
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
+                    Transforming Pediatric Dentistry with <span class="gradient-text">Gentle Precision & Excellence</span>
+                </h1>
+
+                <p class="text-lg text-slate-300 leading-relaxed max-w-2xl mx-auto lg:mx-0 font-light">
+                    Welcome! I am <strong class="text-white font-semibold">Dr. Nikita R. Duseja</strong>, leading the Pediatric Dentistry department at Welcare Hospital - Orthopaedic Institute. Dedicated to creating joyful, anxiety-free smile journeys for children through state-of-the-art care and compassionate medical leadership.
+                </p>
+
+                <!-- Badges / Pill Tags -->
+                <div class="flex flex-wrap justify-center lg:justify-start gap-3 pt-2">
+                    <span class="px-3.5 py-1.5 rounded-lg bg-slate-900/90 border border-slate-800 text-xs font-medium text-cyan-300 flex items-center gap-2">
+                        <i class="fa-solid fa-tooth text-cyan-400"></i> Pediatric Specialist
+                    </span>
+                    <span class="px-3.5 py-1.5 rounded-lg bg-slate-900/90 border border-slate-800 text-xs font-medium text-indigo-300 flex items-center gap-2">
+                        <i class="fa-solid fa-hospital text-indigo-400"></i> Welcare Hospital Leader
+                    </span>
+                    <span class="px-3.5 py-1.5 rounded-lg bg-slate-900/90 border border-slate-800 text-xs font-medium text-teal-300 flex items-center gap-2">
+                        <i class="fa-solid fa-heart-pulse text-teal-400"></i> Gentle Care Advocate
+                    </span>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                    <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full font-semibold text-white bg-gradient-to-r from-cyan-500 via-teal-500 to-indigo-500 hover:shadow-lg hover:shadow-cyan-500/30 hover:scale-105 transition-all duration-300 flex items-center justify-center gap-3">
+                        <span>Schedule Appointment</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                    <a href="#about" class="w-full sm:w-auto px-8 py-4 rounded-full font-semibold text-slate-300 bg-slate-900/80 border border-slate-800 hover:bg-slate-800/80 hover:text-white transition-all duration-300 text-center">
+                        Explore Expertise
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Column: Avatar Frame -->
+            <div class="lg:col-span-5 flex justify-center relative">
+                <div class="relative group">
+                    <!-- Outer Glowing Ring -->
+                    <div class="absolute -inset-1.5 bg-gradient-to-r from-cyan-500 via-teal-500 to-indigo-500 rounded-full blur-lg opacity-70 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+                    
+                    <!-- Avatar Outer Frame -->
+                    <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full p-2 bg-slate-950 border border-slate-800 flex items-center justify-center shadow-2xl overflow-hidden">
+                        <img src="https://ui-avatars.com/api/?name=Dr+Nikita+R.+Duseja&size=200&background=0D8ABC&color=fff&bold=true" 
+                             alt="Dr Nikita R. Duseja" 
+                             class="w-full h-full object-cover rounded-full group-hover:scale-105 transition duration-500">
+                    </div>
+
+                    <!-- Floating Badge Top Left -->
+                    <div class="absolute -top-2 -left-4 bg-slate-900/90 border border-slate-700/80 backdrop-blur-xl px-4 py-2.5 rounded-2xl shadow-xl flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-lg bg-teal-500/20 flex items-center justify-center text-teal-400">
+                            <i class="fa-solid fa-award"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400">Role Title</p>
+                            <p class="text-xs font-bold text-slate-100">Head Pediatric Dentist</p>
+                        </div>
+                    </div>
+
+                    <!-- Floating Badge Bottom Right -->
+                    <div class="absolute -bottom-2 -right-4 bg-slate-900/90 border border-slate-700/80 backdrop-blur-xl px-4 py-2.5 rounded-2xl shadow-xl flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-lg bg-cyan-500/20 flex items-center justify-center text-cyan-400">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400">Patient Care</p>
+                            <p class="text-xs font-bold text-slate-100">Top Rated Pediatrician</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS STRIP -->
+    <section class="py-10 border-y border-slate-800/80 bg-slate-900/40 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+                <p class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-teal-300">100%</p>
+                <p class="text-xs sm:text-sm text-slate-400 mt-1 font-medium">Child-Centric Focus</p>
+            </div>
+            <div>
+                <p class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-indigo-300">Top Tier</p>
+                <p class="text-xs sm:text-sm text-slate-400 mt-1 font-medium">Welcare Hospital Institute</p>
+            </div>
+            <div>
+                <p class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-300">Gentle</p>
+                <p class="text-xs sm:text-sm text-slate-400 mt-1 font-medium">Pain-Free Techniques</p>
+            </div>
+            <div>
+                <p class="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-300">5.0 ★★★★★</p>
+                <p class="text-xs sm:text-sm text-slate-400 mt-1 font-medium">Parent & Patient Satisfaction</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT & LEADERSHIP SECTION -->
+    <section id="about" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <!-- Image Side -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative rounded-3xl overflow-hidden border border-slate-800 shadow-2xl group">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Dental Practice" 
+                             class="w-full h-[450px] object-cover group-hover:scale-105 transition duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        
+                        <div class="absolute bottom-6 left-6 right-6 p-6 bg-slate-900/80 backdrop-blur-xl rounded-2xl border border-slate-800">
+                            <p class="text-xs font-semibold uppercase tracking-wider text-cyan-400">Clinical Excellence</p>
+                            <p class="text-base font-bold text-white mt-1">Welcare Hospital - Orthopaedic Institute</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Content Side -->
+                <div id="expertise" class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold tracking-wider uppercase">
+                        Clinical Leadership & Care
+                    </div>
+                    
+                    <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+                        Dedicated to Creating Positive & Empowering Dental Experiences for Children
+                    </h2>
+
+                    <p class="text-slate-300 leading-relaxed font-light">
+                        As the <strong class="text-white">Head Pediatric Dentist</strong> at Welcare Hospital - Orthopaedic Institute, Dr. Nikita R. Duseja combines advanced clinical techniques with a warm, empathetic approach. Understanding that childhood dental experiences shape lifelong oral health habits, Dr. Duseja ensures every treatment is engaging, stress-free, and painlessly executed.
+                    </p>
+
+                    <div class="grid sm:grid-cols-2 gap-4 pt-4">
+                        <div class="p-4 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/40 transition-all duration-300">
+                            <i class="fa-solid fa-child-reaching text-2xl text-cyan-400 mb-2"></i>
+                            <h3 class="font-bold text-white text-base">Child-Friendly Environment</h3>
+                            <p class="text-xs text-slate-400 mt-1">Specialized behavioral management tailored to make young patients feel completely safe and confident.</p>
+                        </div>
+                        <div class="p-4 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-teal-500/40 transition-all duration-300">
+                            <i class="fa-solid fa-shield-virus text-2xl text-teal-400 mb-2"></i>
+                            <h3 class="font-bold text-white text-base">Preventive & Restorative</h3>
+                            <p class="text-xs text-slate-400 mt-1">Comprehensive interventions focusing on early prevention, interceptive orthodontics, and restorative care.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="py-24 bg-slate-900/30 border-y border-slate-800/80 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold uppercase tracking-wider">
+                    Specialized Offerings
+                </span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white">Comprehensive Pediatric Dental Care</h2>
+                <p class="text-slate-400 text-base font-light">Tailored oral healthcare services delivered with compassion and state-of-the-art medical equipment.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="p-8 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 hover:-translate-y-2 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-cyan-500/20 to-teal-500/20 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-baby"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Infant & Toddler Oral Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Early dental exams, teething advice, and habit management to establish optimal oral health foundations right from infancy.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="p-8 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-teal-500/50 hover:-translate-y-2 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-teal-500/20 to-emerald-500/20 border border-teal-500/30 flex items-center justify-center text-teal-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Preventive Treatments</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Dental sealants, fluoride applications, and cavity prevention programs designed to keep young teeth healthy and strong.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="p-8 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 hover:-translate-y-2 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-indigo-500/20 to-purple-500/20 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-face-smile-beam"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Pain-Free & Sedation Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Gentle techniques and safe sedation options for anxious children, ensuring modern and trauma-free procedures.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="p-8 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 hover:-translate-y-2 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-purple-500/20 to-pink-500/20 border border-purple-500/30 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-teeth-open"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Interceptive Orthodontics</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Early evaluation of bite alignment, space maintainers, and growth monitoring to guide proper jaw development.</p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="p-8 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 hover:-translate-y-2 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-cyan-500/20 to-blue-500/20 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-kit-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Pediatric Dental Trauma</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Emergency care for chipped, fractured, or dislodged teeth with specialized pediatric hospital support.</p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="p-8 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-pink-500/50 hover:-translate-y-2 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-pink-500/20 to-rose-500/20 border border-pink-500/30 flex items-center justify-center text-pink-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-hospital-user"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Hospital-Based Operations</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Full access to Welcare Hospital facilities for complex cases, special needs care, and reconstructive dental procedures.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ENDORSEMENTS & TESTIMONIALS -->
+    <section id="testimonials" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <span class="px-3 py-1 rounded-full bg-teal-500/10 border border-teal-500/20 text-teal-400 text-xs font-semibold uppercase tracking-wider">
+                    Testimonials
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white">Trusted by Families & Medical Peers</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="p-8 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Dr. Nikita Duseja is absolutely wonderful with kids! My 6-year-old was terrified of dentists, but Dr. Nikita's gentle approach at Welcare Hospital changed everything. Now my daughter looks forward to her check-ups!"
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-slate-800/80 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold text-sm">
+                            AP
+                        </div>
+                        <div>
+                            <p class="text-white font-semibold text-sm">Ananya Patel</p>
+                            <p class="text-xs text-slate-400">Parent</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="p-8 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "As a fellow physician at Welcare Hospital, I consistently refer pediatric dental cases to Dr. Nikita. Her professionalism, clinical expertise, and dedication to safety are unrivaled."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-slate-800/80 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-teal-500/20 text-teal-400 flex items-center justify-center font-bold text-sm">
+                            RM
+                        </div>
+                        <div>
+                            <p class="text-white font-semibold text-sm">Dr. R. Mehta</p>
+                            <p class="text-xs text-slate-400">Orthopaedic Specialist</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="p-8 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "The preventive dental care guidance we received from Dr. Duseja has been invaluable. Extremely professional atmosphere and seamless hospital experience."
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-6 border-t border-slate-800/80 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 flex items-center justify-center font-bold text-sm">
+                            VS
+                        </div>
+                        <div>
+                            <p class="text-white font-semibold text-sm">Vikram Sharma</p>
+                            <p class="text-xs text-slate-400">Parent</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-24 bg-slate-900/40 border-t border-slate-800/80 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12">
+                <!-- Info Left -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-semibold uppercase tracking-wider">
+                            Get In Touch
+                        </span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-4">Connect with Dr. Nikita R. Duseja</h2>
+                        <p class="text-slate-400 mt-2 font-light">Schedule a consultation at Welcare Hospital or inquire about specialized pediatric dental services.</p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-10 h-10 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-hospital"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold text-sm">Primary Hospital Practice</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">Welcare Hospital - Orthopaedic Institute</p>
+                                <p class="text-xs text-slate-400">Pediatric Dentistry Wing</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-10 h-10 rounded-xl bg-teal-500/20 text-teal-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold text-sm">Consultation Hours</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">Monday - Saturday: 09:00 AM - 06:00 PM</p>
+                                <p class="text-xs text-teal-400 font-medium">Emergency Care Available</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-900/60 border border-slate-800">
+                            <div class="w-10 h-10 rounded-xl bg-purple-500/20 text-purple-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-link"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-semibold text-sm">Network Connection</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">Verified Connection Date: 06 Sep 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Right -->
+                <div class="lg:col-span-7">
+                    <form onsubmit="event.preventDefault(); alert('Thank you! Your appointment request has been submitted successfully.');" class="p-8 rounded-3xl bg-slate-900/80 backdrop-blur-xl border border-slate-800 space-y-6 shadow-2xl">
+                        <h3 class="text-xl font-bold text-white mb-2">Book an Appointment</h3>
+                        
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2 uppercase tracking-wider">Parent/Guardian Name</label>
+                                <input type="text" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-cyan-500 transition">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2 uppercase tracking-wider">Child's Age & Name</label>
+                                <input type="text" required placeholder="e.g. Leo (7 yrs)" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-cyan-500 transition">
+                            </div>
+                        </div>
+
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2 uppercase tracking-wider">Contact Phone</label>
+                                <input type="tel" required placeholder="+1 (555) 000-0000" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-cyan-500 transition">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2 uppercase tracking-wider">Preferred Service</label>
+                                <select class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white focus:outline-none focus:border-cyan-500 transition">
+                                    <option>Routine Checkup & Cleaning</option>
+                                    <option>Preventive Sealants & Fluoride</option>
+                                    <option>Pediatric Orthodontics</option>
+                                    <option>Dental Trauma / Emergency Care</option>
+                                    <option>General Consultation</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 mb-2 uppercase tracking-wider">Additional Notes / Medical History</label>
+                            <textarea rows="4" placeholder="Mention any specific concerns or medical considerations..." class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-cyan-500 transition"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl font-bold text-white bg-gradient-to-r from-cyan-500 via-teal-500 to-indigo-500 shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:scale-[1.01] active:scale-[0.99] transition-all duration-300">
+                            Confirm Appointment Request
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-8 bg-slate-950 border-t border-slate-900 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© 2026 Dr. Nikita R. Duseja • Welcare Hospital - Orthopaedic Institute. All rights reserved.</p>
+            <div class="flex items-center gap-6 text-slate-400">
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-linkedin text-base"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-solid fa-hospital text-base"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-solid fa-envelope text-base"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
