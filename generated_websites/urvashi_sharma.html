@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urvashi Sharma | Junior Dentist & Aesthetic Dentistry Specialist</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        accent: {
+                            cyan: '#06b6d4',
+                            teal: '#14b8a6',
+                            indigo: '#6366f1',
+                        }
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gradient-border {
+            position: relative;
+            background: linear-gradient(135deg, #020617, #0f172a);
+            border-radius: 1rem;
+        }
+
+        .gradient-border::before {
+            content: '';
+            position: absolute;
+            inset: -1px;
+            border-radius: 1.05rem;
+            background: linear-gradient(135deg, #06b6d4, #6366f1, #ec4899);
+            z-index: -1;
+            opacity: 0.4;
+            transition: opacity 0.3s ease;
+        }
+
+        .gradient-border:hover::before {
+            opacity: 0.9;
+        }
+
+        .glow-bg {
+            position: absolute;
+            width: 450px;
+            height: 450px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(14, 165, 233, 0.15) 0%, rgba(99, 102, 241, 0.08) 50%, rgba(0,0,0,0) 70%);
+            filter: blur(60px);
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-white">
+
+    <!-- NAVIGATION BAR -->
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
+                    US
+                </div>
+                <div>
+                    <span class="font-bold text-lg tracking-tight block leading-none text-white group-hover:text-cyan-400 transition-colors">Urvashi Sharma</span>
+                    <span class="text-xs text-slate-400 font-medium">Aesthetic Dental Designs</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-cyan-400 transition-colors">Expertise</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
+                <a href="#endorsements" class="hover:text-cyan-400 transition-colors">Endorsements</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+            </nav>
+
+            <a href="#contact" class="relative group inline-flex items-center justify-center p-0.5 overflow-hidden text-xs font-semibold rounded-full bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 text-white shadow-lg shadow-indigo-500/20 hover:shadow-indigo-500/40 transition-all">
+                <span class="px-5 py-2.5 rounded-full bg-slate-950 group-hover:bg-opacity-0 transition-all duration-300">
+                    Book Consultation <i class="fa-solid fa-arrow-right ml-1.5 group-hover:translate-x-1 transition-transform"></i>
+                </span>
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative min-h-screen pt-32 pb-20 flex items-center justify-center overflow-hidden">
+        <!-- Glowing background accents -->
+        <div class="glow-bg -top-10 -left-10"></div>
+        <div class="glow-bg bottom-10 right-0"></div>
+
+        <div class="max-w-7xl mx-auto px-6 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+            <!-- Left Info Content -->
+            <div class="lg:col-span-7 space-y-8">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 backdrop-blur-md shadow-inner">
+                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                    <span class="text-xs font-medium text-slate-300 tracking-wide uppercase">Junior Dentist • Aesthetic Dental Designs</span>
+                </div>
+
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-[1.15]">
+                    Transforming Smiles with <span class="gradient-text">Precision & Elegance</span>
+                </h1>
+
+                <p class="text-lg text-slate-400 max-w-2xl font-light leading-relaxed">
+                    Dedicated to combining modern restorative techniques with artistic precision. Delivering personalized, painless, and world-class dental care designed to build enduring confidence.
+                </p>
+
+                <!-- CTAs & Actions -->
+                <div class="flex flex-wrap items-center gap-4 pt-2">
+                    <a href="#services" class="px-7 py-3.5 rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 font-semibold text-white text-sm shadow-xl shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:-translate-y-0.5 transition-all">
+                        Explore Treatments <i class="fa-solid fa-tooth ml-2"></i>
+                    </a>
+                    <a href="#contact" class="px-7 py-3.5 rounded-xl bg-slate-900/80 hover:bg-slate-800 border border-slate-800 text-slate-200 font-semibold text-sm transition-all hover:-translate-y-0.5">
+                        Schedule Appointment
+                    </a>
+                </div>
+
+                <!-- Trust Badges & Highlights -->
+                <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-6">
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-white">100%</div>
+                        <div class="text-xs text-slate-400 font-medium mt-1">Patient Comfort Focus</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-cyan-400">5.0★</div>
+                        <div class="text-xs text-slate-400 font-medium mt-1">Patient Care Rating</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-extrabold text-indigo-400">Advanced</div>
+                        <div class="text-xs text-slate-400 font-medium mt-1">Digital Aesthetics</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Avatar & Interactive Card -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative w-full max-w-md">
+                    <!-- Outer Halo Effects -->
+                    <div class="absolute -inset-1.5 rounded-3xl bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500 opacity-50 blur-xl animate-pulse-slow"></div>
+                    
+                    <div class="relative rounded-3xl bg-slate-900/90 border border-slate-800 backdrop-blur-2xl p-8 flex flex-col items-center text-center shadow-2xl">
+                        
+                        <!-- Avatar Ring -->
+                        <div class="relative mb-6 group">
+                            <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-cyan-400 to-indigo-600 blur opacity-70 group-hover:opacity-100 transition duration-300"></div>
+                            <img src="https://ui-avatars.com/api/?name=Urvashi+Sharma&size=200&background=0D8ABC&color=fff&bold=true" 
+                                 alt="Urvashi Sharma" 
+                                 class="relative w-36 h-36 rounded-full object-cover border-4 border-slate-950 shadow-2xl">
+                            <span class="absolute bottom-1 right-1 w-5 h-5 bg-emerald-500 border-2 border-slate-950 rounded-full" title="Active Practice"></span>
+                        </div>
+
+                        <h2 class="text-2xl font-bold text-white">Urvashi Sharma</h2>
+                        <p class="text-cyan-400 text-sm font-medium mb-3">Junior Dentist</p>
+                        
+                        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-800/80 border border-slate-700/80 text-xs text-slate-300 mb-6">
+                            <i class="fa-solid fa-hospital-user text-cyan-400"></i>
+                            <span>Aesthetic Dental Designs</span>
+                        </div>
+
+                        <p class="text-xs text-slate-400 leading-relaxed mb-6 bg-slate-950/50 p-4 rounded-xl border border-slate-800/60">
+                            "Specializing in modern cosmetic procedures, precision diagnostic imaging, and gentle patient care to design healthy, stunning smiles."
+                        </p>
+
+                        <div class="w-full flex items-center justify-between text-xs text-slate-400 pt-4 border-t border-slate-800">
+                            <span><i class="fa-regular fa-calendar-check text-cyan-400 mr-1"></i> Professional Member</span>
+                            <span class="text-slate-200 font-semibold">Active Care</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT & EXPERTISE SECTION -->
+    <section id="about" class="py-24 relative bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Clinical Showcase Image -->
+                <div class="lg:col-span-5">
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 group shadow-2xl">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent z-10 opacity-70"></div>
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Modern Aesthetic Dental Suite" 
+                             class="w-full h-[450px] object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute bottom-6 left-6 right-6 z-20">
+                            <div class="bg-slate-900/90 backdrop-blur-md p-4 rounded-xl border border-slate-800">
+                                <p class="text-xs font-semibold text-cyan-400 uppercase tracking-wider mb-1">Modern Equipment & Aesthetics</p>
+                                <p class="text-sm text-slate-200 font-medium">State-of-the-art clinical standard for ultimate precision.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Expertise Details -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div>
+                        <span class="text-cyan-400 text-xs font-bold uppercase tracking-widest block mb-2">Clinical Distinction</span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Commitment to Exceptional Dental Excellence</h2>
+                    </div>
+
+                    <p class="text-slate-300 leading-relaxed font-light text-base">
+                        At <strong class="text-white font-medium">Aesthetic Dental Designs</strong>, Dr. Urvashi Sharma combines comprehensive clinical training with a refined aesthetic sensibility. Dedicated to creating bespoke smile transformations, she prioritizes minimally invasive techniques and patient comfort at every step.
+                    </p>
+
+                    <!-- Feature Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80 flex items-start gap-3">
+                            <div class="p-2.5 rounded-lg bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">
+                                <i class="fa-solid fa-wand-magic-sparkles text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-sm font-semibold text-white">Cosmetic Restorations</h3>
+                                <p class="text-xs text-slate-400 mt-1">Veneers, bonding, and shade matching designed for seamless aesthetics.</p>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80 flex items-start gap-3">
+                            <div class="p-2.5 rounded-lg bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
+                                <i class="fa-solid fa-heart-pulse text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-sm font-semibold text-white">Gentle & Painless Care</h3>
+                                <p class="text-xs text-slate-400 mt-1">Anxiety-free treatments engineered with soft-touch protocols.</p>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80 flex items-start gap-3">
+                            <div class="p-2.5 rounded-lg bg-purple-500/10 text-purple-400 border border-purple-500/20">
+                                <i class="fa-solid fa-microscope text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-sm font-semibold text-white">Digital Smile Design</h3>
+                                <p class="text-xs text-slate-400 mt-1">Utilizing advanced intraoral imaging for accurate diagnostic planning.</p>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800/80 flex items-start gap-3">
+                            <div class="p-2.5 rounded-lg bg-teal-500/10 text-teal-400 border border-teal-500/20">
+                                <i class="fa-solid fa-shield-halved text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-sm font-semibold text-white">Preventive Dentistry</h3>
+                                <p class="text-xs text-slate-400 mt-1">Proactive hygiene, periodontic health, and restorative upkeep.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES GRID SECTION -->
+    <section id="services" class="py-24 relative bg-slate-900/50 border-y border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-cyan-400 text-xs font-bold uppercase tracking-widest block mb-2">Comprehensive Dental Care</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Tailored Services & Treatments</h2>
+                <p class="text-slate-400 text-sm mt-3">Combining contemporary procedures with personalized attention for healthy, brilliant smiles.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service Card 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-cyan-500/10 group">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-xl mb-6 group-hover:scale-110 group-hover:bg-cyan-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-teeth-open"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Teeth Whitening</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Professional in-office whitening procedures delivering dramatic, long-lasting brightness while protecting enamel safety.</p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-semibold text-cyan-400 hover:text-cyan-300">Inquire Details <i class="fa-solid fa-chevron-right text-[10px] ml-1"></i></a>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-cyan-500/10 group">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-xl mb-6 group-hover:scale-110 group-hover:bg-indigo-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Aesthetic Bonding & Veneers</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Precision reshaping and ceramic veneers designed to correct chips, gaps, and discoloration for flawless harmony.</p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-semibold text-indigo-400 hover:text-indigo-300">Inquire Details <i class="fa-solid fa-chevron-right text-[10px] ml-1"></i></a>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-cyan-500/10 group">
+                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 text-xl mb-6 group-hover:scale-110 group-hover:bg-purple-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Tooth Restorations</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">High-grade composite fillings and natural-looking tooth restoration crafted to regain strength and realistic appearance.</p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-semibold text-purple-400 hover:text-purple-300">Inquire Details <i class="fa-solid fa-chevron-right text-[10px] ml-1"></i></a>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-cyan-500/10 group">
+                    <div class="w-12 h-12 rounded-xl bg-teal-500/10 border border-teal-500/20 flex items-center justify-center text-teal-400 text-xl mb-6 group-hover:scale-110 group-hover:bg-teal-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-hand-holding-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Preventive Prophylaxis</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Comprehensive oral examinations, ultrasonic scaling, and personalized maintenance regimens for lasting health.</p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-semibold text-teal-400 hover:text-teal-300">Inquire Details <i class="fa-solid fa-chevron-right text-[10px] ml-1"></i></a>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-cyan-500/10 group">
+                    <div class="w-12 h-12 rounded-xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400 text-xl mb-6 group-hover:scale-110 group-hover:bg-pink-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-smile-beam"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Smile Alignment Consultation</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Expert evaluation for orthodontic alignments and modern clear aligner solutions tailored to your lifestyle.</p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-semibold text-pink-400 hover:text-pink-300">Inquire Details <i class="fa-solid fa-chevron-right text-[10px] ml-1"></i></a>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-cyan-500/10 group">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 text-xl mb-6 group-hover:scale-110 group-hover:bg-amber-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-kit-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Gentle Emergency Dental</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">Prompt clinical evaluation and discomfort relief for unexpected dental emergencies in a reassuring environment.</p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-semibold text-amber-400 hover:text-amber-300">Inquire Details <i class="fa-solid fa-chevron-right text-[10px] ml-1"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS / PATIENT ENDORSEMENTS -->
+    <section id="endorsements" class="py-24 relative bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-cyan-400 text-xs font-bold uppercase tracking-widest block mb-2">Patient Feedback</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Words of Appreciation</h2>
+                <p class="text-slate-400 text-sm mt-3">Read how Dr. Urvashi's gentle and detailed approach builds total trust.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Dr. Urvashi Sharma made my whitening and aesthetic checkup completely stress-free. Her gentle technique and clear explanations made a world of difference!"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-cyan-500/20 border border-cyan-500/40 flex items-center justify-center text-cyan-400 font-bold text-xs">
+                            AR
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-semibold text-white">Ananya R.</h4>
+                            <p class="text-xs text-slate-400">Aesthetic Dentistry Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "The team at Aesthetic Dental Designs is top tier. Dr. Sharma's eye for detail during my tooth restoration procedure was truly impressive."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 border border-indigo-500/40 flex items-center justify-center text-indigo-400 font-bold text-xs">
+                            MK
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-semibold text-white">Mehta K.</h4>
+                            <p class="text-xs text-slate-400">Restorative Care Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 gap-1 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Professional, calm, and highly knowledgeable! Dr. Sharma took time to walk me through my treatment plan with zero pressure."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-purple-500/20 border border-purple-500/40 flex items-center justify-center text-purple-400 font-bold text-xs">
+                            PS
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-semibold text-white">Pooja S.</h4>
+                            <p class="text-xs text-slate-400">Routine & Preventive Care</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-24 relative bg-slate-900/30 border-t border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Direct Info -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div>
+                        <span class="text-cyan-400 text-xs font-bold uppercase tracking-widest block mb-2">Get in Touch</span>
+                        <h2 class="text-3xl font-extrabold text-white">Schedule Your Dental Consultation</h2>
+                    </div>
+
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Ready to enhance your smile or have questions regarding cosmetic treatments? Reach out directly or fill out the appointment inquiry form.
+                    </p>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+                            <div class="w-10 h-10 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-building-user text-base"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Clinic Practice</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">Aesthetic Dental Designs</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+                            <div class="w-10 h-10 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-user-doctor text-base"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Role & Practitioner</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">Urvashi Sharma • Junior Dentist</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-900/80 border border-slate-800">
+                            <div class="w-10 h-10 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-clock text-base"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Hours & Availability</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">Mon - Sat: 9:00 AM - 6:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div class="lg:col-span-7">
+                    <form onsubmit="event.preventDefault(); alert('Thank you! Your message/inquiry has been logged.');" class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl space-y-5">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Full Name</label>
+                                <input type="text" required placeholder="e.g. Jane Doe" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 text-sm focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Phone / Email</label>
+                                <input type="text" required placeholder="Contact info" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 text-sm focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Service Required</label>
+                            <select class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-300 text-sm focus:outline-none focus:border-cyan-500 transition-colors">
+                                <option>Aesthetic Dentistry / Whitening</option>
+                                <option>General Dental Checkup</option>
+                                <option>Composite Restorations</option>
+                                <option>Smile Design Consultation</option>
+                                <option>Other Procedure</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Message or Preferred Date</label>
+                            <textarea rows="4" placeholder="How can Dr. Urvashi help you?" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-slate-200 text-sm focus:outline-none focus:border-cyan-500 transition-colors resize-none"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 font-bold text-white text-sm shadow-xl shadow-cyan-500/20 hover:shadow-cyan-500/40 transition-all hover:-translate-y-0.5">
+                            Send Booking Request <i class="fa-solid fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-8 bg-slate-950 border-t border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+            <div>
+                © 2026 <span class="text-slate-300 font-medium">Urvashi Sharma</span> • Aesthetic Dental Designs. All rights reserved.
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="#" class="hover:text-cyan-400 transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-cyan-400 transition-colors">Terms of Care</a>
+                <a href="#" class="hover:text-cyan-400 transition-colors">Patient Portal</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
