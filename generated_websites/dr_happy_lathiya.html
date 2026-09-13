@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Happy Lathiya | Premier General Dentist</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0fdfa',
+                            500: '#14b8a6',
+                            600: '#0d9488',
+                            900: '#134e4a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-border {
+            position: relative;
+            border-radius: 9999px;
+            background: linear-gradient(135deg, #38bdf8, #818cf8, #c084fc);
+            padding: 4px;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(56, 189, 248, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-white">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform duration-300">
+                    <i class="fa-solid font-sharp fa-tooth"></i>
+                </div>
+                <div>
+                    <span class="font-extrabold text-lg tracking-tight text-white block leading-none">Dr. Happy Lathiya</span>
+                    <span class="text-xs text-cyan-400 font-medium">Shantamani Dental Hospital</span>
+                </div>
+            </a>
+            
+            <div class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
+                <a href="#philosophy" class="hover:text-cyan-400 transition-colors">Philosophy</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Testimonials</a>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <a href="#contact" class="px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 hover:opacity-90 transition-all duration-300 shadow-lg shadow-indigo-500/25 hover:shadow-cyan-500/40">
+                    Book Appointment
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="relative min-h-screen pt-32 pb-20 flex items-center justify-center overflow-hidden">
+        <!-- Ambient background glows -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-cyan-500/20 to-purple-500/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-10 right-10 w-[300px] h-[300px] bg-indigo-500/10 rounded-full blur-2xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Text -->
+                <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 text-xs font-semibold text-cyan-400 backdrop-blur-md">
+                        <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                        Accepting New Patients at Shantamani Dental Hospital
+                    </div>
+
+                    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight text-white">
+                        Crafting Healthy, <br>
+                        <span class="gradient-text">Radiant Smiles</span> With Precision
+                    </h1>
+
+                    <p class="text-slate-400 text-lg sm:text-xl max-w-2xl font-light leading-relaxed mx-auto lg:mx-0">
+                        Welcome to world-class dental care led by <strong class="text-slate-200">Dr. Happy Lathiya</strong>. Combining modern dental technology, gentle procedures, and personalized treatment plans for your optimal oral health.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full font-semibold text-white bg-gradient-to-r from-cyan-500 to-indigo-600 hover:from-cyan-400 hover:to-indigo-500 transition-all duration-300 shadow-xl shadow-cyan-500/25 flex items-center justify-center gap-3 group">
+                            <span>Schedule Your Visit</span>
+                            <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                        <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-full font-semibold text-slate-300 bg-slate-900/80 border border-slate-800 hover:border-slate-700 hover:text-white transition-all text-center backdrop-blur-md">
+                            Explore Treatments
+                        </a>
+                    </div>
+
+                    <!-- Trust Stats -->
+                    <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-6 max-w-lg mx-auto lg:mx-0">
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-white">100%</div>
+                            <div class="text-xs text-slate-400 mt-1">Patient Focus</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-white">4.9★</div>
+                            <div class="text-xs text-slate-400 mt-1">Patient Rating</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-white">Modern</div>
+                            <div class="text-xs text-slate-400 mt-1">Tech & Equipment</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Avatar / Profile Frame -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative group">
+                        <!-- Glowing Rings -->
+                        <div class="absolute -inset-1 bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 rounded-full blur-xl opacity-70 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+                        
+                        <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full p-2 bg-slate-950 border border-slate-800/80 flex items-center justify-center shadow-2xl">
+                            <img src="https://ui-avatars.com/api/?name=Dr.+Happy+Lathiya&size=200&background=0D8ABC&color=fff&bold=true" 
+                                 alt="Dr. Happy Lathiya" 
+                                 class="w-full h-full rounded-full object-cover shadow-inner transform group-hover:scale-105 transition-transform duration-500">
+                        </div>
+
+                        <!-- Floating Badges -->
+                        <div class="absolute -bottom-4 -left-4 bg-slate-900/90 backdrop-blur-xl border border-slate-800 px-4 py-3 rounded-2xl shadow-xl flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-cyan-500/20 flex items-center justify-center text-cyan-400">
+                                <i class="fa-solid fa-hospital"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs font-bold text-white">General Dentist</div>
+                                <div class="text-[10px] text-slate-400">Shantamani dental hospital</div>
+                            </div>
+                        </div>
+
+                        <div class="absolute -top-2 -right-2 bg-slate-900/90 backdrop-blur-xl border border-slate-800 p-3 rounded-2xl shadow-xl flex items-center gap-2">
+                            <i class="fa-solid fa-shield-halved text-emerald-400 text-lg"></i>
+                            <span class="text-xs font-semibold text-slate-200">Pain-Free Care</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT & EXPERTISE SECTION -->
+    <section id="about" class="py-24 relative bg-slate-900/40">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Visual / Image -->
+                <div class="lg:col-span-6">
+                    <div class="relative rounded-3xl overflow-hidden border border-slate-800 group shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Modern Dental Clinic" 
+                             class="w-full h-[450px] object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-6 rounded-2xl bg-slate-900/80 backdrop-blur-xl border border-slate-800">
+                            <p class="text-sm font-medium text-cyan-300">"Every smile tells a story. Our mission is to make yours healthy, bright, and confident."</p>
+                            <span class="text-xs text-slate-400 mt-2 block">— Dr. Happy Lathiya</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-cyan-500/10 text-cyan-400 text-xs font-semibold tracking-wide uppercase">
+                        About Dr. Happy Lathiya
+                    </div>
+
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
+                        Dedicated to Excellence at <span class="gradient-text">Shantamani Dental Hospital</span>
+                    </h2>
+
+                    <p class="text-slate-300 leading-relaxed font-light">
+                        As a lead General Dentist at Shantamani dental hospital, Dr. Happy Lathiya brings compassionate expertise and comprehensive oral healthcare to every patient. Believing that preventive and gentle care forms the foundation of lifelong wellness, Dr. Lathiya utilizes modern techniques to deliver pain-free treatment.
+                    </p>
+
+                    <div class="grid sm:grid-cols-2 gap-4 pt-4">
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <i class="fa-solid fa-microscope text-cyan-400 text-xl mb-2"></i>
+                            <h3 class="font-bold text-white text-sm">Advanced Tech</h3>
+                            <p class="text-xs text-slate-400 mt-1">Utilizing modern diagnostic tools for precise outcomes.</p>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-800">
+                            <i class="fa-solid fa-heart-pulse text-indigo-400 text-xl mb-2"></i>
+                            <h3 class="font-bold text-white text-sm">Patient-Centric Care</h3>
+                            <p class="text-xs text-slate-400 mt-1">Gentle techniques designed to minimize discomfort and anxiety.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="px-3 py-1 rounded-md bg-indigo-500/10 text-indigo-400 text-xs font-semibold tracking-wide uppercase">Comprehensive Services</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white mt-3">Tailored Dental Solutions</h2>
+                <p class="text-slate-400 mt-4 text-base font-light">From preventive checkups to complex restorations, experience dentistry designed around your comfort and health.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="p-8 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 group hover:-translate-y-2">
+                    <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-cyan-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-teeth-open"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">General & Preventive Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Comprehensive oral checkups, scaling, cleaning, and fluoride treatments to keep your natural teeth healthy for life.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="p-8 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 group hover:-translate-y-2">
+                    <div class="w-14 h-14 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-indigo-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Cosmetic Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Transform your smile with laser teeth whitening, composite bonding, and custom dental veneers designed to shine.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="p-8 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 transition-all duration-300 group hover:-translate-y-2">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-purple-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-Tooth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Root Canal Therapy</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Painless endodontic treatments aimed at saving damaged teeth and restoring full oral function comfortably.</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="p-8 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 group hover:-translate-y-2">
+                    <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-cyan-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Crowns & Restorations</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Durable, natural-looking ceramic crowns and tooth-colored fillings crafted to seamlessly blend with your smile.</p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="p-8 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 group hover:-translate-y-2">
+                    <div class="w-14 h-14 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-indigo-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-children"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Pediatric Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Friendly and gentle dental visits tailored for children to cultivate positive habits early in life.</p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="p-8 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 transition-all duration-300 group hover:-translate-y-2">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:scale-110 group-hover:bg-purple-500 group-hover:text-white transition-all">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Emergency Dental Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Prompt attention and emergency relief for toothaches, trauma, broken restorations, and urgent issues.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials" class="py-24 relative bg-slate-900/40">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="px-3 py-1 rounded-md bg-purple-500/10 text-purple-400 text-xs font-semibold tracking-wide uppercase">Patient Reviews</span>
+                <h2 class="text-3xl sm:text-5xl font-extrabold text-white mt-3">Loved by Patients</h2>
+                <p class="text-slate-400 mt-4 text-base font-light">Read feedback from patients who trust Dr. Happy Lathiya for their dental care.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="p-8 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 text-sm gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed font-light">"Dr. Happy Lathiya made my dental visit completely stress-free. The consultation at Shantamani dental hospital was thorough and truly painless!"</p>
+                    </div>
+                    <div class="pt-6 border-t border-slate-800 mt-6 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold">P</div>
+                        <div>
+                            <div class="font-bold text-white text-sm">Pooja Sharma</div>
+                            <div class="text-xs text-slate-500">Verified Patient</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="p-8 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 text-sm gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed font-light">"Very attentive doctor. Dr. Happy explained every step before performing my procedure. Highly recommend to everyone looking for quality dental care."</p>
+                    </div>
+                    <div class="pt-6 border-t border-slate-800 mt-6 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold">R</div>
+                        <div>
+                            <div class="font-bold text-white text-sm">Rahul Patel</div>
+                            <div class="text-xs text-slate-500">Verified Patient</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="p-8 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 text-sm gap-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed font-light">"The ambiance at Shantamani dental hospital combined with Dr. Lathiya's skill made a huge difference. Outstanding service and staff!"</p>
+                    </div>
+                    <div class="pt-6 border-t border-slate-800 mt-6 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 flex items-center justify-center font-bold">A</div>
+                        <div>
+                            <div class="font-bold text-white text-sm">Ananya Desai</div>
+                            <div class="text-xs text-slate-500">Verified Patient</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT & BOOKING SECTION -->
+    <section id="contact" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <!-- Info Column -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="px-3 py-1 rounded-md bg-cyan-500/10 text-cyan-400 text-xs font-semibold tracking-wide uppercase">Get In Touch</span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3">Book Your Dental Consultation</h2>
+                        <p class="text-slate-400 mt-4 font-light leading-relaxed">
+                            Ready to transform your smile or schedule a routine checkup? Reach out to Dr. Happy Lathiya at Shantamani dental hospital today.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="p-5 rounded-2xl bg-slate-900/60 border border-slate-800 flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 font-medium">Practice Location</div>
+                                <div class="text-white font-semibold text-sm">Shantamani dental hospital</div>
+                            </div>
+                        </div>
+
+                        <div class="p-5 rounded-2xl bg-slate-900/60 border border-slate-800 flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 font-medium">Working Hours</div>
+                                <div class="text-white font-semibold text-sm">Mon - Sat: 9:00 AM - 8:00 PM</div>
+                            </div>
+                        </div>
+
+                        <div class="p-5 rounded-2xl bg-slate-900/60 border border-slate-800 flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400 font-medium">Direct Contact</div>
+                                <div class="text-white font-semibold text-sm">contact@shantamanidental.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="lg:col-span-7">
+                    <div class="p-8 sm:p-10 rounded-3xl bg-slate-900/80 backdrop-blur-xl border border-slate-800 shadow-2xl relative">
+                        <h3 class="text-xl font-bold text-white mb-6">Send an Appointment Request</h3>
+                        
+                        <form onsubmit="event.preventDefault(); alert('Thank you for your request! Dr. Happy Lathiya\'s team will contact you shortly.');" class="space-y-5">
+                            <div class="grid sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">Full Name</label>
+                                    <input type="text" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">Phone Number</label>
+                                    <input type="tel" required placeholder="+91 98765 43210" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                                </div>
+                            </div>
+
+                            <div class="grid sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">Preferred Date</label>
+                                    <input type="date" required class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-300 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">Service Required</label>
+                                    <select class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-300 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                                        <option>General Checkup & Cleaning</option>
+                                        <option>Cosmetic Treatment</option>
+                                        <option>Root Canal Therapy</option>
+                                        <option>Emergency Care</option>
+                                        <option>Other Service</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Message or Notes</label>
+                                <textarea rows="4" placeholder="Describe any dental concerns or questions..." class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm resize-none"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl font-semibold text-white bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 hover:opacity-90 transition-all duration-300 shadow-xl shadow-cyan-500/20 text-sm">
+                                Confirm Booking Request
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-12 border-t border-slate-800/80 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center text-white font-bold text-sm">
+                    <i class="fa-solid fa-tooth"></i>
+                </div>
+                <span class="font-bold text-slate-200 text-sm">Dr. Happy Lathiya</span>
+                <span class="text-xs text-slate-500">| Shantamani dental hospital</span>
+            </div>
+
+            <p class="text-xs text-slate-500">
+                &copy; 2026 Dr. Happy Lathiya. All rights reserved. Precision Dental Care.
+            </p>
+
+            <div class="flex items-center gap-4 text-slate-400">
+                <a href="#" class="hover:text-cyan-400 transition-colors text-sm"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors text-sm"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors text-sm"><i class="fa-solid fa-globe"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
