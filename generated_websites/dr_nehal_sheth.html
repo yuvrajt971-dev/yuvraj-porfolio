@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Nehal Sheth | Clinic Director & Dental Implant Specialist</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -12px rgba(14, 165, 233, 0.35);
+        }
+        .glow-card:hover {
+            box-shadow: 0 0 30px -5px rgba(99, 102, 241, 0.3);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .text-gradient-accent {
+            background: linear-gradient(135deg, #f43f5e 0%, #fb7185 50%, #e879f9 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-slate-950">
+
+    <!-- NAVIGATION BAR -->
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform duration-300">
+                    <i class="fa-solid fa-tooth text-lg"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-lg tracking-tight text-white group-hover:text-cyan-400 transition-colors">Dr. Nehal Sheth</span>
+                    <span class="text-xs text-slate-400 font-medium">Sheth Dental Clinic & Implant Centre</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Treatments</a>
+                <a href="#expertise" class="hover:text-cyan-400 transition-colors">Expertise</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Testimonials</a>
+            </nav>
+
+            <div class="hidden sm:flex items-center gap-4">
+                <a href="#contact" class="relative group overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-900">
+                    <span class="absolute inset-0 bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 rounded-full group-hover:opacity-90 transition-opacity"></span>
+                    <span class="relative px-6 py-2.5 rounded-full bg-slate-950 flex items-center gap-2 transition-all duration-300 group-hover:bg-transparent">
+                        <i class="fa-regular fa-calendar-check text-cyan-400 group-hover:text-white transition-colors"></i>
+                        <span class="text-xs font-bold uppercase tracking-wider text-white">Book Appointment</span>
+                    </span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-slate-400 hover:text-white focus:outline-none" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Nav Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900/95 border-b border-slate-800 px-6 py-6 space-y-4">
+            <a href="#about" class="block text-slate-300 hover:text-cyan-400 font-medium">About</a>
+            <a href="#services" class="block text-slate-300 hover:text-cyan-400 font-medium">Treatments</a>
+            <a href="#expertise" class="block text-slate-300 hover:text-cyan-400 font-medium">Expertise</a>
+            <a href="#testimonials" class="block text-slate-300 hover:text-cyan-400 font-medium">Testimonials</a>
+            <a href="#contact" class="block text-center py-3 bg-gradient-to-r from-cyan-500 to-indigo-600 rounded-xl text-white font-bold text-sm">Book Appointment</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative pt-36 pb-20 md:pt-44 md:pb-32 overflow-hidden">
+        <!-- Background Decorative Orbs -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-cyan-500/10 via-indigo-500/10 to-purple-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute top-20 right-10 w-72 h-72 bg-cyan-500/10 rounded-full blur-2xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Left Content Column -->
+                <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900/90 border border-slate-800 backdrop-blur-md shadow-inner">
+                        <span class="flex h-2 w-2 rounded-full bg-cyan-400 animate-ping"></span>
+                        <span class="text-xs font-semibold text-cyan-300 tracking-wide uppercase">Leading Dental Care Excellence</span>
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.15]">
+                        Crafting Exceptional <br>
+                        <span class="text-gradient">Smiles & Confidence</span>
+                    </h1>
+                    
+                    <p class="text-lg text-slate-400 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Welcome to <strong class="text-slate-200">Sheth Dental Clinic & Implant Centre</strong>. Under the directorship of <strong class="text-slate-200">Dr. Nehal Sheth</strong>, we blend pioneering implant dentistry, state-of-the-art diagnostic technology, and personalized care for lifetime oral health.
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white font-semibold text-base shadow-xl shadow-cyan-500/20 hover:shadow-cyan-500/30 hover:scale-[1.02] transition-all duration-300 text-center">
+                            Schedule Consultation <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                        <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900/80 border border-slate-800 text-slate-300 font-semibold text-base hover:bg-slate-800 hover:text-white transition-all duration-300 text-center">
+                            Explore Services
+                        </a>
+                    </div>
+
+                    <!-- Trust Stats Grid -->
+                    <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-4 text-center lg:text-left">
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-white">15+</div>
+                            <div class="text-xs sm:text-sm text-slate-400 font-medium">Years Experience</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-cyan-400">5,000+</div>
+                            <div class="text-xs sm:text-sm text-slate-400 font-medium">Happy Patients</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-extrabold text-indigo-400">99.8%</div>
+                            <div class="text-xs sm:text-sm text-slate-400 font-medium">Implant Success</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Avatar & Frame Column -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative group">
+                        <!-- Glowing Outer Ring Layer 1 -->
+                        <div class="absolute -inset-1 rounded-full bg-gradient-to-r from-cyan-500 via-indigo-500 to-pink-500 opacity-75 blur-xl group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+                        
+                        <!-- Glowing Outer Ring Layer 2 -->
+                        <div class="absolute -inset-0.5 rounded-full bg-gradient-to-r from-cyan-400 to-indigo-600 opacity-80"></div>
+
+                        <!-- Inner Avatar Box -->
+                        <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-full bg-slate-950 p-3 overflow-hidden shadow-2xl flex items-center justify-center">
+                            <img src="https://ui-avatars.com/api/?name=Dr.+Nehal+Sheth&size=200&background=0D8ABC&color=fff&bold=true" 
+                                 alt="Dr. Nehal Sheth" 
+                                 class="w-full h-full object-cover rounded-full shadow-inner transform group-hover:scale-105 transition duration-500">
+                        </div>
+
+                        <!-- Badge Overlay -->
+                        <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-slate-900/90 backdrop-blur-md border border-slate-700/80 px-6 py-2.5 rounded-full shadow-2xl flex items-center gap-2 whitespace-nowrap">
+                            <i class="fa-solid fa-award text-amber-400 text-lg"></i>
+                            <span class="text-xs font-bold text-slate-200 tracking-wide">Clinic Director</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-24 bg-slate-900/40 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- About Image Column -->
+                <div class="lg:col-span-5">
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 shadow-2xl group">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Dental Clinic Interior" 
+                             class="w-full h-[450px] object-cover object-center group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <div class="p-4 rounded-xl bg-slate-900/80 backdrop-blur-md border border-slate-800">
+                                <p class="text-sm font-semibold text-cyan-400">State-of-the-Art Infrastructure</p>
+                                <p class="text-xs text-slate-300 mt-1">Equipped with painless computerized technology & laser dentistry.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About Text Column -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 text-cyan-400 text-sm font-semibold tracking-wider uppercase">
+                        <i class="fa-solid fa-stethoscope"></i> About Dr. Nehal Sheth
+                    </div>
+                    
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+                        Pioneering Modern Dental Solutions & Advanced Implantology
+                    </h2>
+                    
+                    <p class="text-slate-300 leading-relaxed">
+                        As the Clinic Director of <strong>sheth dental clinic & implant centre</strong>, Dr. Nehal Sheth is dedicated to elevating oral healthcare through clinical precision, cutting-edge technology, and patient-centric comfort. 
+                    </p>
+                    
+                    <p class="text-slate-400 leading-relaxed text-sm sm:text-base">
+                        With extensive specialization in complex implant placement, full-mouth restorations, and aesthetic smile re-design, Dr. Sheth ensures that every patient receives tailored treatment in a hygienic, tranquil, and compassionate environment.
+                    </p>
+
+                    <!-- Feature Bullets Grid -->
+                    <div class="grid sm:grid-cols-2 gap-4 pt-4">
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 shrink-0 mt-1">
+                                <i class="fa-solid fa-circle-check text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Precision Implantology</h4>
+                                <p class="text-xs text-slate-400">Guided 3D implant procedures for maximum longevity.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 shrink-0 mt-1">
+                                <i class="fa-solid fa-circle-check text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Digital Smile Design</h4>
+                                <p class="text-xs text-slate-400">Customized aesthetic enhancements designed digitally.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 shrink-0 mt-1">
+                                <i class="fa-solid fa-circle-check text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Painless Procedures</h4>
+                                <p class="text-xs text-slate-400">Advanced anesthesia & gentle techniques for complete comfort.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400 shrink-0 mt-1">
+                                <i class="fa-solid fa-circle-check text-sm"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Strict Sterilization</h4>
+                                <p class="text-xs text-slate-400">International safety standards and hygiene protocols.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-cyan-400 px-3 py-1 rounded-full bg-cyan-950/60 border border-cyan-800/50">Comprehensive Care</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Specialized Clinical Treatments</h2>
+                <p class="text-slate-400 text-base">Offering a full spectrum of advanced dental and implantology services utilizing global best practices.</p>
+            </div>
+
+            <!-- Service Cards Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service Card 1 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 group glow-card">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-cyan-500/20 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Dental Implants</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Permanent, natural-looking tooth replacements using premium titanium implants for restored functionality and confidence.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-bold text-cyan-400 hover:text-cyan-300 uppercase tracking-wider">
+                        Learn More <i class="fa-solid fa-chevron-right ml-1 text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 group glow-card">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-indigo-500 to-purple-600 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-indigo-500/20 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-indigo-400 transition-colors">Cosmetic Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Transform your smile with porcelain veneers, professional laser whitening, and comprehensive smile redesigns.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-bold text-indigo-400 hover:text-indigo-300 uppercase tracking-wider">
+                        Learn More <i class="fa-solid fa-chevron-right ml-1 text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-purple-500/50 transition-all duration-300 group glow-card">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-purple-500 to-pink-600 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-purple-500/20 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-microscope"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">Root Canal Therapy</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Microscopic endodontics ensuring quick, painless, single-sitting root canal treatments to save natural teeth.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-bold text-purple-400 hover:text-purple-300 uppercase tracking-wider">
+                        Learn More <i class="fa-solid fa-chevron-right ml-1 text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-cyan-500/50 transition-all duration-300 group glow-card">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-cyan-500 to-teal-600 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-cyan-500/20 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-teeth-open"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Orthodontics & Aligners</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Discreet clear aligners and traditional braces to correct misalignments for adults and teenagers alike.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-bold text-cyan-400 hover:text-cyan-300 uppercase tracking-wider">
+                        Learn More <i class="fa-solid fa-chevron-right ml-1 text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 transition-all duration-300 group glow-card">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-blue-500 to-indigo-600 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-blue-500/20 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-indigo-400 transition-colors">Preventive Oral Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Comprehensive oral examinations, digital X-rays, ultrasonic scaling, and gum health management.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-bold text-indigo-400 hover:text-indigo-300 uppercase tracking-wider">
+                        Learn More <i class="fa-solid fa-chevron-right ml-1 text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="p-8 rounded-2xl bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-pink-500/50 transition-all duration-300 group glow-card">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-tr from-rose-500 to-pink-600 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-rose-500/20 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-hand-holding-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-pink-400 transition-colors">Full Mouth Reconstruction</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Complete functional and aesthetic rehabilitations for severely worn, damaged, or missing teeth.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center text-xs font-bold text-pink-400 hover:text-pink-300 uppercase tracking-wider">
+                        Learn More <i class="fa-solid fa-chevron-right ml-1 text-[10px]"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials" class="py-24 bg-slate-900/40 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-indigo-400 px-3 py-1 rounded-full bg-indigo-950/60 border border-indigo-800/50">Patient Endorsements</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Stories of Transformed Smiles</h2>
+                <p class="text-slate-400 text-base">Read why thousands of patients trust Dr. Nehal Sheth for their dental health.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="p-8 rounded-2xl bg-slate-900/80 border border-slate-800 backdrop-blur-xl flex flex-col justify-between relative">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Dr. Nehal Sheth completely eliminated my dental anxiety. My dental implant procedure was seamlessly smooth and absolutely pain-free. Sheth Dental Clinic is truly world-class!"
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-slate-800/80 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold">
+                            RP
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-white">Rajesh Patel</div>
+                            <div class="text-xs text-slate-400">Implant Patient</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="p-8 rounded-2xl bg-slate-900/80 border border-slate-800 backdrop-blur-xl flex flex-col justify-between relative">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "The cosmetic smile design done by Dr. Sheth gave me back my self-confidence. The clinic staff is warm, professional, and the technology they use is top-notch."
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-slate-800/80 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 flex items-center justify-center font-bold">
+                            AS
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-white">Ananya Shah</div>
+                            <div class="text-xs text-slate-400">Smile Makeover</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="p-8 rounded-2xl bg-slate-900/80 border border-slate-800 backdrop-blur-xl flex flex-col justify-between relative">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 gap-1 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic">
+                            "Remarkable hygiene standards and extreme care for details. Dr. Nehal Sheth is definitely the finest dental specialist and Clinic Director in the region."
+                        </p>
+                    </div>
+                    <div class="mt-8 pt-4 border-t border-slate-800/80 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold">
+                            MK
+                        </div>
+                        <div>
+                            <div class="text-sm font-bold text-white">Mehta K.</div>
+                            <div class="text-xs text-slate-400">Regular Patient</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT & APPOINTMENT SECTION -->
+    <section id="contact" class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-start">
+                
+                <!-- Contact Details -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-widest text-cyan-400 px-3 py-1 rounded-full bg-cyan-950/60 border border-cyan-800/50">Get In Touch</span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-4">Schedule Your Consultation</h2>
+                        <p class="text-slate-400 text-sm leading-relaxed mt-2">
+                            Take the first step toward a healthier, glowing smile. Visit our clinic or reach out to reserve an appointment slot with Dr. Nehal Sheth.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <!-- Location -->
+                        <div class="p-5 rounded-xl bg-slate-900/60 border border-slate-800 flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-lg shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Clinic Address</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">Sheth Dental Clinic & Implant Centre, Main Street Healthcare Zone</p>
+                            </div>
+                        </div>
+
+                        <!-- Hours -->
+                        <div class="p-5 rounded-xl bg-slate-900/60 border border-slate-800 flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-lg shrink-0">
+                                <i class="fa-regular fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Working Hours</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">Mon - Sat: 9:30 AM – 8:00 PM | Sunday: By Emergency Only</p>
+                            </div>
+                        </div>
+
+                        <!-- Direct Call -->
+                        <div class="p-5 rounded-xl bg-slate-900/60 border border-slate-800 flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center text-lg shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Appointments & Hotline</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">+1 (800) 555-SHETH / contact@shethdental.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Booking Form -->
+                <div class="lg:col-span-7">
+                    <div class="p-8 sm:p-10 rounded-3xl bg-slate-900/80 border border-slate-800 backdrop-blur-2xl shadow-2xl relative">
+                        <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
+                            <i class="fa-solid fa-calendar-plus text-cyan-400"></i> Reserve Your Appointment
+                        </h3>
+                        
+                        <form onsubmit="event.preventDefault(); alert('Thank you, Dr. Sheth\'s office will contact you shortly!');" class="space-y-5">
+                            <div class="grid sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">Patient Full Name</label>
+                                    <input type="text" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 text-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">Phone Number</label>
+                                    <input type="tel" required placeholder="+1 (555) 000-0000" class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 text-sm">
+                                </div>
+                            </div>
+
+                            <div class="grid sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">Requested Service</label>
+                                    <select class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-300 focus:outline-none focus:border-cyan-500 text-sm">
+                                        <option>Dental Implants Consultation</option>
+                                        <option>Cosmetic Smile Design</option>
+                                        <option>Root Canal Treatment</option>
+                                        <option>General Checkup & Teeth Cleaning</option>
+                                        <option>Orthodontics / Aligners</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">Preferred Date</label>
+                                    <input type="date" required class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-300 focus:outline-none focus:border-cyan-500 text-sm">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Additional Notes / Symptoms</label>
+                                <textarea rows="4" placeholder="Briefly describe your treatment goals or dental concern..." class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 text-sm"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white font-bold text-sm shadow-xl shadow-cyan-500/20 hover:shadow-cyan-500/30 hover:scale-[1.01] transition-all duration-300 uppercase tracking-wider">
+                                Confirm Appointment Request
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-slate-800 bg-slate-950 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center text-white font-bold text-sm">
+                    <i class="fa-solid fa-tooth"></i>
+                </div>
+                <span class="text-sm font-bold text-slate-300">Dr. Nehal Sheth | sheth dental clinic & implant centre</span>
+            </div>
+
+            <p class="text-xs text-slate-500">
+                &copy; <script>document.write(new Date().getFullYear())</script> Dr. Nehal Sheth. All rights reserved.
+            </p>
+
+            <div class="flex items-center gap-4 text-slate-400">
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-linkedin text-lg"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-facebook text-lg"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition-colors"><i class="fa-brands fa-instagram text-lg"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
