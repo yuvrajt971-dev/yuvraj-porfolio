@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanchan Daga | Creative Head & Brand Strategist</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            cyan: '#0D8ABC',
+                            teal: '#14b8a6',
+                            accent: '#6366f1'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+        .glow-mesh {
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(13, 138, 188, 0.25) 0px, transparent 50%),
+                radial-gradient(at 100% 0%, rgba(99, 102, 241, 0.2) 0px, transparent 50%),
+                radial-gradient(at 50% 100%, rgba(20, 184, 166, 0.15) 0px, transparent 50%);
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card:hover {
+            border-color: rgba(13, 138, 188, 0.4);
+            box-shadow: 0 10px 30px -10px rgba(13, 138, 188, 0.25);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .text-gradient-cyan {
+            background: linear-gradient(135deg, #22d3ee 0%, #0D8ABC 50%, #3b82f6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .avatar-glow {
+            position: relative;
+        }
+        .avatar-glow::before {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            background: linear-gradient(45deg, #0D8ABC, #6366f1, #14b8a6, #ec4899);
+            border-radius: 9999px;
+            z-index: -1;
+            filter: blur(12px);
+            opacity: 0.75;
+            transition: opacity 0.5s ease;
+        }
+        .avatar-glow:hover::before {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-white glow-mesh min-h-screen">
+
+    <!-- Sticky Navigation Bar -->
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-600 to-indigo-600 flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
+                    KD
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-lg tracking-tight text-white group-hover:text-cyan-400 transition-colors">Kanchan Daga</span>
+                    <span class="text-xs text-slate-400 font-medium">Creative Head • QHT Clinic</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-cyan-400 transition-colors">Specialties</a>
+                <a href="#impact" class="hover:text-cyan-400 transition-colors">Brand Impact</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Testimonials</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200">
+                    <span>Connect Now</span>
+                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+                <button class="md:hidden text-slate-300 hover:text-white text-xl focus:outline-none">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="relative pt-16 pb-24 md:pt-28 md:pb-36 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                    
+                    <!-- Hero Content -->
+                    <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card text-xs font-semibold text-cyan-400 border border-cyan-500/30">
+                            <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                            <span>Leading Creative Vision at QHT Clinic</span>
+                        </div>
+
+                        <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.1]">
+                            Elevating Brands <br>
+                            <span class="text-gradient">Through Aesthetic</span> <br>
+                            & Creative Excellence.
+                        </h1>
+
+                        <p class="text-base sm:text-lg text-slate-400 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                            Pioneering dynamic visual strategies, modern clinic storytelling, and user-centric brand experiences. Crafting world-class aesthetics that blend healthcare precision with luxury design.
+                        </p>
+
+                        <!-- CTA Buttons -->
+                        <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+                            <a href="#contact" class="px-8 py-4 rounded-full bg-gradient-to-r from-cyan-500 to-indigo-600 text-white font-semibold text-sm shadow-xl shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 flex items-center gap-3">
+                                <i class="fa-solid fa-paper-plane"></i>
+                                <span>Initiate Collaboration</span>
+                            </a>
+                            <a href="#expertise" class="px-8 py-4 rounded-full glass-card hover:bg-slate-900 text-slate-200 font-semibold text-sm border border-slate-700/60 hover:border-slate-500 transition-all duration-300 flex items-center gap-3">
+                                <span>Explore Work</span>
+                                <i class="fa-solid fa-chevron-down text-xs text-slate-400"></i>
+                            </a>
+                        </div>
+
+                        <!-- Trust Badges / Stats -->
+                        <div class="pt-8 grid grid-cols-3 gap-4 border-t border-slate-800/80 max-w-lg mx-auto lg:mx-0">
+                            <div>
+                                <h4 class="text-2xl sm:text-3xl font-extrabold text-white text-gradient-cyan">100%</h4>
+                                <p class="text-xs text-slate-400 font-medium mt-1">Brand Consistency</p>
+                            </div>
+                            <div>
+                                <h4 class="text-2xl sm:text-3xl font-extrabold text-white text-gradient-cyan">Modern</h4>
+                                <p class="text-xs text-slate-400 font-medium mt-1">Aesthetic Standards</p>
+                            </div>
+                            <div>
+                                <h4 class="text-2xl sm:text-3xl font-extrabold text-white text-gradient-cyan">Creative</h4>
+                                <p class="text-xs text-slate-400 font-medium mt-1">Campaign Strategy</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Avatar & Profile Frame -->
+                    <div class="lg:col-span-5 flex justify-center lg:justify-end">
+                        <div class="relative w-72 h-72 sm:w-96 sm:h-96">
+                            <!-- Background Glowing Accent Rings -->
+                            <div class="absolute inset-0 rounded-full bg-gradient-to-tr from-cyan-500 via-indigo-500 to-pink-500 blur-2xl opacity-40 animate-pulse"></div>
+                            
+                            <!-- Profile Image Container -->
+                            <div class="relative w-full h-full rounded-full p-2 bg-slate-900 border border-slate-700/80 avatar-glow flex items-center justify-center">
+                                <img src="https://ui-avatars.com/api/?name=Kanchan+Daga&size=200&background=0D8ABC&color=fff&bold=true" 
+                                     alt="Kanchan Daga" 
+                                     class="w-full h-full rounded-full object-cover shadow-2xl border-2 border-cyan-400/30">
+                            </div>
+
+                            <!-- Floating Badge 1 -->
+                            <div class="absolute -bottom-4 -left-4 glass-card px-5 py-3 rounded-2xl flex items-center gap-3 border border-slate-700 shadow-xl">
+                                <div class="w-10 h-10 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center text-lg">
+                                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400">Role</p>
+                                    <p class="text-sm font-bold text-white">Creative Head</p>
+                                </div>
+                            </div>
+
+                            <!-- Floating Badge 2 -->
+                            <div class="absolute -top-4 -right-4 glass-card px-5 py-3 rounded-2xl flex items-center gap-3 border border-slate-700 shadow-xl">
+                                <div class="w-10 h-10 rounded-xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center text-lg">
+                                    <i class="fa-solid fa-hospital-user"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400">Organization</p>
+                                    <p class="text-sm font-bold text-white">QHT Clinic</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- About & Vision Section -->
+        <section id="about" class="py-24 relative border-t border-slate-900">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- Industry Spotlight Image -->
+                    <div class="lg:col-span-5 relative">
+                        <div class="relative rounded-3xl overflow-hidden glass-card p-2 border border-slate-800 shadow-2xl group">
+                            <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                                 alt="Medical Aesthetic Visual Creative Setup" 
+                                 class="w-full h-[420px] object-cover rounded-2xl transition-transform duration-700 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+                            <div class="absolute bottom-6 left-6 right-6">
+                                <span class="text-xs uppercase tracking-widest text-cyan-400 font-semibold">Visual Aesthetics</span>
+                                <h3 class="text-xl font-bold text-white mt-1">Transforming Healthcare Branding</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Vision & Strategic Pillars -->
+                    <div class="lg:col-span-7 space-y-6">
+                        <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-cyan-400">
+                            <i class="fa-solid fa-compass"></i>
+                            <span>About Kanchan Daga</span>
+                        </div>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                            Bridging Visual Innovation with <span class="text-gradient">Clinical Excellence</span>.
+                        </h2>
+                        <p class="text-slate-400 leading-relaxed font-normal">
+                            As the Creative Head at <strong>QHT Clinic</strong>, Kanchan Daga oversees brand identity, media campaigns, and visual marketing assets. With a keen eye for modern design trends and patient engagement strategies, Kanchan ensures QHT Clinic stands out as a premier aesthetic medical institution.
+                        </p>
+
+                        <!-- Pillars Grid -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                            <div class="glass-card p-5 rounded-2xl">
+                                <div class="w-10 h-10 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-lg mb-3">
+                                    <i class="fa-solid fa-palette"></i>
+                                </div>
+                                <h4 class="font-bold text-white text-base">Brand Architecture</h4>
+                                <p class="text-xs text-slate-400 mt-1">Crafting sleek visual guidelines and modern aesthetic identities.</p>
+                            </div>
+
+                            <div class="glass-card p-5 rounded-2xl">
+                                <div class="w-10 h-10 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-lg mb-3">
+                                    <i class="fa-solid fa-bullhorn"></i>
+                                </div>
+                                <h4 class="font-bold text-white text-base">Campaign Leadership</h4>
+                                <p class="text-xs text-slate-400 mt-1">Driving high-impact media campaigns for medical & cosmetic audiences.</p>
+                            </div>
+
+                            <div class="glass-card p-5 rounded-2xl">
+                                <div class="w-10 h-10 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center text-lg mb-3">
+                                    <i class="fa-solid fa-layer-group"></i>
+                                </div>
+                                <h4 class="font-bold text-white text-base">Content Strategy</h4>
+                                <p class="text-xs text-slate-400 mt-1">Ensuring multi-channel consistency across digital and print touchpoints.</p>
+                            </div>
+
+                            <div class="glass-card p-5 rounded-2xl">
+                                <div class="w-10 h-10 rounded-lg bg-pink-500/10 text-pink-400 flex items-center justify-center text-lg mb-3">
+                                    <i class="fa-solid fa-heart-pulse"></i>
+                                </div>
+                                <h4 class="font-bold text-white text-base">Patient Experience Design</h4>
+                                <p class="text-xs text-slate-400 mt-1">Designing welcoming, trustworthy UI and visual interactions.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Services & Specialties Section -->
+        <section id="expertise" class="py-24 relative bg-slate-900/40">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                    <span class="text-xs font-bold uppercase tracking-wider text-cyan-400">Core Competencies</span>
+                    <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
+                        Creative Direction & Key Services
+                    </h2>
+                    <p class="text-slate-400 text-base">
+                        Comprehensive design solutions engineered to scale medical aesthetic brands and elevate market presence.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Service Card 1 -->
+                    <div class="glass-card p-8 rounded-3xl transition-all duration-300 group">
+                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-cyan-500/20 to-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-pen-nib"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Creative Leadership</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Guiding creative teams from concept to execution, delivering premium visual identities for high-end aesthetic clinics.
+                        </p>
+                    </div>
+
+                    <!-- Service Card 2 -->
+                    <div class="glass-card p-8 rounded-3xl transition-all duration-300 group">
+                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-indigo-500/20 to-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-sliders"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 group-hover:text-indigo-400 transition-colors">Digital UI/UX Direction</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Designing intuitive, elegant digital platforms that seamlessly guide patients from inquiry to appointment booking.
+                        </p>
+                    </div>
+
+                    <!-- Service Card 3 -->
+                    <div class="glass-card p-8 rounded-3xl transition-all duration-300 group">
+                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-purple-500/20 to-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-camera-retro"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">Visual Storytelling</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Producing compelling video, photography, and graphic content that highlights clinic expertise and authentic patient transformations.
+                        </p>
+                    </div>
+
+                    <!-- Service Card 4 -->
+                    <div class="glass-card p-8 rounded-3xl transition-all duration-300 group">
+                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-pink-500/20 to-pink-500/10 border border-pink-500/30 flex items-center justify-center text-pink-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-gem"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 group-hover:text-pink-400 transition-colors">Luxury Brand Positioning</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Establishing bespoke brand guidelines, luxury color schemes, and premium aesthetics tailored for discerning clientele.
+                        </p>
+                    </div>
+
+                    <!-- Service Card 5 -->
+                    <div class="glass-card p-8 rounded-3xl transition-all duration-300 group">
+                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-emerald-500/20 to-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 group-hover:text-emerald-400 transition-colors">Growth Marketing Design</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Designing conversion-focused ad creatives, landing pages, and promotional assets to maximize patient acquisition.
+                        </p>
+                    </div>
+
+                    <!-- Service Card 6 -->
+                    <div class="glass-card p-8 rounded-3xl transition-all duration-300 group">
+                        <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-amber-500/20 to-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-3 group-hover:text-amber-400 transition-colors">Omnichannel Strategy</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Creating cohesive visual experiences across print materials, clinic interiors, social channels, and web apps.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Showcase Section -->
+        <section id="impact" class="py-24 relative border-t border-slate-900">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="glass-card rounded-3xl p-8 sm:p-12 relative overflow-hidden">
+                    <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-cyan-500/10 rounded-full blur-3xl"></div>
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                        <div class="lg:col-span-8 space-y-4">
+                            <span class="text-xs font-bold uppercase tracking-wider text-cyan-400">Leadership Spotlight</span>
+                            <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
+                                Driving Creative Vision at QHT Clinic
+                            </h2>
+                            <p class="text-slate-300 leading-relaxed font-normal">
+                                Under Kanchan Daga's creative leadership, QHT Clinic delivers unified, high-end branding that builds trust and fosters patient confidence. From digital touchpoints to clinic collateral, every creative decision reflects premium quality.
+                            </p>
+                        </div>
+                        <div class="lg:col-span-4 flex justify-start lg:justify-end">
+                            <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-cyan-500 to-indigo-600 text-white font-semibold text-center hover:scale-105 transition-all shadow-lg shadow-cyan-500/25">
+                                Collaborate on Projects
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-24 relative bg-slate-900/30">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                    <span class="text-xs font-bold uppercase tracking-wider text-cyan-400">Endorsements</span>
+                    <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
+                        What Industry Leaders Say
+                    </h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="glass-card p-8 rounded-3xl flex flex-col justify-between space-y-6">
+                        <div class="space-y-4">
+                            <div class="flex text-amber-400 text-sm gap-1">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-300 text-sm italic leading-relaxed">
+                                "Kanchan's creative insight transformed our brand image completely. Her ability to translate medical concepts into sleek, trustworthy visuals is unmatched."
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-slate-800 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold text-sm">
+                                MS
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Medical Director</h4>
+                                <p class="text-xs text-slate-400">QHT Clinic Leadership</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="glass-card p-8 rounded-3xl flex flex-col justify-between space-y-6">
+                        <div class="space-y-4">
+                            <div class="flex text-amber-400 text-sm gap-1">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-300 text-sm italic leading-relaxed">
+                                "Working alongside Kanchan on brand campaigns is always an inspiring experience. She brings strategic clarity and flawless aesthetic design to every single asset."
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-slate-800 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 flex items-center justify-center font-bold text-sm">
+                                AR
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Marketing Strategist</h4>
+                                <p class="text-xs text-slate-400">Healthcare Media Group</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="glass-card p-8 rounded-3xl flex flex-col justify-between space-y-6">
+                        <div class="space-y-4">
+                            <div class="flex text-amber-400 text-sm gap-1">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-slate-300 text-sm italic leading-relaxed">
+                                "Exceptional design leadership! Kanchan elevates the visual standards of clinic branding, setting a true benchmark for elegance and quality."
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-slate-800 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 flex items-center justify-center font-bold text-sm">
+                                VP
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Senior Producer</h4>
+                                <p class="text-xs text-slate-400">Creative Agency Partner</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Outreach Section -->
+        <section id="contact" class="py-24 relative border-t border-slate-900">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    
+                    <!-- Direct Info -->
+                    <div class="lg:col-span-5 space-y-8">
+                        <div>
+                            <span class="text-xs font-bold uppercase tracking-wider text-cyan-400">Get In Touch</span>
+                            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Let's Connect & Collaborate</h2>
+                            <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                                Open for executive design consultations, creative strategy discussions, and strategic partnerships.
+                            </p>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="glass-card p-4 rounded-2xl flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl shrink-0">
+                                    <i class="fa-solid fa-briefcase"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400">Current Role</p>
+                                    <p class="text-sm font-semibold text-white">Creative Head at QHT Clinic</p>
+                                </div>
+                            </div>
+
+                            <div class="glass-card p-4 rounded-2xl flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-xl shrink-0">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400">Direct Email</p>
+                                    <p class="text-sm font-semibold text-white">kanchan.daga@qhtclinic.com</p>
+                                </div>
+                            </div>
+
+                            <div class="glass-card p-4 rounded-2xl flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl shrink-0">
+                                    <i class="fa-solid fa-link"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-slate-400">Network Connected</p>
+                                    <p class="text-sm font-semibold text-white">12 Sep 2026</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Links -->
+                        <div class="flex items-center gap-4 pt-2">
+                            <a href="#" class="w-10 h-10 rounded-xl glass-card flex items-center justify-center text-slate-300 hover:text-cyan-400 hover:border-cyan-500/50 transition-all">
+                                <i class="fa-brands fa-linkedin-in text-base"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-xl glass-card flex items-center justify-center text-slate-300 hover:text-cyan-400 hover:border-cyan-500/50 transition-all">
+                                <i class="fa-brands fa-behance text-base"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-xl glass-card flex items-center justify-center text-slate-300 hover:text-cyan-400 hover:border-cyan-500/50 transition-all">
+                                <i class="fa-brands fa-dribbble text-base"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Glass Form -->
+                    <div class="lg:col-span-7">
+                        <form onsubmit="event.preventDefault(); alert('Thank you for your message! Kanchan Daga will respond shortly.');" class="glass-card p-8 sm:p-10 rounded-3xl space-y-6">
+                            <h3 class="text-xl font-bold text-white mb-2">Send a Message</h3>
+                            
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Your Name</label>
+                                    <input type="text" required placeholder="Dr. Alex Rivera" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-500 transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Your Email</label>
+                                    <input type="email" required placeholder="alex@company.com" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-500 transition-colors">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Subject</label>
+                                <input type="text" required placeholder="Creative Consultation / Collaboration" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-500 transition-colors">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Message</label>
+                                <textarea rows="4" required placeholder="Hello Kanchan, I loved your visual direction work at QHT Clinic..." class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-500 transition-colors resize-none"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 text-white font-semibold text-sm shadow-xl shadow-cyan-500/20 hover:shadow-cyan-500/40 hover:scale-[1.01] active:scale-[0.99] transition-all duration-200">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-900 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+            <p>© 2026 Kanchan Daga. All rights reserved.</p>
+            <p class="flex items-center gap-2">
+                <span>Designed for Creative Excellence</span>
+                <span class="w-1 h-1 rounded-full bg-slate-700"></span>
+                <span>QHT Clinic</span>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
