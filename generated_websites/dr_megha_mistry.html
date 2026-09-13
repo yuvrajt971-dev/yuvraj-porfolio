@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Megha Mistry | General Dentist</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -12px rgba(99, 102, 241, 0.35);
+        }
+        .glow-cyan {
+            box-shadow: 0 0 50px -12px rgba(14, 165, 233, 0.35);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- Ambient Background Glows -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
+        <div class="absolute -top-40 -left-40 w-96 h-96 bg-indigo-600/20 rounded-full blur-[128px]"></div>
+        <div class="absolute top-1/3 -right-40 w-96 h-96 bg-cyan-600/20 rounded-full blur-[128px]"></div>
+        <div class="absolute -bottom-40 left-1/3 w-96 h-96 bg-purple-600/20 rounded-full blur-[128px]"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="#" class="flex items-center space-x-3 group">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-indigo-500 to-purple-500 flex items-center justify-center text-white font-bold text-lg shadow-lg group-hover:scale-105 transition-transform duration-300">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <div>
+                        <span class="text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-200 to-slate-400">Dr. Megha Mistry</span>
+                        <span class="block text-xs text-cyan-400 font-medium">General Dentist</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-sm text-slate-300 hover:text-cyan-400 transition-colors duration-200">About Expertise</a>
+                    <a href="#services" class="text-sm text-slate-300 hover:text-cyan-400 transition-colors duration-200">Clinical Services</a>
+                    <a href="#clinics" class="text-sm text-slate-300 hover:text-cyan-400 transition-colors duration-200">Clinics</a>
+                    <a href="#testimonials" class="text-sm text-slate-300 hover:text-cyan-400 transition-colors duration-200">Testimonials</a>
+                    <a href="#contact" class="px-5 py-2.5 rounded-full text-sm font-semibold bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 text-white shadow-lg hover:opacity-95 hover:scale-105 transition-all duration-300">
+                        Book Consultation
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <a href="#contact" class="px-4 py-2 rounded-full text-xs font-semibold bg-gradient-to-r from-cyan-500 to-indigo-500 text-white">
+                        Book Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Content -->
+                <div class="lg:col-span-7 text-center lg:text-left">
+                    <div class="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-slate-900/80 border border-slate-800 text-xs text-cyan-400 font-medium mb-6 backdrop-blur-md">
+                        <span class="flex h-2 w-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                        <span>Partha Dental Skin Hair Clinic Network</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6">
+                        Crafting Healthy, <br class="hidden sm:inline">
+                        <span class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-indigo-400 to-purple-400">
+                            Radiant Smiles
+                        </span> With Care & Precision.
+                    </h1>
+
+                    <p class="text-lg text-slate-400 mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Dedicated General Dentist delivering comprehensive, painless oral healthcare and advanced aesthetic treatments across Andhra Pradesh, Telangana, Chennai & Bangalore.
+                    </p>
+
+                    <!-- Action Buttons -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-12">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl font-semibold bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 text-white shadow-xl hover:shadow-cyan-500/25 hover:scale-105 transition-all duration-300 text-center">
+                            <i class="fa-regular fa-calendar-check mr-2"></i> Schedule Appointment
+                        </a>
+                        <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-xl font-semibold bg-slate-900/80 border border-slate-800 text-slate-300 hover:text-white hover:border-slate-700 hover:bg-slate-900 transition-all duration-300 text-center backdrop-blur-md">
+                            Explore Treatments
+                        </a>
+                    </div>
+
+                    <!-- Trust Badges -->
+                    <div class="grid grid-cols-3 gap-4 border-t border-slate-800/80 pt-8 max-w-lg mx-auto lg:mx-0">
+                        <div>
+                            <p class="text-2xl font-bold text-white">4+ States</p>
+                            <p class="text-xs text-slate-400 mt-1">AP, TS, TN & KA</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-bold text-white">5,000+</p>
+                            <p class="text-xs text-slate-400 mt-1">Patients Treated</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-bold text-white">99%</p>
+                            <p class="text-xs text-slate-400 mt-1">Patient Satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Avatar Visual -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative">
+                        <!-- Double Gradient Glowing Frame -->
+                        <div class="absolute -inset-1.5 bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 rounded-full blur-xl opacity-75 animate-pulse"></div>
+                        <div class="relative p-2 bg-slate-950 rounded-full border border-slate-800">
+                            <img 
+                                src="https://ui-avatars.com/api/?name=Dr.+Megha+Mistry&size=200&background=0D8ABC&color=fff&bold=true" 
+                                alt="Dr. Megha Mistry" 
+                                class="w-64 h-64 sm:w-80 sm:h-80 rounded-full object-cover shadow-2xl"
+                            />
+                        </div>
+
+                        <!-- Floating Glass Experience Card -->
+                        <div class="absolute -bottom-4 -right-4 sm:bottom-4 sm:right-0 bg-slate-900/90 backdrop-blur-xl border border-slate-800 p-4 rounded-2xl shadow-2xl flex items-center space-x-3 glow-cyan">
+                            <div class="w-10 h-10 rounded-lg bg-cyan-500/20 text-cyan-400 flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-award"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Dental Excellence</p>
+                                <p class="text-sm font-bold text-white">Partha Dental Care</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 rounded-3xl p-8 lg:p-12 hover:border-indigo-500/50 transition-all duration-300">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- Industry Image -->
+                    <div class="lg:col-span-5 relative group">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-2xl blur opacity-30 group-hover:opacity-75 transition duration-500"></div>
+                        <div class="relative overflow-hidden rounded-2xl border border-slate-800">
+                            <img 
+                                src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                                alt="Modern Dental Clinic" 
+                                class="w-full h-80 lg:h-96 object-cover transform group-hover:scale-105 transition duration-500"
+                            />
+                        </div>
+                    </div>
+
+                    <!-- About Text -->
+                    <div class="lg:col-span-7">
+                        <span class="text-cyan-400 text-xs font-bold tracking-widest uppercase">About Dr. Megha Mistry</span>
+                        <h2 class="text-3xl font-bold text-white mt-2 mb-6">Dedicated to Modern, Painless & Preventive Dentistry</h2>
+                        
+                        <p class="text-slate-300 leading-relaxed mb-6">
+                            As a General Dentist at <strong>Partha Dental Skin Hair Clinic</strong>—one of South India's premier multi-specialty healthcare networks—Dr. Megha Mistry provides world-class dental solutions combining cutting-edge technology with personalized patient care.
+                        </p>
+
+                        <p class="text-slate-400 leading-relaxed mb-8">
+                            Whether managing routine preventive care, root canal treatments, cosmetic enhancements, or emergency interventions, Dr. Mistry ensures each treatment plan is customized for maximum patient comfort, optimal aesthetics, and long-term oral health.
+                        </p>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="flex items-start space-x-3 p-3 rounded-xl bg-slate-950/50 border border-slate-800/80">
+                                <i class="fa-solid fa-circle-check text-cyan-400 mt-1"></i>
+                                <div>
+                                    <h4 class="text-sm font-semibold text-white">Preventive Dentistry</h4>
+                                    <p class="text-xs text-slate-400">Proactive protection & hygiene</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3 p-3 rounded-xl bg-slate-950/50 border border-slate-800/80">
+                                <i class="fa-solid fa-circle-check text-cyan-400 mt-1"></i>
+                                <div>
+                                    <h4 class="text-sm font-semibold text-white">Cosmetic Restoration</h4>
+                                    <p class="text-xs text-slate-400">Smile design & whitening</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services" class="py-20 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-indigo-400 text-xs font-bold tracking-widest uppercase">Comprehensive Clinical Care</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Specialized Dental Services</h2>
+                <p class="text-slate-400 mt-4">Delivering precision-driven procedures with gentle care across all Partha Dental clinic locations.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl hover:border-indigo-500/50 hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-teeth-open"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">General & Preventive Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Comprehensive dental exams, professional scale & polish, digital X-rays, and customized oral hygiene planning.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl hover:border-indigo-500/50 hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-cyan-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Cosmetic Smile Makeovers</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Teeth whitening, composite bonding, porcelain veneers, and smile designing tailored to your facial aesthetics.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl hover:border-indigo-500/50 hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-purple-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Root Canal Therapy</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Painless single-visit and laser-assisted endodontic treatments to save damaged or infected teeth effectively.
+                    </p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl hover:border-indigo-500/50 hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-pink-500/10 text-pink-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-pink-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Tooth Restorations</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Tooth-colored composite fillings, durable crowns, and bridges restoring full strength and natural appearance.
+                    </p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl hover:border-indigo-500/50 hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Gum Health & Periodontics</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Advanced gum therapy, deep scaling, root planing, and treatment for bleeding gums or periodontal diseases.
+                    </p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl hover:border-indigo-500/50 hover:-translate-y-1 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-amber-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-child-reaching"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Family & Pediatric Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Gentle, patient dentistry designed for children and families to foster lifelong healthy dental habits.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Clinic Locations Banner Section -->
+    <section id="clinics" class="py-16 relative z-10 bg-slate-900/40 border-y border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <span class="text-cyan-400 text-xs font-bold tracking-widest uppercase">Partha Dental Regional Presence</span>
+                <h3 class="text-2xl font-bold text-white mt-1">Serving Major Cities Across South India</h3>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                <div class="p-6 rounded-2xl bg-slate-950/60 border border-slate-800">
+                    <div class="text-cyan-400 font-bold text-lg mb-1"><i class="fa-solid fa-location-dot mr-2"></i>Andhra Pradesh</div>
+                    <p class="text-xs text-slate-400">Multiple Modern Centers</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-950/60 border border-slate-800">
+                    <div class="text-indigo-400 font-bold text-lg mb-1"><i class="fa-solid fa-location-dot mr-2"></i>Telangana</div>
+                    <p class="text-xs text-slate-400">Hyderabad & Regional Clinics</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-950/60 border border-slate-800">
+                    <div class="text-purple-400 font-bold text-lg mb-1"><i class="fa-solid fa-location-dot mr-2"></i>Chennai</div>
+                    <p class="text-xs text-slate-400">Tamil Nadu Locations</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-950/60 border border-slate-800">
+                    <div class="text-pink-400 font-bold text-lg mb-1"><i class="fa-solid fa-location-dot mr-2"></i>Bangalore</div>
+                    <p class="text-xs text-slate-400">Karnataka Centers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-cyan-400 text-xs font-bold tracking-widest uppercase">Patient Endorsements</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">What Patients Say</h2>
+                <p class="text-slate-400 mt-4">Real feedback from individuals who experienced painless treatments and transformed smiles.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl hover:border-cyan-500/50 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 space-x-1 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Dr. Megha Mistry explained my root canal procedure so clearly and made the entire experience completely pain-free. I am very grateful for her reassuring demeanor."
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-3 pt-4 border-t border-slate-800/80">
+                        <div class="w-10 h-10 rounded-full bg-cyan-500/20 flex items-center justify-center font-bold text-cyan-400 text-sm">
+                            PR
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-white">Priya R.</p>
+                            <p class="text-xs text-slate-400">Bangalore Clinic</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl hover:border-indigo-500/50 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 space-x-1 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Extremely professional and attentive. The clinic hygiene is top-notch, and Dr. Megha's approach to aesthetic tooth restoration gave me back my confidence!"
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-3 pt-4 border-t border-slate-800/80">
+                        <div class="w-10 h-10 rounded-full bg-indigo-500/20 flex items-center justify-center font-bold text-indigo-400 text-sm">
+                            SK
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-white">Suresh K.</p>
+                            <p class="text-xs text-slate-400">Hyderabad Clinic</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-8 rounded-2xl hover:border-purple-500/50 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 space-x-1 mb-4 text-sm">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed italic mb-6">
+                            "Outstanding family dental care! Dr. Megha was extremely gentle with my 8-year-old daughter. Best dental experience we've had in Chennai."
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-3 pt-4 border-t border-slate-800/80">
+                        <div class="w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center font-bold text-purple-400 text-sm">
+                            AM
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-white">Anitha M.</p>
+                            <p class="text-xs text-slate-400">Chennai Clinic</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Appointment Section -->
+    <section id="contact" class="py-20 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-slate-900/80 backdrop-blur-xl border border-slate-800 rounded-3xl p-8 lg:p-12">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    
+                    <!-- Contact Info -->
+                    <div class="lg:col-span-5">
+                        <span class="text-cyan-400 text-xs font-bold tracking-widest uppercase">Book An Appointment</span>
+                        <h2 class="text-3xl font-bold text-white mt-2 mb-6">Schedule Your Dental Consultation Today</h2>
+                        <p class="text-slate-400 mb-8 leading-relaxed">
+                            Take the first step toward a healthier smile. Reach out directly or submit your details to schedule a consultation with Dr. Megha Mistry at your nearest Partha Dental clinic.
+                        </p>
+
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl shrink-0">
+                                    <i class="fa-solid fa-hospital"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-semibold text-white">Clinical Practice</h4>
+                                    <p class="text-sm text-slate-400">Partha Dental Skin Hair Clinics</p>
+                                    <p class="text-xs text-slate-500">Andhra Pradesh, Telangana, Chennai & Bangalore</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-xl shrink-0">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-semibold text-white">Direct Inquiry</h4>
+                                    <p class="text-sm text-slate-400">contact@parthadental.com</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl shrink-0">
+                                    <i class="fa-solid fa-user-check"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-semibold text-white">Professional Network</h4>
+                                    <p class="text-sm text-slate-400">Connected Sep 10, 2026</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="lg:col-span-7">
+                        <form onsubmit="event.preventDefault(); alert('Appointment request sent successfully!');" class="space-y-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-medium text-slate-300 mb-2">Patient Name</label>
+                                    <input type="text" required placeholder="John Doe" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-500 transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-medium text-slate-300 mb-2">Phone Number</label>
+                                    <input type="tel" required placeholder="+91 98765 43210" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-500 transition-colors">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-medium text-slate-300 mb-2">Preferred Location</label>
+                                    <select class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-300 focus:outline-none focus:border-cyan-500 transition-colors">
+                                        <option>Hyderabad / Telangana</option>
+                                        <option>Andhra Pradesh Region</option>
+                                        <option>Chennai Clinic</option>
+                                        <option>Bangalore Clinic</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-medium text-slate-300 mb-2">Service Required</label>
+                                    <select class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-300 focus:outline-none focus:border-cyan-500 transition-colors">
+                                        <option>General Checkup / Consultation</option>
+                                        <option>Root Canal Treatment</option>
+                                        <option>Teeth Whitening / Smile Design</option>
+                                        <option>Tooth Cleaning & Polishing</option>
+                                        <option>Dental Fillings / Crowns</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-medium text-slate-300 mb-2">Additional Details / Message</label>
+                                <textarea rows="4" placeholder="Describe your dental concern or preferred date..." class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-500 transition-colors"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl font-bold bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-500 text-white shadow-lg hover:shadow-cyan-500/25 hover:scale-[1.01] transition-all duration-300">
+                                Send Appointment Request <i class="fa-solid fa-paper-plane ml-2"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-slate-800/80 relative z-10 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left">
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-6">
+                <div class="flex items-center space-x-3">
+                    <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-500 to-indigo-500 flex items-center justify-center text-white font-bold text-sm">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <span class="text-sm font-semibold text-slate-300">Dr. Megha Mistry | General Dentist</span>
+                </div>
+                <p class="text-xs text-slate-500">
+                    © 2026 Dr. Megha Mistry. Partnered with Partha Dental Skin Hair Clinic Network. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
