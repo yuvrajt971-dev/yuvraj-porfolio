@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Tanisha Sinha | Associate Dentist - DENTO WORLD</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            cyan: '#0D8ABC',
+                            teal: '#14b8a6',
+                            indigo: '#6366f1',
+                        }
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card:hover {
+            border-color: rgba(13, 138, 188, 0.4);
+            box-shadow: 0 0 25px -5px rgba(13, 138, 188, 0.15);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glow-effect {
+            position: absolute;
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(13, 138, 188, 0.25) 0%, rgba(0, 0, 0, 0) 70%);
+            filter: blur(50px);
+            z-index: 0;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-white">
+
+    <!-- Glowing Background Ambient Spheres -->
+    <div class="glow-effect top-10 left-10"></div>
+    <div class="glow-effect top-1/3 right-10"></div>
+    <div class="glow-effect bottom-1/4 left-1/3"></div>
+
+    <!-- Sticky Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform duration-300">
+                    <i class="fa-solid font-bold fa-tooth"></i>
+                </div>
+                <div>
+                    <span class="text-lg font-bold tracking-tight text-white block leading-none">Dr. Tanisha Sinha</span>
+                    <span class="text-xs text-cyan-400 font-medium tracking-wide uppercase">DENTO WORLD</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
+                <a href="#expertise" class="hover:text-cyan-400 transition-colors">Expertise</a>
+                <a href="#testimonials" class="hover:text-cyan-400 transition-colors">Testimonials</a>
+            </nav>
+
+            <a href="#contact" class="px-5 py-2.5 rounded-full text-sm font-semibold bg-gradient-to-r from-cyan-500 to-indigo-600 hover:from-cyan-400 hover:to-indigo-500 text-white shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 transition-all duration-300 hover:-translate-y-0.5">
+                Book Appointment
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-20 md:pt-48 md:pb-32 px-6 overflow-hidden">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <div class="lg:col-span-7 space-y-8 text-center lg:text-left z-10">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border-cyan-500/30 text-cyan-300 text-xs font-semibold tracking-wider uppercase">
+                    <span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping"></span>
+                    Associate Dentist @ DENTO WORLD
+                </div>
+
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight">
+                    Crafting Healthy, <br/>
+                    <span class="text-gradient">Radiant Smiles</span> with Precision & Care.
+                </h1>
+
+                <p class="text-slate-400 text-lg sm:text-xl max-w-2xl font-light leading-relaxed">
+                    Dedicated to modern, painless, and comprehensive dental care. Transforming oral health through cutting-edge technology and a compassionate patient-first approach.
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                    <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl font-bold bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 hover:opacity-95 text-white shadow-xl shadow-cyan-500/25 transition-all text-center">
+                        Schedule Consultation <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                    </a>
+                    <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-xl font-semibold glass-card hover:bg-slate-800/80 text-slate-200 transition-all text-center">
+                        View Treatments
+                    </a>
+                </div>
+
+                <!-- Trust Badges -->
+                <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-6 text-center lg:text-left">
+                    <div>
+                        <p class="text-2xl sm:text-3xl font-extrabold text-white">1,500+</p>
+                        <p class="text-xs sm:text-sm text-slate-400 mt-1">Happy Smiles Created</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl sm:text-3xl font-extrabold text-cyan-400">99.8%</p>
+                        <p class="text-xs sm:text-sm text-slate-400 mt-1">Patient Satisfaction</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl sm:text-3xl font-extrabold text-indigo-400">5+ Yrs</p>
+                        <p class="text-xs sm:text-sm text-slate-400 mt-1">Clinical Excellence</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Avatar & Card Frame -->
+            <div class="lg:col-span-5 flex justify-center z-10 relative">
+                <div class="relative group">
+                    <!-- Double Glowing Halo -->
+                    <div class="absolute -inset-1.5 bg-gradient-to-r from-cyan-500 via-indigo-500 to-pink-500 rounded-3xl blur-xl opacity-70 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse-slow"></div>
+                    
+                    <div class="relative glass-card p-4 rounded-3xl overflow-hidden max-w-md">
+                        <div class="relative overflow-hidden rounded-2xl bg-slate-900">
+                            <img src="https://ui-avatars.com/api/?name=Dr.+Tanisha+Sinha&size=200&background=0D8ABC&color=fff&bold=true" 
+                                 alt="Dr. Tanisha Sinha" 
+                                 class="w-full h-80 object-cover object-center transform group-hover:scale-105 transition duration-500">
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        </div>
+
+                        <div class="p-4 pt-5 text-center">
+                            <h3 class="text-xl font-bold text-white">Dr. Tanisha Sinha</h3>
+                            <p class="text-sm text-cyan-400 font-medium">Associate Dentist at DENTO WORLD</p>
+                            
+                            <div class="mt-4 inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-800/80 border border-slate-700/60 text-xs text-slate-300">
+                                <i class="fa-solid fa-award text-amber-400"></i>
+                                Modern Dental & Cosmetic Specialist
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-20 px-6 relative border-t border-slate-900 bg-slate-950/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Clinical Image -->
+                <div class="lg:col-span-5 order-2 lg:order-1">
+                    <div class="relative rounded-2xl overflow-hidden glass-card p-3">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Modern Clinic Setup" 
+                             class="rounded-xl object-cover h-[420px] w-full shadow-2xl">
+                        <div class="absolute bottom-6 left-6 right-6 p-4 rounded-xl glass-card border border-slate-700/50">
+                            <p class="text-xs font-semibold text-cyan-400 uppercase tracking-wide">State-of-the-Art Care</p>
+                            <p class="text-sm font-medium text-slate-200 mt-1">Equipped with digital dentistry technology for pain-free procedures.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div class="lg:col-span-7 order-1 lg:order-2 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 text-xs font-semibold">
+                        ABOUT DR. TANISHA SINHA
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+                        Redefining Dental Healthcare with Precision, Passion & Empathy.
+                    </h2>
+                    <p class="text-slate-300 leading-relaxed font-light">
+                        As an Associate Dentist at <span class="text-white font-semibold">DENTO WORLD</span>, Dr. Tanisha Sinha combines advanced clinical technique with a gentle touch to ensure every patient leaves with a confident, healthy smile. 
+                    </p>
+                    <p class="text-slate-400 leading-relaxed font-light text-sm">
+                        Specializing in modern preventive care, aesthetic smile transformations, and restorative procedures, she emphasizes personalized treatment plans tailored to every individual's unique needs.
+                    </p>
+
+                    <!-- Features List -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="flex items-start gap-3 p-3 rounded-xl glass-card">
+                            <div class="p-2 rounded-lg bg-cyan-500/10 text-cyan-400">
+                                <i class="fa-solid fa-microscope text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Digital Precision</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">High-accuracy diagnostics</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3 p-3 rounded-xl glass-card">
+                            <div class="p-2 rounded-lg bg-purple-500/10 text-purple-400">
+                                <i class="fa-solid fa-heart-pulse text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-white">Gentle & Painless</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">Maximum patient comfort</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services" class="py-24 px-6 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-cyan-400 text-xs font-bold uppercase tracking-widest">Comprehensive Dental Care</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2">Services & Specialized Treatments</h2>
+                <p class="text-slate-400 text-sm mt-3">From routine check-ups to complete smile makeovers, experiencing world-class oral care.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-2xl group-hover:bg-cyan-500 group-hover:text-white transition-all duration-300 mb-6">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Cosmetic Dentistry</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Transform your smile with custom veneers, teeth whitening, aesthetic bonding, and complete smile redesigns.
+                    </p>
+                    <a href="#contact" class="text-cyan-400 text-xs font-semibold flex items-center gap-2 group-hover:text-cyan-300">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-2xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-2xl group-hover:bg-indigo-500 group-hover:text-white transition-all duration-300 mb-6">
+                        <i class="fa-solid fa-tooth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Root Canal & Restorative</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Advanced endodontic therapy and precise restorative treatments to preserve and strengthen natural teeth.
+                    </p>
+                    <a href="#contact" class="text-indigo-400 text-xs font-semibold flex items-center gap-2 group-hover:text-indigo-300">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-2xl group-hover:bg-purple-500 group-hover:text-white transition-all duration-300 mb-6">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Preventive Oral Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Comprehensive dental checkups, professional cleanings, fluoride treatments, and digital X-ray diagnostics.
+                    </p>
+                    <a href="#contact" class="text-purple-400 text-xs font-semibold flex items-center gap-2 group-hover:text-purple-300">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-2xl bg-teal-500/10 text-teal-400 flex items-center justify-center text-2xl group-hover:bg-teal-500 group-hover:text-white transition-all duration-300 mb-6">
+                        <i class="fa-solid fa-sparkles"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Teeth Whitening</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Safe, high-efficiency laser and in-clinic whitening procedures for a noticeably brighter smile.
+                    </p>
+                    <a href="#contact" class="text-teal-400 text-xs font-semibold flex items-center gap-2 group-hover:text-teal-300">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-2xl bg-pink-500/10 text-pink-400 flex items-center justify-center text-2xl group-hover:bg-pink-500 group-hover:text-white transition-all duration-300 mb-6">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Family & Pediatric Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Warm, friendly, and comforting dental care suited for patients of all age groups from children to adults.
+                    </p>
+                    <a href="#contact" class="text-pink-400 text-xs font-semibold flex items-center gap-2 group-hover:text-pink-300">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="glass-card p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 group">
+                    <div class="w-14 h-14 rounded-2xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-2xl group-hover:bg-amber-500 group-hover:text-white transition-all duration-300 mb-6">
+                        <i class="fa-solid fa-kit-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Emergency Dental Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Prompt clinical relief for acute dental pain, chipped teeth, lost fillings, and urgent oral issues.
+                    </p>
+                    <a href="#contact" class="text-amber-400 text-xs font-semibold flex items-center gap-2 group-hover:text-amber-300">
+                        Learn More <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 px-6 bg-slate-950/60 border-t border-b border-slate-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-xl mx-auto mb-14">
+                <span class="text-cyan-400 text-xs font-bold uppercase tracking-wider">Patient Testimonials</span>
+                <h2 class="text-3xl font-bold text-white mt-2">Trusted by Patients</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="glass-card p-6 rounded-2xl relative">
+                    <div class="flex text-amber-400 gap-1 text-sm mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-6 font-light">
+                        "Dr. Tanisha Sinha is easily the most attentive dentist I've visited. She made my root canal completely painless and kept me comfortable throughout!"
+                    </p>
+                    <div>
+                        <p class="text-white font-semibold text-sm">Ananya Sharma</p>
+                        <p class="text-xs text-slate-500">Cosmetic Patient</p>
+                    </div>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl relative">
+                    <div class="flex text-amber-400 gap-1 text-sm mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-6 font-light">
+                        "The atmosphere at DENTO WORLD with Dr. Sinha is super reassuring. Her smile transformation work on my teeth was beyond expectations!"
+                    </p>
+                    <div>
+                        <p class="text-white font-semibold text-sm">Rahul Verma</p>
+                        <p class="text-xs text-slate-500">Smile Design Patient</p>
+                    </div>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl relative">
+                    <div class="flex text-amber-400 gap-1 text-sm mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-6 font-light">
+                        "Highly professional, meticulous, and extremely kind. Dr. Tanisha explains every step clearly. Can't recommend her enough."
+                    </p>
+                    <div>
+                        <p class="text-white font-semibold text-sm">Priya Patel</p>
+                        <p class="text-xs text-slate-500">Preventive Care Patient</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Appointment Section -->
+    <section id="contact" class="py-24 px-6 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 glass-card p-8 md:p-12 rounded-3xl border border-slate-800">
+                
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 text-xs font-semibold">
+                        BOOK AN APPOINTMENT
+                    </div>
+                    <h2 class="text-3xl font-bold text-white">Let’s Start Your Journey to a Better Smile.</h2>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Schedule a consultation with Dr. Tanisha Sinha at DENTO WORLD today. Experience dental care redefined with modern tech and genuine empathy.
+                    </p>
+
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-center gap-4 text-slate-300">
+                            <div class="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-cyan-400">
+                                <i class="fa-solid fa-hospital"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Clinic Practice</p>
+                                <p class="text-sm font-medium text-white">DENTO WORLD Clinic</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 text-slate-300">
+                            <div class="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-cyan-400">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Direct Inquiries</p>
+                                <p class="text-sm font-medium text-white">appointments@dentoworld.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 text-slate-300">
+                            <div class="w-10 h-10 rounded-xl bg-slate-800 flex items-center justify-center text-cyan-400">
+                                <i class="fa-solid fa-user-doctor"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">Role</p>
+                                <p class="text-sm font-medium text-white">Associate Dentist</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div class="lg:col-span-7">
+                    <form onsubmit="event.preventDefault(); alert('Appointment request sent successfully!');" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-medium text-slate-400 mb-1">Full Name</label>
+                                <input type="text" placeholder="John Doe" required class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-800 text-slate-100 focus:outline-none focus:border-cyan-500 text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-medium text-slate-400 mb-1">Phone Number</label>
+                                <input type="tel" placeholder="+1 (555) 000-0000" required class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-800 text-slate-100 focus:outline-none focus:border-cyan-500 text-sm">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-medium text-slate-400 mb-1">Preferred Treatment</label>
+                            <select class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-800 text-slate-100 focus:outline-none focus:border-cyan-500 text-sm">
+                                <option>General Consultation</option>
+                                <option>Cosmetic Smile Design</option>
+                                <option>Teeth Whitening</option>
+                                <option>Root Canal / Restorative</option>
+                                <option>Emergency Dental Care</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-medium text-slate-400 mb-1">Your Message or Notes</label>
+                            <textarea rows="4" placeholder="How can Dr. Sinha assist you?" class="w-full px-4 py-3 rounded-xl bg-slate-900/90 border border-slate-800 text-slate-100 focus:outline-none focus:border-cyan-500 text-sm"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-indigo-600 hover:from-cyan-400 hover:to-indigo-500 font-bold text-white shadow-lg shadow-cyan-500/25 transition duration-300">
+                            Confirm Appointment Request
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-6 border-t border-slate-900 text-slate-500 text-xs text-center">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© 2026 Dr. Tanisha Sinha | Associate Dentist at DENTO WORLD. All rights reserved.</p>
+            <div class="flex items-center gap-4 text-slate-400 text-sm">
+                <a href="#" class="hover:text-cyan-400"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="hover:text-cyan-400"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-cyan-400"><i class="fa-solid fa-globe"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
