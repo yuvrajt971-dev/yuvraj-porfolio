@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Prayanshu Gupta | Consulting Physician (Homeopathy)</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0fdfa',
+                            500: '#14b8a6',
+                            600: '#0d9488',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -12px rgba(99, 102, 241, 0.35);
+        }
+        .glow-avatar {
+            box-shadow: 0 0 35px 5px rgba(168, 85, 247, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white relative overflow-x-hidden">
+
+    <!-- Ambient Background Glows -->
+    <div class="fixed top-0 left-1/4 w-96 h-96 bg-indigo-600/20 rounded-full blur-3xl pointer-events-none -z-10"></div>
+    <div class="fixed top-1/3 right-10 w-[30rem] h-[30rem] bg-purple-600/15 rounded-full blur-3xl pointer-events-none -z-10"></div>
+    <div class="fixed bottom-10 left-1/3 w-96 h-96 bg-pink-600/15 rounded-full blur-3xl pointer-events-none -z-10"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 p-0.5 flex items-center justify-center">
+                    <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+                        <i class="fa-solid fa-notes-medical text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-pink-400 text-lg"></i>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-bold text-lg tracking-tight text-white group-hover:text-indigo-400 transition-colors">Dr. Prayanshu Gupta</span>
+                    <span class="text-xs text-slate-400 tracking-wider uppercase font-medium">Homeopathic Medicine</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#about" class="text-sm font-medium text-slate-300 hover:text-indigo-400 transition-colors">About & Expertise</a>
+                <a href="#services" class="text-sm font-medium text-slate-300 hover:text-indigo-400 transition-colors">Specializations</a>
+                <a href="#testimonials" class="text-sm font-medium text-slate-300 hover:text-indigo-400 transition-colors">Patient Stories</a>
+                <a href="#contact" class="px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:opacity-95 transition-all shadow-lg shadow-indigo-500/25">
+                    Book Consultation
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="md:hidden text-slate-300 hover:text-white text-xl focus:outline-none" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-6 border-b border-slate-800 bg-slate-950/95 space-y-4">
+            <a href="#about" class="block text-slate-300 hover:text-indigo-400 py-1">About & Expertise</a>
+            <a href="#services" class="block text-slate-300 hover:text-indigo-400 py-1">Specializations</a>
+            <a href="#testimonials" class="block text-slate-300 hover:text-indigo-400 py-1">Patient Stories</a>
+            <a href="#contact" class="inline-block w-full text-center px-5 py-2.5 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">Book Consultation</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-16 pb-24 md:pt-24 md:pb-32 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <!-- Hero Text Content -->
+            <div class="lg:col-span-7 space-y-8">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-indigo-400 text-xs font-semibold uppercase tracking-wider">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    Accepting New Patients &amp; Online Consultations
+                </div>
+                
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                    Holistic Healing Rooted in 
+                    <span class="block text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 mt-1">
+                        Precision Homeopathy
+                    </span>
+                </h1>
+
+                <p class="text-lg text-slate-400 max-w-2xl leading-relaxed">
+                    Welcome. I am <strong class="text-slate-200">Dr. Prayanshu Gupta</strong>, a dedicated Consulting Physician specializing in individualized constitutional homeopathic care. I help patients achieve gentle, rapid, and permanent recovery by treating the root cause of chronic and acute health conditions.
+                </p>
+
+                <div class="flex flex-wrap items-center gap-4 pt-2">
+                    <a href="#contact" class="px-8 py-4 rounded-full font-bold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:shadow-indigo-500/30 hover:shadow-xl transition-all duration-300 flex items-center gap-3 group">
+                        <span>Schedule Appointment</span>
+                        <i class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                    <a href="#services" class="px-8 py-4 rounded-full font-semibold text-slate-300 bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 transition-all duration-300">
+                        Explore Treatments
+                    </a>
+                </div>
+
+                <!-- Trust Badges -->
+                <div class="pt-8 border-t border-slate-800/80 grid grid-cols-2 sm:grid-cols-3 gap-6">
+                    <div>
+                        <div class="text-2xl font-bold text-white flex items-center gap-1">
+                            <span>100%</span>
+                            <i class="fa-solid fa-leaf text-emerald-400 text-base"></i>
+                        </div>
+                        <div class="text-xs text-slate-400 font-medium mt-0.5">Natural Treatments</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-white flex items-center gap-1">
+                            <span>5,000+</span>
+                        </div>
+                        <div class="text-xs text-slate-400 font-medium mt-0.5">Patients Consulted</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-white flex items-center gap-1">
+                            <span>98%</span>
+                            <i class="fa-solid fa-star text-amber-400 text-sm"></i>
+                        </div>
+                        <div class="text-xs text-slate-400 font-medium mt-0.5">Satisfaction Rate</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Image / Avatar Frame -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative group">
+                    <!-- Glowing Outer Ring -->
+                    <div class="absolute -inset-1.5 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-3xl blur-xl opacity-70 group-hover:opacity-100 transition duration-500"></div>
+                    
+                    <!-- Card Background -->
+                    <div class="relative bg-slate-900 border border-slate-800 p-8 rounded-3xl flex flex-col items-center text-center backdrop-blur-xl">
+                        
+                        <!-- Glowing Double-Gradient Avatar Frame -->
+                        <div class="relative mb-6">
+                            <div class="absolute -inset-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-full blur-md opacity-80"></div>
+                            <div class="relative p-1 bg-slate-950 rounded-full">
+                                <img 
+                                    src="https://ui-avatars.com/api/?name=Dr.+Prayanshu+Gupta&size=200&background=0D8ABC&color=fff&bold=true" 
+                                    alt="Dr. Prayanshu Gupta" 
+                                    class="w-40 h-40 rounded-full object-cover shadow-2xl"
+                                />
+                            </div>
+                        </div>
+
+                        <h3 class="text-2xl font-bold text-white">Dr. Prayanshu Gupta</h3>
+                        <p class="text-indigo-400 text-sm font-semibold mt-1">Consulting Physician (Homeopathy)</p>
+                        <p class="text-xs text-slate-400 mt-2">Private Practice &amp; Digital Healthcare Consultation</p>
+
+                        <div class="mt-6 w-full pt-6 border-t border-slate-800/80 space-y-3 text-left">
+                            <div class="flex items-center gap-3 text-xs text-slate-300">
+                                <div class="w-7 h-7 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center">
+                                    <i class="fa-solid fa-user-doctor"></i>
+                                </div>
+                                <span>Constitutional Homeopath</span>
+                            </div>
+                            <div class="flex items-center gap-3 text-xs text-slate-300">
+                                <div class="w-7 h-7 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center">
+                                    <i class="fa-solid fa-clock"></i>
+                                </div>
+                                <span>Mon - Sat: 09:00 AM - 07:00 PM</span>
+                            </div>
+                            <div class="flex items-center gap-3 text-xs text-slate-300">
+                                <div class="w-7 h-7 rounded-lg bg-pink-500/10 text-pink-400 flex items-center justify-center">
+                                    <i class="fa-solid fa-globe"></i>
+                                </div>
+                                <span>Global Video Consultation Available</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-20 px-6 bg-slate-900/40 border-y border-slate-800/60 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Clinical Image Grid -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 group shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Consultation & Healthcare" class="w-full h-[400px] object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6">
+                            <div class="bg-slate-900/90 backdrop-blur-md p-4 rounded-xl border border-slate-700/50">
+                                <p class="text-xs font-semibold text-indigo-400 uppercase tracking-wider">Clinical Philosophy</p>
+                                <p class="text-sm font-medium text-slate-200 mt-1">"Treating the patient, not just the disease — restoring harmony to mind, body, and spirit."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 text-indigo-400 text-xs font-bold tracking-widest uppercase">
+                        <i class="fa-solid fa-circle text-[8px]"></i> About the Physician
+                    </div>
+                    
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                        Empowering Health Through Natural &amp; Scientific Homeopathy
+                    </h2>
+
+                    <p class="text-slate-300 leading-relaxed text-base">
+                        Dr. Prayanshu Gupta is a renowned Consulting Homeopathic Physician dedicated to delivering evidence-based, compassionate care tailored to each individual's unique physical and emotional constitution. With years of clinical clinical experience, Dr. Gupta specializes in addressing deep-seated chronic disorders, autoimmune conditions, and lifestyle disorders without unwanted side effects.
+                    </p>
+
+                    <p class="text-slate-400 leading-relaxed text-sm">
+                        By integrating classical homeopathic remedies with modern diagnostic insights and holistic life management, Dr. Gupta works to revive the body's intrinsic self-healing intelligence.
+                    </p>
+
+                    <!-- Expertise Pills -->
+                    <div class="pt-4">
+                        <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Core Clinical Strengths</h4>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-4 py-2 rounded-xl text-xs font-medium bg-slate-900 border border-slate-800 text-slate-200 flex items-center gap-2 hover:border-indigo-500/50 transition-colors">
+                                <i class="fa-solid fa-seedling text-emerald-400"></i> Chronic Disease Therapeutics
+                            </span>
+                            <span class="px-4 py-2 rounded-xl text-xs font-medium bg-slate-900 border border-slate-800 text-slate-200 flex items-center gap-2 hover:border-indigo-500/50 transition-colors">
+                                <i class="fa-solid fa-brain text-purple-400"></i> Mind-Body Constitutional Care
+                            </span>
+                            <span class="px-4 py-2 rounded-xl text-xs font-medium bg-slate-900 border border-slate-800 text-slate-200 flex items-center gap-2 hover:border-indigo-500/50 transition-colors">
+                                <i class="fa-solid fa-child-reaching text-pink-400"></i> Pediatric &amp; Immunity Wellness
+                            </span>
+                            <span class="px-4 py-2 rounded-xl text-xs font-medium bg-slate-900 border border-slate-800 text-slate-200 flex items-center gap-2 hover:border-indigo-500/50 transition-colors">
+                                <i class="fa-solid fa-shield-virus text-indigo-400"></i> Autoimmune &amp; Allergy Protocol
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid Section -->
+    <section id="services" class="py-24 px-6 relative">
+        <div class="max-w-7xl mx-auto space-y-16">
+            
+            <div class="text-center max-w-3xl mx-auto space-y-4">
+                <div class="inline-flex items-center gap-2 text-indigo-400 text-xs font-bold tracking-widest uppercase">
+                    <i class="fa-solid fa-microscope"></i> Specialized Treatments
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                    Comprehensive Medical Solutions
+                </h2>
+                <p class="text-slate-400 text-base">
+                    Tailored medical management addressing acute ailments and complex chronic illnesses with non-invasive, gentle homeopathic science.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service Card 1 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1.5 group">
+                    <div class="w-14 h-14 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-gradient-to-r group-hover:from-indigo-500 group-hover:to-purple-500 group-hover:text-white transition-all duration-300 shadow-lg">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Chronic Disease Management</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Effective long-term remedies for hypertension, diabetes support, arthritis, respiratory disorders, and gastrointestinal conditions.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold text-indigo-400 group-hover:text-indigo-300">
+                        <span>Book Evaluation</span>
+                        <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1.5 group">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-gradient-to-r group-hover:from-purple-500 group-hover:to-pink-500 group-hover:text-white transition-all duration-300 shadow-lg">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Skin &amp; Dermatological Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Holistic treatment for eczema, psoriasis, acne, hives, and chronic allergic reactions targeted directly at root biological factors.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold text-purple-400 group-hover:text-purple-300">
+                        <span>Book Evaluation</span>
+                        <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1.5 group">
+                    <div class="w-14 h-14 rounded-2xl bg-pink-500/10 border border-pink-500/20 text-pink-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-gradient-to-r group-hover:from-pink-500 group-hover:to-rose-500 group-hover:text-white transition-all duration-300 shadow-lg">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Mental &amp; Emotional Wellness</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Targeted constitutional support for anxiety, stress management, insomnia, panic disorders, and psychosomatic imbalances.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold text-pink-400 group-hover:text-pink-300">
+                        <span>Book Evaluation</span>
+                        <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1.5 group">
+                    <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-gradient-to-r group-hover:from-emerald-500 group-hover:to-teal-500 group-hover:text-white transition-all duration-300 shadow-lg">
+                        <i class="fa-solid fa-child"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Pediatric Homeopathy</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Safe, sweet-tasting, non-toxic formulations for childhood immunity, recurrent colds, tonsillitis, asthma, and growth wellness.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold text-emerald-400 group-hover:text-emerald-300">
+                        <span>Book Evaluation</span>
+                        <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1.5 group">
+                    <div class="w-14 h-14 rounded-2xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-gradient-to-r group-hover:from-amber-500 group-hover:to-orange-500 group-hover:text-white transition-all duration-300 shadow-lg">
+                        <i class="fa-solid fa-[#fa-stethoscope] fa-stethoscope"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Women's Health &amp; Hormonal Balance</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Personalized therapies for PCOS/PCOD, thyroid irregularities, menstrual dysfunctions, and menopausal comfort.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold text-amber-400 group-hover:text-amber-300">
+                        <span>Book Evaluation</span>
+                        <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="bg-slate-900/60 backdrop-blur-xl border border-slate-800 hover:border-indigo-500/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1.5 group">
+                    <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center text-2xl mb-6 group-hover:bg-gradient-to-r group-hover:from-cyan-500 group-hover:to-blue-500 group-hover:text-white transition-all duration-300 shadow-lg">
+                        <i class="fa-solid fa-laptop-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Global Teleconsultation</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        HD video consultations, digital case intake, doorstep medicine delivery, and follow-up tracking anywhere worldwide.
+                    </p>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-xs font-bold text-cyan-400 group-hover:text-cyan-300">
+                        <span>Book Evaluation</span>
+                        <i class="fa-solid fa-chevron-right text-[10px]"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 px-6 bg-slate-900/30 border-t border-slate-800/60 relative">
+        <div class="max-w-7xl mx-auto space-y-16">
+            
+            <div class="text-center max-w-3xl mx-auto space-y-4">
+                <div class="inline-flex items-center gap-2 text-indigo-400 text-xs font-bold tracking-widest uppercase">
+                    <i class="fa-solid fa-comments"></i> Patient Endorsements
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                    Stories of Healing &amp; Recovery
+                </h2>
+                <p class="text-slate-400 text-base">
+                    Read how Dr. Prayanshu Gupta's tailored homeopathic approach has transformed lives.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Testimonial 1 -->
+                <div class="bg-slate-900/70 border border-slate-800 p-8 rounded-2xl backdrop-blur-xl relative">
+                    <div class="flex text-amber-400 gap-1 text-sm mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-6 italic">
+                        "I suffered from chronic migraines for over 6 years. Dr. Prayanshu Gupta took the time to understand my entire lifestyle during the consultation. Within 3 months of treatment, my frequency dropped by 90%. Truly remarkable!"
+                    </p>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 flex items-center justify-center font-bold text-white text-sm">
+                            AR
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Ananya Rao</h4>
+                            <p class="text-xs text-slate-400">Verified Patient • Chronic Migraine</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-slate-900/70 border border-slate-800 p-8 rounded-2xl backdrop-blur-xl relative">
+                    <div class="flex text-amber-400 gap-1 text-sm mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-6 italic">
+                        "Dr. Gupta's online consultation was seamless. He treated my 7-year-old son's severe allergic asthma with gentle remedies. We haven't needed emergency inhalers in months. Highly recommend!"
+                    </p>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center font-bold text-white text-sm">
+                            VS
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Vikram Sharma</h4>
+                            <p class="text-xs text-slate-400">Verified Patient • Pediatric Care</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-slate-900/70 border border-slate-800 p-8 rounded-2xl backdrop-blur-xl relative">
+                    <div class="flex text-amber-400 gap-1 text-sm mb-4">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-6 italic">
+                        "The most thorough and empathetic physician I have ever visited. Dr. Gupta managed my thyroid and skin allergy issues when allopathic treatments gave only temporary relief. Genuine root-cause treatment!"
+                    </p>
+                    <div class="flex items-center gap-3 pt-4 border-t border-slate-800">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-pink-500 to-rose-500 flex items-center justify-center font-bold text-white text-sm">
+                            PM
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Pooja Mehta</h4>
+                            <p class="text-xs text-slate-400">Verified Patient • Skin &amp; Hormonal Wellness</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-6 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Contact Direct Info -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <div class="inline-flex items-center gap-2 text-indigo-400 text-xs font-bold tracking-widest uppercase mb-3">
+                            <i class="fa-solid fa-calendar-check"></i> Book Appointment
+                        </div>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                            Start Your Path to Recovery
+                        </h2>
+                        <p class="text-slate-400 text-sm mt-3 leading-relaxed">
+                            Reach out today to schedule your comprehensive physical and constitutional evaluation. Online and in-person consultations available.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        
+                        <div class="bg-slate-900/60 border border-slate-800 p-5 rounded-2xl flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-user-doctor"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Consulting Physician</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">Dr. Prayanshu Gupta (Homeopathy)</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-900/60 border border-slate-800 p-5 rounded-2xl flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Direct Email</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">contact@drprayanshugupta.com</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-slate-900/60 border border-slate-800 p-5 rounded-2xl flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-pink-500/10 text-pink-400 flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Clinical Practice Location</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">Main Clinic &amp; Tele-Health Global Desk</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Appointment Form -->
+                <div class="lg:col-span-7">
+                    <div class="bg-slate-900/80 backdrop-blur-xl border border-slate-800 rounded-3xl p-8 sm:p-10 shadow-2xl relative">
+                        <h3 class="text-2xl font-bold text-white mb-2">Schedule Consultation</h3>
+                        <p class="text-xs text-slate-400 mb-8">Fill out the form below and our medical desk will reach out within 2 hours.</p>
+
+                        <form onsubmit="event.preventDefault(); alert('Thank you, Dr. Prayanshu Gupta\'s desk will contact you shortly!');" class="space-y-6">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Patient Full Name</label>
+                                    <input type="text" required placeholder="e.g. Rahul Sharma" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 placeholder-slate-600 focus:outline-none focus:border-indigo-500 transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Phone Number</label>
+                                    <input type="tel" required placeholder="+91 98765 43210" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 placeholder-slate-600 focus:outline-none focus:border-indigo-500 transition-colors">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Email Address</label>
+                                    <input type="email" required placeholder="patient@example.com" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 placeholder-slate-600 focus:outline-none focus:border-indigo-500 transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Consultation Mode</label>
+                                    <select class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 focus:outline-none focus:border-indigo-500 transition-colors">
+                                        <option>Online Video Consultation</option>
+                                        <option>In-Person Clinic Visit</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Health Concern / Chief Complaints</label>
+                                <textarea rows="4" required placeholder="Briefly describe your symptoms or health condition..." class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-100 placeholder-slate-600 focus:outline-none focus:border-indigo-500 transition-colors"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl font-bold text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:opacity-95 transition-all shadow-xl shadow-indigo-500/20 text-sm">
+                                Confirm Appointment Request
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 border-t border-slate-900 bg-slate-950">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6 text-xs text-slate-500">
+            <div class="flex items-center gap-3">
+                <span class="font-semibold text-slate-300">Dr. Prayanshu Gupta</span>
+                <span>•</span>
+                <span>Consulting Physician (Homeopathy)</span>
+            </div>
+            <div>
+                © 2026 Dr. Prayanshu Gupta. All rights reserved.
+            </div>
+            <div class="flex gap-4 text-base">
+                <a href="#" class="text-slate-500 hover:text-indigo-400 transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="text-slate-500 hover:text-indigo-400 transition-colors"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="text-slate-500 hover:text-indigo-400 transition-colors"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
