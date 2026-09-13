@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Lucky Gupta | Clinical Tutor & Dental Educator</title>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-bg {
+            background: radial-gradient(circle at 50% 0%, rgba(14, 165, 233, 0.15) 0%, rgba(139, 92, 246, 0.1) 35%, rgba(15, 23, 42, 0) 70%);
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-card:hover {
+            border-color: rgba(56, 189, 248, 0.4);
+            box-shadow: 0 0 30px rgba(14, 165, 233, 0.15);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #38bdf8 0%, #a855f7 50%, #ec4899 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .text-gradient-cyan {
+            background: linear-gradient(135deg, #38bdf8 0%, #2dd4bf 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-slate-950 min-h-screen relative overflow-x-hidden">
+
+    <!-- Background Glow Effects -->
+    <div class="fixed inset-0 pointer-events-none z-0 glow-bg"></div>
+    <div class="fixed -top-40 -left-40 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="fixed top-1/3 -right-40 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <!-- Navigation Bar -->
+    <header class="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-500 flex items-center justify-center font-bold text-slate-950 text-xl shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform duration-300">
+                    LG
+                </div>
+                <div>
+                    <span class="text-lg font-bold tracking-tight block leading-none">Dr. Lucky Gupta</span>
+                    <span class="text-xs text-slate-400 font-medium tracking-wide">Dental Educator</span>
+                </div>
+            </a>
+            
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#expertise" class="hover:text-cyan-400 transition-colors">Expertise</a>
+                <a href="#institution" class="hover:text-cyan-400 transition-colors">Institution</a>
+                <a href="#endorsements" class="hover:text-cyan-400 transition-colors">Testimonials</a>
+            </nav>
+
+            <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 text-sm font-semibold text-slate-950 bg-gradient-to-r from-cyan-400 via-sky-400 to-indigo-400 rounded-full hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 hover:scale-105">
+                Get in Touch
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-20 md:pt-48 md:pb-32 z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
+                
+                <!-- Left Content -->
+                <div class="flex-1 text-center lg:text-left space-y-6">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-400 text-xs font-semibold uppercase tracking-wider">
+                        <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                        Academic & Clinical Faculty
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        Advancing Oral Healthcare Through <span class="text-gradient">Clinical Pedagogy & Mentorship</span>
+                    </h1>
+                    
+                    <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Academic Tutor at <strong class="text-slate-200 font-semibold">Maharana Pratap Dental College & Hospital</strong>. Dedicated to empowering the next generation of dental surgeons through hands-on clinical training, modern evidence-based practices, and innovative teaching methodologies.
+                    </p>
+
+                    <!-- Action Buttons -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#contact" class="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-cyan-500 to-indigo-600 rounded-xl font-semibold text-white shadow-xl shadow-cyan-500/20 hover:shadow-cyan-500/40 hover:scale-[1.02] transition-all duration-300 text-center">
+                            Connect Professionally <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                        </a>
+                        <a href="#expertise" class="w-full sm:w-auto px-8 py-4 glass-card rounded-xl font-semibold text-slate-300 hover:text-white hover:bg-slate-900 transition-all duration-300 text-center">
+                            Explore Focus Areas
+                        </a>
+                    </div>
+
+                    <!-- Trust Badges -->
+                    <div class="pt-8 border-t border-slate-800/80 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0">
+                        <div>
+                            <p class="text-2xl font-bold text-white">500+</p>
+                            <p class="text-xs text-slate-400 mt-1">Students Guided</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-bold text-white">100%</p>
+                            <p class="text-xs text-slate-400 mt-1">Clinical Excellence</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-bold text-white">5+ Yrs</p>
+                            <p class="text-xs text-slate-400 mt-1">Academic Mentorship</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Avatar Profile -->
+                <div class="relative flex-none">
+                    <!-- Glowing Gradient Frame -->
+                    <div class="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96">
+                        <div class="absolute inset-0 rounded-3xl bg-gradient-to-tr from-cyan-500 via-indigo-500 to-pink-500 animate-pulse blur-xl opacity-50"></div>
+                        <div class="relative w-full h-full rounded-3xl p-1.5 bg-gradient-to-tr from-cyan-400 via-purple-500 to-pink-500 shadow-2xl">
+                            <div class="w-full h-full rounded-[22px] bg-slate-950 overflow-hidden flex items-center justify-center">
+                                <img src="https://ui-avatars.com/api/?name=Dr+Lucky+Gupta&size=200&background=0D8ABC&color=fff&bold=true" 
+                                     alt="Dr. Lucky Gupta" 
+                                     class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                            </div>
+                        </div>
+
+                        <!-- Floating Badges -->
+                        <div class="absolute -bottom-6 -left-6 glass-card px-4 py-3 rounded-2xl flex items-center gap-3 shadow-xl">
+                            <div class="w-10 h-10 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center">
+                                <i class="fa-solid fa-graduation-cap text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Position</p>
+                                <p class="text-sm font-semibold text-white">Academic Tutor</p>
+                            </div>
+                        </div>
+
+                        <div class="absolute -top-6 -right-6 glass-card px-4 py-3 rounded-2xl flex items-center gap-3 shadow-xl">
+                            <div class="w-10 h-10 rounded-xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center">
+                                <i class="fa-solid fa-hospital-user text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Institution</p>
+                                <p class="text-sm font-semibold text-white">MPDCH</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Expertise Section -->
+    <section id="about" class="py-20 relative z-10 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                
+                <!-- Clinical Image Card -->
+                <div class="relative group">
+                    <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-cyan-500 to-indigo-500 opacity-20 group-hover:opacity-40 transition duration-500 blur"></div>
+                    <div class="relative rounded-2xl overflow-hidden glass-card">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                             alt="Dental Science & Education" 
+                             class="w-full h-[420px] object-cover group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-4 glass-card rounded-xl">
+                            <p class="text-xs text-cyan-400 font-bold uppercase tracking-wider mb-1">Pedagogical Philosophy</p>
+                            <p class="text-sm text-slate-200">"Bridging rigorous academic theory with precision clinical technique to empower future healthcare leaders."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div class="space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold uppercase tracking-wider">
+                        About Dr. Lucky Gupta
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+                        Dedicated Educator in Modern Dental Medicine
+                    </h2>
+                    <p class="text-slate-400 leading-relaxed">
+                        As a Tutor at <strong class="text-slate-200">Maharana Pratap Dental College & Hospital</strong>, Dr. Lucky Gupta plays a pivotal role in guiding undergraduate students through complex dental concepts, pre-clinical skills training, and patient care management.
+                    </p>
+                    <p class="text-slate-400 leading-relaxed">
+                        Combining clinical expertise with a passionate approach to mentorship, Dr. Gupta fosters an environment of critical thinking, patient empathy, and surgical precision.
+                    </p>
+
+                    <!-- Key Pillars Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <div class="p-4 rounded-xl glass-card space-y-1">
+                            <div class="text-cyan-400 font-semibold flex items-center gap-2">
+                                <i class="fa-solid fa-tooth text-sm"></i> Pre-Clinical Training
+                            </div>
+                            <p class="text-xs text-slate-400">Mastery of foundational practical skills in simulated laboratory settings.</p>
+                        </div>
+                        <div class="p-4 rounded-xl glass-card space-y-1">
+                            <div class="text-purple-400 font-semibold flex items-center gap-2">
+                                <i class="fa-solid fa-user-doctor text-sm"></i> Clinical Chairside Guidance
+                            </div>
+                            <p class="text-xs text-slate-400">Hands-on mentorship for live patient diagnosis and treatment protocols.</p>
+                        </div>
+                        <div class="p-4 rounded-xl glass-card space-y-1">
+                            <div class="text-pink-400 font-semibold flex items-center gap-2">
+                                <i class="fa-solid fa-book-medical text-sm"></i> Curriculum Delivery
+                            </div>
+                            <p class="text-xs text-slate-400">Interactive academic modules aligned with current dental standards.</p>
+                        </div>
+                        <div class="p-4 rounded-xl glass-card space-y-1">
+                            <div class="text-teal-400 font-semibold flex items-center gap-2">
+                                <i class="fa-solid fa-award text-sm"></i> Student Leadership
+                            </div>
+                            <p class="text-xs text-slate-400">Inspiring professional ethics, research interests, and lifelong learning.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services & Expertise Grid -->
+    <section id="expertise" class="py-20 relative z-10 bg-slate-900/40">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-xs font-semibold uppercase tracking-wider text-cyan-400 bg-cyan-500/10 px-3.5 py-1.5 rounded-full border border-cyan-500/20">
+                    Core Specializations
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+                    Academic & Professional Capabilities
+                </h2>
+                <p class="text-slate-400 text-sm sm:text-base">
+                    Comprehensive focus areas in dental instruction, clinical management, and academic research.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="glass-card p-8 rounded-2xl space-y-4 group">
+                    <div class="w-14 h-14 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors">Clinical Tutoring</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Structuring comprehensive practical demonstrations for dental students, covering cavity preparation, restorative dentistry, and diagnostic techniques.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="glass-card p-8 rounded-2xl space-y-4 group">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-stethoscope"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white group-hover:text-purple-400 transition-colors">Patient Diagnostics & Care</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Supervising student-led clinical consultations, ensuring high standards of hygiene, treatment planning, and patient comfort.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="glass-card p-8 rounded-2xl space-y-4 group">
+                    <div class="w-14 h-14 rounded-2xl bg-pink-500/10 border border-pink-500/20 text-pink-400 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-microscope"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white group-hover:text-pink-400 transition-colors">Academic Research Guidance</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Mentoring students in dental research projects, systematic literature reviews, and preparation for academic symposiums.
+                    </p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="glass-card p-8 rounded-2xl space-y-4 group">
+                    <div class="w-14 h-14 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-hospital"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white group-hover:text-indigo-400 transition-colors">Institutional Supervision</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Coordinating departmental activities, managing clinical session schedules, and maintaining compliance with dental council norms.
+                    </p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="glass-card p-8 rounded-2xl space-y-4 group">
+                    <div class="w-14 h-14 rounded-2xl bg-teal-500/10 border border-teal-500/20 text-teal-400 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-hand-holding-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white group-hover:text-teal-400 transition-colors">Preventive Oral Health</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Advocating community oral health initiatives, awareness camps, and preventive dental care strategies among students and patients.
+                    </p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="glass-card p-8 rounded-2xl space-y-4 group">
+                    <div class="w-14 h-14 rounded-2xl bg-sky-500/10 border border-sky-500/20 text-sky-400 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform duration-300">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white group-hover:text-sky-400 transition-colors">Continuous Skill Assessment</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Conducting rigorous practical examinations, viva-voce sessions, and feedback loops to ensure high academic standards.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Institutional Highlight Section -->
+    <section id="institution" class="py-20 relative z-10 border-t border-b border-slate-900">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="glass-card rounded-3xl p-8 sm:p-12 relative overflow-hidden">
+                <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-cyan-500/10 rounded-full blur-3xl"></div>
+                <div class="relative z-10 grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+                    <div class="lg:col-span-2 space-y-4">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 text-xs font-semibold">
+                            Institutional Profile
+                        </div>
+                        <h3 class="text-2xl sm:text-3xl font-bold text-white">
+                            Maharana Pratap Dental College & Hospital
+                        </h3>
+                        <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                            Serving as an integral academic team member at MPDCH, contributing to clinical excellence, state-of-the-art dental training programs, and comprehensive patient healthcare services.
+                        </p>
+                    </div>
+                    <div class="flex flex-col sm:flex-row lg:flex-col gap-4">
+                        <div class="p-4 rounded-xl bg-slate-950/60 border border-slate-800 text-center">
+                            <span class="block text-slate-400 text-xs uppercase font-medium">Department Role</span>
+                            <span class="text-lg font-bold text-cyan-400">Clinical Tutor</span>
+                        </div>
+                        <div class="p-4 rounded-xl bg-slate-950/60 border border-slate-800 text-center">
+                            <span class="block text-slate-400 text-xs uppercase font-medium">Network Connection</span>
+                            <span class="text-lg font-bold text-slate-200">Connected Sep 2026</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="endorsements" class="py-20 relative z-10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <span class="text-xs font-semibold uppercase tracking-wider text-purple-400 bg-purple-500/10 px-3.5 py-1.5 rounded-full border border-purple-500/20">
+                    Testimonials
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+                    Academic Endorsements & Feedback
+                </h2>
+                <p class="text-slate-400 text-sm">
+                    Words from colleagues and students mentored by Dr. Lucky Gupta.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Card 1 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 text-sm gap-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "Dr. Gupta's approach to pre-clinical teaching gave us immense confidence. The clarity in practical demonstrations made complex restorative procedures easy to understand."
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-800/80 pt-4 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 font-bold flex items-center justify-center text-sm">
+                            DS
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-semibold text-white">Dental Student</h4>
+                            <p class="text-xs text-slate-400">MPDCH Batch</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 text-sm gap-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "A highly dedicated tutor who ensures every student adheres to the highest standards of sterilization and chairside protocol. Exceptional mentorship!"
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-800/80 pt-4 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-purple-500/20 text-purple-400 font-bold flex items-center justify-center text-sm">
+                            FC
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-semibold text-white">Senior Faculty Colleague</h4>
+                            <p class="text-xs text-slate-400">Department Member</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="glass-card p-8 rounded-2xl flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="flex text-amber-400 text-sm gap-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed">
+                            "Patient diagnosis sessions under Dr. Lucky Gupta's guidance were invaluable. Patient communication skills were emphasized alongside technical accuracy."
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-800/80 pt-4 flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-pink-500/20 text-pink-400 font-bold flex items-center justify-center text-sm">
+                            JR
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-semibold text-white">Junior Resident</h4>
+                            <p class="text-xs text-slate-400">Clinical Scholar</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 relative z-10 border-t border-slate-900 bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                
+                <!-- Contact Info -->
+                <div class="space-y-6">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-cyan-400 bg-cyan-500/10 px-3.5 py-1.5 rounded-full border border-cyan-500/20">
+                        Get In Touch
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+                        Let's Connect for Academic & Clinical Inquiries
+                    </h2>
+                    <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
+                        Interested in clinical mentorship, academic collaborations, or educational consultation? Reach out directly via the form or professional details below.
+                    </p>
+
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-center gap-4 p-4 rounded-xl glass-card">
+                            <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-building-columns"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Institution</p>
+                                <p class="text-sm font-semibold text-white">Maharana Pratap Dental College & Hospital</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl glass-card">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Direct Inquiries</p>
+                                <p class="text-sm font-semibold text-white">Available via Contact Form</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 p-4 rounded-xl glass-card">
+                            <div class="w-12 h-12 rounded-xl bg-pink-500/10 text-pink-400 flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Location</p>
+                                <p class="text-sm font-semibold text-white">Dental College Campus, India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="glass-card p-8 rounded-3xl relative">
+                    <form onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent successfully.');" class="space-y-5">
+                        <h3 class="text-xl font-bold text-white mb-2">Send a Direct Message</h3>
+                        
+                        <div>
+                            <label class="block text-xs text-slate-300 font-medium mb-2">Your Name</label>
+                            <input type="text" required placeholder="Dr. / Mr. / Ms. John Doe" 
+                                   class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs text-slate-300 font-medium mb-2">Your Email</label>
+                            <input type="email" required placeholder="john@example.com" 
+                                   class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs text-slate-300 font-medium mb-2">Subject</label>
+                            <input type="text" required placeholder="Academic Mentorship / Inquiry" 
+                                   class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs text-slate-300 font-medium mb-2">Message</label>
+                            <textarea rows="4" required placeholder="Write your message here..." 
+                                      class="w-full px-4 py-3 rounded-xl bg-slate-950/80 border border-slate-800 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors text-sm resize-none"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 bg-gradient-to-r from-cyan-500 via-sky-500 to-indigo-600 rounded-xl font-semibold text-white shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:scale-[1.01] transition-all duration-300">
+                            Send Message <i class="fa-solid fa-paper-plane ml-2 text-xs"></i>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 relative z-10 border-t border-slate-900 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© 2026 Dr. Lucky Gupta. All rights reserved.</p>
+            <p class="text-slate-400">Tutor • Maharana Pratap Dental College & Hospital</p>
+        </div>
+    </footer>
+
+</body>
+</html>
